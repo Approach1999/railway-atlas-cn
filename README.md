@@ -1,7 +1,7 @@
 # Railway Atlas CN · 中国铁路地图
 
 面向全国的铁路地图项目。首个试点为沈阳，随后扩展到东北与全国。
-当前阶段：已完成真实沈阳样本可行性验证及 v1.0 需求、设计与技术架构；正式地图产品尚待实施。
+当前阶段：已完成真实沈阳样本可行性验证及 v1.2 需求、设计与技术架构；正式地图产品尚待实施。
 
 ## 项目文档
 
@@ -10,6 +10,7 @@
 - [可行性报告与实测证据](docs/feasibility.md)
 - [需求规格](docs/requirements.md)
 - [交互与视觉设计](docs/design.md)
+- [线路等级与配色](docs/line-colors.md)
 - [技术架构](docs/architecture.md)
 - [实施与验收计划](docs/implementation-plan.md)
 - [复现本次真实样本](docs/reproduce-pilot.md)
@@ -19,7 +20,7 @@
 ```text
 apps/web/           地图前端；probe/ 为本机技术探针
 crates/            Rust 城市 PBF 读取与几何转换探针
-config/            可版本化的区域与筛选配置
+config/            可版本化的区域、筛选与线路配色配置
 scripts/           可复现的数据提取入口
 docs/              架构、数据源与许可说明
 data/raw/          原始 PBF，本地保存，Git 忽略

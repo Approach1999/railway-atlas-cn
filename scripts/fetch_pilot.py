@@ -18,9 +18,10 @@ def main():
     config = json.loads((root / "config/shenyang.json").read_text(encoding="utf-8"))
     west, south, east, north = config["bbox"]
     bbox = f"({south},{west},{north},{east})"
+    # Keep lifecycle prefixes in sync with config/shenyang.json filters.
     query = f'''[out:xml][timeout:120];(
       node[railway]{bbox};way[railway]{bbox};
-      way[~"^(abandoned|disused|razed|construction):railway$"~"."]{bbox};
+      way[~"^(abandoned|disused|razed|construction|proposed):railway$"~"."]{bbox};
     );(._;>;);out body;'''
     if args.output.exists() or args.output.with_suffix(".source.json").exists():
         parser.error("Output exists; preserve the snapshot or choose another name")

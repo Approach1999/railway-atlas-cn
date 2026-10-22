@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "palette_version": "2026-10-22.1",
+  "updated_at": "2026-10-22",
+  "background": "#F5F7F4",
+  "notes": "线路色是显示配置，不写入瓦片。官方色优先；无官方值时使用运营方线路图取色或人工覆盖；仍无值则回退到制式/等级色。",
+  "line_color_policy": {
+    "priority": [
+      "override",
+      "operator_ref",
+      "osm_colour",
+      "class_fallback"
+    ],
+    "shared_segment": "fallback_mode_color",
+    "unknown_line": "fallback_mode_color"
+  },
+  "class_palette": {
+    "high_speed": {
+      "label": "高速铁路",
+      "color": "#C8102E",
+      "width": 3.4,
+      "casing": "#FFFFFF",
+      "description": "仅按显式 highspeed=yes 或审核规则判定，不按名称或限速推断。"
+    },
+    "conventional_main": {
+      "label": "普速干线",
+      "color": "#1F5A8A",
+      "width": 2.8,
+      "casing": "#FFFFFF",
+      "description": "显式 usage=main 且未标注高速。"
+    },
+    "conventional_other": {
+      "label": "普速/未标注",
+      "color": "#4F7FA6",
+      "width": 2.2,
+      "casing": "#FFFFFF",
+      "description": "railway=rail 但未标注 highspeed 或 usage=main；不宣称具体运营等级。"
+    },
+    "branch": {
+      "label": "支线/站场线",
+      "color": "#A17A3F",
+      "width": 1.8,
+      "casing": "#FFFFFF",
+      "description": "usage=branch 或 service=spur/siding/crossover/yard。"
+    },
+    "industrial": {
+      "label": "专用线",
+      "color": "#6B4F3A",
+      "width": 1.6,
+      "casing": "#FFFFFF",
+      "description": "usage=industrial 或 service=industrial。"
+    },
+    "metro": {
+      "label": "地铁（未识别线路）",
+      "color": "#8657A6",
+      "width": 3.0,
+      "casing": "#1B2A32",
+      "description": "未匹配到具体线路时的地铁回退色。"
+    },
+    "light_rail": {
+      "label": "轻轨",
+      "color": "#A45BB5",
+      "width": 2.8,
+      "casing": "#FFFFFF",
+      "description": "railway=light_rail 的制式回退色。"
+    },
+    "tram": {
+      "label": "有轨电车",
+      "color": "#2E8B57",
+      "width": 2.4,
+      "casing": "#FFFFFF",
+      "description": "railway=tram 的制式回退色。"
+    },
+    "other": {
+      "label": "其他轨道",
+      "color": "#6B7C86",
+      "width": 1.6,
+      "casing": "#FFFFFF",
+      "description": "未归入上述等级的轨道。"
+    },
+    "unknown": {
+      "label": "制式/等级未标注",
+      "color": "#8A8F98",
+      "width": 1.4,
+      "casing": "#FFFFFF",
+      "description": "无法可靠分类时使用，不强行归为高速或普速。"
+    }
+  },
+  "lifecycle_styles": {
+    "mapped": {
+      "dasharray": [],
+      "opacity": 1.0
+    },
+    "construction": {
+      "dasharray": [3, 2],
+      "opacity": 1.0
+    },
+    "proposed": {
+      "dasharray": [1, 2],
+      "opacity": 0.9
+    },
+    "disused": {
+      "color": "#8A8F98",
+      "dasharray": [6, 3],
+      "opacity": 0.8
+    },
+    "abandoned": {
+      "color": "#8C6D4F",
+      "dasharray": [2, 3],
+      "opacity": 0.7
+    },
+    "razed": {
+      "color": "#8C6D4F",
+      "dasharray": [1, 3],
+      "opacity": 0.6
+    },
+    "unknown": {
+      "color": "#8A8F98",
+      "dasharray": [2, 3],
+      "opacity": 0.8
+    },
+    "conflict": {
+      "color": "#8A8F98",
+      "dasharray": [4, 2, 1, 2],
+      "opacity": 0.8
+    }
+  },
+  "selection": {
+    "color": "#154E9D",
+    "halo": "#FFFFFF",
+    "width_add": 2.4
+  },
+  "operators": {
+    "shenyang-metro": {
+      "name": "沈阳地铁",
+      "aliases": [
+        "沈阳地铁",
+        "Shenyang Metro",
+        "沈阳地铁集团有限公司"
+      ],
+      "region": "shenyang",
+      "source": "沈阳地铁官网线路图（经中文维基百科模板转引）",
+      "source_url": "https://zh.wikipedia.org/wiki/Template:沈阳地铁颜色",
+      "operator_url": "http://www.symtc.com/content.php?6501",
+      "verified_at": "2026-10-22",
+      "confidence": "operator-map",
+      "notes": "官方未公布统一标准色值；色值取自运营方线路图，仅用于线路识别。",
+      "ref_aliases": {
+        "01": "1",
+        "1号线": "1",
+        "02": "2",
+        "2号线": "2",
+        "03": "3",
+        "3号线": "3",
+        "04": "4",
+        "4号线": "4",
+        "09": "9",
+        "9号线": "9",
+        "10号线": "10"
+      },
+      "lines": {
+        "1": {
+          "name": "1号线",
+          "color": "#E5001C",
+          "status": "operating"
+        },
+        "2": {
+          "name": "2号线",
+          "color": "#F08439",
+          "status": "operating"
+        },
+        "3": {
+          "name": "3号线",
+          "color": "#E6669F",
+          "status": "operating"
+        },
+        "4": {
+          "name": "4号线",
+          "color": "#6E3E94",
+          "status": "operating"
+        },
+        "9": {
+          "name": "9号线",
+          "color": "#0095D2",
+          "status": "operating"
+        },
+        "10": {
+          "name": "10号线",
+          "color": "#8CBB48",
+          "status": "operating"
+        }
+      }
+    }
+  },
+  "overrides": [],
+  "fallbacks": {
+    "subway": "#8657A6",
+    "light_rail": "#A45BB5",
+    "tram": "#2E8B57",
+    "other": "#6B7C86",
+    "unknown": "#8A8F98"
+  }
+}

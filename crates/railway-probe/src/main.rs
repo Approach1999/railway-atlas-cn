@@ -149,4 +149,13 @@ mod tests {
         assert!(!relevant(&tags(&[("highway", "service")])));
         assert!(relevant(&tags(&[("abandoned:railway", "rail")])));
     }
+
+    #[test]
+    fn proposed_prefix_is_preserved_for_filtering() {
+        assert_eq!(
+            category(&tags(&[("railway", "rail"), ("proposed:railway", "rail")])),
+            ("proposed", "rail".into())
+        );
+        assert!(relevant(&tags(&[("proposed:railway", "rail")])));
+    }
 }

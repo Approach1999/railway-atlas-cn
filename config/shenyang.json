@@ -1,7 +1,8 @@
 {
+  "config_version": 2,
   "id": "shenyang",
   "description": "沈阳城区及周边试验矩形；非沈阳市行政边界。WGS84，经度/纬度。",
   "bbox": [123.0, 41.5, 123.8, 42.1],
   "strategy": "complete_ways",
-  "filters": ["nwr/railway", "w/abandoned:railway", "w/disused:railway", "w/razed:railway", "w/construction:railway"]
+  "filters": ["nwr/railway", "w/abandoned:railway", "w/disused:railway", "w/razed:railway", "w/construction:railway", "w/proposed:railway"]
 }
