@@ -1,0 +1,958 @@
+{
+  "classes": {
+    "abandoned": 68,
+    "buffer_stop": 461,
+    "construction": 6,
+    "crossing": 99,
+    "disused": 11,
+    "junction": 11,
+    "level_crossing": 2326,
+    "level_crossing;tram_level_crossing": 10,
+    "milestone": 59,
+    "miniature": 1,
+    "owner_change": 5,
+    "platform": 48,
+    "rail": 3577,
+    "railway_crossing": 100,
+    "razed": 4,
+    "signal_box": 13,
+    "station": 185,
+    "station_crossing": 9,
+    "stop": 302,
+    "subway": 310,
+    "subway_entrance": 137,
+    "switch": 2395,
+    "tram": 173,
+    "tram_crossing": 24,
+    "tram_level_crossing": 207,
+    "tram_stop": 130,
+    "traverser": 4,
+    "turntable": 1,
+    "unknown": 7,
+    "yard": 9
+  },
+  "features": 10692,
+  "geojson_bytes": 5239765,
+  "missing_way_node_refs": 0,
+  "named_way_features": 1354,
+  "objects_loaded": 36966,
+  "processing_seconds": 0.1389637,
+  "scope": "Bounded pilot only; mapped means OSM tag, not confirmed operational status; way station areas remain outlines",
+  "stations": [
+    {
+      "id": "node/676578837",
+      "name": "沈阳北",
+      "railway": "station"
+    },
+    {
+      "id": "node/677162780",
+      "name": "沈阳东",
+      "railway": "station"
+    },
+    {
+      "id": "node/677180563",
+      "name": "大成",
+      "railway": "station"
+    },
+    {
+      "id": "node/685376309",
+      "name": "马三家",
+      "railway": "station"
+    },
+    {
+      "id": "node/1012690887",
+      "name": "滂江街",
+      "railway": "station"
+    },
+    {
+      "id": "node/1582670414",
+      "name": "虎石台",
+      "railway": "station"
+    },
+    {
+      "id": "node/1582714231",
+      "name": "裕国",
+      "railway": "station"
+    },
+    {
+      "id": "node/1655741320",
+      "name": "三台",
+      "railway": "station"
+    },
+    {
+      "id": "node/1655741348",
+      "name": "兴隆店",
+      "railway": "station"
+    },
+    {
+      "id": "node/2348271090",
+      "name": "新城子",
+      "railway": "station"
+    },
+    {
+      "id": "node/2349656758",
+      "name": "孤家子",
+      "railway": "station"
+    },
+    {
+      "id": "node/2349656769",
+      "name": "深井子",
+      "railway": "station"
+    },
+    {
+      "id": "node/2662698244",
+      "name": "陈相屯",
+      "railway": "station"
+    },
+    {
+      "id": "node/4068159530",
+      "name": "七号街",
+      "railway": "station"
+    },
+    {
+      "id": "node/4068159531",
+      "name": "中央大街",
+      "railway": "station"
+    },
+    {
+      "id": "node/4068168494",
+      "name": "于洪广场",
+      "railway": "station"
+    },
+    {
+      "id": "node/4068168495",
+      "name": "四号街",
+      "railway": "station"
+    },
+    {
+      "id": "node/4068168496",
+      "name": "开发大道",
+      "railway": "station"
+    },
+    {
+      "id": "node/4068168497",
+      "name": "张士",
+      "railway": "station"
+    },
+    {
+      "id": "node/4068168504",
+      "name": "迎宾路",
+      "railway": "station"
+    },
+    {
+      "id": "node/4068168505",
+      "name": "重工街",
+      "railway": "station"
+    },
+    {
+      "id": "node/4068169164",
+      "name": "云峰北街",
+      "railway": "station"
+    },
+    {
+      "id": "node/4068169165",
+      "name": "保工街",
+      "railway": "station"
+    },
+    {
+      "id": "node/4068169166",
+      "name": "启工街",
+      "railway": "station"
+    },
+    {
+      "id": "node/4068171741",
+      "name": "南市场",
+      "railway": "station"
+    },
+    {
+      "id": "node/4068171742",
+      "name": "太原街",
+      "railway": "station"
+    },
+    {
+      "id": "node/4068182756",
+      "name": "怀远门",
+      "railway": "station"
+    },
+    {
+      "id": "node/4507873122",
+      "name": "沈阳西",
+      "railway": "station"
+    },
+    {
+      "id": "node/5334815579",
+      "name": "青年大街",
+      "railway": "station"
+    },
+    {
+      "id": "node/5639801343",
+      "name": "航空航天大学",
+      "railway": "station"
+    },
+    {
+      "id": "node/5639801344",
+      "name": "世纪大厦",
+      "railway": "station"
+    },
+    {
+      "id": "node/5639801345",
+      "name": "全运路",
+      "railway": "station"
+    },
+    {
+      "id": "node/5639801346",
+      "name": "白塔河路",
+      "railway": "station"
+    },
+    {
+      "id": "node/5768586817",
+      "name": "奥体中心",
+      "railway": "station"
+    },
+    {
+      "id": "node/6179162253",
+      "name": "沈阳南",
+      "railway": "station"
+    },
+    {
+      "id": "node/6179162407",
+      "name": "沈阳",
+      "railway": "station"
+    },
+    {
+      "id": "node/6445848074",
+      "name": "怒江公园",
+      "railway": "station"
+    },
+    {
+      "id": "node/6445850197",
+      "name": "大通湖街",
+      "railway": "station"
+    },
+    {
+      "id": "node/6445850209",
+      "name": "胜利南街",
+      "railway": "station"
+    },
+    {
+      "id": "node/6509965510",
+      "name": "建筑大学",
+      "railway": "station"
+    },
+    {
+      "id": "node/6509965511",
+      "name": "长青南街",
+      "railway": "station"
+    },
+    {
+      "id": "node/6509965512",
+      "name": "朗日街",
+      "railway": "station"
+    },
+    {
+      "id": "node/6509965517",
+      "name": "天成街",
+      "railway": "station"
+    },
+    {
+      "id": "node/6509965520",
+      "name": "彩霞街",
+      "railway": "station"
+    },
+    {
+      "id": "node/6509965522",
+      "name": "金阳大街",
+      "railway": "station"
+    },
+    {
+      "id": "node/6509965523",
+      "name": "榆树台",
+      "railway": "station"
+    },
+    {
+      "id": "node/6509965528",
+      "name": "浑河站",
+      "railway": "station"
+    },
+    {
+      "id": "node/6509965530",
+      "name": "曹仲",
+      "railway": "station"
+    },
+    {
+      "id": "node/6509971325",
+      "name": "吉力湖街",
+      "railway": "station"
+    },
+    {
+      "id": "node/6509971329",
+      "name": "滑翔",
+      "railway": "station"
+    },
+    {
+      "id": "node/6509971330",
+      "name": "沈辽路",
+      "railway": "station"
+    },
+    {
+      "id": "node/6509971331",
+      "name": "兴华公园",
+      "railway": "station"
+    },
+    {
+      "id": "node/6509971334",
+      "name": "北二路",
+      "railway": "station"
+    },
+    {
+      "id": "node/6509971339",
+      "name": "重型文化广场",
+      "railway": "station"
+    },
+    {
+      "id": "node/6509971342",
+      "name": "淮河街沈医二院",
+      "railway": "station"
+    },
+    {
+      "id": "node/6690632888",
+      "name": "铁西广场",
+      "railway": "station"
+    },
+    {
+      "id": "node/7320955107",
+      "name": "于洪",
+      "railway": "station"
+    },
+    {
+      "id": "node/7484683847",
+      "name": "张沙布",
+      "railway": "station"
+    },
+    {
+      "id": "node/7484708388",
+      "name": "理工大学",
+      "railway": "station"
+    },
+    {
+      "id": "node/7484755795",
+      "name": "长青桥",
+      "railway": "station"
+    },
+    {
+      "id": "node/7484776104",
+      "name": "江东街",
+      "railway": "station"
+    },
+    {
+      "id": "node/7484786201",
+      "name": "泉园",
+      "railway": "station"
+    },
+    {
+      "id": "node/7484793316",
+      "name": "万莲",
+      "railway": "station"
+    },
+    {
+      "id": "node/7484814792",
+      "name": "长安路",
+      "railway": "station"
+    },
+    {
+      "id": "node/7484856286",
+      "name": "东北大马路",
+      "railway": "station"
+    },
+    {
+      "id": "node/7484863396",
+      "name": "合作街",
+      "railway": "station"
+    },
+    {
+      "id": "node/7484871961",
+      "name": "北塔",
+      "railway": "station"
+    },
+    {
+      "id": "node/7484886585",
+      "name": "陵东街",
+      "railway": "station"
+    },
+    {
+      "id": "node/7484922885",
+      "name": "中医药大学",
+      "railway": "station"
+    },
+    {
+      "id": "node/7484928524",
+      "name": "百鸟公园",
+      "railway": "station"
+    },
+    {
+      "id": "node/7484929416",
+      "name": "长江街",
+      "railway": "station"
+    },
+    {
+      "id": "node/7484929557",
+      "name": "元江街",
+      "railway": "station"
+    },
+    {
+      "id": "node/7484954112",
+      "name": "塔湾街",
+      "railway": "station"
+    },
+    {
+      "id": "node/7484954445",
+      "name": "向工街",
+      "railway": "station"
+    },
+    {
+      "id": "node/7484956082",
+      "name": "丁香湖",
+      "railway": "station"
+    },
+    {
+      "id": "node/8402523366",
+      "name": "新园",
+      "railway": "station"
+    },
+    {
+      "id": "node/8434476658",
+      "name": "文官屯",
+      "railway": "station"
+    },
+    {
+      "id": "node/8829211661",
+      "name": "东陵",
+      "railway": "station"
+    },
+    {
+      "id": "node/9167905926",
+      "name": "高花",
+      "railway": "station"
+    },
+    {
+      "id": "node/9167905927",
+      "name": "沙岭",
+      "railway": "station"
+    },
+    {
+      "id": "node/9167905928",
+      "name": "蒲河",
+      "railway": "station"
+    },
+    {
+      "id": "node/9174531416",
+      "name": "瓢儿屯",
+      "railway": "station"
+    },
+    {
+      "id": "node/9174541217",
+      "name": "榆树台",
+      "railway": "station"
+    },
+    {
+      "id": "node/9174541218",
+      "name": "苏家屯",
+      "railway": "station"
+    },
+    {
+      "id": "node/9176129502",
+      "name": "滴台",
+      "railway": "station"
+    },
+    {
+      "id": "node/9176129503",
+      "name": "旧站",
+      "railway": "station"
+    },
+    {
+      "id": "node/9176129509",
+      "name": "姚千户屯",
+      "railway": "station"
+    },
+    {
+      "id": "node/9178344031",
+      "name": "林盛堡",
+      "railway": "station"
+    },
+    {
+      "id": "node/9179735865",
+      "name": "揽军屯",
+      "railway": "station"
+    },
+    {
+      "id": "node/9760951383",
+      "name": "辉山",
+      "railway": "station"
+    },
+    {
+      "id": "node/9761526410",
+      "name": "田义屯",
+      "railway": "station"
+    },
+    {
+      "id": "node/9761526894",
+      "name": "转弯桥",
+      "railway": "station"
+    },
+    {
+      "id": "node/9763069258",
+      "name": "世博园",
+      "railway": "station"
+    },
+    {
+      "id": "node/10973711947",
+      "name": "三宝屯",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224048717",
+      "name": "创新路",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224048728",
+      "name": "沈阳南站",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224064833",
+      "name": "红椿路",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224118344",
+      "name": "城建学院",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224138441",
+      "name": "云杉路",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224138447",
+      "name": "金仓路",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224138458",
+      "name": "长白南",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224146925",
+      "name": "北大营",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224146928",
+      "name": "观泉路",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224146935",
+      "name": "望花",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224147541",
+      "name": "长白岛",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224147546",
+      "name": "南京桥",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224147554",
+      "name": "砂阳",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224147563",
+      "name": "南五马路",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224150327",
+      "name": "市府大路",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224150330",
+      "name": "皇寺路",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224161464",
+      "name": "沈阳大学",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224161465",
+      "name": "洮昌街",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224161741",
+      "name": "沈阳北站",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224179346",
+      "name": "文官街",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224179358",
+      "name": "正新路",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224378604",
+      "name": "沈本大街",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224378635",
+      "name": "沈中大街",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224418444",
+      "name": "省博物馆",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224418450",
+      "name": "中央公园",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224434151",
+      "name": "创新一路",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224434159",
+      "name": "综合保税区",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224434181",
+      "name": "桃仙机场",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224475038",
+      "name": "营盘街",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224475047",
+      "name": "五里河",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224490170",
+      "name": "市图书馆",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224490174",
+      "name": "工业展览馆",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224490179",
+      "name": "青年公园",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224503048",
+      "name": "人民广场",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224503064",
+      "name": "金融中心",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224503073",
+      "name": "岐山路",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224511931",
+      "name": "北陵公园",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224511932",
+      "name": "新乐遗址",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224511934",
+      "name": "陵西",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224522237",
+      "name": "三台子",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224522240",
+      "name": "医学院",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224522286",
+      "name": "师范大学",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224522296",
+      "name": "辽宁大学",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224522304",
+      "name": "人杰湖公园",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224522312",
+      "name": "蒲河路",
+      "railway": "station"
+    },
+    {
+      "id": "node/11224522316",
+      "name": "蒲田路",
+      "railway": "station"
+    },
+    {
+      "id": "node/11234519409",
+      "name": "皇姑屯站",
+      "railway": "station"
+    },
+    {
+      "id": "node/11768457613",
+      "name": "伯官",
+      "railway": "station"
+    },
+    {
+      "id": "node/12462614422",
+      "name": "铁西汽车工厂",
+      "railway": "station"
+    },
+    {
+      "id": "node/12462614426",
+      "name": "李达",
+      "railway": "station"
+    },
+    {
+      "id": "node/12462614448",
+      "name": "马贝",
+      "railway": "station"
+    },
+    {
+      "id": "node/12462614464",
+      "name": "细河悠谷",
+      "railway": "station"
+    },
+    {
+      "id": "node/12462626305",
+      "name": "中德大街",
+      "railway": "station"
+    },
+    {
+      "id": "node/12462626306",
+      "name": "翟家",
+      "railway": "station"
+    },
+    {
+      "id": "node/12462626307",
+      "name": "工业大学",
+      "railway": "station"
+    },
+    {
+      "id": "node/12462626308",
+      "name": "宁官",
+      "railway": "station"
+    },
+    {
+      "id": "node/12462626315",
+      "name": "余良",
+      "railway": "station"
+    },
+    {
+      "id": "node/12462626338",
+      "name": "甘官",
+      "railway": "station"
+    },
+    {
+      "id": "node/12462626339",
+      "name": "千岛湖街",
+      "railway": "station"
+    },
+    {
+      "id": "node/12462626368",
+      "name": "南阳湖街",
+      "railway": "station"
+    },
+    {
+      "id": "node/12462626375",
+      "name": "大通湖街",
+      "railway": "station"
+    },
+    {
+      "id": "node/12462626378",
+      "name": "南李官",
+      "railway": "station"
+    },
+    {
+      "id": "node/12948934667",
+      "name": "十三号街",
+      "railway": "station"
+    },
+    {
+      "id": "node/12948968716",
+      "name": "黎明广场",
+      "railway": "station"
+    },
+    {
+      "id": "node/12948981728",
+      "name": "新惠街",
+      "railway": "station"
+    },
+    {
+      "id": "node/12949048248",
+      "name": "新宁街",
+      "railway": "station"
+    },
+    {
+      "id": "node/12949048249",
+      "name": "东大营街",
+      "railway": "station"
+    },
+    {
+      "id": "node/12949048250",
+      "name": "农业大学",
+      "railway": "station"
+    },
+    {
+      "id": "node/12949048251",
+      "name": "前陵",
+      "railway": "station"
+    },
+    {
+      "id": "node/12949048252",
+      "name": "东陵公园",
+      "railway": "station"
+    },
+    {
+      "id": "node/12949048253",
+      "name": "水泉",
+      "railway": "station"
+    },
+    {
+      "id": "node/12949048254",
+      "name": "伯官北大街",
+      "railway": "station"
+    },
+    {
+      "id": "node/12949048255",
+      "name": "植物园",
+      "railway": "station"
+    },
+    {
+      "id": "node/12949048256",
+      "name": "双马",
+      "railway": "station"
+    },
+    {
+      "id": "node/12985462293",
+      "name": "东中街",
+      "railway": "station"
+    },
+    {
+      "id": "node/12985502986",
+      "name": "中街",
+      "railway": "station"
+    },
+    {
+      "id": "node/13028356638",
+      "name": "沈阳站",
+      "railway": "station"
+    },
+    {
+      "id": "node/13989565660",
+      "name": "凌空",
+      "railway": "station"
+    },
+    {
+      "id": "node/14074467746",
+      "name": "方家栏",
+      "railway": "station"
+    },
+    {
+      "id": "node/14080472394",
+      "name": "中科院金属所",
+      "railway": "station"
+    },
+    {
+      "id": "node/14080472397",
+      "name": "南塔",
+      "railway": "station"
+    },
+    {
+      "id": "node/14080472398",
+      "name": "文富路",
+      "railway": "station"
+    },
+    {
+      "id": "node/14080511101",
+      "name": "富民街",
+      "railway": "station"
+    },
+    {
+      "id": "node/14084954227",
+      "name": "南八马路",
+      "railway": "station"
+    },
+    {
+      "id": "node/14084954230",
+      "name": "嘉兴街",
+      "railway": "station"
+    },
+    {
+      "id": "node/14084954233",
+      "name": "方型广场",
+      "railway": "station"
+    },
+    {
+      "id": "node/14084954236",
+      "name": "三好街",
+      "railway": "station"
+    }
+  ],
+  "statuses": {
+    "abandoned": 68,
+    "construction": 6,
+    "disused": 24,
+    "mapped": 10590,
+    "razed": 4
+  },
+  "way_features": 4220,
+  "ways_with_electrified": 2422,
+  "ways_with_maxspeed": 769
+}

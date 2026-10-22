@@ -1,0 +1,21 @@
+{
+  "date_local": "2026-10-22",
+  "timezone": "Asia/Shanghai",
+  "method": "Observed local in-app browser UI and screenshot; not an automated performance suite",
+  "viewport": [1280, 720],
+  "rendered_features": 10692,
+  "search_query": "沈阳北",
+  "observed_candidates": [
+    {"id": "node/676578837", "name": "沈阳北", "label": "铁路 / 制式待核验"},
+    {"id": "node/11224161741", "name": "沈阳北站", "label": "地铁"}
+  ],
+  "selection": "Selecting node/676578837 displayed its original tags and moved the map",
+  "observed_track_filters": ["all", "rail", "urban"],
+  "format_switch": "PMTiles rendered real railway geometry; server logged multiple HTTP 206 responses",
+  "header_check": {"status": 206, "content_range": "bytes 0-126/1183078", "bytes": 127, "magic": "PMTiles", "version": 3},
+  "single_run_idle_ms": {"first_geojson": 477, "first_pmtiles_switch": 46, "final_geojson_reload": 500, "final_pmtiles_switch": 65},
+  "timing_limitations": "Local host, no controlled cache/network/mobile; full GeoJSON also loaded for search/details; not a performance comparison",
+  "screenshot": "pilot-browser.png",
+  "production_design": "../design-wireframe.svg",
+  "known_probe_limitations": ["station filter does not follow track-mode filter", "no production basemap", "full GeoJSON preloaded", "no production URL sharing or mobile acceptance"]
+}

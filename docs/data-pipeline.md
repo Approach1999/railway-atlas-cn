@@ -30,11 +30,12 @@ python3 scripts/extract_osm.py --input data/raw/china-snapshot.osm.pbf --source-
 复现时复制 manifest 中的输入指纹，使用空的独立输出目录：
 
 ```sh
-python3 scripts/extract_osm.py --input data/raw/china-snapshot.osm.pbf --source-url https://download.geofabrik.de/asia/china-latest.osm.pbf --expected-sha256 <manifest中的input_sha256> --output-dir data/processed/replay --manifest data/manifests/shenyang-replay.json
+python3 scripts/extract_osm.py --input data/raw/china-snapshot.osm.pbf --source-url https://download.geofabrik.de/asia/china-latest.osm.pbf --expected-sha256 <manifest中的input_sha256> --output-dir data/processed/replay --manifest data/manifests/local/shenyang-replay.json
 ```
 
 比较两份 manifest 的输入、配置、版本和输出指纹；跨工具版本不保证二进制一致。
-首次运行的 `data/manifests/shenyang.json` 为小型记录，可提交版本控制。
+首次运行的 `data/manifests/local/shenyang.json` 为本地小型记录，审核后另存为带快照标识的文件再提交。
+local 目录被忽略；仓库中的 shenyang.json / shenyang-replay.json 是本次历史实验记录。
 
 ## 处理语义与限制
 
@@ -46,7 +47,9 @@ python3 scripts/extract_osm.py --input data/raw/china-snapshot.osm.pbf --source-
 - 默认保留筛选对象的引用；不使用 `--omit-referenced`。
 - `osmium check-refs` 验证 way 的节点引用；不宣称跨区域 relation 完整。
 - 脚本拒绝覆盖已有输出和 manifest；失败的中间文件需检查后移走再运行。
-- 当前初始化只检查脚本语法、参数入口与配置；真实中国 PBF 的耗时、内存与结果仍需实测。
+- 已用真实沈阳 Overpass 样本转换的 PBF 跑通提取、引用检查、Rust 转换和浏览器展示，
+  并验证同输入重跑指纹一致。全国日期 PBF 的吞吐量与内存仍未实测。
+  详见 [可行性报告](feasibility.md) 与 [样本复现指南](reproduce-pilot.md)。
 
 ## 官方工具说明
 

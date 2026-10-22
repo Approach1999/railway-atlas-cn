@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "source_url": "https://overpass-api.de/api/interpreter",
+  "input_sha256": "bde088300e70b0e040dcaef56f882f58fee04cb62ab161d1eeb12e626bd52e1c",
+  "input_bytes": 298663,
+  "input_header": {
+    "boxes": [],
+    "with_history": false,
+    "option": {
+      "generator": "osmium/1.16.0",
+      "pbf_dense_nodes": "true"
+    }
+  },
+  "osmium_version": "osmium version 1.16.0\nlibosmium version 2.20.0\nSupported PBF compression types: none zlib lz4\n\nCopyright (C) 2013-2023  Jochen Topf <jochen@topf.org>\nLicense: GNU GENERAL PUBLIC LICENSE Version 3 <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.",
+  "config": {
+    "id": "shenyang",
+    "description": "沈阳城区及周边试验矩形；非沈阳市行政边界。WGS84，经度/纬度。",
+    "bbox": [
+      123.0,
+      41.5,
+      123.8,
+      42.1
+    ],
+    "strategy": "complete_ways",
+    "filters": [
+      "nwr/railway",
+      "w/abandoned:railway",
+      "w/disused:railway",
+      "w/razed:railway",
+      "w/construction:railway"
+    ]
+  },
+  "config_sha256": "9395c2d652723f31900e499b8c4f2ce69dfc35c03dff0c2433719c2af6fd03cd",
+  "commands": [
+    [
+      "osmium",
+      "extract",
+      "--bbox",
+      "123.0,41.5,123.8,42.1",
+      "--strategy",
+      "complete_ways",
+      "INPUT",
+      "-o",
+      "REGION"
+    ],
+    [
+      "osmium",
+      "tags-filter",
+      "REGION",
+      "nwr/railway",
+      "w/abandoned:railway",
+      "w/disused:railway",
+      "w/razed:railway",
+      "w/construction:railway",
+      "-o",
+      "RAILWAY"
+    ],
+    [
+      "osmium",
+      "check-refs",
+      "RAILWAY"
+    ]
+  ],
+  "outputs": {
+    "region.osm.pbf": {
+      "sha256": "69fb1bee4215168a670f0df38e4d6d3b266505d0549a42929944edeb0a9c2548",
+      "bytes": 298682
+    },
+    "railway.osm.pbf": {
+      "sha256": "69fb1bee4215168a670f0df38e4d6d3b266505d0549a42929944edeb0a9c2548",
+      "bytes": 298682
+    }
+  },
+  "validation": {
+    "way_node_references": "passed",
+    "relation_completeness": "not_checked"
+  }
+}

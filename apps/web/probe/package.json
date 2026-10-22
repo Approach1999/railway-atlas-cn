@@ -1,0 +1,10 @@
+{
+  "name": "railway-atlas-browser-probe",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Local feasibility probe, not the production frontend",
+  "dependencies": {
+    "maplibre-gl": "6.15.0",
+    "pmtiles": "4.5.0"
+  }
+}

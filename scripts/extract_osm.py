@@ -25,7 +25,7 @@ def main():
     parser.add_argument("--expected-sha256", help="Required for replay of a recorded snapshot")
     parser.add_argument("--config", type=Path, default=ROOT / "config/shenyang.json")
     parser.add_argument("--output-dir", type=Path, default=ROOT / "data/processed/shenyang")
-    parser.add_argument("--manifest", type=Path, default=ROOT / "data/manifests/shenyang.json")
+    parser.add_argument("--manifest", type=Path, default=ROOT / "data/manifests/local/shenyang.json")
     args = parser.parse_args()
     if not args.input.is_file():
         parser.error("Input snapshot does not exist")

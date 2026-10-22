@@ -1,0 +1,62 @@
+{
+  "scope": "Real bounded Shenyang Overpass pilot; no national throughput claim",
+  "source": {
+    "endpoint": "https://overpass-api.de/api/interpreter",
+    "query": "[out:xml][timeout:120];(\n      node[railway](41.5,123.0,42.1,123.8);way[railway](41.5,123.0,42.1,123.8);\n      way[~\"^(abandoned|disused|razed|construction):railway$\"~\".\"](41.5,123.0,42.1,123.8);\n    );(._;>;);out body;",
+    "bbox": [
+      123.0,
+      41.5,
+      123.8,
+      42.1
+    ],
+    "osm_base": {
+      "osm_base": "2026-10-22T04:46:06Z"
+    },
+    "bytes": 4707967,
+    "sha256": "074eaa6b16703b580f83ca72051866996195cdde3c9da7352e2bb82408c76105",
+    "download_seconds": 42.924,
+    "nodes": 32746,
+    "ways": 4220,
+    "relations": 0,
+    "scope": "Bounded pilot only; railway ways + railway nodes + referenced nodes; no route relations"
+  },
+  "python": "3.14.4",
+  "os": "Windows-11-10.0.26200-SP0",
+  "rust": "rustc 1.90.0 (1159e78c4 2025-09-14)",
+  "cargo_lock_sha256": "42f3007944f6131c998b58622f667a60e2b0e5836f6fb2dfe75072279e281a31",
+  "features": 10692,
+  "geojson_bytes": 5239765,
+  "geojson_gzip_bytes": 545511,
+  "geojson_sha256": "bdd6e2cdd49e2ba821c10ba549742104e73b566f3ce84db9669ad64181856cf5",
+  "pmtiles_bytes": 1183078,
+  "pmtiles_sha256": "6c222f091e3a77703cf15db4b99377fec01800382acd5eb7e650512f7d507372",
+  "rust_runs": [
+    {
+      "process_wall_seconds": 0.1909,
+      "internal_processing_seconds": 0.1428157
+    },
+    {
+      "process_wall_seconds": 0.1958,
+      "internal_processing_seconds": 0.1450905
+    },
+    {
+      "process_wall_seconds": 0.1962,
+      "internal_processing_seconds": 0.1417604
+    }
+  ],
+  "exact_extraction_replay": true,
+  "exact_geojson_replay": true,
+  "unique_typed_ids": true,
+  "valid_coordinate_ranges": true,
+  "anchor_stations": {
+    "node/676578837": "沈阳北",
+    "node/6179162407": "沈阳"
+  },
+  "not_measured": [
+    "peak RAM",
+    "cold WAN browser load",
+    "national dataset",
+    "mobile hardware",
+    "complete route relations"
+  ]
+}

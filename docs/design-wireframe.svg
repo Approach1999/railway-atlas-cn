@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="980" viewBox="0 0 1640 980" style="max-width:100%;height:auto">
+<defs><style>text{font-family:system-ui,'Microsoft YaHei',sans-serif;fill:#172e37}.small{font-size:14px;fill:#526770}.label{font-size:18px}.title{font-size:26px;font-weight:700}.panel{fill:white;stroke:#d8e1de}.track{fill:none;stroke:#147c74;stroke-width:5}.urban{fill:none;stroke:#8657a6;stroke-width:4}.dash{fill:none;stroke:#b27637;stroke-width:4;stroke-dasharray:10 6}</style></defs>
+<rect width="1640" height="980" fill="#f5f7f4"/>
+<text x="40" y="48" class="title">中国铁路地图 · v1.0 交互布局</text>
+<text x="40" y="78" class="small">设计示意，线条不代表真实地理数据。真实数据另见浏览器验证截图。</text>
+<text x="40" y="122" class="label">桌面：地图优先，搜索与详情各自保持上下文</text>
+<rect x="40" y="144" width="1110" height="690" rx="12" class="panel"/>
+<rect x="41" y="145" width="1108" height="56" rx="12" fill="#fff"/>
+<text x="64" y="181" font-size="19" font-weight="700">RAILWAY ATLAS CN</text>
+<rect x="825" y="158" width="220" height="31" rx="6" fill="#eef3f1"/>
+<text x="840" y="180" class="small">沈阳试验区 ▾</text><text x="1060" y="180" class="small">数据</text>
+<path d="M40 201H1150" stroke="#d8e1de"/>
+<rect x="41" y="202" width="250" height="631" fill="#fff"/>
+<text x="61" y="238" class="label">查找车站</text>
+<rect x="60" y="254" width="212" height="42" rx="7" fill="#f5f7f4" stroke="#a6beb8"/>
+<text x="76" y="282" font-size="16">沈阳北站</text><text x="62" y="322" class="small">搜索沈阳试验区</text>
+<rect x="59" y="338" width="214" height="66" rx="7" fill="#e7f2ee"/>
+<text x="73" y="363" font-size="17" font-weight="700">沈阳北</text><text x="73" y="389" class="small">铁路记录 · 站点</text>
+<text x="73" y="439" font-size="17">沈阳北站</text><text x="73" y="465" class="small">地铁 · 站点</text>
+<path d="M60 487H271" stroke="#d8e1de"/>
+<text x="62" y="520" class="label">图层</text>
+<text x="62" y="553" font-size="16">☑ 铁路  ☑ 车站</text><text x="62" y="584" font-size="16">☐ 地铁 / 轻轨</text>
+<text x="62" y="615" font-size="16">☐ 有轨电车</text><text x="62" y="657" class="small">状态</text>
+<text x="62" y="687" font-size="16">☑ 当前标注  ☐ 建设</text><text x="62" y="718" font-size="16">☐ 停用  ☐ 废弃</text>
+<text x="62" y="796" class="small">恢复默认</text>
+<rect x="291" y="202" width="558" height="631" fill="#eaf0eb"/>
+<path d="M310 780C390 710 450 670 480 566S570 355 590 220M330 220C375 350 450 425 480 566S680 690 830 780" class="track"/>
+<path d="M305 600C440 540 580 535 825 515" class="urban"/>
+<path d="M360 800C410 660 530 540 810 255" class="dash"/>
+<path d="M310 780C390 710 450 670 480 566S570 355 590 220" fill="none" stroke="#154e9d" stroke-width="10" opacity=".35"/>
+<circle cx="480" cy="566" r="11" fill="#fff" stroke="#154e9d" stroke-width="5"/>
+<rect x="498" y="540" width="92" height="34" rx="5" fill="#fff"/><text x="510" y="563" font-size="16">沈阳北</text>
+<circle cx="390" cy="713" r="6" fill="#fff" stroke="#147c74" stroke-width="3"/>
+<rect x="805" y="222" width="31" height="70" rx="5" class="panel"/><text x="815" y="246" font-size="22">+</text><text x="815" y="277" font-size="22">−</text>
+<text x="310" y="803" font-size="12">© OpenStreetMap contributors · ODbL</text>
+<rect x="849" y="202" width="300" height="631" fill="#fff"/>
+<text x="873" y="242" class="title">沈阳北</text><text x="1116" y="240" font-size="22">×</text>
+<text x="873" y="275" class="small">车站 · 铁路记录</text>
+<rect x="872" y="296" width="252" height="55" rx="7" fill="#f5f7f4"/>
+<text x="885" y="319" font-size="14">OSM 当前标注</text><text x="885" y="339" font-size="12" fill="#526770">未核验实际运营状态</text>
+<text x="873" y="389" font-size="16">名称与别名</text><text x="873" y="418" class="small">沈阳北 · 沈阳北站</text>
+<text x="873" y="462" font-size="16">车站编码</text><text x="873" y="491" class="small">53885（源标注）</text>
+<text x="873" y="535" font-size="16">关联记录</text><text x="873" y="564" class="small">仅展示有明确证据的关联</text>
+<path d="M872 593H1125" stroke="#d8e1de"/>
+<text x="873" y="628" font-size="16">来源记录 ▾</text><text x="873" y="657" class="small">快照时间 · OSM 原始记录</text>
+<text x="873" y="687" class="small">原始标签（折叠）</text>
+<rect x="872" y="747" width="252" height="43" rx="7" fill="#147c74"/><text x="941" y="775" font-size="16" style="fill:white">分享此视图</text>
+<text x="1190" y="122" class="label">手机：地图与底部面板</text>
+<rect x="1190" y="144" width="402" height="690" rx="28" fill="#eaf0eb" stroke="#ccd9d3" stroke-width="2"/>
+<path d="M1210 630Q1290 500 1370 420T1555 250M1210 270Q1330 400 1400 465T1575 550" class="track"/>
+<path d="M1210 440Q1400 350 1570 400" class="urban"/>
+<rect x="1210" y="170" width="360" height="50" rx="12" class="panel"/><text x="1227" y="202" font-size="16">查找车站</text><text x="1445" y="202" class="small">沈阳 ▾</text>
+<circle cx="1370" cy="420" r="9" fill="#fff" stroke="#154e9d" stroke-width="4"/>
+<text x="1390" y="415" font-size="16">沈阳北</text>
+<rect x="1191" y="510" width="400" height="323" rx="20" fill="#fff"/>
+<rect x="1360" y="520" width="62" height="5" rx="3" fill="#cbd8d2"/>
+<text x="1215" y="560" font-size="22" font-weight="700">沈阳北</text><text x="1538" y="558" font-size="22">×</text>
+<text x="1215" y="590" class="small">铁路记录 · 站点</text>
+<path d="M1215 611H1565" stroke="#d8e1de"/>
+<text x="1215" y="642" font-size="16">OSM 当前标注</text><text x="1215" y="673" class="small">快照、来源与属性可继续展开</text>
+<rect x="1215" y="696" width="350" height="43" rx="7" fill="#e7f2ee"/><text x="1320" y="724" font-size="16">展开完整详情</text>
+<text x="1215" y="775" font-size="14">返回结果     图层筛选     分享</text>
+<text x="1215" y="810" font-size="10">© OpenStreetMap contributors · ODbL</text>
+<text x="40" y="880" class="label">关键行为</text><text x="40" y="916" font-size="17">搜索保留身份差异 → 选择并高亮 → 查看可用属性与来源 → 分享同一快照视图</text>
+<text x="40" y="950" class="small">未知字段不补猜；当前标注不等于已核实运营；技术格式与性能指标只出现在探针，不进入正式产品流程。</text>
+</svg>
