@@ -1,0 +1,29 @@
+# Raw and generated geodata
+/data/raw/*
+!/data/raw/.gitkeep
+/data/processed/*
+!/data/processed/.gitkeep
+*.pbf
+*.osm
+*.osm.gz
+*.mbtiles
+*.pmtiles
+*.gpkg
+*.shp
+*.shx
+*.dbf
+*.geojson
+*.part
+
+# Build and local configuration
+target/
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+Thumbs.db
