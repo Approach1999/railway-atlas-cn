@@ -1,0 +1,248 @@
+{
+  "date": "2026-10-27T04:27:34.203375+00:00",
+  "asset": "index-CySf3A_f.js",
+  "sha256": {
+    "apps/web/client/src/line-label-controller.ts": "d4f06ea47dcf9a426db62746c8972d913d0d452b60c601c5dd5a9b744ff59008",
+    "apps/web/client/src/line-label-candidates.ts": "de0d360f93639e533ae0f0bf376f50b2094dc2f17ba5b1bf787f1298f6b83e12",
+    "apps/web/client/src/line-label-controller.test.mjs": "eef9d844b04145d56a243583616208737c4710e519a4520b463130ea4d393e53",
+    "apps/web/client/src/line-label-candidates.test.mjs": "596f320aaf70de89a63dbbe0ea47029edb684108656a6dfef95ffd3980445321",
+    "apps/web/client/src/line-label-fragments.ts": "cbb98818cd87f12e5fc87af25ece19b24a450b1f2dd13dea760a714dde21406f",
+    "apps/web/client/src/map-controller.ts": "500767a624a6ec165d6705cec14f10b58a85752ffbaf3d3b46c49ea0648ce51b",
+    "scripts/diagnose_label_filter_cost.cjs": "70a89c4918b22b5c3685d865868e686829a3936489c28e4996abdc705d4befcf",
+    "scripts/verify_label_candidate_cache.cjs": "aaf79e96a011c6f6f743c35aa8a169e99a88967c0ba4afb1bcc428a790e26d37",
+    "scripts/verify_label_candidate_reuse.mjs": "2aa8b679f6eb0d2cf9a91158fabb52a859b991765368da9ea178cf122b1a0aa4",
+    "scripts/benchmark_filters.cjs": "59d397f4c867c56cc2d72d2d784af439a69b330e7e7a0006175b90491573ee04",
+    "scripts/benchmark_client.cjs": "d49e6a113b5b99d2b6d75ad2d5a6829f78cf9532ade204ce64ecf4bc859c3647",
+    "scripts/benchmark_style_guard.cjs": "beefb1b9cdbd3871ae43499e3982acc4e818642a1b6cb9a55603c073300914cd",
+    "apps/web/client/dist/assets/index-CySf3A_f.js": "40023ed6750f817042794ec806895593c1d05e6afe52c361b43bc7e366ddd822",
+    "apps/web/client/dist/index.html": "43e3090def998e023e4549b70db2f0037a2e9687580606ac1d6cbf4e870a9db6",
+    "data/processed/shenyang-mvp-20261023/dataset.json": "e5d9da79170c41c428d8f971ddc8a3bb12bda3c66b856f4243c912d5469d2404"
+  },
+  "tests": {
+    "passed": 103,
+    "failed": 0,
+    "log_sha256": "ff92285d710d7ab8a293208b01b966c882a6fe179d17d1e8e8025514ad9a206a",
+    "strict_types_and_production_build": "passed; final build preserves browser-observed JS hash"
+  },
+  "reports": {
+    "browser": {
+      "local_path": "data/manifests/local/label-filter-cache/browser/report.json",
+      "sha256": "23d9a9fa60dbe64043aa59bbb2479980ab37d12f2c7aa535937c5a532d7d87d6",
+      "checks": 6
+    },
+    "invalidation": {
+      "local_path": "data/manifests/local/label-filter-cache/invalidation/report.json",
+      "sha256": "cba73f03f300ad4ecc7cc01f7ff1e4806fbb9fb0f592bec8790c2781694a2a2e",
+      "checks": 4
+    },
+    "replay": {
+      "local_path": "data/manifests/local/label-filter-cache/replay.json",
+      "sha256": "d624b9174ae39406c4e26a70789620cda97fc7ab667867d684cb044c890115f8",
+      "checks": 32
+    },
+    "diagnostic_before": {
+      "local_path": "data/manifests/local/label-filter-cost/before/report.json",
+      "sha256": "7dcdff7fc7be32ef36e5a04c56803099ddd43a66b7d80305fcfe9660eab755e4",
+      "queries_per_sample": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "diagnostic_after": {
+      "local_path": "data/manifests/local/label-filter-cost/after/report.json",
+      "sha256": "616ddc800901b00168b9347c38544c0b098d2db94d3602db0a8a33f73ff3bdd1",
+      "queries_per_sample": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "filters": {
+      "local_path": "data/manifests/local/label-filter-cache/performance/benchmark-filters.json",
+      "sha256": "b7f368d20f8ea344ce889a60b91bed8fb5d719dd497f94ff483302da81ecdaa2",
+      "conditions": {
+        "renderer": "default",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "download_mbps": 10,
+        "latency_ms": 100,
+        "basemap": false,
+        "scope": "Alternating real overview/highspeed presets, source-ready render and subsequent idle. Not GPU/display completion, all filter combinations, other browsers or real devices."
+      },
+      "machine": {
+        "platform": "win32",
+        "release": "10.0.26200",
+        "cpu": "Intel(R) Core(TM) Ultra 5 125H"
+      },
+      "browser": "155.0.8059.85",
+      "scenes": [
+        {
+          "name": "overview",
+          "summary": {
+            "applied_ms": {
+              "samples": 100,
+              "median": 8.100000008940697,
+              "p95": 10.800000011920929,
+              "max": 12.299999997019768
+            },
+            "rendered_ms": {
+              "samples": 100,
+              "median": 66.5,
+              "p95": 90.1000000089407,
+              "max": 112.40000000596046
+            },
+            "settled_ms": {
+              "samples": 100,
+              "median": 609.1000000089407,
+              "p95": 681.7000000029802,
+              "max": 711.4000000059605
+            }
+          },
+          "samples": 100
+        },
+        {
+          "name": "station-yard",
+          "summary": {
+            "applied_ms": {
+              "samples": 100,
+              "median": 6.700000002980232,
+              "p95": 9,
+              "max": 10.600000008940697
+            },
+            "rendered_ms": {
+              "samples": 100,
+              "median": 37.6000000089407,
+              "p95": 48.6000000089407,
+              "max": 56.400000005960464
+            },
+            "settled_ms": {
+              "samples": 100,
+              "median": 601.2000000029802,
+              "p95": 614.2000000029802,
+              "max": 649.7000000029802
+            }
+          },
+          "samples": 100
+        }
+      ]
+    },
+    "filters_before": {
+      "local_path": "data/manifests/local/line-label-integration/filters-slim/benchmark-filters.json",
+      "sha256": "b9cba69eed86a31575ab1bfc7fe543c2021786bc3ceaa9aaa19261481ac702e4",
+      "asset": "index-C6agegAj.js",
+      "scenes": [
+        {
+          "name": "overview",
+          "summary": {
+            "applied_ms": {
+              "samples": 100,
+              "median": 44.8999999910593,
+              "p95": 57,
+              "max": 69.40000000596046
+            },
+            "rendered_ms": {
+              "samples": 100,
+              "median": 118.5,
+              "p95": 145.6000000089407,
+              "max": 169.30000001192093
+            },
+            "settled_ms": {
+              "samples": 100,
+              "median": 617.8999999910593,
+              "p95": 733.4000000059605,
+              "max": 763
+            }
+          }
+        },
+        {
+          "name": "station-yard",
+          "summary": {
+            "applied_ms": {
+              "samples": 100,
+              "median": 9,
+              "p95": 11.599999994039536,
+              "max": 17.5
+            },
+            "rendered_ms": {
+              "samples": 100,
+              "median": 40,
+              "p95": 50.099999994039536,
+              "max": 58.5
+            },
+            "settled_ms": {
+              "samples": 100,
+              "median": 612.5,
+              "p95": 647.6999999880791,
+              "max": 663
+            }
+          }
+        }
+      ]
+    },
+    "cold": {
+      "local_path": "data/manifests/local/label-filter-cache/cold/benchmark-client.json",
+      "sha256": "e20974e8cedd5746566e3d42538f99c9949ca7f85834fb85f1937c08eb8e1f81",
+      "summary": {
+        "first_usable_ms": {
+          "samples": 30,
+          "median": 1858.800000011921,
+          "p95": 1931.4000000059605,
+          "max": 2058.7999999970198
+        },
+        "index_ready_ms": {
+          "samples": 30,
+          "median": 1041.7999999970198,
+          "p95": 1076.2000000029802,
+          "max": 1146.5
+        },
+        "own_transfer_bytes": {
+          "samples": 30,
+          "median": 695033,
+          "p95": 695033,
+          "max": 695033
+        }
+      },
+      "environment": {
+        "platform": "win32",
+        "release": "10.0.26200",
+        "arch": "x64",
+        "cpu": "Intel(R) Core(TM) Ultra 5 125H",
+        "logical_cpus": 18,
+        "memory_bytes": 33786552320,
+        "renderer": "Headless Chrome with default renderer",
+        "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      "conditions": {
+        "download_mbps": 10,
+        "latency_ms": 100,
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "http_cache": "disabled; new isolated context each trial",
+        "basemap": "off; no third-party requests",
+        "scope": "Exploratory railway-only headless measurements. Not a substitute for default online basemap, headed/manual checks, or real mobile/tablet N01-N04 acceptance."
+      }
+    }
+  },
+  "scope": "One current view preparation, current filters applied before duplicate/spacing selection. No fixed-preset cache, source merging or visibility relaxation. Desktop filter/cold evidence only. Previous pan/software/Edge 200% reports retain original builds.",
+  "remaining": [
+    "Full N01/N02 device and browser matrix; online basemap.",
+    "Full R17 all-view coverage/legibility and independent classification/QA.",
+    "Reader/real-phone/tablet, hosting/retention and licensing reviews."
+  ],
+  "raw_data": "OSM extracts and large input/measurement captures remain ignored."
+}

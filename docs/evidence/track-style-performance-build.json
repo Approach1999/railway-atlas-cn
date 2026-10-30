@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-25T08:28:04.471107+00:00",
+  "asset": "/assets/index-D7DCoTuz.js",
+  "unit_tests": {
+    "passed": 65,
+    "failed": 0
+  },
+  "build": "strict TS/checkJs and Vite build passed",
+  "sha256_at_record_time": {
+    "apps/web/client/src/map-controller.ts": "b92933108fa1823109a22cf28b19919026b0637e4c1b7aa2e8ffa39706d47ecf",
+    "apps/web/client/src/track-width.ts": "53c635b6c68cd8865487de37e4644b6c35fd764f9b490af1ee1bec33f48ad848",
+    "apps/web/shared/model.mjs": "4c615df43e17739fa09a11c06251a032f069d49f8175ea941fe252077cf2ea14",
+    "apps/web/client/dist/index.html": "fdbb8021b879e7a7106173faf8e891519d6752e616ad2b8453cbfec651024fd3",
+    "apps/web/client/dist/assets/index-D7DCoTuz.js": "beda5b2d4de9c102a3dcb271d1324b539113f588c61f8507b7f4f220f1a770af",
+    "apps/web/client/dist/assets/index-_knIG9CR.css": "22da1fe20d8e085839a2b1f536cf329fd53a22d452f3240d21dc4b7396cc0781",
+    "apps/web/client/dist/assets/maplibre-gl-worker-BWso-Bu4.js": "85cce15680b9b7a722d6a5acc8b3674fe56c9cd8d9a34199b889e5e5fe43074f",
+    "scripts/benchmark_client.cjs": "b946ade5888c4a47c4a9e8b7cafc2facec7336f07359f06402cb078e32325d20",
+    "scripts/benchmark_pan.cjs": "ba74e29149dc5c697fac70765121bfa43038f23d35aedb36b402a7f3fe541b89",
+    "scripts/benchmark_style_guard.cjs": "f17bb92dc88855be6cc4e2c485533bc6f95e924d1e641815f3a8b5c793ce6b09",
+    "scripts/verify_style_layer_guard.cjs": "18c36f3815db909c3b6679c6f2c42df7c126c19932b4710aa7cb73e18409542e",
+    "data/processed/shenyang-mvp-20261023/dataset.json": "e5d9da79170c41c428d8f971ddc8a3bb12bda3c66b856f4243c912d5469d2404",
+    "docs/evidence/track-style-performance-default.json": "378dcabfb66fcec0f8108e40b2a23420d22f60e54f4eed28e374ab5841883115",
+    "docs/evidence/track-style-performance-software.json": "3909abe4fc2446f636915d36105dbadd00336f028d5f3176bbecc098ac3bdd1d",
+    "docs/evidence/track-style-pan-default.json": "fec943cd0adab0bb3945cc77607f176163047be8b3632ecbc8a0bfb1ed8188b7",
+    "docs/evidence/track-style-pan-software.json": "f1019e00f4d9da4d15c80926a033ea152f2db0093e4082eadb9e448f5b73e5f5",
+    "docs/evidence/track-style-layer-guard.json": "fb8cc7e9fae762739296415aefb3d026599e95f3925520825c47e3aba61c5eee",
+    "docs/evidence/track-style-performance-regression.json": "d32515a38b6586022b1c2d18e54212465e16463631e97ebbe7f50f88d639e377"
+  },
+  "runner_note": "After the default runs, identical inline installation assertions were extracted to benchmark_style_guard.cjs; software runs and the browser fault regression use that shared guard. The runtime bundle was unchanged across all measurements.",
+  "limitations": [
+    "software render p95 37.2ms exceeds 33ms",
+    "filter timing is UI plus two rAF, not complete GPU rendering",
+    "no real mobile/tablet or default online basemap acceptance",
+    "render submissions and rAF are not physical frame delivery",
+    "actual 200% human walkthrough remains evidence for the prior UI-equivalent build"
+  ]
+}

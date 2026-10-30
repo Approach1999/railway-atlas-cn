@@ -1,0 +1,62 @@
+{"cases":4,"checks":20,"failed":[{"size":{"width":1280,"height":800},"name":"notice-copy-and-box","coveredBy":["maplibregl-ctrl-icon"]},{"size":{"width":1280,"height":800},"name":"empty-view-share-open","coveredBy":["map-notice","map-notice","map-notice"]},{"size":{"width":1280,"height":800},"name":"empty-view-home","coveredBy":["map-notice","map-notice","map-notice"]},{"size":{"width":1280,"height":800},"name":"empty-view-panel-toggle","coveredBy":["map-notice","map-notice","map-notice"]}]}
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+
++ [
++   {
++     coveredBy: [
++       'maplibregl-ctrl-icon'
++     ],
++     name: 'notice-copy-and-box',
++     size: {
++       height: 800,
++       width: 1280
++     }
++   },
++   {
++     coveredBy: [
++       'map-notice',
++       'map-notice',
++       'map-notice'
++     ],
++     name: 'empty-view-share-open',
++     size: {
++       height: 800,
++       width: 1280
++     }
++   },
++   {
++     coveredBy: [
++       'map-notice',
++       'map-notice',
++       'map-notice'
++     ],
++     name: 'empty-view-home',
++     size: {
++       height: 800,
++       width: 1280
++     }
++   },
++   {
++     coveredBy: [
++       'map-notice',
++       'map-notice',
++       'map-notice'
++     ],
++     name: 'empty-view-panel-toggle',
++     size: {
++       height: 800,
++       width: 1280
++     }
++   }
++ ]
+- []
+
+    at C:\Users\21965\Documents\Codex\2026-10-22\referenced-chatgpt-conversation-this-is-an\work\checkout\scripts\verify_notice_zoom.cjs:47:332 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: [Array],
+  expected: [],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}

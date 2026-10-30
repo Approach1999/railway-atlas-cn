@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-25T10:41:00.968542+00:00",
+  "asset": "/assets/index-B5hj9MUm.js",
+  "unit_tests": {
+    "passed": 70,
+    "failed": 0
+  },
+  "data_independent_catalog_test": {
+    "command": "node --permission --allow-fs-read=apps/web/client apps/web/client/src/catalog-validation.test.mjs",
+    "passed": 3,
+    "failed": 0
+  },
+  "build": "strict TypeScript/checkJs and production build passed",
+  "checks": {
+    "malformed_directory_isolation_and_recovery": 7,
+    "catalog_regression": 8,
+    "staging_races": 3,
+    "filter_controls_regression": 8
+  },
+  "source_and_evidence_sha256": {
+    "apps/web/client/src/DatasetPicker.tsx": "078a35cb433841cd461bf839bc2ad5dae35a039eba38d40a2c399f223f6a111c",
+    "apps/web/client/src/catalog-validation.ts": "f31d3b7959fc52464f907aa576206cf78bdc11b8da858d0d11a2cc7293d67ec8",
+    "apps/web/client/src/catalog-validation.test.mjs": "995e161fa14ed905eec2a7d0aecf9b8c3a50cf68a4ef3a15fbe15ca7754cf04f",
+    "apps/web/client/src/fixtures/catalog.json": "bb5cdf1aefc6997f695f6c77aafb917b7106773b7f493d5cee0dd2c6dc68b35e",
+    "apps/web/client/dist/index.html": "6f0f7f1b71b7f7623f5639d6c3ec5b6ea3509c798353f72c9d84b931694497b3",
+    "apps/web/client/dist/assets/index-B5hj9MUm.js": "ccd700e1bec4e63ac33d5c575307c0ced8aa244de595782b984d579169177e8e",
+    "scripts/verify_catalog_boundary.cjs": "e8987335aa00c570ddb81f8dbc13f88ede3d7510f931b2b317d5d938b25e3046",
+    "scripts/verify_catalog_races.cjs": "37f8b26907a41e8a4a61c4f2ca10ffb3481356c4293472103a1bb9234e2c4dd0",
+    "docs/evidence/history/DatasetPicker-before-catalog-validation.tsx": "5bff637a3c92615b08773dc333c0c2f6c4c26c07042c745944cc112587a694f4",
+    "docs/evidence/catalog-boundary-before.json": "5c3a9a50ecca5cea80439c1bbd818155d91826e054e9009c2cb907d64a376af3",
+    "docs/evidence/catalog-boundary-after.json": "a80ea56eee2057a48e055e394e3350e6b2cf78416a610e210afc4e8f8f79f5ce",
+    "docs/evidence/catalog-boundary-regression.json": "fd98f941c3f5b07bf13ccc9342ca0919e79dcaa6e762da070cb1fb3e7d856930",
+    "docs/evidence/catalog-boundary-races.json": "5964f9904995ae5c30532ccede5a28ec693328266ee086c3219da7335e867158",
+    "docs/evidence/catalog-boundary-filters.json": "7fb389eb443e930cf54d27168acdc7e58450cbd3002d3fea410639830b8926d6"
+  },
+  "scope": "New directory normalization, source-compatible actual snapshots and isolated browser fault/cancellation tests. No change to snapshot data or staging cancellation logic.",
+  "limitations": [
+    "prior version-status timeout has no established cause and remains open",
+    "held requests actually abort; this does not cover arbitrary uncancellable work or all interleavings",
+    "prior performance and actual-200% walkthroughs retain their original build fingerprints",
+    "real-device, browser matrix, independent review and other MVP requirements remain open"
+  ]
+}

@@ -1,0 +1,2124 @@
+{
+  "date": "2026-10-26T13:22:35.584Z",
+  "browser": "155.0.8059.85",
+  "observation": {
+    "original_sha256": "bfad4ee26fa0641793ea6b1896a7a759b89c6f8d115f2200d3862dd42cf88010",
+    "observed_sha256": "01f4ad8e3feded11b34659892de6a627c81c3d193aa26cc0c235a4e6587aa6a5",
+    "candidate_spacing": 600,
+    "production_changed": false,
+    "acceptance": false,
+    "scope": "Isolated response layout experiment, not adopted in product; no data/camera mutation or performance acceptance."
+  },
+  "scenes": [
+    {
+      "name": "overview-z8",
+      "hash": "8.00/41.80000/123.42000",
+      "types": "rail,other,unknown",
+      "spacing": 600,
+      "viewport": [
+        1094,
+        924
+      ],
+      "buckets": [],
+      "anchors": [],
+      "duplicates_excluded": 0,
+      "hidden_excluded": 0,
+      "close_pairs": [],
+      "query_feature_ids": []
+    },
+    {
+      "name": "overview-z9",
+      "hash": "9.00/41.80000/123.42000",
+      "types": "rail,other,unknown",
+      "spacing": 600,
+      "viewport": [
+        1094,
+        924
+      ],
+      "buckets": [
+        {
+          "tile": [
+            9,
+            431,
+            191
+          ],
+          "symbols": 1,
+          "first": {
+            "x": 7179,
+            "y": 184,
+            "crossTileID": 18,
+            "placement": {
+              "text": true,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": true
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        },
+        {
+          "tile": [
+            9,
+            432,
+            190
+          ],
+          "symbols": 1,
+          "first": {
+            "x": 556,
+            "y": 2643,
+            "crossTileID": 19,
+            "placement": {
+              "text": true,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": true
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        },
+        {
+          "tile": [
+            9,
+            431,
+            190
+          ],
+          "symbols": 12,
+          "first": {
+            "x": 2545,
+            "y": 2410,
+            "crossTileID": 6,
+            "placement": {
+              "text": false,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": false
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        }
+      ],
+      "anchors": [
+        {
+          "cross_tile_id": 18,
+          "osm_id": "way/833975212",
+          "identity": "way/833975212",
+          "name": "沈丹线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            9,
+            431,
+            191
+          ],
+          "anchor": [
+            723.9861666666825,
+            757.5163593005824
+          ]
+        },
+        {
+          "cross_tile_id": 19,
+          "osm_id": "way/58066306",
+          "identity": "way/58066306",
+          "name": "沈吉线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            9,
+            432,
+            190
+          ],
+          "anchor": [
+            822.0486666666825,
+            399.20385930056096
+          ]
+        },
+        {
+          "cross_tile_id": 7,
+          "osm_id": "way/42645777",
+          "identity": "way/42645777",
+          "name": "于虎线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            9,
+            431,
+            190
+          ],
+          "anchor": [
+            534.4236666666825,
+            371.76635930058245
+          ]
+        },
+        {
+          "cross_tile_id": 8,
+          "osm_id": "way/42646230",
+          "identity": "way/42646230",
+          "name": "京哈线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            9,
+            431,
+            190
+          ],
+          "anchor": [
+            425.5486666666825,
+            427.14135930058245
+          ]
+        },
+        {
+          "cross_tile_id": 9,
+          "osm_id": "way/42681164",
+          "identity": "way/42681164",
+          "name": "苏抚线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            9,
+            431,
+            190
+          ],
+          "anchor": [
+            554.7986666666825,
+            542.6413593005824
+          ]
+        },
+        {
+          "cross_tile_id": 10,
+          "osm_id": "way/42682923",
+          "identity": "way/42682923",
+          "name": "沈大线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            9,
+            431,
+            190
+          ],
+          "anchor": [
+            507.7986666666825,
+            568.1413593005824
+          ]
+        },
+        {
+          "cross_tile_id": 11,
+          "osm_id": "way/205578865",
+          "identity": "way/205578865",
+          "name": "沈大高速线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            9,
+            431,
+            190
+          ],
+          "anchor": [
+            528.5486666666825,
+            664.2038593005824
+          ]
+        },
+        {
+          "cross_tile_id": 13,
+          "osm_id": "way/471497353",
+          "identity": "way/471497353",
+          "name": "京哈高速线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            9,
+            431,
+            190
+          ],
+          "anchor": [
+            583.4236666666825,
+            346.95385930058245
+          ]
+        },
+        {
+          "cross_tile_id": 17,
+          "osm_id": "way/1424534250",
+          "identity": "way/1424534250",
+          "name": "沈丹线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            9,
+            431,
+            190
+          ],
+          "anchor": [
+            572.7986666666825,
+            679.5788593005824
+          ]
+        }
+      ],
+      "duplicates_excluded": 0,
+      "hidden_excluded": 5,
+      "close_pairs": [],
+      "query_feature_ids": [
+        "way/1424534250",
+        "way/471497353",
+        "way/205578865",
+        "way/42682923",
+        "way/42681164",
+        "way/42646230",
+        "way/42645777",
+        "way/58066306",
+        "way/833975212"
+      ]
+    },
+    {
+      "name": "overview-z10",
+      "hash": "10.00/41.80000/123.42000",
+      "types": "rail,other,unknown",
+      "spacing": 600,
+      "viewport": [
+        1094,
+        924
+      ],
+      "buckets": [
+        {
+          "tile": [
+            10,
+            863,
+            381
+          ],
+          "symbols": 4,
+          "first": {
+            "x": 4471,
+            "y": 196,
+            "crossTileID": 31,
+            "placement": {
+              "text": true,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": true
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        },
+        {
+          "tile": [
+            10,
+            862,
+            381
+          ],
+          "symbols": 4,
+          "first": {
+            "x": 7422,
+            "y": 2550,
+            "crossTileID": 16,
+            "placement": {
+              "text": true,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": true
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        },
+        {
+          "tile": [
+            10,
+            861,
+            381
+          ],
+          "symbols": 1,
+          "first": {
+            "x": 7034,
+            "y": 3113,
+            "crossTileID": 30,
+            "placement": {
+              "text": true,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": true
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        },
+        {
+          "tile": [
+            10,
+            864,
+            380
+          ],
+          "symbols": 2,
+          "first": {
+            "x": 1781,
+            "y": 5261,
+            "crossTileID": 28,
+            "placement": {
+              "text": true,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": true
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        },
+        {
+          "tile": [
+            10,
+            863,
+            380
+          ],
+          "symbols": 8,
+          "first": {
+            "x": 790,
+            "y": 4041,
+            "crossTileID": 20,
+            "placement": {
+              "text": true,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": true
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        },
+        {
+          "tile": [
+            10,
+            862,
+            380
+          ],
+          "symbols": 10,
+          "first": {
+            "x": 5615,
+            "y": 5240,
+            "crossTileID": 6,
+            "placement": {
+              "text": true,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": true
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        }
+      ],
+      "anchors": [
+        {
+          "cross_tile_id": 31,
+          "osm_id": "way/42681167",
+          "identity": "way/42681167",
+          "name": "苏抚线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            863,
+            381
+          ],
+          "anchor": [
+            795.034833333365,
+            530.2827186011649
+          ]
+        },
+        {
+          "cross_tile_id": 16,
+          "osm_id": "way/42682914",
+          "identity": "way/42682914",
+          "name": "苏抚线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            862,
+            381
+          ],
+          "anchor": [
+            467.472333333365,
+            677.4077186011649
+          ]
+        },
+        {
+          "cross_tile_id": 17,
+          "osm_id": "way/42682923",
+          "identity": "way/42682923",
+          "name": "沈大线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            862,
+            381
+          ],
+          "anchor": [
+            458.409833333365,
+            807.7202186012079
+          ]
+        },
+        {
+          "cross_tile_id": 18,
+          "osm_id": "way/42683119",
+          "identity": "way/42683119",
+          "name": "浑揽线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            862,
+            381
+          ],
+          "anchor": [
+            476.597333333365,
+            578.0952186011219
+          ]
+        },
+        {
+          "cross_tile_id": 19,
+          "osm_id": "way/607139958",
+          "identity": "way/607139958",
+          "name": "沈大高速线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            862,
+            381
+          ],
+          "anchor": [
+            500.222333333365,
+            912.8452186012079
+          ]
+        },
+        {
+          "cross_tile_id": 29,
+          "osm_id": "way/1433741621",
+          "identity": "way/1433741621",
+          "name": "沈佳高速线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            864,
+            380
+          ],
+          "anchor": [
+            1065.847333333365,
+            285.7202186011649
+          ]
+        },
+        {
+          "cross_tile_id": 20,
+          "osm_id": "way/86561906",
+          "identity": "way/86561906",
+          "name": "于虎线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            863,
+            380
+          ],
+          "anchor": [
+            564.972333333365,
+            258.59521860112187
+          ]
+        },
+        {
+          "cross_tile_id": 21,
+          "osm_id": "way/191149337",
+          "identity": "way/191149337",
+          "name": "田东线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            863,
+            380
+          ],
+          "anchor": [
+            643.222333333365,
+            252.34521860116487
+          ]
+        },
+        {
+          "cross_tile_id": 23,
+          "osm_id": "way/471524857",
+          "identity": "way/471524857",
+          "name": "京哈线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            863,
+            380
+          ],
+          "anchor": [
+            605.784833333365,
+            397.0952186011649
+          ]
+        },
+        {
+          "cross_tile_id": 24,
+          "osm_id": "way/1348469112",
+          "identity": "way/1348469112",
+          "name": "沈吉线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            863,
+            380
+          ],
+          "anchor": [
+            759.847333333365,
+            371.3452186011649
+          ]
+        },
+        {
+          "cross_tile_id": 27,
+          "osm_id": "way/1556655088",
+          "identity": "way/1556655088",
+          "name": "苏抚线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            863,
+            380
+          ],
+          "anchor": [
+            926.722333333365,
+            471.9077186011649
+          ]
+        },
+        {
+          "cross_tile_id": 6,
+          "osm_id": "way/38810381",
+          "identity": "way/38810381",
+          "name": "沈山线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            862,
+            380
+          ],
+          "anchor": [
+            354.534833333365,
+            333.5327186011649
+          ]
+        },
+        {
+          "cross_tile_id": 7,
+          "osm_id": "way/42645847",
+          "identity": "way/42645847",
+          "name": "于虎线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            862,
+            380
+          ],
+          "anchor": [
+            411.909833333365,
+            342.2202186011649
+          ]
+        },
+        {
+          "cross_tile_id": 8,
+          "osm_id": "way/42646230",
+          "identity": "way/42646230",
+          "name": "京哈线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            862,
+            380
+          ],
+          "anchor": [
+            300.472333333365,
+            396.0327186011649
+          ]
+        },
+        {
+          "cross_tile_id": 9,
+          "osm_id": "way/423528962",
+          "identity": "way/423528962",
+          "name": "沈山北道线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            862,
+            380
+          ],
+          "anchor": [
+            440.097333333365,
+            415.2827186011649
+          ]
+        },
+        {
+          "cross_tile_id": 15,
+          "osm_id": "way/1365929043",
+          "identity": "way/1365929043",
+          "name": "于揽三线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            862,
+            380
+          ],
+          "anchor": [
+            388.347333333365,
+            455.6577186011649
+          ]
+        }
+      ],
+      "duplicates_excluded": 0,
+      "hidden_excluded": 9,
+      "close_pairs": [],
+      "query_feature_ids": [
+        "way/1365929043",
+        "way/423528962",
+        "way/42646230",
+        "way/42645847",
+        "way/38810381",
+        "way/1556655088",
+        "way/1348469112",
+        "way/471524857",
+        "way/191149337",
+        "way/86561906",
+        "way/1433741621",
+        "way/607139958",
+        "way/42683119",
+        "way/42682923",
+        "way/42682914",
+        "way/1370985510",
+        "way/42681167"
+      ]
+    },
+    {
+      "name": "overview",
+      "hash": "10.50/41.80000/123.42000",
+      "types": "rail,other,unknown",
+      "spacing": 600,
+      "viewport": [
+        1094,
+        924
+      ],
+      "buckets": [
+        {
+          "tile": [
+            10,
+            863,
+            381
+          ],
+          "symbols": 4,
+          "first": {
+            "x": 4471,
+            "y": 196,
+            "crossTileID": 28,
+            "placement": {
+              "text": true,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": true
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        },
+        {
+          "tile": [
+            10,
+            862,
+            381
+          ],
+          "symbols": 4,
+          "first": {
+            "x": 7422,
+            "y": 2550,
+            "crossTileID": 24,
+            "placement": {
+              "text": true,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": true
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        },
+        {
+          "tile": [
+            10,
+            863,
+            380
+          ],
+          "symbols": 8,
+          "first": {
+            "x": 790,
+            "y": 4041,
+            "crossTileID": 6,
+            "placement": {
+              "text": true,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": true
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        },
+        {
+          "tile": [
+            10,
+            862,
+            380
+          ],
+          "symbols": 10,
+          "first": {
+            "x": 5615,
+            "y": 5240,
+            "crossTileID": 14,
+            "placement": {
+              "text": true,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": true
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        }
+      ],
+      "anchors": [
+        {
+          "cross_tile_id": 28,
+          "osm_id": "way/42681167",
+          "identity": "way/42681167",
+          "name": "苏抚线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            863,
+            381
+          ],
+          "anchor": [
+            897.77422524092,
+            558.5663467215168
+          ]
+        },
+        {
+          "cross_tile_id": 24,
+          "osm_id": "way/42682914",
+          "identity": "way/42682914",
+          "name": "苏抚线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            862,
+            381
+          ],
+          "anchor": [
+            434.5308952161244,
+            766.632517085662
+          ]
+        },
+        {
+          "cross_tile_id": 26,
+          "osm_id": "way/42683119",
+          "identity": "way/42683119",
+          "name": "浑揽线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            862,
+            381
+          ],
+          "anchor": [
+            447.4355939728185,
+            626.1834326724039
+          ]
+        },
+        {
+          "cross_tile_id": 6,
+          "osm_id": "way/86561906",
+          "identity": "way/86561906",
+          "name": "于虎线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            863,
+            380
+          ],
+          "anchor": [
+            572.4167175474449,
+            174.34219949422632
+          ]
+        },
+        {
+          "cross_tile_id": 7,
+          "osm_id": "way/191149337",
+          "identity": "way/191149337",
+          "name": "田东线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            863,
+            380
+          ],
+          "anchor": [
+            683.0789288032106,
+            165.50336472941683
+          ]
+        },
+        {
+          "cross_tile_id": 8,
+          "osm_id": "way/385360730",
+          "identity": "way/385360730",
+          "name": "京哈高速线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            863,
+            380
+          ],
+          "anchor": [
+            644.9835509667321,
+            113.88456970272642
+          ]
+        },
+        {
+          "cross_tile_id": 9,
+          "osm_id": "way/471524857",
+          "identity": "way/471524857",
+          "name": "京哈线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            863,
+            380
+          ],
+          "anchor": [
+            630.1343085617902,
+            370.21077788293275
+          ]
+        },
+        {
+          "cross_tile_id": 10,
+          "osm_id": "way/1348469112",
+          "identity": "way/1348469112",
+          "name": "沈吉线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            863,
+            380
+          ],
+          "anchor": [
+            848.0115855149548,
+            333.79477865179035
+          ]
+        },
+        {
+          "cross_tile_id": 12,
+          "osm_id": "way/1365674755",
+          "identity": "way/1365674755",
+          "name": "沈佳高速线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            863,
+            380
+          ],
+          "anchor": [
+            893.7083612492074,
+            299.6768764595879
+          ]
+        },
+        {
+          "cross_tile_id": 13,
+          "osm_id": "way/1556655088",
+          "identity": "way/1556655088",
+          "name": "苏抚线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            863,
+            380
+          ],
+          "anchor": [
+            1084.0084737359532,
+            476.0116300179501
+          ]
+        },
+        {
+          "cross_tile_id": 14,
+          "osm_id": "way/38810381",
+          "identity": "way/38810381",
+          "name": "沈山线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            862,
+            380
+          ],
+          "anchor": [
+            274.81315101551974,
+            280.31982832454673
+          ]
+        },
+        {
+          "cross_tile_id": 15,
+          "osm_id": "way/42645847",
+          "identity": "way/42645847",
+          "name": "于虎线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            862,
+            380
+          ],
+          "anchor": [
+            355.95365415679083,
+            292.6058086477231
+          ]
+        },
+        {
+          "cross_tile_id": 16,
+          "osm_id": "way/42646230",
+          "identity": "way/42646230",
+          "name": "京哈线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            862,
+            380
+          ],
+          "anchor": [
+            198.35723029982304,
+            368.70817597289965
+          ]
+        },
+        {
+          "cross_tile_id": 17,
+          "osm_id": "way/423528962",
+          "identity": "way/423528962",
+          "name": "沈山北道线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            862,
+            380
+          ],
+          "anchor": [
+            395.8167989461281,
+            395.93178704858343
+          ]
+        },
+        {
+          "cross_tile_id": 23,
+          "osm_id": "way/1365929043",
+          "identity": "way/1365929043",
+          "name": "于揽三线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            10,
+            862,
+            380
+          ],
+          "anchor": [
+            322.63124709332317,
+            453.030659629411
+          ]
+        }
+      ],
+      "duplicates_excluded": 0,
+      "hidden_excluded": 10,
+      "close_pairs": [],
+      "query_feature_ids": [
+        "way/1365929043",
+        "way/423528962",
+        "way/42646230",
+        "way/42645847",
+        "way/38810381",
+        "way/1556655088",
+        "way/1365674755",
+        "way/1348469112",
+        "way/471524857",
+        "way/385360730",
+        "way/191149337",
+        "way/86561906",
+        "way/42683119",
+        "way/42682914",
+        "way/42681167"
+      ]
+    },
+    {
+      "name": "overview-z11",
+      "hash": "11.00/41.80000/123.42000",
+      "types": "rail,other,unknown",
+      "spacing": 600,
+      "viewport": [
+        1094,
+        924
+      ],
+      "buckets": [
+        {
+          "tile": [
+            11,
+            1727,
+            762
+          ],
+          "symbols": 1,
+          "first": {
+            "x": 832,
+            "y": 349,
+            "crossTileID": 38,
+            "placement": {
+              "text": true,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": true
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        },
+        {
+          "tile": [
+            11,
+            1726,
+            762
+          ],
+          "symbols": 3,
+          "first": {
+            "x": 4552,
+            "y": 2273,
+            "crossTileID": 12,
+            "placement": {
+              "text": true,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": true
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        },
+        {
+          "tile": [
+            11,
+            1725,
+            762
+          ],
+          "symbols": 7,
+          "first": {
+            "x": 7766,
+            "y": 3350,
+            "crossTileID": 25,
+            "placement": {
+              "text": true,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": true
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        },
+        {
+          "tile": [
+            11,
+            1727,
+            761
+          ],
+          "symbols": 3,
+          "first": {
+            "x": 6648,
+            "y": 5611,
+            "crossTileID": 35,
+            "placement": {
+              "text": false,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": false
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        },
+        {
+          "tile": [
+            11,
+            1726,
+            761
+          ],
+          "symbols": 6,
+          "first": {
+            "x": 6149,
+            "y": 892,
+            "crossTileID": 6,
+            "placement": {
+              "text": true,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": true
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        },
+        {
+          "tile": [
+            11,
+            1725,
+            761
+          ],
+          "symbols": 10,
+          "first": {
+            "x": 3601,
+            "y": 2645,
+            "crossTileID": 15,
+            "placement": {
+              "text": true,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": true
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        },
+        {
+          "tile": [
+            11,
+            1726,
+            760
+          ],
+          "symbols": 3,
+          "first": {
+            "x": 5020,
+            "y": 3588,
+            "crossTileID": 32,
+            "placement": {
+              "text": false,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": false
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        }
+      ],
+      "anchors": [
+        {
+          "cross_tile_id": 38,
+          "osm_id": "way/1556655078",
+          "identity": "way/1556655078",
+          "name": "苏抚线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            11,
+            1727,
+            762
+          ],
+          "anchor": [
+            1048.19466666673,
+            595.8779372023298
+          ]
+        },
+        {
+          "cross_tile_id": 12,
+          "osm_id": "way/42681167",
+          "identity": "way/42681167",
+          "name": "苏抚线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            11,
+            1726,
+            762
+          ],
+          "anchor": [
+            768.69466666673,
+            716.1279372023298
+          ]
+        },
+        {
+          "cross_tile_id": 25,
+          "osm_id": "way/42681164",
+          "identity": "way/42681164",
+          "name": "苏抚线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            11,
+            1725,
+            762
+          ],
+          "anchor": [
+            457.56966666673,
+            783.4404372024158
+          ]
+        },
+        {
+          "cross_tile_id": 26,
+          "osm_id": "way/42682923",
+          "identity": "way/42682923",
+          "name": "沈大线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            11,
+            1725,
+            762
+          ],
+          "anchor": [
+            419.44466666673,
+            771.3154372022437
+          ]
+        },
+        {
+          "cross_tile_id": 27,
+          "osm_id": "way/42683119",
+          "identity": "way/42683119",
+          "name": "浑揽线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            11,
+            1725,
+            762
+          ],
+          "anchor": [
+            407.56966666673,
+            699.0029372023298
+          ]
+        },
+        {
+          "cross_tile_id": 28,
+          "osm_id": "way/229744137",
+          "identity": "way/229744137",
+          "name": "沈大高速线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            11,
+            1725,
+            762
+          ],
+          "anchor": [
+            405.94466666673,
+            604.8779372023298
+          ]
+        },
+        {
+          "cross_tile_id": 30,
+          "osm_id": "way/652084523",
+          "identity": "way/652084523",
+          "name": "沈山线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            11,
+            1725,
+            762
+          ],
+          "anchor": [
+            300.94466666673,
+            585.9404372023298
+          ]
+        },
+        {
+          "cross_tile_id": 6,
+          "osm_id": "way/191149337",
+          "identity": "way/191149337",
+          "name": "田东线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            11,
+            1726,
+            761
+          ],
+          "anchor": [
+            868.50716666673,
+            117.81543720232976
+          ]
+        },
+        {
+          "cross_tile_id": 7,
+          "osm_id": "way/471477585",
+          "identity": "way/471477585",
+          "name": "沈大线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            11,
+            1726,
+            761
+          ],
+          "anchor": [
+            499.25716666673,
+            427.00293720232975
+          ]
+        },
+        {
+          "cross_tile_id": 8,
+          "osm_id": "way/471497353",
+          "identity": "way/471497353",
+          "name": "京哈高速线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            11,
+            1726,
+            761
+          ],
+          "anchor": [
+            673.88216666673,
+            300.87793720232975
+          ]
+        },
+        {
+          "cross_tile_id": 11,
+          "osm_id": "way/1365674755",
+          "identity": "way/1365674755",
+          "name": "沈佳高速线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            11,
+            1726,
+            761
+          ],
+          "anchor": [
+            658.38216666673,
+            390.62793720224374
+          ]
+        },
+        {
+          "cross_tile_id": 15,
+          "osm_id": "way/38810381",
+          "identity": "way/38810381",
+          "name": "沈山线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            11,
+            1725,
+            761
+          ],
+          "anchor": [
+            197.25716666672997,
+            227.37793720232975
+          ]
+        },
+        {
+          "cross_tile_id": 16,
+          "osm_id": "way/42645847",
+          "identity": "way/42645847",
+          "name": "于虎线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            11,
+            1725,
+            761
+          ],
+          "anchor": [
+            230.88216666672997,
+            313.69043720232975
+          ]
+        },
+        {
+          "cross_tile_id": 17,
+          "osm_id": "way/42646230",
+          "identity": "way/42646230",
+          "name": "京哈线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            11,
+            1725,
+            761
+          ],
+          "anchor": [
+            82.69466666672997,
+            299.44043720232975
+          ]
+        },
+        {
+          "cross_tile_id": 18,
+          "osm_id": "way/53651067",
+          "identity": "way/53651067",
+          "name": "京哈线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            11,
+            1725,
+            761
+          ],
+          "anchor": [
+            374.50716666673,
+            388.50293720232975
+          ]
+        },
+        {
+          "cross_tile_id": 19,
+          "osm_id": "way/423528962",
+          "identity": "way/423528962",
+          "name": "沈山北道线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            11,
+            1725,
+            761
+          ],
+          "anchor": [
+            256.81966666673,
+            294.87793720232975
+          ]
+        },
+        {
+          "cross_tile_id": 20,
+          "osm_id": "way/423528994",
+          "identity": "way/423528994",
+          "name": "沈大线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            11,
+            1725,
+            761
+          ],
+          "anchor": [
+            424.50716666673,
+            546.5029372023298
+          ]
+        },
+        {
+          "cross_tile_id": 24,
+          "osm_id": "way/1365929043",
+          "identity": "way/1365929043",
+          "name": "于揽三线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            11,
+            1725,
+            761
+          ],
+          "anchor": [
+            230.06966666672997,
+            401.31543720232975
+          ]
+        }
+      ],
+      "duplicates_excluded": 0,
+      "hidden_excluded": 14,
+      "close_pairs": [],
+      "query_feature_ids": [
+        "way/1365929043",
+        "way/423528994",
+        "way/423528962",
+        "way/53651067",
+        "way/42646230",
+        "way/42645847",
+        "way/38810381",
+        "way/1365674755",
+        "way/471497353",
+        "way/471477585",
+        "way/191149337",
+        "way/652084523",
+        "way/229744137",
+        "way/42683119",
+        "way/42682923",
+        "way/42681164",
+        "way/42681167",
+        "way/1556655078"
+      ]
+    },
+    {
+      "name": "north-yard",
+      "hash": "13.50/41.81733/123.43854",
+      "types": "rail,other,unknown",
+      "spacing": 600,
+      "viewport": [
+        1094,
+        924
+      ],
+      "buckets": [
+        {
+          "tile": [
+            13,
+            6905,
+            3046
+          ],
+          "symbols": 3,
+          "first": {
+            "x": 3434,
+            "y": 767,
+            "crossTileID": 11,
+            "placement": {
+              "text": true,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": true
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        },
+        {
+          "tile": [
+            13,
+            6904,
+            3046
+          ],
+          "symbols": 6,
+          "first": {
+            "x": 4108,
+            "y": 5597,
+            "crossTileID": 3,
+            "placement": {
+              "text": true,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": true
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        },
+        {
+          "tile": [
+            13,
+            6905,
+            3045
+          ],
+          "symbols": 2,
+          "first": {
+            "x": 4775,
+            "y": 3516,
+            "crossTileID": 9,
+            "placement": {
+              "text": false,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": false
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        }
+      ],
+      "anchors": [
+        {
+          "cross_tile_id": 11,
+          "osm_id": "way/385360762",
+          "identity": "way/385360762",
+          "name": "京哈高速线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            13,
+            6905,
+            3046
+          ],
+          "anchor": [
+            913.8427705248713,
+            98.66280334336417
+          ]
+        },
+        {
+          "cross_tile_id": 12,
+          "osm_id": "way/471524857",
+          "identity": "way/471524857",
+          "name": "京哈线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            13,
+            6905,
+            3046
+          ],
+          "anchor": [
+            669.9793193618973,
+            343.05658459078523
+          ]
+        },
+        {
+          "cross_tile_id": 13,
+          "osm_id": "way/1365674755",
+          "identity": "way/1365674755",
+          "name": "沈佳高速线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            13,
+            6905,
+            3046
+          ],
+          "anchor": [
+            987.5586524628974,
+            516.7396877200745
+          ]
+        },
+        {
+          "cross_tile_id": 3,
+          "osm_id": "way/102975184",
+          "identity": "way/102975184",
+          "name": "沈大线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            13,
+            6904,
+            3046
+          ],
+          "anchor": [
+            249.33917290342146,
+            525.5785224850559
+          ]
+        },
+        {
+          "cross_tile_id": 4,
+          "osm_id": "way/102975378",
+          "identity": "way/102975378",
+          "name": "沈山北道线",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            13,
+            6904,
+            3046
+          ],
+          "anchor": [
+            98.10671007753622,
+            574.987608820157
+          ]
+        }
+      ],
+      "duplicates_excluded": 0,
+      "hidden_excluded": 5,
+      "close_pairs": [],
+      "query_feature_ids": [
+        "way/102975378",
+        "way/102975184",
+        "way/1365674755",
+        "way/471524857",
+        "way/385360762"
+      ]
+    },
+    {
+      "name": "tram-interchange",
+      "hash": "17.00/41.68560/123.47900",
+      "types": "tram",
+      "spacing": 600,
+      "viewport": [
+        1094,
+        924
+      ],
+      "buckets": [
+        {
+          "tile": [
+            15,
+            27623,
+            12202
+          ],
+          "symbols": 6,
+          "first": {
+            "x": 1679,
+            "y": 4655,
+            "crossTileID": 4,
+            "placement": {
+              "text": true,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": true
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        }
+      ],
+      "anchors": [
+        {
+          "cross_tile_id": 4,
+          "osm_id": "way/404365260",
+          "identity": "way/404365260",
+          "name": "沈阳有轨电车",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            15,
+            27623,
+            12202
+          ],
+          "anchor": [
+            284.8115111181746,
+            696.5927252666258
+          ]
+        },
+        {
+          "cross_tile_id": 5,
+          "osm_id": "way/404365261",
+          "identity": "way/404365261",
+          "name": "沈阳有轨电车",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            15,
+            27623,
+            12202
+          ],
+          "anchor": [
+            591.5615111181746,
+            526.8427252666258
+          ]
+        },
+        {
+          "cross_tile_id": 7,
+          "osm_id": "way/904765285",
+          "identity": "way/904765285",
+          "name": "沈阳有轨电车",
+          "line_ref": "共线",
+          "line_complete": false,
+          "line_shared": true,
+          "tile": [
+            15,
+            27623,
+            12202
+          ],
+          "anchor": [
+            366.0615111181746,
+            48.34272526112126
+          ]
+        },
+        {
+          "cross_tile_id": 8,
+          "osm_id": "way/1291217928",
+          "identity": "osm/relation/5490399",
+          "name": "沈阳有轨电车",
+          "line_ref": "2",
+          "line_complete": true,
+          "line_shared": false,
+          "tile": [
+            15,
+            27623,
+            12202
+          ],
+          "anchor": [
+            691.3115111181746,
+            605.5927252666258
+          ]
+        }
+      ],
+      "duplicates_excluded": 0,
+      "hidden_excluded": 2,
+      "close_pairs": [],
+      "query_feature_ids": [
+        "way/1291217928",
+        "way/904765285",
+        "way/404365261",
+        "way/404365260"
+      ]
+    },
+    {
+      "name": "tram-interchange-z17-5",
+      "hash": "17.50/41.68560/123.47900",
+      "types": "tram",
+      "spacing": 600,
+      "viewport": [
+        1094,
+        924
+      ],
+      "buckets": [
+        {
+          "tile": [
+            15,
+            27623,
+            12202
+          ],
+          "symbols": 6,
+          "first": {
+            "x": 1679,
+            "y": 4655,
+            "crossTileID": 2,
+            "placement": {
+              "text": true,
+              "icon": false
+            },
+            "opacity": {
+              "text": {
+                "opacity": 0,
+                "placed": true
+              },
+              "icon": {
+                "opacity": 0,
+                "placed": false
+              }
+            }
+          }
+        }
+      ],
+      "anchors": [
+        {
+          "cross_tile_id": 2,
+          "osm_id": "way/404365260",
+          "identity": "way/404365260",
+          "name": "沈阳有轨电车",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            15,
+            27623,
+            12202
+          ],
+          "anchor": [
+            176.2094831260252,
+            793.7642137106363
+          ]
+        },
+        {
+          "cross_tile_id": 3,
+          "osm_id": "way/404365261",
+          "identity": "way/404365261",
+          "name": "沈阳有轨电车",
+          "line_complete": false,
+          "line_shared": false,
+          "tile": [
+            15,
+            27623,
+            12202
+          ],
+          "anchor": [
+            610.0194933782581,
+            553.7014614947431
+          ]
+        },
+        {
+          "cross_tile_id": 4,
+          "osm_id": "way/404365262",
+          "identity": "osm/relation/5490398",
+          "name": "沈阳有轨电车",
+          "line_ref": "1",
+          "line_complete": true,
+          "line_shared": false,
+          "tile": [
+            15,
+            27623,
+            12202
+          ],
+          "anchor": [
+            282.2755003099318,
+            709.9720601278638
+          ]
+        },
+        {
+          "cross_tile_id": 6,
+          "osm_id": "way/1291217928",
+          "identity": "osm/relation/5490399",
+          "name": "沈阳有轨电车",
+          "line_ref": "2",
+          "line_complete": true,
+          "line_shared": false,
+          "tile": [
+            15,
+            27623,
+            12202
+          ],
+          "anchor": [
+            751.0872962258079,
+            665.0707795334413
+          ]
+        }
+      ],
+      "duplicates_excluded": 0,
+      "hidden_excluded": 1,
+      "close_pairs": [],
+      "query_feature_ids": [
+        "way/1291217928",
+        "way/404365262",
+        "way/404365261",
+        "way/404365260"
+      ]
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Read-only version-specific placement and anchor diagnostics, flat north-up map; excludes duplicate/fading/offscreen instances and cross-checks public rendered features. Anchor spacing is not glyph-edge clearance, physical pixels or full R17/N09/device acceptance."
+}

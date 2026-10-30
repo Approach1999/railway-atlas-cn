@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-25T12:39:11.412067+00:00",
+  "app_asset": "/assets/index-B5hj9MUm.js",
+  "application_changed": false,
+  "prior_application_checks": "70 unit/domain tests and strict build remain the prior unchanged application evidence; not rerun or relabelled in this diagnostic-only turn.",
+  "matched_trace_cases": 4,
+  "explicit_data_loss": false,
+  "standard_pan_runner_restored_byte_exactly": true,
+  "source_and_evidence_sha256": {
+    "scripts/diagnose_pan_trace.cjs": "312cd7fcb87ed69214233d612838d386eda5237eb78fd779675c846a72ed8032",
+    "scripts/benchmark_pan.cjs": "e3b046f3875f2943294380d166dc84d7fb0324a9a5ca49a51f7469d006acb378",
+    "scripts/pan_drag.cjs": "475a17a906563eebc3cab6b86f94918af3a63bcb1f902699c6d8d981940ea0a2",
+    "docs/evidence/pan-trace-analysis.json": "1f4470210065f615fc2b614e5e2a3ac0d35b3b064740eb6889df009f0202aaf4",
+    "docs/evidence/pan-opaque-rejected.json": "74049a16d466585c6caa6ba1e1469cb2e590d1c42f0ea8f87e99b368fd85b25a",
+    "docs/evidence/history/benchmark-pan-opaque-experiment.cjs": "a7906a528645b2a997e4ead6abdab378c1e4cd7cf61755f222167e272c1d4c37",
+    "docs/evidence/pan-drag-build.json": "7e35a9ad43b30b3becf0fb24c2631dea11333acaf78e99bf0a4c74456a191fef",
+    "docs/evidence/pan-trace-map-software.json": "6c523fbac8027d641fa372480a54235682905c4e4ee960a5d20bc7cdb798af80",
+    "docs/evidence/pan-trace-clear-canvas-software.json": "fbfc83e2d50b0205eccffeb767f06cf4732754a784d1868c454414600b3390a6",
+    "docs/evidence/pan-trace-map-default.json": "96a7faca0e0e40e1e6bcb8805b59791d93da746a88ea8a5aeb2be215e98595fe",
+    "docs/evidence/pan-trace-clear-canvas-default.json": "21e0d4e273ad625d910b0856ae0169f4c68e73a3588ebd100b639419fc865ecf"
+  },
+  "limits": [
+    "no demonstrated product performance improvement",
+    "opaque canvas candidate did not apply and is rejected",
+    "profiling overhead and inclusive nested durations are not performance acceptance or GPU utilization",
+    "software non-profiled repeats still exceed 33ms",
+    "real devices and other MVP gates remain open"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "snapshot": "shenyang-mvp-progress-20261022",
+  "checks": [
+    "260 manifest assets match lengths and SHA-256",
+    "Candidate objects reconcile with published features, relations and named exclusions",
+    "Typed identities are unique; detail shards and station references are complete",
+    "Facility counts and all declared tile files/bytes reconcile",
+    "No missing source references; absent relations and metadata remain explicit limitations"
+  ],
+  "quality": {
+    "candidate_objects": 10708,
+    "excluded_count": 541,
+    "facility_counts": {
+      "buffer_stop": 461,
+      "entrance": 137,
+      "level_crossing": 2333,
+      "platform": 48,
+      "stop_position": 318,
+      "switch": 2395,
+      "turntable": 1,
+      "yard": 9
+    },
+    "line_count": 0,
+    "metadata_records": 0,
+    "missing_relation_member_refs": 0,
+    "missing_way_node_refs": 0,
+    "published_features": 10167,
+    "relation_records": 0,
+    "route_relations": 0,
+    "station_area_records": 4,
+    "warnings": [
+      "Source snapshot has no urban route relations; no line membership or colors invented"
+    ]
+  },
+  "scope": "Local snapshot integrity; not proof of source completeness, individual tile semantics, or full MVP acceptance"
+}

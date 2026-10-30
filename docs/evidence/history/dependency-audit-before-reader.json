@@ -1,0 +1,3901 @@
+{
+  "started_utc": "2026-10-24T15:16:44.664013+00:00",
+  "inventory_sha256": "d81e334827f12b98efd4412c5e607e047da62dce26457388e85dbc68e5ad040d",
+  "script_sha256": "45f5d4b77422d006c30d365bc7e180da362a1fe3d3436e1ce93b7102bf341e16",
+  "inputs": {
+    "Cargo.lock": "42f3007944f6131c998b58622f667a60e2b0e5836f6fb2dfe75072279e281a31",
+    "apps/web/client/package-lock.json": "5ca37628645c37cfbce73cd0148b2ed2e9f15c222db10acdeaac998f0a38c7b0",
+    "apps/web/probe/package-lock.json": "ed148e40f0d7940ba5e69e1e75452ab04351fb58ee3bac2585e6f7ee50aee87d",
+    "config/third-party-assets.json": "a939db1073a35ed75dfc3af97b4c63e37dcda9316f0079b7fc0d09fb5af630a3",
+    "requirements-data.lock": "8f8bc5f653652adc2612b3c1f51d5460db3772ed3891b7b6816894bd08bf8c65",
+    "requirements-data.txt": "bd44e80d6c33e624e92ef02b4f4bde4b505da40bee130fff3e819c843da73bbc",
+    "scripts/license_inventory.py": "c8e5db853afeda2e646d233de61e85e489fb82c936431a99748ba816c3872839"
+  },
+  "npm": {
+    "client": {
+      "exit_code": 0,
+      "response": {
+        "auditReportVersion": 2,
+        "vulnerabilities": {},
+        "metadata": {
+          "vulnerabilities": {
+            "info": 0,
+            "low": 0,
+            "moderate": 0,
+            "high": 0,
+            "critical": 0,
+            "total": 0
+          },
+          "dependencies": {
+            "prod": 29,
+            "dev": 65,
+            "optional": 47,
+            "peer": 0,
+            "peerOptional": 0,
+            "total": 93
+          }
+        }
+      }
+    },
+    "probe": {
+      "exit_code": 0,
+      "response": {
+        "auditReportVersion": 2,
+        "vulnerabilities": {},
+        "metadata": {
+          "vulnerabilities": {
+            "info": 0,
+            "low": 0,
+            "moderate": 0,
+            "high": 0,
+            "critical": 0,
+            "total": 0
+          },
+          "dependencies": {
+            "prod": 28,
+            "dev": 0,
+            "optional": 0,
+            "peer": 0,
+            "peerOptional": 0,
+            "total": 27
+          }
+        }
+      }
+    }
+  },
+  "osv": {
+    "queries": [
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "certifi"
+        },
+        "version": "2026.10.19"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "charset-normalizer"
+        },
+        "version": "3.5.2"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "idna"
+        },
+        "version": "3.20"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "osmium"
+        },
+        "version": "4.3.0"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "pip"
+        },
+        "version": "26.2"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "requests"
+        },
+        "version": "2.34.2"
+      },
+      {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "urllib3"
+        },
+        "version": "2.8.0"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "adler2"
+        },
+        "version": "2.0.1"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "aho-corasick"
+        },
+        "version": "1.1.5"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "anyhow"
+        },
+        "version": "1.0.104"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "autocfg"
+        },
+        "version": "1.5.1"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "bitflags"
+        },
+        "version": "2.13.2"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "byteorder"
+        },
+        "version": "1.5.0"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "cfg-if"
+        },
+        "version": "1.0.5"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "crc32fast"
+        },
+        "version": "1.5.3"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "either"
+        },
+        "version": "1.19.0"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "equivalent"
+        },
+        "version": "1.0.3"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "errno"
+        },
+        "version": "0.3.14"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "fastrand"
+        },
+        "version": "2.5.0"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "flat_map"
+        },
+        "version": "0.0.10"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "flate2"
+        },
+        "version": "1.1.10"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "futures"
+        },
+        "version": "0.1.31"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "futures-cpupool"
+        },
+        "version": "0.1.8"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "getrandom"
+        },
+        "version": "0.4.3"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "hashbrown"
+        },
+        "version": "0.17.1"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "hermit-abi"
+        },
+        "version": "0.5.3"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "home"
+        },
+        "version": "0.5.12"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "indexmap"
+        },
+        "version": "2.14.2"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "itoa"
+        },
+        "version": "1.0.18"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "libc"
+        },
+        "version": "0.2.191"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "linux-raw-sys"
+        },
+        "version": "0.12.1"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "linux-raw-sys"
+        },
+        "version": "0.4.15"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "log"
+        },
+        "version": "0.4.34"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "memchr"
+        },
+        "version": "2.8.3"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "miniz_oxide"
+        },
+        "version": "0.9.1"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "num_cpus"
+        },
+        "version": "1.17.0"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "once_cell"
+        },
+        "version": "1.21.4"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "osmpbfreader"
+        },
+        "version": "0.19.1"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "par-map"
+        },
+        "version": "0.1.4"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "proc-macro2"
+        },
+        "version": "1.0.107"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "protobuf"
+        },
+        "version": "3.7.2"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "protobuf-codegen"
+        },
+        "version": "3.7.2"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "protobuf-parse"
+        },
+        "version": "3.7.2"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "protobuf-support"
+        },
+        "version": "3.7.2"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "pub-iterator-type"
+        },
+        "version": "0.1.1"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "quote"
+        },
+        "version": "1.0.47"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "r-efi"
+        },
+        "version": "6.0.0"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "regex"
+        },
+        "version": "1.13.1"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "regex-automata"
+        },
+        "version": "0.4.18"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "regex-syntax"
+        },
+        "version": "0.8.11"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "rustix"
+        },
+        "version": "0.38.44"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "rustix"
+        },
+        "version": "1.1.5"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "self_cell"
+        },
+        "version": "1.3.0"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "serde"
+        },
+        "version": "1.0.229"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "serde_core"
+        },
+        "version": "1.0.229"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "serde_derive"
+        },
+        "version": "1.0.229"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "serde_json"
+        },
+        "version": "1.0.151"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "simd-adler32"
+        },
+        "version": "0.3.10"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "smartstring"
+        },
+        "version": "1.0.1"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "static_assertions"
+        },
+        "version": "1.1.0"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "syn"
+        },
+        "version": "2.0.119"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "syn"
+        },
+        "version": "3.0.9"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "tempfile"
+        },
+        "version": "3.27.0"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "thiserror"
+        },
+        "version": "1.0.69"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "thiserror-impl"
+        },
+        "version": "1.0.69"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "unicode-ident"
+        },
+        "version": "1.0.27"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "version_check"
+        },
+        "version": "0.9.5"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "which"
+        },
+        "version": "4.4.2"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "windows-link"
+        },
+        "version": "0.2.1"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "windows-sys"
+        },
+        "version": "0.59.0"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "windows-sys"
+        },
+        "version": "0.61.2"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "windows-targets"
+        },
+        "version": "0.52.6"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "windows_aarch64_gnullvm"
+        },
+        "version": "0.52.6"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "windows_aarch64_msvc"
+        },
+        "version": "0.52.6"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "windows_i686_gnu"
+        },
+        "version": "0.52.6"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "windows_i686_gnullvm"
+        },
+        "version": "0.52.6"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "windows_i686_msvc"
+        },
+        "version": "0.52.6"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "windows_x86_64_gnu"
+        },
+        "version": "0.52.6"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "windows_x86_64_gnullvm"
+        },
+        "version": "0.52.6"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "windows_x86_64_msvc"
+        },
+        "version": "0.52.6"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "zlib-rs"
+        },
+        "version": "0.6.8"
+      },
+      {
+        "package": {
+          "ecosystem": "crates.io",
+          "name": "zmij"
+        },
+        "version": "1.0.23"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@mapbox/jsonlint-lines-primitives"
+        },
+        "version": "2.0.3"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@mapbox/point-geometry"
+        },
+        "version": "1.1.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@mapbox/tiny-sdf"
+        },
+        "version": "2.3.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@mapbox/unitbezier"
+        },
+        "version": "1.0.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@mapbox/vector-tile"
+        },
+        "version": "3.0.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@maplibre/geojson-vt"
+        },
+        "version": "6.3.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@maplibre/maplibre-gl-style-spec"
+        },
+        "version": "26.4.4"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@maplibre/mlt"
+        },
+        "version": "1.3.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@maplibre/vt-pbf"
+        },
+        "version": "4.3.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@oxc-project/types"
+        },
+        "version": "0.155.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@rolldown/binding-android-arm-eabi"
+        },
+        "version": "1.2.15"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@rolldown/binding-android-arm64"
+        },
+        "version": "1.2.15"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@rolldown/binding-darwin-arm64"
+        },
+        "version": "1.2.15"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@rolldown/binding-darwin-x64"
+        },
+        "version": "1.2.15"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@rolldown/binding-freebsd-x64"
+        },
+        "version": "1.2.15"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@rolldown/binding-linux-arm-gnueabihf"
+        },
+        "version": "1.2.15"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@rolldown/binding-linux-arm64-gnu"
+        },
+        "version": "1.2.15"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@rolldown/binding-linux-arm64-musl"
+        },
+        "version": "1.2.15"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@rolldown/binding-linux-ppc64-gnu"
+        },
+        "version": "1.2.15"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@rolldown/binding-linux-s390x-gnu"
+        },
+        "version": "1.2.15"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@rolldown/binding-linux-x64-gnu"
+        },
+        "version": "1.2.15"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@rolldown/binding-linux-x64-musl"
+        },
+        "version": "1.2.15"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@rolldown/binding-openharmony-arm64"
+        },
+        "version": "1.2.15"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@rolldown/binding-win32-arm64-msvc"
+        },
+        "version": "1.2.15"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@rolldown/binding-win32-x64-msvc"
+        },
+        "version": "1.2.15"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@rolldown/pluginutils"
+        },
+        "version": "1.0.1"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@types/geojson"
+        },
+        "version": "7946.0.16"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@types/react"
+        },
+        "version": "19.3.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@types/react-dom"
+        },
+        "version": "19.3.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@typescript/typescript-aix-ppc64"
+        },
+        "version": "7.0.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@typescript/typescript-darwin-arm64"
+        },
+        "version": "7.0.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@typescript/typescript-darwin-x64"
+        },
+        "version": "7.0.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@typescript/typescript-freebsd-arm64"
+        },
+        "version": "7.0.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@typescript/typescript-freebsd-x64"
+        },
+        "version": "7.0.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@typescript/typescript-linux-arm"
+        },
+        "version": "7.0.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@typescript/typescript-linux-arm64"
+        },
+        "version": "7.0.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@typescript/typescript-linux-loong64"
+        },
+        "version": "7.0.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@typescript/typescript-linux-mips64el"
+        },
+        "version": "7.0.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@typescript/typescript-linux-ppc64"
+        },
+        "version": "7.0.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@typescript/typescript-linux-riscv64"
+        },
+        "version": "7.0.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@typescript/typescript-linux-s390x"
+        },
+        "version": "7.0.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@typescript/typescript-linux-x64"
+        },
+        "version": "7.0.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@typescript/typescript-netbsd-arm64"
+        },
+        "version": "7.0.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@typescript/typescript-netbsd-x64"
+        },
+        "version": "7.0.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@typescript/typescript-openbsd-arm64"
+        },
+        "version": "7.0.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@typescript/typescript-openbsd-x64"
+        },
+        "version": "7.0.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@typescript/typescript-sunos-x64"
+        },
+        "version": "7.0.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@typescript/typescript-win32-arm64"
+        },
+        "version": "7.0.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@typescript/typescript-win32-x64"
+        },
+        "version": "7.0.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "@vitejs/plugin-react"
+        },
+        "version": "6.1.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "bidi-js"
+        },
+        "version": "1.1.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "csstype"
+        },
+        "version": "3.2.3"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "detect-libc"
+        },
+        "version": "2.1.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "earcut"
+        },
+        "version": "3.2.4"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "fdir"
+        },
+        "version": "6.5.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "fflate"
+        },
+        "version": "0.8.3"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "fsevents"
+        },
+        "version": "2.3.3"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "gl-matrix"
+        },
+        "version": "3.4.4"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "json-stringify-pretty-compact"
+        },
+        "version": "4.0.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "kdbush"
+        },
+        "version": "4.1.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "lightningcss"
+        },
+        "version": "1.33.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "lightningcss-android-arm64"
+        },
+        "version": "1.33.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "lightningcss-darwin-arm64"
+        },
+        "version": "1.33.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "lightningcss-darwin-x64"
+        },
+        "version": "1.33.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "lightningcss-freebsd-x64"
+        },
+        "version": "1.33.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "lightningcss-linux-arm-gnueabihf"
+        },
+        "version": "1.33.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "lightningcss-linux-arm64-gnu"
+        },
+        "version": "1.33.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "lightningcss-linux-arm64-musl"
+        },
+        "version": "1.33.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "lightningcss-linux-x64-gnu"
+        },
+        "version": "1.33.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "lightningcss-linux-x64-musl"
+        },
+        "version": "1.33.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "lightningcss-win32-arm64-msvc"
+        },
+        "version": "1.33.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "lightningcss-win32-x64-msvc"
+        },
+        "version": "1.33.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "maplibre-gl"
+        },
+        "version": "6.15.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "minimist"
+        },
+        "version": "1.2.8"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "murmurhash-js"
+        },
+        "version": "1.0.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "nanoid"
+        },
+        "version": "3.3.20"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "pbf"
+        },
+        "version": "5.1.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "picocolors"
+        },
+        "version": "1.1.1"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "picomatch"
+        },
+        "version": "4.0.7"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "pmtiles"
+        },
+        "version": "4.5.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "postcss"
+        },
+        "version": "8.5.31"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "potpack"
+        },
+        "version": "2.1.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "protocol-buffers-schema"
+        },
+        "version": "3.6.1"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "quickselect"
+        },
+        "version": "3.0.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "react"
+        },
+        "version": "19.3.1"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "react-dom"
+        },
+        "version": "19.3.1"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "require-from-string"
+        },
+        "version": "2.0.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "resolve-protobuf-schema"
+        },
+        "version": "2.1.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "rolldown"
+        },
+        "version": "1.2.15"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "scheduler"
+        },
+        "version": "0.28.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "source-map-js"
+        },
+        "version": "1.2.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "tinyglobby"
+        },
+        "version": "0.2.17"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "tinyqueue"
+        },
+        "version": "3.0.0"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "typescript"
+        },
+        "version": "7.0.2"
+      },
+      {
+        "package": {
+          "ecosystem": "npm",
+          "name": "vite"
+        },
+        "version": "8.3.5"
+      }
+    ],
+    "responses": [
+      {
+        "results": [
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {
+            "vulns": [
+              {
+                "id": "RUSTSEC-2026-0249",
+                "modified": "2026-08-10T19:45:04.526670Z"
+              }
+            ]
+          },
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {}
+        ]
+      }
+    ],
+    "packages": [
+      {
+        "query": {
+          "package": {
+            "ecosystem": "PyPI",
+            "name": "certifi"
+          },
+          "version": "2026.10.19"
+        },
+        "components": [
+          "python:certifi@2026.10.19"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "PyPI",
+            "name": "charset-normalizer"
+          },
+          "version": "3.5.2"
+        },
+        "components": [
+          "python:charset-normalizer@3.5.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "PyPI",
+            "name": "idna"
+          },
+          "version": "3.20"
+        },
+        "components": [
+          "python:idna@3.20"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "PyPI",
+            "name": "osmium"
+          },
+          "version": "4.3.0"
+        },
+        "components": [
+          "python:osmium@4.3.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "PyPI",
+            "name": "pip"
+          },
+          "version": "26.2"
+        },
+        "components": [
+          "python:pip@26.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "PyPI",
+            "name": "requests"
+          },
+          "version": "2.34.2"
+        },
+        "components": [
+          "python:requests@2.34.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "PyPI",
+            "name": "urllib3"
+          },
+          "version": "2.8.0"
+        },
+        "components": [
+          "python:urllib3@2.8.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "adler2"
+          },
+          "version": "2.0.1"
+        },
+        "components": [
+          "cargo:adler2@2.0.1"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "aho-corasick"
+          },
+          "version": "1.1.5"
+        },
+        "components": [
+          "cargo:aho-corasick@1.1.5"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "anyhow"
+          },
+          "version": "1.0.104"
+        },
+        "components": [
+          "cargo:anyhow@1.0.104"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "autocfg"
+          },
+          "version": "1.5.1"
+        },
+        "components": [
+          "cargo:autocfg@1.5.1"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "bitflags"
+          },
+          "version": "2.13.2"
+        },
+        "components": [
+          "cargo:bitflags@2.13.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "byteorder"
+          },
+          "version": "1.5.0"
+        },
+        "components": [
+          "cargo:byteorder@1.5.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "cfg-if"
+          },
+          "version": "1.0.5"
+        },
+        "components": [
+          "cargo:cfg-if@1.0.5"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "crc32fast"
+          },
+          "version": "1.5.3"
+        },
+        "components": [
+          "cargo:crc32fast@1.5.3"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "either"
+          },
+          "version": "1.19.0"
+        },
+        "components": [
+          "cargo:either@1.19.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "equivalent"
+          },
+          "version": "1.0.3"
+        },
+        "components": [
+          "cargo:equivalent@1.0.3"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "errno"
+          },
+          "version": "0.3.14"
+        },
+        "components": [
+          "cargo:errno@0.3.14"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "fastrand"
+          },
+          "version": "2.5.0"
+        },
+        "components": [
+          "cargo:fastrand@2.5.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "flat_map"
+          },
+          "version": "0.0.10"
+        },
+        "components": [
+          "cargo:flat_map@0.0.10"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "flate2"
+          },
+          "version": "1.1.10"
+        },
+        "components": [
+          "cargo:flate2@1.1.10"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "futures"
+          },
+          "version": "0.1.31"
+        },
+        "components": [
+          "cargo:futures@0.1.31"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "futures-cpupool"
+          },
+          "version": "0.1.8"
+        },
+        "components": [
+          "cargo:futures-cpupool@0.1.8"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "getrandom"
+          },
+          "version": "0.4.3"
+        },
+        "components": [
+          "cargo:getrandom@0.4.3"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "hashbrown"
+          },
+          "version": "0.17.1"
+        },
+        "components": [
+          "cargo:hashbrown@0.17.1"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "hermit-abi"
+          },
+          "version": "0.5.3"
+        },
+        "components": [
+          "cargo:hermit-abi@0.5.3"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "home"
+          },
+          "version": "0.5.12"
+        },
+        "components": [
+          "cargo:home@0.5.12"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "indexmap"
+          },
+          "version": "2.14.2"
+        },
+        "components": [
+          "cargo:indexmap@2.14.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "itoa"
+          },
+          "version": "1.0.18"
+        },
+        "components": [
+          "cargo:itoa@1.0.18"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "libc"
+          },
+          "version": "0.2.191"
+        },
+        "components": [
+          "cargo:libc@0.2.191"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "linux-raw-sys"
+          },
+          "version": "0.12.1"
+        },
+        "components": [
+          "cargo:linux-raw-sys@0.12.1"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "linux-raw-sys"
+          },
+          "version": "0.4.15"
+        },
+        "components": [
+          "cargo:linux-raw-sys@0.4.15"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "log"
+          },
+          "version": "0.4.34"
+        },
+        "components": [
+          "cargo:log@0.4.34"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "memchr"
+          },
+          "version": "2.8.3"
+        },
+        "components": [
+          "cargo:memchr@2.8.3"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "miniz_oxide"
+          },
+          "version": "0.9.1"
+        },
+        "components": [
+          "cargo:miniz_oxide@0.9.1"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "num_cpus"
+          },
+          "version": "1.17.0"
+        },
+        "components": [
+          "cargo:num_cpus@1.17.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "once_cell"
+          },
+          "version": "1.21.4"
+        },
+        "components": [
+          "cargo:once_cell@1.21.4"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "osmpbfreader"
+          },
+          "version": "0.19.1"
+        },
+        "components": [
+          "cargo:osmpbfreader@0.19.1"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "par-map"
+          },
+          "version": "0.1.4"
+        },
+        "components": [
+          "cargo:par-map@0.1.4"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "proc-macro2"
+          },
+          "version": "1.0.107"
+        },
+        "components": [
+          "cargo:proc-macro2@1.0.107"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "protobuf"
+          },
+          "version": "3.7.2"
+        },
+        "components": [
+          "cargo:protobuf@3.7.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "protobuf-codegen"
+          },
+          "version": "3.7.2"
+        },
+        "components": [
+          "cargo:protobuf-codegen@3.7.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "protobuf-parse"
+          },
+          "version": "3.7.2"
+        },
+        "components": [
+          "cargo:protobuf-parse@3.7.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "protobuf-support"
+          },
+          "version": "3.7.2"
+        },
+        "components": [
+          "cargo:protobuf-support@3.7.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "pub-iterator-type"
+          },
+          "version": "0.1.1"
+        },
+        "components": [
+          "cargo:pub-iterator-type@0.1.1"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "quote"
+          },
+          "version": "1.0.47"
+        },
+        "components": [
+          "cargo:quote@1.0.47"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "r-efi"
+          },
+          "version": "6.0.0"
+        },
+        "components": [
+          "cargo:r-efi@6.0.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "regex"
+          },
+          "version": "1.13.1"
+        },
+        "components": [
+          "cargo:regex@1.13.1"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "regex-automata"
+          },
+          "version": "0.4.18"
+        },
+        "components": [
+          "cargo:regex-automata@0.4.18"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "regex-syntax"
+          },
+          "version": "0.8.11"
+        },
+        "components": [
+          "cargo:regex-syntax@0.8.11"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "rustix"
+          },
+          "version": "0.38.44"
+        },
+        "components": [
+          "cargo:rustix@0.38.44"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "rustix"
+          },
+          "version": "1.1.5"
+        },
+        "components": [
+          "cargo:rustix@1.1.5"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "self_cell"
+          },
+          "version": "1.3.0"
+        },
+        "components": [
+          "cargo:self_cell@1.3.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "serde"
+          },
+          "version": "1.0.229"
+        },
+        "components": [
+          "cargo:serde@1.0.229"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "serde_core"
+          },
+          "version": "1.0.229"
+        },
+        "components": [
+          "cargo:serde_core@1.0.229"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "serde_derive"
+          },
+          "version": "1.0.229"
+        },
+        "components": [
+          "cargo:serde_derive@1.0.229"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "serde_json"
+          },
+          "version": "1.0.151"
+        },
+        "components": [
+          "cargo:serde_json@1.0.151"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "simd-adler32"
+          },
+          "version": "0.3.10"
+        },
+        "components": [
+          "cargo:simd-adler32@0.3.10"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "smartstring"
+          },
+          "version": "1.0.1"
+        },
+        "components": [
+          "cargo:smartstring@1.0.1"
+        ],
+        "vulnerabilities": [
+          {
+            "id": "RUSTSEC-2026-0249",
+            "modified": "2026-08-10T19:45:04.526670Z"
+          }
+        ]
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "static_assertions"
+          },
+          "version": "1.1.0"
+        },
+        "components": [
+          "cargo:static_assertions@1.1.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "syn"
+          },
+          "version": "2.0.119"
+        },
+        "components": [
+          "cargo:syn@2.0.119"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "syn"
+          },
+          "version": "3.0.9"
+        },
+        "components": [
+          "cargo:syn@3.0.9"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "tempfile"
+          },
+          "version": "3.27.0"
+        },
+        "components": [
+          "cargo:tempfile@3.27.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "thiserror"
+          },
+          "version": "1.0.69"
+        },
+        "components": [
+          "cargo:thiserror@1.0.69"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "thiserror-impl"
+          },
+          "version": "1.0.69"
+        },
+        "components": [
+          "cargo:thiserror-impl@1.0.69"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "unicode-ident"
+          },
+          "version": "1.0.27"
+        },
+        "components": [
+          "cargo:unicode-ident@1.0.27"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "version_check"
+          },
+          "version": "0.9.5"
+        },
+        "components": [
+          "cargo:version_check@0.9.5"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "which"
+          },
+          "version": "4.4.2"
+        },
+        "components": [
+          "cargo:which@4.4.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "windows-link"
+          },
+          "version": "0.2.1"
+        },
+        "components": [
+          "cargo:windows-link@0.2.1"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "windows-sys"
+          },
+          "version": "0.59.0"
+        },
+        "components": [
+          "cargo:windows-sys@0.59.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "windows-sys"
+          },
+          "version": "0.61.2"
+        },
+        "components": [
+          "cargo:windows-sys@0.61.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "windows-targets"
+          },
+          "version": "0.52.6"
+        },
+        "components": [
+          "cargo:windows-targets@0.52.6"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "windows_aarch64_gnullvm"
+          },
+          "version": "0.52.6"
+        },
+        "components": [
+          "cargo:windows_aarch64_gnullvm@0.52.6"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "windows_aarch64_msvc"
+          },
+          "version": "0.52.6"
+        },
+        "components": [
+          "cargo:windows_aarch64_msvc@0.52.6"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "windows_i686_gnu"
+          },
+          "version": "0.52.6"
+        },
+        "components": [
+          "cargo:windows_i686_gnu@0.52.6"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "windows_i686_gnullvm"
+          },
+          "version": "0.52.6"
+        },
+        "components": [
+          "cargo:windows_i686_gnullvm@0.52.6"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "windows_i686_msvc"
+          },
+          "version": "0.52.6"
+        },
+        "components": [
+          "cargo:windows_i686_msvc@0.52.6"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "windows_x86_64_gnu"
+          },
+          "version": "0.52.6"
+        },
+        "components": [
+          "cargo:windows_x86_64_gnu@0.52.6"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "windows_x86_64_gnullvm"
+          },
+          "version": "0.52.6"
+        },
+        "components": [
+          "cargo:windows_x86_64_gnullvm@0.52.6"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "windows_x86_64_msvc"
+          },
+          "version": "0.52.6"
+        },
+        "components": [
+          "cargo:windows_x86_64_msvc@0.52.6"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "zlib-rs"
+          },
+          "version": "0.6.8"
+        },
+        "components": [
+          "cargo:zlib-rs@0.6.8"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "crates.io",
+            "name": "zmij"
+          },
+          "version": "1.0.23"
+        },
+        "components": [
+          "cargo:zmij@1.0.23"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@mapbox/jsonlint-lines-primitives"
+          },
+          "version": "2.0.3"
+        },
+        "components": [
+          "npm:client:node_modules/@mapbox/jsonlint-lines-primitives@2.0.3",
+          "npm:probe:node_modules/@mapbox/jsonlint-lines-primitives@2.0.3"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@mapbox/point-geometry"
+          },
+          "version": "1.1.0"
+        },
+        "components": [
+          "npm:client:node_modules/@mapbox/point-geometry@1.1.0",
+          "npm:probe:node_modules/@mapbox/point-geometry@1.1.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@mapbox/tiny-sdf"
+          },
+          "version": "2.3.0"
+        },
+        "components": [
+          "npm:client:node_modules/@mapbox/tiny-sdf@2.3.0",
+          "npm:probe:node_modules/@mapbox/tiny-sdf@2.3.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@mapbox/unitbezier"
+          },
+          "version": "1.0.0"
+        },
+        "components": [
+          "npm:client:node_modules/@mapbox/unitbezier@1.0.0",
+          "npm:probe:node_modules/@mapbox/unitbezier@1.0.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@mapbox/vector-tile"
+          },
+          "version": "3.0.0"
+        },
+        "components": [
+          "npm:client:node_modules/@mapbox/vector-tile@3.0.0",
+          "npm:probe:node_modules/@mapbox/vector-tile@3.0.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@maplibre/geojson-vt"
+          },
+          "version": "6.3.0"
+        },
+        "components": [
+          "npm:client:node_modules/@maplibre/geojson-vt@6.3.0",
+          "npm:probe:node_modules/@maplibre/geojson-vt@6.3.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@maplibre/maplibre-gl-style-spec"
+          },
+          "version": "26.4.4"
+        },
+        "components": [
+          "npm:client:node_modules/@maplibre/maplibre-gl-style-spec@26.4.4",
+          "npm:probe:node_modules/@maplibre/maplibre-gl-style-spec@26.4.4"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@maplibre/mlt"
+          },
+          "version": "1.3.0"
+        },
+        "components": [
+          "npm:client:node_modules/@maplibre/mlt@1.3.0",
+          "npm:probe:node_modules/@maplibre/mlt@1.3.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@maplibre/vt-pbf"
+          },
+          "version": "4.3.2"
+        },
+        "components": [
+          "npm:client:node_modules/@maplibre/vt-pbf@4.3.2",
+          "npm:probe:node_modules/@maplibre/vt-pbf@4.3.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@oxc-project/types"
+          },
+          "version": "0.155.0"
+        },
+        "components": [
+          "npm:client:node_modules/@oxc-project/types@0.155.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@rolldown/binding-android-arm-eabi"
+          },
+          "version": "1.2.15"
+        },
+        "components": [
+          "npm:client:node_modules/@rolldown/binding-android-arm-eabi@1.2.15"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@rolldown/binding-android-arm64"
+          },
+          "version": "1.2.15"
+        },
+        "components": [
+          "npm:client:node_modules/@rolldown/binding-android-arm64@1.2.15"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@rolldown/binding-darwin-arm64"
+          },
+          "version": "1.2.15"
+        },
+        "components": [
+          "npm:client:node_modules/@rolldown/binding-darwin-arm64@1.2.15"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@rolldown/binding-darwin-x64"
+          },
+          "version": "1.2.15"
+        },
+        "components": [
+          "npm:client:node_modules/@rolldown/binding-darwin-x64@1.2.15"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@rolldown/binding-freebsd-x64"
+          },
+          "version": "1.2.15"
+        },
+        "components": [
+          "npm:client:node_modules/@rolldown/binding-freebsd-x64@1.2.15"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@rolldown/binding-linux-arm-gnueabihf"
+          },
+          "version": "1.2.15"
+        },
+        "components": [
+          "npm:client:node_modules/@rolldown/binding-linux-arm-gnueabihf@1.2.15"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@rolldown/binding-linux-arm64-gnu"
+          },
+          "version": "1.2.15"
+        },
+        "components": [
+          "npm:client:node_modules/@rolldown/binding-linux-arm64-gnu@1.2.15"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@rolldown/binding-linux-arm64-musl"
+          },
+          "version": "1.2.15"
+        },
+        "components": [
+          "npm:client:node_modules/@rolldown/binding-linux-arm64-musl@1.2.15"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@rolldown/binding-linux-ppc64-gnu"
+          },
+          "version": "1.2.15"
+        },
+        "components": [
+          "npm:client:node_modules/@rolldown/binding-linux-ppc64-gnu@1.2.15"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@rolldown/binding-linux-s390x-gnu"
+          },
+          "version": "1.2.15"
+        },
+        "components": [
+          "npm:client:node_modules/@rolldown/binding-linux-s390x-gnu@1.2.15"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@rolldown/binding-linux-x64-gnu"
+          },
+          "version": "1.2.15"
+        },
+        "components": [
+          "npm:client:node_modules/@rolldown/binding-linux-x64-gnu@1.2.15"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@rolldown/binding-linux-x64-musl"
+          },
+          "version": "1.2.15"
+        },
+        "components": [
+          "npm:client:node_modules/@rolldown/binding-linux-x64-musl@1.2.15"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@rolldown/binding-openharmony-arm64"
+          },
+          "version": "1.2.15"
+        },
+        "components": [
+          "npm:client:node_modules/@rolldown/binding-openharmony-arm64@1.2.15"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@rolldown/binding-win32-arm64-msvc"
+          },
+          "version": "1.2.15"
+        },
+        "components": [
+          "npm:client:node_modules/@rolldown/binding-win32-arm64-msvc@1.2.15"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@rolldown/binding-win32-x64-msvc"
+          },
+          "version": "1.2.15"
+        },
+        "components": [
+          "npm:client:node_modules/@rolldown/binding-win32-x64-msvc@1.2.15"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@rolldown/pluginutils"
+          },
+          "version": "1.0.1"
+        },
+        "components": [
+          "npm:client:node_modules/@rolldown/pluginutils@1.0.1"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@types/geojson"
+          },
+          "version": "7946.0.16"
+        },
+        "components": [
+          "npm:client:node_modules/@types/geojson@7946.0.16",
+          "npm:probe:node_modules/@types/geojson@7946.0.16"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@types/react"
+          },
+          "version": "19.3.0"
+        },
+        "components": [
+          "npm:client:node_modules/@types/react@19.3.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@types/react-dom"
+          },
+          "version": "19.3.0"
+        },
+        "components": [
+          "npm:client:node_modules/@types/react-dom@19.3.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@typescript/typescript-aix-ppc64"
+          },
+          "version": "7.0.2"
+        },
+        "components": [
+          "npm:client:node_modules/@typescript/typescript-aix-ppc64@7.0.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@typescript/typescript-darwin-arm64"
+          },
+          "version": "7.0.2"
+        },
+        "components": [
+          "npm:client:node_modules/@typescript/typescript-darwin-arm64@7.0.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@typescript/typescript-darwin-x64"
+          },
+          "version": "7.0.2"
+        },
+        "components": [
+          "npm:client:node_modules/@typescript/typescript-darwin-x64@7.0.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@typescript/typescript-freebsd-arm64"
+          },
+          "version": "7.0.2"
+        },
+        "components": [
+          "npm:client:node_modules/@typescript/typescript-freebsd-arm64@7.0.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@typescript/typescript-freebsd-x64"
+          },
+          "version": "7.0.2"
+        },
+        "components": [
+          "npm:client:node_modules/@typescript/typescript-freebsd-x64@7.0.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@typescript/typescript-linux-arm"
+          },
+          "version": "7.0.2"
+        },
+        "components": [
+          "npm:client:node_modules/@typescript/typescript-linux-arm@7.0.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@typescript/typescript-linux-arm64"
+          },
+          "version": "7.0.2"
+        },
+        "components": [
+          "npm:client:node_modules/@typescript/typescript-linux-arm64@7.0.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@typescript/typescript-linux-loong64"
+          },
+          "version": "7.0.2"
+        },
+        "components": [
+          "npm:client:node_modules/@typescript/typescript-linux-loong64@7.0.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@typescript/typescript-linux-mips64el"
+          },
+          "version": "7.0.2"
+        },
+        "components": [
+          "npm:client:node_modules/@typescript/typescript-linux-mips64el@7.0.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@typescript/typescript-linux-ppc64"
+          },
+          "version": "7.0.2"
+        },
+        "components": [
+          "npm:client:node_modules/@typescript/typescript-linux-ppc64@7.0.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@typescript/typescript-linux-riscv64"
+          },
+          "version": "7.0.2"
+        },
+        "components": [
+          "npm:client:node_modules/@typescript/typescript-linux-riscv64@7.0.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@typescript/typescript-linux-s390x"
+          },
+          "version": "7.0.2"
+        },
+        "components": [
+          "npm:client:node_modules/@typescript/typescript-linux-s390x@7.0.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@typescript/typescript-linux-x64"
+          },
+          "version": "7.0.2"
+        },
+        "components": [
+          "npm:client:node_modules/@typescript/typescript-linux-x64@7.0.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@typescript/typescript-netbsd-arm64"
+          },
+          "version": "7.0.2"
+        },
+        "components": [
+          "npm:client:node_modules/@typescript/typescript-netbsd-arm64@7.0.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@typescript/typescript-netbsd-x64"
+          },
+          "version": "7.0.2"
+        },
+        "components": [
+          "npm:client:node_modules/@typescript/typescript-netbsd-x64@7.0.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@typescript/typescript-openbsd-arm64"
+          },
+          "version": "7.0.2"
+        },
+        "components": [
+          "npm:client:node_modules/@typescript/typescript-openbsd-arm64@7.0.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@typescript/typescript-openbsd-x64"
+          },
+          "version": "7.0.2"
+        },
+        "components": [
+          "npm:client:node_modules/@typescript/typescript-openbsd-x64@7.0.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@typescript/typescript-sunos-x64"
+          },
+          "version": "7.0.2"
+        },
+        "components": [
+          "npm:client:node_modules/@typescript/typescript-sunos-x64@7.0.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@typescript/typescript-win32-arm64"
+          },
+          "version": "7.0.2"
+        },
+        "components": [
+          "npm:client:node_modules/@typescript/typescript-win32-arm64@7.0.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@typescript/typescript-win32-x64"
+          },
+          "version": "7.0.2"
+        },
+        "components": [
+          "npm:client:node_modules/@typescript/typescript-win32-x64@7.0.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "@vitejs/plugin-react"
+          },
+          "version": "6.1.2"
+        },
+        "components": [
+          "npm:client:node_modules/@vitejs/plugin-react@6.1.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "bidi-js"
+          },
+          "version": "1.1.0"
+        },
+        "components": [
+          "npm:client:node_modules/bidi-js@1.1.0",
+          "npm:probe:node_modules/bidi-js@1.1.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "csstype"
+          },
+          "version": "3.2.3"
+        },
+        "components": [
+          "npm:client:node_modules/csstype@3.2.3"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "detect-libc"
+          },
+          "version": "2.1.2"
+        },
+        "components": [
+          "npm:client:node_modules/detect-libc@2.1.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "earcut"
+          },
+          "version": "3.2.4"
+        },
+        "components": [
+          "npm:client:node_modules/earcut@3.2.4",
+          "npm:probe:node_modules/earcut@3.2.4"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "fdir"
+          },
+          "version": "6.5.0"
+        },
+        "components": [
+          "npm:client:node_modules/fdir@6.5.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "fflate"
+          },
+          "version": "0.8.3"
+        },
+        "components": [
+          "npm:probe:node_modules/fflate@0.8.3"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "fsevents"
+          },
+          "version": "2.3.3"
+        },
+        "components": [
+          "npm:client:node_modules/fsevents@2.3.3"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "gl-matrix"
+          },
+          "version": "3.4.4"
+        },
+        "components": [
+          "npm:client:node_modules/gl-matrix@3.4.4",
+          "npm:probe:node_modules/gl-matrix@3.4.4"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "json-stringify-pretty-compact"
+          },
+          "version": "4.0.0"
+        },
+        "components": [
+          "npm:client:node_modules/json-stringify-pretty-compact@4.0.0",
+          "npm:probe:node_modules/json-stringify-pretty-compact@4.0.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "kdbush"
+          },
+          "version": "4.1.0"
+        },
+        "components": [
+          "npm:client:node_modules/kdbush@4.1.0",
+          "npm:probe:node_modules/kdbush@4.1.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "lightningcss"
+          },
+          "version": "1.33.0"
+        },
+        "components": [
+          "npm:client:node_modules/lightningcss@1.33.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "lightningcss-android-arm64"
+          },
+          "version": "1.33.0"
+        },
+        "components": [
+          "npm:client:node_modules/lightningcss-android-arm64@1.33.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "lightningcss-darwin-arm64"
+          },
+          "version": "1.33.0"
+        },
+        "components": [
+          "npm:client:node_modules/lightningcss-darwin-arm64@1.33.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "lightningcss-darwin-x64"
+          },
+          "version": "1.33.0"
+        },
+        "components": [
+          "npm:client:node_modules/lightningcss-darwin-x64@1.33.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "lightningcss-freebsd-x64"
+          },
+          "version": "1.33.0"
+        },
+        "components": [
+          "npm:client:node_modules/lightningcss-freebsd-x64@1.33.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "lightningcss-linux-arm-gnueabihf"
+          },
+          "version": "1.33.0"
+        },
+        "components": [
+          "npm:client:node_modules/lightningcss-linux-arm-gnueabihf@1.33.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "lightningcss-linux-arm64-gnu"
+          },
+          "version": "1.33.0"
+        },
+        "components": [
+          "npm:client:node_modules/lightningcss-linux-arm64-gnu@1.33.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "lightningcss-linux-arm64-musl"
+          },
+          "version": "1.33.0"
+        },
+        "components": [
+          "npm:client:node_modules/lightningcss-linux-arm64-musl@1.33.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "lightningcss-linux-x64-gnu"
+          },
+          "version": "1.33.0"
+        },
+        "components": [
+          "npm:client:node_modules/lightningcss-linux-x64-gnu@1.33.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "lightningcss-linux-x64-musl"
+          },
+          "version": "1.33.0"
+        },
+        "components": [
+          "npm:client:node_modules/lightningcss-linux-x64-musl@1.33.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "lightningcss-win32-arm64-msvc"
+          },
+          "version": "1.33.0"
+        },
+        "components": [
+          "npm:client:node_modules/lightningcss-win32-arm64-msvc@1.33.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "lightningcss-win32-x64-msvc"
+          },
+          "version": "1.33.0"
+        },
+        "components": [
+          "npm:client:node_modules/lightningcss-win32-x64-msvc@1.33.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "maplibre-gl"
+          },
+          "version": "6.15.0"
+        },
+        "components": [
+          "npm:client:node_modules/maplibre-gl@6.15.0",
+          "npm:probe:node_modules/maplibre-gl@6.15.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "minimist"
+          },
+          "version": "1.2.8"
+        },
+        "components": [
+          "npm:client:node_modules/minimist@1.2.8",
+          "npm:probe:node_modules/minimist@1.2.8"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "murmurhash-js"
+          },
+          "version": "1.0.0"
+        },
+        "components": [
+          "npm:client:node_modules/murmurhash-js@1.0.0",
+          "npm:probe:node_modules/murmurhash-js@1.0.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "nanoid"
+          },
+          "version": "3.3.20"
+        },
+        "components": [
+          "npm:client:node_modules/nanoid@3.3.20"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "pbf"
+          },
+          "version": "5.1.2"
+        },
+        "components": [
+          "npm:client:node_modules/pbf@5.1.2",
+          "npm:probe:node_modules/pbf@5.1.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "picocolors"
+          },
+          "version": "1.1.1"
+        },
+        "components": [
+          "npm:client:node_modules/picocolors@1.1.1"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "picomatch"
+          },
+          "version": "4.0.7"
+        },
+        "components": [
+          "npm:client:node_modules/picomatch@4.0.7"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "pmtiles"
+          },
+          "version": "4.5.0"
+        },
+        "components": [
+          "npm:probe:node_modules/pmtiles@4.5.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "postcss"
+          },
+          "version": "8.5.31"
+        },
+        "components": [
+          "npm:client:node_modules/postcss@8.5.31"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "potpack"
+          },
+          "version": "2.1.0"
+        },
+        "components": [
+          "npm:client:node_modules/potpack@2.1.0",
+          "npm:probe:node_modules/potpack@2.1.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "protocol-buffers-schema"
+          },
+          "version": "3.6.1"
+        },
+        "components": [
+          "npm:client:node_modules/protocol-buffers-schema@3.6.1",
+          "npm:probe:node_modules/protocol-buffers-schema@3.6.1"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "quickselect"
+          },
+          "version": "3.0.0"
+        },
+        "components": [
+          "npm:client:node_modules/quickselect@3.0.0",
+          "npm:probe:node_modules/quickselect@3.0.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "react"
+          },
+          "version": "19.3.1"
+        },
+        "components": [
+          "npm:client:node_modules/react@19.3.1"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "react-dom"
+          },
+          "version": "19.3.1"
+        },
+        "components": [
+          "npm:client:node_modules/react-dom@19.3.1"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "require-from-string"
+          },
+          "version": "2.0.2"
+        },
+        "components": [
+          "npm:client:node_modules/require-from-string@2.0.2",
+          "npm:probe:node_modules/require-from-string@2.0.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "resolve-protobuf-schema"
+          },
+          "version": "2.1.0"
+        },
+        "components": [
+          "npm:client:node_modules/resolve-protobuf-schema@2.1.0",
+          "npm:probe:node_modules/resolve-protobuf-schema@2.1.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "rolldown"
+          },
+          "version": "1.2.15"
+        },
+        "components": [
+          "npm:client:node_modules/rolldown@1.2.15"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "scheduler"
+          },
+          "version": "0.28.0"
+        },
+        "components": [
+          "npm:client:node_modules/scheduler@0.28.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "source-map-js"
+          },
+          "version": "1.2.2"
+        },
+        "components": [
+          "npm:client:node_modules/source-map-js@1.2.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "tinyglobby"
+          },
+          "version": "0.2.17"
+        },
+        "components": [
+          "npm:client:node_modules/tinyglobby@0.2.17"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "tinyqueue"
+          },
+          "version": "3.0.0"
+        },
+        "components": [
+          "npm:client:node_modules/tinyqueue@3.0.0",
+          "npm:probe:node_modules/tinyqueue@3.0.0"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "typescript"
+          },
+          "version": "7.0.2"
+        },
+        "components": [
+          "npm:client:node_modules/typescript@7.0.2"
+        ],
+        "vulnerabilities": []
+      },
+      {
+        "query": {
+          "package": {
+            "ecosystem": "npm",
+            "name": "vite"
+          },
+          "version": "8.3.5"
+        },
+        "components": [
+          "npm:client:node_modules/vite@8.3.5"
+        ],
+        "vulnerabilities": []
+      }
+    ],
+    "advisories": {
+      "RUSTSEC-2026-0249": {
+        "id": "RUSTSEC-2026-0249",
+        "summary": "smartstring is unmaintained",
+        "details": "The smartstring crate is unmaintained; all versions are affected. The\nGitHub repository was archived by the owner on 2026-05-03.\n\nRecommended alternatives:\n\n* [compact_str](https://crates.io/crates/compact_str)\n* [smol_str](https://crates.io/crates/smol_str)",
+        "modified": "2026-08-10T19:45:04.526670336Z",
+        "published": "2026-05-03T12:00:00Z",
+        "database_specific": {
+          "license": "CC0-1.0"
+        },
+        "references": [
+          {
+            "type": "PACKAGE",
+            "url": "https://crates.io/crates/smartstring"
+          },
+          {
+            "type": "ADVISORY",
+            "url": "https://rustsec.org/advisories/RUSTSEC-2026-0249.html"
+          },
+          {
+            "type": "WEB",
+            "url": "https://github.com/bodil/smartstring"
+          }
+        ],
+        "affected": [
+          {
+            "package": {
+              "name": "smartstring",
+              "ecosystem": "crates.io",
+              "purl": "pkg:cargo/smartstring"
+            },
+            "ranges": [
+              {
+                "type": "SEMVER",
+                "events": [
+                  {
+                    "introduced": "0.0.0-0"
+                  }
+                ]
+              }
+            ],
+            "ecosystem_specific": {
+              "affects": {
+                "os": [],
+                "functions": [],
+                "arch": []
+              },
+              "affected_functions": null
+            },
+            "database_specific": {
+              "informational": "unmaintained",
+              "categories": [],
+              "source": "https://github.com/rustsec/advisory-db/blob/osv/crates/RUSTSEC-2026-0249.json",
+              "cvss": null
+            }
+          }
+        ],
+        "schema_version": "1.8.0"
+      }
+    }
+  },
+  "limits": [
+    "Known advisory databases at query time only; not proof of absence of vulnerabilities.",
+    "Python covers locked wheel versions observed on CPython 3.12 Windows x64, not every platform.",
+    "Embedded native libraries, OS, browser and toolchain are outside these package queries.",
+    "License evidence gaps and independent release review remain separate."
+  ],
+  "finished_utc": "2026-10-24T15:16:50.103619+00:00",
+  "errors": [],
+  "status": "findings_require_review"
+}

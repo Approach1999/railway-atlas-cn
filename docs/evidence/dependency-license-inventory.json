@@ -1,0 +1,4570 @@
+{
+  "assets": {
+    "assets": [
+      {
+        "distribution": "raw and generated geodata ignored by Git; versioned local preview",
+        "id": "osm-data",
+        "kind": "geographic-data",
+        "license_declared": "ODbL-1.0",
+        "producer": "OpenStreetMap contributors",
+        "provider": "Geofabrik",
+        "provider_source": "https://download.geofabrik.de/asia/china.html",
+        "snapshot_evidence": "docs/real-shenyang-data.md",
+        "source": "https://www.openstreetmap.org/copyright"
+      },
+      {
+        "distribution": "viewport requests only; no packaged/offline raster tiles",
+        "id": "osm-standard-basemap",
+        "kind": "remote-raster",
+        "license_reference": "https://www.openstreetmap.org/copyright",
+        "provider": "OpenStreetMap",
+        "request_hosts": [
+          "tile.openstreetmap.org"
+        ],
+        "service_policy": "https://operations.osmfoundation.org/policies/tiles/"
+      },
+      {
+        "evidence": "Device UI/fallback families in style.css and MAP_FONT_STACK; bundled map subset recorded separately as map-cjk-subset.",
+        "families": [
+          "Microsoft YaHei",
+          "PingFang SC",
+          "Inter",
+          "system-ui",
+          "sans-serif"
+        ],
+        "font_files_bundled": false,
+        "font_network_requests": false,
+        "id": "system-fonts",
+        "kind": "device-font"
+      },
+      {
+        "confidence": "operator-map",
+        "declared_source": "娌堥槼鍦伴搧瀹樼綉绾胯矾鍥撅紙缁忎腑鏂囩淮鍩虹櫨绉戞ā鏉胯浆寮曪級",
+        "id": "line-colours",
+        "kind": "display-configuration",
+        "limits": "Colour-source evidence is not a grant to reproduce source diagrams or operator logos.",
+        "operator_logos_bundled": false,
+        "operator_source": "http://www.symtc.com/content.php?6501",
+        "source": "https://zh.wikipedia.org/wiki/Template:娌堥槼鍦伴搧棰滆壊",
+        "source_config": "config/line-colors.json",
+        "verification_recorded": "2026-10-22"
+      },
+      {
+        "code_license": "unselected",
+        "description": "Text and CSS railway mark; no external image asset",
+        "id": "application-identity",
+        "kind": "local-ui",
+        "source": "apps/web/client/src/App.tsx and style.css"
+      },
+      {
+        "distribution": "Renamed subset only; original font and tool wheels remain local/ignored.",
+        "evidence_manifest": "apps/web/client/public/map-font-manifest.json",
+        "family": "Railway Atlas CJK",
+        "font_file": "apps/web/client/src/assets/map-cjk.woff2",
+        "font_sha256": "c5676efeb6382c8d783b273aab69e5199951a78d5b19199f87be6cb8249f0739",
+        "id": "map-cjk-subset",
+        "kind": "self-hosted-font",
+        "license_declared": "OFL-1.1",
+        "license_files": [
+          {
+            "project_file": "apps/web/client/public/map-font-license.txt",
+            "sha256": "593d7b73e420582f6c4d1fac2b88a4dee28a78169fc1598a0ba775ba54cd3ba0"
+          }
+        ],
+        "request_hosts": [],
+        "source": "https://github.com/notofonts/noto-cjk/tree/523d033d6cb47f4a80c58a35753646f5c3608a78",
+        "upstream_family": "Noto Sans CJK SC Regular"
+      }
+    ],
+    "schema_version": 1
+  },
+  "code_license": "unselected",
+  "components": [
+    {
+      "checksum": "320119579fcad9c21884f5c4861d16174d0e06250625266f50fe6898340abefa",
+      "ecosystem": "cargo",
+      "id": "cargo:adler2@2.0.1",
+      "license_declared": "0BSD OR MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-0BSD",
+          "sha256": "861399f8c21c042b110517e76dc6b63a2b334276c8cf17412fc3c8908ca8dc17"
+        },
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "8ada45cd9f843acf64e4722ae262c622a2b3b3007c7310ef36ac1061a30f6adb"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ],
+      "name": "adler2",
+      "repository": "https://github.com/oyvindln/adler2",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "2.0.1"
+    },
+    {
+      "checksum": "c982642fa9e8606056828ee9a8505737230110bb1099153c79efe865c59d12ba",
+      "ecosystem": "cargo",
+      "id": "cargo:aho-corasick@1.1.5",
+      "license_declared": "Unlicense OR MIT",
+      "license_files": [
+        {
+          "file": "COPYING",
+          "sha256": "01c266bced4a434da0051174d6bee16a4c82cf634e2679b6155d40d75012390f"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "0f96a83840e146e43c0ec96a22ec1f392e0680e6c1226e6f3ba87e0740af850f"
+        }
+      ],
+      "name": "aho-corasick",
+      "repository": "https://github.com/BurntSushi/aho-corasick",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.1.5"
+    },
+    {
+      "checksum": "330a5ed07fa54e4702c9d6c4174f74427fc0ef6e214bbd677ae50a5099946470",
+      "ecosystem": "cargo",
+      "id": "cargo:anyhow@1.0.104",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ],
+      "name": "anyhow",
+      "repository": "https://github.com/dtolnay/anyhow",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.0.104"
+    },
+    {
+      "checksum": "f2032f911046de80f0a198e0901378627c33f59ea0ac00e363d481118bd70a53",
+      "ecosystem": "cargo",
+      "id": "cargo:autocfg@1.5.1",
+      "license_declared": "Apache-2.0 OR MIT",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "27995d58ad5c1145c1a8cd86244ce844886958a35eb2b78c6b772748669999ac"
+        }
+      ],
+      "name": "autocfg",
+      "repository": "https://github.com/cuviper/autocfg",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.5.1"
+    },
+    {
+      "checksum": "3ded4057c258ba199e2d26386d3af3780957ecaee6c4ef4041c6b4b8b97c0b06",
+      "ecosystem": "cargo",
+      "id": "cargo:bitflags@2.13.2",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb"
+        }
+      ],
+      "name": "bitflags",
+      "repository": "https://github.com/bitflags/bitflags",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "2.13.2"
+    },
+    {
+      "checksum": "1fd0f2584146f6f2ef48085050886acf353beff7305ebd1ae69500e27c67f64b",
+      "ecosystem": "cargo",
+      "id": "cargo:byteorder@1.5.0",
+      "license_declared": "Unlicense OR MIT",
+      "license_files": [
+        {
+          "file": "COPYING",
+          "sha256": "01c266bced4a434da0051174d6bee16a4c82cf634e2679b6155d40d75012390f"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "0f96a83840e146e43c0ec96a22ec1f392e0680e6c1226e6f3ba87e0740af850f"
+        }
+      ],
+      "name": "byteorder",
+      "repository": "https://github.com/BurntSushi/byteorder",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.5.0"
+    },
+    {
+      "checksum": "4e7648175b45a9a48536d676f68d918270699102aa8dab5496df06904c914600",
+      "ecosystem": "cargo",
+      "id": "cargo:cfg-if@1.0.5",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397"
+        }
+      ],
+      "name": "cfg-if",
+      "repository": "https://github.com/rust-lang/cfg-if",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.0.5"
+    },
+    {
+      "checksum": "0ba106e844045ddc02c20768ac4b0b7cb45f2cc2ecbd833ac9f5dacb183c2055",
+      "ecosystem": "cargo",
+      "id": "cargo:crc32fast@1.5.3",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "61d383b05b87d78f94d2937e2580cce47226d17823c0430fbcad09596537efcf"
+        }
+      ],
+      "name": "crc32fast",
+      "repository": "https://github.com/srijs/rust-crc32fast",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.5.3"
+    },
+    {
+      "checksum": "0e9c71c2167ca323c882b99918929403426e2373ea17242ff5653e0d5e1058be",
+      "ecosystem": "cargo",
+      "id": "cargo:either@1.19.0",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "7576269ea71f767b99297934c0b2367532690f8c4badc695edf8e04ab6a1e545"
+        }
+      ],
+      "name": "either",
+      "repository": "https://github.com/rayon-rs/either",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.19.0"
+    },
+    {
+      "checksum": "00d174d5400e5e8fd687ad1049e2f578285fa914201b1af7e8b112a4546bd826",
+      "ecosystem": "cargo",
+      "id": "cargo:equivalent@1.0.3",
+      "license_declared": "Apache-2.0 OR MIT",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "7365cc8878a1d7ce155a58c4ca09c3d7a6be413efa5334a80ea842912b669349"
+        }
+      ],
+      "name": "equivalent",
+      "repository": "https://github.com/indexmap-rs/equivalent",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.0.3"
+    },
+    {
+      "checksum": "39cab71617ae0d63f51a36d69f866391735b51691dbda63cf6f96d042b63efeb",
+      "ecosystem": "cargo",
+      "id": "cargo:errno@0.3.14",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "8764a597675778ddfd4e25f81b08a05dbcf089ac05662df7613fe67f150e3aa2"
+        }
+      ],
+      "name": "errno",
+      "repository": "https://github.com/lambda-fairy/rust-errno",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "0.3.14"
+    },
+    {
+      "checksum": "da7c62ceae207dd37ea5b845da6a0696c799f85e97da1ab5b7910be3c1c80223",
+      "ecosystem": "cargo",
+      "id": "cargo:fastrand@2.5.0",
+      "license_declared": "Apache-2.0 OR MIT",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ],
+      "name": "fastrand",
+      "repository": "https://github.com/smol-rs/fastrand",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "2.5.0"
+    },
+    {
+      "checksum": "e4fa2a56a33c493fc81acbad4676c599cf2b128f21462a020043ea1eee46244f",
+      "ecosystem": "cargo",
+      "id": "cargo:flat_map@0.0.10",
+      "license_declared": "Apache-2.0",
+      "license_evidence_source": {
+        "archive_sha256": "e4fa2a56a33c493fc81acbad4676c599cf2b128f21462a020043ea1eee46244f",
+        "archive_url": "https://static.crates.io/crates/flat_map/flat_map-0.0.10.crate",
+        "cargo_metadata_sha256": "49aab56b7c76a2338f2275626ef6d4f6b2098b17f8fdf56cc53a7a3686ecb8f8",
+        "retrieved_utc": "2026-10-25T02:26:59.537791+00:00"
+      },
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "git_blob_sha": "8f71f43fee3f78649d238238cbde51e6d7055c82",
+          "project_file": "third_party/licenses/upstream/cargo-flat_map-0.0.10.LICENSE",
+          "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
+          "upstream_url": "https://github.com/toffaletti/flat_map/blob/ae34e34d206182cb474d4a4304575afbbe532ada/LICENSE"
+        }
+      ],
+      "name": "flat_map",
+      "repository": "https://github.com/toffaletti/flat_map.git",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "upstream_license_evidence": {
+        "kind": "crate_vcs",
+        "repository": "toffaletti/flat_map",
+        "upstream_commit": "ae34e34d206182cb474d4a4304575afbbe532ada",
+        "version_proof": {
+          "file": "third_party/license-provenance/cargo-flat_map-0.0.10.json",
+          "sha256": "a2fa223b20295f906817454e2ecff0cd069d00f72926310800a0b697db45ed93"
+        }
+      },
+      "version": "0.0.10"
+    },
+    {
+      "checksum": "6e634e2e0ebac1ee034020da1ca582e17ffe4e0f5e985823721e168928136dcb",
+      "ecosystem": "cargo",
+      "id": "cargo:flate2@1.1.10",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "025436edff4cfcdde17a5811fdea78892d8482efd1abdec5a17872d07a4f2112"
+        }
+      ],
+      "name": "flate2",
+      "repository": "https://github.com/rust-lang/flate2-rs",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.1.10"
+    },
+    {
+      "checksum": "ab90cde24b3319636588d0c35fe03b1333857621051837ed769faefb4c2162e4",
+      "ecosystem": "cargo",
+      "id": "cargo:futures-cpupool@0.1.8",
+      "license_declared": "MIT/Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "69036b033e4bb951821964dbc3d9b1efe6913a6e36d9c1f206de4035a1a85cc4"
+        }
+      ],
+      "name": "futures-cpupool",
+      "repository": "https://github.com/alexcrichton/futures-rs",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "0.1.8"
+    },
+    {
+      "checksum": "3a471a38ef8ed83cd6e40aa59c1ffe17db6855c18e3604d9c4ed8c08ebc28678",
+      "ecosystem": "cargo",
+      "id": "cargo:futures@0.1.31",
+      "license_declared": "MIT/Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "69036b033e4bb951821964dbc3d9b1efe6913a6e36d9c1f206de4035a1a85cc4"
+        }
+      ],
+      "name": "futures",
+      "repository": "https://github.com/rust-lang-nursery/futures-rs",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "0.1.31"
+    },
+    {
+      "checksum": "300e883d756b2e4ec94e02791f39b04b522276138852cfc41d9fb7e904106099",
+      "ecosystem": "cargo",
+      "id": "cargo:getrandom@0.4.3",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "aaff376532ea30a0cd5330b9502ad4a4c8bf769c539c87ffe78819d188a18ebf"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "523a42c25d245dde9c015f882cec7f4555aad883382a6cf19b4b7d9b2cd5419b"
+        }
+      ],
+      "name": "getrandom",
+      "repository": "https://github.com/rust-random/getrandom",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "0.4.3"
+    },
+    {
+      "checksum": "ed5909b6e89a2db4456e54cd5f673791d7eca6732202bbf2a9cc504fe2f9b84a",
+      "ecosystem": "cargo",
+      "id": "cargo:hashbrown@0.17.1",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "ff8f68cb076caf8cefe7a6430d4ac086ce6af2ca8ce2c4e5a2004d4552ef52a2"
+        }
+      ],
+      "name": "hashbrown",
+      "repository": "https://github.com/rust-lang/hashbrown",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "0.17.1"
+    },
+    {
+      "checksum": "e17592d60ebacc7d5e169f4663c5f84f9161cc90328abcfe8456f41e4dfcb284",
+      "ecosystem": "cargo",
+      "id": "cargo:hermit-abi@0.5.3",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_evidence_source": {
+        "archive_sha256": "e17592d60ebacc7d5e169f4663c5f84f9161cc90328abcfe8456f41e4dfcb284",
+        "archive_url": "https://static.crates.io/crates/hermit-abi/hermit-abi-0.5.3.crate",
+        "cargo_metadata_sha256": "f9c1cf5c051787c34fa0cd1a6d7faa7b9625a9ae5bbc10549bb28e5af263b29f",
+        "retrieved_utc": "2026-10-25T01:16:07.289285+00:00"
+      },
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "project_file": "third_party/licenses/cargo/hermit-abi-0.5.3/LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "project_file": "third_party/licenses/cargo/hermit-abi-0.5.3/LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ],
+      "name": "hermit-abi",
+      "repository": "https://github.com/hermit-os/hermit-rs",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": false,
+      "version": "0.5.3"
+    },
+    {
+      "checksum": "cc627f471c528ff0c4a49e1d5e60450c8f6461dd6d10ba9dcd3a61d3dff7728d",
+      "ecosystem": "cargo",
+      "id": "cargo:home@0.5.12",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "8ada45cd9f843acf64e4722ae262c622a2b3b3007c7310ef36ac1061a30f6adb"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ],
+      "name": "home",
+      "repository": "https://github.com/rust-lang/cargo",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "0.5.12"
+    },
+    {
+      "checksum": "cc4e190f5d26ca7051642629da2c52fc03bde85a03197c99408dcd291734c855",
+      "ecosystem": "cargo",
+      "id": "cargo:indexmap@2.14.2",
+      "license_declared": "Apache-2.0 OR MIT",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "ecc269ef87fd38a1d98e30bfac9ba964a9dbd9315c3770fed98d4d7cb5882055"
+        }
+      ],
+      "name": "indexmap",
+      "repository": "https://github.com/indexmap-rs/indexmap",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "2.14.2"
+    },
+    {
+      "checksum": "8f42a60cbdf9a97f5d2305f08a87dc4e09308d1276d28c869c684d7777685682",
+      "ecosystem": "cargo",
+      "id": "cargo:itoa@1.0.18",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ],
+      "name": "itoa",
+      "repository": "https://github.com/dtolnay/itoa",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.0.18"
+    },
+    {
+      "checksum": "65cd87c9a6d60536580b316ad985726104730a5151c99845f2490428ef91240a",
+      "ecosystem": "cargo",
+      "id": "cargo:libc@0.2.191",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_evidence_source": {
+        "archive_sha256": "65cd87c9a6d60536580b316ad985726104730a5151c99845f2490428ef91240a",
+        "archive_url": "https://static.crates.io/crates/libc/libc-0.2.191.crate",
+        "cargo_metadata_sha256": "c8e45fe04427917e1bbadf4b628353571c9a0f2574971231814bb71dc6a86f1f",
+        "retrieved_utc": "2026-10-25T01:16:09.306345+00:00"
+      },
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "project_file": "third_party/licenses/cargo/libc-0.2.191/LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "project_file": "third_party/licenses/cargo/libc-0.2.191/LICENSE-MIT",
+          "sha256": "123a331b5dbf04c30097fa43b8f858bc85df671fe776de498d01f3d6b7c1f69e"
+        }
+      ],
+      "name": "libc",
+      "repository": "https://github.com/rust-lang/libc",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": false,
+      "version": "0.2.191"
+    },
+    {
+      "checksum": "32a66949e030da00e8c7d4434b251670a91556f4144941d37452769c25d58a53",
+      "ecosystem": "cargo",
+      "id": "cargo:linux-raw-sys@0.12.1",
+      "license_declared": "Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT",
+      "license_evidence_source": {
+        "archive_sha256": "32a66949e030da00e8c7d4434b251670a91556f4144941d37452769c25d58a53",
+        "archive_url": "https://static.crates.io/crates/linux-raw-sys/linux-raw-sys-0.12.1.crate",
+        "cargo_metadata_sha256": "1d24fe227d87b23fc5220ddf2ca4708e5e0d794a3f77961b71cd8140bf33faa5",
+        "retrieved_utc": "2026-10-25T01:16:14.515045+00:00"
+      },
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "project_file": "third_party/licenses/cargo/linux-raw-sys-0.12.1/LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-Apache-2.0_WITH_LLVM-exception",
+          "project_file": "third_party/licenses/cargo/linux-raw-sys-0.12.1/LICENSE-Apache-2.0_WITH_LLVM-exception",
+          "sha256": "268872b9816f90fd8e85db5a28d33f8150ebb8dd016653fb39ef1f94f2686bc5"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "project_file": "third_party/licenses/cargo/linux-raw-sys-0.12.1/LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ],
+      "name": "linux-raw-sys",
+      "repository": "https://github.com/sunfishcode/linux-raw-sys",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": false,
+      "version": "0.12.1"
+    },
+    {
+      "checksum": "d26c52dbd32dccf2d10cac7725f8eae5296885fb5703b261f7d0a0739ec807ab",
+      "ecosystem": "cargo",
+      "id": "cargo:linux-raw-sys@0.4.15",
+      "license_declared": "Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT",
+      "license_evidence_source": {
+        "archive_sha256": "d26c52dbd32dccf2d10cac7725f8eae5296885fb5703b261f7d0a0739ec807ab",
+        "archive_url": "https://static.crates.io/crates/linux-raw-sys/linux-raw-sys-0.4.15.crate",
+        "cargo_metadata_sha256": "0158431ac8b7b25dca745feef8cb28d5a58d0bf78b97e2a9027af5eeadc3af55",
+        "retrieved_utc": "2026-10-25T01:16:14.118426+00:00"
+      },
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "project_file": "third_party/licenses/cargo/linux-raw-sys-0.4.15/LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-Apache-2.0_WITH_LLVM-exception",
+          "project_file": "third_party/licenses/cargo/linux-raw-sys-0.4.15/LICENSE-Apache-2.0_WITH_LLVM-exception",
+          "sha256": "268872b9816f90fd8e85db5a28d33f8150ebb8dd016653fb39ef1f94f2686bc5"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "project_file": "third_party/licenses/cargo/linux-raw-sys-0.4.15/LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ],
+      "name": "linux-raw-sys",
+      "repository": "https://github.com/sunfishcode/linux-raw-sys",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": false,
+      "version": "0.4.15"
+    },
+    {
+      "checksum": "f9f8bd3e56ce4dfc153cf470fffbfa98c7620958b312ca5c3a4b8d5181fd13c6",
+      "ecosystem": "cargo",
+      "id": "cargo:log@0.4.34",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb"
+        }
+      ],
+      "name": "log",
+      "repository": "https://github.com/rust-lang/log",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "0.4.34"
+    },
+    {
+      "checksum": "cf8baf1c55e62ffcace7a9f06f4bd9cd3f0c4beb022d3b367256b91b87513d98",
+      "ecosystem": "cargo",
+      "id": "cargo:memchr@2.8.3",
+      "license_declared": "Unlicense OR MIT",
+      "license_files": [
+        {
+          "file": "COPYING",
+          "sha256": "01c266bced4a434da0051174d6bee16a4c82cf634e2679b6155d40d75012390f"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "0f96a83840e146e43c0ec96a22ec1f392e0680e6c1226e6f3ba87e0740af850f"
+        }
+      ],
+      "name": "memchr",
+      "repository": "https://github.com/BurntSushi/memchr",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "2.8.3"
+    },
+    {
+      "checksum": "b63fbc4a50860e98e7b2aa7804ded1db5cbc3aff9193adaff57a6931bf7c4b4c",
+      "ecosystem": "cargo",
+      "id": "cargo:miniz_oxide@0.9.1",
+      "license_declared": "MIT OR Zlib OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "4108245a1f2df9d4e94df8abed5b4ba0759bb2f9b40a6b939f1be141077ae50b"
+        },
+        {
+          "file": "LICENSE-APACHE.md",
+          "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+        },
+        {
+          "file": "LICENSE-MIT.md",
+          "sha256": "799e9ca9d179295ef372f25d3769cdda7d25bb2668add6a6a1e22d1e4c678b8d"
+        },
+        {
+          "file": "LICENSE-ZLIB.md",
+          "sha256": "0a54e647fe54104658b5e563c04c6f9edf251710e47bce692e0bd990a4ddaa39"
+        }
+      ],
+      "name": "miniz_oxide",
+      "repository": "https://github.com/Frommi/miniz_oxide/tree/master/miniz_oxide",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "0.9.1"
+    },
+    {
+      "checksum": "91df4bbde75afed763b708b7eee1e8e7651e02d97f6d5dd763e89367e957b23b",
+      "ecosystem": "cargo",
+      "id": "cargo:num_cpus@1.17.0",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "391a5396cec6230bfabd4ef4eb2350eb895bc5efce377a2218f5702ed020d3e3"
+        }
+      ],
+      "name": "num_cpus",
+      "repository": "https://github.com/seanmonstar/num_cpus",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.17.0"
+    },
+    {
+      "checksum": "9f7c3e4beb33f85d45ae3e3a1792185706c8e16d043238c593331cc7cd313b50",
+      "ecosystem": "cargo",
+      "id": "cargo:once_cell@1.21.4",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ],
+      "name": "once_cell",
+      "repository": "https://github.com/matklad/once_cell",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.21.4"
+    },
+    {
+      "checksum": "58a9aad3969d4c846bbbdd37fcdf77174fdc52e173bdc476981d543b0773307e",
+      "ecosystem": "cargo",
+      "id": "cargo:osmpbfreader@0.19.1",
+      "license_declared": "WTFPL",
+      "license_files": [
+        {
+          "file": "COPYING",
+          "sha256": "0356258391e190dc1d44ea01565cfe627fe44e27dad693a0a54c2483a7b223e5"
+        }
+      ],
+      "name": "osmpbfreader",
+      "repository": "https://github.com/TeXitoi/osmpbfreader-rs",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "0.19.1"
+    },
+    {
+      "checksum": "2f05b290991702bb8140cf70915b82b0ae1ec7fe478db97305af990048040095",
+      "ecosystem": "cargo",
+      "id": "cargo:par-map@0.1.4",
+      "license_declared": "WTFPL",
+      "license_files": [
+        {
+          "file": "COPYING",
+          "sha256": "0356258391e190dc1d44ea01565cfe627fe44e27dad693a0a54c2483a7b223e5"
+        }
+      ],
+      "name": "par-map",
+      "repository": "https://github.com/TeXitoi/par-map",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "0.1.4"
+    },
+    {
+      "checksum": "985e7ec9bb745e6ce6535b544d84d6cd6f7ad8bd711c398938ae983b91a766d9",
+      "ecosystem": "cargo",
+      "id": "cargo:proc-macro2@1.0.107",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ],
+      "name": "proc-macro2",
+      "repository": "https://github.com/dtolnay/proc-macro2",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.0.107"
+    },
+    {
+      "checksum": "5d3976825c0014bbd2f3b34f0001876604fe87e0c86cd8fa54251530f1544ace",
+      "ecosystem": "cargo",
+      "id": "cargo:protobuf-codegen@3.7.2",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE.txt",
+          "sha256": "7f2fa80a60e84f8dc0747abb0e42342f83bded04a20461a636b47c0331b92ddf"
+        }
+      ],
+      "name": "protobuf-codegen",
+      "repository": "https://github.com/stepancheg/rust-protobuf/",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "3.7.2"
+    },
+    {
+      "checksum": "b4aeaa1f2460f1d348eeaeed86aea999ce98c1bded6f089ff8514c9d9dbdc973",
+      "ecosystem": "cargo",
+      "id": "cargo:protobuf-parse@3.7.2",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE.txt",
+          "sha256": "ea240b0b1a772a073d2f8941f2145dd8f0b5b2d83c700107a84a1f7eb8ac7af1"
+        }
+      ],
+      "name": "protobuf-parse",
+      "repository": "https://github.com/stepancheg/rust-protobuf/tree/master/protobuf-parse/",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "3.7.2"
+    },
+    {
+      "checksum": "3e36c2f31e0a47f9280fb347ef5e461ffcd2c52dd520d8e216b52f93b0b0d7d6",
+      "ecosystem": "cargo",
+      "id": "cargo:protobuf-support@3.7.2",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE.txt",
+          "sha256": "7f2fa80a60e84f8dc0747abb0e42342f83bded04a20461a636b47c0331b92ddf"
+        }
+      ],
+      "name": "protobuf-support",
+      "repository": "https://github.com/stepancheg/rust-protobuf/",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "3.7.2"
+    },
+    {
+      "checksum": "d65a1d4ddae7d8b5de68153b48f6aa3bba8cb002b243dbdbc55a5afbc98f99f4",
+      "ecosystem": "cargo",
+      "id": "cargo:protobuf@3.7.2",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE.txt",
+          "sha256": "7f2fa80a60e84f8dc0747abb0e42342f83bded04a20461a636b47c0331b92ddf"
+        }
+      ],
+      "name": "protobuf",
+      "repository": "https://github.com/stepancheg/rust-protobuf/",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "3.7.2"
+    },
+    {
+      "checksum": "858afdbecdce657c6e32031348cf7326da7700c869c368a136d31565972f7018",
+      "ecosystem": "cargo",
+      "id": "cargo:pub-iterator-type@0.1.1",
+      "license_declared": "WTFPL",
+      "license_files": [
+        {
+          "file": "COPYING",
+          "sha256": "0356258391e190dc1d44ea01565cfe627fe44e27dad693a0a54c2483a7b223e5"
+        }
+      ],
+      "name": "pub-iterator-type",
+      "repository": "https://github.com/TeXitoi/par-iterator-type",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "0.1.1"
+    },
+    {
+      "checksum": "1fbf4db142a473a8d80c26bbf18454ed458bf8d26c8219c331daecfdbd079001",
+      "ecosystem": "cargo",
+      "id": "cargo:quote@1.0.47",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ],
+      "name": "quote",
+      "repository": "https://github.com/dtolnay/quote",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.0.47"
+    },
+    {
+      "checksum": "f8dcc9c7d52a811697d2151c701e0d08956f92b0e24136cf4cf27b57a6a0d9bf",
+      "ecosystem": "cargo",
+      "id": "cargo:r-efi@6.0.0",
+      "license_declared": "MIT OR Apache-2.0 OR LGPL-2.1-or-later",
+      "license_evidence_source": {
+        "archive_sha256": "f8dcc9c7d52a811697d2151c701e0d08956f92b0e24136cf4cf27b57a6a0d9bf",
+        "archive_url": "https://static.crates.io/crates/r-efi/r-efi-6.0.0.crate",
+        "cargo_metadata_sha256": "a021f9fb0645cc5de5770cf7f41594c1deff4b388eca933b289752aa52666829",
+        "retrieved_utc": "2026-10-25T02:26:59.542903+00:00"
+      },
+      "license_files": [
+        {
+          "file": "AUTHORS",
+          "project_file": "third_party/licenses/cargo/r-efi-6.0.0/AUTHORS",
+          "sha256": "d027e91dbc9cdbb2f1190068e498bd6b61cff022b6a032b191021ba658d96111"
+        }
+      ],
+      "name": "r-efi",
+      "repository": "https://github.com/r-efi/r-efi",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": false,
+      "version": "6.0.0"
+    },
+    {
+      "checksum": "ad8553b9b26413251cbf30e620595c7a41b3887f03da04579c0e6b0d6a06b4b2",
+      "ecosystem": "cargo",
+      "id": "cargo:regex-automata@0.4.18",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb"
+        }
+      ],
+      "name": "regex-automata",
+      "repository": "https://github.com/rust-lang/regex",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "0.4.18"
+    },
+    {
+      "checksum": "d6f6ff9a378485b298a5286656da665ba74413d36db0979633275d2e708145d4",
+      "ecosystem": "cargo",
+      "id": "cargo:regex-syntax@0.8.11",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb"
+        }
+      ],
+      "name": "regex-syntax",
+      "repository": "https://github.com/rust-lang/regex",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "0.8.11"
+    },
+    {
+      "checksum": "f020237b6c8eed93db2e2cb53c00c60a8e1bc73da7d073199a1180401450218d",
+      "ecosystem": "cargo",
+      "id": "cargo:regex@1.13.1",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "6485b8ed310d3f0340bf1ad1f47645069ce4069dcc6bb46c7d5c6faf41de1fdb"
+        }
+      ],
+      "name": "regex",
+      "repository": "https://github.com/rust-lang/regex",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.13.1"
+    },
+    {
+      "checksum": "fdb5bc1ae2baa591800df16c9ca78619bf65c0488b41b96ccec5d11220d8c154",
+      "ecosystem": "cargo",
+      "id": "cargo:rustix@0.38.44",
+      "license_declared": "Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-Apache-2.0_WITH_LLVM-exception",
+          "sha256": "268872b9816f90fd8e85db5a28d33f8150ebb8dd016653fb39ef1f94f2686bc5"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ],
+      "name": "rustix",
+      "repository": "https://github.com/bytecodealliance/rustix",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "0.38.44"
+    },
+    {
+      "checksum": "891efababe418670775f199f0d233d84843c227a0949a883ce15b37c78d6629d",
+      "ecosystem": "cargo",
+      "id": "cargo:rustix@1.1.5",
+      "license_declared": "Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT",
+      "license_evidence_source": {
+        "archive_sha256": "891efababe418670775f199f0d233d84843c227a0949a883ce15b37c78d6629d",
+        "archive_url": "https://static.crates.io/crates/rustix/rustix-1.1.5.crate",
+        "cargo_metadata_sha256": "f57824af546c008210d8d6d63bc0fe866a3887d06100469448de3432ffa108ec",
+        "retrieved_utc": "2026-10-25T01:16:11.041329+00:00"
+      },
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "project_file": "third_party/licenses/cargo/rustix-1.1.5/LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-Apache-2.0_WITH_LLVM-exception",
+          "project_file": "third_party/licenses/cargo/rustix-1.1.5/LICENSE-Apache-2.0_WITH_LLVM-exception",
+          "sha256": "268872b9816f90fd8e85db5a28d33f8150ebb8dd016653fb39ef1f94f2686bc5"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "project_file": "third_party/licenses/cargo/rustix-1.1.5/LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ],
+      "name": "rustix",
+      "repository": "https://github.com/bytecodealliance/rustix",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": false,
+      "version": "1.1.5"
+    },
+    {
+      "checksum": "2ab42ca02749e120097e328d91d415325bdf43b1c72c4c8badf37375fe40a813",
+      "ecosystem": "cargo",
+      "id": "cargo:self_cell@1.3.0",
+      "license_declared": "Apache-2.0 OR GPL-2.0-only",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "file": "LICENSE-GPLv2",
+          "sha256": "f9c375a1be4a41f7b70301dd83c91cb89e41567478859b77eef375a52d782505"
+        }
+      ],
+      "name": "self_cell",
+      "repository": "https://github.com/Voultapher/self_cell",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.3.0"
+    },
+    {
+      "checksum": "4148590afebada386688f18773da617792bf2ef03ffc1e4cbd2b1d45b023e0ba",
+      "ecosystem": "cargo",
+      "id": "cargo:serde@1.0.229",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ],
+      "name": "serde",
+      "repository": "https://github.com/serde-rs/serde",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.0.229"
+    },
+    {
+      "checksum": "67dca2c9c51e58a4791a4b1ed58308b39c64224d349a935ab5039aa360942a48",
+      "ecosystem": "cargo",
+      "id": "cargo:serde_core@1.0.229",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ],
+      "name": "serde_core",
+      "repository": "https://github.com/serde-rs/serde",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.0.229"
+    },
+    {
+      "checksum": "e7a5d71263a5a7d47b41f6b3f06ba276f10cc18b0931f1799f710578e2309348",
+      "ecosystem": "cargo",
+      "id": "cargo:serde_derive@1.0.229",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ],
+      "name": "serde_derive",
+      "repository": "https://github.com/serde-rs/serde",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.0.229"
+    },
+    {
+      "checksum": "c841b55ecdae098c80dcae9cf767f6f8a0c2cdb3416bbef72181df4d0fe73f14",
+      "ecosystem": "cargo",
+      "id": "cargo:serde_json@1.0.151",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ],
+      "name": "serde_json",
+      "repository": "https://github.com/serde-rs/json",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.0.151"
+    },
+    {
+      "checksum": "3a219298ac11a56ea9a6d2120044824d6f01aeb034955e7af7bc16858527deea",
+      "ecosystem": "cargo",
+      "id": "cargo:simd-adler32@0.3.10",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE.md",
+          "sha256": "42a35170233e83e18856792e748de4c1ce4a63b2afce9a370c89ef3fe23f9f2d"
+        }
+      ],
+      "name": "simd-adler32",
+      "repository": "https://github.com/mcountryman/simd-adler32",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "0.3.10"
+    },
+    {
+      "checksum": "3fb72c633efbaa2dd666986505016c32c3044395ceaf881518399d2f4127ee29",
+      "ecosystem": "cargo",
+      "id": "cargo:smartstring@1.0.1",
+      "license_declared": "MPL-2.0+",
+      "license_files": [
+        {
+          "file": "LICENCE.md",
+          "sha256": "e6b6566f085df5746515c6d7e2edcaec0d2b77d527ac40d91409d783fb6c8508"
+        }
+      ],
+      "name": "smartstring",
+      "repository": "https://github.com/bodil/smartstring",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.0.1"
+    },
+    {
+      "checksum": "a2eb9349b6444b326872e140eb1cf5e7c522154d69e7a0ffb0fb81c06b37543f",
+      "ecosystem": "cargo",
+      "id": "cargo:static_assertions@1.1.0",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "ea084a2373ebc1f0902c09266e7bf25a05ab3814c1805bb017ffa7308f90c061"
+        }
+      ],
+      "name": "static_assertions",
+      "repository": "https://github.com/nvzqz/static-assertions-rs",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.1.0"
+    },
+    {
+      "checksum": "872831b642d1a07999a962a351ed35b955ea2cfc8f3862091e2a240a84f17297",
+      "ecosystem": "cargo",
+      "id": "cargo:syn@2.0.119",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ],
+      "name": "syn",
+      "repository": "https://github.com/dtolnay/syn",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "2.0.119"
+    },
+    {
+      "checksum": "d78c8dee4c7bf0e14673097256fed6142ce9d3b85a408189d07482442145823b",
+      "ecosystem": "cargo",
+      "id": "cargo:syn@3.0.9",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_evidence_source": {
+        "archive_sha256": "d78c8dee4c7bf0e14673097256fed6142ce9d3b85a408189d07482442145823b",
+        "archive_url": "https://static.crates.io/crates/syn/syn-3.0.9.crate",
+        "cargo_metadata_sha256": "b6f7f6069d92142d3e294f84855a68049bebc5b886c557ed4ae980ddbc866e1c",
+        "retrieved_utc": "2026-10-25T01:16:11.787577+00:00"
+      },
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "project_file": "third_party/licenses/cargo/syn-3.0.9/LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "project_file": "third_party/licenses/cargo/syn-3.0.9/LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ],
+      "name": "syn",
+      "repository": "https://github.com/dtolnay/syn",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": false,
+      "version": "3.0.9"
+    },
+    {
+      "checksum": "32497e9a4c7b38532efcdebeef879707aa9f794296a4f0244f6f69e9bc8574bd",
+      "ecosystem": "cargo",
+      "id": "cargo:tempfile@3.27.0",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "8b427f5bc501764575e52ba4f9d95673cf8f6d80a86d0d06599852e1a9a20a36"
+        }
+      ],
+      "name": "tempfile",
+      "repository": "https://github.com/Stebalien/tempfile",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "3.27.0"
+    },
+    {
+      "checksum": "4fee6c4efc90059e10f81e6d42c60a18f76588c3d74cb83a0b242a2b6c7504c1",
+      "ecosystem": "cargo",
+      "id": "cargo:thiserror-impl@1.0.69",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ],
+      "name": "thiserror-impl",
+      "repository": "https://github.com/dtolnay/thiserror",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.0.69"
+    },
+    {
+      "checksum": "b6aaf5339b578ea85b50e080feb250a3e8ae8cfcdff9a461c9ec2904bc923f52",
+      "ecosystem": "cargo",
+      "id": "cargo:thiserror@1.0.69",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ],
+      "name": "thiserror",
+      "repository": "https://github.com/dtolnay/thiserror",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.0.69"
+    },
+    {
+      "checksum": "a2c754d6c33795a1c324727428e5a7dedb5b06195f9890bdbcba760d3e246563",
+      "ecosystem": "cargo",
+      "id": "cargo:unicode-ident@1.0.27",
+      "license_declared": "(MIT OR Apache-2.0) AND Unicode-3.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        },
+        {
+          "file": "LICENSE-UNICODE",
+          "sha256": "f7db81051789b729fea528a63ec4c938fdcb93d9d61d97dc8cc2e9df6d47f2a1"
+        }
+      ],
+      "name": "unicode-ident",
+      "repository": "https://github.com/dtolnay/unicode-ident",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.0.27"
+    },
+    {
+      "checksum": "0b928f33d975fc6ad9f86c8f283853ad26bdd5b10b7f1542aa2fa15e2289105a",
+      "ecosystem": "cargo",
+      "id": "cargo:version_check@0.9.5",
+      "license_declared": "MIT/Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "b7e650f3fce5c53249d1cdc608b54df156a97edd636cf9d23498d0cfe7aec63e"
+        }
+      ],
+      "name": "version_check",
+      "repository": "https://github.com/SergioBenitez/version_check",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "0.9.5"
+    },
+    {
+      "checksum": "87ba24419a2078cd2b0f2ede2691b6c66d8e47836da3b6db8265ebad47afbfc7",
+      "ecosystem": "cargo",
+      "id": "cargo:which@4.4.2",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE.txt",
+          "sha256": "0041560f5d419c30e1594567f3b7ac2bc078ff6a68f437e0348ba85d9cf99112"
+        }
+      ],
+      "name": "which",
+      "repository": "https://github.com/harryfei/which-rs.git",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "4.4.2"
+    },
+    {
+      "checksum": "f0805222e57f7521d6a62e36fa9163bc891acd422f971defe97d64e70d0a4fe5",
+      "ecosystem": "cargo",
+      "id": "cargo:windows-link@0.2.1",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "license-apache-2.0",
+          "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b"
+        },
+        {
+          "file": "license-mit",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "name": "windows-link",
+      "repository": "https://github.com/microsoft/windows-rs",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "0.2.1"
+    },
+    {
+      "checksum": "1e38bc4d79ed67fd075bcc251a1c39b32a1776bbe92e5bef1f0bf1f8c531853b",
+      "ecosystem": "cargo",
+      "id": "cargo:windows-sys@0.59.0",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "license-apache-2.0",
+          "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b"
+        },
+        {
+          "file": "license-mit",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "name": "windows-sys",
+      "repository": "https://github.com/microsoft/windows-rs",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "0.59.0"
+    },
+    {
+      "checksum": "ae137229bcbd6cdf0f7b80a31df61766145077ddf49416a728b02cb3921ff3fc",
+      "ecosystem": "cargo",
+      "id": "cargo:windows-sys@0.61.2",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "license-apache-2.0",
+          "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b"
+        },
+        {
+          "file": "license-mit",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "name": "windows-sys",
+      "repository": "https://github.com/microsoft/windows-rs",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "0.61.2"
+    },
+    {
+      "checksum": "9b724f72796e036ab90c1021d4780d4d3d648aca59e491e6b98e725b84e99973",
+      "ecosystem": "cargo",
+      "id": "cargo:windows-targets@0.52.6",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "license-apache-2.0",
+          "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b"
+        },
+        {
+          "file": "license-mit",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "name": "windows-targets",
+      "repository": "https://github.com/microsoft/windows-rs",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "0.52.6"
+    },
+    {
+      "checksum": "32a4622180e7a0ec044bb555404c800bc9fd9ec262ec147edd5989ccd0c02cd3",
+      "ecosystem": "cargo",
+      "id": "cargo:windows_aarch64_gnullvm@0.52.6",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_evidence_source": {
+        "archive_sha256": "32a4622180e7a0ec044bb555404c800bc9fd9ec262ec147edd5989ccd0c02cd3",
+        "archive_url": "https://static.crates.io/crates/windows_aarch64_gnullvm/windows_aarch64_gnullvm-0.52.6.crate",
+        "cargo_metadata_sha256": "7535a631f6950dae31847b64f09469b499bc00fc492374fbb37589cfb9f2d02e",
+        "retrieved_utc": "2026-10-25T01:16:14.426417+00:00"
+      },
+      "license_files": [
+        {
+          "file": "license-apache-2.0",
+          "project_file": "third_party/licenses/cargo/windows_aarch64_gnullvm-0.52.6/license-apache-2.0",
+          "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b"
+        },
+        {
+          "file": "license-mit",
+          "project_file": "third_party/licenses/cargo/windows_aarch64_gnullvm-0.52.6/license-mit",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "name": "windows_aarch64_gnullvm",
+      "repository": "https://github.com/microsoft/windows-rs",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": false,
+      "version": "0.52.6"
+    },
+    {
+      "checksum": "09ec2a7bb152e2252b53fa7803150007879548bc709c039df7627cabbd05d469",
+      "ecosystem": "cargo",
+      "id": "cargo:windows_aarch64_msvc@0.52.6",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_evidence_source": {
+        "archive_sha256": "09ec2a7bb152e2252b53fa7803150007879548bc709c039df7627cabbd05d469",
+        "archive_url": "https://static.crates.io/crates/windows_aarch64_msvc/windows_aarch64_msvc-0.52.6.crate",
+        "cargo_metadata_sha256": "36a94f20ae8c86cfc38b0489dc9c4a9d0607d5f8e1e3216c866eae9e5bd2d5a5",
+        "retrieved_utc": "2026-10-25T01:12:54.474777+00:00"
+      },
+      "license_files": [
+        {
+          "file": "license-apache-2.0",
+          "project_file": "third_party/licenses/cargo/windows_aarch64_msvc-0.52.6/license-apache-2.0",
+          "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b"
+        },
+        {
+          "file": "license-mit",
+          "project_file": "third_party/licenses/cargo/windows_aarch64_msvc-0.52.6/license-mit",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "name": "windows_aarch64_msvc",
+      "repository": "https://github.com/microsoft/windows-rs",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": false,
+      "version": "0.52.6"
+    },
+    {
+      "checksum": "8e9b5ad5ab802e97eb8e295ac6720e509ee4c243f69d781394014ebfe8bbfa0b",
+      "ecosystem": "cargo",
+      "id": "cargo:windows_i686_gnu@0.52.6",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_evidence_source": {
+        "archive_sha256": "8e9b5ad5ab802e97eb8e295ac6720e509ee4c243f69d781394014ebfe8bbfa0b",
+        "archive_url": "https://static.crates.io/crates/windows_i686_gnu/windows_i686_gnu-0.52.6.crate",
+        "cargo_metadata_sha256": "bd9f2440820141c9a41c21b48a9d98c4c14f41936afe10e911ba963aa2c35809",
+        "retrieved_utc": "2026-10-25T01:16:15.913850+00:00"
+      },
+      "license_files": [
+        {
+          "file": "license-apache-2.0",
+          "project_file": "third_party/licenses/cargo/windows_i686_gnu-0.52.6/license-apache-2.0",
+          "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b"
+        },
+        {
+          "file": "license-mit",
+          "project_file": "third_party/licenses/cargo/windows_i686_gnu-0.52.6/license-mit",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "name": "windows_i686_gnu",
+      "repository": "https://github.com/microsoft/windows-rs",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": false,
+      "version": "0.52.6"
+    },
+    {
+      "checksum": "0eee52d38c090b3caa76c563b86c3a4bd71ef1a819287c19d586d7334ae8ed66",
+      "ecosystem": "cargo",
+      "id": "cargo:windows_i686_gnullvm@0.52.6",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_evidence_source": {
+        "archive_sha256": "0eee52d38c090b3caa76c563b86c3a4bd71ef1a819287c19d586d7334ae8ed66",
+        "archive_url": "https://static.crates.io/crates/windows_i686_gnullvm/windows_i686_gnullvm-0.52.6.crate",
+        "cargo_metadata_sha256": "ab3340805fce89252fa7d9c7e38fcdc2d8f5aa114dfdaa4d7926c7265ea54f38",
+        "retrieved_utc": "2026-10-25T01:16:15.588345+00:00"
+      },
+      "license_files": [
+        {
+          "file": "license-apache-2.0",
+          "project_file": "third_party/licenses/cargo/windows_i686_gnullvm-0.52.6/license-apache-2.0",
+          "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b"
+        },
+        {
+          "file": "license-mit",
+          "project_file": "third_party/licenses/cargo/windows_i686_gnullvm-0.52.6/license-mit",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "name": "windows_i686_gnullvm",
+      "repository": "https://github.com/microsoft/windows-rs",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": false,
+      "version": "0.52.6"
+    },
+    {
+      "checksum": "240948bc05c5e7c6dabba28bf89d89ffce3e303022809e73deaefe4f6ec56c66",
+      "ecosystem": "cargo",
+      "id": "cargo:windows_i686_msvc@0.52.6",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_evidence_source": {
+        "archive_sha256": "240948bc05c5e7c6dabba28bf89d89ffce3e303022809e73deaefe4f6ec56c66",
+        "archive_url": "https://static.crates.io/crates/windows_i686_msvc/windows_i686_msvc-0.52.6.crate",
+        "cargo_metadata_sha256": "30419314e9cb467e2ddfe347f1626a9b59f030041bcdc9cb563cbc5a39fc4a5f",
+        "retrieved_utc": "2026-10-25T01:16:16.363180+00:00"
+      },
+      "license_files": [
+        {
+          "file": "license-apache-2.0",
+          "project_file": "third_party/licenses/cargo/windows_i686_msvc-0.52.6/license-apache-2.0",
+          "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b"
+        },
+        {
+          "file": "license-mit",
+          "project_file": "third_party/licenses/cargo/windows_i686_msvc-0.52.6/license-mit",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "name": "windows_i686_msvc",
+      "repository": "https://github.com/microsoft/windows-rs",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": false,
+      "version": "0.52.6"
+    },
+    {
+      "checksum": "147a5c80aabfbf0c7d901cb5895d1de30ef2907eb21fbbab29ca94c5b08b1a78",
+      "ecosystem": "cargo",
+      "id": "cargo:windows_x86_64_gnu@0.52.6",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_evidence_source": {
+        "archive_sha256": "147a5c80aabfbf0c7d901cb5895d1de30ef2907eb21fbbab29ca94c5b08b1a78",
+        "archive_url": "https://static.crates.io/crates/windows_x86_64_gnu/windows_x86_64_gnu-0.52.6.crate",
+        "cargo_metadata_sha256": "7bd069878ae02213cb113a56b15a1eac497a697de64ec0006bb0930c49b65386",
+        "retrieved_utc": "2026-10-25T01:12:54.422019+00:00"
+      },
+      "license_files": [
+        {
+          "file": "license-apache-2.0",
+          "project_file": "third_party/licenses/cargo/windows_x86_64_gnu-0.52.6/license-apache-2.0",
+          "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b"
+        },
+        {
+          "file": "license-mit",
+          "project_file": "third_party/licenses/cargo/windows_x86_64_gnu-0.52.6/license-mit",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "name": "windows_x86_64_gnu",
+      "repository": "https://github.com/microsoft/windows-rs",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": false,
+      "version": "0.52.6"
+    },
+    {
+      "checksum": "24d5b23dc417412679681396f2b49f3de8c1473deb516bd34410872eff51ed0d",
+      "ecosystem": "cargo",
+      "id": "cargo:windows_x86_64_gnullvm@0.52.6",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_evidence_source": {
+        "archive_sha256": "24d5b23dc417412679681396f2b49f3de8c1473deb516bd34410872eff51ed0d",
+        "archive_url": "https://static.crates.io/crates/windows_x86_64_gnullvm/windows_x86_64_gnullvm-0.52.6.crate",
+        "cargo_metadata_sha256": "b4e30fa8303981a233886a54ab98a180041adf2815f4a0d45e34484e5fb20585",
+        "retrieved_utc": "2026-10-25T01:12:52.512927+00:00"
+      },
+      "license_files": [
+        {
+          "file": "license-apache-2.0",
+          "project_file": "third_party/licenses/cargo/windows_x86_64_gnullvm-0.52.6/license-apache-2.0",
+          "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b"
+        },
+        {
+          "file": "license-mit",
+          "project_file": "third_party/licenses/cargo/windows_x86_64_gnullvm-0.52.6/license-mit",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "name": "windows_x86_64_gnullvm",
+      "repository": "https://github.com/microsoft/windows-rs",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": false,
+      "version": "0.52.6"
+    },
+    {
+      "checksum": "589f6da84c646204747d1270a2a5661ea66ed1cced2631d546fdfb155959f9ec",
+      "ecosystem": "cargo",
+      "id": "cargo:windows_x86_64_msvc@0.52.6",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "license-apache-2.0",
+          "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b"
+        },
+        {
+          "file": "license-mit",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "name": "windows_x86_64_msvc",
+      "repository": "https://github.com/microsoft/windows-rs",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "0.52.6"
+    },
+    {
+      "checksum": "b268e58e7c693d7c271f93ffc4ba3b380412554231c85bf61ca7af91042a4112",
+      "ecosystem": "cargo",
+      "id": "cargo:zlib-rs@0.6.8",
+      "license_declared": "Zlib",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "e72111c52b7d96ebe25348dee19f0744f444d3c95ae6b1ecb6ccaecc5bce05ba"
+        }
+      ],
+      "name": "zlib-rs",
+      "repository": "https://github.com/trifectatechfoundation/zlib-rs",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "0.6.8"
+    },
+    {
+      "checksum": "29666d0abbfad1e3dc4dcf6144730dd3a3ab225bbbdac83319345b1b44ccfc1b",
+      "ecosystem": "cargo",
+      "id": "cargo:zmij@1.0.23",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        }
+      ],
+      "name": "zmij",
+      "repository": "https://github.com/dtolnay/zmij",
+      "scope": "offline-tool-transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "source_present": true,
+      "version": "1.0.23"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@mapbox/jsonlint-lines-primitives@2.0.3",
+      "installed": true,
+      "integrity": "sha512-0SElaV0uMxEnxzBhhX9WTuPyUeMsAN/SS0i16tjuba4/mio63MG9khjC1a0JAiPGXAwvwm4UfHJURCN7nyudQg==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "5dcae6b71018b5454d00228bd08ccbcd9801ee27b19959b88ebcb55602604e6d"
+        }
+      ],
+      "name": "@mapbox/jsonlint-lines-primitives",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/mapbox/jsonlint.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/@mapbox/jsonlint-lines-primitives/-/jsonlint-lines-primitives-2.0.3.tgz",
+      "version": "2.0.3"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@mapbox/point-geometry@1.1.0",
+      "installed": true,
+      "integrity": "sha512-YGcBz1cg4ATXDCM/71L9xveh4dynfGmcLDqufR+nQQy3fKwsAZsWd/x4621/6uJaeB9mwOHE6hPeDgXz9uViUQ==",
+      "license_declared": "ISC",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "0c0ede0036a425ff8b2d49341ea9aa8eccbeeae1ac4eb59874c9dd8bcf5186d3"
+        }
+      ],
+      "name": "@mapbox/point-geometry",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "git@github.com:mapbox/point-geometry.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/@mapbox/point-geometry/-/point-geometry-1.1.0.tgz",
+      "version": "1.1.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@mapbox/tiny-sdf@2.3.0",
+      "installed": true,
+      "integrity": "sha512-gBvcNDBBB66bgQYvnaJ6Jk+VCaMmVq5+IZR2kWPisT88Z8s0kBQt6hfVi8QgRW8Vpg0UWZzBA4ZSyzHHC+VeRA==",
+      "license_declared": "BSD-2-Clause",
+      "license_files": [
+        {
+          "file": "LICENSE.txt",
+          "sha256": "4f78063c6c0757df950aa3440cef9a2a6bd1c552c994c32237c3acc283e72ee6"
+        }
+      ],
+      "name": "@mapbox/tiny-sdf",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mapbox/tiny-sdf.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/@mapbox/tiny-sdf/-/tiny-sdf-2.3.0.tgz",
+      "version": "2.3.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@mapbox/unitbezier@1.0.0",
+      "installed": true,
+      "integrity": "sha512-fqd515fjBmANKGGsQ286E2Wvj/XvDFpGzwJxq4CI6jMQue6Oy04uCKp+JWKF00xRTmk6cEu1jPJ9p3xqH8YWqQ==",
+      "license_declared": "BSD-2-Clause",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "f0dc305ad097eddbc66eebb79288c92d8a5043818ace81206383a4c1a3268fe3"
+        }
+      ],
+      "name": "@mapbox/unitbezier",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "git@github.com:mapbox/unitbezier.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/@mapbox/unitbezier/-/unitbezier-1.0.0.tgz",
+      "version": "1.0.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@mapbox/vector-tile@3.0.0",
+      "installed": true,
+      "integrity": "sha512-Qf10S1uIHMk20ri/IVBnpS+esUEkVaR5Hftmz88jTInrpmWgPGJfPe3LVjjlE77trLx8tH6qjTG7uWH9hIq/0Q==",
+      "license_declared": "BSD-3-Clause",
+      "license_files": [
+        {
+          "file": "LICENSE.txt",
+          "sha256": "5b09a507df6f21d6c2112c46dcaf2927b9dbd8b580a08b542d8ec2f9191d783d"
+        }
+      ],
+      "name": "@mapbox/vector-tile",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "url": "git+https://github.com/mapbox/vector-tile-js.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/@mapbox/vector-tile/-/vector-tile-3.0.0.tgz",
+      "version": "3.0.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@maplibre/geojson-vt@6.3.0",
+      "installed": true,
+      "integrity": "sha512-3Zw2jsU9pIJG3G2CQFbLjWj2MlAHodhD7cSY+15iywUuLmmkgzcKRnueVRZ4AcC/5wOtfhidcJAAzBpoBNs3Xg==",
+      "license_declared": "ISC",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "9eb90e1c920aeccc6d630bd48c1512683d454c669701d46ff8c4c41f922dc4f3"
+        }
+      ],
+      "name": "@maplibre/geojson-vt",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/maplibre/geojson-vt"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/@maplibre/geojson-vt/-/geojson-vt-6.3.0.tgz",
+      "version": "6.3.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@maplibre/maplibre-gl-style-spec@26.4.4",
+      "installed": true,
+      "integrity": "sha512-hG4RZR4PBd/+6A3ODdZ3AnQRF106ZQk1y3bhwDg8bH/A4Oz2tnRUJVVWs9BZa6gXZ1d3UKe89C+Mm+olGBELvA==",
+      "license_declared": "ISC",
+      "license_files": [
+        {
+          "file": "LICENSE.txt",
+          "sha256": "bfd4cb919eec574e9213e1e61f880831eb5fc372d467be429fd0a8d51d1df890"
+        }
+      ],
+      "name": "@maplibre/maplibre-gl-style-spec",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/maplibre/maplibre-style-spec"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/@maplibre/maplibre-gl-style-spec/-/maplibre-gl-style-spec-26.4.4.tgz",
+      "version": "26.4.4"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@maplibre/mlt@1.3.0",
+      "installed": true,
+      "integrity": "sha512-7M2O7ABM80Oi8XPkfkrjKB8mOBIxGoVgkA52Mu4RMWoBvvMdagQ522+WxVYujZsMpqIr3BpzrTbXrm4k8lCzCQ==",
+      "license_declared": "(MIT OR Apache-2.0)",
+      "license_files": [
+        {
+          "file": "LICENSE.txt",
+          "sha256": "3c0a2cc8dfe44b856c2577b4d6fe30a999557c795686d52b159a6e1659ea8023"
+        }
+      ],
+      "name": "@maplibre/mlt",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/maplibre/maplibre-tile-spec"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/@maplibre/mlt/-/mlt-1.3.0.tgz",
+      "version": "1.3.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@maplibre/vt-pbf@4.3.2",
+      "installed": true,
+      "integrity": "sha512-j6p0AdjvAR19Z3XaCysle7A4ZSo08tYOzxD0Y9NQylwPAkwJJeYub5b2eVucdeDh7erhv69DahoLOevDRERRUw==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "4c61c5753d4b021bc3b07f21d2a830506974ce200c19cfadf3d4a25e747fc853"
+        }
+      ],
+      "name": "@maplibre/vt-pbf",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/maplibre/vt-pbf"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/@maplibre/vt-pbf/-/vt-pbf-4.3.2.tgz",
+      "version": "4.3.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@oxc-project/types@0.155.0",
+      "installed": true,
+      "integrity": "sha512-SeE8JPwW1xs1tHeNycjUtUBdhorRa8o4jlvjwk49R7/Z291i+4DQa7JJIgOm/TaYQZx+QrPQbVJ/9c8dMIZN8Q==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "95ced5ecf1133fbf41d409b5555c86c344f83f3b019926057ddbc07cfdcc27b3"
+        }
+      ],
+      "name": "@oxc-project/types",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "directory": "npm/oxc-types",
+        "type": "git",
+        "url": "git+https://github.com/oxc-project/oxc.git"
+      },
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@oxc-project/types/-/types-0.155.0.tgz",
+      "version": "0.155.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@rolldown/binding-android-arm-eabi@1.2.15",
+      "installed": false,
+      "integrity": "sha512-aLcgK9gIJ3YRvrrtfSBbRa27F5WrpiTaPulnFpsHPxpUHgFlSgnU4854MHwoRGEBhfRJDWCS2WQ7lIjskE9Olw==",
+      "license_declared": "MIT",
+      "license_files": [],
+      "name": "@rolldown/binding-android-arm-eabi",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@rolldown/binding-android-arm-eabi/-/binding-android-arm-eabi-1.2.15.tgz",
+      "version": "1.2.15"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@rolldown/binding-android-arm64@1.2.15",
+      "installed": false,
+      "integrity": "sha512-xD7DdZCrbThKuxNg7ooQmvp07ys4J/pnSEMTG3/OdOWl6daC67m/Q4fL78sRHMxTH/N4fGUbYhcPM0MF5WFHkg==",
+      "license_declared": "MIT",
+      "license_files": [],
+      "name": "@rolldown/binding-android-arm64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@rolldown/binding-android-arm64/-/binding-android-arm64-1.2.15.tgz",
+      "version": "1.2.15"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@rolldown/binding-darwin-arm64@1.2.15",
+      "installed": false,
+      "integrity": "sha512-m2WuQ6r0B4OTYxyPpNLtXaMRbRDUbG8YQV2Q3KTdSSK8Th6KHCnC8jVCJt8bvYeSB5WivkkNbc85mKadaSdOxA==",
+      "license_declared": "MIT",
+      "license_files": [],
+      "name": "@rolldown/binding-darwin-arm64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@rolldown/binding-darwin-arm64/-/binding-darwin-arm64-1.2.15.tgz",
+      "version": "1.2.15"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@rolldown/binding-darwin-x64@1.2.15",
+      "installed": false,
+      "integrity": "sha512-5RtnsHM36nodM9WbMy+zip0LGS/G+y5wro5RHrpOlr4ac24+1zSi9kiV2MP1myZeZ/ifEHfulQcWjnAXzc2C2A==",
+      "license_declared": "MIT",
+      "license_files": [],
+      "name": "@rolldown/binding-darwin-x64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@rolldown/binding-darwin-x64/-/binding-darwin-x64-1.2.15.tgz",
+      "version": "1.2.15"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@rolldown/binding-freebsd-x64@1.2.15",
+      "installed": false,
+      "integrity": "sha512-g3l09pyFqhu+135JKkbkwiKGQmwU5hUMUPJ4VdBADvuqR8d33L6H578rh8m7rtxbdp+VmX/+nzI7nvhSZlzpUQ==",
+      "license_declared": "MIT",
+      "license_files": [],
+      "name": "@rolldown/binding-freebsd-x64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@rolldown/binding-freebsd-x64/-/binding-freebsd-x64-1.2.15.tgz",
+      "version": "1.2.15"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@rolldown/binding-linux-arm-gnueabihf@1.2.15",
+      "installed": false,
+      "integrity": "sha512-nIe3VugI97nGQtspPxDqA4sXMUpeiocKIP/CqpY/u/vgbT+alX+cVxu1C/oVBPKg4feNTmYovE91v4DgXvXNwQ==",
+      "license_declared": "MIT",
+      "license_files": [],
+      "name": "@rolldown/binding-linux-arm-gnueabihf",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@rolldown/binding-linux-arm-gnueabihf/-/binding-linux-arm-gnueabihf-1.2.15.tgz",
+      "version": "1.2.15"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@rolldown/binding-linux-arm64-gnu@1.2.15",
+      "installed": false,
+      "integrity": "sha512-iTBjXx+B5QSvgI89lJfmqh4wTh8NabR1YZIIN3hNx4zSG0EVfVqkOvLulNpG4251pbd6/IAmZ/LefVk1Y4rPhw==",
+      "license_declared": "MIT",
+      "license_files": [],
+      "name": "@rolldown/binding-linux-arm64-gnu",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@rolldown/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-1.2.15.tgz",
+      "version": "1.2.15"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@rolldown/binding-linux-arm64-musl@1.2.15",
+      "installed": false,
+      "integrity": "sha512-uN26XOnVR7rqQupG3V9oAG2EGGatWjcJHOeDOHUFCh4TBWmP2tHTFoVN13aYbwfm0aHqJAEmcwhAu6sooIjfqQ==",
+      "license_declared": "MIT",
+      "license_files": [],
+      "name": "@rolldown/binding-linux-arm64-musl",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@rolldown/binding-linux-arm64-musl/-/binding-linux-arm64-musl-1.2.15.tgz",
+      "version": "1.2.15"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@rolldown/binding-linux-ppc64-gnu@1.2.15",
+      "installed": false,
+      "integrity": "sha512-9nWkcdd+H+XhaA3fQIwpHnKIrfx/PQ6rO0pivr78Og07tXlUlctBBJoEYLPfhTmCR/QxEVdn6uPjHV5SymPhdw==",
+      "license_declared": "MIT",
+      "license_files": [],
+      "name": "@rolldown/binding-linux-ppc64-gnu",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@rolldown/binding-linux-ppc64-gnu/-/binding-linux-ppc64-gnu-1.2.15.tgz",
+      "version": "1.2.15"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@rolldown/binding-linux-s390x-gnu@1.2.15",
+      "installed": false,
+      "integrity": "sha512-Ggh0ciFjLwIusLSLz7LZYEaGdxOAUJXI+Qu5JCbhPJJHEt8vP+IjRATTJheiJsdzzTYgUiHUiw3X1Ea3ZpMBdA==",
+      "license_declared": "MIT",
+      "license_files": [],
+      "name": "@rolldown/binding-linux-s390x-gnu",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@rolldown/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-1.2.15.tgz",
+      "version": "1.2.15"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@rolldown/binding-linux-x64-gnu@1.2.15",
+      "installed": false,
+      "integrity": "sha512-FHg60rS6DBePAYZ9X9F67x+JObFdmgn6tupA1C/a3B+CufFmTD4mX+e8M75tCiAO3foR/6xwVBI0KQiI7sn/rw==",
+      "license_declared": "MIT",
+      "license_files": [],
+      "name": "@rolldown/binding-linux-x64-gnu",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@rolldown/binding-linux-x64-gnu/-/binding-linux-x64-gnu-1.2.15.tgz",
+      "version": "1.2.15"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@rolldown/binding-linux-x64-musl@1.2.15",
+      "installed": false,
+      "integrity": "sha512-/cvV/7v5VGz/moiz0XKRj2dE8DzsKyhIu1KpOvJGPjRywg3yscON889UGvAe8zfiJLHup7VLjBduoGWi3HusWQ==",
+      "license_declared": "MIT",
+      "license_files": [],
+      "name": "@rolldown/binding-linux-x64-musl",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@rolldown/binding-linux-x64-musl/-/binding-linux-x64-musl-1.2.15.tgz",
+      "version": "1.2.15"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@rolldown/binding-openharmony-arm64@1.2.15",
+      "installed": false,
+      "integrity": "sha512-MyzC5Hrv/sm+Z7TSGKP/j8001RO2xQm1zOpCNVL4j0cY/VhBZviludA2YFQ7i4lH6ZAXxQm0lcMdBzM+99mE7w==",
+      "license_declared": "MIT",
+      "license_files": [],
+      "name": "@rolldown/binding-openharmony-arm64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@rolldown/binding-openharmony-arm64/-/binding-openharmony-arm64-1.2.15.tgz",
+      "version": "1.2.15"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@rolldown/binding-win32-arm64-msvc@1.2.15",
+      "installed": false,
+      "integrity": "sha512-+PgYiS+AH5omy6L45ZLxybasauJaj3M8buoT83D+nzPmCayXlxUV9hydhciCKVyIg0B/v0BtXPDE1uGqNwCPpg==",
+      "license_declared": "MIT",
+      "license_files": [],
+      "name": "@rolldown/binding-win32-arm64-msvc",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@rolldown/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-1.2.15.tgz",
+      "version": "1.2.15"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@rolldown/binding-win32-x64-msvc@1.2.15",
+      "installed": true,
+      "integrity": "sha512-HFZd2QNQYn1JbIi+Hpd7H+r/lkWxcfIu28nirZ6eCn2LafuvmExMlb/P96Sfx5tf7pPArw39IdhmCF8vmV+NhQ==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "git_blob_sha": "afc0cdbabfb99ed4030bf9be2b852977f1ed72a0",
+          "project_file": "third_party/licenses/upstream/npm-_rolldown_binding-win32-x64-msvc-1.2.15.LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+          "upstream_url": "https://github.com/rolldown/rolldown/blob/89d821ca07cf9ccd84dd92bd3f48af0f579ab21a/LICENSE"
+        }
+      ],
+      "name": "@rolldown/binding-win32-x64-msvc",
+      "optional": true,
+      "project": "client",
+      "repository": {
+        "directory": "packages/rolldown",
+        "type": "git",
+        "url": "git+https://github.com/rolldown/rolldown.git"
+      },
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@rolldown/binding-win32-x64-msvc/-/binding-win32-x64-msvc-1.2.15.tgz",
+      "upstream_license_evidence": {
+        "kind": "npm_release_binding",
+        "repository": "rolldown/rolldown",
+        "upstream_commit": "89d821ca07cf9ccd84dd92bd3f48af0f579ab21a",
+        "version_proof": {
+          "file": "third_party/license-provenance/npm-_rolldown_binding-win32-x64-msvc-1.2.15.json",
+          "sha256": "b888360fff43c6b4cb3e569e3518fc640e3a981ab3c6dbaf451ae589fe390c63"
+        }
+      },
+      "version": "1.2.15"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@rolldown/pluginutils@1.0.1",
+      "installed": true,
+      "integrity": "sha512-2j9bGt5Jh8hj+vPtgzPtl72j0yRxHAyumoo6TNfAjsLB04UtpSvPbPcDcBMxz7n+9CYB0c1GxQFxYRg2jimqGw==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "e1919b3b98b8bf6c1b99fcc60a0ed46027c97ac947432e1278446c9606f50161"
+        }
+      ],
+      "name": "@rolldown/pluginutils",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "directory": "packages/pluginutils",
+        "type": "git",
+        "url": "git+https://github.com/rolldown/plugins.git"
+      },
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@rolldown/pluginutils/-/pluginutils-1.0.1.tgz",
+      "version": "1.0.1"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@types/geojson@7946.0.16",
+      "installed": true,
+      "integrity": "sha512-6C8nqWur3j98U6+lXDfTUWIfgvZU+EumvpHKcYjujKH7woYyLj2sUmff0tRhrqM7BohUw7Pz3ZB1jj2gW9Fvmg==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "name": "@types/geojson",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "directory": "types/geojson",
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/@types/geojson/-/geojson-7946.0.16.tgz",
+      "version": "7946.0.16"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@types/react-dom@19.3.0",
+      "installed": true,
+      "integrity": "sha512-ZI7bU42mZXXKHn/qNLEw2IrbiINU7X5+vfgdixBHkCNpYWXjKgfQ/P+uyGb5CjOLB9UcnTeg3rylQtV2hym44Q==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "name": "@types/react-dom",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "directory": "types/react-dom",
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+      },
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@types/react-dom/-/react-dom-19.3.0.tgz",
+      "version": "19.3.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@types/react@19.3.0",
+      "installed": true,
+      "integrity": "sha512-N0rFCuH9YoxG9/m61l9MfpJKfmLOVU0em7ipIz6TRgSSkvReLB9vL85GB+yr8Bs5leqpvg96JSwF4ZS1s4viQg==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "name": "@types/react",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "directory": "types/react",
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+      },
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@types/react/-/react-19.3.0.tgz",
+      "version": "19.3.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@typescript/typescript-aix-ppc64@7.0.2",
+      "installed": false,
+      "integrity": "sha512-MTKKkWB7p/0E9xi1d1tHtZ5PiLkGEMIq88pK2CubZjOsLtYTLqhgIgi6zepFa+9GHZ6h05NMCkQxGKiPXMxXtQ==",
+      "license_declared": "Apache-2.0",
+      "license_files": [],
+      "name": "@typescript/typescript-aix-ppc64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@typescript/typescript-aix-ppc64/-/typescript-aix-ppc64-7.0.2.tgz",
+      "version": "7.0.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@typescript/typescript-darwin-arm64@7.0.2",
+      "installed": false,
+      "integrity": "sha512-gowzar9MwS/aRWp6f3a4KUqzRjAZjOsmGNCM6LcTgXum+dBfgsBVMN+AgvOCCbguXyick6LJhpBszxMebJ8syA==",
+      "license_declared": "Apache-2.0",
+      "license_files": [],
+      "name": "@typescript/typescript-darwin-arm64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@typescript/typescript-darwin-arm64/-/typescript-darwin-arm64-7.0.2.tgz",
+      "version": "7.0.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@typescript/typescript-darwin-x64@7.0.2",
+      "installed": false,
+      "integrity": "sha512-SZ9xZInqApNlNGc9s0W1VSsktYSOe9cFqNOIqmN1Gs8SmkjKZYFt017G4VwPxASInODuAdbTW7sXiFUf893RgA==",
+      "license_declared": "Apache-2.0",
+      "license_files": [],
+      "name": "@typescript/typescript-darwin-x64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@typescript/typescript-darwin-x64/-/typescript-darwin-x64-7.0.2.tgz",
+      "version": "7.0.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@typescript/typescript-freebsd-arm64@7.0.2",
+      "installed": false,
+      "integrity": "sha512-W5NH4y/J0plIIS5b2xvTEkU7JFxyqdMAOgf+Ilhl0vHQXKO5dZoxd+C/jEtq56c4F3wk71RB4BMRQ2XdI+bwYQ==",
+      "license_declared": "Apache-2.0",
+      "license_files": [],
+      "name": "@typescript/typescript-freebsd-arm64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@typescript/typescript-freebsd-arm64/-/typescript-freebsd-arm64-7.0.2.tgz",
+      "version": "7.0.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@typescript/typescript-freebsd-x64@7.0.2",
+      "installed": false,
+      "integrity": "sha512-UMGDx5sTpzNw3WiPebH7l90IWfJggEd+egHt/q6p7/Cm3zqoV7VxkGXt+3DxPIw8CcmvAB0j3sVVfbhX+M4Tpw==",
+      "license_declared": "Apache-2.0",
+      "license_files": [],
+      "name": "@typescript/typescript-freebsd-x64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@typescript/typescript-freebsd-x64/-/typescript-freebsd-x64-7.0.2.tgz",
+      "version": "7.0.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@typescript/typescript-linux-arm64@7.0.2",
+      "installed": false,
+      "integrity": "sha512-Qh4eU4/y3yDjnfjjyPYihMj5/ODIlmt+Bzu17OI+fiSRDW57QmU5SiN63exPRNJPKUzcc1INa1NXdrJ+MqHjUQ==",
+      "license_declared": "Apache-2.0",
+      "license_files": [],
+      "name": "@typescript/typescript-linux-arm64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@typescript/typescript-linux-arm64/-/typescript-linux-arm64-7.0.2.tgz",
+      "version": "7.0.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@typescript/typescript-linux-arm@7.0.2",
+      "installed": false,
+      "integrity": "sha512-gffT3xPz9sR7j/YJExkyPntrI0P2EP9XbOyWzth2/Gs0RstK+90RBcO0ncXoXy/beYll1SXw846Nf2zdnEz0QQ==",
+      "license_declared": "Apache-2.0",
+      "license_files": [],
+      "name": "@typescript/typescript-linux-arm",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@typescript/typescript-linux-arm/-/typescript-linux-arm-7.0.2.tgz",
+      "version": "7.0.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@typescript/typescript-linux-loong64@7.0.2",
+      "installed": false,
+      "integrity": "sha512-uEHck9i8hoAzXPiYRib1O7miOnz23SxIeVl6F4LXox+qov1K35jHcEW6VHKvZI+pyvl7fZEP4MCU5LYvIq1GuQ==",
+      "license_declared": "Apache-2.0",
+      "license_files": [],
+      "name": "@typescript/typescript-linux-loong64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@typescript/typescript-linux-loong64/-/typescript-linux-loong64-7.0.2.tgz",
+      "version": "7.0.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@typescript/typescript-linux-mips64el@7.0.2",
+      "installed": false,
+      "integrity": "sha512-R4KvAMnE43W5Qeqb0Ly56O3mWMWIAgsMyz36DCaycd5nbg/9kzm0liw3JocfRqyJY0KPmzFjbswozXyW0DnIYA==",
+      "license_declared": "Apache-2.0",
+      "license_files": [],
+      "name": "@typescript/typescript-linux-mips64el",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@typescript/typescript-linux-mips64el/-/typescript-linux-mips64el-7.0.2.tgz",
+      "version": "7.0.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@typescript/typescript-linux-ppc64@7.0.2",
+      "installed": false,
+      "integrity": "sha512-DORx5b3sd/4S7eayxm4FQv+A7CrkUIGRaHiwI8oiHTAI1fAPWhF4J0vAlkC8biAlHSVVwxMQ3tjZ2/DVbnQiiA==",
+      "license_declared": "Apache-2.0",
+      "license_files": [],
+      "name": "@typescript/typescript-linux-ppc64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@typescript/typescript-linux-ppc64/-/typescript-linux-ppc64-7.0.2.tgz",
+      "version": "7.0.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@typescript/typescript-linux-riscv64@7.0.2",
+      "installed": false,
+      "integrity": "sha512-wf0jqEDOjrPRnKwYRyyJDRo11KMbvMFrU+q4zqKyChODBzvlkbhNQfKvLxQCcwTpdDaXSHZTVuh0JoCrKCUMHQ==",
+      "license_declared": "Apache-2.0",
+      "license_files": [],
+      "name": "@typescript/typescript-linux-riscv64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@typescript/typescript-linux-riscv64/-/typescript-linux-riscv64-7.0.2.tgz",
+      "version": "7.0.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@typescript/typescript-linux-s390x@7.0.2",
+      "installed": false,
+      "integrity": "sha512-IkwJc3L7yhytWd/ewjyxNDfOmswCm9GWMJT/ue/dU4aZNbwZeYAetq42VyLmsmSjvoX7z74X6ZaYCtzAr0EuGw==",
+      "license_declared": "Apache-2.0",
+      "license_files": [],
+      "name": "@typescript/typescript-linux-s390x",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@typescript/typescript-linux-s390x/-/typescript-linux-s390x-7.0.2.tgz",
+      "version": "7.0.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@typescript/typescript-linux-x64@7.0.2",
+      "installed": false,
+      "integrity": "sha512-EYdf2cNg7rgCWJnxCdJ+F3V39O8ihb37eHAu1LK8oAFizgTQbPOK7zHHXbPt8rX24COqODXeI3sIf0fCXG7H/A==",
+      "license_declared": "Apache-2.0",
+      "license_files": [],
+      "name": "@typescript/typescript-linux-x64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@typescript/typescript-linux-x64/-/typescript-linux-x64-7.0.2.tgz",
+      "version": "7.0.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@typescript/typescript-netbsd-arm64@7.0.2",
+      "installed": false,
+      "integrity": "sha512-+polYF4MF04aPpO5FTkHran9yUQDSXqy5GiSDKpsll5jy3l3+g9QLhpf39T+ePtefhXLOGrLl0QIjkQP6VnelA==",
+      "license_declared": "Apache-2.0",
+      "license_files": [],
+      "name": "@typescript/typescript-netbsd-arm64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@typescript/typescript-netbsd-arm64/-/typescript-netbsd-arm64-7.0.2.tgz",
+      "version": "7.0.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@typescript/typescript-netbsd-x64@7.0.2",
+      "installed": false,
+      "integrity": "sha512-8YIT0EHM/3dq10ZOVF/A7pc/YSMtbcecct4rWtexrnSCHOPcpC2KTLXfTCR6vDpnSiY12heNb1GiN/wu+T/FyA==",
+      "license_declared": "Apache-2.0",
+      "license_files": [],
+      "name": "@typescript/typescript-netbsd-x64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@typescript/typescript-netbsd-x64/-/typescript-netbsd-x64-7.0.2.tgz",
+      "version": "7.0.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@typescript/typescript-openbsd-arm64@7.0.2",
+      "installed": false,
+      "integrity": "sha512-APT8+ClYnuYm1u9+kgGXoMj2VzWzcymwh2gNSQVySHfkRDGOTVkoWLjCmOQSaO+PoqQ57B0flRp9SA+7GnnkzQ==",
+      "license_declared": "Apache-2.0",
+      "license_files": [],
+      "name": "@typescript/typescript-openbsd-arm64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@typescript/typescript-openbsd-arm64/-/typescript-openbsd-arm64-7.0.2.tgz",
+      "version": "7.0.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@typescript/typescript-openbsd-x64@7.0.2",
+      "installed": false,
+      "integrity": "sha512-yX7s+Q0Dln0Dt9tEzZsAjXXR/+ytBM7AlglaqyeMPxQszJ1JhlJdZ6jLA+IzldHtflX81em7lDao1xXu+aRRkg==",
+      "license_declared": "Apache-2.0",
+      "license_files": [],
+      "name": "@typescript/typescript-openbsd-x64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@typescript/typescript-openbsd-x64/-/typescript-openbsd-x64-7.0.2.tgz",
+      "version": "7.0.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@typescript/typescript-sunos-x64@7.0.2",
+      "installed": false,
+      "integrity": "sha512-dLJDGaLZ1D4HPQn62u1n8mBDkJREwMsAkCdkwd4Ieqw+x3TUyTsqY0YiBCtE6H6OzzgGk3iuZ3vFWRS+E8/d1g==",
+      "license_declared": "Apache-2.0",
+      "license_files": [],
+      "name": "@typescript/typescript-sunos-x64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@typescript/typescript-sunos-x64/-/typescript-sunos-x64-7.0.2.tgz",
+      "version": "7.0.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@typescript/typescript-win32-arm64@7.0.2",
+      "installed": false,
+      "integrity": "sha512-Gyl1Vy6OsWesLzmq+EP0Fb7b4Nid5232AvcA2SFcdYreldpNtYFFofPjnt62y9hQy7VTaZp65ICJjuAQRaVcIQ==",
+      "license_declared": "Apache-2.0",
+      "license_files": [],
+      "name": "@typescript/typescript-win32-arm64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@typescript/typescript-win32-arm64/-/typescript-win32-arm64-7.0.2.tgz",
+      "version": "7.0.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@typescript/typescript-win32-x64@7.0.2",
+      "installed": true,
+      "integrity": "sha512-0BQ3HkAHHlKLSp1qRvf3SUhGpGsDuhB/jgFw75guyqbxJqEaS0Cw/VFO8i2nHglJUzQCRtMMR/IBAKE3ETMC4g==",
+      "license_declared": "Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+        },
+        {
+          "file": "NOTICE.txt",
+          "sha256": "f5c708b59114507b8b27b48181b6883d106bbca0c1634bbee45b5e344237b66b"
+        }
+      ],
+      "name": "@typescript/typescript-win32-x64",
+      "optional": true,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/microsoft/TypeScript.git"
+      },
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@typescript/typescript-win32-x64/-/typescript-win32-x64-7.0.2.tgz",
+      "version": "7.0.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/@vitejs/plugin-react@6.1.2",
+      "installed": true,
+      "integrity": "sha512-fhJNGUdscQa4HkI0xFxwonWyhnVReCPDbXI7FH7jmzpnVCrFQI7PRrhWecO263610vOrs9tr2Y4xcf8uAdFxbw==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "29b68325fe026047d13e187b44c33b2acacf7dc647dec4583702e59f235e13b5"
+        }
+      ],
+      "name": "@vitejs/plugin-react",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "directory": "packages/plugin-react",
+        "type": "git",
+        "url": "git+https://github.com/vitejs/vite-plugin-react.git"
+      },
+      "scope": "build",
+      "source": "https://registry.npmjs.org/@vitejs/plugin-react/-/plugin-react-6.1.2.tgz",
+      "version": "6.1.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/bidi-js@1.1.0",
+      "installed": true,
+      "integrity": "sha512-fX1Onk0tdVPC7obPWB5EbJ1z7NVhLq4m2xZLq2YXBkxzMXIGRpNMU88n0EPgWseKl12J7zXs7qrDxPK4sRs2fg==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE.txt",
+          "sha256": "49d4d143fed599deb502a0fe6e02f49832f87e9a3a4cd0502e469596d50faa6d"
+        }
+      ],
+      "name": "bidi-js",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/lojjic/bidi-js.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/bidi-js/-/bidi-js-1.1.0.tgz",
+      "version": "1.1.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/csstype@3.2.3",
+      "installed": true,
+      "integrity": "sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "11d55bd4541c75ee7879547ac49089c489163dae49551389713c3d026cab383e"
+        }
+      ],
+      "name": "csstype",
+      "optional": false,
+      "project": "client",
+      "repository": "https://github.com/frenic/csstype",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/csstype/-/csstype-3.2.3.tgz",
+      "version": "3.2.3"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/detect-libc@2.1.2",
+      "installed": true,
+      "integrity": "sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==",
+      "license_declared": "Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        }
+      ],
+      "name": "detect-libc",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/lovell/detect-libc.git"
+      },
+      "scope": "build",
+      "source": "https://registry.npmjs.org/detect-libc/-/detect-libc-2.1.2.tgz",
+      "version": "2.1.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/earcut@3.2.4",
+      "installed": true,
+      "integrity": "sha512-FHc6yNpnTORB0tM5kmZ03iD2mDuNakDE2lvf4Hw1XkfxtEHIGVi01B/GqUSwx+NcC1WGjidAfpTXzeALtPtfpg==",
+      "license_declared": "ISC",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "0b348fff56384b43dbb37593906904e56d0f9deb51eae590d4dc6d427fbf1808"
+        }
+      ],
+      "name": "earcut",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/mapbox/earcut.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/earcut/-/earcut-3.2.4.tgz",
+      "version": "3.2.4"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/fdir@6.5.0",
+      "installed": true,
+      "integrity": "sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "9a39f2aadab11a3697edd668ff2d8ad885b649737b7ab4d3bf12b34e5ada0c86"
+        }
+      ],
+      "name": "fdir",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/thecodrr/fdir.git"
+      },
+      "scope": "build",
+      "source": "https://registry.npmjs.org/fdir/-/fdir-6.5.0.tgz",
+      "version": "6.5.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/fsevents@2.3.3",
+      "installed": false,
+      "integrity": "sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==",
+      "license_declared": "MIT",
+      "license_files": [],
+      "name": "fsevents",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz",
+      "version": "2.3.3"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/gl-matrix@3.4.4",
+      "installed": true,
+      "integrity": "sha512-latSnyDNt/8zYUB6VIJ6PCh2jBjJX6gnDsoCZ7LyW7GkqrD51EWwa9qCoGixj8YqBtETQK/xY7OmpTF8xz1DdQ==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE.md",
+          "sha256": "af62d31a0cdc1bf95d5e19428c3e0de368b727d9d5b6b6cdb466f8a52e68ad06"
+        }
+      ],
+      "name": "gl-matrix",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/toji/gl-matrix.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/gl-matrix/-/gl-matrix-3.4.4.tgz",
+      "version": "3.4.4"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/json-stringify-pretty-compact@4.0.0",
+      "installed": true,
+      "integrity": "sha512-3CNZ2DnrpByG9Nqj6Xo8vqbjT4F6N+tb4Gb28ESAZjYZ5yqvmc56J+/kuIwkaAMOyblTQhUW7PxMkUb8Q36N3Q==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "2d51145876dda3dd13253463b852aa83b78aa598b90fca1709f39f1740ff9a2f"
+        }
+      ],
+      "name": "json-stringify-pretty-compact",
+      "optional": false,
+      "project": "client",
+      "repository": "lydell/json-stringify-pretty-compact",
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/json-stringify-pretty-compact/-/json-stringify-pretty-compact-4.0.0.tgz",
+      "version": "4.0.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/kdbush@4.1.0",
+      "installed": true,
+      "integrity": "sha512-e9vurzrXJQrFX6ckpHP3bvj5l+9CnYzkxDNnNQ1h2QTqdWsUAJgXiKdGNcOa1EY85dU8KbQ+z/FdQdB7P+9yfQ==",
+      "license_declared": "ISC",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "0aba693a2c2e5b1b1465f9e06d29c21769450add9dbb7dc915b41a60e900196f"
+        }
+      ],
+      "name": "kdbush",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/mourner/kdbush.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/kdbush/-/kdbush-4.1.0.tgz",
+      "version": "4.1.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/lightningcss-android-arm64@1.33.0",
+      "installed": false,
+      "integrity": "sha512-gEpRTalKdosp4Bb8qWtc2iOgE5SeIHlpS1up9bFq2wAyYhl1UdTObYiHe98zEM9SQvSoqQZ1IQD0JNpg3Ml5pg==",
+      "license_declared": "MPL-2.0",
+      "license_files": [],
+      "name": "lightningcss-android-arm64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/lightningcss-android-arm64/-/lightningcss-android-arm64-1.33.0.tgz",
+      "version": "1.33.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/lightningcss-darwin-arm64@1.33.0",
+      "installed": false,
+      "integrity": "sha512-Sciaz8eenNTKn9b3t7+xr0ipTp9YxKQY4npwQ3mrRuL0BAVHBLyZxofhaKBAVtzmtRZ/zTyo0/to4B1uWG/Djg==",
+      "license_declared": "MPL-2.0",
+      "license_files": [],
+      "name": "lightningcss-darwin-arm64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/lightningcss-darwin-arm64/-/lightningcss-darwin-arm64-1.33.0.tgz",
+      "version": "1.33.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/lightningcss-darwin-x64@1.33.0",
+      "installed": false,
+      "integrity": "sha512-Z5UPAxzrjlWNNyGy6i65cJzzvgJ5D3T6wMvs+gWpY9d7qRhANrxqAp6LhxIgZhWEw18RfJTGcRxjuLIBr+m8XQ==",
+      "license_declared": "MPL-2.0",
+      "license_files": [],
+      "name": "lightningcss-darwin-x64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/lightningcss-darwin-x64/-/lightningcss-darwin-x64-1.33.0.tgz",
+      "version": "1.33.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/lightningcss-freebsd-x64@1.33.0",
+      "installed": false,
+      "integrity": "sha512-QQM/Ti/hQajJwCY+RiWuCZ9sdtI/XQk7nDK5vC8kkdwixezOlDgvDx7+RT+QjK6FcFT4MpsuoBnHIo/O3StRRg==",
+      "license_declared": "MPL-2.0",
+      "license_files": [],
+      "name": "lightningcss-freebsd-x64",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/lightningcss-freebsd-x64/-/lightningcss-freebsd-x64-1.33.0.tgz",
+      "version": "1.33.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/lightningcss-linux-arm-gnueabihf@1.33.0",
+      "installed": false,
+      "integrity": "sha512-N7FVBe6iS24MlM6R/4RBTxGhQheZGs7tiQ9U32UtF75NzP5Q7xWPRqLBCKxlRQRk3rY1jCIPLzx7WzOhuUIRLQ==",
+      "license_declared": "MPL-2.0",
+      "license_files": [],
+      "name": "lightningcss-linux-arm-gnueabihf",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/lightningcss-linux-arm-gnueabihf/-/lightningcss-linux-arm-gnueabihf-1.33.0.tgz",
+      "version": "1.33.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/lightningcss-linux-arm64-gnu@1.33.0",
+      "installed": false,
+      "integrity": "sha512-j2v/itmy4HlNxlc6voKXYgBqNi0Ng2LShg4z7GufpEgs05P+2suBVyi9I6YHq5uoVFx9ETin3eCEhLVyXGQnKg==",
+      "license_declared": "MPL-2.0",
+      "license_files": [],
+      "name": "lightningcss-linux-arm64-gnu",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/lightningcss-linux-arm64-gnu/-/lightningcss-linux-arm64-gnu-1.33.0.tgz",
+      "version": "1.33.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/lightningcss-linux-arm64-musl@1.33.0",
+      "installed": false,
+      "integrity": "sha512-yiO5ROMuYQgXbC60yjZU5CYSFZGKXL0HFATXt9mHJn1+zW55oCtMI9NfcVhYLMFDL7gV7oBPon/EmMMGg2OvtQ==",
+      "license_declared": "MPL-2.0",
+      "license_files": [],
+      "name": "lightningcss-linux-arm64-musl",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/lightningcss-linux-arm64-musl/-/lightningcss-linux-arm64-musl-1.33.0.tgz",
+      "version": "1.33.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/lightningcss-linux-x64-gnu@1.33.0",
+      "installed": false,
+      "integrity": "sha512-ar+Ju7LmcN0Jo4FpL4hpFybwNG9/3A/Br5KW2n2jyODg3MEZXaDYADdemoNS+BDNfMgKvylJLj4S5tyRActuAg==",
+      "license_declared": "MPL-2.0",
+      "license_files": [],
+      "name": "lightningcss-linux-x64-gnu",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/lightningcss-linux-x64-gnu/-/lightningcss-linux-x64-gnu-1.33.0.tgz",
+      "version": "1.33.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/lightningcss-linux-x64-musl@1.33.0",
+      "installed": false,
+      "integrity": "sha512-RYiYbkokw0trfKqqzfF55lginwEPrD3OJDfTuJzFs1MK6iFnDenaz1fqLLtX4ITG3OktJQXOeTaw1awrBAlZPw==",
+      "license_declared": "MPL-2.0",
+      "license_files": [],
+      "name": "lightningcss-linux-x64-musl",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/lightningcss-linux-x64-musl/-/lightningcss-linux-x64-musl-1.33.0.tgz",
+      "version": "1.33.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/lightningcss-win32-arm64-msvc@1.33.0",
+      "installed": false,
+      "integrity": "sha512-1K+MPfLSFVpphzpdbfkhlWk6wBrTObBzS2T6db10PNOZgR9GoVsAWzwNyuhUYYbTp23j+4RrncfujZ4uAzXvwA==",
+      "license_declared": "MPL-2.0",
+      "license_files": [],
+      "name": "lightningcss-win32-arm64-msvc",
+      "optional": true,
+      "project": "client",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/lightningcss-win32-arm64-msvc/-/lightningcss-win32-arm64-msvc-1.33.0.tgz",
+      "version": "1.33.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/lightningcss-win32-x64-msvc@1.33.0",
+      "installed": true,
+      "integrity": "sha512-OlEICDx/Xl0FqSp4bry8zFnCvGpig3Gl4gCquvYwHuqJKEC1+n9NgDniFvqHGmMv1ZkqDJrDqKKSykTDX+ehuA==",
+      "license_declared": "MPL-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+        }
+      ],
+      "name": "lightningcss-win32-x64-msvc",
+      "optional": true,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/parcel-bundler/lightningcss.git"
+      },
+      "scope": "build",
+      "source": "https://registry.npmjs.org/lightningcss-win32-x64-msvc/-/lightningcss-win32-x64-msvc-1.33.0.tgz",
+      "version": "1.33.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/lightningcss@1.33.0",
+      "installed": true,
+      "integrity": "sha512-WkUDrojuJs0xkgGf2udWxa3yGBRxPtxUkB79i6aCZLRgc7PM8fZe9TosfPDcvEpQZbuFASnHYmRLBLUbmLOIIA==",
+      "license_declared": "MPL-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e"
+        }
+      ],
+      "name": "lightningcss",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/parcel-bundler/lightningcss.git"
+      },
+      "scope": "build",
+      "source": "https://registry.npmjs.org/lightningcss/-/lightningcss-1.33.0.tgz",
+      "version": "1.33.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/maplibre-gl@6.15.0",
+      "installed": true,
+      "integrity": "sha512-kxFetbvUHDOVaAP1CYb226Mdk2QhzIPddqM0xJTFD35wu78Mpd6NM7+H68ALjc6Oa0kAOX5EAdMKyvD2u3qfcg==",
+      "license_declared": "BSD-3-Clause",
+      "license_files": [
+        {
+          "file": "LICENSE.txt",
+          "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2"
+        }
+      ],
+      "name": "maplibre-gl",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/maplibre/maplibre-gl-js"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/maplibre-gl/-/maplibre-gl-6.15.0.tgz",
+      "version": "6.15.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/minimist@1.2.8",
+      "installed": true,
+      "integrity": "sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "435a6722c786b0a56fbe7387028f1d9d3f3a2d0fb615bb8fee118727c3f59b7b"
+        }
+      ],
+      "name": "minimist",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/minimistjs/minimist.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/minimist/-/minimist-1.2.8.tgz",
+      "version": "1.2.8"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/murmurhash-js@1.0.0",
+      "installed": true,
+      "integrity": "sha512-TvmkNhkv8yct0SVBSy+o8wYzXjE4Zz3PCesbfs8HiCXXdcTuocApFv11UWlNFWKYsP2okqrhb7JNlSm9InBhIw==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "README.md",
+          "sha256": "e137ced8967fc334ec9b5fc5c8500992f9e49d2e9cc0f6e2439e46af2f2481a4"
+        }
+      ],
+      "name": "murmurhash-js",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/mikolalysenko/murmurhash-js.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/murmurhash-js/-/murmurhash-js-1.0.0.tgz",
+      "version": "1.0.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/nanoid@3.3.20",
+      "installed": true,
+      "integrity": "sha512-uKdg2G3GNCKQn9byYOpxbGqrT2fGO5KRt5J/8b3pok8rT6qxGWF6hxMyJiEYtAf+FVyYuD9hRaDqX5uPFYJ4ZQ==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "da4db1480d9beea3483a2eda5c53b22238d0827d57da162b48f122e04d2d9987"
+        }
+      ],
+      "name": "nanoid",
+      "optional": false,
+      "project": "client",
+      "repository": "ai/nanoid",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/nanoid/-/nanoid-3.3.20.tgz",
+      "version": "3.3.20"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/pbf@5.1.2",
+      "installed": true,
+      "integrity": "sha512-mnvGdvOrIvJOBGUEdGkrVXjN8E/VkIJCkf2eS1DH2yv82ORUlLttmDt0rWY38yYZmVwciZwBUvHM20qxBZf40w==",
+      "license_declared": "BSD-3-Clause",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "fdf1d5279107d760c7df8c6edab1faab2b72ba17528273a8b417b08f1e12ebbe"
+        }
+      ],
+      "name": "pbf",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/mapbox/pbf.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/pbf/-/pbf-5.1.2.tgz",
+      "version": "5.1.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/picocolors@1.1.1",
+      "installed": true,
+      "integrity": "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==",
+      "license_declared": "ISC",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750"
+        }
+      ],
+      "name": "picocolors",
+      "optional": false,
+      "project": "client",
+      "repository": "alexeyraspopov/picocolors",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz",
+      "version": "1.1.1"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/picomatch@4.0.7",
+      "installed": true,
+      "integrity": "sha512-qcJu88Q2IWqJsDD529JKMdwGm/dvInW4HvQnRwiH9JtihJvzGOscDtHE3x1pBKeUOTysQ8kVmLnJ2kJu7yhcGA==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9"
+        }
+      ],
+      "name": "picomatch",
+      "optional": false,
+      "project": "client",
+      "repository": "micromatch/picomatch",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/picomatch/-/picomatch-4.0.7.tgz",
+      "version": "4.0.7"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/postcss@8.5.31",
+      "installed": true,
+      "integrity": "sha512-YUbWYCgErwnMAVkjUnYa+KlMBzGpHwiIt/DE7f0G33AuX2LH9UcTk6KgWxd3zRU+pN3u/C+Xl3EnMLM4Hea7Sg==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8"
+        }
+      ],
+      "name": "postcss",
+      "optional": false,
+      "project": "client",
+      "repository": "postcss/postcss",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/postcss/-/postcss-8.5.31.tgz",
+      "version": "8.5.31"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/potpack@2.1.0",
+      "installed": true,
+      "integrity": "sha512-pcaShQc1Shq0y+E7GqJqvZj8DTthWV1KeHGdi0Z6IAin2Oi3JnLCOfwnCo84qc+HAp52wT9nK9H7FAJp5a44GQ==",
+      "license_declared": "ISC",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "cfec0482fb785fe27e3b368a2d9e84bf7a61b275e83ec582bf288e98cd530bb0"
+        }
+      ],
+      "name": "potpack",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mapbox/potpack.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/potpack/-/potpack-2.1.0.tgz",
+      "version": "2.1.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/protocol-buffers-schema@3.6.1",
+      "installed": true,
+      "integrity": "sha512-VG2K63Igkiv9p76tk1lilczEK1cT+kCjKtkdhw1dQZV3k3IXJbd3o6Ho8b9zJZaHSnT2hKe4I+ObmX9w6m5SmQ==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "3fe8d55a98dbf260eace67c00cf9bc53edb46234e840098a0b93df3096b97fb6"
+        }
+      ],
+      "name": "protocol-buffers-schema",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/mafintosh/protocol-buffers-schema"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/protocol-buffers-schema/-/protocol-buffers-schema-3.6.1.tgz",
+      "version": "3.6.1"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/quickselect@3.0.0",
+      "installed": true,
+      "integrity": "sha512-XdjUArbK4Bm5fLLvlm5KpTFOiOThgfWWI4axAZDWg4E/0mKdZyI9tNEfds27qCi1ze/vwTR16kvmmGhRra3c2g==",
+      "license_declared": "ISC",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "238ddb00e12a420a54e060afa19bdab4f70bf49e0e2a8ebb1a5e851f9ef447df"
+        }
+      ],
+      "name": "quickselect",
+      "optional": false,
+      "project": "client",
+      "repository": "github:mourner/quickselect",
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/quickselect/-/quickselect-3.0.0.tgz",
+      "version": "3.0.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/react-dom@19.3.1",
+      "installed": true,
+      "integrity": "sha512-Y0bARz53lhEC1NMCASs0/j+faB/zqt3R8hpvg1e8+61ZVJ4UL0UdC4cBbXfZMcIuhrfgeILTLe+ZeBCavQPtKQ==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+        }
+      ],
+      "name": "react-dom",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "directory": "packages/react-dom",
+        "type": "git",
+        "url": "https://github.com/react/react.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/react-dom/-/react-dom-19.3.1.tgz",
+      "version": "19.3.1"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/react@19.3.1",
+      "installed": true,
+      "integrity": "sha512-QNhWdt7nrgVWWQG58QuGsAR3jv3Hbe4mb4vz7w2csnHavciZJgda1CPNaldF6eVxv90ud3jUXpKlHL69gO38yw==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+        }
+      ],
+      "name": "react",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "directory": "packages/react",
+        "type": "git",
+        "url": "https://github.com/react/react.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/react/-/react-19.3.1.tgz",
+      "version": "19.3.1"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/require-from-string@2.0.2",
+      "installed": true,
+      "integrity": "sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "license",
+          "sha256": "6ee0feb1f6ef996ff5a68600f8cf98909cf412d39ef3cdceaefd87d636fa1b7f"
+        }
+      ],
+      "name": "require-from-string",
+      "optional": false,
+      "project": "client",
+      "repository": "floatdrop/require-from-string",
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/require-from-string/-/require-from-string-2.0.2.tgz",
+      "version": "2.0.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/resolve-protobuf-schema@2.1.0",
+      "installed": true,
+      "integrity": "sha512-kI5ffTiZWmJaS/huM8wZfEMer1eRd7oJQhDuxeCLe3t7N7mX3z94CN0xPxBQxFYQTSNz9T0i+v6inKqSdK8xrQ==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "c0993ca46cd47c09710a977d3a3d51602cff96f19e8d2eb8d5887aa20a7beead"
+        }
+      ],
+      "name": "resolve-protobuf-schema",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/mafintosh/resolve-protobuf-schema.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/resolve-protobuf-schema/-/resolve-protobuf-schema-2.1.0.tgz",
+      "version": "2.1.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/rolldown@1.2.15",
+      "installed": true,
+      "integrity": "sha512-6odND+fel5zVw3I4Yc2e69gvguDnX0CAAGiNDZSq4ik5WUcaLrkD2GLuog0XcODbor31hZ5ayEMgVDno+KPV5g==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734"
+        }
+      ],
+      "name": "rolldown",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "directory": "packages/rolldown",
+        "type": "git",
+        "url": "git+https://github.com/rolldown/rolldown.git"
+      },
+      "scope": "build",
+      "source": "https://registry.npmjs.org/rolldown/-/rolldown-1.2.15.tgz",
+      "version": "1.2.15"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/scheduler@0.28.0",
+      "installed": true,
+      "integrity": "sha512-juorfCmIkIw8tT+p5BXSm6PJjQF/ycEYmKyzURCIt/RaZIhL+PulbQ9Yu2z1HdOJDdqDTlxA1+xKBmHXJsczAw==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+        }
+      ],
+      "name": "scheduler",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "directory": "packages/scheduler",
+        "type": "git",
+        "url": "https://github.com/react/react.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.28.0.tgz",
+      "version": "0.28.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/source-map-js@1.2.2",
+      "installed": true,
+      "integrity": "sha512-KGj/8Y43x35aZVDtt+J4mK1hoLGHULMYfSkODJNQjNDC3oW1PqPoxMwo0pLUsWM/UEGzON/NxeHywEfNXNP3Vw==",
+      "license_declared": "BSD-3-Clause",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "6cb0631f71c7749763fd3dd1d5bee52dd1070ec17f2edc1710079ad070bd2fbd"
+        }
+      ],
+      "name": "source-map-js",
+      "optional": false,
+      "project": "client",
+      "repository": "7rulnik/source-map-js",
+      "scope": "build",
+      "source": "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.2.tgz",
+      "version": "1.2.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/tinyglobby@0.2.17",
+      "installed": true,
+      "integrity": "sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "22c68811e174cbbfb3813d4135918df4f540959c14d872e601d9abe83d3cde8f"
+        }
+      ],
+      "name": "tinyglobby",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SuperchupuDev/tinyglobby.git"
+      },
+      "scope": "build",
+      "source": "https://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.17.tgz",
+      "version": "0.2.17"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/tinyqueue@3.0.0",
+      "installed": true,
+      "integrity": "sha512-gRa9gwYU3ECmQYv3lslts5hxuIa90veaEcxDYuu3QGOIAEM2mOZkVHp48ANJuu1CURtRdHKUBY5Lm1tHV+sD4g==",
+      "license_declared": "ISC",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "780453e05abdc22307ee01c706a2e73f508d3e484fc4c804485ebf6fe0964694"
+        }
+      ],
+      "name": "tinyqueue",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/mourner/tinyqueue.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/tinyqueue/-/tinyqueue-3.0.0.tgz",
+      "version": "3.0.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/typescript@7.0.2",
+      "installed": true,
+      "integrity": "sha512-8FYau96o3NKOhbjKi/qNvG/W5jhzxkbdm5sj9AbZ/5T5sWqn3hJgLfGx27sRKZWTvyzCP8dLRBTf5tBTSRVUNA==",
+      "license_declared": "Apache-2.0",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+        },
+        {
+          "file": "NOTICE.txt",
+          "sha256": "f5c708b59114507b8b27b48181b6883d106bbca0c1634bbee45b5e344237b66b"
+        }
+      ],
+      "name": "typescript",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/microsoft/TypeScript.git"
+      },
+      "scope": "build",
+      "source": "https://registry.npmjs.org/typescript/-/typescript-7.0.2.tgz",
+      "version": "7.0.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:client:node_modules/vite@8.3.5",
+      "installed": true,
+      "integrity": "sha512-z1YpjieJ9g0ebTmQpLBv/oq9E3F9EIlOe+7LahW8SrE3LTiG3udBRUXQOlYXP9b+IC2q2phHeVxj9xGlw34OEQ==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE.md",
+          "sha256": "a22152baa1aef74402443008e767e7c689a524c0909d19b0431d97f5ab066a13"
+        }
+      ],
+      "name": "vite",
+      "optional": false,
+      "project": "client",
+      "repository": {
+        "directory": "packages/vite",
+        "type": "git",
+        "url": "git+https://github.com/vitejs/vite.git"
+      },
+      "scope": "build",
+      "source": "https://registry.npmjs.org/vite/-/vite-8.3.5.tgz",
+      "version": "8.3.5"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/@mapbox/jsonlint-lines-primitives@2.0.3",
+      "installed": true,
+      "integrity": "sha512-0SElaV0uMxEnxzBhhX9WTuPyUeMsAN/SS0i16tjuba4/mio63MG9khjC1a0JAiPGXAwvwm4UfHJURCN7nyudQg==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "5dcae6b71018b5454d00228bd08ccbcd9801ee27b19959b88ebcb55602604e6d"
+        }
+      ],
+      "name": "@mapbox/jsonlint-lines-primitives",
+      "optional": false,
+      "project": "probe",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/mapbox/jsonlint.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/@mapbox/jsonlint-lines-primitives/-/jsonlint-lines-primitives-2.0.3.tgz",
+      "version": "2.0.3"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/@mapbox/point-geometry@1.1.0",
+      "installed": true,
+      "integrity": "sha512-YGcBz1cg4ATXDCM/71L9xveh4dynfGmcLDqufR+nQQy3fKwsAZsWd/x4621/6uJaeB9mwOHE6hPeDgXz9uViUQ==",
+      "license_declared": "ISC",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "0c0ede0036a425ff8b2d49341ea9aa8eccbeeae1ac4eb59874c9dd8bcf5186d3"
+        }
+      ],
+      "name": "@mapbox/point-geometry",
+      "optional": false,
+      "project": "probe",
+      "repository": {
+        "type": "git",
+        "url": "git@github.com:mapbox/point-geometry.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/@mapbox/point-geometry/-/point-geometry-1.1.0.tgz",
+      "version": "1.1.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/@mapbox/tiny-sdf@2.3.0",
+      "installed": true,
+      "integrity": "sha512-gBvcNDBBB66bgQYvnaJ6Jk+VCaMmVq5+IZR2kWPisT88Z8s0kBQt6hfVi8QgRW8Vpg0UWZzBA4ZSyzHHC+VeRA==",
+      "license_declared": "BSD-2-Clause",
+      "license_files": [
+        {
+          "file": "LICENSE.txt",
+          "sha256": "4f78063c6c0757df950aa3440cef9a2a6bd1c552c994c32237c3acc283e72ee6"
+        }
+      ],
+      "name": "@mapbox/tiny-sdf",
+      "optional": false,
+      "project": "probe",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mapbox/tiny-sdf.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/@mapbox/tiny-sdf/-/tiny-sdf-2.3.0.tgz",
+      "version": "2.3.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/@mapbox/unitbezier@1.0.0",
+      "installed": true,
+      "integrity": "sha512-fqd515fjBmANKGGsQ286E2Wvj/XvDFpGzwJxq4CI6jMQue6Oy04uCKp+JWKF00xRTmk6cEu1jPJ9p3xqH8YWqQ==",
+      "license_declared": "BSD-2-Clause",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "f0dc305ad097eddbc66eebb79288c92d8a5043818ace81206383a4c1a3268fe3"
+        }
+      ],
+      "name": "@mapbox/unitbezier",
+      "optional": false,
+      "project": "probe",
+      "repository": {
+        "type": "git",
+        "url": "git@github.com:mapbox/unitbezier.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/@mapbox/unitbezier/-/unitbezier-1.0.0.tgz",
+      "version": "1.0.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/@mapbox/vector-tile@3.0.0",
+      "installed": true,
+      "integrity": "sha512-Qf10S1uIHMk20ri/IVBnpS+esUEkVaR5Hftmz88jTInrpmWgPGJfPe3LVjjlE77trLx8tH6qjTG7uWH9hIq/0Q==",
+      "license_declared": "BSD-3-Clause",
+      "license_files": [
+        {
+          "file": "LICENSE.txt",
+          "sha256": "5b09a507df6f21d6c2112c46dcaf2927b9dbd8b580a08b542d8ec2f9191d783d"
+        }
+      ],
+      "name": "@mapbox/vector-tile",
+      "optional": false,
+      "project": "probe",
+      "repository": {
+        "url": "git+https://github.com/mapbox/vector-tile-js.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/@mapbox/vector-tile/-/vector-tile-3.0.0.tgz",
+      "version": "3.0.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/@maplibre/geojson-vt@6.3.0",
+      "installed": true,
+      "integrity": "sha512-3Zw2jsU9pIJG3G2CQFbLjWj2MlAHodhD7cSY+15iywUuLmmkgzcKRnueVRZ4AcC/5wOtfhidcJAAzBpoBNs3Xg==",
+      "license_declared": "ISC",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "9eb90e1c920aeccc6d630bd48c1512683d454c669701d46ff8c4c41f922dc4f3"
+        }
+      ],
+      "name": "@maplibre/geojson-vt",
+      "optional": false,
+      "project": "probe",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/maplibre/geojson-vt"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/@maplibre/geojson-vt/-/geojson-vt-6.3.0.tgz",
+      "version": "6.3.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/@maplibre/maplibre-gl-style-spec@26.4.4",
+      "installed": true,
+      "integrity": "sha512-hG4RZR4PBd/+6A3ODdZ3AnQRF106ZQk1y3bhwDg8bH/A4Oz2tnRUJVVWs9BZa6gXZ1d3UKe89C+Mm+olGBELvA==",
+      "license_declared": "ISC",
+      "license_files": [
+        {
+          "file": "LICENSE.txt",
+          "sha256": "bfd4cb919eec574e9213e1e61f880831eb5fc372d467be429fd0a8d51d1df890"
+        }
+      ],
+      "name": "@maplibre/maplibre-gl-style-spec",
+      "optional": false,
+      "project": "probe",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/maplibre/maplibre-style-spec"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/@maplibre/maplibre-gl-style-spec/-/maplibre-gl-style-spec-26.4.4.tgz",
+      "version": "26.4.4"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/@maplibre/mlt@1.3.0",
+      "installed": true,
+      "integrity": "sha512-7M2O7ABM80Oi8XPkfkrjKB8mOBIxGoVgkA52Mu4RMWoBvvMdagQ522+WxVYujZsMpqIr3BpzrTbXrm4k8lCzCQ==",
+      "license_declared": "(MIT OR Apache-2.0)",
+      "license_files": [
+        {
+          "file": "LICENSE.txt",
+          "sha256": "3c0a2cc8dfe44b856c2577b4d6fe30a999557c795686d52b159a6e1659ea8023"
+        }
+      ],
+      "name": "@maplibre/mlt",
+      "optional": false,
+      "project": "probe",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/maplibre/maplibre-tile-spec"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/@maplibre/mlt/-/mlt-1.3.0.tgz",
+      "version": "1.3.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/@maplibre/vt-pbf@4.3.2",
+      "installed": true,
+      "integrity": "sha512-j6p0AdjvAR19Z3XaCysle7A4ZSo08tYOzxD0Y9NQylwPAkwJJeYub5b2eVucdeDh7erhv69DahoLOevDRERRUw==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "4c61c5753d4b021bc3b07f21d2a830506974ce200c19cfadf3d4a25e747fc853"
+        }
+      ],
+      "name": "@maplibre/vt-pbf",
+      "optional": false,
+      "project": "probe",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/maplibre/vt-pbf"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/@maplibre/vt-pbf/-/vt-pbf-4.3.2.tgz",
+      "version": "4.3.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/@types/geojson@7946.0.16",
+      "installed": true,
+      "integrity": "sha512-6C8nqWur3j98U6+lXDfTUWIfgvZU+EumvpHKcYjujKH7woYyLj2sUmff0tRhrqM7BohUw7Pz3ZB1jj2gW9Fvmg==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "name": "@types/geojson",
+      "optional": false,
+      "project": "probe",
+      "repository": {
+        "directory": "types/geojson",
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/@types/geojson/-/geojson-7946.0.16.tgz",
+      "version": "7946.0.16"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/bidi-js@1.1.0",
+      "installed": true,
+      "integrity": "sha512-fX1Onk0tdVPC7obPWB5EbJ1z7NVhLq4m2xZLq2YXBkxzMXIGRpNMU88n0EPgWseKl12J7zXs7qrDxPK4sRs2fg==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE.txt",
+          "sha256": "49d4d143fed599deb502a0fe6e02f49832f87e9a3a4cd0502e469596d50faa6d"
+        }
+      ],
+      "name": "bidi-js",
+      "optional": false,
+      "project": "probe",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/lojjic/bidi-js.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/bidi-js/-/bidi-js-1.1.0.tgz",
+      "version": "1.1.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/earcut@3.2.4",
+      "installed": true,
+      "integrity": "sha512-FHc6yNpnTORB0tM5kmZ03iD2mDuNakDE2lvf4Hw1XkfxtEHIGVi01B/GqUSwx+NcC1WGjidAfpTXzeALtPtfpg==",
+      "license_declared": "ISC",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "0b348fff56384b43dbb37593906904e56d0f9deb51eae590d4dc6d427fbf1808"
+        }
+      ],
+      "name": "earcut",
+      "optional": false,
+      "project": "probe",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/mapbox/earcut.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/earcut/-/earcut-3.2.4.tgz",
+      "version": "3.2.4"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/fflate@0.8.3",
+      "installed": true,
+      "integrity": "sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "0a1df3a083d0c010560aa342e87959c8c1070e6fd54545741f083f22d0c8b551"
+        }
+      ],
+      "name": "fflate",
+      "optional": false,
+      "project": "probe",
+      "repository": "https://github.com/101arrowz/fflate",
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/fflate/-/fflate-0.8.3.tgz",
+      "version": "0.8.3"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/gl-matrix@3.4.4",
+      "installed": true,
+      "integrity": "sha512-latSnyDNt/8zYUB6VIJ6PCh2jBjJX6gnDsoCZ7LyW7GkqrD51EWwa9qCoGixj8YqBtETQK/xY7OmpTF8xz1DdQ==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE.md",
+          "sha256": "af62d31a0cdc1bf95d5e19428c3e0de368b727d9d5b6b6cdb466f8a52e68ad06"
+        }
+      ],
+      "name": "gl-matrix",
+      "optional": false,
+      "project": "probe",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/toji/gl-matrix.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/gl-matrix/-/gl-matrix-3.4.4.tgz",
+      "version": "3.4.4"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/json-stringify-pretty-compact@4.0.0",
+      "installed": true,
+      "integrity": "sha512-3CNZ2DnrpByG9Nqj6Xo8vqbjT4F6N+tb4Gb28ESAZjYZ5yqvmc56J+/kuIwkaAMOyblTQhUW7PxMkUb8Q36N3Q==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "2d51145876dda3dd13253463b852aa83b78aa598b90fca1709f39f1740ff9a2f"
+        }
+      ],
+      "name": "json-stringify-pretty-compact",
+      "optional": false,
+      "project": "probe",
+      "repository": "lydell/json-stringify-pretty-compact",
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/json-stringify-pretty-compact/-/json-stringify-pretty-compact-4.0.0.tgz",
+      "version": "4.0.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/kdbush@4.1.0",
+      "installed": true,
+      "integrity": "sha512-e9vurzrXJQrFX6ckpHP3bvj5l+9CnYzkxDNnNQ1h2QTqdWsUAJgXiKdGNcOa1EY85dU8KbQ+z/FdQdB7P+9yfQ==",
+      "license_declared": "ISC",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "0aba693a2c2e5b1b1465f9e06d29c21769450add9dbb7dc915b41a60e900196f"
+        }
+      ],
+      "name": "kdbush",
+      "optional": false,
+      "project": "probe",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/mourner/kdbush.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/kdbush/-/kdbush-4.1.0.tgz",
+      "version": "4.1.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/maplibre-gl@6.15.0",
+      "installed": true,
+      "integrity": "sha512-kxFetbvUHDOVaAP1CYb226Mdk2QhzIPddqM0xJTFD35wu78Mpd6NM7+H68ALjc6Oa0kAOX5EAdMKyvD2u3qfcg==",
+      "license_declared": "BSD-3-Clause",
+      "license_files": [
+        {
+          "file": "LICENSE.txt",
+          "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2"
+        }
+      ],
+      "name": "maplibre-gl",
+      "optional": false,
+      "project": "probe",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/maplibre/maplibre-gl-js"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/maplibre-gl/-/maplibre-gl-6.15.0.tgz",
+      "version": "6.15.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/minimist@1.2.8",
+      "installed": true,
+      "integrity": "sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "435a6722c786b0a56fbe7387028f1d9d3f3a2d0fb615bb8fee118727c3f59b7b"
+        }
+      ],
+      "name": "minimist",
+      "optional": false,
+      "project": "probe",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/minimistjs/minimist.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/minimist/-/minimist-1.2.8.tgz",
+      "version": "1.2.8"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/murmurhash-js@1.0.0",
+      "installed": true,
+      "integrity": "sha512-TvmkNhkv8yct0SVBSy+o8wYzXjE4Zz3PCesbfs8HiCXXdcTuocApFv11UWlNFWKYsP2okqrhb7JNlSm9InBhIw==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "README.md",
+          "sha256": "e137ced8967fc334ec9b5fc5c8500992f9e49d2e9cc0f6e2439e46af2f2481a4"
+        }
+      ],
+      "name": "murmurhash-js",
+      "optional": false,
+      "project": "probe",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/mikolalysenko/murmurhash-js.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/murmurhash-js/-/murmurhash-js-1.0.0.tgz",
+      "version": "1.0.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/pbf@5.1.2",
+      "installed": true,
+      "integrity": "sha512-mnvGdvOrIvJOBGUEdGkrVXjN8E/VkIJCkf2eS1DH2yv82ORUlLttmDt0rWY38yYZmVwciZwBUvHM20qxBZf40w==",
+      "license_declared": "BSD-3-Clause",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "fdf1d5279107d760c7df8c6edab1faab2b72ba17528273a8b417b08f1e12ebbe"
+        }
+      ],
+      "name": "pbf",
+      "optional": false,
+      "project": "probe",
+      "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/mapbox/pbf.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/pbf/-/pbf-5.1.2.tgz",
+      "version": "5.1.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/pmtiles@4.5.0",
+      "installed": true,
+      "integrity": "sha512-CBeD4SoUluFziGdy/8k7FOjQxQy486n+929W/tWophauvMICpkZ26vGBWhDt/6b1FZQWNaf4jFdT/5+q0Wii5w==",
+      "license_declared": "BSD-3-Clause",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "git_blob_sha": "ec3d69a55220793cb4b2074ebe202df25f9cb417",
+          "project_file": "third_party/licenses/upstream/npm-pmtiles-4.5.0.LICENSE",
+          "sha256": "0371c38f338835f7fc13ed71176f3d92144e22c8b736a31cced57adbbeb647b3",
+          "upstream_url": "https://github.com/protomaps/PMTiles/blob/3b10e67edb65c6b04549f74c0279cef8328d859c/LICENSE"
+        }
+      ],
+      "name": "pmtiles",
+      "optional": false,
+      "project": "probe",
+      "repository": null,
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/pmtiles/-/pmtiles-4.5.0.tgz",
+      "upstream_license_evidence": {
+        "kind": "npm_git_head",
+        "repository": "protomaps/PMTiles",
+        "upstream_commit": "3b10e67edb65c6b04549f74c0279cef8328d859c",
+        "version_proof": {
+          "file": "third_party/license-provenance/npm-pmtiles-4.5.0.json",
+          "sha256": "270a779499acedb559b9885e50c03ecce3811f2422c58bc805528ced86f57c88"
+        }
+      },
+      "version": "4.5.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/potpack@2.1.0",
+      "installed": true,
+      "integrity": "sha512-pcaShQc1Shq0y+E7GqJqvZj8DTthWV1KeHGdi0Z6IAin2Oi3JnLCOfwnCo84qc+HAp52wT9nK9H7FAJp5a44GQ==",
+      "license_declared": "ISC",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "cfec0482fb785fe27e3b368a2d9e84bf7a61b275e83ec582bf288e98cd530bb0"
+        }
+      ],
+      "name": "potpack",
+      "optional": false,
+      "project": "probe",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mapbox/potpack.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/potpack/-/potpack-2.1.0.tgz",
+      "version": "2.1.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/protocol-buffers-schema@3.6.1",
+      "installed": true,
+      "integrity": "sha512-VG2K63Igkiv9p76tk1lilczEK1cT+kCjKtkdhw1dQZV3k3IXJbd3o6Ho8b9zJZaHSnT2hKe4I+ObmX9w6m5SmQ==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "3fe8d55a98dbf260eace67c00cf9bc53edb46234e840098a0b93df3096b97fb6"
+        }
+      ],
+      "name": "protocol-buffers-schema",
+      "optional": false,
+      "project": "probe",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/mafintosh/protocol-buffers-schema"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/protocol-buffers-schema/-/protocol-buffers-schema-3.6.1.tgz",
+      "version": "3.6.1"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/quickselect@3.0.0",
+      "installed": true,
+      "integrity": "sha512-XdjUArbK4Bm5fLLvlm5KpTFOiOThgfWWI4axAZDWg4E/0mKdZyI9tNEfds27qCi1ze/vwTR16kvmmGhRra3c2g==",
+      "license_declared": "ISC",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "238ddb00e12a420a54e060afa19bdab4f70bf49e0e2a8ebb1a5e851f9ef447df"
+        }
+      ],
+      "name": "quickselect",
+      "optional": false,
+      "project": "probe",
+      "repository": "github:mourner/quickselect",
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/quickselect/-/quickselect-3.0.0.tgz",
+      "version": "3.0.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/require-from-string@2.0.2",
+      "installed": true,
+      "integrity": "sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "license",
+          "sha256": "6ee0feb1f6ef996ff5a68600f8cf98909cf412d39ef3cdceaefd87d636fa1b7f"
+        }
+      ],
+      "name": "require-from-string",
+      "optional": false,
+      "project": "probe",
+      "repository": "floatdrop/require-from-string",
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/require-from-string/-/require-from-string-2.0.2.tgz",
+      "version": "2.0.2"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/resolve-protobuf-schema@2.1.0",
+      "installed": true,
+      "integrity": "sha512-kI5ffTiZWmJaS/huM8wZfEMer1eRd7oJQhDuxeCLe3t7N7mX3z94CN0xPxBQxFYQTSNz9T0i+v6inKqSdK8xrQ==",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "c0993ca46cd47c09710a977d3a3d51602cff96f19e8d2eb8d5887aa20a7beead"
+        }
+      ],
+      "name": "resolve-protobuf-schema",
+      "optional": false,
+      "project": "probe",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/mafintosh/resolve-protobuf-schema.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/resolve-protobuf-schema/-/resolve-protobuf-schema-2.1.0.tgz",
+      "version": "2.1.0"
+    },
+    {
+      "ecosystem": "npm",
+      "id": "npm:probe:node_modules/tinyqueue@3.0.0",
+      "installed": true,
+      "integrity": "sha512-gRa9gwYU3ECmQYv3lslts5hxuIa90veaEcxDYuu3QGOIAEM2mOZkVHp48ANJuu1CURtRdHKUBY5Lm1tHV+sD4g==",
+      "license_declared": "ISC",
+      "license_files": [
+        {
+          "file": "LICENSE",
+          "sha256": "780453e05abdc22307ee01c706a2e73f508d3e484fc4c804485ebf6fe0964694"
+        }
+      ],
+      "name": "tinyqueue",
+      "optional": false,
+      "project": "probe",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/mourner/tinyqueue.git"
+      },
+      "scope": "runtime",
+      "source": "https://registry.npmjs.org/tinyqueue/-/tinyqueue-3.0.0.tgz",
+      "version": "3.0.0"
+    },
+    {
+      "checksum": "f5342b8256476554b4045db8b7bf4dc4044d0405485f220f0cd80764bc0d7faf",
+      "ecosystem": "python",
+      "id": "python:brotli@1.2.1",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "third_party/licenses/font-build-brotli/LICENSE",
+          "sha256": "60ae0f13e76cc2eaaa108677eefa4ce16b647f6bbe8cf0a1ac9429d82eca7248"
+        }
+      ],
+      "locked_pin": "1.2.1",
+      "metadata_sha256": "dd37f7b084bbf2787aa6423e7cf9d268f43c50e0b7397a59317508df83711fa6",
+      "metadata_source": "third_party/font-build/brotli-1.2.1.METADATA",
+      "name": "brotli",
+      "scope": "offline-font-subset",
+      "source": "https://files.pythonhosted.org/packages/3e/82/b7f6c56393f2224ff4108cf1cc255921be1c0ae5962163edbe367c8a55bc/brotli-1.2.1-cp312-cp312-win_amd64.whl",
+      "version": "1.2.1",
+      "wheel_filename": "brotli-1.2.1-cp312-cp312-win_amd64.whl"
+    },
+    {
+      "direct_pin": null,
+      "ecosystem": "python",
+      "id": "python:certifi@2026.10.19",
+      "license_declared": "MPL-2.0",
+      "license_files": [
+        {
+          "file": "licenses/LICENSE",
+          "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+        }
+      ],
+      "locked_pin": "2026.10.19",
+      "metadata_sha256": "a5c0be3a42daeef0edfaf58e6ea5b7550f3e4e8eb35420f72e902df9bcf00f5c",
+      "name": "certifi",
+      "requires_dist": [],
+      "scope": "offline-data-tool",
+      "version": "2026.10.19"
+    },
+    {
+      "direct_pin": null,
+      "ecosystem": "python",
+      "id": "python:charset-normalizer@3.5.2",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "licenses/LICENSE",
+          "sha256": "18577485d3704f1a479ded8e573c0976cfed315fd2fd17983fa988da4c2f70d1"
+        }
+      ],
+      "locked_pin": "3.5.2",
+      "metadata_sha256": "49e955a09e1a159e0846872798006e8db7d518d8d70c637066fefdb08d3d9f7b",
+      "name": "charset-normalizer",
+      "requires_dist": [],
+      "scope": "offline-data-tool",
+      "version": "3.5.2"
+    },
+    {
+      "checksum": "4304f03ed7f4ba000a8dcc941ad854bfa52e2f3b6112b8f099b6f431cf98e701",
+      "ecosystem": "python",
+      "id": "python:fonttools@4.67.0",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "third_party/licenses/font-build-fonttools/LICENSE",
+          "sha256": "6787208f83f659ccbc2223b2fde952ffa6f7e8aca62f1a8a2bf5bc51bb1b2383"
+        },
+        {
+          "file": "third_party/licenses/font-build-fonttools/LICENSE.external",
+          "sha256": "94a83aaee0729a0f302d34acc4acecbd9d58366f262429075fe557e4a54b2e69"
+        }
+      ],
+      "locked_pin": "4.67.0",
+      "metadata_sha256": "33dec14bec601b457a07a6550086cb6725b5aaedc3a881f9fa7a84d3841ddcfe",
+      "metadata_source": "third_party/font-build/fonttools-4.67.0.METADATA",
+      "name": "fonttools",
+      "scope": "offline-font-subset",
+      "source": "https://files.pythonhosted.org/packages/3d/61/4161946319472aaa9b897bd18ad5108a5b10f5ebaa503d921a001ac4fff9/fonttools-4.67.0-py3-none-any.whl",
+      "version": "4.67.0",
+      "wheel_filename": "fonttools-4.67.0-py3-none-any.whl"
+    },
+    {
+      "direct_pin": null,
+      "ecosystem": "python",
+      "id": "python:idna@3.20",
+      "license_declared": "BSD-3-Clause",
+      "license_files": [
+        {
+          "file": "licenses/LICENSE.md",
+          "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
+        }
+      ],
+      "locked_pin": "3.20",
+      "metadata_sha256": "dbd8c14c1e4ca1e0c9824a6dbc7cbbf78884f38eb52d91148cd3025f671e4b85",
+      "name": "idna",
+      "requires_dist": [
+        "ruff >= 0.16.0 ; extra == \"all\"",
+        "mypy >= 1.11.2 ; extra == \"all\"",
+        "ty >= 0.0.37 ; extra == \"all\"",
+        "pytest >= 8.3.2 ; extra == \"all\"",
+        "hypothesis >= 6.141.1 ; extra == \"all\"",
+        "coverage >= 7.10.0 ; extra == \"all\""
+      ],
+      "scope": "offline-data-tool",
+      "version": "3.20"
+    },
+    {
+      "direct_pin": "4.3.0",
+      "ecosystem": "python",
+      "id": "python:osmium@4.3.0",
+      "license_declared": "BSD-2-Clause",
+      "license_files": [
+        {
+          "file": "licenses/LICENSE.TXT",
+          "sha256": "9dc6c5e14e60bce9e05e26ede6fbf942aebace38db840183725a34b23b92ce7b"
+        }
+      ],
+      "locked_pin": "4.3.0",
+      "metadata_sha256": "96f92e8aceba60fcd14e210d31f117f69e1b4c6067786ee410d9ce3053f9b133",
+      "name": "osmium",
+      "requires_dist": [
+        "requests",
+        "pytest; extra == \"tests\"",
+        "pytest-httpserver; extra == \"tests\"",
+        "pytest-run-parallel; extra == \"tests\"",
+        "werkzeug; extra == \"tests\"",
+        "shapely; extra == \"tests\"",
+        "mkdocs; extra == \"docs\"",
+        "mkdocs-material; extra == \"docs\"",
+        "mkdocstrings; extra == \"docs\"",
+        "mkdocstrings-python; extra == \"docs\"",
+        "mkdocs-autorefs; extra == \"docs\"",
+        "mkdocs-gen-files; extra == \"docs\"",
+        "mkdocs-jupyter; extra == \"docs\"",
+        "argparse-manpage; extra == \"docs\""
+      ],
+      "scope": "offline-data-tool",
+      "version": "4.3.0"
+    },
+    {
+      "direct_pin": null,
+      "ecosystem": "python",
+      "id": "python:pip@26.2",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "licenses/AUTHORS.txt",
+          "sha256": "4eb1fb1705e2def898e81bcba19c3aac80620d27ba3569d6a6df7b4629d1b5c2"
+        },
+        {
+          "file": "licenses/LICENSE.txt",
+          "sha256": "634300a669d49aeae65b12c6c48c924c51a4cdf3d1ff086dc3456dc8bcaa2104"
+        },
+        {
+          "file": "licenses/src/pip/_vendor/cachecontrol/LICENSE.txt",
+          "sha256": "86eeee87be2a43f3ff1f56496f451f69243926f025fedbb033666c304c4c161b"
+        },
+        {
+          "file": "licenses/src/pip/_vendor/certifi/LICENSE",
+          "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+        },
+        {
+          "file": "licenses/src/pip/_vendor/distlib/LICENSE.txt",
+          "sha256": "808e10c8a6ab8deb149ff9b3fb19f447a808094606d712a9ca57fead3552599d"
+        },
+        {
+          "file": "licenses/src/pip/_vendor/distro/LICENSE",
+          "sha256": "cb5e8e7e5f4a3988e1063c142c60dc2df75605f4c46515e776e3aca6df976e14"
+        },
+        {
+          "file": "licenses/src/pip/_vendor/idna/LICENSE.md",
+          "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
+        },
+        {
+          "file": "licenses/src/pip/_vendor/msgpack/COPYING",
+          "sha256": "492dedba85da5872f78e6091bcd1fea474d660d35acb4dee964b8aab3f007427"
+        },
+        {
+          "file": "licenses/src/pip/_vendor/packaging/LICENSE",
+          "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+        },
+        {
+          "file": "licenses/src/pip/_vendor/packaging/LICENSE.APACHE",
+          "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+        },
+        {
+          "file": "licenses/src/pip/_vendor/packaging/LICENSE.BSD",
+          "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+        },
+        {
+          "file": "licenses/src/pip/_vendor/pkg_resources/LICENSE",
+          "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741"
+        },
+        {
+          "file": "licenses/src/pip/_vendor/platformdirs/LICENSE",
+          "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6"
+        },
+        {
+          "file": "licenses/src/pip/_vendor/pygments/LICENSE",
+          "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17"
+        },
+        {
+          "file": "licenses/src/pip/_vendor/pyproject_hooks/LICENSE",
+          "sha256": "1b22b049b5267d6dfc23a67bf4a84d8ec04b9fdfb1a51d360e42b4342c8b4154"
+        },
+        {
+          "file": "licenses/src/pip/_vendor/requests/LICENSE",
+          "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+        },
+        {
+          "file": "licenses/src/pip/_vendor/resolvelib/LICENSE",
+          "sha256": "f388fd38cad13112c1dc0f669bbe80e7f84541edbafb72f3030d2ca7642c3c9d"
+        },
+        {
+          "file": "licenses/src/pip/_vendor/rich/LICENSE",
+          "sha256": "deed7c17a4318158190a3ea239cc879a5a50271cebb98ae7025f48fbe58dca15"
+        },
+        {
+          "file": "licenses/src/pip/_vendor/tomli/LICENSE",
+          "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe"
+        },
+        {
+          "file": "licenses/src/pip/_vendor/tomli_w/LICENSE",
+          "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe"
+        },
+        {
+          "file": "licenses/src/pip/_vendor/truststore/LICENSE",
+          "sha256": "33be7b7e8fa4fd19b1760e1a8ed8a668bdab852c91b692dd41424bcb725a9fca"
+        },
+        {
+          "file": "licenses/src/pip/_vendor/urllib3/LICENSE.txt",
+          "sha256": "130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686"
+        }
+      ],
+      "locked_pin": "26.2",
+      "metadata_sha256": "c0a71348ae15df8d4520f843dc33b7e9ebc193fa8e341810f03e8927549a99f9",
+      "name": "pip",
+      "requires_dist": [],
+      "scope": "installer",
+      "version": "26.2"
+    },
+    {
+      "direct_pin": null,
+      "ecosystem": "python",
+      "id": "python:requests@2.34.2",
+      "license_declared": "Apache-2.0",
+      "license_files": [
+        {
+          "file": "licenses/LICENSE",
+          "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+        },
+        {
+          "file": "licenses/NOTICE",
+          "sha256": "f5110972dedad2b4e9d314518daf3b7d72d6e02e499acd802181de6f74571dcc"
+        }
+      ],
+      "locked_pin": "2.34.2",
+      "metadata_sha256": "8c384ba3e979480faae2859d3c5e6c1276dd2c3616e322e124d52c8cfc556f27",
+      "name": "requests",
+      "requires_dist": [
+        "charset_normalizer<4,>=2",
+        "idna<4,>=2.5",
+        "urllib3<3,>=1.26",
+        "certifi>=2023.5.7",
+        "PySocks!=1.5.7,>=1.5.6; extra == \"socks\"",
+        "chardet<8,>=3.0.2; extra == \"use-chardet-on-py3\""
+      ],
+      "scope": "offline-data-tool",
+      "version": "2.34.2"
+    },
+    {
+      "direct_pin": null,
+      "ecosystem": "python",
+      "id": "python:urllib3@2.8.0",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "file": "licenses/LICENSE.txt",
+          "sha256": "130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686"
+        }
+      ],
+      "locked_pin": "2.8.0",
+      "metadata_sha256": "10898c620e8007c030e07fa5622b68358a43010025dfbd78a1cb797699de2bb4",
+      "name": "urllib3",
+      "requires_dist": [
+        "brotli>=1.2.0; (platform_python_implementation == 'CPython') and extra == 'brotli'",
+        "brotlicffi>=1.2.0.0; (platform_python_implementation != 'CPython') and extra == 'brotli'",
+        "h2<5,>=4; extra == 'h2'",
+        "pysocks!=1.5.7,<2.0,>=1.5.6; extra == 'socks'",
+        "backports-zstd>=1.0.0; (python_version < '3.14') and extra == 'zstd'"
+      ],
+      "scope": "offline-data-tool",
+      "version": "2.8.0"
+    }
+  ],
+  "gaps": [],
+  "inputs": {
+    "Cargo.lock": "42f3007944f6131c998b58622f667a60e2b0e5836f6fb2dfe75072279e281a31",
+    "apps/web/client/package-lock.json": "5ca37628645c37cfbce73cd0148b2ed2e9f15c222db10acdeaac998f0a38c7b0",
+    "apps/web/client/public/map-font-license.txt": "593d7b73e420582f6c4d1fac2b88a4dee28a78169fc1598a0ba775ba54cd3ba0",
+    "apps/web/client/public/map-font-manifest.json": "29a81b7fb11a3d459472af26842406d9c96c43a4022343fa9132f3b8c507a3e6",
+    "apps/web/client/src/assets/map-cjk.woff2": "c5676efeb6382c8d783b273aab69e5199951a78d5b19199f87be6cb8249f0739",
+    "apps/web/probe/package-lock.json": "ed148e40f0d7940ba5e69e1e75452ab04351fb58ee3bac2585e6f7ee50aee87d",
+    "config/font-build-tools.json": "366190159b50df57d4f949973d3a08b7151f14ef01d1a72b2bdeeb2a007ec816",
+    "config/license-sources.json": "6d2566b8a6fcf600f47cc73558362b69aeea42017f38e11384972db2f8285ad9",
+    "config/package-license-files.json": "3b17468694c6443b97a5a435972f246bf50846633389356c85877258e9e42366",
+    "config/third-party-assets.json": "48398ce02fa46f3a7bd23ce826b578e3468ba9be417028a7e2d77305f43ab9f9",
+    "config/upstream-license-sources.json": "7745a268607f1a0d48ea3bea99268352551899154747550939fcee36f7554474",
+    "requirements-data.lock": "8f8bc5f653652adc2612b3c1f51d5460db3772ed3891b7b6816894bd08bf8c65",
+    "requirements-data.txt": "bd44e80d6c33e624e92ef02b4f4bde4b505da40bee130fff3e819c843da73bbc",
+    "requirements-fonts.lock": "fd8855b295a45bdb7bc0f88090777181fecf752543840cfe7350f809d5fd7da5",
+    "scripts/license_inventory.py": "c21cbc54fa9a5da2723301ec7702bd2fab6f0dfcda71fa6fc2d03f1572c92ed6",
+    "scripts/upstream_license_evidence.py": "ec6d638e3715b32887aca075bf84966b6aa717636732f974023bb818e73c2dbf",
+    "third_party/font-build/brotli-1.2.1.METADATA": "dd37f7b084bbf2787aa6423e7cf9d268f43c50e0b7397a59317508df83711fa6",
+    "third_party/font-build/fonttools-4.67.0.METADATA": "33dec14bec601b457a07a6550086cb6725b5aaedc3a881f9fa7a84d3841ddcfe",
+    "third_party/license-provenance/cargo-flat_map-0.0.10.json": "a2fa223b20295f906817454e2ecff0cd069d00f72926310800a0b697db45ed93",
+    "third_party/license-provenance/npm-_rolldown_binding-win32-x64-msvc-1.2.15.json": "b888360fff43c6b4cb3e569e3518fc640e3a981ab3c6dbaf451ae589fe390c63",
+    "third_party/license-provenance/npm-_rolldown_binding-win32-x64-msvc-1.2.15.source-package.json": "c4d96b7d4619afde2ad23bf163ba25640b5e745b3b4c8a2db09702401f455b1e",
+    "third_party/license-provenance/npm-pmtiles-4.5.0.json": "270a779499acedb559b9885e50c03ecce3811f2422c58bc805528ced86f57c88",
+    "third_party/licenses/cargo/hermit-abi-0.5.3/LICENSE-APACHE": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+    "third_party/licenses/cargo/hermit-abi-0.5.3/LICENSE-MIT": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+    "third_party/licenses/cargo/libc-0.2.191/LICENSE-APACHE": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+    "third_party/licenses/cargo/libc-0.2.191/LICENSE-MIT": "123a331b5dbf04c30097fa43b8f858bc85df671fe776de498d01f3d6b7c1f69e",
+    "third_party/licenses/cargo/linux-raw-sys-0.12.1/LICENSE-APACHE": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+    "third_party/licenses/cargo/linux-raw-sys-0.12.1/LICENSE-Apache-2.0_WITH_LLVM-exception": "268872b9816f90fd8e85db5a28d33f8150ebb8dd016653fb39ef1f94f2686bc5",
+    "third_party/licenses/cargo/linux-raw-sys-0.12.1/LICENSE-MIT": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+    "third_party/licenses/cargo/linux-raw-sys-0.4.15/LICENSE-APACHE": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+    "third_party/licenses/cargo/linux-raw-sys-0.4.15/LICENSE-Apache-2.0_WITH_LLVM-exception": "268872b9816f90fd8e85db5a28d33f8150ebb8dd016653fb39ef1f94f2686bc5",
+    "third_party/licenses/cargo/linux-raw-sys-0.4.15/LICENSE-MIT": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+    "third_party/licenses/cargo/r-efi-6.0.0/AUTHORS": "d027e91dbc9cdbb2f1190068e498bd6b61cff022b6a032b191021ba658d96111",
+    "third_party/licenses/cargo/rustix-1.1.5/LICENSE-APACHE": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+    "third_party/licenses/cargo/rustix-1.1.5/LICENSE-Apache-2.0_WITH_LLVM-exception": "268872b9816f90fd8e85db5a28d33f8150ebb8dd016653fb39ef1f94f2686bc5",
+    "third_party/licenses/cargo/rustix-1.1.5/LICENSE-MIT": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+    "third_party/licenses/cargo/syn-3.0.9/LICENSE-APACHE": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+    "third_party/licenses/cargo/syn-3.0.9/LICENSE-MIT": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+    "third_party/licenses/cargo/windows_aarch64_gnullvm-0.52.6/license-apache-2.0": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+    "third_party/licenses/cargo/windows_aarch64_gnullvm-0.52.6/license-mit": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+    "third_party/licenses/cargo/windows_aarch64_msvc-0.52.6/license-apache-2.0": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+    "third_party/licenses/cargo/windows_aarch64_msvc-0.52.6/license-mit": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+    "third_party/licenses/cargo/windows_i686_gnu-0.52.6/license-apache-2.0": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+    "third_party/licenses/cargo/windows_i686_gnu-0.52.6/license-mit": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+    "third_party/licenses/cargo/windows_i686_gnullvm-0.52.6/license-apache-2.0": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+    "third_party/licenses/cargo/windows_i686_gnullvm-0.52.6/license-mit": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+    "third_party/licenses/cargo/windows_i686_msvc-0.52.6/license-apache-2.0": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+    "third_party/licenses/cargo/windows_i686_msvc-0.52.6/license-mit": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+    "third_party/licenses/cargo/windows_x86_64_gnu-0.52.6/license-apache-2.0": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+    "third_party/licenses/cargo/windows_x86_64_gnu-0.52.6/license-mit": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+    "third_party/licenses/cargo/windows_x86_64_gnullvm-0.52.6/license-apache-2.0": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+    "third_party/licenses/cargo/windows_x86_64_gnullvm-0.52.6/license-mit": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+    "third_party/licenses/font-build-brotli/LICENSE": "60ae0f13e76cc2eaaa108677eefa4ce16b647f6bbe8cf0a1ac9429d82eca7248",
+    "third_party/licenses/font-build-fonttools/LICENSE": "6787208f83f659ccbc2223b2fde952ffa6f7e8aca62f1a8a2bf5bc51bb1b2383",
+    "third_party/licenses/font-build-fonttools/LICENSE.external": "94a83aaee0729a0f302d34acc4acecbd9d58366f262429075fe557e4a54b2e69",
+    "third_party/licenses/upstream/cargo-flat_map-0.0.10.LICENSE": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
+    "third_party/licenses/upstream/npm-_rolldown_binding-win32-x64-msvc-1.2.15.LICENSE": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+    "third_party/licenses/upstream/npm-pmtiles-4.5.0.LICENSE": "0371c38f338835f7fc13ed71176f3d92144e22c8b736a31cced57adbbeb647b3"
+  },
+  "kind": "project_dependency_and_license_evidence_inventory",
+  "limits": [
+    "Local metadata, lock files and checksum-verified archive evidence; not an online security audit.",
+    "Missing license texts or cache entries are explicit gaps, not approval.",
+    "Python wheel hashes and exact versions are locked; CPython 3.12 Windows x64 validated, other targets need checks.",
+    "Native/tool evidence is separate; Microsoft runtime terms, native advisories/static closure and legacy tools remain under review.",
+    "Application code license remains unselected. Third-party texts do not license project code."
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-27T09:32:09.684Z",
+  "build": {
+    "asset": "/assets/index-CtnPWcB4.js",
+    "index_sha256": "df2515c65609ac60d375b5b8494ab3e58b3b6c1736d0b7b983d305359eec65d1",
+    "js_sha256": "079cde2df7ba775fdbaecae3071d4ec8704d04a67e63c8d2c61db830ec178a56"
+  },
+  "reports": [
+    {
+      "file": "docs/evidence/browser-zoom-complete-chrome.json",
+      "sha256": "a44d1e3467cc7bb9540c78170810703623b87e1766e99fe19afc2f25fee72a81",
+      "browser": {
+        "channel": "chrome",
+        "version": "156.0.8078.48",
+        "executable": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+        "product": "Chrome/156.0.8078.48",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      },
+      "build": {
+        "asset": "/assets/index-CtnPWcB4.js",
+        "index_sha256": "df2515c65609ac60d375b5b8494ab3e58b3b6c1736d0b7b983d305359eec65d1",
+        "js_sha256": "079cde2df7ba775fdbaecae3071d4ec8704d04a67e63c8d2c61db830ec178a56"
+      },
+      "cases": 4,
+      "task_checks": 18
+    },
+    {
+      "file": "docs/evidence/browser-zoom-complete-edge.json",
+      "sha256": "6f1d5cc9d050acaec4e1752f282089b7ddd27da3cdb2ee249f590a5bd06766cf",
+      "browser": {
+        "channel": "msedge",
+        "version": "156.0.4314.42",
+        "executable": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+        "product": "Edg/156.0.4314.42",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      },
+      "build": {
+        "asset": "/assets/index-CtnPWcB4.js",
+        "index_sha256": "df2515c65609ac60d375b5b8494ab3e58b3b6c1736d0b7b983d305359eec65d1",
+        "js_sha256": "079cde2df7ba775fdbaecae3071d4ec8704d04a67e63c8d2c61db830ec178a56"
+      },
+      "cases": 4,
+      "task_checks": 18
+    }
+  ],
+  "images": [
+    {
+      "file": "docs/evidence/browser-zoom-chrome-1552x1000.png",
+      "sha256": "c14bc07e1dceef1b9dadaaf766c9696012fe681f5777f12ff8ac984db37b1ec8",
+      "width": 1526,
+      "height": 900
+    },
+    {
+      "file": "docs/evidence/browser-zoom-chrome-1280x800.png",
+      "sha256": "831b5d22ef0800db4c3df76b917a2b55a14141f4ad038aa80e6c8f1c1d8bdfad",
+      "width": 1254,
+      "height": 700
+    },
+    {
+      "file": "docs/evidence/browser-zoom-edge-1552x1000.png",
+      "sha256": "342d28c46f88d49c2668ffd7464f6a2ca32b8221ae7b7bc80e409a23a318c98f",
+      "width": 1518,
+      "height": 903
+    },
+    {
+      "file": "docs/evidence/browser-zoom-edge-1280x800.png",
+      "sha256": "f00e77109f7106224b83ba6a4f7422bd89affddcb4450d5f1b3f8fca79426229",
+      "width": 1246,
+      "height": 703
+    }
+  ],
+  "sha256": {
+    "scripts/verify_browser_zoom.cjs": "0439fbb3d811e3e5482abcfca7b1af30408f1cfca1e4c67fa13f7884138fb106",
+    "scripts/browser_target.cjs": "7bf3c18fef1750a2b4dcb9acb26c7eeea973d015d0892506eb2764e286de6dd5",
+    "scripts/browser_target.test.cjs": "681ad980280945e9aa5e7d9e6ee6132dc68e0f932a5c353644df70f984165b63",
+    "scripts/verify_browser_target_callbacks.cjs": "8ccc4636ebffaa57e6200aae25469b1717679cad83e13e9f27f673584adb1626",
+    "docs/evidence/history/browser-zoom-before-module.cjs": "34459d680a70844d14dd30d74128768426f588366d88544cc483939e87ea5222",
+    "docs/evidence/history/browser-zoom-before-complete.json": "e12da29e5cff12917aa38ae36d5ee263113ffc77309eba31a936b6810a746ee9",
+    "docs/evidence/browser-zoom-helper-callbacks.json": "f891de702755e455a8aa1bf4be05765001b4df9e0ce4d2537f811968b594d86c",
+    "docs/evidence/history/browser-target-before-explicit-env.cjs": "8232047ab043000ece78339b36ba3871d3b2fd69fedf9ebf958441897d56f801"
+  },
+  "product_change": false,
+  "validation": "Each installed Chrome/Edge: two 100% baseline confirmations and sixteen 200% task checks passed (36 including four baselines). Four complete surface PNGs verified against CSS viewport times actual page zoom with rounding tolerance. No pageerrors/cross-origin page requests. No user clipboard write.",
+  "method": "Actual persisted browser zoom, owned profile, viewport:null, CDP zoom=2/pinch=1, DPR doubles against same-window 100% baseline; no CSS zoom/device metrics override. Same assertions callable as module with explicit browser path and channel; normal CLI remains.",
+  "infrastructure": "Shell launcher still returns CreateProcessWithLogonW 1909. Existing Node environment successfully invoked same verifier with verified installed executable paths; browser identity confirmed over actual CDP command line. No OS settings or protection changes.",
+  "driver_repairs": [
+    "Module parameters avoid changing global environment; repository paths resolved from source directory. browser_target.describe accepts explicit environment, preserving default callers.",
+    "Existing runtime channel discovery searched absent AppData Chrome location. Confirmed actual Program Files paths by stat and supplied executablePath; failed lookup not accepted as a run.",
+    "node:test in-process stream timed out and kernel reset. Three hook-free existing test callbacks then executed with exact assertions through named minimal registration adapter; this is not a native test-runner or application unit-suite pass."
+  ],
+  "historical": "Previous operation reports and cropped images remain in ignored raw output; first summary archived at history/browser-zoom-before-complete.json. Historical browser-zoom-preview.png is not 200% evidence. Current build unchanged.",
+  "visual_review": "Chrome 1552x1000 complete screenshot inspected; manual link and sticky close control present. No universal glyph/pixel acceptance claim.",
+  "limits": [
+    "Not browser chrome/menu UI, OS input method, reader, physical device, all browser versions or full N09.",
+    "Only the documented core task subset; independent human QA and other complete MVP gates remain active.",
+    "No application code/build/domain-test change or new performance measurement."
+  ],
+  "historical_helper_note": "Previous helper reconstructed by reversing only the two explicit-environment edits, byte hash verified against existing field-contrast source fingerprint."
+}

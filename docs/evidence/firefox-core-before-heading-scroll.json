@@ -1,0 +1,41 @@
+{
+  "error": "selected record heading must be visible: {'dialog': {'bottom': 903, 'top': 12}, 'heading': {'bottom': 931.5666961669922, 'top': 902.6500244140624}, 'viewport': 915}",
+  "capabilities": {
+    "acceptInsecureCerts": false,
+    "browserName": "firefox",
+    "browserVersion": "158.0.1",
+    "moz:accessibilityChecks": false,
+    "moz:buildID": "20261019185856",
+    "moz:geckodriverVersion": "0.37.1",
+    "moz:headless": true,
+    "moz:platformVersion": "10.0",
+    "moz:processID": 17280,
+    "moz:profile": "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\firefox-runtime\\profiles\\rust_mozprofiledr9TOo",
+    "moz:shutdownTimeout": 60000,
+    "moz:webdriverClick": true,
+    "moz:windowless": false,
+    "pageLoadStrategy": "normal",
+    "platformName": "windows",
+    "proxy": {},
+    "setWindowRect": true,
+    "strictFileInteractability": false,
+    "timeouts": {
+      "implicit": 0,
+      "pageLoad": 300000,
+      "script": 30000
+    },
+    "unhandledPromptBehavior": "dismiss and notify",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:158.0) Gecko/20100101 Firefox/158.0"
+  },
+  "checks": [
+    "real railway render, complete style, ready name source and actual loaded self-hosted FontFace",
+    "trusted WebDriver search keys, active descendant, Enter selection and original railway station identity",
+    "native share dialog focus and fresh navigation restores the same typed station identity",
+    "native preset clicks update independent filter state and restore overview"
+  ],
+  "state": {
+    "focus": "<section tabindex=\"-1\" class=\"list-record\" aria-label=\"列表记录详情\"><button>关闭记录详情</button><h3>沈阳北</h3><p>铁路 · 当前标注 · node/676578837</p><dl class=\"record-fields\"><div><dt>记录类别</dt><dd>车站点</dd></div><div><dt>制式</dt><dd>铁路</dd></div><div><dt>别名</dt><dd>沈阳北 / 沈阳北站</dd></div><div><dt>车站编码</dt><dd>53885</dd></div><div><dt>运营方标注</dt><dd>中国铁路沈阳局集团有限公司 沈阳站</dd></div><div><dt>线路归属</dt><dd>尚未建立完整线路关联</dd></div></dl><p>源标签不保证实际运营；未确认的关联保持独立。</p><details class=\"record-provenance\"><summary>原始标注</summary><p class=\"feature-note\">源对象 node/676578837 · shenyang-mvp-20261023</p><p class=\"feature-note\">对象版本：15 · 对象更新时间：2026-08-15 09:58:01+00:00 · changeset：未标注</p><dl><div><dt>数据构建时间</dt><dd>2026-10-23T05:21:42.180277+00:00</dd></div><div><dt>源快照时间</dt><dd>2026-10-20T20:23:47Z</dd></div><div><dt>分类规则版本</dt><dd>mvp-v1</dd></div><div><dt>配色版本</dt><dd>2026-10-22.1</dd></div><div><dt>数据提供方</dt><dd>Geofabrik / OpenStreetMap contributors</dd></div><div><dt>当前覆盖范围</dt><dd>123 / 41.5 / 123.8 / 42.1（经度/纬度矩形，非行政边界）</dd></div></dl><p class=\"feature-note\">代表点算法：source_node；关联仅依据明确关系，不按同名合并。</p><p class=\"feature-note\">制式核对：源标签 operator=中国铁路沈阳局集团有限公司 沈阳站，railway:ref=53885；已核对试验锚点</p><a href=\"https://www.openstreetmap.org/node/676578837\" target=\"_blank\" rel=\"noopener noreferrer\">在 OpenStreetMap 查看记录 ↗</a><pre>{\n  \"alt_name\": \"沈阳北站\",\n  \"alt_name:en\": \"Shenyang North Railway Station\",\n  \"name\": \"沈阳北\",\n  \"name:cs\": \"Šen-jang sever\",\n  \"name:en\": \"Shenyangbei\",\n  \"name:ja\": \"瀋陽北\",\n  \"name:ko\": \"선양베이\",\n  \"name:ru\": \"Шеньян-Северный\",\n  \"name:zh\": \"沈阳北\",\n  \"operator\": \"中国铁路沈阳局集团有限公司 沈阳站\",\n  \"public_transport\": \"station\",\n  \"railway\": \"station\",\n  \"railway:position:exact:京哈:上\": \"703.715\",\n  \"railway:position:exact:京哈:下\": \"703.653\",\n  \"railway:position:exact:京哈高速\": \"703.653\",\n  \"railway:position:exact:沈大高速\": \"401.061\",\n  \"railway:ref\": \"53885\",\n  \"start_date\": \"1990-10-22\",\n  \"wikidata\": \"Q988013\",\n  \"wikipedia\": \"en:Shenyang North railway station\"\n}</pre></details><button class=\"record-about\">数据、许可与免责声明</button><button>在地图中查看</button></section>",
+    "text": "╫\n铁路图集\nRAILWAY ATLAS\n沈阳试验区\n铁路数据 2026-10-20\n关于数据 ↗\n1 km\n© OpenStreetMap contributors · ODbL\n从一座城市，读懂铁路\n沿着铁路线\n看见沈阳。\n\n线路、车站与它们之间的真实地理关系。\n\n地区与数据版本\n查找车站\n⌕\n×\n\n搜索沈阳试验区 · 铁路和地铁分别显示\n\n沈阳北站\n地铁 · 站点 · 当前筛选已隐藏 · 点击临时显示\n沈阳北站\n铁路 · 站区 · 沈阳试验区\n沈阳北\n铁路 · 站点 · 沈阳试验区\n\n匹配 3 条站点 / 站区记录。\n\n通过列表查看车站与要素\n键盘操作\n看什么\n撤销\n铁路概览\n仅高速\n仅普速\n城市轨道\n\n铁路概览 · 当前标注\n\n按类型、等级和状态筛选\n更多显示选项\n读图图例 颜色看类型，虚实看状态\n高速铁路\n普速干线\n普速/未标注\n支线/站场线\n放大后显示\n专用线\n放大后显示\n制式/等级未标注\n○\n车站 / 乘降所\n当前标注\n\n当前标注不保证运营。车站缺少制式标签时保留为“未标注”。\n\n试着从沈阳北站开始\n\n放大查看站场；点击线路或站名，了解名称、等级与来源。\n\n已切换为铁路概览，可撤销。\n\n地理铁路图\nSHENYANG / 01\n显示底图\n关\n底图已隐藏\n分享\n回到试验区\n×\n车站与要素列表\n\n通过文字查看轨道、车站和设施。列表遵守类型、等级与状态筛选；不受地图缩放限制。\n\n地图数据 © OpenStreetMap contributors · ODbL · 快照 shenyang-mvp-20261023 · 数据时间 2026-10-20T20:23:47Z\n\n搜索名称、别名、设施类别或来源编号\n记录类别\n包含设施记录\n列表筛选\n\n找到 2 条记录，第 1 / 1 页。\n\n沈阳北\n铁路 · 站点 · 当前标注\nnode/676578837\n沈阳北站\n铁路 · 站区 · 当前标注\nway/53555662\n上一页\n下一页\n关闭记录详情\n沈阳北\n\n铁路 · 当前标注 · node/676578837\n\n记录类别\n车站点\n制式\n铁路\n别名\n沈阳北 / 沈阳北站\n车站编码\n53885\n运营方标注\n中国铁路沈阳局集团有限公司 沈阳站\n线路归属\n尚未建立完整线路关联\n\n源标签不保证实际运营；未确认的关联保持独立。\n\n原始标注\n数据、许可与免责声明在地图中查看\n复制当前视图与记录链接",
+    "url": "http://127.0.0.1:8766/?region=shenyang&snapshot=shenyang-mvp-20261023&q=%E6%B2%88%E9%98%B3%E5%8C%97%E7%AB%99&types=other%2Crail%2Cunknown&classes=branch%2Cconventional_main%2Cconventional_other%2Chigh_speed%2Cindustrial%2Clight_rail%2Cmetro%2Cother%2Ctram%2Cunknown&states=mapped&labels=lines%2Cstations&facilities=0&sidings=1#map=12.39/41.81410/123.43377"
+  }
+}

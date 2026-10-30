@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-28",
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "build": {
+    "asset": "/assets/index-AnsEeJYS.js",
+    "index_sha256": "0e0148d1668fa060f64958e321da4790737c3e9b4554473a39c44bf45306bc54",
+    "asset_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+    "css_asset": "/assets/index-DKP23jWq.css",
+    "css_sha256": "0a1662253ef6044de52983c693c1740897d6a60f32c91ff99e8f638ceb5a6a56"
+  },
+  "before_build": {
+    "asset": "/assets/index-CK9B4UBd.js",
+    "index_sha256": "316fb55cfdff8034700caaebaed06550bd25159477cef005ad6e6706640a5bf6",
+    "asset_sha256": "56b0c0280cde0620a80c91c58b46f8c4de26f5d646400e068e903c7cb048e8bd"
+  },
+  "reports": {
+    "chrome": {
+      "path": "docs/evidence/notice-actions-chrome.json",
+      "sha256": "cfbd3e4bacdfed4efde94e33d2eb6a1586fd554d2108f1c108c378079dbeaa2e"
+    },
+    "edge": {
+      "path": "docs/evidence/notice-actions-edge.json",
+      "sha256": "680aad6719a8fadb189e1be6359e51ec9e6dd18795ebdb70697836482fddeb23"
+    },
+    "empty-chrome": {
+      "path": "docs/evidence/notice-actions-empty-chrome.json",
+      "sha256": "e4ae046614d7eab4ce6fd4fc1684ceeff29c508ef2b2a03427885dfa55b0450a"
+    },
+    "empty-edge": {
+      "path": "docs/evidence/notice-actions-empty-edge.json",
+      "sha256": "dd015f16235c03391656b8b8aca7f416b6ac18df49e8c816f79da68292e5f8f9"
+    },
+    "matrix": {
+      "path": "docs/evidence/notice-actions-matrix.json",
+      "sha256": "172966f60b22b9abe6425d5ce1eb2521113d982ce02ff43e9010104b42a5119e"
+    },
+    "unit": {
+      "path": "docs/evidence/notice-actions-unit.log",
+      "sha256": "541f3abe73561ac78383277729b6397f5c792a5ff8f52aed55a8ddfde6a19b2d"
+    },
+    "build": {
+      "path": "docs/evidence/notice-actions-build.log",
+      "sha256": "1dcd1ed3d522229a3befd873e3a374d16c304af177da4862d1ad228e9f0fa311"
+    },
+    "browser-chrome-search": {
+      "path": "docs/evidence/notice-actions-browser-chrome-search.json",
+      "sha256": "c9d587080c215b9800c42d312c4da718aa25608edd03c0e01134cee38854ca08"
+    },
+    "browser-chrome-filters": {
+      "path": "docs/evidence/notice-actions-browser-chrome-filters.json",
+      "sha256": "7b444ecd8a074aae1a2d569ddb90e041b9e1d2f6e51bec0b8dffa227e5f87e1e"
+    },
+    "browser-chrome-list": {
+      "path": "docs/evidence/notice-actions-browser-chrome-list.json",
+      "sha256": "cf0d2389253ce57dc3eb2fe2b68c10d203a83d94653403703d0805ffba722cee"
+    },
+    "browser-chrome-share": {
+      "path": "docs/evidence/notice-actions-browser-chrome-share.json",
+      "sha256": "3a51bbf8094cf33b0ad6e9c020b4862f1e9f2034b944c8bdbb5076f934b65e02"
+    },
+    "browser-msedge-search": {
+      "path": "docs/evidence/notice-actions-browser-msedge-search.json",
+      "sha256": "1f7bdc9d3b47e76d538d5296f766dc381b581b26a8cc7f39013eb1910c7a7f62"
+    },
+    "browser-msedge-filters": {
+      "path": "docs/evidence/notice-actions-browser-msedge-filters.json",
+      "sha256": "9b2bf89847d69d021640681a147a4cdde6fb4dd1988095ca8e4225b46ca0bfa9"
+    },
+    "browser-msedge-list": {
+      "path": "docs/evidence/notice-actions-browser-msedge-list.json",
+      "sha256": "fb5fad7a778e40cb3114397054dd4ef865a9336256a3c0ddb71335f7fd4288f0"
+    },
+    "browser-msedge-share": {
+      "path": "docs/evidence/notice-actions-browser-msedge-share.json",
+      "sha256": "fb04688b5e98cadf621b9a32ed9b8d65624a932e73322f1aac400e9b42546758"
+    },
+    "chrome-first-1440": {
+      "path": "docs/evidence/notice-actions-chrome-first-1440.png",
+      "sha256": "b2d765207496751284903ce92ddb9cea686c71ab56e1b472f6ca315a383ab4fd"
+    },
+    "chrome-first-768": {
+      "path": "docs/evidence/notice-actions-chrome-first-768.png",
+      "sha256": "1affd99672b60568b7fb2eefbb029070e669104b4e9f830b7e6679af252f15c1"
+    },
+    "chrome-first-390": {
+      "path": "docs/evidence/notice-actions-chrome-first-390.png",
+      "sha256": "7e15ebffb8b2e9840cc3ed3d0b3bbb64e9cebfd922552099e57db3c0499b64fa"
+    },
+    "edge-1440": {
+      "path": "docs/evidence/notice-actions-edge-1440.png",
+      "sha256": "b2d765207496751284903ce92ddb9cea686c71ab56e1b472f6ca315a383ab4fd"
+    },
+    "edge-768": {
+      "path": "docs/evidence/notice-actions-edge-768.png",
+      "sha256": "1affd99672b60568b7fb2eefbb029070e669104b4e9f830b7e6679af252f15c1"
+    },
+    "edge-390": {
+      "path": "docs/evidence/notice-actions-edge-390.png",
+      "sha256": "bd32da92b096eb2959c24c34285d91719915df33976194c9467cd477f56802fd"
+    }
+  },
+  "source_sha256": {
+    "apps/web/client/src/App.tsx": "e164c5c441a47aab796cd8efe520c12326b617efd77716fabefa51fec82ddd5b",
+    "apps/web/client/src/MapFeedback.tsx": "f30f71b72041b9f3bf9095f8d2bb359d226b0a2c30c17ff0c39d9c9912576fe3",
+    "apps/web/client/src/map-feedback.ts": "f72ce6263cfdfdc03bda2e98fb952d930458a37873f3f580431cdd4e00fb3763",
+    "apps/web/client/src/map-controller.ts": "70666b19f64f5a6a9cc861bb00e02485d81e7b705a3909ccd6461b15ba59212e",
+    "apps/web/client/src/style.css": "3504cb87d0e824a488844010ac55a0cb083e18864a14291c250d691082afdee7",
+    "scripts/verify_notice_actions.cjs": "67adc486c2ac0df121befe58fe6a2473b22b6d2f295b46024d13c00fc8cbca3e",
+    "scripts/verify_empty_view.cjs": "7cd26b98c1f8d7cbabccaa3c68c4af221e4fef53f28d2ed3a57bf2dbb75fa220",
+    "docs/evidence/history/notice-actions-before-controller.ts": "91fc8b9d124eeb766fc15fe0ed9e88403ccd1ff57a9ac73fb72d8c037f90449c",
+    "docs/evidence/history/notice-actions-before-feedback.ts": "e0740caf99f2ffbf240bc4e9467e9020ccdf698b95e86542f00e7b2072e84cca",
+    "docs/evidence/history/notice-actions-before-ui.tsx": "c23593b3834eb1eefb20d1e14ecdf326324eac924530ff4967785d660840f45d",
+    "docs/evidence/history/notice-actions-before-app.tsx": "aaf0d87167b23ae654591b763333e5a64b339977a827330d323b1cd49658e1d8"
+  },
+  "checks": {
+    "unit_passed": 119,
+    "typecheck_build_passed": true,
+    "recovery_checks": 36,
+    "empty_view_regression_checks": 24,
+    "other_regression_checks": 58,
+    "button_min_css_px": 44,
+    "preview_http_status": 200,
+    "preview_script_css_hashes_match": true,
+    "archived_report_hashes_verified": true
+  },
+  "limits": [
+    "Installed headless Chrome/Edge and CSS sizes/touch flags, not physical mobile devices or screen-reader/actual-200-percent acceptance.",
+    "No performance remeasurement for this build.",
+    "One 390px screenshot inspected by the implementing agent, not independent human QA."
+  ]
+}

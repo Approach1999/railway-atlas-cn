@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-25",
+  "acceptance_evidence": false,
+  "outcome": "rejected: context attribute did not apply",
+  "attempted_alpha": false,
+  "observed_alpha": true,
+  "guard_error": "experimental context attribute actually applied: true !== false",
+  "installed_engine": "maplibre-gl 6.15.0",
+  "source_evidence": "src/ui/map.ts _setupPainter merges requested context attributes and then forces alpha, depth, stencil and premultipliedAlpha to true",
+  "source_sha256": "5b3f9b99982024399a187950b85dc3ca70fb0c8ff25fc6c00f663e64b468c131",
+  "image_note": "Captured PNG files are byte-identical because the attempted override was not applied. This is not proof of visual parity for a changed context.",
+  "experiment_runner_sha256": "a7906a528645b2a997e4ead6abdab378c1e4cd7cf61755f222167e272c1d4c37",
+  "baseline_png_sha256": "e0fb3e19f65da45f5e2f7c303b8ff9bfb088ae157e3acce2971311f7f6305401",
+  "standard_runner_restored_exactly": true
+}

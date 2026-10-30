@@ -1,0 +1,9 @@
+AssertionError [ERR_ASSERTION]: closed drag must return within two CSS pixels, including URL rounding
+    at C:\Users\21965\Documents\Codex\2026-10-22\referenced-chatgpt-conversation-this-is-an\work\checkout\scripts\benchmark_pan.cjs:54:49 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}

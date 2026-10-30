@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-24T02:41:43.597493+00:00",
+  "build": "strict TypeScript and Vite passed; existing bundle-size warning remains",
+  "unit_tests": {
+    "passed": 41,
+    "failed": 0
+  },
+  "source_sha256": {
+    "apps/web/client/src/share-session.ts": "dafe2cf2297a7c0ae646338d17e014a4b49a2b950fae6d1bd3751e72c2d3f338",
+    "apps/web/client/src/share-session.test.mjs": "89bd936e5df5e404ca0996526fbf6c501d7d49e9bba9eeb9eb29b9d5297792f2",
+    "apps/web/client/src/ShareDialog.tsx": "2b5a1536b57f175071d4fb7f3c7df0af7b34bfe091f58d4140c9a5b739746877",
+    "apps/web/client/src/App.tsx": "886136ab51faa072e8792b22340b3e9bb993d06fa297451e20bb2177fe73e7cd",
+    "apps/web/client/src/map-controller.ts": "789108d6fd602eb756da67c05bd73c5a300f5d33449e63851ceee5d1c13de39f",
+    "apps/web/client/src/style.css": "dd438e1a550fff055d31a4ca3a3f461e59405ecc23eb565dc1cb125d831b6c30",
+    "scripts/verify_react_share.cjs": "5e4357a1d79c890429ea71697a4c16781fad3d567df3ee910e59fd226db79475"
+  },
+  "browser_reports": {
+    "new-share": {
+      "file": "data/manifests/local/react-share/report.json",
+      "date": "2026-10-24T02:39:40.453Z",
+      "checks": 7,
+      "sha256": "ded125cce7292a5909bff5baeae5893e8ca79228d061c05955337144e88a789d"
+    },
+    "share-navigation": {
+      "file": "data/manifests/local/share-browser/share-report.json",
+      "date": "2026-10-24T02:40:00.933Z",
+      "checks": 7,
+      "sha256": "ee9e39db1749ed13c334f98e1200d1d426267dc4dc3abe5318167a8470305c74"
+    },
+    "filters": {
+      "file": "data/manifests/local/react-filters/react-filters-report.json",
+      "date": "2026-10-24T02:40:01.359Z",
+      "checks": 8,
+      "sha256": "1f9a0b686529de967e5266a9348d5345bba18ebfaec11d790936223f8c4a5b4c"
+    },
+    "search": {
+      "file": "data/manifests/local/react-search/react-search-report.json",
+      "date": "2026-10-24T02:40:33.962Z",
+      "checks": 9,
+      "sha256": "477e224f2f607648c77348f299ff8ab5272e70143cd7d037a5b5d467eb1ec15e"
+    }
+  },
+  "corrected_findings": [
+    "Initial narrow-screen Tab-cycle check found focus leaving native dialog at the last control. Explicit first/last focus wrapping added; unchanged assertion then passed."
+  ],
+  "limits": [
+    "Clipboard transport was mocked for deterministic denial/success/delayed rejection; this does not prove browser OS permissions.",
+    "Local Chrome with real immutable Shenyang data and simulated 390px viewport, not independent audit or all-device acceptance.",
+    "Earlier unresolved list facility/startup timeouts remain open; this change does not claim to fix them."
+  ]
+}

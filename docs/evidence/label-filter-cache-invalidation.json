@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-27T04:23:20.804Z",
+  "browser": "155.0.8059.85",
+  "original_sha256": "40023ed6750f817042794ec806895593c1d05e6afe52c361b43bc7e366ddd822",
+  "checks": [
+    {
+      "check": "filter selection reuses geometry and restores the same candidates; highspeed source contains only high_speed",
+      "queries": 0
+    },
+    {
+      "check": "same-zoom pan invalidates preparation and changes viewport candidates",
+      "queries": 1,
+      "candidates": 674
+    },
+    {
+      "check": "real resize invalidates preparation through map movement event",
+      "queries": 2
+    },
+    {
+      "check": "real vector-source content reload invalidates preparation with unchanged camera",
+      "queries": 1
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Built product, public API observation and actual filter/camera/resize/vector-source reload. Not full device/browser/reader acceptance."
+}

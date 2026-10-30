@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-25T07:01:32.178Z",
+  "scope": "Actual browser schema and detail partition contracts; not classification, source authenticity or real-device acceptance",
+  "snapshots": [
+    {
+      "snapshot": "shenyang-mvp-20261023",
+      "files_checked": 261,
+      "station_records": 361,
+      "line_records": 12,
+      "detail_records": 10216,
+      "object_records": 10216,
+      "manifest_sha256": "e5d9da79170c41c428d8f971ddc8a3bb12bda3c66b856f4243c912d5469d2404"
+    },
+    {
+      "snapshot": "shenyang-mvp-accessible-20261022",
+      "files_checked": 261,
+      "station_records": 315,
+      "line_records": 0,
+      "detail_records": 10167,
+      "object_records": 10167,
+      "manifest_sha256": "70cd58665f662b0eefd33acfe2f9dcbcdb276f66e03f6701b706448f4b1d6111"
+    },
+    {
+      "snapshot": "shenyang-mvp-progress-20261022",
+      "files_checked": 260,
+      "station_records": 315,
+      "line_records": 0,
+      "detail_records": 10167,
+      "object_records": null,
+      "manifest_sha256": "7b2273911209d16f99a97416de8356f9ef2c6d2f1e688d2dbfb8eff0b2c8f536"
+    }
+  ]
+}

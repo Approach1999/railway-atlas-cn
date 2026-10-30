@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "C:\Users\21965\Documents\Codex\2026-10-22\referenced-chatgpt-conversation-this-is-an\work\checkout\scripts\webdriver_client.py", line 28, in request
+    with self.http.open(request, timeout=45) as response:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\21965\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\urllib\request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\21965\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\urllib\request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\21965\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\urllib\request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\21965\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\urllib\request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Users\21965\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\urllib\request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 500: Internal Server Error
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\21965\Documents\Codex\2026-10-22\referenced-chatgpt-conversation-this-is-an\work\checkout\scripts\verify_firefox_core.py", line 201, in <module>
+    main()
+  File "C:\Users\21965\Documents\Codex\2026-10-22\referenced-chatgpt-conversation-this-is-an\work\checkout\scripts\verify_firefox_core.py", line 148, in main
+    view('&types=subway&states=construction&sidings=0&lines=' + lines); previous = state(); activate('�ָ�ȫ����·')
+                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\21965\Documents\Codex\2026-10-22\referenced-chatgpt-conversation-this-is-an\work\checkout\scripts\verify_firefox_core.py", line 131, in activate
+    assert driver.script("return document.querySelector('#map-notice button').textContent;") == label
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\21965\Documents\Codex\2026-10-22\referenced-chatgpt-conversation-this-is-an\work\checkout\scripts\webdriver_client.py", line 57, in script
+    return self.command('POST', '/execute/sync', {'script': source, 'args': args})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\21965\Documents\Codex\2026-10-22\referenced-chatgpt-conversation-this-is-an\work\checkout\scripts\webdriver_client.py", line 54, in command
+    return self.request(method, '/session/' + self.session + suffix, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\21965\Documents\Codex\2026-10-22\referenced-chatgpt-conversation-this-is-an\work\checkout\scripts\webdriver_client.py", line 35, in request
+    raise DriverError(str(value.get('error')) + ': ' + str(value.get('message'))) from error
+webdriver_client.DriverError: javascript error: TypeError: can't access property "textContent", document.querySelector(...) is null

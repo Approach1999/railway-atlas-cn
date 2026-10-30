@@ -1,0 +1,560 @@
+{
+  "date": "2026-10-28",
+  "production_unchanged": true,
+  "production_asset": "/assets/index-D4TfdCvK.js",
+  "asset_sha256": "227835ec35388d01e5bd2297426e2f34ef92b7c3b5ef0ff1934f93416a94a2cc",
+  "reports": {
+    "control-before": {
+      "path": "docs/evidence/pan-layer-control-before.json",
+      "sha256": "130a125eea2168e135d259c0b286f6c149268417eb22d329af2d74fa6beec3a4",
+      "executed_driver": "docs/evidence/history/pan-layers-initial-driver.cjs"
+    },
+    "no-symbols": {
+      "path": "docs/evidence/pan-layer-no-symbols.json",
+      "sha256": "5f2574ff2d04edf4b016416963a97c77f3459e452c638a3d89c679388a23c124",
+      "executed_driver": "docs/evidence/history/pan-layers-end-guard-driver.cjs"
+    },
+    "no-casings": {
+      "path": "docs/evidence/pan-layer-no-casings.json",
+      "sha256": "91ae2699f39d3dc8580b4071fc0146998d1e87ddd0b248b9cd44f30fb1734b72",
+      "executed_driver": "docs/evidence/history/pan-layers-end-guard-driver.cjs"
+    },
+    "no-casings-repeat": {
+      "path": "docs/evidence/pan-layer-no-casings-repeat.json",
+      "sha256": "cbe253a10fd9354eb9adc4234f788fa919f52201a49b3fe7566b86397a14e9b1",
+      "executed_driver": "docs/evidence/history/pan-layers-end-guard-driver.cjs"
+    },
+    "no-facilities": {
+      "path": "docs/evidence/pan-layer-no-facilities.json",
+      "sha256": "4962b3610950ac2fb8d27405c24ce458a32e6fd8ca7238ecd32c2bd3fbb932d0",
+      "executed_driver": "docs/evidence/history/pan-layers-end-guard-driver.cjs"
+    },
+    "no-tracks": {
+      "path": "docs/evidence/pan-layer-no-tracks.json",
+      "sha256": "51aa6c485ab6255956f294110cdfab1d5651fc0ec634a12ba041210e847e6965",
+      "executed_driver": "docs/evidence/history/pan-layers-end-guard-driver.cjs"
+    },
+    "control-after": {
+      "path": "docs/evidence/pan-layer-control-after.json",
+      "sha256": "cdd3b9554c0715e6a939ef8ee4aadacb5dee017ff4b21308842559e7baf504b4",
+      "executed_driver": "docs/evidence/history/pan-layers-end-guard-driver.cjs"
+    },
+    "no-content": {
+      "path": "docs/evidence/pan-layer-no-content.json",
+      "sha256": "6efa324538baf59397966c9ca554999b86342909b03a8090b2f856fa09ecdf80",
+      "executed_driver": "scripts/diagnose_pan_layers.cjs"
+    },
+    "cpu": {
+      "path": "docs/evidence/pan-layer-cpu.json",
+      "sha256": "64c550ec4aec401e382fe8b43055b81abce4d98e0e7a8d81255edba0f3206723",
+      "executed_driver": "scripts/diagnose_pan_cpu.cjs"
+    },
+    "scheduler": {
+      "path": "docs/evidence/pan-layer-scheduler.json",
+      "sha256": "4df8b6a83629e6bb5ad994c2ccc7e5869118265188b21bc3c2dd987834fab6b5",
+      "executed_driver": "docs/evidence/history/pan-scheduler-empty-driver.cjs"
+    },
+    "scheduler-webgl": {
+      "path": "docs/evidence/pan-layer-scheduler-webgl.json",
+      "sha256": "cdba44ea37c1315ca6770996fba1f53a35a3ad368fc0a115667e653c488a1101",
+      "executed_driver": "scripts/diagnose_pan_scheduler.cjs"
+    },
+    "cpu-profile": {
+      "path": "docs/evidence/pan-layer-cpu-profile.json.gz",
+      "sha256": "0a03453211dc97e45767b95e126d7f4de0b5a4d1045d0b38b3b6f0392db25256",
+      "decompressed_sha256": "16e89ee21266faf419c623e9ac83e61fe908c49a3a6415b42da84ff325da8dfc"
+    },
+    "scheduler-empty-repeat": {
+      "path": "docs/evidence/pan-layer-scheduler-empty-repeat.json",
+      "sha256": "e4f67b3205b504a16643133b2de66210a977b97dd413658d8d7d707e957c8227",
+      "executed_driver": "scripts/diagnose_pan_scheduler.cjs"
+    }
+  },
+  "layer_measurements": [
+    {
+      "run": "control-before",
+      "valid_closed_path": true,
+      "render_ms": {
+        "samples": 2077,
+        "median": 10,
+        "p95": 36.69999998807907,
+        "max": 61.5
+      },
+      "raf_ms": {
+        "samples": 2093,
+        "median": 10.099999999998545,
+        "p95": 36.20000000000073,
+        "max": 60.400000000001455
+      },
+      "endpoint_error_css_px": 1.071812818868306,
+      "hidden_layers": 0
+    },
+    {
+      "run": "no-symbols",
+      "valid_closed_path": true,
+      "render_ms": {
+        "samples": 2126,
+        "median": 10,
+        "p95": 36.19999998807907,
+        "max": 73.2999999821186
+      },
+      "raf_ms": {
+        "samples": 2142,
+        "median": 10.099999999999454,
+        "p95": 35.89999999999782,
+        "max": 72.90000000000146
+      },
+      "endpoint_error_css_px": 1.071812818868306,
+      "hidden_layers": 12
+    },
+    {
+      "run": "no-casings",
+      "valid_closed_path": false,
+      "render_ms": {
+        "samples": 1909,
+        "median": 10.099999994039536,
+        "p95": 37,
+        "max": 43.69999998807907
+      },
+      "raf_ms": {
+        "samples": 1922,
+        "median": 10.100000000000364,
+        "p95": 36.30000000000109,
+        "max": 43.600000000000364
+      },
+      "endpoint_error_css_px": 2.3473191867208225,
+      "hidden_layers": 16
+    },
+    {
+      "run": "no-casings-repeat",
+      "valid_closed_path": true,
+      "render_ms": {
+        "samples": 2031,
+        "median": 10,
+        "p95": 36.79999998211861,
+        "max": 66.09999999403954
+      },
+      "raf_ms": {
+        "samples": 2043,
+        "median": 10.099999999999454,
+        "p95": 36.19999999999982,
+        "max": 66.5
+      },
+      "endpoint_error_css_px": 1.071812818868306,
+      "hidden_layers": 16
+    },
+    {
+      "run": "no-facilities",
+      "valid_closed_path": true,
+      "render_ms": {
+        "samples": 2097,
+        "median": 10.099999994039536,
+        "p95": 36.79999998211861,
+        "max": 68.2999999821186
+      },
+      "raf_ms": {
+        "samples": 2120,
+        "median": 10.099999999999454,
+        "p95": 36.10000000000218,
+        "max": 67.59999999999854
+      },
+      "endpoint_error_css_px": 1.071812818868306,
+      "hidden_layers": 5
+    },
+    {
+      "run": "no-tracks",
+      "valid_closed_path": true,
+      "render_ms": {
+        "samples": 1998,
+        "median": 10,
+        "p95": 36.599999994039536,
+        "max": 47.5
+      },
+      "raf_ms": {
+        "samples": 2015,
+        "median": 10.099999999999909,
+        "p95": 36.099999999998545,
+        "max": 47.29999999999927
+      },
+      "endpoint_error_css_px": 1.071812818868306,
+      "hidden_layers": 33
+    },
+    {
+      "run": "control-after",
+      "valid_closed_path": true,
+      "render_ms": {
+        "samples": 2058,
+        "median": 10,
+        "p95": 36.29999998211861,
+        "max": 67.69999998807907
+      },
+      "raf_ms": {
+        "samples": 2073,
+        "median": 10.099999999999454,
+        "p95": 35.79999999999927,
+        "max": 67.10000000000218
+      },
+      "endpoint_error_css_px": 1.071812818868306,
+      "hidden_layers": 0
+    },
+    {
+      "run": "no-content",
+      "valid_closed_path": true,
+      "render_ms": {
+        "samples": 2318,
+        "median": 10,
+        "p95": 35.80000001192093,
+        "max": 64.40000000596046
+      },
+      "raf_ms": {
+        "samples": 2349,
+        "median": 10.099999999998545,
+        "p95": 35.599999999998545,
+        "max": 63.70000000000073
+      },
+      "endpoint_error_css_px": 1.071812818868306,
+      "hidden_layers": 59
+    },
+    {
+      "run": "cpu",
+      "valid_closed_path": false,
+      "render_ms": {
+        "samples": 2488,
+        "median": 9.599999994039536,
+        "p95": 35.89999997615814,
+        "max": 61.400000005960464
+      },
+      "raf_ms": {
+        "samples": 2508,
+        "median": 9.400000000001455,
+        "p95": 35.599999999998545,
+        "max": 79.09999999999991
+      },
+      "endpoint_error_css_px": 2.3473191867208225,
+      "hidden_layers": null
+    }
+  ],
+  "cpu": {
+    "capture_closed_path_valid": false,
+    "sampled_us": 30218934,
+    "idle_fraction": 0.955426918765566,
+    "top_self_samples": [
+      {
+        "us": 28871983,
+        "frame": {
+          "functionName": "(idle)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1
+        }
+      },
+      {
+        "us": 691396,
+        "frame": {
+          "functionName": "(program)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1
+        }
+      },
+      {
+        "us": 84339,
+        "frame": {
+          "functionName": "(garbage collector)",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1
+        }
+      },
+      {
+        "us": 29759,
+        "frame": {
+          "functionName": "getBoundingClientRect",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1
+        }
+      },
+      {
+        "us": 29098,
+        "frame": {
+          "functionName": "move",
+          "scriptId": "50",
+          "url": "",
+          "lineNumber": 2,
+          "columnNumber": 15
+        }
+      },
+      {
+        "us": 23274,
+        "frame": {
+          "functionName": "set",
+          "scriptId": "5",
+          "url": "http://127.0.0.1:8766/assets/index-D4TfdCvK.js",
+          "lineNumber": 8,
+          "columnNumber": 276424
+        }
+      },
+      {
+        "us": 17937,
+        "frame": {
+          "functionName": "handleWindowEvent",
+          "scriptId": "5",
+          "url": "http://127.0.0.1:8766/assets/index-D4TfdCvK.js",
+          "lineNumber": 821,
+          "columnNumber": 100695
+        }
+      },
+      {
+        "us": 16015,
+        "frame": {
+          "functionName": "mark",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1
+        }
+      },
+      {
+        "us": 15278,
+        "frame": {
+          "functionName": "uniformMatrix4fv",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1
+        }
+      },
+      {
+        "us": 15214,
+        "frame": {
+          "functionName": "dispatchEvent",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1
+        }
+      },
+      {
+        "us": 15020,
+        "frame": {
+          "functionName": "",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1
+        }
+      },
+      {
+        "us": 14812,
+        "frame": {
+          "functionName": "_render",
+          "scriptId": "5",
+          "url": "http://127.0.0.1:8766/assets/index-D4TfdCvK.js",
+          "lineNumber": 821,
+          "columnNumber": 183191
+        }
+      },
+      {
+        "us": 13424,
+        "frame": {
+          "functionName": "hasTransition",
+          "scriptId": "5",
+          "url": "http://127.0.0.1:8766/assets/index-D4TfdCvK.js",
+          "lineNumber": 8,
+          "columnNumber": 241438
+        }
+      },
+      {
+        "us": 10754,
+        "frame": {
+          "functionName": "hasTransitions",
+          "scriptId": "5",
+          "url": "http://127.0.0.1:8766/assets/index-D4TfdCvK.js",
+          "lineNumber": 819,
+          "columnNumber": 86173
+        }
+      },
+      {
+        "us": 10078,
+        "frame": {
+          "functionName": "render",
+          "scriptId": "5",
+          "url": "http://127.0.0.1:8766/assets/index-D4TfdCvK.js",
+          "lineNumber": 821,
+          "columnNumber": 61056
+        }
+      },
+      {
+        "us": 9595,
+        "frame": {
+          "functionName": "IM",
+          "scriptId": "5",
+          "url": "http://127.0.0.1:8766/assets/index-D4TfdCvK.js",
+          "lineNumber": 821,
+          "columnNumber": 22981
+        }
+      },
+      {
+        "us": 7807,
+        "frame": {
+          "functionName": "LM",
+          "scriptId": "5",
+          "url": "http://127.0.0.1:8766/assets/index-D4TfdCvK.js",
+          "lineNumber": 821,
+          "columnNumber": 26117
+        }
+      },
+      {
+        "us": 7517,
+        "frame": {
+          "functionName": "M",
+          "scriptId": "5",
+          "url": "http://127.0.0.1:8766/assets/index-D4TfdCvK.js",
+          "lineNumber": 8,
+          "columnNumber": 57727
+        }
+      },
+      {
+        "us": 7241,
+        "frame": {
+          "functionName": "AM",
+          "scriptId": "5",
+          "url": "http://127.0.0.1:8766/assets/index-D4TfdCvK.js",
+          "lineNumber": 821,
+          "columnNumber": 19477
+        }
+      },
+      {
+        "us": 7164,
+        "frame": {
+          "functionName": "getPoint",
+          "scriptId": "5",
+          "url": "http://127.0.0.1:8766/assets/index-D4TfdCvK.js",
+          "lineNumber": 8,
+          "columnNumber": 78162
+        }
+      },
+      {
+        "us": 7122,
+        "frame": {
+          "functionName": "getBoundingClientRect",
+          "scriptId": "0",
+          "url": "",
+          "lineNumber": -1,
+          "columnNumber": -1
+        }
+      },
+      {
+        "us": 6293,
+        "frame": {
+          "functionName": "M",
+          "scriptId": "5",
+          "url": "http://127.0.0.1:8766/assets/index-D4TfdCvK.js",
+          "lineNumber": 8,
+          "columnNumber": 57727
+        }
+      },
+      {
+        "us": 6284,
+        "frame": {
+          "functionName": "setDefault",
+          "scriptId": "5",
+          "url": "http://127.0.0.1:8766/assets/index-D4TfdCvK.js",
+          "lineNumber": 819,
+          "columnNumber": 109689
+        }
+      },
+      {
+        "us": 6167,
+        "frame": {
+          "functionName": "getScale",
+          "scriptId": "5",
+          "url": "http://127.0.0.1:8766/assets/index-D4TfdCvK.js",
+          "lineNumber": 8,
+          "columnNumber": 78026
+        }
+      },
+      {
+        "us": 6114,
+        "frame": {
+          "functionName": "getx",
+          "scriptId": "5",
+          "url": "http://127.0.0.1:8766/assets/index-D4TfdCvK.js",
+          "lineNumber": 8,
+          "columnNumber": 270673
+        }
+      }
+    ]
+  },
+  "source_sha256": {
+    "scripts/diagnose_pan_layers.cjs": "f0aef3996be2cebeed69e75a5a3c6d8524afaa8bf6859f95542e4fc384128959",
+    "scripts/diagnose_pan_cpu.cjs": "4ea95682354bc38fcb62de1eadded4036c2c8381953618b1d3503ff889adf58c",
+    "scripts/diagnose_pan_scheduler.cjs": "bbbfbdb7f367ecf5d31d29a783b79b44a32d25d2551828fdc3b9b00105e2ecca",
+    "docs/evidence/history/pan-layers-initial-driver.cjs": "2bb2ce2767e6c985e3ad794139142877aebae100255819c639d1327c8fec7d5c",
+    "docs/evidence/history/pan-layers-end-guard-driver.cjs": "a380a503c9116a66dfb73a194e42ca32707acdc7b33e8f6251160b56292488b7",
+    "docs/evidence/history/pan-scheduler-empty-driver.cjs": "2b92d02c16c03d60380000e7fc3bb8e9baca31e2d25d02b81c098766ccd0ddf3"
+  },
+  "decision": "No product simplification justified; investigate browser graphics presentation with controls. N03 remains unmet.",
+  "limits": [
+    "Finite single runs; not randomized repeated inference.",
+    "No-casings first run and CPU capture failed endpoint guard; retained and excluded from valid performance comparison. CPU data is diagnostic only.",
+    "Empty page controls do not represent map behavior or device acceptance.",
+    "GPU/compositor/root cause unproven; CPU idle samples do not exclude GPU work.",
+    "No thresholds relaxed and no production source changes."
+  ],
+  "scheduler_controls": {
+    "scheduler": {
+      "raf_interval_ms": {
+        "samples": 2983,
+        "median": 10.099999999998545,
+        "p95": 10.200000000000728,
+        "max": 41.600000000000364
+      },
+      "graphics": null,
+      "long_tasks": 0
+    },
+    "scheduler-webgl": {
+      "raf_interval_ms": {
+        "samples": 2002,
+        "median": 10.100000000000136,
+        "p95": 34.60000000000218,
+        "max": 459.1999999999971
+      },
+      "graphics": {
+        "width": 1040,
+        "height": 1000,
+        "attributes": {
+          "alpha": true,
+          "antialias": false,
+          "depth": true,
+          "desynchronized": false,
+          "failIfMajorPerformanceCaveat": false,
+          "powerPreference": "high-performance",
+          "premultipliedAlpha": true,
+          "preserveDrawingBuffer": false,
+          "stencil": false,
+          "xrCompatible": false
+        },
+        "renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      "long_tasks": 0
+    },
+    "scheduler-empty-repeat": {
+      "raf_interval_ms": {
+        "samples": 2987,
+        "median": 10.099999999998545,
+        "p95": 10.200000000000728,
+        "max": 42.29999999999973
+      },
+      "graphics": null,
+      "long_tasks": 0
+    }
+  },
+  "handoff_finalized": "2026-10-30",
+  "root_cause_confirmed": false
+}

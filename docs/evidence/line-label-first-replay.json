@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-26T14:06:17.917Z",
+  "algorithm": "docs/evidence/history/line-label-candidates-first-prototype.ts",
+  "algorithm_sha256": "ecc2e49b5b003235cb737aa4533ed83f3b610c68d8b8defe061ca141e409acb1",
+  "scenes": [
+    {
+      "name": "overview-z10",
+      "input_sha256": "73e88718b8d118ab0dfe5240228050a7fc63596666d1311946cdcaa9c0bbb9eb",
+      "candidates_sha256": "e16e4d647b2fc6ff7f68880fb78d72fa9a2ba6419171301485cd2979f02df48a",
+      "input_fragments": 4845,
+      "replay_byte_identical": true,
+      "maximum_anchor_error_css_px": 0.3118973136023999,
+      "actual_cross_tile_same_identity_pairs": 0,
+      "minimum_cross_tile_same_identity_distance_css_px": null,
+      "lost_name_texts": [
+        "于揽三线",
+        "沈佳高速线",
+        "沈山北道线",
+        "浑揽线"
+      ]
+    },
+    {
+      "name": "overview-z10-5",
+      "input_sha256": "043714a9b209749753ed6d09a5a6464bc7e9bad0a60cb338572e117727f05e83",
+      "candidates_sha256": "8f1ccca44f64b4100651c7960edcc58e2f521b8f5d5f56562f9f76d491da9d61",
+      "input_fragments": 4607,
+      "replay_byte_identical": true,
+      "maximum_anchor_error_css_px": 0.4928401185634448,
+      "actual_cross_tile_same_identity_pairs": 0,
+      "minimum_cross_tile_same_identity_distance_css_px": null,
+      "lost_name_texts": [
+        "于揽三线",
+        "沈山北道线",
+        "浑揽线"
+      ]
+    },
+    {
+      "name": "yard",
+      "input_sha256": "e2c703248a2f5c2fbf53a494ec7b43352111ff797047e926ba9fa69fe6cc9223",
+      "candidates_sha256": "8989a690d942ae28b17568cb838b233909f5f7b7fa5134c84d4ef449bcdb8389",
+      "input_fragments": 86,
+      "replay_byte_identical": true,
+      "maximum_anchor_error_css_px": 0.2321096379018484,
+      "actual_cross_tile_same_identity_pairs": 11,
+      "minimum_cross_tile_same_identity_distance_css_px": 317.45927396182043,
+      "lost_name_texts": []
+    },
+    {
+      "name": "tram",
+      "input_sha256": "be6bd61560e2338eacf3b9296a177d42e0be453cba366f5df1f40ec0f2f07dc6",
+      "candidates_sha256": "507c34bef8096ffbf77da2497a0b2408e229dcd1cd0ea48deccd76cdccee283f",
+      "input_fragments": 9,
+      "replay_byte_identical": true,
+      "maximum_anchor_error_css_px": 0.2736852250871612,
+      "actual_cross_tile_same_identity_pairs": 2,
+      "minimum_cross_tile_same_identity_distance_css_px": 323.1828043028214,
+      "lost_name_texts": []
+    }
+  ],
+  "scope": "Byte-exact replay of captured real loaded fragments and native anchor error/seam witnesses for the isolated prototype. Large source captures remain local/ignored. Not dynamic integration, performance or complete R17 acceptance."
+}

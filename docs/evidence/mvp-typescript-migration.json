@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-23T13:02:32.571Z",
+  "scope": "Strict TypeScript controller migration, actual-data browser contracts and focused browser failure checks; complete React state split, shared JS implementation type checking, real-device and full MVP acceptance remain incomplete",
+  "compiler_options": {
+    "target": "ES2022",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "paths": {
+      "geojson": [
+        "./node_modules/@types/geojson"
+      ],
+      "maplibre-gl": [
+        "./node_modules/maplibre-gl"
+      ]
+    },
+    "jsx": "react-jsx",
+    "strict": true,
+    "allowJs": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "skipLibCheck": true,
+    "types": [
+      "vite/client"
+    ]
+  },
+  "source_sha256": {
+    "src/map-controller.ts": "cae1e0bfff371fabeb9ff7f4bf43183bc38661fb93c919c71d20ba75c879d3c4",
+    "src/dataset-validation.ts": "c5047118e4581e9bbb003d4165af5924085238e59a824a98052a767999476618",
+    "src/tile-feature.ts": "b54b02c9500eff44fbfddeae3a43f70274bffbfc0395fa74c06a558d00ccbeca",
+    "src/AccessibleExplorer.tsx": "9cd8d7c248cc2c845d785a8c589e9408f87462a94ebcfdd7e8d6fa1d9eb955f2",
+    "src/App.tsx": "414713fa784e654bac56883b85ca68a4d832ff92c90bd4a28cee65cc1259e62c",
+    "tsconfig.json": "84847bea3e4c33b0832fce185a05313ed44b678edc7c8c2d146ad3928cafa906",
+    "package-lock.json": "5ca37628645c37cfbce73cd0148b2ed2e9f15c222db10acdeaac998f0a38c7b0"
+  },
+  "reports": {
+    "schema": {
+      "file": "docs/evidence/mvp-client-contracts.json",
+      "date": "2026-10-23T12:55:05.438Z",
+      "scope": "Actual browser schema and detail partition contracts; not classification, source authenticity or real-device acceptance"
+    },
+    "typed_boundary": {
+      "file": "docs/evidence/mvp-typed-boundary.json",
+      "date": "2026-10-23T12:53:21.879Z",
+      "scope": "Local Chrome schema failure integration on actual snapshot; not full accessibility, independent data audit or real-device acceptance"
+    },
+    "resource_recovery": {
+      "file": "docs/evidence/mvp-resource-recovery.json",
+      "date": "2026-10-23T13:00:38.369Z",
+      "scope": "Injected failures and retries against local actual data; no real-device, reader or independent human acceptance claim"
+    },
+    "facilities": {
+      "file": "docs/evidence/mvp-typed-facilities.json",
+      "date": "2026-10-23T12:55:18.296Z",
+      "scope": "Real bounded-source facility integration; not full MVP, independent human or real-device acceptance"
+    }
+  }
+}

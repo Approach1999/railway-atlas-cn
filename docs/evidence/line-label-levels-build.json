@@ -1,0 +1,168 @@
+{
+  "date": "2026-10-26T13:29:46.401938+00:00",
+  "asset": "/assets/index-BPD_xofR.js",
+  "unit_tests": {
+    "passed": 84,
+    "failed": 0
+  },
+  "build": "Strict TS/checkJs and production build passed; existing bundle-size warning retained.",
+  "checks": {
+    "historical_spacing_scenes_each_variant": 8,
+    "real_zoom_filter_click_switch": 4,
+    "filter_regression": 8,
+    "real_routes": 4
+  },
+  "rejected_candidate": {
+    "symbol_spacing": 600,
+    "adopted": false,
+    "reason": "Reduced named independent source-object coverage; identity-aware repeat/seam behavior remains unproven.",
+    "comparisons": [
+      {
+        "scene": "overview-z8",
+        "old_anchors": 0,
+        "candidate_anchors": 0,
+        "old_source_ids": 0,
+        "candidate_source_ids": 0,
+        "lost_ids": [],
+        "gained_ids": []
+      },
+      {
+        "scene": "overview-z9",
+        "old_anchors": 11,
+        "candidate_anchors": 9,
+        "old_source_ids": 11,
+        "candidate_source_ids": 9,
+        "lost_ids": [
+          "way/1174093532",
+          "way/385087019"
+        ],
+        "gained_ids": []
+      },
+      {
+        "scene": "overview-z10",
+        "old_anchors": 22,
+        "candidate_anchors": 16,
+        "old_source_ids": 21,
+        "candidate_source_ids": 16,
+        "lost_ids": [
+          "way/1164959287",
+          "way/1251282627",
+          "way/1365674755",
+          "way/1424429646",
+          "way/230716943",
+          "way/651694340",
+          "way/654015106"
+        ],
+        "gained_ids": [
+          "way/1348469112",
+          "way/42682923"
+        ]
+      },
+      {
+        "scene": "overview",
+        "old_anchors": 19,
+        "candidate_anchors": 15,
+        "old_source_ids": 18,
+        "candidate_source_ids": 15,
+        "lost_ids": [
+          "way/1164959287",
+          "way/1251282627",
+          "way/1424429646",
+          "way/652027303",
+          "way/654015106"
+        ],
+        "gained_ids": [
+          "way/1348469112",
+          "way/1365674755"
+        ]
+      },
+      {
+        "scene": "overview-z11",
+        "old_anchors": 27,
+        "candidate_anchors": 18,
+        "old_source_ids": 25,
+        "candidate_source_ids": 18,
+        "lost_ids": [
+          "way/1348469112",
+          "way/1365210394",
+          "way/385087013",
+          "way/423529038",
+          "way/607139958",
+          "way/653351069",
+          "way/86477901"
+        ],
+        "gained_ids": []
+      },
+      {
+        "scene": "north-yard",
+        "old_anchors": 6,
+        "candidate_anchors": 5,
+        "old_source_ids": 6,
+        "candidate_source_ids": 5,
+        "lost_ids": [
+          "way/1364948086",
+          "way/471477585",
+          "way/87662566"
+        ],
+        "gained_ids": [
+          "way/102975378",
+          "way/471524857"
+        ]
+      },
+      {
+        "scene": "tram-interchange",
+        "old_anchors": 6,
+        "candidate_anchors": 4,
+        "old_source_ids": 5,
+        "candidate_source_ids": 4,
+        "lost_ids": [
+          "way/404365262"
+        ],
+        "gained_ids": []
+      },
+      {
+        "scene": "tram-interchange-z17-5",
+        "old_anchors": 3,
+        "candidate_anchors": 4,
+        "old_source_ids": 3,
+        "candidate_source_ids": 4,
+        "lost_ids": [],
+        "gained_ids": [
+          "way/404365262"
+        ]
+      }
+    ]
+  },
+  "old_diagnostic_build": {
+    "asset": "/assets/index-BT1qcxjY.js",
+    "asset_sha256": "bfad4ee26fa0641793ea6b1896a7a759b89c6f8d115f2200d3862dd42cf88010",
+    "source_history": "docs/evidence/history/map-controller-before-line-levels.ts"
+  },
+  "source_and_evidence_sha256": {
+    "apps/web/client/src/map-controller.ts": "1876596d75360406c8ef11dd7b367d2815d3945800d6b49642ae50677665c153",
+    "scripts/diagnose_line_labels.cjs": "3f2635eccec2613ce718a4902645aa296349a84e36986c725cf1f80f472d3538",
+    "scripts/verify_line_label_levels.cjs": "d9a8c1afe895dd6fae49f353ff3eedae0ab47ef868bd23e8b7f7619c14e6ee95",
+    "scripts/verify_react_filters.cjs": "5328dce234500404c25ce2e2d05e854e2a4871110b84b243b9f2ba246e104f99",
+    "scripts/verify_real_routes.cjs": "15d00d8c47d07febab41d4bb37c016b143f3d6d379a78ca3c51125789530883a",
+    "apps/web/client/node_modules/maplibre-gl/src/symbol/symbol_layout.ts": "5ed922307bf8986438ce5ba4eb803a1a4270b0c9c1bcc4caea65c75688979a78",
+    "apps/web/client/node_modules/maplibre-gl/src/symbol/placement.ts": "39f5965414d5746323cd6a2c7cfe0afbc5ab141fc9a613af50ec5264f3b90baf",
+    "apps/web/client/node_modules/maplibre-gl/package.json": "aa2c307c0a3efd8da11ebace266ca2e39c433f9d19efa1b67b3ede9f7904e559",
+    "apps/web/client/dist/index.html": "e6aa1bf3fd816c253f19884b46252960d0ef5a9a5a8cfe61480cc2bd36a2cf40",
+    "apps/web/client/dist/assets/index-BPD_xofR.js": "04f6f3f9b0055038d743f77dbee2a30555ba4bb6178373c1df9c47976dc50609",
+    "docs/evidence/history/map-controller-before-line-levels.ts": "9d24be110434239850c6aa3a58b0ebd166bda4484e0b66020c3968ca51344e6f",
+    "docs/evidence/line-label-spacing-current.json": "e11819c1d369f2d1b1fb86175b1d6d26d2a25f7928fc9dce8467828e6c23cb02",
+    "docs/evidence/line-label-spacing-600.json": "0b07d0baca3b20c6f286ed4681bfb7685210150d4e32dd3c41dd5a1888809dc0",
+    "docs/evidence/line-label-levels-browser.json": "08da2fc1efd4e20da3c9d10f2720e265064b1dec1983141e8aae25ce83791316",
+    "docs/evidence/line-label-levels-filters.json": "2956378b5366eb6e01ad7dd22bcff4c590f6ea044d17a6f5dea7e400ef47129d",
+    "docs/evidence/line-label-levels-routes.json": "efb9e7f2458ed32c21c5913bede8795846c08ddcc72ee149cad2e35e138ad89c",
+    "docs/evidence/line-label-levels-detailed.png": "bd8ce59cbad58cd3ff3d7ba1a84fa0a90dfe5d26339cd4ef33e7863f891d58c6",
+    "docs/evidence/station-label-build.json": "0c03ea79f80a55f38726950e6432a1337872bf3aaa192ff1d51de3ec7c0ab55d"
+  },
+  "calibration": "Early zero-anchor probes sampled opacity at placement commit rather than its current fade value. Corrected fade computation and complete stable 8-scene variants are the recorded evidence.",
+  "limits": [
+    "300 CSS px identity-aware repeated labels and tile-seam/double-track cases remain open.",
+    "Read-only internal placement diagnostics are version-specific, anchor spacing is not glyph-edge clearance or physical presentation.",
+    "Historical spacing experiment is on BT1qcxjY; final BPD_xofR changes zoom and minor label coverage, not claimed as complete spacing acceptance.",
+    "Historical performance/actual 200-percent/real-context-loss records retain their original builds; full MVP and independent/real-device requirements remain open."
+  ]
+}

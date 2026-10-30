@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-27T15:41:13.567Z",
+  "browser_target": {
+    "channel": "chrome",
+    "version": "156.0.8078.48",
+    "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "product": "Chrome/156.0.8078.48",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "renderer": "forced SwiftShader",
+    "headless": true,
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64"
+    },
+    "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+  },
+  "expected": "shenyang-mvp-geometry-20261027",
+  "previous": "shenyang-mvp-20261023",
+  "checks": [
+    "primary manifest/catalog use new snapshot and retain previous entry; font inputs include new names",
+    "actual initial page and tile network use new snapshot while source date stays 2026-10-20",
+    "real station detail and share URL bind the new immutable source",
+    "new share link opens correct source record in fresh page",
+    "previous share URL still restores its own unchanged snapshot and station"
+  ],
+  "tiles_on_initial_page": [
+    "/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+    "/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+    "/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+    "/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+    "/snapshots/shenyang-mvp-geometry-20261027/tiles/13/6904/3046.pbf",
+    "/snapshots/shenyang-mvp-geometry-20261027/tiles/13/6905/3046.pbf",
+    "/snapshots/shenyang-mvp-geometry-20261027/tiles/13/6904/3047.pbf",
+    "/snapshots/shenyang-mvp-geometry-20261027/tiles/13/6905/3047.pbf",
+    "/snapshots/shenyang-mvp-geometry-20261027/tiles/13/6904/3045.pbf",
+    "/snapshots/shenyang-mvp-geometry-20261027/tiles/13/6905/3045.pbf",
+    "/snapshots/shenyang-mvp-20261023/tiles/10/863/380.pbf",
+    "/snapshots/shenyang-mvp-20261023/tiles/10/862/380.pbf",
+    "/snapshots/shenyang-mvp-20261023/tiles/10/863/381.pbf",
+    "/snapshots/shenyang-mvp-20261023/tiles/10/862/381.pbf"
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Primary local preview, actual current/previous immutable navigation and fresh station share. No public hosting/retention-duration, performance, physical device or independent human acceptance."
+}

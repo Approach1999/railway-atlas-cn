@@ -1,0 +1,42 @@
+{
+  "snapshot_id": "shenyang-map-20261022",
+  "scope": "Bounded Shenyang local map preview; not national or real-device acceptance",
+  "source_time": "2026-10-22T04:46:06Z",
+  "input_sha256": "69fb1bee4215168a670f0df38e4d6d3b266505d0549a42929944edeb0a9c2548",
+  "repeated_artifacts_identical": 3156,
+  "track_classes": {
+    "conventional_main": 626,
+    "high_speed": 260,
+    "branch": 2638,
+    "conventional_other": 54,
+    "industrial": 14,
+    "unknown": 71,
+    "metro": 314,
+    "tram": 173
+  },
+  "station_point_records": 311,
+  "tiles": {
+    "builder": "geojson-vt 6.3.0 / vt-pbf 4.3.2",
+    "minzoom": 8,
+    "maxzoom": 14,
+    "bounds": [
+      122.86395519999999,
+      41.4147691,
+      123.8546185,
+      42.152097999999995
+    ],
+    "tile_count": 2895,
+    "total_bytes": 2702545
+  },
+  "directory_bytes": 2038,
+  "station_index_bytes": 159514,
+  "rust_tests": 6,
+  "frontend_domain_tests": 3,
+  "limits": [
+    "No production basemap",
+    "No route relations or metro line palette applied",
+    "Native JS preview, not React/TypeScript production frontend",
+    "Historical status styles grouped as dashed",
+    "No real mobile, network throttling or national benchmark"
+  ]
+}

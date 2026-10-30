@@ -1,0 +1,17 @@
+{
+  "kind": "npm_git_head",
+  "registry_metadata": {
+    "dist": {
+      "integrity": "sha512-CBeD4SoUluFziGdy/8k7FOjQxQy486n+929W/tWophauvMICpkZ26vGBWhDt/6b1FZQWNaf4jFdT/5+q0Wii5w==",
+      "shasum": "09172312c8691e4ce66677f77aeb6c125d33cf32",
+      "tarball": "https://registry.npmjs.org/pmtiles/-/pmtiles-4.5.0.tgz"
+    },
+    "gitHead": "3b10e67edb65c6b04549f74c0279cef8328d859c",
+    "homepage": "https://github.com/protomaps/pmtiles",
+    "license": "BSD-3-Clause",
+    "name": "pmtiles",
+    "repository": null,
+    "version": "4.5.0"
+  },
+  "upstream_commit": "3b10e67edb65c6b04549f74c0279cef8328d859c"
+}

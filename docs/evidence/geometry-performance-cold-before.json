@@ -1,0 +1,5885 @@
+{
+  "build_evidence": {
+    "sha256": {
+      "apps/web/client/src/map-controller.ts": "d62987051801b7ce8a489095407fc9c6533597af0fab2c46c250aa36019be17b",
+      "apps/web/client/src/railway-controls.ts": "52be1f611b0b0c409d78948e2b5f1f6cff76f3006c4c3a32fcb9d0128b103c7f",
+      "apps/web/client/src/station-search.ts": "b8f1bf0195edc0bf4a9b680bcb839b89dce0ac45d253517064b915d21380ffa4",
+      "apps/web/client/dist/index.html": "53b9b83c37eb7c9a111ee026d9290c78eb429b07af99a301299230c705456125",
+      "scripts/benchmark_client.cjs": "aaa49aa0642f39d09e384fe02fe2c5fd9dc625fc1d59ff18af7a5be9fad5de9c",
+      "scripts/benchmark_style_guard.cjs": "971eb7d6688fecb401a36a429deff7821cab88585e2f2a6fb913aa02b2548c79",
+      "data\\processed\\shenyang-mvp-geometry-20261027\\dataset.json": "0455a747024aeb11fd399ee2dfd6255ccd6657af8819360da3ca14c4ac80dfc5"
+    },
+    "requested_snapshot": "shenyang-mvp-geometry-20261027"
+  },
+  "date": "2026-10-27T15:57:18.473Z",
+  "browser": "156.0.8078.48",
+  "environment": {
+    "platform": "win32",
+    "release": "10.0.26200",
+    "arch": "x64",
+    "cpu": "Intel(R) Core(TM) Ultra 5 125H",
+    "logical_cpus": 18,
+    "memory_bytes": 33786552320,
+    "renderer": "Headless Chrome with default renderer",
+    "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  },
+  "conditions": {
+    "download_mbps": 10,
+    "latency_ms": 100,
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "http_cache": "disabled; new isolated context each trial",
+    "basemap": "off; no third-party requests",
+    "scope": "Exploratory railway-only headless measurements. Not a substitute for default online basemap, headed/manual checks, or real mobile/tablet N01-N04 acceptance."
+  },
+  "summary": {
+    "first_usable_ms": {
+      "samples": 30,
+      "median": 2359.7000000029802,
+      "p95": 2454.0999999940395,
+      "max": 2644.6000000089407
+    },
+    "index_ready_ms": {
+      "samples": 30,
+      "median": 1266.800000011921,
+      "p95": 1335.5,
+      "max": 1438.7000000029802
+    },
+    "own_transfer_bytes": {
+      "samples": 30,
+      "median": 828860,
+      "p95": 828860,
+      "max": 828860
+    }
+  },
+  "warm": {
+    "search_input_to_results_ms": {
+      "samples": 100,
+      "median": 210.79999999701977,
+      "p95": 218.29999999701977,
+      "max": 227.90000000596046
+    },
+    "filter_dom_and_two_frames_ms": {
+      "samples": 100,
+      "median": 36.3999999910593,
+      "p95": 55.5,
+      "max": 94.70000000298023
+    },
+    "searches_ms": [
+      218.29999999701977,
+      204.5,
+      217.5,
+      218.3999999910593,
+      205.90000000596046,
+      211.29999999701977,
+      211.20000000298023,
+      205.1000000089407,
+      211.40000000596046,
+      208.79999999701977,
+      211,
+      204.79999999701977,
+      205,
+      207.29999999701977,
+      208.59999999403954,
+      209.70000000298023,
+      210.70000000298023,
+      205.70000000298023,
+      213.70000000298023,
+      217.20000000298023,
+      209,
+      215.40000000596046,
+      215.3999999910593,
+      206.6000000089407,
+      212.8999999910593,
+      207.20000000298023,
+      210.79999999701977,
+      211.6000000089407,
+      218,
+      205.29999999701977,
+      217.79999999701977,
+      216.19999998807907,
+      206.1000000089407,
+      218.20000000298023,
+      208.29999999701977,
+      208.79999999701977,
+      206,
+      218.5,
+      212.3999999910593,
+      209.90000000596046,
+      215.79999999701977,
+      204.29999999701977,
+      209.19999998807907,
+      209.5,
+      206.5,
+      208.59999999403954,
+      213.40000000596046,
+      209.29999999701977,
+      203.09999999403954,
+      216.90000000596046,
+      207.79999999701977,
+      216.29999999701977,
+      211.8999999910593,
+      209.09999999403954,
+      209,
+      227.90000000596046,
+      207.70000000298023,
+      213.1000000089407,
+      205.90000000596046,
+      216.90000000596046,
+      216,
+      210.80000001192093,
+      216.40000000596046,
+      218.40000000596046,
+      212.19999998807907,
+      211.8999999910593,
+      210.8999999910593,
+      214.3999999910593,
+      217,
+      206.79999999701977,
+      204.29999999701977,
+      215.5,
+      211,
+      216.3999999910593,
+      212.70000000298023,
+      207.59999999403954,
+      206.1000000089407,
+      211.6000000089407,
+      209.79999999701977,
+      208.19999998807907,
+      216.20000000298023,
+      213.6000000089407,
+      218.8999999910593,
+      207.5,
+      211.70000000298023,
+      206.1000000089407,
+      216.09999999403954,
+      212.70000000298023,
+      210.29999999701977,
+      211.8999999910593,
+      208.70000000298023,
+      203.59999999403954,
+      209.70000000298023,
+      212.1000000089407,
+      209.59999999403954,
+      204.1000000089407,
+      217.6000000089407,
+      204.8999999910593,
+      205.59999999403954,
+      206.20000000298023
+    ],
+    "filters_ms": [
+      74.29999999701977,
+      55.5,
+      56.5,
+      47.599999994039536,
+      48.30000001192093,
+      80.5,
+      66,
+      55.29999999701977,
+      47.099999994039536,
+      50,
+      46,
+      42.79999999701977,
+      38.900000005960464,
+      35.900000005960464,
+      38.5,
+      35.70000000298023,
+      33.900000005960464,
+      36.3999999910593,
+      36.3999999910593,
+      41.900000005960464,
+      34.29999999701977,
+      38.20000000298023,
+      33.900000005960464,
+      37.099999994039536,
+      39.80000001192093,
+      31.700000002980232,
+      39.900000005960464,
+      33.5,
+      33.400000005960464,
+      46.599999994039536,
+      37.400000005960464,
+      33.70000000298023,
+      33.3999999910593,
+      35.79999999701977,
+      36.599999994039536,
+      31.799999997019768,
+      37.3999999910593,
+      34,
+      37.30000001192093,
+      94.70000000298023,
+      49.5,
+      41.79999999701977,
+      46.099999994039536,
+      46.400000005960464,
+      41,
+      40.6000000089407,
+      30.5,
+      45.400000005960464,
+      36.20000000298023,
+      33.70000000298023,
+      35.5,
+      33.70000000298023,
+      40.599999994039536,
+      32.29999999701977,
+      31.799999997019768,
+      36.900000005960464,
+      33.900000005960464,
+      31,
+      30.5,
+      34.20000000298023,
+      33.8999999910593,
+      32.400000005960464,
+      38.099999994039536,
+      32.099999994039536,
+      32.29999999701977,
+      31.700000002980232,
+      38.599999994039536,
+      36.5,
+      35.900000005960464,
+      33.599999994039536,
+      37.29999999701977,
+      30.599999994039536,
+      46,
+      39.79999999701977,
+      37.19999998807907,
+      34.29999999701977,
+      32.099999994039536,
+      37.099999994039536,
+      32.79999999701977,
+      30.799999997019768,
+      37.6000000089407,
+      45.400000005960464,
+      39.20000000298023,
+      36.099999994039536,
+      40.19999998807907,
+      33.1000000089407,
+      35,
+      33,
+      34.099999994039536,
+      40.599999994039536,
+      33.5,
+      32,
+      37.3999999910593,
+      35,
+      33.20000000298023,
+      36,
+      34.80000001192093,
+      31.900000005960464,
+      35.1000000089407,
+      51.30000001192093
+    ],
+    "search_note": "Search timing waits for latest committed q and aria-busy=false; pending-status mutation alone is not a result.",
+    "note": "Filter timing is UI feedback plus two animation frames; it does not prove all GPU-rendered track updates meet N02."
+  },
+  "runs": [
+    {
+      "first_usable_ms": 2644.6000000089407,
+      "index_ready_ms": 1438.7000000029802,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 617.2000000029802,
+          "duration": 95
+        },
+        {
+          "start": 821.9000000059605,
+          "duration": 157
+        },
+        {
+          "start": 1003.9000000059605,
+          "duration": 52
+        },
+        {
+          "start": 1057,
+          "duration": 60
+        },
+        {
+          "start": 1431.2999999970198,
+          "duration": 98
+        },
+        {
+          "start": 1616.5,
+          "duration": 63
+        },
+        {
+          "start": 1924.1000000089407,
+          "duration": 129
+        },
+        {
+          "start": 2233,
+          "duration": 168
+        },
+        {
+          "start": 2553.2000000029802,
+          "duration": 55
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2370.2999999970198,
+      "index_ready_ms": 1266.7000000029802,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 645.7000000029802,
+          "duration": 82
+        },
+        {
+          "start": 828.5,
+          "duration": 53
+        },
+        {
+          "start": 1261.9000000059605,
+          "duration": 68
+        },
+        {
+          "start": 1956.2999999970198,
+          "duration": 207
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2291.300000011921,
+      "index_ready_ms": 1243.5,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 630.1000000089407,
+          "duration": 76
+        },
+        {
+          "start": 714.4000000059605,
+          "duration": 109
+        },
+        {
+          "start": 1237.2000000029802,
+          "duration": 71
+        },
+        {
+          "start": 1942.5,
+          "duration": 152
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2309.4000000059605,
+      "index_ready_ms": 1250.1000000089407,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 617.2999999970198,
+          "duration": 68
+        },
+        {
+          "start": 765.5,
+          "duration": 58
+        },
+        {
+          "start": 1245.7000000029802,
+          "duration": 65
+        },
+        {
+          "start": 1949.2999999970198,
+          "duration": 171
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2360.199999988079,
+      "index_ready_ms": 1250.5999999940395,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 620.0999999940395,
+          "duration": 95
+        },
+        {
+          "start": 796.6999999880791,
+          "duration": 51
+        },
+        {
+          "start": 1243.699999988079,
+          "duration": 102
+        },
+        {
+          "start": 1997.5999999940395,
+          "duration": 158
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2360.5999999940395,
+      "index_ready_ms": 1278.0999999940395,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 629.2000000029802,
+          "duration": 75
+        },
+        {
+          "start": 801.2999999970198,
+          "duration": 56
+        },
+        {
+          "start": 1272.9000000059605,
+          "duration": 86
+        },
+        {
+          "start": 1995.5,
+          "duration": 167
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2401.4000000059605,
+      "index_ready_ms": 1263.2999999970198,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 622.5,
+          "duration": 84
+        },
+        {
+          "start": 721.7000000029802,
+          "duration": 137
+        },
+        {
+          "start": 1256.2000000029802,
+          "duration": 93
+        },
+        {
+          "start": 1987.5,
+          "duration": 183
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2387.800000011921,
+      "index_ready_ms": 1300.7000000029802,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 638,
+          "duration": 79
+        },
+        {
+          "start": 830.8000000119209,
+          "duration": 64
+        },
+        {
+          "start": 1293.800000011921,
+          "duration": 119
+        },
+        {
+          "start": 2059.2000000029802,
+          "duration": 142
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2328,
+      "index_ready_ms": 1237.8999999910593,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 609.3999999910593,
+          "duration": 69
+        },
+        {
+          "start": 766,
+          "duration": 61
+        },
+        {
+          "start": 1233.3999999910593,
+          "duration": 69
+        },
+        {
+          "start": 1944.8999999910593,
+          "duration": 187
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2351.2999999970198,
+      "index_ready_ms": 1235.2999999970198,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 625,
+          "duration": 77
+        },
+        {
+          "start": 789.0999999940395,
+          "duration": 55
+        },
+        {
+          "start": 1231.5999999940395,
+          "duration": 83
+        },
+        {
+          "start": 1964,
+          "duration": 197
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2387.6000000089407,
+      "index_ready_ms": 1279.2000000029802,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 634.6000000089407,
+          "duration": 81
+        },
+        {
+          "start": 810,
+          "duration": 59
+        },
+        {
+          "start": 1272.4000000059605,
+          "duration": 79
+        },
+        {
+          "start": 1983.2000000029802,
+          "duration": 192
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2364.5999999940395,
+      "index_ready_ms": 1297.3999999910593,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 619.8999999910593,
+          "duration": 78
+        },
+        {
+          "start": 788.2999999970198,
+          "duration": 64
+        },
+        {
+          "start": 875.8999999910593,
+          "duration": 59
+        },
+        {
+          "start": 1290.0999999940395,
+          "duration": 80
+        },
+        {
+          "start": 2017,
+          "duration": 149
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2345.5999999940395,
+      "index_ready_ms": 1295.5999999940395,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 626.7000000029802,
+          "duration": 69
+        },
+        {
+          "start": 787.0999999940395,
+          "duration": 71
+        },
+        {
+          "start": 1291.7000000029802,
+          "duration": 70
+        },
+        {
+          "start": 1999.0999999940395,
+          "duration": 145
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2454.0999999940395,
+      "index_ready_ms": 1335.5,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 641.7000000029802,
+          "duration": 81
+        },
+        {
+          "start": 844.5,
+          "duration": 72
+        },
+        {
+          "start": 1330,
+          "duration": 85
+        },
+        {
+          "start": 2047.0999999940395,
+          "duration": 201
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2374.2999999970198,
+      "index_ready_ms": 1310.4000000059605,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 626.2999999970198,
+          "duration": 72
+        },
+        {
+          "start": 799.2999999970198,
+          "duration": 66
+        },
+        {
+          "start": 1303.5,
+          "duration": 84
+        },
+        {
+          "start": 2037.7999999970198,
+          "duration": 163
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2359.7000000029802,
+      "index_ready_ms": 1266.800000011921,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 619.7000000029802,
+          "duration": 87
+        },
+        {
+          "start": 795.2000000029802,
+          "duration": 58
+        },
+        {
+          "start": 1258.7000000029802,
+          "duration": 86
+        },
+        {
+          "start": 1998.9000000059605,
+          "duration": 154
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2366.199999988079,
+      "index_ready_ms": 1262.0999999940395,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 635.3999999910593,
+          "duration": 64
+        },
+        {
+          "start": 780.5,
+          "duration": 57
+        },
+        {
+          "start": 1255.5999999940395,
+          "duration": 76
+        },
+        {
+          "start": 1986.699999988079,
+          "duration": 169
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2350.3999999910593,
+      "index_ready_ms": 1269.7999999970198,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 619,
+          "duration": 71
+        },
+        {
+          "start": 714.1999999880791,
+          "duration": 123
+        },
+        {
+          "start": 1263.5,
+          "duration": 94
+        },
+        {
+          "start": 2001.7999999970198,
+          "duration": 155
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2406.2999999970198,
+      "index_ready_ms": 1278.5,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 612.8999999910593,
+          "duration": 83
+        },
+        {
+          "start": 814.2000000029802,
+          "duration": 66
+        },
+        {
+          "start": 1274.3999999910593,
+          "duration": 78
+        },
+        {
+          "start": 2002.3999999910593,
+          "duration": 209
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2385,
+      "index_ready_ms": 1287.0999999940395,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 623,
+          "duration": 85
+        },
+        {
+          "start": 818.5999999940395,
+          "duration": 62
+        },
+        {
+          "start": 1280.0999999940395,
+          "duration": 89
+        },
+        {
+          "start": 2028.0999999940395,
+          "duration": 153
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2329,
+      "index_ready_ms": 1226.6000000089407,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 610.6000000089407,
+          "duration": 64
+        },
+        {
+          "start": 762.4000000059605,
+          "duration": 53
+        },
+        {
+          "start": 1220.2999999970198,
+          "duration": 81
+        },
+        {
+          "start": 1949.4000000059605,
+          "duration": 190
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2348.2999999970198,
+      "index_ready_ms": 1249.9000000059605,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 633.5999999940395,
+          "duration": 77
+        },
+        {
+          "start": 732.5,
+          "duration": 105
+        },
+        {
+          "start": 1243.2999999970198,
+          "duration": 77
+        },
+        {
+          "start": 1963.5,
+          "duration": 171
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2361.5,
+      "index_ready_ms": 1280.7000000029802,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 626.7000000029802,
+          "duration": 79
+        },
+        {
+          "start": 803.5,
+          "duration": 61
+        },
+        {
+          "start": 1275.2999999970198,
+          "duration": 73
+        },
+        {
+          "start": 1999,
+          "duration": 177
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2355.7000000029802,
+      "index_ready_ms": 1266.2000000029802,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 636.4000000059605,
+          "duration": 70
+        },
+        {
+          "start": 787.5,
+          "duration": 69
+        },
+        {
+          "start": 1259.9000000059605,
+          "duration": 90
+        },
+        {
+          "start": 1998.7000000029802,
+          "duration": 159
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2295,
+      "index_ready_ms": 1221.199999988079,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 614.2999999970198,
+          "duration": 75
+        },
+        {
+          "start": 764.1999999880791,
+          "duration": 54
+        },
+        {
+          "start": 1217.5,
+          "duration": 68
+        },
+        {
+          "start": 1925.2999999970198,
+          "duration": 186
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2364.8999999910593,
+      "index_ready_ms": 1284.199999988079,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 634.0999999940395,
+          "duration": 90
+        },
+        {
+          "start": 797.6999999880791,
+          "duration": 58
+        },
+        {
+          "start": 1280.199999988079,
+          "duration": 86
+        },
+        {
+          "start": 2009.7999999970198,
+          "duration": 157
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2305.7999999970198,
+      "index_ready_ms": 1236.0999999940395,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 628.0999999940395,
+          "duration": 71
+        },
+        {
+          "start": 785.5999999940395,
+          "duration": 55
+        },
+        {
+          "start": 1232.7999999970198,
+          "duration": 76
+        },
+        {
+          "start": 1961,
+          "duration": 154
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2352.9000000059605,
+      "index_ready_ms": 1270.2999999970198,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 610.2999999970198,
+          "duration": 77
+        },
+        {
+          "start": 769.2999999970198,
+          "duration": 53
+        },
+        {
+          "start": 1262.5999999940395,
+          "duration": 82
+        },
+        {
+          "start": 1983.7000000029802,
+          "duration": 167
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2273.7000000029802,
+      "index_ready_ms": 1250.7999999970198,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 615.3999999910593,
+          "duration": 69
+        },
+        {
+          "start": 771.2000000029802,
+          "duration": 54
+        },
+        {
+          "start": 1247,
+          "duration": 68
+        },
+        {
+          "start": 1953.7999999970198,
+          "duration": 154
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 2348.1000000089407,
+      "index_ready_ms": 1271,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-geometry-20261027",
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "map_font": "ready",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "own_encoded_body_bytes": 816949,
+      "own_transfer_bytes": 828860,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 779,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-BwFbEAPn.css",
+          "status": 200,
+          "encoded_body_bytes": 14107,
+          "header_bytes": 804,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/index-Dv8VHl6p.js",
+          "status": 200,
+          "encoded_body_bytes": 393899,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 1159,
+          "header_bytes": 742,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 771,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 15444,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/map-cjk-gwrInWC9.woff2",
+          "status": 200,
+          "encoded_body_bytes": 129992,
+          "header_bytes": 745,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 812,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 4709,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 1601,
+          "header_bytes": 796,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 25732,
+          "header_bytes": 797,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 38732,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 59265,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 68111,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-geometry-20261027/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 62698,
+          "header_bytes": 815,
+          "content_encoding": "gzip"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 611.6000000089407,
+          "duration": 82
+        },
+        {
+          "start": 790.5,
+          "duration": 55
+        },
+        {
+          "start": 1263.7999999970198,
+          "duration": 81
+        },
+        {
+          "start": 1992.1000000089407,
+          "duration": 160
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "external": []
+}

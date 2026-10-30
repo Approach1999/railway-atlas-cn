@@ -1,0 +1,27 @@
+{
+  "protocol": {
+    "valid": true,
+    "expected_duration_ms": 30000,
+    "accepted_duration_ms": [
+      29000,
+      35000
+    ],
+    "observed_duration_ms": 30180.600000023842,
+    "reason": null
+  },
+  "map_render_interval_ms": {
+    "samples": 988,
+    "median": 30.299999982118607,
+    "p95": 38,
+    "max": 91.10000002384186
+  },
+  "notice_mutations": null,
+  "raf_interval_ms": {
+    "samples": 988,
+    "median": 30.900000000001455,
+    "p95": 38.69999999999982,
+    "max": 92.90000000000009
+  },
+  "estimated_dropped_fraction": 0.46967257112184646,
+  "long_tasks": 0
+}

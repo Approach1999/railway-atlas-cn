@@ -1,0 +1,1688 @@
+{
+  "date": "2026-10-28T05:28:32.987Z",
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "build": {
+    "asset": "/assets/index-D2U7i8vb.js",
+    "index_sha256": "93056af1137250a7eea5fdca2111879c44f25287990717a6be6eab0124097bc6",
+    "asset_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7"
+  },
+  "browser_target": {
+    "channel": "chrome",
+    "version": "156.0.8078.48",
+    "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "product": "Chrome/156.0.8078.48",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "renderer": "forced SwiftShader",
+    "headless": true,
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64"
+    },
+    "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+  },
+  "cases": [
+    {
+      "size": {
+        "width": 1552,
+        "height": 1000
+      },
+      "factor": 1,
+      "first": {
+        "metrics": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1526,
+            "clientHeight": 900
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1526,
+            "clientHeight": 900,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 1526,
+            "height": 900
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1526,
+            "clientHeight": 900
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1526,
+            "clientHeight": 900,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 1526,
+            "height": 900
+          }
+        },
+        "dom": {
+          "width": 1526,
+          "height": 900,
+          "dpr": 1,
+          "pinch": 1,
+          "cssZoom": "1",
+          "searchFont": "14px",
+          "overflow": false
+        }
+      },
+      "checks": [
+        {
+          "name": "actual-100-percent-baseline",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 1552,
+        "height": 1000
+      },
+      "factor": 2,
+      "first": {
+        "metrics": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1526,
+            "clientHeight": 900
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1526,
+            "clientHeight": 900,
+            "scale": 1,
+            "zoom": 2
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 1526,
+            "height": 900
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 763,
+            "clientHeight": 450
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 763,
+            "clientHeight": 450,
+            "scale": 1,
+            "zoom": 2
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 763,
+            "height": 450
+          }
+        },
+        "dom": {
+          "width": 763,
+          "height": 450,
+          "dpr": 2,
+          "pinch": 1,
+          "cssZoom": "1",
+          "searchFont": "14px",
+          "overflow": false
+        }
+      },
+      "checks": [
+        {
+          "name": "empty-reset-action",
+          "passed": true,
+          "rect": {
+            "x": 400.5,
+            "y": 347,
+            "width": 100,
+            "height": 44
+          },
+          "viewport": {
+            "width": 763,
+            "height": 450
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 408.5,
+              "y": 355,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 408.5,
+              "y": 369,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 408.5,
+              "y": 383,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 450.5,
+              "y": 355,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 450.5,
+              "y": 369,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 450.5,
+              "y": 383,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 492.5,
+              "y": 355,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 492.5,
+              "y": 369,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 492.5,
+              "y": 383,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "notice-copy-and-box",
+          "passed": true,
+          "rect": {
+            "x": 381.5,
+            "y": 312.5,
+            "width": 314,
+            "height": 89.5
+          },
+          "viewport": {
+            "width": 763,
+            "height": 450
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 389.5,
+              "y": 320.5,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 389.5,
+              "y": 357.25,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 389.5,
+              "y": 394,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 538.5,
+              "y": 320.5,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 538.5,
+              "y": 357.25,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 538.5,
+              "y": 394,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 687.5,
+              "y": 320.5,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 687.5,
+              "y": 357.25,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 687.5,
+              "y": 394,
+              "hit": true,
+              "coveredBy": "map-notice"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "zoom-in",
+          "passed": true,
+          "rect": {
+            "x": 714,
+            "y": 170,
+            "width": 29,
+            "height": 44
+          },
+          "viewport": {
+            "width": 763,
+            "height": 450
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 721.25,
+              "y": 178,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 721.25,
+              "y": 192,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 721.25,
+              "y": 206,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 728.5,
+              "y": 178,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 728.5,
+              "y": 192,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 728.5,
+              "y": 206,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 735.75,
+              "y": 178,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 735.75,
+              "y": 192,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 735.75,
+              "y": 206,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "zoom-out",
+          "passed": true,
+          "rect": {
+            "x": 714,
+            "y": 214,
+            "width": 29,
+            "height": 44
+          },
+          "viewport": {
+            "width": 763,
+            "height": 450
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 721.25,
+              "y": 222,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 721.25,
+              "y": 236,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 721.25,
+              "y": 250,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 728.5,
+              "y": 222,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 728.5,
+              "y": 236,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 728.5,
+              "y": 250,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 735.75,
+              "y": 222,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 735.75,
+              "y": 236,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 735.75,
+              "y": 250,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "empty-view-share-open",
+          "passed": true,
+          "rect": {
+            "x": 596,
+            "y": 100,
+            "width": 52,
+            "height": 44
+          },
+          "viewport": {
+            "width": 763,
+            "height": 450
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 604,
+              "y": 108,
+              "hit": true,
+              "coveredBy": "share-open"
+            },
+            {
+              "x": 604,
+              "y": 122,
+              "hit": true,
+              "coveredBy": "share-open"
+            },
+            {
+              "x": 604,
+              "y": 136,
+              "hit": true,
+              "coveredBy": "share-open"
+            },
+            {
+              "x": 622,
+              "y": 108,
+              "hit": true,
+              "coveredBy": "share-open"
+            },
+            {
+              "x": 622,
+              "y": 122,
+              "hit": true,
+              "coveredBy": "share-open"
+            },
+            {
+              "x": 622,
+              "y": 136,
+              "hit": true,
+              "coveredBy": "share-open"
+            },
+            {
+              "x": 640,
+              "y": 108,
+              "hit": true,
+              "coveredBy": "share-open"
+            },
+            {
+              "x": 640,
+              "y": 122,
+              "hit": true,
+              "coveredBy": "share-open"
+            },
+            {
+              "x": 640,
+              "y": 136,
+              "hit": true,
+              "coveredBy": "share-open"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "empty-view-home",
+          "passed": true,
+          "rect": {
+            "x": 655,
+            "y": 100,
+            "width": 88,
+            "height": 44
+          },
+          "viewport": {
+            "width": 763,
+            "height": 450
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 663,
+              "y": 108,
+              "hit": true,
+              "coveredBy": "home"
+            },
+            {
+              "x": 663,
+              "y": 122,
+              "hit": true,
+              "coveredBy": "home"
+            },
+            {
+              "x": 663,
+              "y": 136,
+              "hit": true,
+              "coveredBy": "home"
+            },
+            {
+              "x": 699,
+              "y": 108,
+              "hit": true,
+              "coveredBy": "home"
+            },
+            {
+              "x": 699,
+              "y": 122,
+              "hit": true,
+              "coveredBy": "home"
+            },
+            {
+              "x": 699,
+              "y": 136,
+              "hit": true,
+              "coveredBy": "home"
+            },
+            {
+              "x": 735,
+              "y": 108,
+              "hit": true,
+              "coveredBy": "home"
+            },
+            {
+              "x": 735,
+              "y": 122,
+              "hit": true,
+              "coveredBy": "home"
+            },
+            {
+              "x": 735,
+              "y": 136,
+              "hit": true,
+              "coveredBy": "home"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "desktop-panel-toggle-intentionally-hidden",
+          "passed": true
+        },
+        {
+          "name": "attribution",
+          "passed": true,
+          "rect": {
+            "x": 597.359375,
+            "y": 434.5,
+            "width": 125.625,
+            "height": 11
+          },
+          "viewport": {
+            "width": 763,
+            "height": 450
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 605.359375,
+              "y": 437.25,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 605.359375,
+              "y": 440,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 605.359375,
+              "y": 442.75,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 660.171875,
+              "y": 437.25,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 660.171875,
+              "y": 440,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 660.171875,
+              "y": 442.75,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 714.984375,
+              "y": 437.25,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 714.984375,
+              "y": 440,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 714.984375,
+              "y": 442.75,
+              "hit": true,
+              "coveredBy": "A"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "reset-activation-and-map-focus",
+          "passed": true
+        },
+        {
+          "name": "undo-restores-empty-action",
+          "passed": true,
+          "rect": {
+            "x": 400.5,
+            "y": 347,
+            "width": 100,
+            "height": 44
+          },
+          "viewport": {
+            "width": 763,
+            "height": 450
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 408.5,
+              "y": 355,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 408.5,
+              "y": 369,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 408.5,
+              "y": 383,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 450.5,
+              "y": 355,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 450.5,
+              "y": 369,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 450.5,
+              "y": 383,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 492.5,
+              "y": 355,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 492.5,
+              "y": 369,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 492.5,
+              "y": 383,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            }
+          ],
+          "coveredBy": []
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 800
+      },
+      "factor": 1,
+      "first": {
+        "metrics": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1254,
+            "clientHeight": 700
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1254,
+            "clientHeight": 700,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 1254,
+            "height": 700
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1254,
+            "clientHeight": 700
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1254,
+            "clientHeight": 700,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 1254,
+            "height": 700
+          }
+        },
+        "dom": {
+          "width": 1254,
+          "height": 700,
+          "dpr": 1,
+          "pinch": 1,
+          "cssZoom": "1",
+          "searchFont": "14px",
+          "overflow": false
+        }
+      },
+      "checks": [
+        {
+          "name": "actual-100-percent-baseline",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 800
+      },
+      "factor": 2,
+      "first": {
+        "metrics": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1254,
+            "clientHeight": 700
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1254,
+            "clientHeight": 700,
+            "scale": 1,
+            "zoom": 2
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 1254,
+            "height": 700
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 627,
+            "clientHeight": 350
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 627,
+            "clientHeight": 350,
+            "scale": 1,
+            "zoom": 2
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 627,
+            "height": 350
+          }
+        },
+        "dom": {
+          "width": 627,
+          "height": 350,
+          "dpr": 2,
+          "pinch": 1,
+          "cssZoom": "1",
+          "searchFont": "14px",
+          "overflow": false
+        }
+      },
+      "checks": [
+        {
+          "name": "empty-reset-action",
+          "passed": true,
+          "rect": {
+            "x": 119,
+            "y": 156.046875,
+            "width": 94,
+            "height": 44
+          },
+          "viewport": {
+            "width": 627,
+            "height": 350
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 127,
+              "y": 164.046875,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 127,
+              "y": 178.046875,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 127,
+              "y": 192.046875,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 166,
+              "y": 164.046875,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 166,
+              "y": 178.046875,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 166,
+              "y": 192.046875,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 205,
+              "y": 164.046875,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 205,
+              "y": 178.046875,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 205,
+              "y": 192.046875,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "notice-copy-and-box",
+          "passed": true,
+          "rect": {
+            "x": 100,
+            "y": 122.546875,
+            "width": 515,
+            "height": 88.5
+          },
+          "viewport": {
+            "width": 627,
+            "height": 350
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 108,
+              "y": 130.546875,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 108,
+              "y": 166.796875,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 108,
+              "y": 203.046875,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 357.5,
+              "y": 130.546875,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 357.5,
+              "y": 166.796875,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 357.5,
+              "y": 203.046875,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 607,
+              "y": 130.546875,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 607,
+              "y": 166.796875,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 607,
+              "y": 203.046875,
+              "hit": true,
+              "coveredBy": "map-notice"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "zoom-in",
+          "passed": true,
+          "rect": {
+            "x": 2,
+            "y": 87,
+            "width": 29,
+            "height": 44
+          },
+          "viewport": {
+            "width": 627,
+            "height": 350
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 9.25,
+              "y": 95,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 9.25,
+              "y": 109,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 9.25,
+              "y": 123,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 16.5,
+              "y": 95,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 16.5,
+              "y": 109,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 16.5,
+              "y": 123,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 23.75,
+              "y": 95,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 23.75,
+              "y": 109,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 23.75,
+              "y": 123,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "zoom-out",
+          "passed": true,
+          "rect": {
+            "x": 31,
+            "y": 87,
+            "width": 29,
+            "height": 44
+          },
+          "viewport": {
+            "width": 627,
+            "height": 350
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 38.25,
+              "y": 95,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 38.25,
+              "y": 109,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 38.25,
+              "y": 123,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 45.5,
+              "y": 95,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 45.5,
+              "y": 109,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 45.5,
+              "y": 123,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 52.75,
+              "y": 95,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 52.75,
+              "y": 109,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 52.75,
+              "y": 123,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "empty-view-share-open",
+          "passed": true,
+          "rect": {
+            "x": 455,
+            "y": 77,
+            "width": 34,
+            "height": 44
+          },
+          "viewport": {
+            "width": 627,
+            "height": 350
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 463,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "share-open"
+            },
+            {
+              "x": 463,
+              "y": 99,
+              "hit": true,
+              "coveredBy": "share-open"
+            },
+            {
+              "x": 463,
+              "y": 113,
+              "hit": true,
+              "coveredBy": "share-open"
+            },
+            {
+              "x": 472,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "share-open"
+            },
+            {
+              "x": 472,
+              "y": 99,
+              "hit": true,
+              "coveredBy": "share-open"
+            },
+            {
+              "x": 472,
+              "y": 113,
+              "hit": true,
+              "coveredBy": "share-open"
+            },
+            {
+              "x": 481,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "share-open"
+            },
+            {
+              "x": 481,
+              "y": 99,
+              "hit": true,
+              "coveredBy": "share-open"
+            },
+            {
+              "x": 481,
+              "y": 113,
+              "hit": true,
+              "coveredBy": "share-open"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "empty-view-home",
+          "passed": true,
+          "rect": {
+            "x": 493,
+            "y": 77,
+            "width": 64,
+            "height": 44
+          },
+          "viewport": {
+            "width": 627,
+            "height": 350
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 501,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "home"
+            },
+            {
+              "x": 501,
+              "y": 99,
+              "hit": true,
+              "coveredBy": "home"
+            },
+            {
+              "x": 501,
+              "y": 113,
+              "hit": true,
+              "coveredBy": "home"
+            },
+            {
+              "x": 525,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "home"
+            },
+            {
+              "x": 525,
+              "y": 99,
+              "hit": true,
+              "coveredBy": "home"
+            },
+            {
+              "x": 525,
+              "y": 113,
+              "hit": true,
+              "coveredBy": "home"
+            },
+            {
+              "x": 549,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "home"
+            },
+            {
+              "x": 549,
+              "y": 99,
+              "hit": true,
+              "coveredBy": "home"
+            },
+            {
+              "x": 549,
+              "y": 113,
+              "hit": true,
+              "coveredBy": "home"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "empty-view-panel-toggle",
+          "passed": true,
+          "rect": {
+            "x": 561,
+            "y": 77,
+            "width": 54,
+            "height": 44
+          },
+          "viewport": {
+            "width": 627,
+            "height": 350
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 569,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            },
+            {
+              "x": 569,
+              "y": 99,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            },
+            {
+              "x": 569,
+              "y": 113,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            },
+            {
+              "x": 588,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            },
+            {
+              "x": 588,
+              "y": 99,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            },
+            {
+              "x": 588,
+              "y": 113,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            },
+            {
+              "x": 607,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            },
+            {
+              "x": 607,
+              "y": 99,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            },
+            {
+              "x": 607,
+              "y": 113,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "attribution",
+          "passed": true,
+          "rect": {
+            "x": 461.359375,
+            "y": 213.546875,
+            "width": 125.625,
+            "height": 11
+          },
+          "viewport": {
+            "width": 627,
+            "height": 350
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 469.359375,
+              "y": 216.296875,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 469.359375,
+              "y": 219.046875,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 469.359375,
+              "y": 221.796875,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 524.171875,
+              "y": 216.296875,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 524.171875,
+              "y": 219.046875,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 524.171875,
+              "y": 221.796875,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 578.984375,
+              "y": 216.296875,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 578.984375,
+              "y": 219.046875,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 578.984375,
+              "y": 221.796875,
+              "hit": true,
+              "coveredBy": "A"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "reset-activation-and-map-focus",
+          "passed": true
+        },
+        {
+          "name": "undo-restores-empty-action",
+          "passed": true,
+          "rect": {
+            "x": 119,
+            "y": 156.046875,
+            "width": 94,
+            "height": 44
+          },
+          "viewport": {
+            "width": 627,
+            "height": 350
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 127,
+              "y": 164.046875,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 127,
+              "y": 178.046875,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 127,
+              "y": 192.046875,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 166,
+              "y": 164.046875,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 166,
+              "y": 178.046875,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 166,
+              "y": 192.046875,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 205,
+              "y": 164.046875,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 205,
+              "y": 178.046875,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 205,
+              "y": 192.046875,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "collapsed-panel-reset",
+          "passed": true,
+          "rect": {
+            "x": 119,
+            "y": 247,
+            "width": 94,
+            "height": 44
+          },
+          "viewport": {
+            "width": 627,
+            "height": 350
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 127,
+              "y": 255,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 127,
+              "y": 269,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 127,
+              "y": 283,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 166,
+              "y": 255,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 166,
+              "y": 269,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 166,
+              "y": 283,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 205,
+              "y": 255,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 205,
+              "y": 269,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 205,
+              "y": 283,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "collapsed-panel-toggle",
+          "passed": true,
+          "rect": {
+            "x": 561,
+            "y": 77,
+            "width": 54,
+            "height": 44
+          },
+          "viewport": {
+            "width": 627,
+            "height": 350
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 569,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            },
+            {
+              "x": 569,
+              "y": 99,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            },
+            {
+              "x": 569,
+              "y": 113,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            },
+            {
+              "x": 588,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            },
+            {
+              "x": 588,
+              "y": 99,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            },
+            {
+              "x": 588,
+              "y": 113,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            },
+            {
+              "x": 607,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            },
+            {
+              "x": 607,
+              "y": 99,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            },
+            {
+              "x": 607,
+              "y": 113,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            }
+          ],
+          "coveredBy": []
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\notice-zoom\\final-chrome\\profile-SjzJSl",
+    "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\notice-zoom\\final-chrome\\profile-KPuJSl",
+    "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\notice-zoom\\final-chrome\\profile-6ymVi4",
+    "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\notice-zoom\\final-chrome\\profile-vMXJlm"
+  ],
+  "errors": [],
+  "external": [],
+  "source_sha256": "46943c37b999bde800df287ca96019f927f10a5dd536387681df2d3b24bac763",
+  "scope": "Installed headless browser, genuine default page zoom compared with identical-window 100-percent profile, CDP factor/pinch assertions. Center hit tests and finite recovery tasks, not real user window, screen-reader or complete N09 acceptance."
+}

@@ -1,0 +1,12 @@
+{
+  "recorded_at": "2026-10-25T10:20:21.706717+00:00",
+  "command": "node scripts/verify_react_filters.cjs",
+  "conditions": "first parallel run with verify_catalog.cjs; local Chrome forced SwiftShader",
+  "outcome": "Timeout 30000ms waiting for #dataset-switch-status with 已切换数据版本 at script line 35",
+  "completed_checkpoints": 3,
+  "failed_browser_state": null,
+  "reason_state_missing": "Original verifier closed the browser without saving its state; failure capture was added afterward.",
+  "follow_up": "One serial rerun passed; one repeat of the parallel pair passed. Cause remains unproven; no product fix claimed.",
+  "serial_rerun": "filter-performance-filters.json",
+  "parallel_rerun": "filter-performance-filters-repeat.json"
+}

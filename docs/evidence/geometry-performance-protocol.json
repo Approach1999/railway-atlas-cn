@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "folder": "pan-default",
+      "valid": true,
+      "expected_duration_ms": 30000,
+      "accepted_duration_ms": [
+        29000,
+        35000
+      ],
+      "observed_duration_ms": 30211.59999999404,
+      "reason": null
+    },
+    {
+      "folder": "pan-software",
+      "valid": false,
+      "expected_duration_ms": 30000,
+      "accepted_duration_ms": [
+        29000,
+        35000
+      ],
+      "observed_duration_ms": 1817286.599999994,
+      "reason": "Observed capture does not match the fixed continuous 30-second protocol; preserve raw data and investigate interruption/stall."
+    }
+  ],
+  "scope": "Actual previous captures; rejects interruption, does not turn rejection into a passing performance result."
+}

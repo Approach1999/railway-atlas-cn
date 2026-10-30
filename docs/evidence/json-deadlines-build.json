@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-25T13:08:20.928056+00:00",
+  "asset": "/assets/index-DB4aNY2X.js",
+  "unit_tests": {
+    "passed": 73,
+    "failed": 0
+  },
+  "build": "strict TS/checkJs and production build passed; bundle-size warning retained",
+  "source_and_evidence_sha256": {
+    "apps/web/client/src/json-request.ts": "0cd36936a0f6c2571d63f5833ca8938e2f37c57a09788319d044072e9b4f0d2e",
+    "apps/web/client/src/list-request.ts": "22980f61a06ecb44d4cf28de46ef1ef52d0842a1702154b55e2401bc229561e1",
+    "apps/web/client/src/list-request.test.mjs": "c863a22a193e9008ba2a4dfdd26711ba5b7dd57e37b391072d1c8bcc2bbbc1f3",
+    "apps/web/client/src/dataset.ts": "4caca8c00cb4fc27fbbe1f78726eecdcbf84797eb216f46841e7dc6a803e84f1",
+    "apps/web/client/src/dataset.test.mjs": "2c34c943159b9d1afa248acde86df8cf79a6ac29c79bea8058ab626520d45cf7",
+    "apps/web/client/src/DatasetPicker.tsx": "c5f266fd4e91757c3a5c9de1683ceba7e4e29943e63e8613c54e58c93ad7e0f5",
+    "apps/web/client/src/map-controller.ts": "02a8ab406a55bccfb4af06cb5270ec7a9f53bb7ff8b4fe0c64e68097f01e4457",
+    "apps/web/client/dist/index.html": "56096498b36240316de78b3051f91fbaf184262d3aeef3586d00a2c24acf58b4",
+    "apps/web/client/dist/assets/index-DB4aNY2X.js": "7caea3c16107710665c20eac6a7c6b4b4546546d9aecc1caa95af16cc295667e",
+    "scripts/verify_catalog_timeouts.cjs": "5c20c2f71e07e47ddc196ed30a7f634d31b736142fcb15f5751637f79b77d398",
+    "docs/evidence/history/dataset-before-json-deadline.ts": "d1d459d8cd32756cbc5005eb692e3c2d348a817e917966385a0adc1c5c11c3a5",
+    "docs/evidence/history/DatasetPicker-before-json-deadline.tsx": "078a35cb433841cd461bf839bc2ad5dae35a039eba38d40a2c399f223f6a111c",
+    "docs/evidence/json-deadlines-before.json": "b5dc352ae0fe8ca743a0f160d62c983f785c510e1d9e8102ea0cdbf2a19233ea",
+    "docs/evidence/json-deadlines-browser.json": "e61bfc77d4ba87ae7102160089262dfe985066d34e026f347d63f0158de5bc10",
+    "docs/evidence/json-deadlines-list.json": "bedff8651263fa830101b5e4e689132d702db81725e489e752546b4a697669b4",
+    "docs/evidence/json-deadlines-catalog.json": "1ee9676bf215896822abfe08157bd00fa02d1780b12ab2dd8ecede742b170acf",
+    "docs/evidence/json-deadlines-resources.json": "98a368be40ecd5eb3a26977c34a740b8097e470644d1713f37fc5ad5047b6ebd",
+    "docs/evidence/json-deadlines-races.json": "4dff67bfeb3079dbc38a5cf4fdc8e7811e149cd86207e58bc0b27b944e502400"
+  },
+  "checks": {
+    "real_http_headers_body_timeout_and_recovery": 5,
+    "list_deadlines": 3,
+    "catalog": 8,
+    "resource_recovery": 10,
+    "target_replacement_and_cancel": 3
+  },
+  "timeouts": {
+    "catalog_read_ms": 15000,
+    "whole_staged_snapshot_ms": 15000,
+    "map_and_list_json_read_ms": 15000
+  },
+  "validation_note": "The first after-fix fixture sampled URL before the search camera animation finished. The verifier now uses reduced-motion plus a settled zoom check before preserving the baseline; no production camera behavior was changed.",
+  "limits": [
+    "does not establish cause of the earlier unrecorded intermittent status timeout",
+    "MVT and basemap paths are not changed or declared fully accepted",
+    "prior performance and actual-200% evidence retain their original builds",
+    "real devices and remaining full MVP requirements stay open"
+  ]
+}

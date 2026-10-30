@@ -1,0 +1,11 @@
+✔ inactive lifecycle and impossible minor layers keep one stable false filter across presets (1.1778ms)
+✔ selected construction and history layers still compile and expose their own records (6.1397ms)
+✔ official SDK expressions preserve independent visibility predicates over mode/class/state combinations (393.2715ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 487.5157

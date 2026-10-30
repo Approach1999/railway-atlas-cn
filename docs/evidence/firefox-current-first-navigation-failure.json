@@ -1,0 +1,43 @@
+{
+  "error": "javascript error: TypeError: can't access property \"textContent\", document.querySelector(...) is null",
+  "capabilities": {
+    "acceptInsecureCerts": false,
+    "browserName": "firefox",
+    "browserVersion": "158.0.1",
+    "moz:accessibilityChecks": false,
+    "moz:buildID": "20261019185856",
+    "moz:geckodriverVersion": "0.37.1",
+    "moz:headless": true,
+    "moz:platformVersion": "10.0",
+    "moz:processID": 13820,
+    "moz:profile": "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\firefox-runtime\\profiles\\rust_mozprofileLhK0Ty",
+    "moz:shutdownTimeout": 60000,
+    "moz:webdriverClick": true,
+    "moz:windowless": false,
+    "pageLoadStrategy": "normal",
+    "platformName": "windows",
+    "proxy": {},
+    "setWindowRect": true,
+    "strictFileInteractability": false,
+    "timeouts": {
+      "implicit": 0,
+      "pageLoad": 300000,
+      "script": 30000
+    },
+    "unhandledPromptBehavior": "dismiss and notify",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:158.0) Gecko/20100101 Firefox/158.0"
+  },
+  "checks": [
+    "real railway render, complete style, ready name source and actual loaded self-hosted FontFace",
+    "native WebDriver canvas keyboard pan and zoom update the camera URL",
+    "W3C WebDriver search keys, active descendant, Enter selection and original railway station identity",
+    "native share dialog focus and fresh navigation restores the same typed station identity",
+    "native preset clicks update independent filter state and restore overview",
+    "on-demand list native dialog, keyboard station detail and explicit focus handoff"
+  ],
+  "state": {
+    "focus": "<body>\n    <div id=\"root\"></div>\n  \n\n</body>",
+    "text": "",
+    "url": "http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027&q=%E6%B2%88%E9%98%B3&types=subway&states=construction&sidings=0&lines=#map=10.50/41.80000/123.42000"
+  }
+}

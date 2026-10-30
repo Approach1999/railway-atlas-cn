@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-25T02:18:08.916Z",
+  "snapshot": "shenyang-mvp-20261023",
+  "checks": [
+    "default visible share encodes the isolated real line; original share restores prior explicit line exclusions without mutating the source URL, camera, query or selected temporary station",
+    "clipboard denial selects a manual-copy link; success copies the selected mode, radio arrows work, and Escape returns focus without closing the underlying detail or isolation",
+    "visible recipient opens immutable data with explicit filters and temporary typed station; closing details restores exactly the link filters",
+    "original recipient opens immutable data with explicit filters and temporary typed station; closing details restores exactly the link filters",
+    "reopening resets to visible share; a copy rejection from a closed dialog cannot alter the new session or its focus",
+    "without isolation both choices preserve explicit empty lifecycle filters rather than expanding them",
+    "390px native modal fits the screen, keeps keyboard focus inside and provides 44px share targets"
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Local Chrome and real immutable Shenyang data; simulated clipboard and narrow viewport, not actual clipboard permissions, reader, physical devices or full MVP acceptance"
+}

@@ -1,0 +1,33 @@
+{
+  "browser_target": {
+    "channel": "msedge",
+    "version": "156.0.4314.42",
+    "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "product": "Edg/156.0.4314.42",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+    "renderer": "forced SwiftShader",
+    "headless": true,
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64"
+    },
+    "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+  },
+  "date": "2026-10-28T05:01:16.549Z",
+  "server_url": "http://127.0.0.1:8766",
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "checks": [
+    "keyboard toggling preserves the same focused input and open disclosure; persistent URL reflects lifecycle change",
+    "preset undo and reload preserve explicitly empty modes with custom lifecycle selection",
+    "temporary isolation shares the visible line and exits to the earlier persistent choices",
+    "snapshot changes retain React control identities, native open disclosures and display options while legacy line coverage stays explicit",
+    "grade/status legend buttons support Space, retain focus and remain available after disabling the last state",
+    "line legend groups use configured operator name or explicit unknown operator; keyboard opens colour provenance and confidence",
+    "palette recovery updates real line colours without replacing focused React input or resetting its choice",
+    "390px simulation retains all presets, at least 44px touch targets, keyboard-collapsible line panel, readable colour provenance and no horizontal overflow"
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Local Chrome React ownership and keyboard/disclosure continuity, actual snapshots and 390px simulation; not real-device or full accessibility acceptance"
+}

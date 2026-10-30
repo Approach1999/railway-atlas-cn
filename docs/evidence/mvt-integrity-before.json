@@ -1,0 +1,1171 @@
+{
+  "date": "2026-10-27T15:37:43.971Z",
+  "snapshot": "shenyang-mvp-20261023",
+  "source_manifest_sha256": "e5d9da79170c41c428d8f971ddc8a3bb12bda3c66b856f4243c912d5469d2404",
+  "source_detail_shards": {
+    "00.json": "2c4ce7f2cccd449c06f15a18c1a973ac6c5945d54bc1daec56b193b2389efb3c",
+    "01.json": "83d599dab8458af701f42c1f86446f3b272b9fe14875351f56317cd4e87b3bb5",
+    "02.json": "1a1521e16a7baa92612d107a1df8579deb98ab40a9797fdc11aeba5e03cac16d",
+    "03.json": "b51d5e6e4199b21b9956cf2c5ddb911db22938b8aa1d5b819e4398fe0382274b",
+    "04.json": "b7483ae0111c0a440837f5a0eef6cd213a60f26728cf0725b4cebebc9b9b866b",
+    "05.json": "1534ae386c10d63e66f63713967657dd8ab27850e07c5a26a9b9f1e1cd15fc7d",
+    "06.json": "92403c09214d1db99d5f04e2dcde5b88e30cd9c64859e8ad113b8dfd72a3f835",
+    "07.json": "0142d78c63e25f634ad48c7660287e482c8a4ea82076daf1f9686288a21238db",
+    "08.json": "da39ee6706ddcd10fae7e5c45c6980cce1224c821af6b586a33d369407f72d29",
+    "09.json": "2ef2a3498b71e85df7b517a6fafd116f9b1d2a20864f911e6bbc34ea43e17850",
+    "0a.json": "a508b8e9da315100c1bd6a4b291cb44dbb2810114a7867c6dd582ac67613ccf6",
+    "0b.json": "0e31e89218702e4f26f01d75671e04e2bfbcf3bc79fc4eed54df3b229810abd0",
+    "0c.json": "a7a5650ff3cf7859cec48d9fd2fff24bc329573fe20c3e9eff8c9c043be8148c",
+    "0d.json": "c8bb9672c24472bb8843a129cd06c45c3e91952636717fc2599b56dc76791429",
+    "0e.json": "b228cca09c6447e7017d18eb0da923996807800e11427f28fac6d8c7b794167b",
+    "0f.json": "0d3a112a69d208d59ec5e0e1ddb14518221b93ce743798eaf9e5b2ca6475badb",
+    "10.json": "10afdc96cebdbcd6f8ec2c15440aa3184ab0aeffd4923a93e420b64a9955f032",
+    "11.json": "ec6d23fef6ae6391e5a8a7cf77d757cbf43d73f47ab1a89541e98f31c9cfc773",
+    "12.json": "8ab7f51c8b77cac3de20e9528d618ce96d0f6ae7c25d7679594192f953c183d3",
+    "13.json": "02ec5bd923d58cd5b46894ede5ff2e700e443a3c5531638aa6fd2d3307833818",
+    "14.json": "975ddc8bb1900a702e5254dac60b73cb0d791816f98c033860c41c244bb90074",
+    "15.json": "3f33654240b3bd4cd560151bbe6bc018e5abf58dfbd92b7fcca53c902e0cb828",
+    "16.json": "fba17885f729eeb42079bf5c70cabaf51ca26471b3ac124fee29da4a44852003",
+    "17.json": "a75c06caa329e829ea7a52e28c770de9c4f97d10b7112e397a1de42a217c36ec",
+    "18.json": "254b50f83dd5a7a89f8c14b734df7df82c35d40a69c99c179861ba51988c91bc",
+    "19.json": "c0803e0f60f79e49adcd2d00be7382675de610add6b55d56ad6dac54ccc7412c",
+    "1a.json": "6ce72aa399326cfe27ed2e1571a58b1160155ef58f5a213d75e941d2037a54e6",
+    "1b.json": "3e8f3ef54994d651e15b45b6ec0e759aea47fe9849826cc8228884e5a0417f6f",
+    "1c.json": "b4166698fc0c117c86931fbd74c7f8f8d92fd25874f1091d423cc798f7520027",
+    "1d.json": "c2e1e587af913449d21517644d7fabbaabaa729878d9c7c8e49bf44f3818efc4",
+    "1e.json": "4efa339a1364bade375dc6b062f17b6bcd24d76687bc27b2503a11f8916ce87f",
+    "1f.json": "8f128bf620081f53628c541f84cf2679d77d1dca82ca742264470fd4c353bec4",
+    "20.json": "c6bd639246b7886d5bd5a07663e64093c664d5f0fb9d5ceb1109d80e3700240b",
+    "21.json": "455dea5913d934a705e586246c3dae6b07fc6590aa46d66172d7bfc4cd6d1bbf",
+    "22.json": "93e28eb7ee448fdea88484dc17924de0843af14097080a673276e1cab8b40b4e",
+    "23.json": "6d9b69e49019e17b064e1ad2d2d098a23e5febd6af3da5c610a6d3dae017b3b6",
+    "24.json": "5bae2477f3230d921654fc7bc4df049a47494c852af7ef85e2ad6bd31fd46681",
+    "25.json": "7913b98644513f2552152e9a8904f5bebbc7b8a02e4c33e8bb0c39d62eaae284",
+    "26.json": "f7c11bc51fd43f92563b4bbe66a9e3959115946f121f2b3a1fde905042a0c463",
+    "27.json": "7ce51fab9daf92569cc1d5d5484d5f601a050bd3d8f7244bff3a3885f37f2a21",
+    "28.json": "2f2786706b27ef6c474c06ee94f18a6df5612826ef5e3f2cd55592640e829fd7",
+    "29.json": "b391f2eb97bb03bd27aeb079fff904c0da43688538905a59a90e712dd708e57c",
+    "2a.json": "e90222597a5ef43d7e16d294ccb933cd5126713659c3f697bd03fd43ce14a49d",
+    "2b.json": "f7f5d293c87c31e5369300792523d6e761ea0d36f1042fb895b3f3f801fa8376",
+    "2c.json": "84e25e05e5fe7ac18a28d8b0008946b7299e1b0f4a67c519be3b7ec744f65d23",
+    "2d.json": "96685430bdc20cd08a82d32270a40a5d96ff2f5a215a4a5494301e1d1f9172e1",
+    "2e.json": "e699a00370db904f9032d279cd96e7b74b76ddee6fd13b6d9728a1e77be46327",
+    "2f.json": "2dd0448b062eb860bbeb4f7a975c0a22ff184d28c796846098daef8f6a2406a3",
+    "30.json": "92cc5d3413755e49731c301e1578dbdb303e56134a31faa52aa89df95374bd96",
+    "31.json": "09cce1a6e0b626629784a5870af385b82dcfac9c3df0e3d7df6b921dc3f3b98e",
+    "32.json": "377607cad0aa6fe452e4d5bf7f6b7cb9b3ace47db235da0b844d0b6abff5f54b",
+    "33.json": "25bbea674fe559fd8b41b0c0fca10c3e624cc6cc3ebede06e6cd7ddceb1a3ba7",
+    "34.json": "58a802afdadbe38ea4df6b8f2557abc425985b84d7dbfdcaf97e4ea12987a69d",
+    "35.json": "f4448f09739b32f23296755b3f3b928f89b00e43850444b069023bfd95024d4e",
+    "36.json": "ae8b3754e2b0017b2ca653fb0a16c638c94d3db0d90e858b8c593203789204ae",
+    "37.json": "e506a9eeab6176c4c60c73431baa25d28ad1c47a0dc1743ef2e8fa6981aeab30",
+    "38.json": "facd9c49cf8c1be9a42c75afef61b4c5b2e5295ac04c268218b5d0ff53e847ed",
+    "39.json": "e97fe918e2d7960f5b7d7975a60dcaea19b01bffa97a7fe772b63a0e4473bae4",
+    "3a.json": "ddf7b98ce0997180aaf3b6f23a336972570c2f39f23b4715a448afab8c0aa3c2",
+    "3b.json": "3c427c14d2aa5e2c5c5b5d2012ceeafbee883f4958a45736cc7303981c8e70ba",
+    "3c.json": "6485fc5a1640d1186d12f806d889dbb934926666cc13f5d8e1fe1b28e95bf4e0",
+    "3d.json": "86826288cf5350f7b27efcb51344d05475b496180cdb9e5b4f730e7ff66025a0",
+    "3e.json": "01de9fdfdc79cafa9205008f1fb43d205cee56231024c61841da93eed2d9bca8",
+    "3f.json": "aaf3d2140768c30dc82e778bc9e537b226d6921d1749f07c3949443dce40e340",
+    "40.json": "15acd20397700475435c630c8247dcbca68698ee1eb511bb9d2570e145afd94f",
+    "41.json": "709637b3364071dca4388aa4988b301de06b5e5f0ad0c2e19c3ed6af5ac1f5e5",
+    "42.json": "9ad1e727e3057c9b521e6ed6f299d5ef51fd818a1e645fb712386d010eb5d597",
+    "43.json": "7850b4a70b8473f6993f9c2ec66d11e4fce6bcfe8e96725595c7a7dc409006e3",
+    "44.json": "69e2e34d6479080f7f4e2dbe80c329ddd61d002da91b11173fc1eaaa469eabbf",
+    "45.json": "ef0c7774ccdfbab18f44462a0610b8cc6d2aa604fe517eced12c35f3192bcd13",
+    "46.json": "eb623d6e4ead783755f4f8aace0b14307919fe4c795b4e51f9e36481039aee12",
+    "47.json": "4d8704b0680b1e1cbdd8de9d6ff796204afeef0080e6ed4dc5a9a5b96d519e02",
+    "48.json": "8ea4841f372cd1b78f0885585ebdc9f67dfca11115dee13c76ae4bb9d58c3bcd",
+    "49.json": "ea2400da63e4316f216362ea8953ef4dd158c3b86e511f48b0b02a2a9ff997aa",
+    "4a.json": "99090c8d6440471b8200ea2a8a6819ae26458afffe36ebd5022c22bcffd72347",
+    "4b.json": "d09fababe489a19c577a9c651b27283f891379d9e713052c6a6a5a9fd3c740e1",
+    "4c.json": "fcf1f88a504bda380d5aa70727bec73031571796be54463d056ad2f149171245",
+    "4d.json": "0645fccd92e67d0c066b7ad6a1bb08ade3a389255fe201e2305ebf25ab8a3da6",
+    "4e.json": "afd2ffae6f28035b50220d65b185a3571381d05625db03f9d90e4fd0a7a77209",
+    "4f.json": "b72830947b4b395395c1b734e392eb47d484db3c0520e499bfad856df10f3837",
+    "50.json": "7b002ff478e2131fec6ba92c943e587bad9f7311f1f3a57b873fd41286228531",
+    "51.json": "873db1f37437226c7543ce4b9a876942ad9b74f1dfd3aeed4618e075f2948b27",
+    "52.json": "76a847e5521425205fb49f57c6d94b8e890fbdc40fcbb6b35c24536e25fb3982",
+    "53.json": "c90cc8ceb82f354c6256b4ee6f93e1d819102e96468e900ab2752489483b2ad9",
+    "54.json": "8ab3639beb10869e148b99afee2964eb5c5846ae1c85fc73c78f060fc34ae887",
+    "55.json": "6c51fe1d4020aa27503641866e904195e9caadbf1f0d5b6d88ef47e3e35aee02",
+    "56.json": "66bfe1e93eb787f2a1b6d30e92369c58f81e16a6e70df42d724644975b5194c2",
+    "57.json": "45e5f3f4f6b8a37644be6417f5b43e9bcb2b49d111308c4b29d5a6008c8f537d",
+    "58.json": "b8859e8e2402b6bc9b0a494c8a437957473437d63c162249d3a81990f5539188",
+    "59.json": "d7b09e6afc031dedc721bc79b4e27e7fa3380475f5fdc23682564fe21f7505a1",
+    "5a.json": "f4b30590d26496d74ccd6dc8d11e4f62150d3f2f56cacef5820da3fc543dd556",
+    "5b.json": "db79d7ff47bae2482e12160d2943a3bd1042d8ea86363afcc642e96e7dc92d96",
+    "5c.json": "ef4e6a32587dcd8af5339234a622e27c9c632926b86954f795836209859d10ee",
+    "5d.json": "43bb7ff238b1ac06f479be659a78a005766100659f05b91024477d2319ea9eb5",
+    "5e.json": "85ab2fde3eda5fdb78eace10bc62c1a8c794b04ba6854a99f884692774915dc9",
+    "5f.json": "3b36b6fb91eed95b877cf255dc640277821f9f0bd388844c61aebd1da935176e",
+    "60.json": "d78b4c5c8caf32b62570c33fd5819caa8ed15b3fb4475503defe24005c9cf903",
+    "61.json": "b840c39d884e986b7baa183d8b7996e3cf5ea873c40b72d022721b79891082b6",
+    "62.json": "4f2d1c48d1b2d119230a6b84fef89d60e735a0b900acec87b77fbf6f5937bcb0",
+    "63.json": "835468047d1a45f6cdf4b38ec5687ec856c0a75de77451d68b43efac086ef70e",
+    "64.json": "f3f16672439d06ec4b40d9637612ea82549b361c9ac41db236ba98b35fec81e7",
+    "65.json": "5fa5ed7988c039d03b2ac70beca0d8c2a07745111878e8c9526f60604b583a87",
+    "66.json": "32e82e70fe02ce780c5ec0ae1abf66133f114b74f2160ebd339752b28cca5972",
+    "67.json": "cee8c8eb3c410233179ee80e60c4127aef1131effb602a327b754291c2b0b280",
+    "68.json": "8b8e57f78c8dc0af386917704132ed035a4ae0356a64bd3f6e258660359a68f6",
+    "69.json": "9454154cc42c3fd097ad326ead4f9014d84bb2132fe427149439de51d1e0aacd",
+    "6a.json": "c92874a38c94c70dc4b7a0829dddeab07fd2456dff9f8fe8f1bb396fb8f7edca",
+    "6b.json": "578f136171598529e011f149b45da6a22de04d872c31afda4b4634b686732814",
+    "6c.json": "3b1f7a3ce176a85c5d1579a48759d28c55df2ae8bfbb56df0e360547f78ab03e",
+    "6d.json": "774824033bd2be01ddc3e5f9e0161901465a27bd09a48a0edc45b1a73d2fb41d",
+    "6e.json": "e421585e98e86dbe69c880365ec8bfea435cdff1be8995711a383c2387c9d89d",
+    "6f.json": "20e235ac23526a170264d92ca6475fd0ce752dff88fc1df391fb632f9cf4fb26",
+    "70.json": "46e7e63686843b71982c866584f888e1b3184579594eb67410fcd3eedc683a80",
+    "71.json": "ecee3ed2f4354f66c5e192f3bec35a2146ed2bcfcab75293bd83ed5c490fbb5d",
+    "72.json": "08c198d955cd13fed0f0fb6fa96d5164af4e2ce25f182783090967da0bb6ff22",
+    "73.json": "34dc7c2e9fa8d72f982749279886171063ecfa8b2e73cb2969d62b529407e55b",
+    "74.json": "ab9b19f92a19ba899a23487969ce99f516976d20e0119f280f2c0ebb144aaa80",
+    "75.json": "f3717066d5dea1e5ffe0d96f91abe126d85f522d1a0dd16719346b51e9890df0",
+    "76.json": "d3d0313198c14e447087b7a0efad8d356971daf9b5c9ba9f714f375c8eb96fa3",
+    "77.json": "10a0f18a6fdf06a380b475faaab1e6c2c1785e920c57858e07e7ccaadbbd82b7",
+    "78.json": "e39fd125384bdda54644f5b3c121762b84204bf87ac10f0c12f5c773d0e2d6fd",
+    "79.json": "1220740d58e102b3acf6d076358ebfc2b6c5e090a4a75417046181cdc10bc2c4",
+    "7a.json": "f77579d8555b022a49036579a9a76fd480ece4223ffc3fd92d840468c180f5a5",
+    "7b.json": "a7b6b59e6765d5d389ff8822afcbb3744b43c93074496e1ff06b65c290ba0e07",
+    "7c.json": "a51211f2f31f35ec0a728a1f7309bb1128652a12c456ec03e7916a6e14f94a1c",
+    "7d.json": "7c9cb88b537ad17e3a678253822ebdf426cf6bc17f6748d9d46b803f834ecb54",
+    "7e.json": "454dafac66e6ba0bc2ad597994b1a49192364cf68f2e56123c5d77eca0f7939b",
+    "7f.json": "b971827350ba28b2dbcdc4ffba4c689e28a8491539ab0a6f3f40ad7e1e08258b",
+    "80.json": "9703732f15b5d1f285b638cc40e8e3dda4a1418e47c12d5f45f4a518743c9ec4",
+    "81.json": "83b085c5ace34812fb8955bb580c550da0b6a5f5438a631299ca56da32c64c4b",
+    "82.json": "f93ef3a8618f2a1376f85b0435ca1e505b0aa1263691c056e770fc46b20dbb58",
+    "83.json": "6d1569c5785e07795487d86fcd2d83b379d9c650185bf6b5c7a4f56e4fc5de6c",
+    "84.json": "120c767c42a24b6c849c1bf9edf91136c6c13ae0e1932bb4c1f3774a6a25dc14",
+    "85.json": "17dc0c4ae838fb83f1c5ae0ee14a40c6dd26181303912167b69a12055b1934f8",
+    "86.json": "b1fe541c95215441f7b605e3f439c13185d24db446c0dcdb38240c1001c6c3d1",
+    "87.json": "a8074c60124ae31a6bba55a4e499b2cd1542684476f3e8bb53b6ee2454f9f377",
+    "88.json": "bda3cbf92ccebce7a8cfe80701a00a8848514552b33aa3a1537d86e2dd90f6f4",
+    "89.json": "929d2f1f16454df62ee4cf8a59420889e20243d6c8d9552d13f142981c376ede",
+    "8a.json": "654c492822acd3ebe68385d45ed2165d0e3b6250e784b4287c605174b6e769b2",
+    "8b.json": "1cd29c47fb71845c594531ff2d62f4ec5c379e02afe0cbc4578543f2a806aba2",
+    "8c.json": "66b015a2621617678b9d1fff4a7834f43a20ea4ded38bf665931331dd75683ba",
+    "8d.json": "71e7d1d0704a50e7f3f54af12aa5c46dd10d95c10df86079b658d0ace66ee72b",
+    "8e.json": "bdffbf4bf84a845ca3979c4f1ff60b13762fd7f654e0a1e26648e2f623c90b2d",
+    "8f.json": "5f40047572bc9dd1e1b996bfcd3305692ce613c325330355c3f9bbd02efbbf47",
+    "90.json": "3528dff07eddf6f9fbd520d370c8ec7fa0bf161ca75c626528cbab0b2ab945df",
+    "91.json": "27810577cbce65ffee57e4b29b459822d1e8a9dce4be57093c7ad0026b0e32ed",
+    "92.json": "57cccd6a2658274729006edc15675498e127acf44fb6202dc1a9646c9da7d3f3",
+    "93.json": "40357731f8c63aaa86292bcc6bb415dd12c62830ac26402fee7754cc5384b74f",
+    "94.json": "f8ca6309fc8ee064bc3054a86d62aedf759caf22934c3c82b7a1386610c637a0",
+    "95.json": "0c057cde2a0653669a83ce157fd7f4ca335dc4d88c7310f4139cb2416a6a91aa",
+    "96.json": "164dca123ded57a12e0531771958bfb2d6930a3c7038a4a9b76e829a41402637",
+    "97.json": "64b14f52704738c6e87164571c75063b989068eaff2592f8f9cb598ba822d67d",
+    "98.json": "de6c688963316888b35e815ec68d4b1b5cae083aafb1e14e0fce578c75008567",
+    "99.json": "a7a312d6b6c1cf54934dc13cdbb7042ca6a54a177504225de8309fcdc8b25905",
+    "9a.json": "efc96f9e70429138b98c3e082344dd7e0a175357706ced975cfc0a8400b6f4d5",
+    "9b.json": "babb38646fb51b50ef8e53c72b8ee1db71ebcb970c109b7a5413b6623a6c6e14",
+    "9c.json": "0e7d404f68a4d1b72c688e682a4e1abe95d12c4114ea09962b506ee0495e91d6",
+    "9d.json": "0ca7cd89c195737908c91613f1057d0a7ba5a71095cdcc49ba04eefff6e9daf0",
+    "9e.json": "3c012d107bee4c730107b61b33d612346c67d5e8777826558b982f71610eebe3",
+    "9f.json": "ecfd619d384a2fc103921d4b03cbe7990806897f5a77a746e31085fcf98ac5f4",
+    "a0.json": "ca3970a2bed99ae4628815ecd1ebc3ea494e60054f4f7b683d5c06a9f5e8fcc4",
+    "a1.json": "4aaf07e0daf37df9f9106b0575e1d12a58b54ccb50b8a787a5b7f37c5cb5387d",
+    "a2.json": "fda3afadc38e432e50c7fcac71bc80dec8d786fa9b3c0bc4d0bffe3ab4484a25",
+    "a3.json": "a73b2fbfb7fa6211faa30215fb552359f68a1e6ad3c621d9849ecd7912fa8bd3",
+    "a4.json": "3d1940aceb7fadf3e654311895347f7ee053355f601829b74cc4449861a90736",
+    "a5.json": "acd109c095e37456c17bddea23b3ff646c9d19a2f8c2003b94fac20f382832f1",
+    "a6.json": "98c2a26a06e8dc44de7be32de83db8646be76617f2458f224fc2d33a6d26bad2",
+    "a7.json": "ad5509ac1918c3906be61719ca9c8dd36dd25539c7882269a74446d91c4f857e",
+    "a8.json": "c3341ae2245c9e72f3cd716b2c653cc9250f44996cc9b05cbe1fda1cb8d506dc",
+    "a9.json": "89f86778da348bf2c251086faf83e7cd4e15eff5b1b98eb16ff118799e2af77a",
+    "aa.json": "4cbc0c82485bbcc237772ac2d8a1e501c4259bf4660482c216ec484581349a91",
+    "ab.json": "97752bbda59ba53c342d175846d312ef3f3db92898a214e7a2a8a425e22431db",
+    "ac.json": "b88ab2fc60d42784653a9481322e075bee9a68b6cfb08e12f103ed1bbc8d84d6",
+    "ad.json": "56f4a740bec569ef7cb75f3fecc02b694d4acef94bfb4237c3fd898372823bfd",
+    "ae.json": "b7b2e2977e522f6d48c9ff13b04622809efbf3d68030dcacfc758b0d1d3464a9",
+    "af.json": "5dd3f48c09b3014eed8ffa0fd0f78d7cdc92d6415766dc87648b9c2ec55ca6da",
+    "b0.json": "7f69fae30023272bea4b0dbaa37ba07e40c8c987231672cbfdefaafcc539863d",
+    "b1.json": "559390bd7b61cdbdbecbc18d47b6900c34a184efcb0f4625fe8ea1fafa6bc17b",
+    "b2.json": "c0cc314741a6b6bf4477eaafb6187ce3a84c96a04179d22076e6ff41e0ce7318",
+    "b3.json": "d5a7a32ed9bded41cdb804d4abfedf92263816a744d53bea763768dc736925a7",
+    "b4.json": "8da36a521d0fb620cd63bf472297522f3cc8f2f30268dccdf8b140055162e57e",
+    "b5.json": "7eb84c3754feda4c1fb6db6e1be70ad844bad4e2f8d5dcdc86dc30c61a08e724",
+    "b6.json": "20f04a35fd86384f8e270c8b2fbd612e14626a8e5b4f57a8171907e6e0afc3c7",
+    "b7.json": "81b934a1edf91eb0f85cc7023017d258104c5cc26a6b02d61f57c18564d6f3b2",
+    "b8.json": "774556f1273958d45358df87c03f93465992caf8002a550fd49bd0060b9428c1",
+    "b9.json": "4300efd5ae7d37bf4bb596406afe5516e518517b4ac578746ef2e210ed8c18e1",
+    "ba.json": "7170e92d9eaca862737497b958fb84ad44ff3d655a0e04bd526d9ebf637ba58d",
+    "bb.json": "4abc19eba214a19e2bb2da8110666a4323a1f7c65980c8c4ee586d79533cbf6e",
+    "bc.json": "e1ed555fb1e35f3d132c7582042af772e8aaa0cf7c01e27dd029ad6f86976902",
+    "bd.json": "ee730aa3d3456d02b8728ac7574a344a105159f8403436552dc24aba0383755f",
+    "be.json": "8427e506058aa444417613adeaf4cbd0e26bdb808c12a578f8657b8014787021",
+    "bf.json": "6ee5ccd2c2207992b857d7efc38b9fd8bd4a75ef68e472a7ac2a559a8719e951",
+    "c0.json": "00a68d4a35f401cfe0365dba268520bb05ecba0373ebb403ccfa24bc41c847de",
+    "c1.json": "dd0b226feaf50b6e5288c0ba83adb52dd72aeb9240cc4a275402c5b982c899b6",
+    "c2.json": "b094e3e609f15d7c888e0b968bded3e2ad3aa8232aa4c66cbd4bf970ea6cb402",
+    "c3.json": "831272faaf2045fe27e6477dc215a8486993f837a9c4a4260566a6a21cac4b9a",
+    "c4.json": "d48d3285f4c9bf92d0e092724a2799d3044750118e6f1a653644319eaff93198",
+    "c5.json": "a6ea03754eaaf7bdffd22415afd69add1bac2f0fae1a08647971da55afca50ca",
+    "c6.json": "b9e4f33a45b8c4f0334be969c039b8bf633b52f3f5031f5af38a9011718a9d12",
+    "c7.json": "814d841ba52f032297fffb7ef96c768e113fa21f9b84f9cc63a0de1701814693",
+    "c8.json": "f94da0c3d443c80ea857a80267e7cb1d9ff0c11a3ca8ce9d5cf580ca98d47b2e",
+    "c9.json": "468073b60f73fa8dc5e088f9da614c1b3e730a8fdd31511b6f7e59b5b9bc2a3d",
+    "ca.json": "c322ffc86638a994c7a9b1542c085c5148367e844df98a4e6de3526d597487ff",
+    "cb.json": "f0d681555559b81cf9e4d3ef6ddbbab4249319bc2b4cc2b0e5e18ea67ed932c1",
+    "cc.json": "f7f3ae032fb88a7ca86547e4b4ac5117e46b0b79a793fd4f3cf34b4eeb5a74a5",
+    "cd.json": "53bdd319ecef646c969f5022741c0410addd3bc614873899c499b0fc5e926520",
+    "ce.json": "06c881a71d7fe139c010891d93e0ec8b293793caaff710479159a952e2fa3760",
+    "cf.json": "c964e6ddea680d6144b6e0622aec9ca8febea26a4d81153ddbe4213ebc6239be",
+    "d0.json": "01a7a58a6c42fe5d85e5b621eccd25b6b7f452402f78be6f6101155be771d744",
+    "d1.json": "8bab85884a69dc45a26c6053f1d75e031a1f4d9a181b0122193e9296d5e7930a",
+    "d2.json": "561ec8a8d74018c2d066be9ddee6f089013f869aec3f0488cd53757e73392dd5",
+    "d3.json": "ad092b6e19639d68402fcb45f31aed0677e3a9899a768998c56e61d50d8d7f3e",
+    "d4.json": "5b0e7efc7c80743fc3e160ed6291bdbea5043f7895cf7086c1b28147bd8476eb",
+    "d5.json": "3f3d326567358bf15e2e213b8c8d05af8866905ff0d20d3714c301d9cb65b0cf",
+    "d6.json": "69895d4c5c3def7cd146015b7009137a18c49f8b5c4ba0ad1096d131041c6150",
+    "d7.json": "f6d4f5ffea79999655da6d676cc2623bf40ae3bc128972bc1a6851d1c6627603",
+    "d8.json": "922b9a02b8617b59dba01b07b0d32451d1564c7875513a92aa3b5ecd2e818c5b",
+    "d9.json": "663c4fe710da7ad264d898c362ace25db40993c71eee4a7a9e22e1a942324575",
+    "da.json": "db0c259e5dd4ccd9efed7156497d640d293f856cd8f3915eb63d2f9bf61b3c94",
+    "db.json": "bcf12f332c0dc6931d0d644ac80ca6d8ef65d8dcc99a874ebf570ce415313e8e",
+    "dc.json": "ba7aef0fab1261371b8cc53f2ec530582f531e70fc8b37364735ad6dd480fee0",
+    "dd.json": "3004c497e70fd0439eda4d2e069147d2484bbb0c07a330fad458954c270d5f16",
+    "de.json": "b2bec24335a9165fe2dbaeae315d2f71812831acc44685421fbf7845eafd2e57",
+    "df.json": "54b3fb6cd56b0d7370a00b6d5fd510efff2b65f0a06948bf211ed95f9d5093ae",
+    "e0.json": "138ca5168ac201f19f545e06a605e7a0b5c7552965deeb4797f0033e23136de8",
+    "e1.json": "1f70a0a96a37c6b405960df90342ab48d096fba40763d953a4735bd5c16fdfdc",
+    "e2.json": "8db72515aaad155ce18ee6323fc328dc41878b8310c0c54ffc45bdbb919d9dd8",
+    "e3.json": "bc46cfffd070009622989530248df0cab00a760e5a579bdb73890aef296cebab",
+    "e4.json": "2d4ca06f21e744c25e8a559ff1a4afc88bb1379a8fce5c39a6e63d455536822d",
+    "e5.json": "3b8cc91d6c03a7a31b87bbbe6aff632212340b743cb91c50a802c5fe8ebd836d",
+    "e6.json": "2808755c582caea24ebceef6ddafa5cc67c79a84611577839ac671bbc8a1f91e",
+    "e7.json": "4087d6b42262ead403417d87f16a3892d3a279b73c2f8b000bf81f45833e748a",
+    "e8.json": "a383820649617e288ce54b8fe7869eb0e4fcca6013a8f29cdbe3e9296dce8eb2",
+    "e9.json": "31f28d8fd1bade8d5923dc5edaba4ac8cf9038edc2619be32382125c1531e368",
+    "ea.json": "d7c19ea80c2f678a4dd6c7676e4f8aea8cbff0cdbd07b3d25d0ba35704d65765",
+    "eb.json": "a78a94f9fc4b3061d9f00b3c5fe583f9cc060a9c7d9ec115fc98f045b4856f30",
+    "ec.json": "172470a1d88c5de53eb4f36f077a20048cb8155af2228babe3b508583c05f0cf",
+    "ed.json": "cda9057e618420367a1456b6b1c0ed2a196395b98a0f4a03f869faaddc3cd462",
+    "ee.json": "ad61f7aa0c205dbb63be17e0154a25d38e3a67d39da389247ea25f33d35a2a84",
+    "ef.json": "9d2c98cc0eec1c9eefee07dad09ac0976899522849c19ce9324c1111b13c48a1",
+    "f0.json": "e45f034575e2df87f7c5c91b5032359c201a9a79d2f012acbe45d9232eae83ad",
+    "f1.json": "32d00d3253293bc274a69b034d06cdb5ab815c501e6aababbaf1c10e07cb84e3",
+    "f2.json": "230d11ca951a657835f0209a44ed39fa9186f58bf7ac2d8c8839cfd6f886addf",
+    "f3.json": "aff65b7bedcc12584f42b76985f96872b8882d95977813ca5d1ea7f0a52e6f73",
+    "f4.json": "75d84167e805ed705b0dd57169787572cf9ef3c97d3717ece898ba12b14fc6dd",
+    "f5.json": "8c4a7824ed0043747e0527454aed3b27b02f4f2ec28d73c7c7c122197cff34db",
+    "f6.json": "5e9ce75133ba96dd4cf70f51543e1330fb142ced0a55df34be8afdcba29949f5",
+    "f7.json": "1b6c1ab9082516a462fd364c54b8f2cfa18bd5caf5fe853b9fe8a5a99ca1f6df",
+    "f8.json": "6f321a3c30785f89be770bc40f84fdd5486dcbd174d1efd71968b7218d74c20f",
+    "f9.json": "beabf5fdf97a6c478885390fa866e6e4d44fa334a50a3ef387d0d2c54e422546",
+    "fa.json": "fe89443fa9484e409339ecbd0e33f09429b82d36dbb063c124d5b13c9ee594ec",
+    "fb.json": "dd85a8c113af929965798b398f8ff8855d592141ec9619932e9cfffa4907d788",
+    "fc.json": "4f570bca5ba5d663e41d226d57fa4588972a3ef8e7156d2a45249aa4a2093779",
+    "fd.json": "daf5910e5b9c5f08b597b0b49b3fcf457765c35f4ae9744aad30803092b2f66b",
+    "fe.json": "49d97de7d74b6c27aedd165b37af784aaab888fdc910dc2938ca6807d3ae2a75",
+    "ff.json": "847508fe9a65769700416955819ce47de19e3b14da42d30fdf98ada12c9d82d7"
+  },
+  "tile_index_sha256": "3c7af78a778317872bf1b6603d61b3d1fe5789bad87f66263272c67b7f5289c7",
+  "tiles_directory": "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\processed\\shenyang-mvp-20261023\\tiles",
+  "mode": "validation",
+  "totals": {
+    "tiles": 2251,
+    "feature_instances": 98715,
+    "bytes": 11554621
+  },
+  "byZoom": {
+    "8": {
+      "tiles": 3,
+      "feature_instances": 10355,
+      "layers": {
+        "rail_tracks": 4351,
+        "rail_facilities": 6000,
+        "rail_stations": 4
+      },
+      "unique_source_ids": 9830,
+      "source_ids_not_drawn": [
+        "way/1370985516",
+        "way/1372237276",
+        "way/1291706133",
+        "way/1370985515",
+        "way/1173832622",
+        "way/1169517121",
+        "way/1372237274",
+        "way/1370985514",
+        "way/1372237277",
+        "way/1352004709",
+        "way/1370985513",
+        "way/793408629",
+        "way/342681168",
+        "way/1372237273",
+        "way/1351261760",
+        "way/1351261763",
+        "way/1173832624",
+        "way/1174102403",
+        "way/1421750961",
+        "way/1351261762",
+        "way/1456792694",
+        "way/1372237275",
+        "way/1370985517",
+        "way/1352000545",
+        "way/1169517119",
+        "way/793408628",
+        "way/1370985636",
+        "way/1351261759",
+        "way/1372237278"
+      ]
+    },
+    "9": {
+      "tiles": 6,
+      "feature_instances": 10328,
+      "layers": {
+        "rail_tracks": 4372,
+        "rail_facilities": 5952,
+        "rail_stations": 4
+      },
+      "unique_source_ids": 9855,
+      "source_ids_not_drawn": [
+        "way/1291706133",
+        "way/1351261760",
+        "way/1351261762",
+        "way/1370985636"
+      ]
+    },
+    "10": {
+      "tiles": 11,
+      "feature_instances": 11374,
+      "layers": {
+        "rail_tracks": 4888,
+        "rail_facilities": 6481,
+        "rail_stations": 5
+      },
+      "unique_source_ids": 9858,
+      "source_ids_not_drawn": [
+        "way/1291706133"
+      ]
+    },
+    "11": {
+      "tiles": 26,
+      "feature_instances": 11695,
+      "layers": {
+        "rail_tracks": 5110,
+        "rail_facilities": 6581,
+        "rail_stations": 4
+      },
+      "unique_source_ids": 9859,
+      "source_ids_not_drawn": []
+    },
+    "12": {
+      "tiles": 71,
+      "feature_instances": 12006,
+      "layers": {
+        "rail_tracks": 5488,
+        "rail_facilities": 6514,
+        "rail_stations": 4
+      },
+      "unique_source_ids": 9859,
+      "source_ids_not_drawn": []
+    },
+    "13": {
+      "tiles": 201,
+      "feature_instances": 12868,
+      "layers": {
+        "rail_tracks": 6183,
+        "rail_facilities": 6679,
+        "rail_stations": 6
+      },
+      "unique_source_ids": 9859,
+      "source_ids_not_drawn": []
+    },
+    "14": {
+      "tiles": 564,
+      "feature_instances": 13857,
+      "layers": {
+        "rail_tracks": 7299,
+        "rail_facilities": 6553,
+        "rail_stations": 5
+      },
+      "unique_source_ids": 9859,
+      "source_ids_not_drawn": []
+    },
+    "15": {
+      "tiles": 1369,
+      "feature_instances": 16232,
+      "layers": {
+        "rail_tracks": 9644,
+        "rail_facilities": 6581,
+        "rail_stations": 7
+      },
+      "unique_source_ids": 9859,
+      "source_ids_not_drawn": []
+    }
+  },
+  "failures": {
+    "zero_length_edge": 124,
+    "too_few_positions": 52,
+    "zero_area_ring": 57
+  },
+  "examples": [
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/94.pbf",
+      "layer": "rail_tracks",
+      "id": "way/1263256226",
+      "vertex": 3
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_tracks",
+      "id": "way/42645749",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_tracks",
+      "id": "way/205538944",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_tracks",
+      "id": "way/385360773",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_tracks",
+      "id": "way/423528965",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_tracks",
+      "id": "way/905186842",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_tracks",
+      "id": "way/907281561",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_tracks",
+      "id": "way/1366618269",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_tracks",
+      "id": "way/1366618271",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_tracks",
+      "id": "way/1366618273",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_tracks",
+      "id": "way/1367421801",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_tracks",
+      "id": "way/1367421819",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_tracks",
+      "id": "way/1370985542",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_tracks",
+      "id": "way/1370985543",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_tracks",
+      "id": "way/1370985561",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_tracks",
+      "id": "way/1371197631",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_tracks",
+      "id": "way/1372237267",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_tracks",
+      "id": "way/1372705447",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_tracks",
+      "id": "way/1372705449",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_tracks",
+      "id": "way/1372705463",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_tracks",
+      "id": "way/1372705543",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_tracks",
+      "id": "way/1373439645",
+      "vertex": 1
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/66989786"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/66989786"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/66989787"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/66989787"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/66989788"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/66989788"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985359"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985359"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985361"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985361"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985362"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985362"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985363"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985363"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985364"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985364"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985365"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985365"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985366"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985366"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985367"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985367"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985368"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985368"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475506"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475506"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475507"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475507"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475520"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475520"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475521"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475521"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475531"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475531"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475532"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475532"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475552"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475552"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475553"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475553"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475577"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475577"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475578"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475578"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1251282620"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1251282620"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1251282628"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1251282628"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1351985518"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1351985518"
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1351987033",
+      "vertex": 3
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1352000514"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1352000514"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1352000515"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1352000515"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1352000521"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1352000521"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1352000524"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1352000524"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1377937973"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1377937973"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1500639967"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1500639967"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1500639968"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1500639968"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1526197077"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1526197077"
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_stations",
+      "id": "way/53555662",
+      "vertex": 16
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_stations",
+      "id": "way/658333063"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_stations",
+      "id": "way/658333063"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_stations",
+      "id": "way/658333064"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/215/95.pbf",
+      "layer": "rail_stations",
+      "id": "way/658333064"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/216/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475506"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/216/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475506"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "8/216/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475507"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "8/216/95.pbf",
+      "layer": "rail_facilities",
+      "id": "way/956475507"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "9/430/190.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1251282620"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "9/430/190.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1251282620"
+    },
+    {
+      "code": "too_few_positions",
+      "tile": "9/430/190.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1251282628"
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "9/430/190.pbf",
+      "layer": "rail_facilities",
+      "id": "way/1251282628"
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "9/431/190.pbf",
+      "layer": "rail_tracks",
+      "id": "way/793408629",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "9/431/190.pbf",
+      "layer": "rail_tracks",
+      "id": "way/1169517121",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "9/431/190.pbf",
+      "layer": "rail_tracks",
+      "id": "way/1173832624",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "9/431/190.pbf",
+      "layer": "rail_tracks",
+      "id": "way/1351261763",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "9/431/190.pbf",
+      "layer": "rail_tracks",
+      "id": "way/1352000545",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "9/431/190.pbf",
+      "layer": "rail_tracks",
+      "id": "way/1370985513",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "9/431/190.pbf",
+      "layer": "rail_tracks",
+      "id": "way/1372237273",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "9/431/190.pbf",
+      "layer": "rail_tracks",
+      "id": "way/1372237277",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "9/431/190.pbf",
+      "layer": "rail_facilities",
+      "id": "way/66989786",
+      "vertex": 4
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "9/431/190.pbf",
+      "layer": "rail_facilities",
+      "id": "way/66989787",
+      "vertex": 2
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "9/431/190.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985361",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "9/431/190.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985361",
+      "vertex": 3
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "9/431/190.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985361"
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "9/431/190.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985363",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "9/431/190.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985364",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "9/431/190.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985366",
+      "vertex": 1
+    },
+    {
+      "code": "zero_length_edge",
+      "tile": "9/431/190.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985366",
+      "vertex": 3
+    },
+    {
+      "code": "zero_area_ring",
+      "tile": "9/431/190.pbf",
+      "layer": "rail_facilities",
+      "id": "way/659985366"
+    }
+  ],
+  "comparison": null,
+  "sha256": {
+    "decoder": "a65eab53263fd6383e5fbb4b973dec47ec5fd71a109e1d28aba0c4e1b54a039d",
+    "pbf": "f321bd4934fd67cea4a5be18eece9ff576e3db0cbc2915a9fb1bd7ebbcd3422a"
+  },
+  "scope": "Every declared actual MVT: hashes, typed identity/full-detail semantic properties, integer buffered coordinates, primitive lengths, zero edges/area and basic ring order. Optional complete old/new decoded comparison. Not full protobuf/MVT conformance, topology, real-world accuracy, renderer/device acceptance or all-source visibility at every zoom."
+}

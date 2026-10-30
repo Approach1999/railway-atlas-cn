@@ -1,0 +1,10 @@
+locator.getAttribute: Timeout 30000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: '图例等级：其他轨道', exact: true })
+
+    at C:\Users\21965\Documents\Codex\2026-10-22\referenced-chatgpt-conversation-this-is-an\work\checkout\scripts\verify_other_grade.cjs:18:214 {
+  log: [
+    "  - waiting for getByRole('button', { name: '图例等级：其他轨道', exact: true })"
+  ],
+  name: 'TimeoutError'
+}

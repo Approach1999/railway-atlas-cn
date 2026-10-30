@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-26T13:14:31.665925+00:00",
+  "asset": "/assets/index-BT1qcxjY.js",
+  "unit_tests": {
+    "passed": 84,
+    "failed": 0
+  },
+  "build": "Strict TS/checkJs and production build passed; existing bundle-size warning retained.",
+  "checks": {
+    "real_full_station_records": 361,
+    "actual_station_labels_and_selection": 3,
+    "station_source_regression": 3,
+    "search_regression": 9
+  },
+  "source_and_evidence_sha256": {
+    "apps/web/client/src/map-controller.ts": "9d24be110434239850c6aa3a58b0ebd166bda4484e0b66020c3968ca51344e6f",
+    "apps/web/client/src/station-labels.ts": "c7981d0d2c0099973b8bba81e72259e0e730e83fd203066a9d8e70a6e0c81797",
+    "apps/web/client/src/station-labels.test.mjs": "696f0d5aa6c58665dc515aa259af57b993697e0d0980d825ecfb3365a2b0689b",
+    "apps/web/client/src/station-source.ts": "1fa9ad141c3f8dfbb481b64983477844838d99ea8f129744c90fcbf93f4abebd",
+    "apps/web/client/src/station-source.test.mjs": "bed3ebd5d1a15a08a2b5a8145e492a0677e5bad50fb5f965a8e61bd8f60fbd3d",
+    "scripts/audit_station_labels.mjs": "d55e668946449432ef85ef11340f20c701a16001fbf0c0d92ae41d1a1e221d15",
+    "scripts/verify_station_labels.cjs": "6db59b19d35515b4ba4d53dd271be36873e04cb98dfbd821fa36b856c4e32405",
+    "scripts/verify_station_source.cjs": "ebdf8c5e79954cf6dfda8b92ee09af2fb10a90e1daccd0e3304097407a043fe3",
+    "scripts/verify_react_search.cjs": "917a5f075ec8f0cd4f32ecac4a155a326bb3c50ef05c2373317be402490aa281",
+    "apps/web/client/dist/index.html": "51627050bbad0d9dc45a73085043e78de0519785b5138223347d6ad4c64825ef",
+    "apps/web/client/dist/assets/index-BT1qcxjY.js": "bfad4ee26fa0641793ea6b1896a7a759b89c6f8d115f2200d3862dd42cf88010",
+    "docs/evidence/history/map-controller-before-station-labels.ts": "16078a5b37581e324c4e742c9e83f10db802d78673bbd0a8578be5f4391eeb83",
+    "docs/evidence/history/station-source-before-station-labels.ts": "27974bb3df07ad3f4f338074aa7263f6c8ee35edacf41aa1e62bc76d1b708f4d",
+    "docs/evidence/station-label-audit.json": "7c10ff39c8b1f9ea84c8058e50ec679695c71117f02c95dcaedf8acd9c491916",
+    "docs/evidence/station-label-browser.json": "872df85570823342e13b469ede28daf5e8c642f7d9ae20903746b10bd901561e",
+    "docs/evidence/station-label-source-regression.json": "3b59ab1d0134a094b4ae0c7d8793acd73828e94b93a59f7b493b44a73c32081a",
+    "docs/evidence/station-label-search-regression.json": "d2df8e73b6bb3dfe8c8636e4690e79a10f63b271cc3fec8e212246804921e53d",
+    "docs/evidence/station-label-group.png": "df4ae9cefa9e7f36d7bc10181dd9eb4c8d6a6a52cf907d2799fd2ebd20361f0b"
+  },
+  "limits": [
+    "Name grouping requires reciprocal confirmed evidence and identical nonempty source names/modes; all source IDs remain independent.",
+    "Source-name counts are not simultaneous rendered label counts.",
+    "Actual stop-area nodes tested; no confirmed station-area relations exist in current data, area grouping remains domain-fixture evidence.",
+    "Runtime observation captures public Map instance in a response copy, with no style/data/camera mutation; not performance evidence.",
+    "Full R17, line label spacing, font failure, browser/device/reader matrix and independent human source QA remain open; previous performance and 200-percent reports retain old builds."
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-25T10:26:27.419Z",
+  "browser": "155.0.8059.85",
+  "audit_only": true,
+  "cases": [
+    {
+      "name": "object region name",
+      "map_present": false,
+      "canvas_count": 0,
+      "retry_present": false,
+      "picker_text": "",
+      "versions": 0,
+      "errors": [
+        "Minified React error #31; visit https://react.dev/errors/31?args[]=object%20with%20keys%20%7Bbad%7D for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+      ],
+      "recovery_verified": false
+    },
+    {
+      "name": "null camera longitude",
+      "map_present": true,
+      "canvas_count": 1,
+      "retry_present": false,
+      "picker_text": "地区与数据版本可用地区沈阳试验区仅列出已有数据的地区。沈阳范围为试验矩形，其他地区尚未提供。数据版本2026/10/23 13:21:42 · 当前推荐 · 完整要素列表2026/10/22 19:32:41 · 完整要素列表2026/10/22 19:19:29 · 车站列表构建于 2026/10/23 13:21:42。此版本保留至 2027/10/23 13:21:42。使用此版本版本切换会清除选中对象、回到地区默认视图，并保留筛选、查询和底图偏好。",
+      "versions": 3,
+      "errors": [],
+      "recovery_verified": false
+    },
+    {
+      "name": "string object-list capability",
+      "map_present": true,
+      "canvas_count": 1,
+      "retry_present": false,
+      "picker_text": "地区与数据版本可用地区沈阳试验区仅列出已有数据的地区。沈阳范围为试验矩形，其他地区尚未提供。数据版本2026/10/23 13:21:42 · 当前推荐 · 完整要素列表2026/10/22 19:32:41 · 完整要素列表2026/10/22 19:19:29 · 车站列表构建于 2026/10/23 13:21:42。此版本保留至 2027/10/23 13:21:42。使用此版本版本切换会清除选中对象、回到地区默认视图，并保留筛选、查询和底图偏好。",
+      "versions": 3,
+      "errors": [],
+      "recovery_verified": false
+    },
+    {
+      "name": "duplicate snapshot identity",
+      "map_present": true,
+      "canvas_count": 1,
+      "retry_present": false,
+      "picker_text": "地区与数据版本可用地区沈阳试验区仅列出已有数据的地区。沈阳范围为试验矩形，其他地区尚未提供。数据版本2026/10/23 13:21:42 · 当前推荐 · 完整要素列表2026/10/22 19:32:41 · 完整要素列表2026/10/22 19:19:29 · 车站列表2026/10/23 13:21:42 · 当前推荐 · 完整要素列表构建于 2026/10/23 13:21:42。此版本保留至 2027/10/23 13:21:42。使用此版本版本切换会清除选中对象、回到地区默认视图，并保留筛选、查询和底图偏好。",
+      "versions": 4,
+      "errors": [],
+      "recovery_verified": false
+    },
+    {
+      "name": "missing snapshot identity",
+      "map_present": true,
+      "canvas_count": 1,
+      "retry_present": false,
+      "picker_text": "地区与数据版本可用地区沈阳试验区仅列出已有数据的地区。沈阳范围为试验矩形，其他地区尚未提供。数据版本shenyang-mvp-202610232026/10/23 13:21:42 · 完整要素列表2026/10/22 19:32:41 · 完整要素列表2026/10/22 19:19:29 · 车站列表使用此版本版本切换会清除选中对象、回到地区默认视图，并保留筛选、查询和底图偏好。",
+      "versions": 4,
+      "errors": [],
+      "recovery_verified": false
+    },
+    {
+      "name": "unlisted recommended snapshot",
+      "map_present": true,
+      "canvas_count": 1,
+      "retry_present": false,
+      "picker_text": "地区与数据版本可用地区沈阳试验区仅列出已有数据的地区。沈阳范围为试验矩形，其他地区尚未提供。数据版本2026/10/23 13:21:42 · 完整要素列表2026/10/22 19:32:41 · 完整要素列表2026/10/22 19:19:29 · 车站列表构建于 2026/10/23 13:21:42。此版本保留至 2027/10/23 13:21:42。使用此版本版本切换会清除选中对象、回到地区默认视图，并保留筛选、查询和底图偏好。",
+      "versions": 3,
+      "errors": [],
+      "recovery_verified": false
+    },
+    {
+      "name": "object build date",
+      "map_present": true,
+      "canvas_count": 1,
+      "retry_present": false,
+      "picker_text": "地区与数据版本可用地区沈阳试验区仅列出已有数据的地区。沈阳范围为试验矩形，其他地区尚未提供。数据版本未标注 · 当前推荐 · 完整要素列表2026/10/22 19:32:41 · 完整要素列表2026/10/22 19:19:29 · 车站列表构建于 未标注。此版本保留至 2027/10/23 13:21:42。使用此版本版本切换会清除选中对象、回到地区默认视图，并保留筛选、查询和底图偏好。",
+      "versions": 3,
+      "errors": [],
+      "recovery_verified": false
+    }
+  ],
+  "external": []
+}

@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "regions": [{
+    "id": "shenyang",
+    "name": "沈阳试验区",
+    "default_view": {"longitude": 123.42, "latitude": 41.8, "zoom": 10.5},
+    "snapshots": ["shenyang-mvp-20261023", "shenyang-mvp-accessible-20261022", "shenyang-mvp-progress-20261022"]
+  }],
+  "note": "仅列出明确提供且文件齐备的本机快照；目录不表示已通过 MVP 或公开发布验收。"
+}

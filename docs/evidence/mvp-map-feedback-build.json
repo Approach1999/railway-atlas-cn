@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-25T03:41:04.539080+00:00",
+  "unit_tests": {
+    "passed": 63,
+    "failed": 0
+  },
+  "build": "strict typecheck and production build passed",
+  "files": [
+    {
+      "path": "apps/web/client/dist/assets/index-CkBTDq4Z.css",
+      "sha256": "d92e2d9b5171cad98dd163ba6a470c25a2be867f9df01744fa86ff02b1efad8a",
+      "bytes": 88044,
+      "served_bytes_match": true
+    },
+    {
+      "path": "apps/web/client/dist/assets/index-q4voh4Xj.js",
+      "sha256": "6b14f70fca55aa8e156c11e67884907aa28d67740b8ce33b589b6972b5e3ebe3",
+      "bytes": 1392350,
+      "served_bytes_match": true
+    },
+    {
+      "path": "apps/web/client/dist/assets/maplibre-gl-worker-BWso-Bu4.js",
+      "sha256": "85cce15680b9b7a722d6a5acc8b3674fe56c9cd8d9a34199b889e5e5fe43074f",
+      "bytes": 518423,
+      "served_bytes_match": true
+    },
+    {
+      "path": "apps/web/client/dist/dependency-inventory.json",
+      "sha256": "6b7966d071b60992bb6fbc7d540410fefd12154d9810c6bf8adf5fca53ddc813",
+      "bytes": 173494,
+      "served_bytes_match": true
+    },
+    {
+      "path": "apps/web/client/dist/index.html",
+      "sha256": "bad6538fa4ad25b59438f20ea7a7b8eb13139b7863b4375b3ef4950d72e40e60",
+      "bytes": 733,
+      "served_bytes_match": true
+    },
+    {
+      "path": "apps/web/client/dist/third-party-notices.txt",
+      "sha256": "d3e6d63ceb754261ab291751ba29c3c957f9bc1ae1cdd71243d53a7c9e121c27",
+      "bytes": 533309,
+      "served_bytes_match": true
+    },
+    {
+      "path": "apps/web/client/src/App.tsx",
+      "sha256": "a8e3ffc1f45beb06d67a9823a51264d1c5542f8eacbaa017e5c4e18d0dda5942",
+      "bytes": 8258
+    },
+    {
+      "path": "apps/web/client/src/MapFeedback.tsx",
+      "sha256": "3fe8ff68ec75a8bbaa3699cbf6b2a0b58412d67863979c67428bf8c4b980f474",
+      "bytes": 1196
+    },
+    {
+      "path": "apps/web/client/src/ResourceStatus.tsx",
+      "sha256": "1ea2c8fd3517de2184d247a21b8ceed5300c22ce90b2af0d649c9704d3bdc2c2",
+      "bytes": 1673
+    },
+    {
+      "path": "apps/web/client/src/map-controller.ts",
+      "sha256": "c82ff67030b6b185679e49d3e3b38d233a9c715a9edaaf631be4395318135aa1",
+      "bytes": 46695
+    },
+    {
+      "path": "apps/web/client/src/map-feedback.test.mjs",
+      "sha256": "4cf0a17cd3fcb719a8536572a2a3f1aa31564b0618a665bd10b1622088520e32",
+      "bytes": 2052
+    },
+    {
+      "path": "apps/web/client/src/map-feedback.ts",
+      "sha256": "e0740caf99f2ffbf240bc4e9467e9020ccdf698b95e86542f00e7b2072e84cca",
+      "bytes": 1546
+    },
+    {
+      "path": "apps/web/client/src/style.css",
+      "sha256": "3d61f0f3b1f8bb5b73dfbc5fd495fb0ae96511bee0869039a840b32f3d3c1fdb",
+      "bytes": 16994
+    },
+    {
+      "path": "scripts/verify_map_feedback.cjs",
+      "sha256": "cfe0733ca36dec1f70ef6ff8e2e62c31a860c87d322b075429e3c5fca1f867a6",
+      "bytes": 8399
+    }
+  ],
+  "browser_reports": [
+    {
+      "path": "docs/evidence/mvp-feedback-resource-regression.json",
+      "sha256": "2ccc7f31724a0af1b99de8b745d95b8b22c1ccfa96430daca8490f7ba1612eff",
+      "checks": 10
+    },
+    {
+      "path": "docs/evidence/mvp-feedback-responsive-regression.json",
+      "sha256": "b18e0163ac223e8a891320071ad3db857ea395a0f5d95a71b2d2571f2b2d57af",
+      "checks": 7
+    },
+    {
+      "path": "docs/evidence/mvp-feedback-catalog-regression.json",
+      "sha256": "ecc95541b886dfe707ad9f4de6d5dfd702fe3faaf0a75418df9ffd5f9103443c",
+      "checks": 8
+    },
+    {
+      "path": "docs/evidence/mvp-feedback-pan-regression.json",
+      "sha256": "72d8a6ddf06215fd0c3c3241072c3221ef78a84513430b7f2c94f69274cdeb96",
+      "checks": 3
+    },
+    {
+      "path": "docs/evidence/mvp-feedback-keyboard-regression.json",
+      "sha256": "001d8762fcfd8711ecf1a6b1c00984b485479cfef43cf6f78675c96832a5935b",
+      "checks": 4
+    },
+    {
+      "path": "docs/evidence/mvp-feedback-share-regression.json",
+      "sha256": "1e3d4fd6058490a08ce84ab2bf7587e45df73fde96257bee38804335f775f953",
+      "checks": 7
+    },
+    {
+      "path": "docs/evidence/mvp-map-feedback.json",
+      "sha256": "aa6d9f6ce980224459267eafd02016e8910706a12cd85781fddbe2ce424e058e",
+      "checks": 6
+    }
+  ],
+  "regressions_scope": "All reports use the final q4voh4Xj JS/CkBTDq4Z CSS build. Raster disabled; no public tile bulk requests.",
+  "limits": [
+    "Not physical device, screen-reader, actual browser 200% zoom or independent acceptance.",
+    "No new frame-rate or country-scale data performance claim.",
+    "Full MVP requirements and open maintenance/native/license review items remain active."
+  ]
+}

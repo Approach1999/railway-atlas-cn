@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-26T12:49:13.383Z",
+  "browser": "155.0.8059.85",
+  "checks": [
+    {
+      "cycle": 1,
+      "event": {
+        "trusted": true,
+        "cancelable": true,
+        "lost": true
+      },
+      "snapshot": "shenyang-mvp-20261023",
+      "rendered_tracks": 242,
+      "expected_layers": 37,
+      "selection_query_url_preserved": true,
+      "list_details_share_and_focus": true,
+      "retry_restored": true
+    },
+    {
+      "cycle": 2,
+      "event": {
+        "trusted": true,
+        "cancelable": true,
+        "lost": true
+      },
+      "snapshot": "shenyang-mvp-20261023",
+      "rendered_tracks": 242,
+      "expected_layers": 37,
+      "selection_query_url_preserved": true,
+      "list_details_share_and_focus": true,
+      "retry_restored": true
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Two actual software WebGL context losses via WEBGL_lose_context and explicit reload retry; trusted native events, real source list/details/share, current render restoration. Not physical GPU reset, real devices or full N09."
+}

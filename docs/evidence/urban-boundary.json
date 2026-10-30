@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-28",
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "build": {
+    "asset": "/assets/index-tJmMJPE_.js",
+    "index_sha256": "63ee39a19d8f224c8c11011f4e12f7955170831f7ce322121860c53f62aaf169",
+    "asset_sha256": "a08798deece3c35042844b8e956eb91e91d71933f5bf3b980d5e338248c7d5fb"
+  },
+  "before_build": {
+    "asset": "/assets/index-jHFccMym.js",
+    "index_sha256": "b4da7ab78aa8a6a891c8570f9c5ebfcfae1b577f7a44b7f237f3d162ddd2a30e",
+    "asset_sha256": "e505864f402eab11d675310b9a8c9d3c915578a11dea261d2e527cb5e11d1709"
+  },
+  "reports": {
+    "before": {
+      "path": "docs/evidence/urban-boundary-before.json",
+      "sha256": "bc2dae4a1cb263656fbaddf615523f6541414617c71050e39e27ac2075c365b5"
+    },
+    "after": {
+      "path": "docs/evidence/urban-boundary-after.json",
+      "sha256": "0d1adb3c1fa9e5021e85f6a5b4a2e108a56f392b85a215b7a2d48d73750fb9bc"
+    },
+    "native-chrome": {
+      "path": "docs/evidence/urban-boundary-native-chrome.json",
+      "sha256": "bc0abc98f11be91f3d23a8adf64a9e97b95bfdca354aa47a5758d017cc5df7b0"
+    },
+    "native-edge": {
+      "path": "docs/evidence/urban-boundary-native-edge.json",
+      "sha256": "b3a769c8163a23a46de6e9855785db650c3733b7e041f930814da61150e0b2fc"
+    },
+    "matrix": {
+      "path": "docs/evidence/urban-boundary-matrix.json",
+      "sha256": "d73432d1c5489d7eb992819940acd6d54d3cca1f7efcae9f39fec74b79ae7817"
+    },
+    "unit": {
+      "path": "docs/evidence/urban-boundary-unit.log",
+      "sha256": "ab23bfb9553e6245814761e4621b1e94b0a7b153cb9f0794900f08b57b7a5e78"
+    },
+    "build": {
+      "path": "docs/evidence/urban-boundary-build.log",
+      "sha256": "7826ce008d0cafa3a6b524884d379b42271e179b1c136a0e8fa86a814aaf0412"
+    },
+    "browser-chrome-filters": {
+      "path": "docs/evidence/urban-boundary-browser-chrome-filters.json",
+      "sha256": "71201085613574338103fedb4545d0a53d4cadc5272c6ebb325fac8c2cecb7ab"
+    },
+    "browser-chrome-share": {
+      "path": "docs/evidence/urban-boundary-browser-chrome-share.json",
+      "sha256": "70747489ded74a9d4a4977a74cfde41b8197d2f0228d326e71c347af1acec157"
+    },
+    "browser-msedge-filters": {
+      "path": "docs/evidence/urban-boundary-browser-msedge-filters.json",
+      "sha256": "6b1079c09be95135f8ce95ae2a9479983928ad074df8fd1ef163e62cd97ebc92"
+    },
+    "browser-msedge-share": {
+      "path": "docs/evidence/urban-boundary-browser-msedge-share.json",
+      "sha256": "b446eaea2b0699e7ea8421e33fc33f453af57470e6e84ce332b6a233dd53849d"
+    }
+  },
+  "source_sha256": {
+    "apps/web/client/src/map-controller.ts": "ea0bede6e06ad36f1bdd0db74bb60778be1f2bcfd54615fe8ebfcdf8b0dfea52",
+    "apps/web/shared/model.mjs": "9b2200ab806692934afd4c4183ea197e211eb4054acf6cf73bdcad82be7cd334",
+    "apps/web/shared/urban-boundary.mjs": "1a982ca1052b4e482e534c6ddceb10c6df833a579537e0240c08ceadb6b49304",
+    "apps/web/shared/urban-boundary.test.mjs": "757290688dba125fcc88cb03b4e6e21874e401fab5783f2c3d728214ffb91a2b",
+    "scripts/verify_urban_boundary.cjs": "65a81c450d59e394654c61c5eb917c4befcdd58de8cef9a5e1494e2f45a70005",
+    "docs/evidence/history/urban-boundary-before-controller.ts": "d62987051801b7ce8a489095407fc9c6533597af0fab2c46c250aa36019be17b",
+    "docs/evidence/history/urban-boundary-before-model.mjs": "9b2200ab806692934afd4c4183ea197e211eb4054acf6cf73bdcad82be7cd334"
+  },
+  "checks": {
+    "unit_passed": 119,
+    "typecheck_build_passed": true,
+    "sdk_boundary_evaluation_pairs": 330240,
+    "native_render_checks": 16,
+    "regression_checks": 30,
+    "preview_http_status": 200,
+    "source_build_hashes_verified": true
+  },
+  "performance": {
+    "before_overview_p95_ms": 81.8,
+    "after_overview_p95_ms": 84.3,
+    "before_yard_p95_ms": 38.1,
+    "after_yard_p95_ms": 38.1,
+    "samples_per_scene_per_phase": 100,
+    "local_current_profile_within_100ms": true,
+    "measured_p95_improvement": false
+  },
+  "limits": [
+    "Current and before profiles both below 100ms; no measured p95 improvement attributable to this change.",
+    "Prior 104.3ms result retained; environmental variability remains.",
+    "Headless Chrome, default Intel Arc, same snapshot, basemap off, 10Mbps/100ms; no physical presentation or mobile acceptance.",
+    "No current-build cold/search/pan remeasurement; those reports retain their original build identities."
+  ]
+}

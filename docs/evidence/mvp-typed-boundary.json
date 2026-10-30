@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-23T12:53:21.879Z",
+  "server_url": "http://127.0.0.1:8766",
+  "snapshot": "shenyang-mvp-20261023",
+  "checks": [
+    "invalid detail identity is rejected before display; original selection/query/camera survive and retry restores matching source",
+    "invalid detail geometry is rejected before display; original selection/query/camera survive and retry restores matching source",
+    "malformed object-index properties produce recoverable list error instead of crashing React search/render; retry preserves list query"
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Local Chrome schema failure integration on actual snapshot; not full accessibility, independent data audit or real-device acceptance"
+}

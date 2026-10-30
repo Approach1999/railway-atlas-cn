@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-25T03:27:25.089245+00:00",
+  "checks": [
+    {
+      "component": "cargo:flat_map@0.0.10",
+      "archive_sha256": "e4fa2a56a33c493fc81acbad4676c599cf2b128f21462a020043ea1eee46244f",
+      "original_texts_compared": 0
+    },
+    {
+      "component": "cargo:hermit-abi@0.5.3",
+      "archive_sha256": "e17592d60ebacc7d5e169f4663c5f84f9161cc90328abcfe8456f41e4dfcb284",
+      "original_texts_compared": 2
+    },
+    {
+      "component": "cargo:libc@0.2.191",
+      "archive_sha256": "65cd87c9a6d60536580b316ad985726104730a5151c99845f2490428ef91240a",
+      "original_texts_compared": 2
+    },
+    {
+      "component": "cargo:linux-raw-sys@0.12.1",
+      "archive_sha256": "32a66949e030da00e8c7d4434b251670a91556f4144941d37452769c25d58a53",
+      "original_texts_compared": 3
+    },
+    {
+      "component": "cargo:linux-raw-sys@0.4.15",
+      "archive_sha256": "d26c52dbd32dccf2d10cac7725f8eae5296885fb5703b261f7d0a0739ec807ab",
+      "original_texts_compared": 3
+    },
+    {
+      "component": "cargo:r-efi@6.0.0",
+      "archive_sha256": "f8dcc9c7d52a811697d2151c701e0d08956f92b0e24136cf4cf27b57a6a0d9bf",
+      "original_texts_compared": 1
+    },
+    {
+      "component": "cargo:rustix@1.1.5",
+      "archive_sha256": "891efababe418670775f199f0d233d84843c227a0949a883ce15b37c78d6629d",
+      "original_texts_compared": 3
+    },
+    {
+      "component": "cargo:syn@3.0.9",
+      "archive_sha256": "d78c8dee4c7bf0e14673097256fed6142ce9d3b85a408189d07482442145823b",
+      "original_texts_compared": 2
+    },
+    {
+      "component": "cargo:windows_aarch64_gnullvm@0.52.6",
+      "archive_sha256": "32a4622180e7a0ec044bb555404c800bc9fd9ec262ec147edd5989ccd0c02cd3",
+      "original_texts_compared": 2
+    },
+    {
+      "component": "cargo:windows_aarch64_msvc@0.52.6",
+      "archive_sha256": "09ec2a7bb152e2252b53fa7803150007879548bc709c039df7627cabbd05d469",
+      "original_texts_compared": 2
+    },
+    {
+      "component": "cargo:windows_i686_gnu@0.52.6",
+      "archive_sha256": "8e9b5ad5ab802e97eb8e295ac6720e509ee4c243f69d781394014ebfe8bbfa0b",
+      "original_texts_compared": 2
+    },
+    {
+      "component": "cargo:windows_i686_gnullvm@0.52.6",
+      "archive_sha256": "0eee52d38c090b3caa76c563b86c3a4bd71ef1a819287c19d586d7334ae8ed66",
+      "original_texts_compared": 2
+    },
+    {
+      "component": "cargo:windows_i686_msvc@0.52.6",
+      "archive_sha256": "240948bc05c5e7c6dabba28bf89d89ffce3e303022809e73deaefe4f6ec56c66",
+      "original_texts_compared": 2
+    },
+    {
+      "component": "cargo:windows_x86_64_gnu@0.52.6",
+      "archive_sha256": "147a5c80aabfbf0c7d901cb5895d1de30ef2907eb21fbbab29ca94c5b08b1a78",
+      "original_texts_compared": 2
+    },
+    {
+      "component": "cargo:windows_x86_64_gnullvm@0.52.6",
+      "archive_sha256": "24d5b23dc417412679681396f2b49f3de8c1473deb516bd34410872eff51ed0d",
+      "original_texts_compared": 2
+    }
+  ],
+  "archives_checked": 15,
+  "archives_with_original_texts": 14,
+  "license_gaps": [],
+  "advisory_package_set_unchanged": true,
+  "advisory_query_finished_utc": "2026-10-25T03:26:03.889829+00:00",
+  "scope": "Retained crate evidence and unchanged advisory package versions only; no new online advisory query, legal approval or full N08 acceptance"
+}

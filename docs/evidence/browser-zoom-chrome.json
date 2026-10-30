@@ -1,0 +1,1190 @@
+{
+  "date": "2026-10-27T09:19:58.313Z",
+  "build": {
+    "asset": "/assets/index-CtnPWcB4.js",
+    "index_sha256": "df2515c65609ac60d375b5b8494ab3e58b3b6c1736d0b7b983d305359eec65d1",
+    "js_sha256": "079cde2df7ba775fdbaecae3071d4ec8704d04a67e63c8d2c61db830ec178a56"
+  },
+  "browser_target": {
+    "channel": "chrome",
+    "version": "156.0.8078.48",
+    "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "product": "Chrome/156.0.8078.48",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "renderer": "forced SwiftShader",
+    "headless": true,
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64"
+    },
+    "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+  },
+  "cases": [
+    {
+      "size": {
+        "width": 1552,
+        "height": 1000
+      },
+      "factor": 1,
+      "profile": "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\browser-zoom\\chrome-final\\profile-9ZOtO6",
+      "preferences": {
+        "partition": {
+          "default_zoom_level": {
+            "x": 0
+          }
+        }
+      },
+      "checks": [
+        "baseline actual page zoom is 1"
+      ],
+      "samples": [
+        {
+          "state": "overview",
+          "metrics": {
+            "layoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900
+            },
+            "visualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900,
+              "scale": 1,
+              "zoom": 1
+            },
+            "contentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 1526,
+              "height": 900
+            },
+            "cssLayoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900
+            },
+            "cssVisualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900,
+              "scale": 1,
+              "zoom": 1
+            },
+            "cssContentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 1526,
+              "height": 900
+            }
+          },
+          "dom": {
+            "width": 1526,
+            "height": 900,
+            "dpr": 1,
+            "pinch": 1,
+            "scroll": 1526,
+            "client": 1526,
+            "searchFont": "14px",
+            "cssZoom": "1"
+          }
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 1552,
+        "height": 1000
+      },
+      "factor": 2,
+      "profile": "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\browser-zoom\\chrome-final\\profile-DeRoiq",
+      "preferences": {
+        "partition": {
+          "default_zoom_level": {
+            "x": 3.8017840169239308
+          }
+        }
+      },
+      "checks": [
+        "actual page zoom 2, unchanged pinch/CSS zoom/font declaration, doubled DPR and halved CSS viewport against same-window baseline",
+        "keyboard result selection retains exact source identity and visible close control",
+        "highspeed and overview presets remain reachable",
+        "share dialog fields reachable and Escape returns focus",
+        "about dialog and close control reachable",
+        "list detail heading readable at actual 200%",
+        "manual list share remains reachable and preserves snapshot/selected source",
+        "list close returns focus and reset remains reachable"
+      ],
+      "samples": [
+        {
+          "state": "overview",
+          "metrics": {
+            "layoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900
+            },
+            "visualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900,
+              "scale": 1,
+              "zoom": 2
+            },
+            "contentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 1526,
+              "height": 900
+            },
+            "cssLayoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 763,
+              "clientHeight": 450
+            },
+            "cssVisualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 763,
+              "clientHeight": 450,
+              "scale": 1,
+              "zoom": 2
+            },
+            "cssContentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 763,
+              "height": 450
+            }
+          },
+          "dom": {
+            "width": 763,
+            "height": 450,
+            "dpr": 2,
+            "pinch": 1,
+            "scroll": 763,
+            "client": 763,
+            "searchFont": "14px",
+            "cssZoom": "1"
+          }
+        },
+        {
+          "state": "selected-detail",
+          "metrics": {
+            "layoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900
+            },
+            "visualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900,
+              "scale": 1,
+              "zoom": 2
+            },
+            "contentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 1526,
+              "height": 900
+            },
+            "cssLayoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 763,
+              "clientHeight": 450
+            },
+            "cssVisualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 763,
+              "clientHeight": 450,
+              "scale": 1,
+              "zoom": 2
+            },
+            "cssContentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 763,
+              "height": 450
+            }
+          },
+          "dom": {
+            "width": 763,
+            "height": 450,
+            "dpr": 2,
+            "pinch": 1,
+            "scroll": 763,
+            "client": 763,
+            "searchFont": "14px",
+            "cssZoom": "1"
+          }
+        },
+        {
+          "state": "filter-round-trip",
+          "metrics": {
+            "layoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900
+            },
+            "visualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900,
+              "scale": 1,
+              "zoom": 2
+            },
+            "contentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 1526,
+              "height": 900
+            },
+            "cssLayoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 763,
+              "clientHeight": 450
+            },
+            "cssVisualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 763,
+              "clientHeight": 450,
+              "scale": 1,
+              "zoom": 2
+            },
+            "cssContentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 763,
+              "height": 450
+            }
+          },
+          "dom": {
+            "width": 763,
+            "height": 450,
+            "dpr": 2,
+            "pinch": 1,
+            "scroll": 763,
+            "client": 763,
+            "searchFont": "14px",
+            "cssZoom": "1"
+          }
+        },
+        {
+          "state": "share-dialog",
+          "metrics": {
+            "layoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900
+            },
+            "visualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900,
+              "scale": 1,
+              "zoom": 2
+            },
+            "contentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 1526,
+              "height": 900
+            },
+            "cssLayoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 763,
+              "clientHeight": 450
+            },
+            "cssVisualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 763,
+              "clientHeight": 450,
+              "scale": 1,
+              "zoom": 2
+            },
+            "cssContentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 763,
+              "height": 450
+            }
+          },
+          "dom": {
+            "width": 763,
+            "height": 450,
+            "dpr": 2,
+            "pinch": 1,
+            "scroll": 763,
+            "client": 763,
+            "searchFont": "14px",
+            "cssZoom": "1"
+          }
+        },
+        {
+          "state": "about-dialog",
+          "metrics": {
+            "layoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900
+            },
+            "visualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900,
+              "scale": 1,
+              "zoom": 2
+            },
+            "contentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 1526,
+              "height": 900
+            },
+            "cssLayoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 763,
+              "clientHeight": 450
+            },
+            "cssVisualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 763,
+              "clientHeight": 450,
+              "scale": 1,
+              "zoom": 2
+            },
+            "cssContentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 763,
+              "height": 450
+            }
+          },
+          "dom": {
+            "width": 763,
+            "height": 450,
+            "dpr": 2,
+            "pinch": 1,
+            "scroll": 763,
+            "client": 763,
+            "searchFont": "14px",
+            "cssZoom": "1"
+          }
+        },
+        {
+          "state": "list-detail",
+          "metrics": {
+            "layoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900
+            },
+            "visualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900,
+              "scale": 1,
+              "zoom": 2
+            },
+            "contentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 1526,
+              "height": 900
+            },
+            "cssLayoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 763,
+              "clientHeight": 450
+            },
+            "cssVisualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 763,
+              "clientHeight": 450,
+              "scale": 1,
+              "zoom": 2
+            },
+            "cssContentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 763,
+              "height": 450
+            }
+          },
+          "dom": {
+            "width": 763,
+            "height": 450,
+            "dpr": 2,
+            "pinch": 1,
+            "scroll": 763,
+            "client": 763,
+            "searchFont": "14px",
+            "cssZoom": "1"
+          }
+        },
+        {
+          "state": "list-manual-link",
+          "metrics": {
+            "layoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900
+            },
+            "visualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900,
+              "scale": 1,
+              "zoom": 2
+            },
+            "contentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 1526,
+              "height": 900
+            },
+            "cssLayoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 763,
+              "clientHeight": 450
+            },
+            "cssVisualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 763,
+              "clientHeight": 450,
+              "scale": 1,
+              "zoom": 2
+            },
+            "cssContentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 763,
+              "height": 450
+            }
+          },
+          "dom": {
+            "width": 763,
+            "height": 450,
+            "dpr": 2,
+            "pinch": 1,
+            "scroll": 763,
+            "client": 763,
+            "searchFont": "14px",
+            "cssZoom": "1"
+          }
+        },
+        {
+          "state": "home",
+          "metrics": {
+            "layoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900
+            },
+            "visualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900,
+              "scale": 1,
+              "zoom": 2
+            },
+            "contentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 1526,
+              "height": 900
+            },
+            "cssLayoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 763,
+              "clientHeight": 450
+            },
+            "cssVisualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 763,
+              "clientHeight": 450,
+              "scale": 1,
+              "zoom": 2
+            },
+            "cssContentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 763,
+              "height": 450
+            }
+          },
+          "dom": {
+            "width": 763,
+            "height": 450,
+            "dpr": 2,
+            "pinch": 1,
+            "scroll": 763,
+            "client": 763,
+            "searchFont": "14px",
+            "cssZoom": "1"
+          }
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 800
+      },
+      "factor": 1,
+      "profile": "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\browser-zoom\\chrome-final\\profile-ccB5U1",
+      "preferences": {
+        "partition": {
+          "default_zoom_level": {
+            "x": 0
+          }
+        }
+      },
+      "checks": [
+        "baseline actual page zoom is 1"
+      ],
+      "samples": [
+        {
+          "state": "overview",
+          "metrics": {
+            "layoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1254,
+              "clientHeight": 700
+            },
+            "visualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1254,
+              "clientHeight": 700,
+              "scale": 1,
+              "zoom": 1
+            },
+            "contentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 1254,
+              "height": 700
+            },
+            "cssLayoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1254,
+              "clientHeight": 700
+            },
+            "cssVisualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1254,
+              "clientHeight": 700,
+              "scale": 1,
+              "zoom": 1
+            },
+            "cssContentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 1254,
+              "height": 700
+            }
+          },
+          "dom": {
+            "width": 1254,
+            "height": 700,
+            "dpr": 1,
+            "pinch": 1,
+            "scroll": 1254,
+            "client": 1254,
+            "searchFont": "14px",
+            "cssZoom": "1"
+          }
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 800
+      },
+      "factor": 2,
+      "profile": "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\browser-zoom\\chrome-final\\profile-iXexeB",
+      "preferences": {
+        "partition": {
+          "default_zoom_level": {
+            "x": 3.8017840169239308
+          }
+        }
+      },
+      "checks": [
+        "actual page zoom 2, unchanged pinch/CSS zoom/font declaration, doubled DPR and halved CSS viewport against same-window baseline",
+        "keyboard result selection retains exact source identity and visible close control",
+        "highspeed and overview presets remain reachable",
+        "share dialog fields reachable and Escape returns focus",
+        "about dialog and close control reachable",
+        "list detail heading readable at actual 200%",
+        "manual list share remains reachable and preserves snapshot/selected source",
+        "list close returns focus and reset remains reachable"
+      ],
+      "samples": [
+        {
+          "state": "overview",
+          "metrics": {
+            "layoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1254,
+              "clientHeight": 700
+            },
+            "visualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1254,
+              "clientHeight": 700,
+              "scale": 1,
+              "zoom": 2
+            },
+            "contentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 1254,
+              "height": 700
+            },
+            "cssLayoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 627,
+              "clientHeight": 350
+            },
+            "cssVisualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 627,
+              "clientHeight": 350,
+              "scale": 1,
+              "zoom": 2
+            },
+            "cssContentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 627,
+              "height": 350
+            }
+          },
+          "dom": {
+            "width": 627,
+            "height": 350,
+            "dpr": 2,
+            "pinch": 1,
+            "scroll": 627,
+            "client": 627,
+            "searchFont": "14px",
+            "cssZoom": "1"
+          }
+        },
+        {
+          "state": "selected-detail",
+          "metrics": {
+            "layoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1254,
+              "clientHeight": 700
+            },
+            "visualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1254,
+              "clientHeight": 700,
+              "scale": 1,
+              "zoom": 2
+            },
+            "contentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 1254,
+              "height": 700
+            },
+            "cssLayoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 627,
+              "clientHeight": 350
+            },
+            "cssVisualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 627,
+              "clientHeight": 350,
+              "scale": 1,
+              "zoom": 2
+            },
+            "cssContentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 627,
+              "height": 350
+            }
+          },
+          "dom": {
+            "width": 627,
+            "height": 350,
+            "dpr": 2,
+            "pinch": 1,
+            "scroll": 627,
+            "client": 627,
+            "searchFont": "14px",
+            "cssZoom": "1"
+          }
+        },
+        {
+          "state": "filter-round-trip",
+          "metrics": {
+            "layoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1254,
+              "clientHeight": 700
+            },
+            "visualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1254,
+              "clientHeight": 700,
+              "scale": 1,
+              "zoom": 2
+            },
+            "contentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 1254,
+              "height": 700
+            },
+            "cssLayoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 627,
+              "clientHeight": 350
+            },
+            "cssVisualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 627,
+              "clientHeight": 350,
+              "scale": 1,
+              "zoom": 2
+            },
+            "cssContentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 627,
+              "height": 350
+            }
+          },
+          "dom": {
+            "width": 627,
+            "height": 350,
+            "dpr": 2,
+            "pinch": 1,
+            "scroll": 627,
+            "client": 627,
+            "searchFont": "14px",
+            "cssZoom": "1"
+          }
+        },
+        {
+          "state": "share-dialog",
+          "metrics": {
+            "layoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1254,
+              "clientHeight": 700
+            },
+            "visualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1254,
+              "clientHeight": 700,
+              "scale": 1,
+              "zoom": 2
+            },
+            "contentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 1254,
+              "height": 700
+            },
+            "cssLayoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 627,
+              "clientHeight": 350
+            },
+            "cssVisualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 627,
+              "clientHeight": 350,
+              "scale": 1,
+              "zoom": 2
+            },
+            "cssContentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 627,
+              "height": 350
+            }
+          },
+          "dom": {
+            "width": 627,
+            "height": 350,
+            "dpr": 2,
+            "pinch": 1,
+            "scroll": 627,
+            "client": 627,
+            "searchFont": "14px",
+            "cssZoom": "1"
+          }
+        },
+        {
+          "state": "about-dialog",
+          "metrics": {
+            "layoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1254,
+              "clientHeight": 700
+            },
+            "visualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1254,
+              "clientHeight": 700,
+              "scale": 1,
+              "zoom": 2
+            },
+            "contentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 1254,
+              "height": 700
+            },
+            "cssLayoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 627,
+              "clientHeight": 350
+            },
+            "cssVisualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 627,
+              "clientHeight": 350,
+              "scale": 1,
+              "zoom": 2
+            },
+            "cssContentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 627,
+              "height": 350
+            }
+          },
+          "dom": {
+            "width": 627,
+            "height": 350,
+            "dpr": 2,
+            "pinch": 1,
+            "scroll": 627,
+            "client": 627,
+            "searchFont": "14px",
+            "cssZoom": "1"
+          }
+        },
+        {
+          "state": "list-detail",
+          "metrics": {
+            "layoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1254,
+              "clientHeight": 700
+            },
+            "visualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1254,
+              "clientHeight": 700,
+              "scale": 1,
+              "zoom": 2
+            },
+            "contentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 1254,
+              "height": 700
+            },
+            "cssLayoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 627,
+              "clientHeight": 350
+            },
+            "cssVisualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 627,
+              "clientHeight": 350,
+              "scale": 1,
+              "zoom": 2
+            },
+            "cssContentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 627,
+              "height": 350
+            }
+          },
+          "dom": {
+            "width": 627,
+            "height": 350,
+            "dpr": 2,
+            "pinch": 1,
+            "scroll": 627,
+            "client": 627,
+            "searchFont": "14px",
+            "cssZoom": "1"
+          }
+        },
+        {
+          "state": "list-manual-link",
+          "metrics": {
+            "layoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1254,
+              "clientHeight": 700
+            },
+            "visualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1254,
+              "clientHeight": 700,
+              "scale": 1,
+              "zoom": 2
+            },
+            "contentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 1254,
+              "height": 700
+            },
+            "cssLayoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 627,
+              "clientHeight": 350
+            },
+            "cssVisualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 627,
+              "clientHeight": 350,
+              "scale": 1,
+              "zoom": 2
+            },
+            "cssContentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 627,
+              "height": 350
+            }
+          },
+          "dom": {
+            "width": 627,
+            "height": 350,
+            "dpr": 2,
+            "pinch": 1,
+            "scroll": 627,
+            "client": 627,
+            "searchFont": "14px",
+            "cssZoom": "1"
+          }
+        },
+        {
+          "state": "home",
+          "metrics": {
+            "layoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1254,
+              "clientHeight": 700
+            },
+            "visualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1254,
+              "clientHeight": 700,
+              "scale": 1,
+              "zoom": 2
+            },
+            "contentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 1254,
+              "height": 700
+            },
+            "cssLayoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 627,
+              "clientHeight": 350
+            },
+            "cssVisualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 627,
+              "clientHeight": 350,
+              "scale": 1,
+              "zoom": 2
+            },
+            "cssContentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 627,
+              "height": 350
+            }
+          },
+          "dom": {
+            "width": 627,
+            "height": 350,
+            "dpr": 2,
+            "pinch": 1,
+            "scroll": 627,
+            "client": 627,
+            "searchFont": "14px",
+            "cssZoom": "1"
+          }
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "profiles": [
+    "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\browser-zoom\\chrome-final\\profile-9ZOtO6",
+    "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\browser-zoom\\chrome-final\\profile-DeRoiq",
+    "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\browser-zoom\\chrome-final\\profile-ccB5U1",
+    "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\browser-zoom\\chrome-final\\profile-iXexeB"
+  ],
+  "scope": "Installed headless browser, genuine persisted page zoom confirmed by CDP and same-window baseline. Two window sizes, selected core tasks, controlled clipboard denial. Not user window UI, OS input method, reader, actual device or full N09 acceptance."
+}

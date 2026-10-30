@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-25T07:36:22.142Z",
+  "browser": "Edge via connected browser extension",
+  "exact_browser_version": null,
+  "initial_zoom_metrics": {
+    "width": 1552,
+    "height": 861,
+    "dpr": 2
+  },
+  "zoom_200_verified": false,
+  "zoom_attempt": "Control+0 and Control+plus left the observed width/height/DPR unchanged; this is not 200% acceptance.",
+  "native_window_observation": "App-control approval timed out.",
+  "internal_version_page": "Blocked by browser URL policy; no workaround attempted.",
+  "before_fix": {
+    "script": "index-DxJQUOG3.js",
+    "visible_error": "Cannot filter non-existing layer \"urban-boundary\".",
+    "warning": "Mixing deprecated filter syntax with expression syntax is not supported. Convert [\"==\",1,1] to expression syntax.",
+    "empty_lines_notice": "所选线路不在此快照，可在城市轨道线路面板恢复全部线路。"
+  },
+  "final_script": "index-CwtzQuWA.js",
+  "checks": [
+    "Rail/metro/area search disambiguation and keyboard ArrowUp/Enter selection.",
+    "Share dialog, Escape focus return and new-tab immutable selected-record restoration.",
+    "City preset, 2-line temporary isolation and exact line key in its share link.",
+    "Explicit empty line selection survives reload with a distinct empty-filter notice.",
+    "Restore-all, list source details and focus transfer from list to map.",
+    "Hidden rail station temporarily displayed while city filters remain unchanged.",
+    "Home clears selection and retains city filters and query.",
+    "Actual dark boundary and contrasting casing visible in the screenshot."
+  ],
+  "empty_filter_check": {
+    "notice": "当前没有启用城市轨道线路，可在城市轨道线路面板恢复全部线路。",
+    "script": [
+      "http://127.0.0.1:8766/assets/index-CwtzQuWA.js"
+    ],
+    "status": "铁路地图已就绪。名称与属性来自源标签，点击可查看依据。",
+    "viewport": {
+      "dpr": 2,
+      "height": 861,
+      "width": 1552
+    }
+  },
+  "final_metrics": {
+    "focused": "home",
+    "links": [
+      "https://www.openstreetmap.org/copyright"
+    ],
+    "notice": "",
+    "script": [
+      "http://127.0.0.1:8766/assets/index-CwtzQuWA.js"
+    ],
+    "search": "沈阳北站",
+    "selectedPanelVisible": false,
+    "status": "铁路地图已就绪。名称与属性来自源标签，点击可查看依据。",
+    "viewport": {
+      "dpr": 2,
+      "height": 861,
+      "width": 1552
+    }
+  },
+  "final_warning_error_logs": [],
+  "scope": "Observed local Edge tasks, DOM/AX state and screenshot only; exact version, actual 200%, all-browser/physical-device/reader/independent acceptance and new performance remain unproven.",
+  "follow_up_actual_zoom_evidence": "actual-zoom-200.json; later user-assisted actual 200%, separate from the initial unsuccessful automatic attempt."
+}

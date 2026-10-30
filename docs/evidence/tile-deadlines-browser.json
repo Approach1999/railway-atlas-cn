@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-26T12:33:53.390Z",
+  "browser": "155.0.8059.85",
+  "audit_only": false,
+  "cases": [
+    {
+      "phase": "headers",
+      "partial": false,
+      "outcome": {
+        "timed_out": true,
+        "recovered": true,
+        "first_usable_rendered_tracks": 242,
+        "current_rendered_tracks": 242,
+        "retried_tile": {
+          "path": "/snapshots/shenyang-mvp-20261023/tiles/13/6904/3046.pbf",
+          "bytes": 11134
+        }
+      },
+      "requests": [
+        {
+          "path": "/snapshots/shenyang-mvp-20261023/tiles/13/6904/3046.pbf",
+          "headers_sent": false,
+          "closed": true,
+          "close_ms": 15005
+        },
+        {
+          "path": "/snapshots/shenyang-mvp-20261023/tiles/13/6905/3046.pbf",
+          "headers_sent": false,
+          "closed": true,
+          "close_ms": 15003
+        },
+        {
+          "path": "/snapshots/shenyang-mvp-20261023/tiles/13/6904/3047.pbf",
+          "headers_sent": false,
+          "closed": true,
+          "close_ms": 15003
+        },
+        {
+          "path": "/snapshots/shenyang-mvp-20261023/tiles/13/6905/3047.pbf",
+          "headers_sent": false,
+          "closed": true,
+          "close_ms": 15002
+        },
+        {
+          "path": "/snapshots/shenyang-mvp-20261023/tiles/13/6904/3045.pbf",
+          "headers_sent": false,
+          "closed": true,
+          "close_ms": 15017
+        },
+        {
+          "path": "/snapshots/shenyang-mvp-20261023/tiles/13/6905/3045.pbf",
+          "headers_sent": false,
+          "closed": true,
+          "close_ms": 15016
+        }
+      ]
+    },
+    {
+      "phase": "body",
+      "partial": true,
+      "outcome": {
+        "timed_out": true,
+        "recovered": true,
+        "first_usable_rendered_tracks": 114,
+        "current_rendered_tracks": 242,
+        "retried_tile": {
+          "path": "/snapshots/shenyang-mvp-20261023/tiles/13/6904/3046.pbf",
+          "bytes": 11134
+        }
+      },
+      "requests": [
+        {
+          "path": "/snapshots/shenyang-mvp-20261023/tiles/13/6904/3046.pbf",
+          "headers_sent": true,
+          "closed": true,
+          "close_ms": 15008
+        }
+      ]
+    },
+    {
+      "phase": "headers",
+      "partial": true,
+      "switch": true,
+      "outcome": {
+        "cancelled_by_snapshot_switch": true,
+        "recovered": true
+      },
+      "requests": [
+        {
+          "path": "/snapshots/shenyang-mvp-20261023/tiles/13/6904/3046.pbf",
+          "headers_sent": false,
+          "closed": true,
+          "close_ms": 471
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Actual local MVT header/body stalls, current app clocks, real selected station preserved. Not real devices or all network interruption acceptance."
+}

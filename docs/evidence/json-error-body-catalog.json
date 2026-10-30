@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-26T12:46:41.819Z",
+  "server_url": "http://127.0.0.1:8766",
+  "snapshots": [
+    "shenyang-mvp-20261023",
+    "shenyang-mvp-progress-20261022"
+  ],
+  "checks": [
+    "catalog only lists available region/explicit versions; failed staging preserves camera, filters, query and selection",
+    "cancelled staging cannot replace the current view after a delayed response",
+    "successful switch preserves map instance/basemap preference/query/filters, clears selection and resets camera; legacy list limits remain explicit",
+    "provenance, retention, manual update schedule and unselected code license are visible for the active version",
+    "back/forward swaps immutable datasets in place and restores the selected source identity",
+    "malformed assets are rejected before replacing loaded railway layers",
+    "catalog failure leaves the railway map usable and retries independently",
+    "expired links explain retention, preserve query/typed identity, and recover current data with or without WebGL"
+  ],
+  "errors": [],
+  "scope": "Local real-data version switch and fixture failures; not proof of 12-month operational retention or multi-region deployment"
+}

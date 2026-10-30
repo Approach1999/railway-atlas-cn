@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-25T12:48:09.779Z",
+  "browser": "155.0.8059.85",
+  "audit_only": true,
+  "cases": [
+    {
+      "kind": "catalog",
+      "phase": "headers",
+      "outcome": {
+        "retry_present": 0,
+        "message": "",
+        "busy": 0
+      },
+      "requests": [
+        {
+          "headers_sent": false,
+          "closed": false
+        }
+      ],
+      "operation_ms": 15459
+    },
+    {
+      "kind": "snapshot",
+      "phase": "headers",
+      "outcome": {
+        "retry_present": 0,
+        "message": "正在准备所选版本，当前地图仍可浏览…",
+        "busy": 1
+      },
+      "requests": [
+        {
+          "headers_sent": false,
+          "closed": false
+        }
+      ],
+      "operation_ms": 16658
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Real loopback header/body stalls with production timeout duration. Not an explanation of the earlier unrecorded intermittent status timeout, or real-device acceptance."
+}

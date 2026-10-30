@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-26T14:08:19.254458+00:00",
+  "product_asset": "/assets/index-BPD_xofR.js",
+  "adopted": false,
+  "unit_tests": {
+    "passed": 93,
+    "failed": 0
+  },
+  "build": "Strict TS/checkJs and production build passed; product JS byte-identical to prior version; prototype is not imported. Existing bundle-size warning retained.",
+  "source_and_evidence_sha256": {
+    "apps/web/client/src/line-label-candidates.ts": "ebbae891c5c6cffbfa5e47aad18e2f744e6e69dfa3a73c28f7f8485913cec1c2",
+    "apps/web/client/src/line-label-candidates.test.mjs": "6a8acb16704c359b21f833a682159c8b3fd86796299164f8c8be49e82135e336",
+    "apps/web/client/src/line-label-fragments.ts": "cbb98818cd87f12e5fc87af25ece19b24a450b1f2dd13dea760a714dde21406f",
+    "apps/web/client/src/line-label-fragments.test.mjs": "891da384484e427a3a9c52185d2e07281c5a15b718cf9277ec7682c6ae748718",
+    "scripts/prototype_line_labels.cjs": "aec3cb442f737561d077d44bae2f0dd258f91fbf08f6a350fcbf5eb63cf41dfa",
+    "scripts/audit_line_label_prototype.mjs": "978b67b92c27afa282f4605f15907460ff4cbc72c3e033a54537e2444b94a08a",
+    "apps/web/client/dist/index.html": "e6aa1bf3fd816c253f19884b46252960d0ef5a9a5a8cfe61480cc2bd36a2cf40",
+    "apps/web/client/dist/assets/index-BPD_xofR.js": "04f6f3f9b0055038d743f77dbee2a30555ba4bb6178373c1df9c47976dc50609",
+    "docs/evidence/history/line-label-candidates-first-prototype.ts": "ecc2e49b5b003235cb737aa4533ed83f3b610c68d8b8defe061ca141e409acb1",
+    "docs/line-label-short-prototype.md": "6d2a615c18e3fffdd5deb8e2bdc419fec75e762030758cbf20591b3a2c7329cb",
+    "docs/evidence/line-label-short-browser.json": "17e1c1f654d14274ceab334f40887455eb938e8fcb29d9ffa846a98dc6f2f83a",
+    "docs/evidence/line-label-short-audit.json": "53408fb991e394f37900818b5a3544c72caf198b0e257e54939af05e9d21463b",
+    "docs/evidence/line-label-first-replay.json": "6b5fce81be62fb4cd4d6cc470323a355c142ce35fc52e8a7c7a1cfe19df18ac2",
+    "docs/evidence/line-label-short-overview.png": "14f0bee997f427d2fbfd3a2a19c27f0b3a43f631d4340c0f004b29ad9884ae24"
+  },
+  "ignored_capture_sha256": {
+    "data/manifests/local/line-label-short-joined-prototype/overview-z10-input.json": "73e88718b8d118ab0dfe5240228050a7fc63596666d1311946cdcaa9c0bbb9eb",
+    "data/manifests/local/line-label-short-joined-prototype/overview-z10-candidates.json": "4d39e36fc64f01b3610903918217ef98ccdf4d84532e88c61d4bf71464fe06e5",
+    "data/manifests/local/line-label-short-joined-prototype/overview-z10-5-input.json": "043714a9b209749753ed6d09a5a6464bc7e9bad0a60cb338572e117727f05e83",
+    "data/manifests/local/line-label-short-joined-prototype/overview-z10-5-candidates.json": "abbf20872232cb618337241264dacccfa80a634dfa1e60ea8b48d79174dca742",
+    "data/manifests/local/line-label-short-joined-prototype/yard-input.json": "e2c703248a2f5c2fbf53a494ec7b43352111ff797047e926ba9fa69fe6cc9223",
+    "data/manifests/local/line-label-short-joined-prototype/yard-candidates.json": "43006052c11659ebf4069ca99ac3a21d4de219edbdbeefba3f6d94a61d0743cb",
+    "data/manifests/local/line-label-short-joined-prototype/tram-input.json": "be6bd61560e2338eacf3b9296a177d42e0be453cba366f5df1f40ec0f2f07dc6",
+    "data/manifests/local/line-label-short-joined-prototype/tram-candidates.json": "fda185ef42e334ac0b0a106cb0907885a9bafc34193d90862567b9825b6b13e9"
+  },
+  "validation_note": "Metadata grouping optimized after the full browser run; all four candidate outputs replay byte-identically with optimized code. No new UI/performance claim. Historical first algorithm restored only after matching its prior recorded SHA-256, then old captures replay byte-identically.",
+  "limits": [
+    "Short captions improve source-name opportunities but crowded/unstable-direction layout remains unsuitable for product adoption.",
+    "Names hidden in the full prototype can render in isolated tests; isolation is not full-view acceptance.",
+    "Point captions need explicit original-track click resolution; dynamic/source/filter/snapshot lifecycle and performance not implemented.",
+    "Full R17/R07/N09, independent source review, browsers/readers and real devices remain open."
+  ]
+}

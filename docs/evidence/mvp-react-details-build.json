@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-24T02:26:39.238477+00:00",
+  "unit_tests": {
+    "passed": 39,
+    "failed": 0
+  },
+  "build": "tsc --noEmit and vite build passed; bundle size warning remains",
+  "source_sha256": {
+    "apps/web/client/src/FeaturePanels.tsx": "a9c183b1cbaea036809180f4335a95a938e987fcb97325f1b40feae54e7ef375",
+    "apps/web/client/src/feature-details.ts": "348504c20c99381d0aa0d6f2135d80f6f8148201ff27c1f88c8abbefa8a71bd2",
+    "apps/web/client/src/feature-details.test.mjs": "545a4f50e8d2ca15c4e3795068d393d65b252c6e55de395c260080e9ca41a479",
+    "apps/web/client/src/map-controller.ts": "ef8eb67ca0c3c67738e4c85a4f81999b45160f5c1f7984a11824c02429853c8f",
+    "apps/web/client/src/App.tsx": "ce1839a833fdc9fae6225c78ff179829c16217d53e53a262d1f30a839a1c8684",
+    "apps/web/client/src/style.css": "1f740cc73065788f82dac19796bca9df83439b62c71d86a6398434ac7b51c4a9",
+    "scripts/verify_react_details.cjs": "eda500ef7c0c649413c33025e9e2bfb60df5386fe2c4f9e73840448eee4e5b27",
+    "scripts/verify_mvp_work.cjs": "74ecf93e28fcf84bbc3fc04f32b2c6cf85599cebfeda355b76db9a27c969560e",
+    "scripts/verify_accessibility.cjs": "925c5d7f6925a815606da8b04c62d20592e23d9a7152e95d00aad8d8da7cba7a"
+  },
+  "browser_reports": {
+    "details": {
+      "file": "data/manifests/local/react-details/report.json",
+      "date": "2026-10-24T02:24:14.884Z",
+      "checks": 4,
+      "sha256": "eb0de60204e46da2f1d2e594b789acee771178961deb229a1ded76230f0a048a"
+    },
+    "overlap": {
+      "file": "data/manifests/local/mvp-work-browser/facilities-report.json",
+      "date": "2026-10-24T02:25:29.544Z",
+      "checks": 7,
+      "sha256": "2459319254ca5406165da01e5b7cd3393e30f9709cd72c344f033b12ddfb3621"
+    },
+    "search": {
+      "file": "data/manifests/local/react-search/react-search-report.json",
+      "date": "2026-10-24T02:24:15.893Z",
+      "checks": 9,
+      "sha256": "6055fb42be12b286df4bd67cf32076bb5c533c7e39f03034a5052f486fbb3b6f"
+    },
+    "list": {
+      "file": "data/manifests/local/accessible-browser/report.json",
+      "date": "2026-10-24T02:25:03.702Z",
+      "checks": 5,
+      "sha256": "3c5fa2456187a99e30410a2b124265a9c7328dcf7e474261c90ed69c3a504d07"
+    },
+    "catalog": {
+      "file": "data/manifests/local/catalog-browser/report.json",
+      "date": "2026-10-24T02:25:06.993Z",
+      "checks": 8,
+      "sha256": "1895a85f6f5c73f34178e72029adb6a0217328915966b9f395f6ec60e086ae34"
+    },
+    "share": {
+      "file": "data/manifests/local/share-browser/share-report.json",
+      "date": "2026-10-24T02:21:27.878Z",
+      "checks": 7,
+      "sha256": "91d8fb58308e0f5ee4b3a51587598f8aae466cb015633ff3681edc8b0b6e012a"
+    },
+    "recovery": {
+      "file": "data/manifests/local/resource-recovery/resource-recovery-report.json",
+      "date": "2026-10-24T02:21:39.544Z",
+      "checks": 10,
+      "sha256": "e12666304591d08a5bb768b0956b95bfbcc3e7798bc9371efb79fe6e76e85792"
+    }
+  },
+  "observed_failures": [
+    {
+      "suite": "verify_accessibility.cjs",
+      "phase": "first parallel run with recovery/share",
+      "failure": "line 40 .object-list button first() wait timeout 30000 ms",
+      "status": "Unresolved; isolated diagnostic replay passed with query 道岔, kind facilities, 2395 matching records. No causal fix claimed."
+    },
+    {
+      "suite": "verify_accessibility.cjs",
+      "phase": "four concurrent Chrome suites",
+      "failure": "line 22 initial ready status wait timeout 30000 ms",
+      "status": "Unresolved; later standalone and two-suite concurrent runs passed. Not asserted to be the same cause as facility timeout."
+    }
+  ],
+  "limits": [
+    "Local Chrome only, synthetic narrow viewport and injected transport races. Not full MVP, screen-reader, OS IME or physical-device acceptance.",
+    "Earlier phase reports retain their own source fingerprints; these are not rewritten as current-run reports."
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-28T05:59:12.130Z",
+  "browser_target": {
+    "channel": "msedge",
+    "version": "156.0.4314.42",
+    "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "product": "Edg/156.0.4314.42",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+    "renderer": "forced SwiftShader",
+    "headless": true,
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64"
+    },
+    "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+  },
+  "source_sha256": "5f4c8d67f1b29314c9d9cd401a07ccacd7217689cf25f20895fc6622d2be0388",
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "source_other_tracks": 0,
+  "before": false,
+  "build": {
+    "asset": "/assets/index-CtFMFhkg.js",
+    "index_sha256": "33bb576b7238dedf30b1ad7c560cb6d009e4658d01b69fee4b26c075a62f578d",
+    "asset_sha256": "b76a3028a98c89a4580f8e40e35ab16b817671d2b9ee32d47872f7abd30bb903"
+  },
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "name": "valid-other-only-link-is-controllable-with-keyboard-and-focus-is-preserved"
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "name": "legend-disable-and-reenable-retains-focus-without-moving-camera-or-query"
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "name": "share-and-fresh-navigation-preserve-other-only-grade"
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "name": "list-other-grade-control-updates-the-independent-share-state"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "valid-other-only-link-is-controllable-with-keyboard-and-focus-is-preserved"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "legend-disable-and-reenable-retains-focus-without-moving-camera-or-query"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "share-and-fresh-navigation-preserve-other-only-grade"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "list-other-grade-control-updates-the-independent-share-state"
+    },
+    {
+      "name": "valid-nine-entry-palette-uses-the-same-neutral-fallback-as-unmatched-map-grades"
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Real current data and valid other-only filter URLs, native keyboard/legend/list/share operations. Missing palette key is a controlled compatibility case. No fabricated OSM record or proof of rendering an other-grade source record when current count is zero; not device or human acceptance."
+}

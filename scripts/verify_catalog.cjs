@@ -1,0 +1,60 @@
+/* Real local snapshots; staged network failures use fixture responses. */
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
+const assert=require('node:assert/strict');
+const fs=require('node:fs/promises');
+const path=require('node:path');
+const base=process.env.PREVIEW_URL||'http://127.0.0.1:8771';
+const output=path.resolve(process.env.PREVIEW_EVIDENCE||'data/manifests/local/catalog-browser');
+const current=process.env.MVP_CURRENT_SNAPSHOT||'shenyang-mvp-20261023',old='shenyang-mvp-progress-20261022';
+(async()=>{
+  await fs.mkdir(output,{recursive:true});
+  const browser=await chromium.launch({channel:'chrome',headless:true,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+  const errors=[],external=[],checks=[];
+  async function page(){const p=await browser.newPage({viewport:{width:1440,height:1000}});await p.addInitScript(()=>localStorage.setItem('railway-atlas:basemap:v1','false'));p.on('pageerror',e=>errors.push(e.message));p.on('request',r=>{if(new URL(r.url()).origin!==new URL(base).origin)external.push(r.url());});return p;}
+  const ready=p=>p.locator('#status').filter({hasText:'铁路地图已就绪'}).waitFor();
+  try{
+    const p=await page();await p.goto(base);await ready(p);await p.locator('#dataset-picker summary').click();
+    assert.equal(await p.locator('#dataset-region option').count(),1);
+    const published=JSON.parse(await fs.readFile('config/catalog.json','utf8')).regions[0].snapshots;
+    assert.deepEqual((await p.locator('#dataset-version option').evaluateAll(options=>options.map(option=>option.value))).sort(),[...published].sort());
+    await p.waitForLoadState('networkidle');await p.waitForTimeout(700);await p.screenshot({path:path.join(output,'catalog.png')});
+    await p.getByRole('button',{name:'仅高速',exact:true}).click();await p.locator('#search').fill('沈阳北站');await p.locator('#results button').filter({hasText:'铁路'}).filter({hasText:'站点'}).click();await p.locator('.feature-title').waitFor();await p.waitForTimeout(600);
+    const before=p.url();await p.evaluate(()=>window.__originalCanvas=document.querySelector('.maplibregl-canvas'));
+    await p.route('**/snapshots/'+old+'/palette.json',r=>r.fulfill({status:503,body:'unavailable'}));
+    await p.locator('#dataset-version').selectOption(old);await p.getByRole('button',{name:'使用此版本',exact:true}).click();await p.locator('#dataset-switch-status').filter({hasText:'版本加载失败'}).waitFor();
+    assert.equal(p.url(),before);assert.match(await p.locator('.feature-title').innerText(),/沈阳北/);assert.equal(await p.getByRole('button',{name:'仅高速',exact:true}).getAttribute('aria-pressed'),'true');
+    checks.push('catalog only lists available region/explicit versions; failed staging preserves camera, filters, query and selection');
+    await p.unroute('**/snapshots/'+old+'/palette.json');
+    let release;const held=new Promise(resolve=>{release=resolve;});
+    await p.route('**/snapshots/'+old+'/dataset.json',async route=>{await held;try{await route.continue();}catch{}});
+    await p.getByRole('button',{name:'使用此版本',exact:true}).click();await p.getByRole('button',{name:'取消切换',exact:true}).click();release();await p.waitForTimeout(400);assert.equal(p.url(),before);assert.match(await p.locator('.feature-title').innerText(),/沈阳北/);await p.unroute('**/snapshots/'+old+'/dataset.json');
+    checks.push('cancelled staging cannot replace the current view after a delayed response');
+    await p.getByRole('button',{name:'使用此版本',exact:true}).click();await p.locator('#dataset-switch-status').filter({hasText:'已切换数据版本'}).waitFor();
+    assert.equal(new URL(p.url()).searchParams.get('snapshot'),old);assert.equal(await p.locator('#feature-panel').isVisible(),false);assert.equal(await p.locator('#search').inputValue(),'沈阳北站');assert.equal(await p.getByRole('button',{name:'仅高速',exact:true}).getAttribute('aria-pressed'),'true');
+    assert.equal(await p.evaluate(()=>window.__originalCanvas===document.querySelector('.maplibregl-canvas')),true);assert.equal(await p.locator('#basemap-toggle').getAttribute('aria-checked'),'false');
+    assert.equal(new URL(p.url()).hash,'#map=10.50/41.80000/123.42000');
+    await p.locator('#about-open').click();assert.match(await p.locator('#about').innerText(),/代码许可尚未选定/);assert.match(await p.locator('#about').innerText(),/月度人工触发/);
+    await p.locator('#about summary').filter({hasText:'当前版本的来源与处理记录'}).click();assert.match(await p.locator('#provenance-info').innerText(),new RegExp(old));assert.equal(await p.getByRole('link',{name:'打开此版本的数据记录',exact:true}).getAttribute('href'),'/snapshots/'+old+'/dataset.json');await p.locator('#about-close').click();
+    await p.locator('#list-open').click();await p.locator('#accessible-explorer').filter({hasText:'此旧快照仅提供车站列表'}).waitFor();await p.getByRole('button',{name:'关闭要素列表',exact:true}).click();
+    checks.push('successful switch preserves map instance/basemap preference/query/filters, clears selection and resets camera; legacy list limits remain explicit');
+    checks.push('provenance, retention, manual update schedule and unselected code license are visible for the active version');
+    await p.goBack();await p.locator('.feature-title').filter({hasText:'沈阳北'}).waitFor();assert.equal(new URL(p.url()).searchParams.get('snapshot'),current);assert.equal(p.url(),before);
+    await p.goForward();await p.waitForFunction(id=>new URL(location.href).searchParams.get('snapshot')===id,old);await p.waitForFunction(id=>document.querySelector('#dataset-version')?.value===id,old);assert.equal(await p.locator('#feature-panel').isVisible(),false);
+    checks.push('back/forward swaps immutable datasets in place and restores the selected source identity');
+    await p.route('**/snapshots/'+current+'/palette.json',r=>r.fulfill({status:200,contentType:'application/json',body:'{}'}));await p.locator('#dataset-version').selectOption(current);await p.getByRole('button',{name:'使用此版本',exact:true}).click();await p.locator('#dataset-switch-status').filter({hasText:'版本加载失败'}).waitFor();assert.equal(new URL(p.url()).searchParams.get('snapshot'),old);
+    checks.push('malformed assets are rejected before replacing loaded railway layers');
+    const failed=await page();let fail=true;await failed.route('**/catalog.json',r=>fail?r.fulfill({status:503,body:'unavailable'}):r.continue());await failed.goto(base);await ready(failed);await failed.locator('#dataset-picker summary').click();await failed.getByRole('button',{name:'重试数据目录',exact:true}).waitFor();fail=false;await failed.getByRole('button',{name:'重试数据目录',exact:true}).click();await failed.locator('#dataset-version').waitFor();
+    checks.push('catalog failure leaves the railway map usable and retries independently');
+    const expired=await page();await expired.route('**/snapshots/retired/**',r=>r.fulfill({status:410,body:'retention ended'}));
+    await expired.goto(base+'/?snapshot=retired&q=%E6%B2%88%E9%98%B3%E5%8C%97%E7%AB%99&feature=node%2F676578837#map=13.50/41.80/123.42');
+    await expired.locator('#navigation-status').filter({hasText:'超过保留期'}).waitFor();assert.equal(await expired.locator('#search').inputValue(),'沈阳北站');
+    await expired.getByRole('button',{name:'打开当前版本',exact:true}).click();await ready(expired);await expired.locator('.feature-title').filter({hasText:'沈阳北'}).waitFor();
+    const expiredList=await page();await expiredList.addInitScript(()=>{const original=HTMLCanvasElement.prototype.getContext;HTMLCanvasElement.prototype.getContext=function(type,...args){return /webgl/i.test(type)?null:original.call(this,type,...args);};});
+    await expiredList.route('**/snapshots/retired/**',r=>r.fulfill({status:410,body:'retention ended'}));await expiredList.goto(base+'/?snapshot=retired&q=node%2F676578837');
+    await expiredList.getByRole('button',{name:'打开当前数据列表',exact:true}).click();await expiredList.locator('.object-list button').filter({hasText:'node/676578837'}).waitFor();
+    checks.push('expired links explain retention, preserve query/typed identity, and recover current data with or without WebGL');
+    assert.deepEqual(errors,[]);assert.deepEqual(external,[]);
+    const report={date:new Date().toISOString(),server_url:base,snapshots:[current,old],checks,errors,scope:'Local real-data version switch and fixture failures; not proof of 12-month operational retention or multi-region deployment'};
+    await fs.writeFile(path.join(output,'report.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
+  }finally{await browser.close();}
+})().catch(e=>{console.error(e);process.exitCode=1;});

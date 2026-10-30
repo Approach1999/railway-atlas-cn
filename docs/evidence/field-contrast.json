@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-27T08:29:18.944136+00:00",
+  "build": {
+    "js": "/assets/index-Cc2uO5a7.js",
+    "css": "/assets/index-DfhfmoQw.css",
+    "index_sha256": "37d0d4a86043589b3f643052b757fd45ed99b32cdb4e8c68be9f6991c7ee148c",
+    "js_sha256": "4e00ce2cbe765b2303b9893ed02eff621da9f3827a4fa6c07413e8e0527ee68d",
+    "css_sha256": "2a296b10af177d6c3c4c14ad65eed3b06119a17c82ebc9c64a12bb0296db8226"
+  },
+  "sha256": {
+    "apps/web/client/src/style.css": "aa6211dbf5526f691d11645a7141a6696438c329d51f48a693ff6783ebb680d7",
+    "scripts/verify_field_contrast.cjs": "734b329c74ef6b51cc40b3f2f42328b759eea3d65a10349a40f1aa2c449ec08f",
+    "scripts/browser_target.cjs": "8232047ab043000ece78339b36ba3871d3b2fd69fedf9ebf958441897d56f801",
+    "docs/evidence/history/field-contrast-before.css": "63aa90edc90f374f2e1d37bc5c0700848cbaf04e1f4f79c01cb525d5a05535d1",
+    "docs/evidence/history/field-contrast-first-verifier.cjs": "3217a731fe9bf860da9ff1244071a8b7042c0e2e5be31e506cc7b1c35e249d07",
+    "apps/web/client/dist/index.html": "37d0d4a86043589b3f643052b757fd45ed99b32cdb4e8c68be9f6991c7ee148c",
+    "apps/web/client/dist/assets/index-Cc2uO5a7.js": "4e00ce2cbe765b2303b9893ed02eff621da9f3827a4fa6c07413e8e0527ee68d",
+    "apps/web/client/dist/assets/index-DfhfmoQw.css": "2a296b10af177d6c3c4c14ad65eed3b06119a17c82ebc9c64a12bb0296db8226"
+  },
+  "reports": [
+    {
+      "channel": "chrome",
+      "version": "156.0.8078.48",
+      "file": "docs/evidence/field-contrast-chrome.json",
+      "sha256": "02363903ecd3f941a9f982f14d0b3c0904faeeeca68d5b98a4474eaf8afa72de",
+      "samples": 42,
+      "minimum_border": 3.846816962915316,
+      "minimum_text": 11.497990005260991,
+      "minimum_placeholder": 5.85664616407681,
+      "minimum_focus": 4.592601071519334
+    },
+    {
+      "channel": "msedge",
+      "version": "156.0.4314.42",
+      "file": "docs/evidence/field-contrast-edge.json",
+      "sha256": "a1114132c29826b7be5bde62d6e6493252cca8aa4fbfaa0e106a03cfbd37dfee",
+      "samples": 42,
+      "minimum_border": 3.846816962915316,
+      "minimum_text": 11.497990005260991,
+      "minimum_placeholder": 5.85664616407681,
+      "minimum_focus": 4.592601071519334
+    }
+  ],
+  "measured_states": 84,
+  "before_observation": {
+    "report": "docs/evidence/field-contrast-before.json",
+    "sha256": "8b8f8c797b7a2cf3ee1404d9e909b8680942930badc19f91186c5cec30796ee5",
+    "samples": 21,
+    "failures": 21,
+    "minimum_border": 1.8803128821838633
+  },
+  "unapplied_change_negative": {
+    "report": "docs/evidence/field-contrast-unapplied-change.json",
+    "sha256": "ddb25a435c6257339d072ec52091b3d4e48233ab8f3fa2e8da07cd379691c1bd",
+    "failures": 42,
+    "meaning": "Original CSS remained after a protective source-count assertion prevented editing. Validation rejected it; not a successful edit."
+  },
+  "validation": "Strict typecheck/production build and two actual installed browser suites passed; no domain behavior changed, domain tests not repeated for CSS-only edit.",
+  "scope": "Seven active form boundary types, desktop/390px default/hover/keyboard-focus computed sRGB pairs; separate ordinary/placeholder text and focus contrast. Only four CSS field rules and one colour variable changed.",
+  "limits": [
+    "Not all UI/graphics, native menus or selection colors, antialiasing, physical devices, readers or full WCAG acceptance.",
+    "Clipboard is stubbed for link-field measurement; no OS clipboard-permission claim.",
+    "Old functional/browser/performance reports retain their original builds.",
+    "MVP full requirements including human data QA and complete browser/device/reader gates remain active."
+  ]
+}

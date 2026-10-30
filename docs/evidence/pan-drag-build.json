@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-25T12:10:53.571333+00:00",
+  "app_asset": "/assets/index-B5hj9MUm.js",
+  "application_source_unchanged_since": "catalog-boundary-build.json; fingerprints verified, prior 70 tests/build retained without relabelling as a new run",
+  "runner_versions_differ_only_in_header_comment": true,
+  "summary": [
+    {
+      "trial": "software-1",
+      "render_p95_ms": 50.299999952316284,
+      "endpoint_error_css_px": 1.071812818868306
+    },
+    {
+      "trial": "software-2",
+      "render_p95_ms": 44.59999990463257,
+      "endpoint_error_css_px": 0.5125015143122766
+    },
+    {
+      "trial": "software-3",
+      "render_p95_ms": 39,
+      "endpoint_error_css_px": 1.071812818868306
+    },
+    {
+      "trial": "default-1",
+      "render_p95_ms": 8.900000095367432,
+      "endpoint_error_css_px": 1.071812818868306
+    }
+  ],
+  "source_and_evidence_sha256": {
+    "scripts/benchmark_pan.cjs": "e3b046f3875f2943294380d166dc84d7fb0324a9a5ca49a51f7469d006acb378",
+    "scripts/pan_drag.cjs": "475a17a906563eebc3cab6b86f94918af3a63bcb1f902699c6d8d981940ea0a2",
+    "scripts/verify_pan_drag.cjs": "57492afd28f969b756715199841e395a22a75330f69a3e5625d397343801b65e",
+    "scripts/diagnose_pan_layers.cjs": "318d69f5b20e23adeb5ad8d58dfaded91e1db6c35381c6dca6c2dbb6655a809f",
+    "docs/evidence/history/benchmark-pan-before-comment.cjs": "d930593850335d9b942c176b2d3a8b0cf48ffd94fec2f235457326646791373c",
+    "docs/evidence/catalog-boundary-build.json": "6ac3c2be26fd5dba690e08a3a769bddc49df76d807e34175c6edaf00fa81681e",
+    "docs/evidence/pan-layer-diagnostic.json": "6ba9d196e62571a756adb7690bf75e7a3f738f3b218928efecab07df0a374788",
+    "docs/evidence/pan-drag-driver.json": "97de6b62c155747303cded944b92e527a16185851386dacb0682d873efce1472",
+    "docs/evidence/pan-drag-preliminary.json": "3fe278bc6cfb884f9d89ddf9cf872201e961985f7c0ab4573fc4656bd5be16ee",
+    "docs/evidence/pan-drag-software-1.json": "c2e9b06e8ffbd322c794785b8572be49d83fe8e4581419738c9f6f2a016d1477",
+    "docs/evidence/pan-drag-software-2.json": "ca845ce6c8952090f8f5bdc394b6caffadca1593a443f194d8fb33c8b4ef7482",
+    "docs/evidence/pan-drag-software-3.json": "05f84df10c61a4ebfb10db6aa223b258bdb359c58e336e9f2383c8b7001480c7",
+    "docs/evidence/pan-drag-default-1.json": "fa3f1f0cefb3bd65b1407c9811e00e6fd2a49fa1772fc692e10fc0e7b62c1450"
+  },
+  "limitations": [
+    "software verified repeats all exceed 33ms; preliminary 29.6ms is not a pass",
+    "new spatial drag and old keyboard protocols are not a speedup comparison",
+    "hidden-layer cases are diagnostics only and explicitly not acceptance evidence",
+    "DOM moves and rAF/render events do not prove physical device/display acceptance",
+    "CPU/GPU trace not yet collected; no definite subsystem bottleneck established"
+  ],
+  "anchor_correction": "Existing source node/676578837 is 沈阳北. Two documents misnamed 苏家屯; source coordinates and historical numeric evidence were not changed."
+}

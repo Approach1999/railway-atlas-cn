@@ -1,0 +1,2584 @@
+{
+  "date": "2026-10-27T08:37:36.235Z",
+  "browser_target": {
+    "channel": "chrome",
+    "version": "156.0.8078.48",
+    "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "product": "Chrome/156.0.8078.48",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "renderer": "forced SwiftShader",
+    "headless": true,
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64"
+    },
+    "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+  },
+  "mode": "observation",
+  "status": "fails-size",
+  "scenes": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "overview",
+      "values": [
+        {
+          "id": "about-open",
+          "tag": "BUTTON",
+          "label": "关于数据 ↗",
+          "width": 70.265625,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "放大地图",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "缩小地图",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "地区与数据版本",
+          "width": 349,
+          "height": 40
+        },
+        {
+          "id": "search-clear",
+          "tag": "BUTTON",
+          "label": "清空搜索",
+          "width": 38.84375,
+          "height": 44
+        },
+        {
+          "id": "list-open",
+          "tag": "BUTTON",
+          "label": "通过列表查看车站与要素",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "键盘操作",
+          "width": 349,
+          "height": 45
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "",
+          "width": 124,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "铁路概览",
+          "width": 83.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "仅高速",
+          "width": 83.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "仅普速",
+          "width": 83.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "城市轨道",
+          "width": 83.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "按类型、等级和状态筛选",
+          "width": 349,
+          "height": 40
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "更多显示选项",
+          "width": 349,
+          "height": 40
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "reset-filters",
+          "tag": "BUTTON",
+          "label": "",
+          "width": 72,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "读图图例 颜色看类型，虚实看状态",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：高速铁路",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：普速干线",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：普速/未标注",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：支线/站场线",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：专用线",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：制式/等级未标注",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例状态：当前标注",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "basemap-toggle",
+          "tag": "BUTTON",
+          "label": "显示底图",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "share-open",
+          "tag": "BUTTON",
+          "label": "分享",
+          "width": 34,
+          "height": 44
+        },
+        {
+          "id": "home",
+          "tag": "BUTTON",
+          "label": "回到试验区",
+          "width": 64,
+          "height": 44
+        },
+        {
+          "id": "panel-toggle",
+          "tag": "BUTTON",
+          "label": "收起面板",
+          "width": 54,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "search",
+      "values": [
+        {
+          "id": "about-open",
+          "tag": "BUTTON",
+          "label": "关于数据 ↗",
+          "width": 70.265625,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "放大地图",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "缩小地图",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "地区与数据版本",
+          "width": 349,
+          "height": 40
+        },
+        {
+          "id": "search-clear",
+          "tag": "BUTTON",
+          "label": "清空搜索",
+          "width": 38.84375,
+          "height": 44
+        },
+        {
+          "id": "result-node-11224161741",
+          "tag": "BUTTON",
+          "label": "沈阳北站\n地铁 · 站点 · 当前筛选已隐藏 · 点击临时显示",
+          "width": 349,
+          "height": 55
+        },
+        {
+          "id": "result-way-53555662",
+          "tag": "BUTTON",
+          "label": "沈阳北站\n铁路 · 站区 · 沈阳试验区",
+          "width": 349,
+          "height": 55
+        },
+        {
+          "id": "result-node-676578837",
+          "tag": "BUTTON",
+          "label": "沈阳北\n铁路 · 站点 · 沈阳试验区",
+          "width": 349,
+          "height": 55
+        },
+        {
+          "id": "list-open",
+          "tag": "BUTTON",
+          "label": "通过列表查看车站与要素",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "键盘操作",
+          "width": 349,
+          "height": 45
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "",
+          "width": 124,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "铁路概览",
+          "width": 83.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "仅高速",
+          "width": 83.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "仅普速",
+          "width": 83.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "城市轨道",
+          "width": 83.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "按类型、等级和状态筛选",
+          "width": 349,
+          "height": 40
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "更多显示选项",
+          "width": 349,
+          "height": 40
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "reset-filters",
+          "tag": "BUTTON",
+          "label": "",
+          "width": 72,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "读图图例 颜色看类型，虚实看状态",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：高速铁路",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：普速干线",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：普速/未标注",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：支线/站场线",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：专用线",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：制式/等级未标注",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例状态：当前标注",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "basemap-toggle",
+          "tag": "BUTTON",
+          "label": "显示底图",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "share-open",
+          "tag": "BUTTON",
+          "label": "分享",
+          "width": 34,
+          "height": 44
+        },
+        {
+          "id": "home",
+          "tag": "BUTTON",
+          "label": "回到试验区",
+          "width": 64,
+          "height": 44
+        },
+        {
+          "id": "panel-toggle",
+          "tag": "BUTTON",
+          "label": "收起面板",
+          "width": 54,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "dataset",
+      "values": [
+        {
+          "id": "about-open",
+          "tag": "BUTTON",
+          "label": "关于数据 ↗",
+          "width": 70.265625,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "放大地图",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "缩小地图",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "地区与数据版本",
+          "width": 349,
+          "height": 40
+        },
+        {
+          "id": "search-clear",
+          "tag": "BUTTON",
+          "label": "清空搜索",
+          "width": 38.84375,
+          "height": 44
+        },
+        {
+          "id": "list-open",
+          "tag": "BUTTON",
+          "label": "通过列表查看车站与要素",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "键盘操作",
+          "width": 349,
+          "height": 45
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "",
+          "width": 124,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "铁路概览",
+          "width": 83.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "仅高速",
+          "width": 83.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "仅普速",
+          "width": 83.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "城市轨道",
+          "width": 83.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "按类型、等级和状态筛选",
+          "width": 349,
+          "height": 40
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "更多显示选项",
+          "width": 349,
+          "height": 40
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "reset-filters",
+          "tag": "BUTTON",
+          "label": "",
+          "width": 72,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "读图图例 颜色看类型，虚实看状态",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：高速铁路",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：普速干线",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：普速/未标注",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：支线/站场线",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：专用线",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：制式/等级未标注",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例状态：当前标注",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "basemap-toggle",
+          "tag": "BUTTON",
+          "label": "显示底图",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "share-open",
+          "tag": "BUTTON",
+          "label": "分享",
+          "width": 34,
+          "height": 44
+        },
+        {
+          "id": "home",
+          "tag": "BUTTON",
+          "label": "回到试验区",
+          "width": 64,
+          "height": 44
+        },
+        {
+          "id": "panel-toggle",
+          "tag": "BUTTON",
+          "label": "收起面板",
+          "width": 54,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "detail",
+      "values": [
+        {
+          "id": "about-open",
+          "tag": "BUTTON",
+          "label": "关于数据 ↗",
+          "width": 70.265625,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "放大地图",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "缩小地图",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "地区与数据版本",
+          "width": 349,
+          "height": 40
+        },
+        {
+          "id": "search-clear",
+          "tag": "BUTTON",
+          "label": "清空搜索",
+          "width": 38.84375,
+          "height": 44
+        },
+        {
+          "id": "result-node-11224161741",
+          "tag": "BUTTON",
+          "label": "沈阳北站\n地铁 · 站点 · 当前筛选已隐藏 · 点击临时显示",
+          "width": 349,
+          "height": 55
+        },
+        {
+          "id": "result-way-53555662",
+          "tag": "BUTTON",
+          "label": "沈阳北站\n铁路 · 站区 · 沈阳试验区",
+          "width": 349,
+          "height": 55
+        },
+        {
+          "id": "result-node-676578837",
+          "tag": "BUTTON",
+          "label": "沈阳北\n铁路 · 站点 · 沈阳试验区",
+          "width": 349,
+          "height": 55
+        },
+        {
+          "id": "list-open",
+          "tag": "BUTTON",
+          "label": "通过列表查看车站与要素",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "键盘操作",
+          "width": 349,
+          "height": 45
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "",
+          "width": 124,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "铁路概览",
+          "width": 83.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "仅高速",
+          "width": 83.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "仅普速",
+          "width": 83.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "城市轨道",
+          "width": 83.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "按类型、等级和状态筛选",
+          "width": 349,
+          "height": 40
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "更多显示选项",
+          "width": 349,
+          "height": 40
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "reset-filters",
+          "tag": "BUTTON",
+          "label": "",
+          "width": 72,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "读图图例 颜色看类型，虚实看状态",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：高速铁路",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：普速干线",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：普速/未标注",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：支线/站场线",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：专用线",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：制式/等级未标注",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例状态：当前标注",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "basemap-toggle",
+          "tag": "BUTTON",
+          "label": "显示底图",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "share-open",
+          "tag": "BUTTON",
+          "label": "分享",
+          "width": 34,
+          "height": 44
+        },
+        {
+          "id": "home",
+          "tag": "BUTTON",
+          "label": "回到试验区",
+          "width": 64,
+          "height": 44
+        },
+        {
+          "id": "panel-toggle",
+          "tag": "BUTTON",
+          "label": "收起面板",
+          "width": 54,
+          "height": 44
+        },
+        {
+          "id": "detail-close",
+          "tag": "BUTTON",
+          "label": "关闭详情",
+          "width": 44,
+          "height": 48
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "数据来源与原始标注",
+          "width": 348,
+          "height": 40
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "数据、许可与免责声明",
+          "width": 188,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "share",
+      "values": [
+        {
+          "id": "share-close",
+          "tag": "BUTTON",
+          "label": "关闭分享",
+          "width": 44,
+          "height": 63.59375
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "按当前所见分享",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "保留原筛选分享",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "id": "share-copy",
+          "tag": "BUTTON",
+          "label": "复制链接",
+          "width": 80,
+          "height": 44.6875
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "about",
+      "values": [
+        {
+          "id": "about-close",
+          "tag": "BUTTON",
+          "label": "关闭数据说明",
+          "width": 44,
+          "height": 63.59375
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "当前版本的来源与处理记录",
+          "width": 292,
+          "height": 48.6875
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "线路配色来源与核对记录",
+          "width": 292,
+          "height": 48.6875
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "list",
+      "values": [
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "关闭要素列表",
+          "width": 43.8125,
+          "height": 58.796875
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "包含设施记录",
+          "width": 324,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "列表筛选",
+          "width": 324,
+          "height": 46.09375
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 292,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 292,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 292,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 292,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 292,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 292,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 292,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 292,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 292,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 292,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 292,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 292,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 292,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 292,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 292,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 292,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 292,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 292,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 292,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 292,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 324,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "沈阳北\n铁路 · 站点 · 当前标注\nnode/676578837",
+          "width": 324,
+          "height": 88.875
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "沈阳北站\n铁路 · 站区 · 当前标注\nway/53555662",
+          "width": 324,
+          "height": 88.875
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "复制当前视图与记录链接",
+          "width": 171,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "basemap-failure",
+      "values": [
+        {
+          "id": "about-open",
+          "tag": "BUTTON",
+          "label": "关于数据 ↗",
+          "width": 70.265625,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "放大地图",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "缩小地图",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "地区与数据版本",
+          "width": 349,
+          "height": 40
+        },
+        {
+          "id": "search-clear",
+          "tag": "BUTTON",
+          "label": "清空搜索",
+          "width": 38.84375,
+          "height": 44
+        },
+        {
+          "id": "result-node-11224161741",
+          "tag": "BUTTON",
+          "label": "沈阳北站\n地铁 · 站点 · 当前筛选已隐藏 · 点击临时显示",
+          "width": 349,
+          "height": 55
+        },
+        {
+          "id": "result-way-53555662",
+          "tag": "BUTTON",
+          "label": "沈阳北站\n铁路 · 站区 · 沈阳试验区",
+          "width": 349,
+          "height": 55
+        },
+        {
+          "id": "result-node-676578837",
+          "tag": "BUTTON",
+          "label": "沈阳北\n铁路 · 站点 · 沈阳试验区",
+          "width": 349,
+          "height": 55
+        },
+        {
+          "id": "list-open",
+          "tag": "BUTTON",
+          "label": "通过列表查看车站与要素",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "键盘操作",
+          "width": 349,
+          "height": 45
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "",
+          "width": 124,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "铁路概览",
+          "width": 83.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "仅高速",
+          "width": 83.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "仅普速",
+          "width": 83.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "城市轨道",
+          "width": 83.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "按类型、等级和状态筛选",
+          "width": 349,
+          "height": 40
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 157.5,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "更多显示选项",
+          "width": 349,
+          "height": 40
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "LABEL",
+          "label": "",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "reset-filters",
+          "tag": "BUTTON",
+          "label": "",
+          "width": 72,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "SUMMARY",
+          "label": "读图图例 颜色看类型，虚实看状态",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：高速铁路",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：普速干线",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：普速/未标注",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：支线/站场线",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：专用线",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例等级：制式/等级未标注",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "label": "图例状态：当前标注",
+          "width": 349,
+          "height": 44
+        },
+        {
+          "id": "basemap-toggle",
+          "tag": "BUTTON",
+          "label": "显示底图",
+          "width": 76,
+          "height": 44
+        },
+        {
+          "id": "basemap-retry",
+          "tag": "BUTTON",
+          "label": "重试",
+          "width": 32,
+          "height": 36
+        },
+        {
+          "id": "share-open",
+          "tag": "BUTTON",
+          "label": "分享",
+          "width": 34,
+          "height": 44
+        },
+        {
+          "id": "home",
+          "tag": "BUTTON",
+          "label": "回到试验区",
+          "width": 64,
+          "height": 44
+        },
+        {
+          "id": "panel-toggle",
+          "tag": "BUTTON",
+          "label": "收起面板",
+          "width": 54,
+          "height": 44
+        }
+      ]
+    }
+  ],
+  "failures": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "overview",
+      "id": "",
+      "tag": "SUMMARY",
+      "label": "地区与数据版本",
+      "width": 349,
+      "height": 40
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "overview",
+      "id": "search-clear",
+      "tag": "BUTTON",
+      "label": "清空搜索",
+      "width": 38.84375,
+      "height": 44
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "overview",
+      "id": "",
+      "tag": "SUMMARY",
+      "label": "按类型、等级和状态筛选",
+      "width": 349,
+      "height": 40
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "overview",
+      "id": "",
+      "tag": "SUMMARY",
+      "label": "更多显示选项",
+      "width": 349,
+      "height": 40
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "overview",
+      "id": "share-open",
+      "tag": "BUTTON",
+      "label": "分享",
+      "width": 34,
+      "height": 44
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "search",
+      "id": "",
+      "tag": "SUMMARY",
+      "label": "地区与数据版本",
+      "width": 349,
+      "height": 40
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "search",
+      "id": "search-clear",
+      "tag": "BUTTON",
+      "label": "清空搜索",
+      "width": 38.84375,
+      "height": 44
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "search",
+      "id": "",
+      "tag": "SUMMARY",
+      "label": "按类型、等级和状态筛选",
+      "width": 349,
+      "height": 40
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "search",
+      "id": "",
+      "tag": "SUMMARY",
+      "label": "更多显示选项",
+      "width": 349,
+      "height": 40
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "search",
+      "id": "share-open",
+      "tag": "BUTTON",
+      "label": "分享",
+      "width": 34,
+      "height": 44
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "dataset",
+      "id": "",
+      "tag": "SUMMARY",
+      "label": "地区与数据版本",
+      "width": 349,
+      "height": 40
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "dataset",
+      "id": "search-clear",
+      "tag": "BUTTON",
+      "label": "清空搜索",
+      "width": 38.84375,
+      "height": 44
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "dataset",
+      "id": "",
+      "tag": "SUMMARY",
+      "label": "按类型、等级和状态筛选",
+      "width": 349,
+      "height": 40
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "dataset",
+      "id": "",
+      "tag": "SUMMARY",
+      "label": "更多显示选项",
+      "width": 349,
+      "height": 40
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "dataset",
+      "id": "share-open",
+      "tag": "BUTTON",
+      "label": "分享",
+      "width": 34,
+      "height": 44
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "detail",
+      "id": "",
+      "tag": "SUMMARY",
+      "label": "地区与数据版本",
+      "width": 349,
+      "height": 40
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "detail",
+      "id": "search-clear",
+      "tag": "BUTTON",
+      "label": "清空搜索",
+      "width": 38.84375,
+      "height": 44
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "detail",
+      "id": "",
+      "tag": "SUMMARY",
+      "label": "按类型、等级和状态筛选",
+      "width": 349,
+      "height": 40
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "detail",
+      "id": "",
+      "tag": "SUMMARY",
+      "label": "更多显示选项",
+      "width": 349,
+      "height": 40
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "detail",
+      "id": "share-open",
+      "tag": "BUTTON",
+      "label": "分享",
+      "width": 34,
+      "height": 44
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "detail",
+      "id": "",
+      "tag": "SUMMARY",
+      "label": "数据来源与原始标注",
+      "width": 348,
+      "height": 40
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "list",
+      "id": "",
+      "tag": "BUTTON",
+      "label": "关闭要素列表",
+      "width": 43.8125,
+      "height": 58.796875
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "basemap-failure",
+      "id": "",
+      "tag": "SUMMARY",
+      "label": "地区与数据版本",
+      "width": 349,
+      "height": 40
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "basemap-failure",
+      "id": "search-clear",
+      "tag": "BUTTON",
+      "label": "清空搜索",
+      "width": 38.84375,
+      "height": 44
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "basemap-failure",
+      "id": "",
+      "tag": "SUMMARY",
+      "label": "按类型、等级和状态筛选",
+      "width": 349,
+      "height": 40
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "basemap-failure",
+      "id": "",
+      "tag": "SUMMARY",
+      "label": "更多显示选项",
+      "width": 349,
+      "height": 40
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "basemap-failure",
+      "id": "basemap-retry",
+      "tag": "BUTTON",
+      "label": "重试",
+      "width": 32,
+      "height": 36
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "basemap-failure",
+      "id": "share-open",
+      "tag": "BUTTON",
+      "label": "分享",
+      "width": 34,
+      "height": 44
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Laid-out active buttons, disclosure summaries and associated checkbox/radio label rectangles in eight actual UI states under coarse-pointer emulation; clear-button edge tap and no page overflow. Not inline links, every occlusion/gesture/state or physical device acceptance."
+}

@@ -1,0 +1,67 @@
+{
+  "kind": "pre-change authored-colour checks, not screenshot or all WCAG acceptance",
+  "findings": [
+    {
+      "name": "razed",
+      "color": "#817263",
+      "opacity": 0.6,
+      "composited": "#b3aaa1",
+      "contrast_to_white": 2.2872644922642267,
+      "target": 3
+    },
+    {
+      "name": "abandoned",
+      "color": "#817263",
+      "opacity": 0.85,
+      "composited": "#94877a",
+      "contrast_to_white": 3.496621534936643,
+      "target": 3
+    },
+    {
+      "name": "unknown",
+      "color": "#6b7079",
+      "opacity": 0.9,
+      "composited": "#7a7e86",
+      "contrast_to_white": 4.072843463058162,
+      "target": 3
+    },
+    {
+      "name": "construction-unknown",
+      "color": "#8A8F98",
+      "opacity": 0.9,
+      "composited": "#969aa2",
+      "contrast_to_white": 2.8222872211449253,
+      "target": 3
+    },
+    {
+      "name": "proposed-unknown",
+      "color": "#8A8F98",
+      "opacity": 0.85,
+      "composited": "#9ca0a7",
+      "contrast_to_white": 2.625029420612215,
+      "target": 3
+    },
+    {
+      "name": "eyebrow",
+      "color": "#5e7e7a",
+      "background": "#ffffff",
+      "contrast": 4.4291588119461585,
+      "target": 4.5
+    },
+    {
+      "name": "muted-on-soft",
+      "color": "#65777d",
+      "background": "#f1f5ef",
+      "contrast": 4.243905852719981,
+      "target": 4.5
+    },
+    {
+      "name": "map-caption",
+      "color": "#7a8987",
+      "background": "#ffffff",
+      "contrast": 3.648599516107759,
+      "target": 4.5
+    }
+  ],
+  "source_text_lf_sha256": "b86bf352a8233ac6a923888d277627d155cbe4ff3afceb6938748025384d7a5d"
+}

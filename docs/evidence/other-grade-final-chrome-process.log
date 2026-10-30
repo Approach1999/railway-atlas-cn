@@ -1,0 +1,10 @@
+locator.isChecked: Timeout 30000ms exceeded.
+Call log:
+  - waiting for getByRole('checkbox', { name: '铁路等级：其他轨道', exact: true })
+
+    at C:\Users\21965\Documents\Codex\2026-10-22\referenced-chatgpt-conversation-this-is-an\work\checkout\scripts\verify_other_grade.cjs:20:372 {
+  log: [
+    "  - waiting for getByRole('checkbox', { name: '铁路等级：其他轨道', exact: true })"
+  ],
+  name: 'TimeoutError'
+}

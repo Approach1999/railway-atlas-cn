@@ -1,0 +1,511 @@
+{
+  "date": "2026-10-28T05:07:05.496Z",
+  "browser_target": {
+    "channel": "chrome",
+    "version": "156.0.8078.48",
+    "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "product": "Chrome/156.0.8078.48",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "renderer": "forced SwiftShader",
+    "headless": true,
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64"
+    },
+    "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+  },
+  "source_sha256": "65a81c450d59e394654c61c5eb917c4befcdd58de8cef9a5e1494e2f45a70005",
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "build": {
+    "asset": "/assets/index-tJmMJPE_.js",
+    "index_sha256": "63ee39a19d8f224c8c11011f4e12f7955170831f7ce322121860c53f62aaf169",
+    "asset_sha256": "a08798deece3c35042844b8e956eb91e91d71933f5bf3b980d5e338248c7d5fb"
+  },
+  "checks": [
+    {
+      "name": "overview",
+      "enabled": false,
+      "filter": [
+        "literal",
+        false
+      ],
+      "rendered_count": 0
+    },
+    {
+      "name": "highspeed",
+      "enabled": false,
+      "filter": [
+        "literal",
+        false
+      ],
+      "rendered_count": 0
+    },
+    {
+      "name": "conventional",
+      "enabled": false,
+      "filter": [
+        "literal",
+        false
+      ],
+      "rendered_count": 0
+    },
+    {
+      "name": "urban",
+      "enabled": true,
+      "filter": [
+        "all",
+        [
+          "all",
+          [
+            "==",
+            [
+              "get",
+              "feature_kind"
+            ],
+            "track"
+          ],
+          [
+            "in",
+            [
+              "get",
+              "rail_mode"
+            ],
+            [
+              "literal",
+              [
+                "subway",
+                "light_rail",
+                "tram"
+              ]
+            ]
+          ],
+          [
+            "!",
+            [
+              "in",
+              [
+                "get",
+                "line_class"
+              ],
+              [
+                "literal",
+                [
+                  "branch",
+                  "industrial"
+                ]
+              ]
+            ]
+          ],
+          [
+            "==",
+            [
+              "get",
+              "status"
+            ],
+            "mapped"
+          ]
+        ],
+        [
+          "in",
+          [
+            "get",
+            "rail_mode"
+          ],
+          [
+            "literal",
+            [
+              "subway",
+              "light_rail",
+              "tram"
+            ]
+          ]
+        ]
+      ],
+      "rendered_count": 462
+    },
+    {
+      "name": "isolated-line",
+      "enabled": true,
+      "filter": [
+        "all",
+        [
+          "all",
+          [
+            "all",
+            [
+              "==",
+              [
+                "get",
+                "feature_kind"
+              ],
+              "track"
+            ],
+            [
+              "in",
+              [
+                "match",
+                [
+                  "get",
+                  "rail_mode"
+                ],
+                "rail",
+                "rail",
+                "subway",
+                "subway",
+                "light_rail",
+                "light_rail",
+                "tram",
+                "tram",
+                "unknown",
+                "unknown",
+                "other"
+              ],
+              [
+                "literal",
+                [
+                  "subway",
+                  "light_rail",
+                  "tram"
+                ]
+              ]
+            ],
+            [
+              "in",
+              [
+                "get",
+                "status"
+              ],
+              [
+                "literal",
+                [
+                  "mapped"
+                ]
+              ]
+            ],
+            [
+              "any",
+              [
+                "in",
+                [
+                  "get",
+                  "rail_mode"
+                ],
+                [
+                  "literal",
+                  [
+                    "subway",
+                    "light_rail",
+                    "tram"
+                  ]
+                ]
+              ],
+              [
+                "in",
+                [
+                  "get",
+                  "line_class"
+                ],
+                [
+                  "literal",
+                  [
+                    "high_speed",
+                    "conventional_main",
+                    "conventional_other",
+                    "branch",
+                    "industrial",
+                    "metro",
+                    "light_rail",
+                    "tram",
+                    "other",
+                    "unknown"
+                  ]
+                ]
+              ]
+            ],
+            [
+              "!",
+              [
+                "in",
+                [
+                  "get",
+                  "line_class"
+                ],
+                [
+                  "literal",
+                  [
+                    "branch",
+                    "industrial"
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            "any",
+            [
+              "in",
+              "|shenyang-metro/4|",
+              [
+                "coalesce",
+                [
+                  "get",
+                  "line_tokens"
+                ],
+                ""
+              ]
+            ]
+          ]
+        ],
+        [
+          "in",
+          [
+            "get",
+            "rail_mode"
+          ],
+          [
+            "literal",
+            [
+              "subway",
+              "light_rail",
+              "tram"
+            ]
+          ]
+        ]
+      ],
+      "rendered_count": 12
+    },
+    {
+      "name": "exit-isolation",
+      "enabled": true,
+      "filter": [
+        "all",
+        [
+          "all",
+          [
+            "==",
+            [
+              "get",
+              "feature_kind"
+            ],
+            "track"
+          ],
+          [
+            "in",
+            [
+              "get",
+              "rail_mode"
+            ],
+            [
+              "literal",
+              [
+                "subway",
+                "light_rail",
+                "tram"
+              ]
+            ]
+          ],
+          [
+            "!",
+            [
+              "in",
+              [
+                "get",
+                "line_class"
+              ],
+              [
+                "literal",
+                [
+                  "branch",
+                  "industrial"
+                ]
+              ]
+            ]
+          ],
+          [
+            "==",
+            [
+              "get",
+              "status"
+            ],
+            "mapped"
+          ]
+        ],
+        [
+          "in",
+          [
+            "get",
+            "rail_mode"
+          ],
+          [
+            "literal",
+            [
+              "subway",
+              "light_rail",
+              "tram"
+            ]
+          ]
+        ]
+      ],
+      "rendered_count": 462
+    },
+    {
+      "name": "mixed-custom",
+      "enabled": true,
+      "filter": [
+        "all",
+        [
+          "all",
+          [
+            "==",
+            [
+              "get",
+              "feature_kind"
+            ],
+            "track"
+          ],
+          [
+            "in",
+            [
+              "match",
+              [
+                "get",
+                "rail_mode"
+              ],
+              "rail",
+              "rail",
+              "subway",
+              "subway",
+              "light_rail",
+              "light_rail",
+              "tram",
+              "tram",
+              "unknown",
+              "unknown",
+              "other"
+            ],
+            [
+              "literal",
+              [
+                "rail",
+                "subway"
+              ]
+            ]
+          ],
+          [
+            "in",
+            [
+              "get",
+              "status"
+            ],
+            [
+              "literal",
+              [
+                "mapped"
+              ]
+            ]
+          ],
+          [
+            "any",
+            [
+              "in",
+              [
+                "get",
+                "rail_mode"
+              ],
+              [
+                "literal",
+                [
+                  "subway",
+                  "light_rail",
+                  "tram"
+                ]
+              ]
+            ],
+            [
+              "in",
+              [
+                "get",
+                "line_class"
+              ],
+              [
+                "literal",
+                [
+                  "high_speed",
+                  "conventional_main",
+                  "conventional_other",
+                  "branch",
+                  "industrial",
+                  "metro",
+                  "light_rail",
+                  "tram",
+                  "other",
+                  "unknown"
+                ]
+              ]
+            ]
+          ],
+          [
+            "!",
+            [
+              "in",
+              [
+                "get",
+                "line_class"
+              ],
+              [
+                "literal",
+                [
+                  "branch",
+                  "industrial"
+                ]
+              ]
+            ]
+          ]
+        ],
+        [
+          "in",
+          [
+            "get",
+            "rail_mode"
+          ],
+          [
+            "literal",
+            [
+              "subway",
+              "light_rail",
+              "tram"
+            ]
+          ]
+        ]
+      ],
+      "rendered_count": 285
+    },
+    {
+      "name": "rail-only-custom",
+      "enabled": false,
+      "filter": [
+        "literal",
+        false
+      ],
+      "rendered_count": 0
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "captures": [
+    {
+      "original_sha256": "a08798deece3c35042844b8e956eb91e91d71933f5bf3b980d5e338248c7d5fb",
+      "observed_sha256": "f4327d83cc3a5823d9dc6f871ca2f2dd71f27637ea9e13c003d6ea63d6a0d434"
+    },
+    {
+      "original_sha256": "a08798deece3c35042844b8e956eb91e91d71933f5bf3b980d5e338248c7d5fb",
+      "observed_sha256": "f4327d83cc3a5823d9dc6f871ca2f2dd71f27637ea9e13c003d6ea63d6a0d434"
+    },
+    {
+      "original_sha256": "a08798deece3c35042844b8e956eb91e91d71933f5bf3b980d5e338248c7d5fb",
+      "observed_sha256": "f4327d83cc3a5823d9dc6f871ca2f2dd71f27637ea9e13c003d6ea63d6a0d434"
+    }
+  ],
+  "scope": "Capture-only public Map object reference; native filters, real rendered urban tracks, mixed custom and temporary line isolation in installed browser. Not real device or visual/independent QA."
+}

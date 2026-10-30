@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-27T07:53:41.307Z",
+  "browser_target": {
+    "channel": "chrome",
+    "version": "155.0.8059.85",
+    "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "product": "Chrome/155.0.8059.85",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+    "renderer": "forced SwiftShader",
+    "headless": true,
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64"
+    },
+    "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+  },
+  "checks": [
+    {
+      "check": "selected heading visible and close returns focus",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "geometry": {
+        "heading": {
+          "top": 366.46875,
+          "bottom": 395.34375
+        },
+        "dialog": {
+          "top": 12,
+          "bottom": 988
+        },
+        "viewport": 1000
+      }
+    },
+    {
+      "check": "selected heading visible and close returns focus",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "geometry": {
+        "heading": {
+          "top": 249.734375,
+          "bottom": 275.578125
+        },
+        "dialog": {
+          "top": 12,
+          "bottom": 832
+        },
+        "viewport": 844
+      }
+    },
+    {
+      "check": "real wheel during delayed detail prevents late focus and programmatic scroll",
+      "focus_preserved": true,
+      "programmatic_scrolls": 0,
+      "wheel": {
+        "trusted": true,
+        "dy": 120
+      }
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Actual heading geometry in desktop/390px simulation, focus return, actual browser wheel during intercepted delayed detail. Not physical mobile/reader or all list tasks."
+}

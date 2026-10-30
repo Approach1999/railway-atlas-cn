@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-26T13:12:23.730Z",
+  "source": "data/processed/shenyang-mvp-20261023/stations.geojson",
+  "input_sha256": "b0113a6ee3db3f7722f2aec8170e37daa4ebfe142fb26d4fb1d129b6f1220d70",
+  "station_records": 361,
+  "point_symbols_preserved": 361,
+  "old_submitted_names": 351,
+  "new_submitted_names": 343,
+  "unnamed_ids": [
+    "node/4065392270",
+    "node/4065396046",
+    "node/4065396047",
+    "node/4065396048",
+    "node/4065396049",
+    "node/4065396050",
+    "node/4065396051",
+    "node/4065396052",
+    "node/4065396053",
+    "node/4065396054",
+    "way/658333063",
+    "way/658333064"
+  ],
+  "suppressed_confirmed_names": [
+    {
+      "suppressed": "node/4065246593",
+      "label_at": "node/4065246592",
+      "display_name": "新松智慧园",
+      "rail_mode": "tram",
+      "evidence": [
+        "relation/19556148"
+      ]
+    },
+    {
+      "suppressed": "node/4065306112",
+      "label_at": "node/4065306111",
+      "display_name": "白塔河路",
+      "rail_mode": "tram",
+      "evidence": [
+        "relation/7894589"
+      ]
+    },
+    {
+      "suppressed": "node/4065341667",
+      "label_at": "node/4065246592",
+      "display_name": "新松智慧园",
+      "rail_mode": "tram",
+      "evidence": [
+        "relation/19556148"
+      ]
+    },
+    {
+      "suppressed": "node/4066434533",
+      "label_at": "node/4065341668",
+      "display_name": "机场宾馆",
+      "rail_mode": "tram",
+      "evidence": [
+        "relation/7895117"
+      ]
+    },
+    {
+      "suppressed": "node/5335130533",
+      "label_at": "node/4065341668",
+      "display_name": "机场宾馆",
+      "rail_mode": "tram",
+      "evidence": [
+        "relation/7895117"
+      ]
+    },
+    {
+      "suppressed": "node/5626415143",
+      "label_at": "node/5626415142",
+      "display_name": "世纪大厦",
+      "rail_mode": "tram",
+      "evidence": [
+        "relation/8308561"
+      ]
+    }
+  ],
+  "source_order_invariant": true,
+  "source_document_unchanged": true,
+  "limits": "Name submission counts, not simultaneous rendered label counts. Source evidence replay is not independent human validation of real station equivalence; line-label repeat spacing, full R17 and device/browser acceptance remain open."
+}

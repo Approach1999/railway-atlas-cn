@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-25T03:37:04.657Z",
+  "checks": [
+    "failed staged switch preserves the current source date, navigation explanation and snapshot",
+    "successful switch clears the reproduced stale warning and renders the active source date without replacing the map canvas",
+    "cross-snapshot back/forward restores its own warnings as inert text and clears them again on valid history",
+    "410 then 503 then successful manifest retry has one React recovery action, clears stale status, preserves edited query and returns focus",
+    "current-version recovery uses the edited query and original typed selection, then removes the obsolete action",
+    "React mobile panel toggles keep label, expanded state and layout consistent; home uses the existing map reset action"
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Local Chrome built-client state/history and actual snapshots with explicit HTTP fixtures; not physical devices, screen readers or full MVP acceptance."
+}

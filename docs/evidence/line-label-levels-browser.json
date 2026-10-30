@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-26T13:26:15.698Z",
+  "browser": "155.0.8059.85",
+  "observation": {
+    "original_sha256": "04f6f3f9b0055038d743f77dbee2a30555ba4bb6178373c1df9c47976dc50609",
+    "observed_sha256": "272889bd0a058e27290eb714ca7fe896a50b077082ba9f1c8b0f7ea3322aab79",
+    "scope": "Capture only, no layout/data/camera changes; placement internals used solely to target a real label click."
+  },
+  "checks": [
+    {
+      "check": "z8 now renders source-named regional lines; detailed names remain hidden",
+      "major": [
+        {
+          "id": "way/1370985678",
+          "name": "沈大线"
+        },
+        {
+          "id": "way/385360730",
+          "name": "京哈高速线"
+        },
+        {
+          "id": "way/42673098",
+          "name": "京哈线"
+        }
+      ],
+      "minor": 0
+    },
+    {
+      "check": "real named minor tracks render and their actual label opens the original source record",
+      "labels": [
+        {
+          "id": "way/42645799",
+          "name": "西转出发线",
+          "line_class": "branch"
+        },
+        {
+          "id": "way/551660443",
+          "name": "转西直通线",
+          "line_class": "branch"
+        },
+        {
+          "id": "way/42645799",
+          "name": "西转出发线",
+          "line_class": "branch"
+        }
+      ],
+      "target": {
+        "id": "way/42645799",
+        "name": "西转出发线"
+      }
+    },
+    {
+      "check": "line-name switch controls both layers; siding switch removes and restores actual minor labels"
+    },
+    {
+      "check": "both label layers are removed/reinstalled cleanly through actual snapshot switches"
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Real local source labels, zoom/filter/click and snapshot integration. No 300px-repeat, glyph-clearance, full R17 or physical-device acceptance claim."
+}

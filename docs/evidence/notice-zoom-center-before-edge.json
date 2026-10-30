@@ -1,0 +1,528 @@
+{
+  "date": "2026-10-28T05:25:48.314Z",
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "build": {
+    "asset": "/assets/index-AnsEeJYS.js",
+    "index_sha256": "0e0148d1668fa060f64958e321da4790737c3e9b4554473a39c44bf45306bc54",
+    "asset_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7"
+  },
+  "browser_target": {
+    "channel": "msedge",
+    "version": "156.0.4314.42",
+    "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "product": "Edg/156.0.4314.42",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+    "renderer": "forced SwiftShader",
+    "headless": true,
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64"
+    },
+    "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+  },
+  "cases": [
+    {
+      "size": {
+        "width": 1552,
+        "height": 1000
+      },
+      "factor": 1,
+      "first": {
+        "metrics": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1518,
+            "clientHeight": 903
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1518,
+            "clientHeight": 903,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 1518,
+            "height": 903
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1518,
+            "clientHeight": 903
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1518,
+            "clientHeight": 903,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 1518,
+            "height": 903
+          }
+        },
+        "dom": {
+          "width": 1518,
+          "height": 903,
+          "dpr": 1,
+          "pinch": 1,
+          "cssZoom": "1",
+          "searchFont": "14px",
+          "overflow": false
+        }
+      },
+      "checks": [
+        {
+          "name": "actual-100-percent-baseline",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 1552,
+        "height": 1000
+      },
+      "factor": 2,
+      "first": {
+        "metrics": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1518,
+            "clientHeight": 903
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1518,
+            "clientHeight": 903,
+            "scale": 1,
+            "zoom": 2
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 1518,
+            "height": 903
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 759,
+            "clientHeight": 451
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 759,
+            "clientHeight": 451.5,
+            "scale": 1,
+            "zoom": 2
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 759,
+            "height": 451
+          }
+        },
+        "dom": {
+          "width": 759,
+          "height": 451,
+          "dpr": 2,
+          "pinch": 1,
+          "cssZoom": "1",
+          "searchFont": "14px",
+          "overflow": false
+        }
+      },
+      "checks": [
+        {
+          "name": "empty-reset-action",
+          "passed": true,
+          "rect": {
+            "x": 398.5,
+            "y": 348.5,
+            "width": 100,
+            "height": 44
+          },
+          "viewport": {
+            "width": 759,
+            "height": 451
+          },
+          "hit": true,
+          "coveredBy": "BUTTON"
+        },
+        {
+          "name": "empty-view-share-open",
+          "passed": true,
+          "rect": {
+            "x": 592,
+            "y": 100,
+            "width": 52,
+            "height": 44
+          },
+          "viewport": {
+            "width": 759,
+            "height": 451
+          },
+          "hit": true,
+          "coveredBy": "share-open"
+        },
+        {
+          "name": "empty-view-home",
+          "passed": true,
+          "rect": {
+            "x": 651,
+            "y": 100,
+            "width": 88,
+            "height": 44
+          },
+          "viewport": {
+            "width": 759,
+            "height": 451
+          },
+          "hit": true,
+          "coveredBy": "home"
+        },
+        {
+          "name": "desktop-panel-toggle-intentionally-hidden",
+          "passed": true
+        },
+        {
+          "name": "attribution",
+          "passed": true,
+          "rect": {
+            "x": 593.359375,
+            "y": 436,
+            "width": 125.625,
+            "height": 11
+          },
+          "viewport": {
+            "width": 759,
+            "height": 451
+          },
+          "hit": true,
+          "coveredBy": "A"
+        },
+        {
+          "name": "reset-activation-and-map-focus",
+          "passed": true
+        },
+        {
+          "name": "undo-restores-empty-action",
+          "passed": true,
+          "rect": {
+            "x": 398.5,
+            "y": 348.5,
+            "width": 100,
+            "height": 44
+          },
+          "viewport": {
+            "width": 759,
+            "height": 451
+          },
+          "hit": true,
+          "coveredBy": "BUTTON"
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 800
+      },
+      "factor": 1,
+      "first": {
+        "metrics": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1246,
+            "clientHeight": 703
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1246,
+            "clientHeight": 703,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 1246,
+            "height": 703
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1246,
+            "clientHeight": 703
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1246,
+            "clientHeight": 703,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 1246,
+            "height": 703
+          }
+        },
+        "dom": {
+          "width": 1246,
+          "height": 703,
+          "dpr": 1,
+          "pinch": 1,
+          "cssZoom": "1",
+          "searchFont": "14px",
+          "overflow": false
+        }
+      },
+      "checks": [
+        {
+          "name": "actual-100-percent-baseline",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 800
+      },
+      "factor": 2,
+      "first": {
+        "metrics": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1246,
+            "clientHeight": 703
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 1246,
+            "clientHeight": 703,
+            "scale": 1,
+            "zoom": 2
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 1246,
+            "height": 703
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 623,
+            "clientHeight": 351
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 623,
+            "clientHeight": 351.5,
+            "scale": 1,
+            "zoom": 2
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 623,
+            "height": 351
+          }
+        },
+        "dom": {
+          "width": 623,
+          "height": 351,
+          "dpr": 2,
+          "pinch": 1,
+          "cssZoom": "1",
+          "searchFont": "14px",
+          "overflow": false
+        }
+      },
+      "checks": [
+        {
+          "name": "empty-reset-action",
+          "passed": true,
+          "rect": {
+            "x": 31,
+            "y": 134.9140625,
+            "width": 94,
+            "height": 44
+          },
+          "viewport": {
+            "width": 623,
+            "height": 351
+          },
+          "hit": true,
+          "coveredBy": "BUTTON"
+        },
+        {
+          "name": "empty-view-share-open",
+          "passed": true,
+          "rect": {
+            "x": 451,
+            "y": 77,
+            "width": 34,
+            "height": 44
+          },
+          "viewport": {
+            "width": 623,
+            "height": 351
+          },
+          "hit": true,
+          "coveredBy": "share-open"
+        },
+        {
+          "name": "empty-view-home",
+          "passed": true,
+          "rect": {
+            "x": 489,
+            "y": 77,
+            "width": 64,
+            "height": 44
+          },
+          "viewport": {
+            "width": 623,
+            "height": 351
+          },
+          "hit": true,
+          "coveredBy": "home"
+        },
+        {
+          "name": "empty-view-panel-toggle",
+          "passed": true,
+          "rect": {
+            "x": 557,
+            "y": 77,
+            "width": 54,
+            "height": 44
+          },
+          "viewport": {
+            "width": 623,
+            "height": 351
+          },
+          "hit": true,
+          "coveredBy": "panel-toggle"
+        },
+        {
+          "name": "attribution",
+          "passed": true,
+          "rect": {
+            "x": 457.359375,
+            "y": 214.4140625,
+            "width": 125.625,
+            "height": 11
+          },
+          "viewport": {
+            "width": 623,
+            "height": 351
+          },
+          "hit": true,
+          "coveredBy": "A"
+        },
+        {
+          "name": "reset-activation-and-map-focus",
+          "passed": true
+        },
+        {
+          "name": "undo-restores-empty-action",
+          "passed": true,
+          "rect": {
+            "x": 31,
+            "y": 134.9140625,
+            "width": 94,
+            "height": 44
+          },
+          "viewport": {
+            "width": 623,
+            "height": 351
+          },
+          "hit": true,
+          "coveredBy": "BUTTON"
+        },
+        {
+          "name": "collapsed-panel-reset",
+          "passed": true,
+          "rect": {
+            "x": 31,
+            "y": 248.5,
+            "width": 94,
+            "height": 44
+          },
+          "viewport": {
+            "width": 623,
+            "height": 351
+          },
+          "hit": true,
+          "coveredBy": "BUTTON"
+        },
+        {
+          "name": "collapsed-panel-toggle",
+          "passed": true,
+          "rect": {
+            "x": 557,
+            "y": 77,
+            "width": 54,
+            "height": 44
+          },
+          "viewport": {
+            "width": 623,
+            "height": 351
+          },
+          "hit": true,
+          "coveredBy": "panel-toggle"
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\notice-zoom\\edge\\profile-mDd12c",
+    "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\notice-zoom\\edge\\profile-l41FFn",
+    "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\notice-zoom\\edge\\profile-IsAVqN",
+    "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\notice-zoom\\edge\\profile-XGdSDx"
+  ],
+  "errors": [],
+  "external": [],
+  "source_sha256": "f8b2935c21ed7c9d0e8d306e31708a25342fd5abc9a66a650315ad82c462e81a",
+  "scope": "Installed headless browser, genuine default page zoom compared with identical-window 100-percent profile, CDP factor/pinch assertions. Center hit tests and finite recovery tasks, not real user window, screen-reader or complete N09 acceptance."
+}

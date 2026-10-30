@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-27T09:09:47.000704+00:00",
+  "build": {
+    "js": "/assets/index-CtnPWcB4.js",
+    "index_sha256": "df2515c65609ac60d375b5b8494ab3e58b3b6c1736d0b7b983d305359eec65d1",
+    "js_sha256": "079cde2df7ba775fdbaecae3071d4ec8704d04a67e63c8d2c61db830ec178a56"
+  },
+  "sha256": {
+    "apps/web/client/src/map-controller.ts": "4ff05aa6c1c266df3204b46b9d159a77603bb7e8f4f46ff4967072dd5f2d3dcd",
+    "scripts/verify_label_priority.cjs": "2eff1a99fc35bd9830eb8b056ceef4339995d16bc7db5a8a64d1050ad175924f",
+    "scripts/browser_target.cjs": "8232047ab043000ece78339b36ba3871d3b2fd69fedf9ebf958441897d56f801",
+    "scripts/verify_product_label_spacing.cjs": "1c9ac504ff03d7663745a8d9eee2876ebb0af2dda6178e231d55d5fd5c096ea9",
+    "scripts/verify_line_label_integration.cjs": "2a8b98001ebfea99c0ca925988d0d828cab4ca2505ddc204de7232e2a748d437",
+    "docs/evidence/history/label-priority-before.ts": "0e30245fbd2d8806017f12520121798df3e16a00e29900f4acfa3e6a3e434ac4",
+    "apps/web/client/node_modules/maplibre-gl/src/style/pauseable_placement.ts": "b97cf4a196b0c9bd6acfadceb7da11cfc6573d0a0d0d832a6f80a9bea1613416",
+    "docs/evidence/label-priority-driver-failure.json": "40e1019d2ba55db3d89022236f9a5fafb5cb7db49861ea9dca1ab3a740a932e9",
+    "docs/evidence/label-priority-north-yard.png": "7fb9362e0cce7a093ffb222fd146ecc82103965a39534d01247ba66e46e4d829"
+  },
+  "reports": [
+    {
+      "file": "docs/evidence/label-priority-before.json",
+      "sha256": "771749401a867085f3979d17478d1c6967d5a23d56f9134bc753864ec0d655e1",
+      "scenes": 3,
+      "checks": 0,
+      "mode": "response-capture and isolated public order experiment",
+      "source_sha256": "3c2fa58424486a8647c4b3bb6cc1977ede9c0da41582d9ddab597f8219b35cab"
+    },
+    {
+      "file": "docs/evidence/label-priority-chrome.json",
+      "sha256": "2d5428855382b9b23d4a9e24a8d7e1e86ac531349afd419851e026886468a120",
+      "scenes": 6,
+      "checks": 0,
+      "mode": "product validation",
+      "source_sha256": "079cde2df7ba775fdbaecae3071d4ec8704d04a67e63c8d2c61db830ec178a56"
+    },
+    {
+      "file": "docs/evidence/label-priority-edge.json",
+      "sha256": "f4cd800456b8841bc0e383ed827050bc71d63cc23440906dfda147a5c05f00d2",
+      "scenes": 6,
+      "checks": 0,
+      "mode": "product validation",
+      "source_sha256": "079cde2df7ba775fdbaecae3071d4ec8704d04a67e63c8d2c61db830ec178a56"
+    },
+    {
+      "file": "docs/evidence/label-priority-spacing.json",
+      "sha256": "09b028f3a61a13804540b35f2035428d50099fdfd1f211533f495430ba088a23",
+      "scenes": 4,
+      "checks": 0,
+      "mode": null,
+      "source_sha256": "079cde2df7ba775fdbaecae3071d4ec8704d04a67e63c8d2c61db830ec178a56"
+    },
+    {
+      "file": "docs/evidence/label-priority-integration.json",
+      "sha256": "b44ea67a2f04c166f3b084a03a572afb57747b4b423f476b28e1552b45e4869c",
+      "scenes": 0,
+      "checks": 6,
+      "mode": null,
+      "source_sha256": "079cde2df7ba775fdbaecae3071d4ec8704d04a67e63c8d2c61db830ec178a56"
+    }
+  ],
+  "before_experiment": "Original index-DF9QuDZj product, only public moveLayer(facility-symbols,minor-line-captions) changed in isolated page. Real north-yard unique publicly queryable line label IDs 6 to 13; facility caption IDs 33 to 25. Other two scene name sets unchanged. Not an application source replacement or all-label coverage proof.",
+  "validation": "Strict typecheck/build; actual installed Chrome/Edge each three real scenes, selected-station task and snapshot out/return tasks. Actual selected node/676578837 label present. Existing native spacing audit four views passes (42 short captions; same-identity min 308.3135px in yard /323.1828px tram). Existing six name integration groups pass.",
+  "driver_repair": "First Chrome validation driver mistakenly used tap on non-touch desktop context; failed explicitly after three scene checks. Changed to native desktop click and fixed version-selection driver to press apply and verify actual snapshot URL. Final two runs pass; first failure retained.",
+  "limits": [
+    "Unique public query feature IDs are not exact native anchor/glyph counts. Only spacing driver reads version-specific native placements.",
+    "No new universal coverage, all overlaps/glyph-edge distance, online basemap, physical device, reader, full browser/200% or performance proof.",
+    "Facilities are allowed to yield text to higher-priority names; this change does not remove facility objects or identity.",
+    "Historical reports keep original builds; complete MVP including independent human QA remains active."
+  ],
+  "driver_comment_note": "After validation, corrected an inaccurate comment about which legacy schema was chosen. Runtime statements unchanged; actual transition was accessible-20261022, which includes facility layers."
+}

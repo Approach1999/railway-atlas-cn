@@ -1,0 +1,1290 @@
+{
+  "date": "2026-10-27T04:20:41.417Z",
+  "browser": "155.0.8059.85",
+  "original_sha256": "40023ed6750f817042794ec806895593c1d05e6afe52c361b43bc7e366ddd822",
+  "samples": [
+    {
+      "preset": "highspeed",
+      "api": [
+        {
+          "stage": "submit",
+          "start": 1314,
+          "end": 1314.0999999940395,
+          "features": 216
+        }
+      ],
+      "stages": [
+        {
+          "name": "atlas:filters-applied",
+          "ms": 12.200000002980232,
+          "detail": {
+            "revision": 1,
+            "preset": "highspeed"
+          }
+        },
+        {
+          "name": "atlas:filters-rendered",
+          "ms": 71.70000000298023,
+          "detail": {
+            "revision": 1,
+            "preset": "highspeed",
+            "snapshot": "shenyang-mvp-20261023",
+            "rendered_tracks": 223,
+            "track_classes": [
+              "high_speed"
+            ],
+            "style_layers": {
+              "expected": [
+                "urban-boundary",
+                "casing-major-mapped",
+                "track-major-mapped",
+                "casing-major-construction",
+                "track-major-construction",
+                "casing-major-proposed",
+                "track-major-proposed",
+                "casing-major-disused",
+                "track-major-disused",
+                "casing-major-abandoned",
+                "track-major-abandoned",
+                "casing-major-razed",
+                "track-major-razed",
+                "casing-major-conflict",
+                "track-major-conflict",
+                "warning-major-conflict",
+                "casing-major-unknown",
+                "track-major-unknown",
+                "warning-major-unknown",
+                "casing-minor-mapped",
+                "track-minor-mapped",
+                "casing-minor-construction",
+                "track-minor-construction",
+                "casing-minor-proposed",
+                "track-minor-proposed",
+                "casing-minor-disused",
+                "track-minor-disused",
+                "casing-minor-abandoned",
+                "track-minor-abandoned",
+                "casing-minor-razed",
+                "track-minor-razed",
+                "casing-minor-conflict",
+                "track-minor-conflict",
+                "warning-minor-conflict",
+                "casing-minor-unknown",
+                "track-minor-unknown",
+                "warning-minor-unknown",
+                "minor-line-captions",
+                "minor-line-names",
+                "line-captions",
+                "line-names"
+              ],
+              "missing": []
+            },
+            "name_labels": {
+              "status": "ready",
+              "enabled": true,
+              "source_loaded": true
+            },
+            "failed_tiles": 0,
+            "station_source_updates": 0,
+            "selection_source_updates": 1,
+            "resource_errors": []
+          }
+        },
+        {
+          "name": "atlas:filters-settled",
+          "ms": 565.7999999970198,
+          "detail": {
+            "revision": 1,
+            "preset": "highspeed",
+            "snapshot": "shenyang-mvp-20261023",
+            "rendered_tracks": 223,
+            "track_classes": [
+              "high_speed"
+            ],
+            "style_layers": {
+              "expected": [
+                "urban-boundary",
+                "casing-major-mapped",
+                "track-major-mapped",
+                "casing-major-construction",
+                "track-major-construction",
+                "casing-major-proposed",
+                "track-major-proposed",
+                "casing-major-disused",
+                "track-major-disused",
+                "casing-major-abandoned",
+                "track-major-abandoned",
+                "casing-major-razed",
+                "track-major-razed",
+                "casing-major-conflict",
+                "track-major-conflict",
+                "warning-major-conflict",
+                "casing-major-unknown",
+                "track-major-unknown",
+                "warning-major-unknown",
+                "casing-minor-mapped",
+                "track-minor-mapped",
+                "casing-minor-construction",
+                "track-minor-construction",
+                "casing-minor-proposed",
+                "track-minor-proposed",
+                "casing-minor-disused",
+                "track-minor-disused",
+                "casing-minor-abandoned",
+                "track-minor-abandoned",
+                "casing-minor-razed",
+                "track-minor-razed",
+                "casing-minor-conflict",
+                "track-minor-conflict",
+                "warning-minor-conflict",
+                "casing-minor-unknown",
+                "track-minor-unknown",
+                "warning-minor-unknown",
+                "minor-line-captions",
+                "minor-line-names",
+                "line-captions",
+                "line-names"
+              ],
+              "missing": []
+            },
+            "name_labels": {
+              "status": "ready",
+              "enabled": true,
+              "source_loaded": true
+            },
+            "failed_tiles": 0,
+            "station_source_updates": 0,
+            "selection_source_updates": 1,
+            "resource_errors": []
+          }
+        }
+      ]
+    },
+    {
+      "preset": "overview",
+      "api": [
+        {
+          "stage": "submit",
+          "start": 1888.0999999940395,
+          "end": 1888.0999999940395,
+          "features": 747
+        }
+      ],
+      "stages": [
+        {
+          "name": "atlas:filters-applied",
+          "ms": 12.899999991059303,
+          "detail": {
+            "revision": 2,
+            "preset": "overview"
+          }
+        },
+        {
+          "name": "atlas:filters-rendered",
+          "ms": 98.8999999910593,
+          "detail": {
+            "revision": 2,
+            "preset": "overview",
+            "snapshot": "shenyang-mvp-20261023",
+            "rendered_tracks": 778,
+            "track_classes": [
+              "conventional_main",
+              "conventional_other",
+              "high_speed",
+              "unknown"
+            ],
+            "style_layers": {
+              "expected": [
+                "urban-boundary",
+                "casing-major-mapped",
+                "track-major-mapped",
+                "casing-major-construction",
+                "track-major-construction",
+                "casing-major-proposed",
+                "track-major-proposed",
+                "casing-major-disused",
+                "track-major-disused",
+                "casing-major-abandoned",
+                "track-major-abandoned",
+                "casing-major-razed",
+                "track-major-razed",
+                "casing-major-conflict",
+                "track-major-conflict",
+                "warning-major-conflict",
+                "casing-major-unknown",
+                "track-major-unknown",
+                "warning-major-unknown",
+                "casing-minor-mapped",
+                "track-minor-mapped",
+                "casing-minor-construction",
+                "track-minor-construction",
+                "casing-minor-proposed",
+                "track-minor-proposed",
+                "casing-minor-disused",
+                "track-minor-disused",
+                "casing-minor-abandoned",
+                "track-minor-abandoned",
+                "casing-minor-razed",
+                "track-minor-razed",
+                "casing-minor-conflict",
+                "track-minor-conflict",
+                "warning-minor-conflict",
+                "casing-minor-unknown",
+                "track-minor-unknown",
+                "warning-minor-unknown",
+                "minor-line-captions",
+                "minor-line-names",
+                "line-captions",
+                "line-names"
+              ],
+              "missing": []
+            },
+            "name_labels": {
+              "status": "ready",
+              "enabled": true,
+              "source_loaded": true
+            },
+            "failed_tiles": 0,
+            "station_source_updates": 0,
+            "selection_source_updates": 1,
+            "resource_errors": []
+          }
+        },
+        {
+          "name": "atlas:filters-settled",
+          "ms": 699.7999999970198,
+          "detail": {
+            "revision": 2,
+            "preset": "overview",
+            "snapshot": "shenyang-mvp-20261023",
+            "rendered_tracks": 778,
+            "track_classes": [
+              "conventional_main",
+              "conventional_other",
+              "high_speed",
+              "unknown"
+            ],
+            "style_layers": {
+              "expected": [
+                "urban-boundary",
+                "casing-major-mapped",
+                "track-major-mapped",
+                "casing-major-construction",
+                "track-major-construction",
+                "casing-major-proposed",
+                "track-major-proposed",
+                "casing-major-disused",
+                "track-major-disused",
+                "casing-major-abandoned",
+                "track-major-abandoned",
+                "casing-major-razed",
+                "track-major-razed",
+                "casing-major-conflict",
+                "track-major-conflict",
+                "warning-major-conflict",
+                "casing-major-unknown",
+                "track-major-unknown",
+                "warning-major-unknown",
+                "casing-minor-mapped",
+                "track-minor-mapped",
+                "casing-minor-construction",
+                "track-minor-construction",
+                "casing-minor-proposed",
+                "track-minor-proposed",
+                "casing-minor-disused",
+                "track-minor-disused",
+                "casing-minor-abandoned",
+                "track-minor-abandoned",
+                "casing-minor-razed",
+                "track-minor-razed",
+                "casing-minor-conflict",
+                "track-minor-conflict",
+                "warning-minor-conflict",
+                "casing-minor-unknown",
+                "track-minor-unknown",
+                "warning-minor-unknown",
+                "minor-line-captions",
+                "minor-line-names",
+                "line-captions",
+                "line-names"
+              ],
+              "missing": []
+            },
+            "name_labels": {
+              "status": "ready",
+              "enabled": true,
+              "source_loaded": true
+            },
+            "failed_tiles": 0,
+            "station_source_updates": 0,
+            "selection_source_updates": 1,
+            "resource_errors": []
+          }
+        }
+      ]
+    },
+    {
+      "preset": "highspeed",
+      "api": [
+        {
+          "stage": "submit",
+          "start": 2587,
+          "end": 2587,
+          "features": 216
+        }
+      ],
+      "stages": [
+        {
+          "name": "atlas:filters-applied",
+          "ms": 9.5,
+          "detail": {
+            "revision": 3,
+            "preset": "highspeed"
+          }
+        },
+        {
+          "name": "atlas:filters-rendered",
+          "ms": 59.29999999701977,
+          "detail": {
+            "revision": 3,
+            "preset": "highspeed",
+            "snapshot": "shenyang-mvp-20261023",
+            "rendered_tracks": 223,
+            "track_classes": [
+              "high_speed"
+            ],
+            "style_layers": {
+              "expected": [
+                "urban-boundary",
+                "casing-major-mapped",
+                "track-major-mapped",
+                "casing-major-construction",
+                "track-major-construction",
+                "casing-major-proposed",
+                "track-major-proposed",
+                "casing-major-disused",
+                "track-major-disused",
+                "casing-major-abandoned",
+                "track-major-abandoned",
+                "casing-major-razed",
+                "track-major-razed",
+                "casing-major-conflict",
+                "track-major-conflict",
+                "warning-major-conflict",
+                "casing-major-unknown",
+                "track-major-unknown",
+                "warning-major-unknown",
+                "casing-minor-mapped",
+                "track-minor-mapped",
+                "casing-minor-construction",
+                "track-minor-construction",
+                "casing-minor-proposed",
+                "track-minor-proposed",
+                "casing-minor-disused",
+                "track-minor-disused",
+                "casing-minor-abandoned",
+                "track-minor-abandoned",
+                "casing-minor-razed",
+                "track-minor-razed",
+                "casing-minor-conflict",
+                "track-minor-conflict",
+                "warning-minor-conflict",
+                "casing-minor-unknown",
+                "track-minor-unknown",
+                "warning-minor-unknown",
+                "minor-line-captions",
+                "minor-line-names",
+                "line-captions",
+                "line-names"
+              ],
+              "missing": []
+            },
+            "name_labels": {
+              "status": "ready",
+              "enabled": true,
+              "source_loaded": true
+            },
+            "failed_tiles": 0,
+            "station_source_updates": 0,
+            "selection_source_updates": 1,
+            "resource_errors": []
+          }
+        },
+        {
+          "name": "atlas:filters-settled",
+          "ms": 356.70000000298023,
+          "detail": {
+            "revision": 3,
+            "preset": "highspeed",
+            "snapshot": "shenyang-mvp-20261023",
+            "rendered_tracks": 223,
+            "track_classes": [
+              "high_speed"
+            ],
+            "style_layers": {
+              "expected": [
+                "urban-boundary",
+                "casing-major-mapped",
+                "track-major-mapped",
+                "casing-major-construction",
+                "track-major-construction",
+                "casing-major-proposed",
+                "track-major-proposed",
+                "casing-major-disused",
+                "track-major-disused",
+                "casing-major-abandoned",
+                "track-major-abandoned",
+                "casing-major-razed",
+                "track-major-razed",
+                "casing-major-conflict",
+                "track-major-conflict",
+                "warning-major-conflict",
+                "casing-major-unknown",
+                "track-major-unknown",
+                "warning-major-unknown",
+                "casing-minor-mapped",
+                "track-minor-mapped",
+                "casing-minor-construction",
+                "track-minor-construction",
+                "casing-minor-proposed",
+                "track-minor-proposed",
+                "casing-minor-disused",
+                "track-minor-disused",
+                "casing-minor-abandoned",
+                "track-minor-abandoned",
+                "casing-minor-razed",
+                "track-minor-razed",
+                "casing-minor-conflict",
+                "track-minor-conflict",
+                "warning-minor-conflict",
+                "casing-minor-unknown",
+                "track-minor-unknown",
+                "warning-minor-unknown",
+                "minor-line-captions",
+                "minor-line-names",
+                "line-captions",
+                "line-names"
+              ],
+              "missing": []
+            },
+            "name_labels": {
+              "status": "ready",
+              "enabled": true,
+              "source_loaded": true
+            },
+            "failed_tiles": 0,
+            "station_source_updates": 0,
+            "selection_source_updates": 1,
+            "resource_errors": []
+          }
+        }
+      ]
+    },
+    {
+      "preset": "overview",
+      "api": [
+        {
+          "stage": "submit",
+          "start": 2947.0999999940395,
+          "end": 2947.2000000029802,
+          "features": 747
+        }
+      ],
+      "stages": [
+        {
+          "name": "atlas:filters-applied",
+          "ms": 10.5,
+          "detail": {
+            "revision": 4,
+            "preset": "overview"
+          }
+        },
+        {
+          "name": "atlas:filters-rendered",
+          "ms": 100.8999999910593,
+          "detail": {
+            "revision": 4,
+            "preset": "overview",
+            "snapshot": "shenyang-mvp-20261023",
+            "rendered_tracks": 778,
+            "track_classes": [
+              "conventional_main",
+              "conventional_other",
+              "high_speed",
+              "unknown"
+            ],
+            "style_layers": {
+              "expected": [
+                "urban-boundary",
+                "casing-major-mapped",
+                "track-major-mapped",
+                "casing-major-construction",
+                "track-major-construction",
+                "casing-major-proposed",
+                "track-major-proposed",
+                "casing-major-disused",
+                "track-major-disused",
+                "casing-major-abandoned",
+                "track-major-abandoned",
+                "casing-major-razed",
+                "track-major-razed",
+                "casing-major-conflict",
+                "track-major-conflict",
+                "warning-major-conflict",
+                "casing-major-unknown",
+                "track-major-unknown",
+                "warning-major-unknown",
+                "casing-minor-mapped",
+                "track-minor-mapped",
+                "casing-minor-construction",
+                "track-minor-construction",
+                "casing-minor-proposed",
+                "track-minor-proposed",
+                "casing-minor-disused",
+                "track-minor-disused",
+                "casing-minor-abandoned",
+                "track-minor-abandoned",
+                "casing-minor-razed",
+                "track-minor-razed",
+                "casing-minor-conflict",
+                "track-minor-conflict",
+                "warning-minor-conflict",
+                "casing-minor-unknown",
+                "track-minor-unknown",
+                "warning-minor-unknown",
+                "minor-line-captions",
+                "minor-line-names",
+                "line-captions",
+                "line-names"
+              ],
+              "missing": []
+            },
+            "name_labels": {
+              "status": "ready",
+              "enabled": true,
+              "source_loaded": true
+            },
+            "failed_tiles": 0,
+            "station_source_updates": 0,
+            "selection_source_updates": 1,
+            "resource_errors": []
+          }
+        },
+        {
+          "name": "atlas:filters-settled",
+          "ms": 625.5,
+          "detail": {
+            "revision": 4,
+            "preset": "overview",
+            "snapshot": "shenyang-mvp-20261023",
+            "rendered_tracks": 778,
+            "track_classes": [
+              "conventional_main",
+              "conventional_other",
+              "high_speed",
+              "unknown"
+            ],
+            "style_layers": {
+              "expected": [
+                "urban-boundary",
+                "casing-major-mapped",
+                "track-major-mapped",
+                "casing-major-construction",
+                "track-major-construction",
+                "casing-major-proposed",
+                "track-major-proposed",
+                "casing-major-disused",
+                "track-major-disused",
+                "casing-major-abandoned",
+                "track-major-abandoned",
+                "casing-major-razed",
+                "track-major-razed",
+                "casing-major-conflict",
+                "track-major-conflict",
+                "warning-major-conflict",
+                "casing-major-unknown",
+                "track-major-unknown",
+                "warning-major-unknown",
+                "casing-minor-mapped",
+                "track-minor-mapped",
+                "casing-minor-construction",
+                "track-minor-construction",
+                "casing-minor-proposed",
+                "track-minor-proposed",
+                "casing-minor-disused",
+                "track-minor-disused",
+                "casing-minor-abandoned",
+                "track-minor-abandoned",
+                "casing-minor-razed",
+                "track-minor-razed",
+                "casing-minor-conflict",
+                "track-minor-conflict",
+                "warning-minor-conflict",
+                "casing-minor-unknown",
+                "track-minor-unknown",
+                "warning-minor-unknown",
+                "minor-line-captions",
+                "minor-line-names",
+                "line-captions",
+                "line-names"
+              ],
+              "missing": []
+            },
+            "name_labels": {
+              "status": "ready",
+              "enabled": true,
+              "source_loaded": true
+            },
+            "failed_tiles": 0,
+            "station_source_updates": 0,
+            "selection_source_updates": 1,
+            "resource_errors": []
+          }
+        }
+      ]
+    },
+    {
+      "preset": "highspeed",
+      "api": [
+        {
+          "stage": "submit",
+          "start": 3573.2000000029802,
+          "end": 3573.2999999970198,
+          "features": 216
+        }
+      ],
+      "stages": [
+        {
+          "name": "atlas:filters-applied",
+          "ms": 8.299999997019768,
+          "detail": {
+            "revision": 5,
+            "preset": "highspeed"
+          }
+        },
+        {
+          "name": "atlas:filters-rendered",
+          "ms": 65.8999999910593,
+          "detail": {
+            "revision": 5,
+            "preset": "highspeed",
+            "snapshot": "shenyang-mvp-20261023",
+            "rendered_tracks": 223,
+            "track_classes": [
+              "high_speed"
+            ],
+            "style_layers": {
+              "expected": [
+                "urban-boundary",
+                "casing-major-mapped",
+                "track-major-mapped",
+                "casing-major-construction",
+                "track-major-construction",
+                "casing-major-proposed",
+                "track-major-proposed",
+                "casing-major-disused",
+                "track-major-disused",
+                "casing-major-abandoned",
+                "track-major-abandoned",
+                "casing-major-razed",
+                "track-major-razed",
+                "casing-major-conflict",
+                "track-major-conflict",
+                "warning-major-conflict",
+                "casing-major-unknown",
+                "track-major-unknown",
+                "warning-major-unknown",
+                "casing-minor-mapped",
+                "track-minor-mapped",
+                "casing-minor-construction",
+                "track-minor-construction",
+                "casing-minor-proposed",
+                "track-minor-proposed",
+                "casing-minor-disused",
+                "track-minor-disused",
+                "casing-minor-abandoned",
+                "track-minor-abandoned",
+                "casing-minor-razed",
+                "track-minor-razed",
+                "casing-minor-conflict",
+                "track-minor-conflict",
+                "warning-minor-conflict",
+                "casing-minor-unknown",
+                "track-minor-unknown",
+                "warning-minor-unknown",
+                "minor-line-captions",
+                "minor-line-names",
+                "line-captions",
+                "line-names"
+              ],
+              "missing": []
+            },
+            "name_labels": {
+              "status": "ready",
+              "enabled": true,
+              "source_loaded": true
+            },
+            "failed_tiles": 0,
+            "station_source_updates": 0,
+            "selection_source_updates": 1,
+            "resource_errors": []
+          }
+        },
+        {
+          "name": "atlas:filters-settled",
+          "ms": 661.2000000029802,
+          "detail": {
+            "revision": 5,
+            "preset": "highspeed",
+            "snapshot": "shenyang-mvp-20261023",
+            "rendered_tracks": 223,
+            "track_classes": [
+              "high_speed"
+            ],
+            "style_layers": {
+              "expected": [
+                "urban-boundary",
+                "casing-major-mapped",
+                "track-major-mapped",
+                "casing-major-construction",
+                "track-major-construction",
+                "casing-major-proposed",
+                "track-major-proposed",
+                "casing-major-disused",
+                "track-major-disused",
+                "casing-major-abandoned",
+                "track-major-abandoned",
+                "casing-major-razed",
+                "track-major-razed",
+                "casing-major-conflict",
+                "track-major-conflict",
+                "warning-major-conflict",
+                "casing-major-unknown",
+                "track-major-unknown",
+                "warning-major-unknown",
+                "casing-minor-mapped",
+                "track-minor-mapped",
+                "casing-minor-construction",
+                "track-minor-construction",
+                "casing-minor-proposed",
+                "track-minor-proposed",
+                "casing-minor-disused",
+                "track-minor-disused",
+                "casing-minor-abandoned",
+                "track-minor-abandoned",
+                "casing-minor-razed",
+                "track-minor-razed",
+                "casing-minor-conflict",
+                "track-minor-conflict",
+                "warning-minor-conflict",
+                "casing-minor-unknown",
+                "track-minor-unknown",
+                "warning-minor-unknown",
+                "minor-line-captions",
+                "minor-line-names",
+                "line-captions",
+                "line-names"
+              ],
+              "missing": []
+            },
+            "name_labels": {
+              "status": "ready",
+              "enabled": true,
+              "source_loaded": true
+            },
+            "failed_tiles": 0,
+            "station_source_updates": 0,
+            "selection_source_updates": 1,
+            "resource_errors": []
+          }
+        }
+      ]
+    },
+    {
+      "preset": "overview",
+      "api": [
+        {
+          "stage": "submit",
+          "start": 4239.5999999940395,
+          "end": 4239.5999999940395,
+          "features": 747
+        }
+      ],
+      "stages": [
+        {
+          "name": "atlas:filters-applied",
+          "ms": 10.800000011920929,
+          "detail": {
+            "revision": 6,
+            "preset": "overview"
+          }
+        },
+        {
+          "name": "atlas:filters-rendered",
+          "ms": 85.30000001192093,
+          "detail": {
+            "revision": 6,
+            "preset": "overview",
+            "snapshot": "shenyang-mvp-20261023",
+            "rendered_tracks": 778,
+            "track_classes": [
+              "conventional_main",
+              "conventional_other",
+              "high_speed",
+              "unknown"
+            ],
+            "style_layers": {
+              "expected": [
+                "urban-boundary",
+                "casing-major-mapped",
+                "track-major-mapped",
+                "casing-major-construction",
+                "track-major-construction",
+                "casing-major-proposed",
+                "track-major-proposed",
+                "casing-major-disused",
+                "track-major-disused",
+                "casing-major-abandoned",
+                "track-major-abandoned",
+                "casing-major-razed",
+                "track-major-razed",
+                "casing-major-conflict",
+                "track-major-conflict",
+                "warning-major-conflict",
+                "casing-major-unknown",
+                "track-major-unknown",
+                "warning-major-unknown",
+                "casing-minor-mapped",
+                "track-minor-mapped",
+                "casing-minor-construction",
+                "track-minor-construction",
+                "casing-minor-proposed",
+                "track-minor-proposed",
+                "casing-minor-disused",
+                "track-minor-disused",
+                "casing-minor-abandoned",
+                "track-minor-abandoned",
+                "casing-minor-razed",
+                "track-minor-razed",
+                "casing-minor-conflict",
+                "track-minor-conflict",
+                "warning-minor-conflict",
+                "casing-minor-unknown",
+                "track-minor-unknown",
+                "warning-minor-unknown",
+                "minor-line-captions",
+                "minor-line-names",
+                "line-captions",
+                "line-names"
+              ],
+              "missing": []
+            },
+            "name_labels": {
+              "status": "ready",
+              "enabled": true,
+              "source_loaded": true
+            },
+            "failed_tiles": 0,
+            "station_source_updates": 0,
+            "selection_source_updates": 1,
+            "resource_errors": []
+          }
+        },
+        {
+          "name": "atlas:filters-settled",
+          "ms": 679.2000000029802,
+          "detail": {
+            "revision": 6,
+            "preset": "overview",
+            "snapshot": "shenyang-mvp-20261023",
+            "rendered_tracks": 778,
+            "track_classes": [
+              "conventional_main",
+              "conventional_other",
+              "high_speed",
+              "unknown"
+            ],
+            "style_layers": {
+              "expected": [
+                "urban-boundary",
+                "casing-major-mapped",
+                "track-major-mapped",
+                "casing-major-construction",
+                "track-major-construction",
+                "casing-major-proposed",
+                "track-major-proposed",
+                "casing-major-disused",
+                "track-major-disused",
+                "casing-major-abandoned",
+                "track-major-abandoned",
+                "casing-major-razed",
+                "track-major-razed",
+                "casing-major-conflict",
+                "track-major-conflict",
+                "warning-major-conflict",
+                "casing-major-unknown",
+                "track-major-unknown",
+                "warning-major-unknown",
+                "casing-minor-mapped",
+                "track-minor-mapped",
+                "casing-minor-construction",
+                "track-minor-construction",
+                "casing-minor-proposed",
+                "track-minor-proposed",
+                "casing-minor-disused",
+                "track-minor-disused",
+                "casing-minor-abandoned",
+                "track-minor-abandoned",
+                "casing-minor-razed",
+                "track-minor-razed",
+                "casing-minor-conflict",
+                "track-minor-conflict",
+                "warning-minor-conflict",
+                "casing-minor-unknown",
+                "track-minor-unknown",
+                "warning-minor-unknown",
+                "minor-line-captions",
+                "minor-line-names",
+                "line-captions",
+                "line-names"
+              ],
+              "missing": []
+            },
+            "name_labels": {
+              "status": "ready",
+              "enabled": true,
+              "source_loaded": true
+            },
+            "failed_tiles": 0,
+            "station_source_updates": 0,
+            "selection_source_updates": 1,
+            "resource_errors": []
+          }
+        }
+      ]
+    },
+    {
+      "preset": "highspeed",
+      "api": [
+        {
+          "stage": "submit",
+          "start": 4918.29999999702,
+          "end": 4918.29999999702,
+          "features": 216
+        }
+      ],
+      "stages": [
+        {
+          "name": "atlas:filters-applied",
+          "ms": 8,
+          "detail": {
+            "revision": 7,
+            "preset": "highspeed"
+          }
+        },
+        {
+          "name": "atlas:filters-rendered",
+          "ms": 57.099999994039536,
+          "detail": {
+            "revision": 7,
+            "preset": "highspeed",
+            "snapshot": "shenyang-mvp-20261023",
+            "rendered_tracks": 223,
+            "track_classes": [
+              "high_speed"
+            ],
+            "style_layers": {
+              "expected": [
+                "urban-boundary",
+                "casing-major-mapped",
+                "track-major-mapped",
+                "casing-major-construction",
+                "track-major-construction",
+                "casing-major-proposed",
+                "track-major-proposed",
+                "casing-major-disused",
+                "track-major-disused",
+                "casing-major-abandoned",
+                "track-major-abandoned",
+                "casing-major-razed",
+                "track-major-razed",
+                "casing-major-conflict",
+                "track-major-conflict",
+                "warning-major-conflict",
+                "casing-major-unknown",
+                "track-major-unknown",
+                "warning-major-unknown",
+                "casing-minor-mapped",
+                "track-minor-mapped",
+                "casing-minor-construction",
+                "track-minor-construction",
+                "casing-minor-proposed",
+                "track-minor-proposed",
+                "casing-minor-disused",
+                "track-minor-disused",
+                "casing-minor-abandoned",
+                "track-minor-abandoned",
+                "casing-minor-razed",
+                "track-minor-razed",
+                "casing-minor-conflict",
+                "track-minor-conflict",
+                "warning-minor-conflict",
+                "casing-minor-unknown",
+                "track-minor-unknown",
+                "warning-minor-unknown",
+                "minor-line-captions",
+                "minor-line-names",
+                "line-captions",
+                "line-names"
+              ],
+              "missing": []
+            },
+            "name_labels": {
+              "status": "ready",
+              "enabled": true,
+              "source_loaded": true
+            },
+            "failed_tiles": 0,
+            "station_source_updates": 0,
+            "selection_source_updates": 1,
+            "resource_errors": []
+          }
+        },
+        {
+          "name": "atlas:filters-settled",
+          "ms": 355.59999999403954,
+          "detail": {
+            "revision": 7,
+            "preset": "highspeed",
+            "snapshot": "shenyang-mvp-20261023",
+            "rendered_tracks": 223,
+            "track_classes": [
+              "high_speed"
+            ],
+            "style_layers": {
+              "expected": [
+                "urban-boundary",
+                "casing-major-mapped",
+                "track-major-mapped",
+                "casing-major-construction",
+                "track-major-construction",
+                "casing-major-proposed",
+                "track-major-proposed",
+                "casing-major-disused",
+                "track-major-disused",
+                "casing-major-abandoned",
+                "track-major-abandoned",
+                "casing-major-razed",
+                "track-major-razed",
+                "casing-major-conflict",
+                "track-major-conflict",
+                "warning-major-conflict",
+                "casing-major-unknown",
+                "track-major-unknown",
+                "warning-major-unknown",
+                "casing-minor-mapped",
+                "track-minor-mapped",
+                "casing-minor-construction",
+                "track-minor-construction",
+                "casing-minor-proposed",
+                "track-minor-proposed",
+                "casing-minor-disused",
+                "track-minor-disused",
+                "casing-minor-abandoned",
+                "track-minor-abandoned",
+                "casing-minor-razed",
+                "track-minor-razed",
+                "casing-minor-conflict",
+                "track-minor-conflict",
+                "warning-minor-conflict",
+                "casing-minor-unknown",
+                "track-minor-unknown",
+                "warning-minor-unknown",
+                "minor-line-captions",
+                "minor-line-names",
+                "line-captions",
+                "line-names"
+              ],
+              "missing": []
+            },
+            "name_labels": {
+              "status": "ready",
+              "enabled": true,
+              "source_loaded": true
+            },
+            "failed_tiles": 0,
+            "station_source_updates": 0,
+            "selection_source_updates": 1,
+            "resource_errors": []
+          }
+        }
+      ]
+    },
+    {
+      "preset": "overview",
+      "api": [
+        {
+          "stage": "submit",
+          "start": 5277.9000000059605,
+          "end": 5277.9000000059605,
+          "features": 747
+        }
+      ],
+      "stages": [
+        {
+          "name": "atlas:filters-applied",
+          "ms": 9.700000002980232,
+          "detail": {
+            "revision": 8,
+            "preset": "overview"
+          }
+        },
+        {
+          "name": "atlas:filters-rendered",
+          "ms": 82,
+          "detail": {
+            "revision": 8,
+            "preset": "overview",
+            "snapshot": "shenyang-mvp-20261023",
+            "rendered_tracks": 778,
+            "track_classes": [
+              "conventional_main",
+              "conventional_other",
+              "high_speed",
+              "unknown"
+            ],
+            "style_layers": {
+              "expected": [
+                "urban-boundary",
+                "casing-major-mapped",
+                "track-major-mapped",
+                "casing-major-construction",
+                "track-major-construction",
+                "casing-major-proposed",
+                "track-major-proposed",
+                "casing-major-disused",
+                "track-major-disused",
+                "casing-major-abandoned",
+                "track-major-abandoned",
+                "casing-major-razed",
+                "track-major-razed",
+                "casing-major-conflict",
+                "track-major-conflict",
+                "warning-major-conflict",
+                "casing-major-unknown",
+                "track-major-unknown",
+                "warning-major-unknown",
+                "casing-minor-mapped",
+                "track-minor-mapped",
+                "casing-minor-construction",
+                "track-minor-construction",
+                "casing-minor-proposed",
+                "track-minor-proposed",
+                "casing-minor-disused",
+                "track-minor-disused",
+                "casing-minor-abandoned",
+                "track-minor-abandoned",
+                "casing-minor-razed",
+                "track-minor-razed",
+                "casing-minor-conflict",
+                "track-minor-conflict",
+                "warning-minor-conflict",
+                "casing-minor-unknown",
+                "track-minor-unknown",
+                "warning-minor-unknown",
+                "minor-line-captions",
+                "minor-line-names",
+                "line-captions",
+                "line-names"
+              ],
+              "missing": []
+            },
+            "name_labels": {
+              "status": "ready",
+              "enabled": true,
+              "source_loaded": true
+            },
+            "failed_tiles": 0,
+            "station_source_updates": 0,
+            "selection_source_updates": 1,
+            "resource_errors": []
+          }
+        },
+        {
+          "name": "atlas:filters-settled",
+          "ms": 609,
+          "detail": {
+            "revision": 8,
+            "preset": "overview",
+            "snapshot": "shenyang-mvp-20261023",
+            "rendered_tracks": 778,
+            "track_classes": [
+              "conventional_main",
+              "conventional_other",
+              "high_speed",
+              "unknown"
+            ],
+            "style_layers": {
+              "expected": [
+                "urban-boundary",
+                "casing-major-mapped",
+                "track-major-mapped",
+                "casing-major-construction",
+                "track-major-construction",
+                "casing-major-proposed",
+                "track-major-proposed",
+                "casing-major-disused",
+                "track-major-disused",
+                "casing-major-abandoned",
+                "track-major-abandoned",
+                "casing-major-razed",
+                "track-major-razed",
+                "casing-major-conflict",
+                "track-major-conflict",
+                "warning-major-conflict",
+                "casing-major-unknown",
+                "track-major-unknown",
+                "warning-major-unknown",
+                "casing-minor-mapped",
+                "track-minor-mapped",
+                "casing-minor-construction",
+                "track-minor-construction",
+                "casing-minor-proposed",
+                "track-minor-proposed",
+                "casing-minor-disused",
+                "track-minor-disused",
+                "casing-minor-abandoned",
+                "track-minor-abandoned",
+                "casing-minor-razed",
+                "track-minor-razed",
+                "casing-minor-conflict",
+                "track-minor-conflict",
+                "warning-minor-conflict",
+                "casing-minor-unknown",
+                "track-minor-unknown",
+                "warning-minor-unknown",
+                "minor-line-captions",
+                "minor-line-names",
+                "line-captions",
+                "line-names"
+              ],
+              "missing": []
+            },
+            "name_labels": {
+              "status": "ready",
+              "enabled": true,
+              "source_loaded": true
+            },
+            "failed_tiles": 0,
+            "station_source_updates": 0,
+            "selection_source_updates": 1,
+            "resource_errors": []
+          }
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Default GPU, eight overview/highspeed switches, public querySourceFeatures/setData wrappers. No source/layout replacement; diagnostic timings are not an N02 benchmark."
+}

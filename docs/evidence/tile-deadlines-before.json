@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-25T15:20:41.354Z",
+  "browser": "155.0.8059.85",
+  "audit_only": true,
+  "cases": [
+    {
+      "phase": "headers",
+      "partial": false,
+      "outcome": {
+        "retry_present": 0,
+        "status": "铁路地图已就绪。名称与属性来自源标签，点击可查看依据。"
+      },
+      "requests": [
+        {
+          "path": "/snapshots/shenyang-mvp-20261023/tiles/10/863/380.pbf",
+          "headers_sent": false,
+          "closed": true,
+          "close_ms": 480
+        },
+        {
+          "path": "/snapshots/shenyang-mvp-20261023/tiles/10/862/380.pbf",
+          "headers_sent": false,
+          "closed": true,
+          "close_ms": 477
+        },
+        {
+          "path": "/snapshots/shenyang-mvp-20261023/tiles/10/863/381.pbf",
+          "headers_sent": false,
+          "closed": true,
+          "close_ms": 485
+        },
+        {
+          "path": "/snapshots/shenyang-mvp-20261023/tiles/10/862/381.pbf",
+          "headers_sent": false,
+          "closed": true,
+          "close_ms": 484
+        },
+        {
+          "path": "/snapshots/shenyang-mvp-20261023/tiles/13/6904/3046.pbf",
+          "headers_sent": false,
+          "closed": false
+        },
+        {
+          "path": "/snapshots/shenyang-mvp-20261023/tiles/13/6905/3046.pbf",
+          "headers_sent": false,
+          "closed": false
+        },
+        {
+          "path": "/snapshots/shenyang-mvp-20261023/tiles/13/6904/3047.pbf",
+          "headers_sent": false,
+          "closed": false
+        },
+        {
+          "path": "/snapshots/shenyang-mvp-20261023/tiles/13/6904/3045.pbf",
+          "headers_sent": false,
+          "closed": false
+        },
+        {
+          "path": "/snapshots/shenyang-mvp-20261023/tiles/13/6905/3047.pbf",
+          "headers_sent": false,
+          "closed": false
+        },
+        {
+          "path": "/snapshots/shenyang-mvp-20261023/tiles/13/6905/3045.pbf",
+          "headers_sent": false,
+          "closed": false
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Actual local MVT header/body stalls, current app clocks, real selected station preserved. Not real devices or all network interruption acceptance."
+}

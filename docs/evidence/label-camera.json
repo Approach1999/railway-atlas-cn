@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-28",
+  "build": {
+    "asset": "/assets/index-D4TfdCvK.js",
+    "index_sha256": "03923463b7e69382122effa61672bf6fd77805f43a9b3822c1c629ed13c398f1",
+    "asset_sha256": "227835ec35388d01e5bd2297426e2f34ef92b7c3b5ef0ff1934f93416a94a2cc"
+  },
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "reports": {
+    "positions-weak-wait": {
+      "path": "docs/evidence/label-camera-positions-weak-wait.json",
+      "sha256": "8dee0a7a73c41fd493ee3ba237290cdf635302922d24e2b51e569a8366d1a928"
+    },
+    "positions-settled": {
+      "path": "docs/evidence/label-camera-positions-settled.json",
+      "sha256": "f3ff9016b4f2a1d903677e5d5dd70953a8724d782d11b17c59f585d842eacf9d"
+    },
+    "priority": {
+      "path": "docs/evidence/label-camera-priority.json",
+      "sha256": "7a6785df72c8207bc382a8fd6f31a3a56ccd42c7fb63ec612b6d7e99f0e1de91"
+    },
+    "matrix": {
+      "path": "docs/evidence/label-camera-matrix.json",
+      "sha256": "2a1b50953ccc20b753830fea89ddb282813cc4ecc869a2d15dd30ac3358aef9c"
+    },
+    "before-test": {
+      "path": "docs/evidence/label-camera-before-test.log",
+      "sha256": "d3478d954b2389a9480fd95e22f14041a43c729b0b12427bcdcc4161fae525e3"
+    },
+    "first-unit": {
+      "path": "docs/evidence/label-camera-first-unit.log",
+      "sha256": "d3259825d4dec22787e8b4ecbc18451f2810c24347040aeb0b7aa0dab44baa67"
+    },
+    "unit": {
+      "path": "docs/evidence/label-camera-unit.log",
+      "sha256": "8276ffe8b825315ff515241d45190707adc8cbd26ac0cf4914c8dbff010b770e"
+    },
+    "build": {
+      "path": "docs/evidence/label-camera-build.log",
+      "sha256": "e20eea41f36bb5ca2240d8f139ae5a97d2810b6fc3341013ec7e51050c28b26b"
+    },
+    "positions-process": {
+      "path": "docs/evidence/label-camera-positions-process.log",
+      "sha256": "25321b9d1e87884886150e973fc70117216d98b82f9b10ec15aaabbdeaed9277"
+    },
+    "priority-process": {
+      "path": "docs/evidence/label-camera-priority-process.log",
+      "sha256": "4a12b59e09f2e8626a881817d8e3921c0f6640a57d4339e96e240366586a9f04"
+    },
+    "browser-chrome-search": {
+      "path": "docs/evidence/label-camera-browser-chrome-search.json",
+      "sha256": "d36b9b2b2b1efeaf60e6ec44f92572dba7f503cfe114870b59c3f7a826afa6f5"
+    },
+    "browser-chrome-filters": {
+      "path": "docs/evidence/label-camera-browser-chrome-filters.json",
+      "sha256": "bd424dccc8bc0ae9840beaa88057530aecbbbd0efe9282520e2b5e5109c33043"
+    },
+    "browser-chrome-list": {
+      "path": "docs/evidence/label-camera-browser-chrome-list.json",
+      "sha256": "53e4492b547a132e3752da9f34e8cad159766e0a7f44a124c57c34c278c55f61"
+    },
+    "browser-chrome-share": {
+      "path": "docs/evidence/label-camera-browser-chrome-share.json",
+      "sha256": "1be3139b22bcf974a4985f3d15fa2f5840953575ef4ebaca3cb4a59c18521154"
+    },
+    "browser-chrome-resources": {
+      "path": "docs/evidence/label-camera-browser-chrome-resources.json",
+      "sha256": "7c49b451304a27d4e1f5397341dc7b99915bb86c269fc6fbd6148446c80a8a64"
+    },
+    "browser-chrome-font": {
+      "path": "docs/evidence/label-camera-browser-chrome-font.json",
+      "sha256": "96da77dd6e6e587b9921145e19d8c1874024c526a733c17eb4f381fe5688d82b"
+    },
+    "browser-msedge-search": {
+      "path": "docs/evidence/label-camera-browser-msedge-search.json",
+      "sha256": "53a5ff4b9111cfd61434394ecbd649054de129cfe1c981835c663cf1855a916f"
+    },
+    "browser-msedge-filters": {
+      "path": "docs/evidence/label-camera-browser-msedge-filters.json",
+      "sha256": "1fdc64d5a12f80664a1efbea6213efd98427cee52015140a852adfbfe7287d04"
+    },
+    "browser-msedge-list": {
+      "path": "docs/evidence/label-camera-browser-msedge-list.json",
+      "sha256": "bfa5d3be25c72d41436bec227d4632b2ff5458f9d1f48a6766117389fe374469"
+    },
+    "browser-msedge-share": {
+      "path": "docs/evidence/label-camera-browser-msedge-share.json",
+      "sha256": "7b8993828c72aff7678a0efd3b19d4939b9918759f18a1bdf02ac3bb614288d3"
+    },
+    "browser-msedge-resources": {
+      "path": "docs/evidence/label-camera-browser-msedge-resources.json",
+      "sha256": "af430b7545eeb0d58ac5f4a08f15ec90ea940b78f9ff1823fb2558c66362d089"
+    },
+    "browser-msedge-font": {
+      "path": "docs/evidence/label-camera-browser-msedge-font.json",
+      "sha256": "742f03bd329a0e932853b1e594a7933e39e9a2ff864a14b3ceac11c1c280a894"
+    }
+  },
+  "source_sha256": {
+    "apps/web/client/src/line-label-controller.ts": "d7cab188d671b014eb1741f3849cae84c0673b248161237dd8548a828d32c778",
+    "apps/web/client/src/line-label-controller.test.mjs": "87c96012cd3ebaf9cd2f49212c264bb0c4e9f67a3d45ad4537fe2fd7850ee1f6",
+    "scripts/verify_label_buffer_positions.cjs": "f04fcf49c66281b4cb02a70e761436f44631d4fbaf936d00e36aa0510b4b5310",
+    "scripts/verify_label_priority.cjs": "2eff1a99fc35bd9830eb8b056ceef4339995d16bc7db5a8a64d1050ad175924f",
+    "docs/evidence/history/label-camera-before-controller.ts": "e6aab01a02282a8b8882e6c09b00da75df66e3584b20e126e59bbdbe758627e2",
+    "docs/evidence/history/label-camera-before-tests.mjs": "eef9d844b04145d56a243583616208737c4710e519a4520b463130ea4d393e53",
+    "docs/evidence/history/label-camera-position-before-wait.cjs": "d26c0082f220c845ea0c3e0b04777f1b7154fe4d1e89ea33d26f4a317324f955"
+  },
+  "checks": {
+    "old_cache_race_reproduced_in_test": true,
+    "unit_passed": 120,
+    "typecheck_build_passed": true,
+    "strict_same_buffer_view_comparisons": 18,
+    "all_comparison_views_have_real_labels": true,
+    "browser_regressions": 86,
+    "priority_scenes": 6,
+    "current_asset_hash_verified": true
+  },
+  "buffer": 512,
+  "limits": [
+    "Controller timing and diagnostic waiting both strengthened; native improvement is not separately attributed to just one.",
+    "Finite six cameras and three presets, not every edge or continuous pan.",
+    "Priority driver retains its explicit legacy data scope, while position matrix uses current geometry snapshot.",
+    "No current-build performance or device/reader/independent acceptance; buffer128 still not adopted."
+  ]
+}

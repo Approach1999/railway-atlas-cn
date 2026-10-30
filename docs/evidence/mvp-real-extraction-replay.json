@@ -1,0 +1,7 @@
+{
+  "source_pbf_sha256": "9ca145eb49d5913f9b92e320e5983c4d7439532d1c448a291692efc89dd74e83",
+  "original_xml_sha256": "1ee4dc51c8bf8720f66645f8a53df223f8a2c7cce7552a1baccb9506b273c342",
+  "replay_xml_sha256": "1ee4dc51c8bf8720f66645f8a53df223f8a2c7cce7552a1baccb9506b273c342",
+  "byte_identical": true,
+  "scope": "Same pinned provincial input, region config and extractor; no overwrite of original artifacts"
+}

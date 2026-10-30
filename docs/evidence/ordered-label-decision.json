@@ -1,0 +1,206 @@
+{
+  "date": "2026-10-28",
+  "decision": "do_not_adopt",
+  "production_build": {
+    "asset": "/assets/index-D4TfdCvK.js",
+    "index_sha256": "03923463b7e69382122effa61672bf6fd77805f43a9b3822c1c629ed13c398f1",
+    "asset_sha256": "227835ec35388d01e5bd2297426e2f34ef92b7c3b5ef0ff1934f93416a94a2cc"
+  },
+  "diagnostic_only": true,
+  "reports": {
+    "positions": {
+      "path": "docs/evidence/ordered-label-positions.json",
+      "sha256": "1624e06cb0d1341e9bd3323fb87f0a67a895d2a8cbda00da434bb24f48a4a921"
+    },
+    "control-filters": {
+      "path": "docs/evidence/ordered-label-control-filters.json",
+      "sha256": "b8340e9a40005a76c8029bc2664a33ac38db6f8cfb389342f32ce2516674ec78"
+    },
+    "candidate-filters": {
+      "path": "docs/evidence/ordered-label-candidate-filters.json",
+      "sha256": "421daf39093fa039a4ff0d804a7dcebef6938c7c64a7a4e098a475f7f69ddf30"
+    },
+    "current-pan-default": {
+      "path": "docs/evidence/ordered-label-current-pan-default.json",
+      "sha256": "2e5d6094d2318d04014030aa617848dd8ff3c92d8ae610effc690c5678b37604"
+    },
+    "current-pan-software": {
+      "path": "docs/evidence/ordered-label-current-pan-software.json",
+      "sha256": "4292618e10dc3629b7fcfab904e8510efd760abc89e4517629682c7f7f4c5dc0"
+    }
+  },
+  "position_comparisons": 18,
+  "source_data_check": "Public SDK getData matches the complete expected feature collection in order after each settled candidate state. Finite states only; no rapid-update/error recovery claim.",
+  "sources": {
+    "scripts/diagnostic_ordered_label_patch.cjs": "df74ce105e091683c7a2f68cc01b8c5168f25a2b1dd53e2b6715d83dc1d0bb3c",
+    "scripts/diagnose_ordered_label_positions.cjs": "9726a919ca1b5a5a67ee8e4d578611f6e65fa3d8b609b3a9c949b24e8db1db31",
+    "scripts/diagnose_ordered_label_filters.cjs": "7b418040953cd7c79f752bad7d21d1e6daae00960639c41c3def12182e62eed7",
+    "apps/web/client/src/line-label-controller.ts": "d7cab188d671b014eb1741f3849cae84c0673b248161237dd8548a828d32c778",
+    "apps/web/client/node_modules/maplibre-gl/src/source/geojson_source.ts": "f49605b09bb68c418d4986f4dc3a2ea613f4fd2731426d7c4c354abbf88a280c",
+    "apps/web/client/node_modules/maplibre-gl/src/source/geojson_source_diff.ts": "c68f20957e01740821fdb46c59864aff98ce3fe22d7ccd6573a4ce7937a6dfe6",
+    "apps/web/client/node_modules/@maplibre/geojson-vt/src/difference.ts": "60f477f1093a40d150b230525df8a45fa4f1333d8a41483a173a86b5f0a21e0f"
+  },
+  "filters": {
+    "control": {
+      "overview": {
+        "applied_ms": {
+          "samples": 100,
+          "median": 4,
+          "p95": 6.199999988079071,
+          "max": 6.699999988079071
+        },
+        "rendered_ms": {
+          "samples": 100,
+          "median": 66,
+          "p95": 91.09999999403954,
+          "max": 119.30000001192093
+        },
+        "settled_ms": {
+          "samples": 100,
+          "median": 649,
+          "p95": 689.5999999940395,
+          "max": 725.4000000059605
+        }
+      },
+      "station-yard": {
+        "applied_ms": {
+          "samples": 100,
+          "median": 2,
+          "p95": 2.9000000059604645,
+          "max": 3.4000000059604645
+        },
+        "rendered_ms": {
+          "samples": 100,
+          "median": 30.69999998807907,
+          "p95": 40.79999998211861,
+          "max": 838.8000000119209
+        },
+        "settled_ms": {
+          "samples": 100,
+          "median": 605.8000000119209,
+          "p95": 615.9000000059605,
+          "max": 1148.6000000238419
+        }
+      }
+    },
+    "candidate": {
+      "overview": {
+        "applied_ms": {
+          "samples": 100,
+          "median": 4.5,
+          "p95": 7,
+          "max": 12.699999988079071
+        },
+        "rendered_ms": {
+          "samples": 100,
+          "median": 78.39999997615814,
+          "p95": 109.39999997615814,
+          "max": 129.90000000596046
+        },
+        "settled_ms": {
+          "samples": 100,
+          "median": 615.2000000178814,
+          "p95": 708.3999999761581,
+          "max": 734.9000000059605
+        }
+      },
+      "station-yard": {
+        "applied_ms": {
+          "samples": 100,
+          "median": 2.0999999940395355,
+          "p95": 3,
+          "max": 4
+        },
+        "rendered_ms": {
+          "samples": 100,
+          "median": 34.900000005960464,
+          "p95": 63.599999994039536,
+          "max": 98.90000000596046
+        },
+        "settled_ms": {
+          "samples": 100,
+          "median": 600.5999999940395,
+          "p95": 637.5,
+          "max": 657.2000000178814
+        }
+      }
+    }
+  },
+  "prefix_totals": {
+    "overview": {
+      "updates": 102,
+      "positive_prefix_updates": 101,
+      "retained": 3535,
+      "added": 45578
+    },
+    "station-yard": {
+      "updates": 102,
+      "positive_prefix_updates": 101,
+      "retained": 1818,
+      "added": 681
+    }
+  },
+  "production_controller_matches_512_baseline": true,
+  "current_production_pan": {
+    "default": {
+      "map_render_interval_ms": {
+        "samples": 2521,
+        "median": 10,
+        "p95": 35,
+        "max": 58.20000001788139
+      },
+      "raf_interval_ms": {
+        "samples": 2539,
+        "median": 10.099999999998545,
+        "p95": 35,
+        "max": 57.79999999999927
+      },
+      "estimated_dropped_fraction": 0.06757253029746603,
+      "long_tasks_over_50ms": [],
+      "protocol": {
+        "valid": true,
+        "expected_duration_ms": 30000,
+        "accepted_duration_ms": [
+          29000,
+          35000
+        ],
+        "observed_duration_ms": 30113.90000000596,
+        "reason": null
+      },
+      "endpoint_error_css_px": 1.071812818868306
+    },
+    "software": {
+      "map_render_interval_ms": {
+        "samples": 1021,
+        "median": 30,
+        "p95": 37,
+        "max": 52.5
+      },
+      "raf_interval_ms": {
+        "samples": 1021,
+        "median": 33.29999999999927,
+        "p95": 33.400000000001455,
+        "max": 58.39999999999782
+      },
+      "estimated_dropped_fraction": 0.4693347193347193,
+      "long_tasks_over_50ms": [],
+      "protocol": {
+        "valid": true,
+        "expected_duration_ms": 30000,
+        "accepted_duration_ms": [
+          29000,
+          35000
+        ],
+        "observed_duration_ms": 30178.20000001788,
+        "reason": null
+      },
+      "endpoint_error_css_px": 1.071812818868306
+    }
+  },
+  "limitations": [
+    "Single serial control/candidate filter cycle; no randomized causal or thermal-control claim.",
+    "Default-renderer control yard max 838.8ms is retained; no sample pruning.",
+    "No candidate product build or full regressions: performance rejected adoption.",
+    "Continuous-pan measurements are unmodified production only; not candidate comparison, physical display or real-device acceptance."
+  ]
+}

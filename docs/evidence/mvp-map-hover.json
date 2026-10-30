@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-24T04:19:19.737Z",
+  "snapshot": "shenyang-mvp-20261023",
+  "source": "node/12640376343",
+  "checks": [
+    "real switch and overlapping tracks preview names, kinds, lifecycle and typed IDs; bounded preview reports total without fetching detail, selecting, moving camera or changing focus/URL",
+    "pointer can enter and read the preview without it disappearing; leaving both map target and preview dismisses it",
+    "Escape dismisses preview without changing the map and the same stationary target stays dismissed until leaving/reentering",
+    "dragging dismisses the preview and map pan remains usable",
+    "hover does not intercept the original map hit; clicking exposes all candidates and opens the actual source facility",
+    "actual source at the bottom-right map edge keeps its whole preview within viewport bounds",
+    "actual named railway station preview distinguishes station kind and clears when filters change",
+    "simulated touch opens a selection in one tap without hover dependency"
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Local Chrome, real source geometry and pointer events; simulated touch, not real-device, screen-reader or complete MVP acceptance"
+}

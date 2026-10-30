@@ -1,0 +1,64 @@
+warn: could not canonicalize path: 'C:\Users\21965'
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling thiserror v1.0.69
+   Compiling windows_x86_64_msvc v0.52.6
+   Compiling windows-link v0.2.1
+   Compiling protobuf v3.7.2
+   Compiling getrandom v0.4.3
+   Compiling once_cell v1.21.4
+   Compiling rustix v0.38.44
+   Compiling cfg-if v1.0.5
+   Compiling bitflags v2.13.2
+   Compiling anyhow v1.0.104
+   Compiling memchr v2.8.3
+   Compiling equivalent v1.0.3
+   Compiling regex-syntax v0.8.11
+   Compiling fastrand v2.5.0
+   Compiling either v1.19.0
+   Compiling windows-sys v0.61.2
+   Compiling hashbrown v0.17.1
+   Compiling log v0.4.34
+   Compiling crc32fast v1.5.3
+   Compiling autocfg v1.5.1
+   Compiling version_check v0.9.5
+   Compiling simd-adler32 v0.3.10
+   Compiling aho-corasick v1.1.5
+   Compiling zmij v1.0.23
+   Compiling indexmap v2.14.2
+   Compiling adler2 v2.0.1
+   Compiling smartstring v1.0.1
+   Compiling serde_core v1.0.229
+   Compiling futures v0.1.31
+   Compiling num_cpus v1.17.0
+   Compiling miniz_oxide v0.9.1
+   Compiling windows-targets v0.52.6
+   Compiling windows-sys v0.59.0
+   Compiling pub-iterator-type v0.1.1
+   Compiling static_assertions v1.1.0
+   Compiling serde_json v1.0.151
+   Compiling flat_map v0.0.10
+   Compiling self_cell v1.3.0
+   Compiling errno v0.3.14
+   Compiling home v0.5.12
+   Compiling regex-automata v0.4.18
+   Compiling tempfile v3.27.0
+   Compiling syn v2.0.119
+   Compiling flate2 v1.1.10
+   Compiling byteorder v1.5.0
+   Compiling itoa v1.0.18
+   Compiling futures-cpupool v0.1.8
+   Compiling par-map v0.1.4
+   Compiling which v4.4.2
+   Compiling regex v1.13.1
+   Compiling thiserror-impl v1.0.69
+   Compiling protobuf-support v3.7.2
+   Compiling protobuf-parse v3.7.2
+   Compiling protobuf-codegen v3.7.2
+   Compiling osmpbfreader v0.19.1
+   Compiling railway-probe v0.1.0 (C:\Users\21965\Documents\Codex\2026-10-22\referenced-chatgpt-conversation-this-is-an\work\checkout\crates\railway-probe)
+    Finished `release` profile [optimized] target(s) in 12m 35s
+10757 features, 4223 ways, 0 missing refs; 7785164 bytes; 0.261s
+2251 MVT tiles; 11575162 bytes
+{"snapshot": "shenyang-mvp-geometry-20261027", "candidate_objects": 10964, "relation_records": 207, "published_features": 10216, "excluded_count": 541, "facility_counts": {"switch": 2395, "buffer_stop": 461, "level_crossing": 2333, "stop_position": 318, "entrance": 137, "yard": 9, "platform": 51, "turntable": 1}, "metadata_records": 10216, "station_area_records": 4, "route_relations": 24, "line_count": 12, "missing_way_node_refs": 0, "missing_relation_member_refs": 0, "warnings": []}

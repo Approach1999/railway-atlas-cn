@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-25T02:35:55.490602+00:00",
+  "package": "murmurhash-js@1.0.0",
+  "archive_sha256": "0807f0738886929c36e3274e6bf0721efe9ba81d6edbe5ad9ec11ab5cb8ecc12",
+  "source_url": "https://registry.npmjs.org/murmurhash-js/-/murmurhash-js-1.0.0.tgz",
+  "checks": [
+    {
+      "project": "client",
+      "integrity": "sha512-TvmkNhkv8yct0SVBSy+o8wYzXjE4Zz3PCesbfs8HiCXXdcTuocApFv11UWlNFWKYsP2okqrhb7JNlSm9InBhIw==",
+      "original_readme_sha256": "e137ced8967fc334ec9b5fc5c8500992f9e49d2e9cc0f6e2439e46af2f2481a4",
+      "original_bytes_equal": true
+    },
+    {
+      "project": "probe",
+      "integrity": "sha512-TvmkNhkv8yct0SVBSy+o8wYzXjE4Zz3PCesbfs8HiCXXdcTuocApFv11UWlNFWKYsP2okqrhb7JNlSm9InBhIw==",
+      "original_readme_sha256": "e137ced8967fc334ec9b5fc5c8500992f9e49d2e9cc0f6e2439e46af2f2481a4",
+      "original_bytes_equal": true
+    }
+  ],
+  "scope": "Actual published archive matches both npm lock integrities and installed complete README terms; not independent legal approval"
+}

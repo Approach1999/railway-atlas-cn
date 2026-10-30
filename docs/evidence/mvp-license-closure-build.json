@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-25T02:37:04.0639372Z",
+  "components": 202,
+  "known_build_package_text_gaps": 0,
+  "unique_original_texts": 112,
+  "tests_passed": 12,
+  "independent_legal_approval": false,
+  "files": [
+    {
+      "path": "config/package-license-files.json",
+      "sha256": "3b17468694c6443b97a5a435972f246bf50846633389356c85877258e9e42366"
+    },
+    {
+      "path": "config/upstream-license-sources.json",
+      "sha256": "7745a268607f1a0d48ea3bea99268352551899154747550939fcee36f7554474"
+    },
+    {
+      "path": "scripts/upstream_license_evidence.py",
+      "sha256": "ec6d638e3715b32887aca075bf84966b6aa717636732f974023bb818e73c2dbf"
+    },
+    {
+      "path": "scripts/license_inventory.py",
+      "sha256": "6a139b3494114fe213c6ee934c88c9631600f718dc1e9182d892f306155c802a"
+    },
+    {
+      "path": "apps/web/client/dist/index.html",
+      "sha256": "167a9cd514fb5f844ea16de7eec728349b6aa17920e58a718d3706e61c431d2b"
+    }
+  ]
+}

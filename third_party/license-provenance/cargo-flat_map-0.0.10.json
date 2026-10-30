@@ -1,0 +1,10 @@
+{
+  "archive_sha256": "e4fa2a56a33c493fc81acbad4676c599cf2b128f21462a020043ea1eee46244f",
+  "crate_vcs_info": {
+    "git": {
+      "sha1": "ae34e34d206182cb474d4a4304575afbbe532ada"
+    }
+  },
+  "kind": "crate_vcs",
+  "upstream_commit": "ae34e34d206182cb474d4a4304575afbbe532ada"
+}

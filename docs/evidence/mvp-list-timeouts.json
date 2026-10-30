@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-24T14:57:38.468Z",
+  "server_url": "http://127.0.0.1:8766",
+  "checks": [
+    "15-second index timeout offers retry and retry restores records",
+    "15-second detail timeout preserves results and independently retries",
+    "closing a pending list and reopening does not publish cancelled request errors"
+  ],
+  "errors": [],
+  "scope": "Local Chrome with WebGL disabled and held index/detail requests; does not establish cause of historical concurrent facility timeout"
+}

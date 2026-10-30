@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-24T08:48:25.731708+00:00",
+  "build": "strict TypeScript and Vite passed; existing bundle-size warning remains",
+  "license_generator_tests": {
+    "passed": 2,
+    "failed": 0
+  },
+  "deterministic_checks": [
+    "license_inventory.py --check passed",
+    "prepare_qa_samples.py --check passed"
+  ],
+  "browser_report": "docs/evidence/license-inventory-browser.json",
+  "sample_checks": "docs/evidence/qa-sampling-checks.json",
+  "source_sha256": {
+    "scripts/license_inventory.py": "3fc6860c1eeecb95ad01daf427506b910274a67cc5a6e6cc5de9341fd2eb2cf9",
+    "scripts/test_license_inventory.py": "8f19e0e38d0c032a5ae4432fa3185ca16590df2b1813738568e74e030f873e0d",
+    "scripts/prepare_qa_samples.py": "a9636de3dd4c3c95b787e678657f608bdd0ac8ef183d22c00bd4e5df0b22e72f",
+    "scripts/verify_license_inventory.cjs": "c340f2d7db650707466d90a91ab7146f7733b55b1e894d01d02dba1743620d42",
+    "scripts/serve_probe.py": "963fe0f48b52f09a413a928736b861e788d958b90d9b06e20b2ff130671a8e7f",
+    "apps/web/client/src/App.tsx": "86f93d3acf658923da2cf00bbdd7e2582878e412d88921c9fc012ac2738d783c",
+    "config/third-party-assets.json": "a939db1073a35ed75dfc3af97b4c63e37dcda9316f0079b7fc0d09fb5af630a3",
+    "docs/qa/shenyang-samples.json": "3d3de8cd3bd57eb54032a533d00ea82cff095e0735f0919ce9401a39e18e064b",
+    "apps/web/client/public/dependency-inventory.json": "625d81e94a3010e14f4bb182522f8a66585f92379550f8ef37639957e7200518",
+    "apps/web/client/public/third-party-notices.txt": "1527a71bafb5f521505ebd0f3f88befffcb184b627dd3a0633deec36e7944c51"
+  },
+  "limits": [
+    "19 license evidence gaps plus tool-level and current online advisory audit remain open",
+    "106 source-equal samples do not prove map/classification review or two independent signoffs",
+    "No claim of full MVP, real-device, screen-reader or production licensing acceptance"
+  ]
+}

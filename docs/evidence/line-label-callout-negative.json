@@ -1,0 +1,416 @@
+{
+  "date": "2026-10-26T14:20:40.408Z",
+  "observation": {
+    "original_sha256": "04f6f3f9b0055038d743f77dbee2a30555ba4bb6178373c1df9c47976dc50609",
+    "observed_sha256": "e618d54f6d140be9f665135546fd76412d7b593382291e2e633761c777f46e00",
+    "short_layout": "callout",
+    "short_padding": 20,
+    "short_width": 0,
+    "adopted": false,
+    "acceptance": false
+  },
+  "rejected": true,
+  "reason": "native caption collision boxes are vertical at text-max-width=0",
+  "witnesses": [
+    {
+      "id": "object:way/136823634|way/136823634|3535524,1561281|short",
+      "identity": "object:way/136823634",
+      "osm_id": "way/136823634",
+      "text": "苏抚线",
+      "kind": "short",
+      "point": [
+        600.034833333365,
+        606.0952186011649
+      ],
+      "tile": [
+        10,
+        863,
+        381
+      ],
+      "collision_box": {
+        "width": 832,
+        "height": 1330
+      }
+    },
+    {
+      "id": "object:way/1377937977|way/1377937977|3535077,1561454|short",
+      "identity": "object:way/1377937977",
+      "osm_id": "way/1377937977",
+      "text": "苏抚线",
+      "kind": "short",
+      "point": [
+        544.222333333365,
+        627.7202186012079
+      ],
+      "tile": [
+        10,
+        863,
+        381
+      ],
+      "collision_box": {
+        "width": 832,
+        "height": 1330
+      }
+    },
+    {
+      "id": "object:way/1500697860|way/1500697860|3535543,1563627|short",
+      "identity": "object:way/1500697860",
+      "osm_id": "way/1500697860",
+      "text": "沈丹线",
+      "kind": "short",
+      "point": [
+        602.472333333365,
+        899.3452186011649
+      ],
+      "tile": [
+        10,
+        863,
+        381
+      ],
+      "collision_box": {
+        "width": 832,
+        "height": 1330
+      }
+    },
+    {
+      "id": "object:way/1556655074|way/1556655074|3536544,1560951|short",
+      "identity": "object:way/1556655074",
+      "osm_id": "way/1556655074",
+      "text": "苏抚线",
+      "kind": "short",
+      "point": [
+        727.597333333365,
+        564.8452186011219
+      ],
+      "tile": [
+        10,
+        863,
+        381
+      ],
+      "collision_box": {
+        "width": 832,
+        "height": 1330
+      }
+    },
+    {
+      "id": "object:way/1556655078|way/1556655078|3537101,1560665|short",
+      "identity": "object:way/1556655078",
+      "osm_id": "way/1556655078",
+      "text": "苏抚线",
+      "kind": "short",
+      "point": [
+        797.284833333365,
+        529.1577186011649
+      ],
+      "tile": [
+        10,
+        863,
+        381
+      ],
+      "collision_box": {
+        "width": 832,
+        "height": 1330
+      }
+    },
+    {
+      "id": "object:way/1018173519|way/1018173519|3534570,1561185|short",
+      "identity": "object:way/1018173519",
+      "osm_id": "way/1018173519",
+      "text": "浑揽线",
+      "kind": "short",
+      "point": [
+        480.784833333365,
+        594.1577186011649
+      ],
+      "tile": [
+        10,
+        862,
+        381
+      ],
+      "collision_box": {
+        "width": 832,
+        "height": 1330
+      }
+    },
+    {
+      "id": "object:way/1131923986|way/1131923986|3539359,1558667|short",
+      "identity": "object:way/1131923986",
+      "osm_id": "way/1131923986",
+      "text": "沈佳高速线",
+      "kind": "short",
+      "point": [
+        1079.472333333365,
+        279.4077186011649
+      ],
+      "tile": [
+        10,
+        864,
+        380
+      ],
+      "collision_box": {
+        "width": 832,
+        "height": 1791
+      }
+    },
+    {
+      "id": "object:way/1125330422|way/1125330422|3537183,1559109|short",
+      "identity": "object:way/1125330422",
+      "osm_id": "way/1125330422",
+      "text": "沈佳高速线",
+      "kind": "short",
+      "point": [
+        807.534833333365,
+        334.5952186011649
+      ],
+      "tile": [
+        10,
+        863,
+        380
+      ],
+      "collision_box": {
+        "width": 832,
+        "height": 1791
+      }
+    },
+    {
+      "id": "object:way/1125330423|way/1125330423|3538871,1558850|short",
+      "identity": "object:way/1125330423",
+      "osm_id": "way/1125330423",
+      "text": "沈佳高速线",
+      "kind": "short",
+      "point": [
+        1018.472333333365,
+        302.2827186011649
+      ],
+      "tile": [
+        10,
+        863,
+        380
+      ],
+      "collision_box": {
+        "width": 832,
+        "height": 1791
+      }
+    },
+    {
+      "id": "object:way/1232752486|way/1232752486|3538078,1559305|short",
+      "identity": "object:way/1232752486",
+      "osm_id": "way/1232752486",
+      "text": "沈吉线",
+      "kind": "short",
+      "point": [
+        919.284833333365,
+        359.0952186011649
+      ],
+      "tile": [
+        10,
+        863,
+        380
+      ],
+      "collision_box": {
+        "width": 832,
+        "height": 1330
+      }
+    },
+    {
+      "id": "object:way/1364948086|way/1364948086|3535308,1559819|short",
+      "identity": "object:way/1364948086",
+      "osm_id": "way/1364948086",
+      "text": "沈大高速线",
+      "kind": "short",
+      "point": [
+        573.097333333365,
+        423.4077186011649
+      ],
+      "tile": [
+        10,
+        863,
+        380
+      ],
+      "collision_box": {
+        "width": 832,
+        "height": 1791
+      }
+    },
+    {
+      "id": "object:way/1365674759|way/1365674759|3536209,1559684|short",
+      "identity": "object:way/1365674759",
+      "osm_id": "way/1365674759",
+      "text": "沈佳高速线",
+      "kind": "short",
+      "point": [
+        685.659833333365,
+        406.59521860112187
+      ],
+      "tile": [
+        10,
+        863,
+        380
+      ],
+      "collision_box": {
+        "width": 832,
+        "height": 1791
+      }
+    },
+    {
+      "id": "object:way/1366004740|way/1366004740|3534896,1558687|short",
+      "identity": "object:way/1366004740",
+      "osm_id": "way/1366004740",
+      "text": "于虎线",
+      "kind": "short",
+      "point": [
+        521.534833333365,
+        281.9077186011649
+      ],
+      "tile": [
+        10,
+        863,
+        380
+      ],
+      "collision_box": {
+        "width": 832,
+        "height": 1330
+      }
+    },
+    {
+      "id": "object:way/1366004788|way/1366004788|3536127,1558604|short",
+      "identity": "object:way/1366004788",
+      "osm_id": "way/1366004788",
+      "text": "田东线",
+      "kind": "short",
+      "point": [
+        675.409833333365,
+        271.5327186011649
+      ],
+      "tile": [
+        10,
+        863,
+        380
+      ],
+      "collision_box": {
+        "width": 832,
+        "height": 1330
+      }
+    },
+    {
+      "id": "object:way/1366618269|way/1366618269|3536070,1557820|short",
+      "identity": "object:way/1366618269",
+      "osm_id": "way/1366618269",
+      "text": "于虎线",
+      "kind": "short",
+      "point": [
+        668.284833333365,
+        173.47021860116487
+      ],
+      "tile": [
+        10,
+        863,
+        380
+      ],
+      "collision_box": {
+        "width": 832,
+        "height": 1330
+      }
+    },
+    {
+      "id": "object:way/1556655088|way/1556655088|3538283,1560112|short",
+      "identity": "object:way/1556655088",
+      "osm_id": "way/1556655088",
+      "text": "苏抚线",
+      "kind": "short",
+      "point": [
+        944.909833333365,
+        460.0327186011649
+      ],
+      "tile": [
+        10,
+        863,
+        380
+      ],
+      "collision_box": {
+        "width": 832,
+        "height": 1330
+      }
+    },
+    {
+      "id": "object:way/1556655091|way/1556655091|3537851,1560335|short",
+      "identity": "object:way/1556655091",
+      "osm_id": "way/1556655091",
+      "text": "苏抚线",
+      "kind": "short",
+      "point": [
+        890.909833333365,
+        487.9077186011649
+      ],
+      "tile": [
+        10,
+        863,
+        380
+      ],
+      "collision_box": {
+        "width": 832,
+        "height": 1330
+      }
+    },
+    {
+      "id": "object:way/1352043811|way/1352043811|3534443,1558921|short",
+      "identity": "object:way/1352043811",
+      "osm_id": "way/1352043811",
+      "text": "于虎线",
+      "kind": "short",
+      "point": [
+        464.972333333365,
+        311.1577186011649
+      ],
+      "tile": [
+        10,
+        862,
+        380
+      ],
+      "collision_box": {
+        "width": 832,
+        "height": 1330
+      }
+    },
+    {
+      "id": "object:way/1367090859|way/1367090859|3532004,1557802|short",
+      "identity": "object:way/1367090859",
+      "osm_id": "way/1367090859",
+      "text": "沈山线",
+      "kind": "short",
+      "point": [
+        160.034833333365,
+        171.28271860116487
+      ],
+      "tile": [
+        10,
+        862,
+        380
+      ],
+      "collision_box": {
+        "width": 832,
+        "height": 1330
+      }
+    },
+    {
+      "id": "object:way/1526462801|way/1526462801|3533830,1560134|short",
+      "identity": "object:way/1526462801",
+      "osm_id": "way/1526462801",
+      "text": "于揽三线",
+      "kind": "short",
+      "point": [
+        388.284833333365,
+        462.7202186012079
+      ],
+      "tile": [
+        10,
+        862,
+        380
+      ],
+      "collision_box": {
+        "width": 832,
+        "height": 1561
+      }
+    }
+  ]
+}

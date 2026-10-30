@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-25T02:09:03.087Z",
+  "browser": "155.0.8059.85",
+  "checks": [
+    "React 构建页面启动，淡化底图位于铁路之下（回归瓦片为测试夹具）",
+    "关闭底图保留筛选、选中站点和缩放；隐藏后平移/缩放无新增底图请求",
+    "刷新恢复关闭偏好，首屏不请求外部底图",
+    "迁移保留中文搜索、铁路/地铁消歧、临时显示和预设撤销",
+    "可重复开启底图，保留原有地图实例",
+    "模拟底图 503 后回退纯色，铁路搜索/详情和开关继续可用",
+    "390px 手机开关触摸目标、详情避让与署名可见",
+    "首屏解析当前版本后，铁路索引、瓦片和详情统一使用不可变快照地址"
+  ],
+  "errors": [],
+  "external_domains": [
+    "tile.openstreetmap.org"
+  ],
+  "scope": "Built React client; raster fixture responses; 390px emulation, not real-device or provider uptime acceptance"
+}

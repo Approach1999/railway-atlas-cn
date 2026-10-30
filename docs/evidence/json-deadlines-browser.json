@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-25T12:55:45.596Z",
+  "browser": "155.0.8059.85",
+  "audit_only": false,
+  "cases": [
+    {
+      "kind": "catalog",
+      "phase": "headers",
+      "outcome": {
+        "timed_out": true,
+        "elapsed_ms": 15310,
+        "recovered": true
+      },
+      "requests": [
+        {
+          "headers_sent": false,
+          "closed": true,
+          "close_ms": 15000
+        }
+      ],
+      "operation_ms": 14305
+    },
+    {
+      "kind": "catalog",
+      "phase": "body",
+      "outcome": {
+        "timed_out": true,
+        "elapsed_ms": 15558,
+        "recovered": true
+      },
+      "requests": [
+        {
+          "headers_sent": true,
+          "closed": true,
+          "close_ms": 15005
+        }
+      ],
+      "operation_ms": 14823
+    },
+    {
+      "kind": "snapshot",
+      "phase": "headers",
+      "outcome": {
+        "timed_out": true,
+        "elapsed_ms": 15295,
+        "recovered": true
+      },
+      "requests": [
+        {
+          "headers_sent": false,
+          "closed": true,
+          "close_ms": 15014
+        }
+      ],
+      "operation_ms": 15468
+    },
+    {
+      "kind": "lines",
+      "phase": "body",
+      "outcome": {
+        "timed_out": true,
+        "elapsed_ms": 15288,
+        "recovered": true
+      },
+      "requests": [
+        {
+          "headers_sent": true,
+          "closed": true,
+          "close_ms": 14961
+        }
+      ],
+      "operation_ms": 15549
+    },
+    {
+      "kind": "cancel",
+      "phase": "body",
+      "outcome": {
+        "cancelled": true,
+        "recovered": true
+      },
+      "requests": [
+        {
+          "headers_sent": true,
+          "closed": true,
+          "close_ms": 92
+        }
+      ],
+      "operation_ms": 582
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Real loopback header/body stalls with production timeout duration. Not an explanation of the earlier unrecorded intermittent status timeout, or real-device acceptance."
+}

@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-28",
+  "restored_build": {
+    "asset": "/assets/index-D4TfdCvK.js",
+    "index_sha256": "03923463b7e69382122effa61672bf6fd77805f43a9b3822c1c629ed13c398f1",
+    "asset_sha256": "227835ec35388d01e5bd2297426e2f34ef92b7c3b5ef0ff1934f93416a94a2cc"
+  },
+  "candidate_asset": "/assets/index-DvIWZGKm.js",
+  "candidate_asset_sha256": "da34e6053d4016f226959ba3a785817a8fe3f84efc51ff4549abf490d8720707",
+  "reports": {
+    "positions": {
+      "path": "docs/evidence/buffer128-decision-positions.json",
+      "sha256": "dfd2e0bbae704640ddf3d58694080c6f5efe14bd01e070fd466e24edcf53c3bd"
+    },
+    "before-filters": {
+      "path": "docs/evidence/buffer128-decision-before-filters.json",
+      "sha256": "c3d05394ce3f7ea6383f9335b90f2632107bc05dfc0762b584b5533a25abf239"
+    },
+    "candidate-filters": {
+      "path": "docs/evidence/buffer128-decision-candidate-filters.json",
+      "sha256": "7af4b4cfddaa3c7f75546f4f448d245180bd88d8b17a63fb6b03b722d82e5592"
+    },
+    "candidate-pan-default": {
+      "path": "docs/evidence/buffer128-decision-candidate-pan-default.json",
+      "sha256": "d6a8bf283d5b9da96aa07813b8a4c987d2eefc458fb0840ac12a8caadb940c25"
+    },
+    "candidate-pan-software": {
+      "path": "docs/evidence/buffer128-decision-candidate-pan-software.json",
+      "sha256": "3d5e7dc0fccaa12c441ace33ba2e53a030475670d69003a57ad8d7d533aaa23c"
+    },
+    "bundle-equivalence": {
+      "path": "docs/evidence/buffer128-decision-bundle-equivalence.json",
+      "sha256": "1adee511897c1c07982ab72ba3dd2997a3f9c9144a84e6296c9aa330d955d0e9"
+    },
+    "unit": {
+      "path": "docs/evidence/buffer128-decision-unit.log",
+      "sha256": "161aec612d0796127849d76925a7722ff5a99eb70d0e0e88383ca6ab1674c998"
+    },
+    "build": {
+      "path": "docs/evidence/buffer128-decision-build.log",
+      "sha256": "20dc284ead3d11931797abf1c6fd5429610f8151fe102cf3f97053fdd2560fa8"
+    },
+    "rollback-build": {
+      "path": "docs/evidence/buffer128-decision-rollback-build.log",
+      "sha256": "6421c9a18f4bcd2a0591ebb6ddd3a184008c52a5e0da24ecc1823ad19e5348a1"
+    },
+    "pan-default": {
+      "path": "docs/evidence/buffer128-decision-pan-default.log",
+      "sha256": "0278b88f4347a87163ca22e40bc408d56d97c90462d968dbaea48708e6d65a2c"
+    },
+    "pan-software": {
+      "path": "docs/evidence/buffer128-decision-pan-software.log",
+      "sha256": "40514a1c3ae164f7affc6673605ba27506e9ab145670e32c4bc19e2eaaec505c"
+    }
+  },
+  "filter_p95_ms": {
+    "before-filters": {
+      "overview": 86.30000001192093,
+      "station-yard": 39
+    },
+    "candidate-filters": {
+      "overview": 89.2999999821186,
+      "station-yard": 55.10000002384186
+    }
+  },
+  "candidate_pan_p95_ms": {
+    "candidate-pan-default": 35.400000005960464,
+    "candidate-pan-software": 38
+  },
+  "decision": {
+    "adopted": false,
+    "restored_buffer": 512,
+    "synchronization_fix_preserved": true,
+    "exact_original_bundle_restored": true,
+    "reason": "Finite position comparison passed, but full filter timings did not improve; default and software pan remained above 33ms. Candidate reverted rather than calling earlier diagnostic a success."
+  },
+  "source_sha256": {
+    "apps/web/client/src/line-label-controller.ts": "d7cab188d671b014eb1741f3849cae84c0673b248161237dd8548a828d32c778",
+    "docs/evidence/history/buffer128-before-controller.ts": "d7cab188d671b014eb1741f3849cae84c0673b248161237dd8548a828d32c778",
+    "docs/evidence/history/buffer128-candidate-controller.ts": "c7a2359228ef2bd0bb69a4af8047be1c6c5c984a6d8f16ee32c62140f001212c",
+    "scripts/verify_label_buffer_positions.cjs": "f04fcf49c66281b4cb02a70e761436f44631d4fbaf936d00e36aa0510b4b5310"
+  },
+  "limits": [
+    "Finite view tests do not prove all pixel/edge behavior.",
+    "Candidate 120 tests and build passed; full browser regression was not run because full performance rejected adoption first.",
+    "Earlier same-build 86 browser checks remain valid for byte-identical restored build.",
+    "No current cold/mobile/device/reader or independent acceptance claim."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-24T10:41:19.346277+00:00",
+  "build": "strict TypeScript and Vite passed; existing bundle warning remains",
+  "unit_tests": {
+    "passed": 53,
+    "failed": 0
+  },
+  "source_sha256": {
+    "apps/web/client/src/contrast.ts": "22cc1b7051cb96c4c84d514cc7cb59197038cf71f7681c99fcc12c66493b2697",
+    "apps/web/client/src/contrast.test.mjs": "5e1d7d45732f15df8a4e3666b88876a2c0dd497c90b379ed15db2d39d6faf92f",
+    "apps/web/client/src/palette-colours.ts": "16148efd0b97b4a3d1e5e106b4048f457924d42dc8e3810c903f47a4bba0788c",
+    "apps/web/client/src/map-controller.ts": "03a702b8bb4cdff2d7646d7d561ce09a1e357fe5bd48558c7053ae27af58b3ce",
+    "apps/web/client/src/RailwayControls.tsx": "c520294917ebfbecbfcfecd83e4131a900e2db78acd551fc6a18e30401ddd400",
+    "apps/web/client/src/style.css": "7633a707bc4146a6ff25deba8a6e34dfecd1612df235c05e5d50655799141d99",
+    "apps/web/shared/model.mjs": "1716604e61b3a49f66e1b3488c757c7bc803194f98e80f6b6eac1e6b6b2b23ea",
+    "scripts/audit_contrast.mjs": "dd0b4dd2aee414a8888069c6565d13f33996323632ab0d030d9e690a5f139322",
+    "scripts/verify_contrast.cjs": "5cc06860471ddedaa1ce085e4954bd284d7af09464bb87a7c94e918055a49cd9"
+  },
+  "reports": {
+    "authored": {
+      "file": "docs/evidence/mvp-contrast-authored.json",
+      "date": "2026-10-24T10:34:23.381Z",
+      "sha256": "a9a6a8bee83cdf61dbfd97a179704e5b8488224d49eebceb873426b2d76ebe99"
+    },
+    "css": {
+      "file": "data/manifests/local/contrast/report.json",
+      "date": "2026-10-24T10:34:28.036Z",
+      "sha256": "acbf2a00abaaec971d795840dba18436c4318b29d3cc0162735bfe362f82e6fb"
+    },
+    "facility": {
+      "file": "data/manifests/local/mvp-work-browser/facilities-report.json",
+      "date": "2026-10-24T10:35:09.467Z",
+      "sha256": "d1217092ff2ed3444b18b12671eecdc703f59e444561e5a07fd0a43ae2648922"
+    },
+    "routes": {
+      "file": "data/manifests/local/real-route-browser/real-routes-report.json",
+      "date": "2026-10-24T10:35:04.323Z",
+      "sha256": "76d833a92aeea4ebbc3cdb3ff660639fd227d497ceea64fa54fef02761024988"
+    },
+    "filters": {
+      "file": "data/manifests/local/react-filters/react-filters-report.json",
+      "date": "2026-10-24T10:36:01.940Z",
+      "sha256": "77b9a73838696b748940c378838c17838d9725da56c6301373efaac3a2aaa118"
+    },
+    "recovery": {
+      "file": "data/manifests/local/resource-recovery/resource-recovery-report.json",
+      "date": "2026-10-24T10:36:10.725Z",
+      "sha256": "cf68a93e06e4946b0e69ab8bb8db4926590bb15a6edc238adf38c6f61ce61979"
+    },
+    "software-pan": {
+      "file": "data/manifests/local/contrast-pan/benchmark-pan.json",
+      "date": "2026-10-24T10:37:24.060Z",
+      "sha256": "500fc117bb960909924e485f917e0799c9f5aac8f5da289aa8397e31948900cb"
+    }
+  },
+  "software_pan_target_met": false,
+  "limits": [
+    "Authored colour checks and sampled CSS states are not complete WCAG/antialiasing/real-device acceptance.",
+    "Default GPU, full current-data performance/device matrix and independent colour-vision review remain.",
+    "No before/after performance causal claim: prior old-snapshot runs are different inputs."
+  ]
+}

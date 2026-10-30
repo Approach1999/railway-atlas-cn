@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-28",
+  "build": {
+    "asset": "/assets/index-DQDm9VWe.js",
+    "index_sha256": "e91c791633e21a3bd6b2bb2f5a90ee66ffb641b74c6b2a3ac1ebf56a8b389d13",
+    "asset_sha256": "b76a3028a98c89a4580f8e40e35ab16b817671d2b9ee32d47872f7abd30bb903"
+  },
+  "reports": {
+    "candidate": {
+      "path": "docs/evidence/buffer-position-candidate.json",
+      "sha256": "1f94d454b6f75993da00d0b494d2d398cbe6dd34223b07041e6383f98c20ee03"
+    },
+    "same-buffer-control": {
+      "path": "docs/evidence/buffer-position-same-buffer-control.json",
+      "sha256": "a6b52e6cff3d22df1ec5e518059a93cc521098fce6d81e18fffbe4c60662909d"
+    }
+  },
+  "comparisons_per_run": 18,
+  "candidate_changes": [
+    {
+      "camera": "tile-edge-z12",
+      "preset": "overview",
+      "lost": 0,
+      "added": 15,
+      "moved": 0
+    },
+    {
+      "camera": "city-z14",
+      "preset": "overview",
+      "lost": 8,
+      "added": 0,
+      "moved": 0
+    },
+    {
+      "camera": "yard-z15",
+      "preset": "highspeed",
+      "lost": 1,
+      "added": 0,
+      "moved": 0
+    },
+    {
+      "camera": "yard-moved-z15",
+      "preset": "overview",
+      "lost": 0,
+      "added": 9,
+      "moved": 0
+    }
+  ],
+  "identical_buffer_control_changes": [
+    {
+      "camera": "tile-edge-z12",
+      "preset": "overview",
+      "lost": 14,
+      "added": 0,
+      "moved": 0
+    },
+    {
+      "camera": "city-z14",
+      "preset": "overview",
+      "lost": 1,
+      "added": 0,
+      "moved": 0
+    }
+  ],
+  "decision": {
+    "adopt_buffer_128": false,
+    "production_changed": false,
+    "causal_attribution_to_buffer_proven": false,
+    "next": "Diagnose movement/filter synchronization and label-source readiness; first obtain stable 512-vs-512 coverage, then reconsider buffer optimization."
+  },
+  "source_sha256": {
+    "scripts/verify_label_buffer_positions.cjs": "d26c0082f220c845ea0c3e0b04777f1b7154fe4d1e89ea33d26f4a317324f955",
+    "docs/evidence/history/label-buffer-position-first.cjs": "5979b5966f38d3db09ac6b38c7a38d7aa54e74875511b133a61abcce455dbacb",
+    "apps/web/client/src/line-label-controller.ts": "e6aab01a02282a8b8882e6c09b00da75df66e3584b20e126e59bbdbe758627e2"
+  },
+  "limits": [
+    "Finite public symbol hit extents at 0.5 CSS pixel resolution, not exact glyph pixels.",
+    "m.loaded/source-loaded plus 500ms waiting is insufficient as evidence of stable label coverage: identical-buffer control also differs.",
+    "Observed differences must not be attributed solely to buffer size; initial timing results remain diagnostic only.",
+    "No product change or full performance acceptance."
+  ]
+}

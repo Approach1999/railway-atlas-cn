@@ -1,0 +1,71 @@
+{
+  "kind": "npm_release_binding",
+  "parent_registry_metadata": {
+    "dist": {
+      "integrity": "sha512-6odND+fel5zVw3I4Yc2e69gvguDnX0CAAGiNDZSq4ik5WUcaLrkD2GLuog0XcODbor31hZ5ayEMgVDno+KPV5g==",
+      "shasum": "d232b8201e1be3471d636375fe10af1dfc4eac35",
+      "tarball": "https://registry.npmjs.org/rolldown/-/rolldown-1.2.15.tgz"
+    },
+    "gitHead": null,
+    "homepage": "https://rolldown.rs/",
+    "license": "MIT",
+    "name": "rolldown",
+    "optionalDependencies": {
+      "@rolldown/binding-android-arm-eabi": "1.2.15",
+      "@rolldown/binding-android-arm64": "1.2.15",
+      "@rolldown/binding-darwin-arm64": "1.2.15",
+      "@rolldown/binding-darwin-x64": "1.2.15",
+      "@rolldown/binding-freebsd-x64": "1.2.15",
+      "@rolldown/binding-linux-arm-gnueabihf": "1.2.15",
+      "@rolldown/binding-linux-arm64-gnu": "1.2.15",
+      "@rolldown/binding-linux-arm64-musl": "1.2.15",
+      "@rolldown/binding-linux-ppc64-gnu": "1.2.15",
+      "@rolldown/binding-linux-s390x-gnu": "1.2.15",
+      "@rolldown/binding-linux-x64-gnu": "1.2.15",
+      "@rolldown/binding-linux-x64-musl": "1.2.15",
+      "@rolldown/binding-openharmony-arm64": "1.2.15",
+      "@rolldown/binding-win32-arm64-msvc": "1.2.15",
+      "@rolldown/binding-win32-x64-msvc": "1.2.15"
+    },
+    "repository": {
+      "directory": "packages/rolldown",
+      "type": "git",
+      "url": "git+https://github.com/rolldown/rolldown.git"
+    },
+    "version": "1.2.15"
+  },
+  "registry_metadata": {
+    "dist": {
+      "integrity": "sha512-HFZd2QNQYn1JbIi+Hpd7H+r/lkWxcfIu28nirZ6eCn2LafuvmExMlb/P96Sfx5tf7pPArw39IdhmCF8vmV+NhQ==",
+      "shasum": "04ff5f1e8786fd31a68d040661a50e6dae3c7669",
+      "tarball": "https://registry.npmjs.org/@rolldown/binding-win32-x64-msvc/-/binding-win32-x64-msvc-1.2.15.tgz"
+    },
+    "gitHead": null,
+    "homepage": "https://rolldown.rs/",
+    "license": "MIT",
+    "name": "@rolldown/binding-win32-x64-msvc",
+    "repository": {
+      "directory": "packages/rolldown",
+      "type": "git",
+      "url": "git+https://github.com/rolldown/rolldown.git"
+    },
+    "version": "1.2.15"
+  },
+  "release_ref": {
+    "node_id": "REF_kwDOKVE1GrFyZWZzL3RhZ3MvdjEuMi4xNQ",
+    "object": {
+      "sha": "89d821ca07cf9ccd84dd92bd3f48af0f579ab21a",
+      "type": "commit",
+      "url": "https://api.github.com/repos/rolldown/rolldown/git/commits/89d821ca07cf9ccd84dd92bd3f48af0f579ab21a"
+    },
+    "ref": "refs/tags/v1.2.15",
+    "url": "https://api.github.com/repos/rolldown/rolldown/git/refs/tags/v1.2.15"
+  },
+  "source_package": {
+    "file": "third_party/license-provenance/npm-_rolldown_binding-win32-x64-msvc-1.2.15.source-package.json",
+    "git_blob_sha": "eaf4a1e6baf580aab81e8ac2c73fd6777a980b75",
+    "sha256": "c4d96b7d4619afde2ad23bf163ba25640b5e745b3b4c8a2db09702401f455b1e"
+  },
+  "target": "x86_64-pc-windows-msvc",
+  "upstream_commit": "89d821ca07cf9ccd84dd92bd3f48af0f579ab21a"
+}

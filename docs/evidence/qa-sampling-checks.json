@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-24T08:45:26.899381+00:00",
+  "snapshot": "shenyang-mvp-20261023",
+  "samples": 106,
+  "sha256": "3d3de8cd3bd57eb54032a533d00ea82cff095e0735f0919ce9401a39e18e064b",
+  "groups": 45,
+  "source_equal": 106,
+  "checks": [
+    "20 station/area and 20 track quota groups selected",
+    "five per required railway grade, bridge/tunnel and six metro line samples present",
+    "all published facility classes select min(5, available); absent source classes recorded",
+    "shared, missing-colour and light-colour groups present",
+    "map/classification reviews and both independent signoffs remain empty"
+  ],
+  "independent_review_complete": false
+}

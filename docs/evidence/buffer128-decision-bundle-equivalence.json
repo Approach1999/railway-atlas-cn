@@ -1,0 +1,6 @@
+{
+  "exact_sole_buffer_substitution": true,
+  "before_sha256": "227835ec35388d01e5bd2297426e2f34ef92b7c3b5ef0ff1934f93416a94a2cc",
+  "after_sha256": "da34e6053d4016f226959ba3a785817a8fe3f84efc51ff4549abf490d8720707",
+  "expected_sha256": "da34e6053d4016f226959ba3a785817a8fe3f84efc51ff4549abf490d8720707"
+}

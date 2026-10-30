@@ -1,0 +1,37 @@
+*** You are running in headless mode.
+JavaScript error: moz-src:///browser/components/installerprefs/InstallerPrefs.sys.mjs, line 133: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWindowsRegKey.create]
+Dynamically enable window occlusion 0
+Read port: 51250
+[WARN  rkv::backend::impl_safe::environment] `load_ratio()` is irrelevant for this storage backend.
+[Parent 19488, IPC I/O Parent] WARNING: Failed to launch tab subprocess @SB::LA::SpawnTarget (Error:-2147024809): file checkouts\gecko\ipc\glue\GeckoChildProcessHost.cpp:837
+[Parent 19488, IPC I/O Parent] WARNING: Failed to launch tab subprocess @SB::LA::SpawnTarget (Error:-2147024809): file checkouts\gecko\ipc\glue\GeckoChildProcessHost.cpp:837
+[Parent 19488, IPC I/O Parent] WARNING: Failed to launch tab subprocess @SB::LA::SpawnTarget (Error:-2147024809): file checkouts\gecko\ipc\glue\GeckoChildProcessHost.cpp:837
+[Parent 19488, IPC I/O Parent] WARNING: Failed to launch tab subprocess @SB::LA::SpawnTarget (Error:-2147024809): file checkouts\gecko\ipc\glue\GeckoChildProcessHost.cpp:837
+[Parent 19488, IPC I/O Parent] WARNING: Failed to launch tab subprocess @SB::LA::SpawnTarget (Error:-2147024809): file checkouts\gecko\ipc\glue\GeckoChildProcessHost.cpp:837
+[Parent 19488, IPC I/O Parent] WARNING: Failed to launch tab subprocess @SB::LA::SpawnTarget (Error:-2147024809): file checkouts\gecko\ipc\glue\GeckoChildProcessHost.cpp:837
+JavaScript error: resource://gre/modules/ExtensionParent.sys.mjs, line 2058: TypeError: can't access property "addMessageListener", messageManager is null
+JavaScript error: resource://gre/modules/ExtensionParent.sys.mjs, line 2058: TypeError: can't access property "addMessageListener", messageManager is null
+JavaScript error: resource://gre/modules/ExtensionParent.sys.mjs, line 2058: TypeError: can't access property "addMessageListener", messageManager is null
+JavaScript error: resource://gre/modules/ExtensionParent.sys.mjs, line 2058: TypeError: can't access property "addMessageListener", messageManager is null
+JavaScript error: resource://gre/modules/ExtensionParent.sys.mjs, line 2058: TypeError: can't access property "addMessageListener", messageManager is null
+JavaScript error: resource://gre/modules/ExtensionParent.sys.mjs, line 2058: TypeError: can't access property "addMessageListener", messageManager is null
+[Parent 19488, IPC I/O Parent] WARNING: Failed to launch tab subprocess @SB::LA::SpawnTarget (Error:-2147024809): file checkouts\gecko\ipc\glue\GeckoChildProcessHost.cpp:837
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+[ERROR shell_windows::limited_access_features] Error generating feature token: NS_ERROR_FAILURE
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 264))
+console.error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+[Parent 19488, IPC I/O Parent] WARNING: Failed to launch utility subprocess @SB::LA::SpawnTarget (Error:-2147024809): file checkouts\gecko\ipc\glue\GeckoChildProcessHost.cpp:837
+console.error: RSLoader: 
+  Failed to retrieve recipes from Remote Settings
+  Message: Error: Could not sync nimbus-desktop-experiments: get-exception
+  Stack:
+    RemoteSettingsSyncError@resource://nimbus/lib/RemoteSettingsExperimentLoader.sys.mjs:1562:5
+getRecipesFromCollection@resource://nimbus/lib/RemoteSettingsExperimentLoader.sys.mjs:816:13
+
+console.error: [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+[Parent 19488, IPC I/O Parent] WARNING: Failed to launch tab subprocess @SB::LA::SpawnTarget (Error:-2147024809): file checkouts\gecko\ipc\glue\GeckoChildProcessHost.cpp:837
+[Parent 19488, IPC I/O Parent] WARNING: Failed to launch tab subprocess @SB::LA::SpawnTarget (Error:-2147024809): file checkouts\gecko\ipc\glue\GeckoChildProcessHost.cpp:837
+[Parent 19488, IPC I/O Parent] WARNING: Failed to launch tab subprocess @SB::LA::SpawnTarget (Error:-2147024809): file checkouts\gecko\ipc\glue\GeckoChildProcessHost.cpp:837
+[Parent 19488, IPC I/O Parent] WARNING: Failed to launch tab subprocess @SB::LA::SpawnTarget (Error:-2147024809): file checkouts\gecko\ipc\glue\GeckoChildProcessHost.cpp:837
+JavaScript error: resource://gre/modules/PrivateBrowsingUtils.sys.mjs, line 50: TypeError: can't access property "QueryInterface", aWindow.docShell is null
+Dynamically enable window occlusion 1

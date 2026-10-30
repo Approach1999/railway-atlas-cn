@@ -1,0 +1,193 @@
+{
+  "date": "2026-10-28",
+  "build": {
+    "asset": "/assets/index-DQDm9VWe.js",
+    "index_sha256": "e91c791633e21a3bd6b2bb2f5a90ee66ffb641b74c6b2a3ac1ebf56a8b389d13",
+    "asset_sha256": "b76a3028a98c89a4580f8e40e35ab16b817671d2b9ee32d47872f7abd30bb903",
+    "css_asset": "/assets/index-CHGaf3CA.css",
+    "css_sha256": "f9a52c5777c782407af891cb1d4da3495ad97b58afb2da2f774adca35ff6d21f"
+  },
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "reports": {
+    "before": {
+      "path": "docs/evidence/narrow-zoom-before.json",
+      "sha256": "7f70c33628525f2300d307024d05bf67ba953dc19c10f5c60c751fb949a5534e"
+    },
+    "before-small": {
+      "path": "docs/evidence/narrow-zoom-before-small.png",
+      "sha256": "0162e3eea0243505d6e183c2be43af67f7e00637b97859df50fa43602c98f7aa"
+    },
+    "scale-failure": {
+      "path": "docs/evidence/narrow-zoom-scale-failure.json",
+      "sha256": "58e2e9379feaf2a0853f6bb4ce2616e0cceff61b7f8987e0bb7a25e18c4e4f7b"
+    },
+    "scale-failure-small": {
+      "path": "docs/evidence/narrow-zoom-scale-failure-small.png",
+      "sha256": "c5b05cf5a02f5c6f4d2e1be356d9aa93a58a45a3dac089caccbf24fac5a4e678"
+    },
+    "search-pass": {
+      "path": "docs/evidence/narrow-zoom-search-pass.json",
+      "sha256": "249fb0c93bf87446d9f62e56db96a9c2cf118c3ba7d5a5992cef44245df08d6c"
+    },
+    "selected-pass": {
+      "path": "docs/evidence/narrow-zoom-selected-pass.json",
+      "sha256": "2a1b8ae16462908865a1a750b7d6072426615ff53ec5861dde9460d242868c0d"
+    },
+    "chrome": {
+      "path": "docs/evidence/narrow-zoom-chrome.json",
+      "sha256": "782580908d895aad602c396b775599b75fbaf83a1a4fd21eec192f9a3a1d4a12"
+    },
+    "chrome-empty-1552x1000": {
+      "path": "docs/evidence/narrow-zoom-chrome-empty-1552x1000.png",
+      "sha256": "0899e1e0d9e521e8b0db937a2375a1ff9640bdd3ed9b03f7f0ab5133d989ac9a"
+    },
+    "chrome-long-empty-1552x1000": {
+      "path": "docs/evidence/narrow-zoom-chrome-long-empty-1552x1000.png",
+      "sha256": "2d47e8d2ff0ee8d28d12308d848fe190e76ec9791e71c7212980b8738906de68"
+    },
+    "chrome-empty-1280x800": {
+      "path": "docs/evidence/narrow-zoom-chrome-empty-1280x800.png",
+      "sha256": "f4c7304efe42026c8615427fdec923c38c2d289a1e903e360706beae31d3d3e4"
+    },
+    "chrome-long-empty-1280x800": {
+      "path": "docs/evidence/narrow-zoom-chrome-long-empty-1280x800.png",
+      "sha256": "3f9f1718917c9653d18aa088aa17296d67024eaf1ee70e10c71da29c8314fdf0"
+    },
+    "chrome-empty-1024x768": {
+      "path": "docs/evidence/narrow-zoom-chrome-empty-1024x768.png",
+      "sha256": "105211bf8c053dc24fb39a5231a4e41a08937b7300ff8603f16d35b6a2778b9f"
+    },
+    "chrome-long-empty-1024x768": {
+      "path": "docs/evidence/narrow-zoom-chrome-long-empty-1024x768.png",
+      "sha256": "9e4be20d42cbaa24fb6a6196b3382d4bcc348db9fba03a0034492801c19d05df"
+    },
+    "chrome-empty-1024x720": {
+      "path": "docs/evidence/narrow-zoom-chrome-empty-1024x720.png",
+      "sha256": "11ace9e7cf7cdc3c0d0f6bb30a4855ccdbd56d757f3470aee3e3b610f7b7dd95"
+    },
+    "chrome-long-empty-1024x720": {
+      "path": "docs/evidence/narrow-zoom-chrome-long-empty-1024x720.png",
+      "sha256": "98b61d20cdaf6d02a242cc65bdd3797e49a3e6f34df266067d8d1e6617e9bf93"
+    },
+    "chrome-empty-800x720": {
+      "path": "docs/evidence/narrow-zoom-chrome-empty-800x720.png",
+      "sha256": "318b50a656760e3d055de26beeb182ef196fe2666e91c5a19443925a56e41def"
+    },
+    "chrome-long-empty-800x720": {
+      "path": "docs/evidence/narrow-zoom-chrome-long-empty-800x720.png",
+      "sha256": "986769b96a0254b7a0c7363cc099eee4ef23df7e67ea023aa2df7a65ddc0d63f"
+    },
+    "edge": {
+      "path": "docs/evidence/narrow-zoom-edge.json",
+      "sha256": "720f0f9496dcbc50c054ba1dd750544ba4f15a6862bef53d74e1a9abc8b02731"
+    },
+    "edge-empty-1552x1000": {
+      "path": "docs/evidence/narrow-zoom-edge-empty-1552x1000.png",
+      "sha256": "2a3c6cd00a38028da15d76ecc261279827da33abdfb75d274f4c7853255e2b4b"
+    },
+    "edge-long-empty-1552x1000": {
+      "path": "docs/evidence/narrow-zoom-edge-long-empty-1552x1000.png",
+      "sha256": "b8a7f1dcad49a2d72a56e65802dd86b502b557a8cd61a35eabc50fc1469a5798"
+    },
+    "edge-empty-1280x800": {
+      "path": "docs/evidence/narrow-zoom-edge-empty-1280x800.png",
+      "sha256": "e3c86ae0fe8f84b1577e5717ff58aac3a2d5bc3772fc6cac7eb4f9f491ccd79e"
+    },
+    "edge-long-empty-1280x800": {
+      "path": "docs/evidence/narrow-zoom-edge-long-empty-1280x800.png",
+      "sha256": "4690aa556b244a341b942a16ae8192ac25c847d01a2fb80d1a2a9e77c92db723"
+    },
+    "edge-empty-1024x768": {
+      "path": "docs/evidence/narrow-zoom-edge-empty-1024x768.png",
+      "sha256": "76be7b0dc0b476db005306b9953237d62787cabf20d78bf540fc92c12002c435"
+    },
+    "edge-long-empty-1024x768": {
+      "path": "docs/evidence/narrow-zoom-edge-long-empty-1024x768.png",
+      "sha256": "5e630a4de32732d5efcbb0aa92da5c12989b85778abcdbb11df69eef48e40d9a"
+    },
+    "edge-empty-1024x720": {
+      "path": "docs/evidence/narrow-zoom-edge-empty-1024x720.png",
+      "sha256": "bae8c42631506b31f24e9668c84361be028985f7a271f42b7d8d78fdf26f5185"
+    },
+    "edge-long-empty-1024x720": {
+      "path": "docs/evidence/narrow-zoom-edge-long-empty-1024x720.png",
+      "sha256": "153d476eae0df83a0eeee1fb563139bcd7618848a72609ca30c9e9ed38b79986"
+    },
+    "edge-empty-800x720": {
+      "path": "docs/evidence/narrow-zoom-edge-empty-800x720.png",
+      "sha256": "082bc0fd010e983e4aeede3ca336419caecdfda353ed5f3d4b46bd8904d3330d"
+    },
+    "edge-long-empty-800x720": {
+      "path": "docs/evidence/narrow-zoom-edge-long-empty-800x720.png",
+      "sha256": "4acfb0733088879075671702307286b0255b2bf0931dde8d581cb24fede01aa1"
+    },
+    "before-process": {
+      "path": "docs/evidence/narrow-zoom-before-process.log",
+      "sha256": "b6ada82982f57cef63f2bdc29844a3cfe56064dea42e9cd84481f480bedeac8c"
+    },
+    "after-chrome-process": {
+      "path": "docs/evidence/narrow-zoom-after-chrome-process.log",
+      "sha256": "7366dad78f7a3a802e8b60f8c85b36e78eda873b5e942ce6ebb70f7389ddbb4a"
+    },
+    "search-check-process": {
+      "path": "docs/evidence/narrow-zoom-search-check-process.log",
+      "sha256": "5f001971fa85ae6c1afe8423c11e5aecea35e09247e93b87571b3c922176244c"
+    },
+    "selected-check-process": {
+      "path": "docs/evidence/narrow-zoom-selected-check-process.log",
+      "sha256": "79db51602a30484835ff52f5e3759d5ec159d13c3d2b36d61e456fb0ed736817"
+    },
+    "final-chrome-process": {
+      "path": "docs/evidence/narrow-zoom-final-chrome-process.log",
+      "sha256": "221f8a7ee4103280da460b3181b0890a4313ec268a1caec6b6cb6c20ae88f251"
+    },
+    "verified-chrome-process": {
+      "path": "docs/evidence/narrow-zoom-verified-chrome-process.log",
+      "sha256": "c8a4791df44258533b3ef056837c39fd976e8f4a80545fbf1d7718eafdfab675"
+    },
+    "restored-chrome-process": {
+      "path": "docs/evidence/narrow-zoom-restored-chrome-process.log",
+      "sha256": "52685087dc998b5f67d447d1733148d46913ef451a8e39b1f4389f4b84aef728"
+    },
+    "restored-edge-process": {
+      "path": "docs/evidence/narrow-zoom-restored-edge-process.log",
+      "sha256": "52685087dc998b5f67d447d1733148d46913ef451a8e39b1f4389f4b84aef728"
+    },
+    "build-process": {
+      "path": "docs/evidence/narrow-zoom-build-process.log",
+      "sha256": "e9b80925a9de506c5337859b7604415832328d2f0106491c611b033fa4ff31d7"
+    },
+    "second-build-process": {
+      "path": "docs/evidence/narrow-zoom-second-build-process.log",
+      "sha256": "d8258f38df3b83a7d01100cdfe0038bd06d20d8a768e4fdea4f4101dc14bd8fd"
+    }
+  },
+  "source_sha256": {
+    "apps/web/client/src/style.css": "b176171b63830a82808b63000e707e9d56d174a42ea1714c2736315330269f82",
+    "scripts/verify_notice_zoom.cjs": "30d32b83553a405aef6b08ba294744878763b31b46fd5c2295f105e04c736c64",
+    "docs/evidence/history/narrow-zoom-before-style.css": "fe9de22a733d01317734e763a30e0b119d75aa123c15c14747a89b3c63fb5db8",
+    "docs/evidence/history/narrow-zoom-mid-style.css": "f0b0dc1bfb4a6cb3ab0b672c2d1031110af842d77096d3729211076e75c23ed8",
+    "docs/evidence/history/narrow-zoom-before-verifier.cjs": "c75595706ab179d6569b6b6d34fdbee7801d4751befd833e048b2b1dac50ccd3",
+    "docs/evidence/history/narrow-zoom-first-verifier.cjs": "d5d4c59a95e018bc8e6ab473ebf6a2f7036009bfd28278ea371875b318508218",
+    "docs/evidence/history/narrow-zoom-third-verifier.cjs": "27e9f1e7911eb4865c45da5c0aa550a7f5cee79684d10f045e88712229cda61a"
+  },
+  "checks": {
+    "total_zoom_checks": 312,
+    "baseline_100_percent_checks": 10,
+    "physical_window_sizes": 5,
+    "browsers": 2,
+    "original_occlusion_reproduced": true,
+    "scale_overlap_rejected": true,
+    "current_all_passed": true,
+    "typecheck_build_passed": true,
+    "hashes_verified": true,
+    "preview_js_css_match": true,
+    "preview_http_status": 200
+  },
+  "limits": [
+    "Real browser zoom confirmed via CDP; isolated headless profiles, finite five-window tasks, not OS screen-reader or physical mobile acceptance.",
+    "Nine-point hit tests plus implementing-agent screenshot review are not independent usability QA or exhaustive pixel-occlusion proof.",
+    "Network permission denial and stopped preview prevented two attempts before page load; logs retained, not counted as passing checks.",
+    "No performance or Firefox remeasurement."
+  ]
+}

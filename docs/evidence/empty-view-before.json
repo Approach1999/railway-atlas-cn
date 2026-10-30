@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-28T05:11:28.189Z",
+  "browser_target": {
+    "channel": "chrome",
+    "version": "156.0.8078.48",
+    "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "product": "Chrome/156.0.8078.48",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "renderer": "forced SwiftShader",
+    "headless": true,
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64"
+    },
+    "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+  },
+  "before": true,
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "source_sha256": "9df9d5aaf5cff98c31b7fad957ec8202ca515531f07158cd19198c73b768f599",
+  "controller_sha256": "ea0bede6e06ad36f1bdd0db74bb60778be1f2bcfd54615fe8ebfcdf8b0dfea52",
+  "build": {
+    "asset": "/assets/index-tJmMJPE_.js",
+    "index_sha256": "63ee39a19d8f224c8c11011f4e12f7955170831f7ce322121860c53f62aaf169",
+    "asset_sha256": "a08798deece3c35042844b8e956eb91e91d71933f5bf3b980d5e338248c7d5fb"
+  },
+  "checks": [
+    {
+      "name": "confirmed-unexplained-empty-view",
+      "rendered": 0,
+      "notice": "",
+      "notice_hidden": true
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "captures": [
+    {
+      "original_sha256": "a08798deece3c35042844b8e956eb91e91d71933f5bf3b980d5e338248c7d5fb",
+      "observed_sha256": "aea179d8b51c39b25cc4c83fc653cfc420199fb29f3ab96d30185479d8645e70"
+    }
+  ],
+  "scope": "Capture public Map reference only; real current immutable snapshot, no fabricated empty tiles. Synthetic network delay/503. Installed browsers, not reader or physical-device acceptance."
+}

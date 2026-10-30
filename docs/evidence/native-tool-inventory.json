@@ -1,0 +1,770 @@
+{
+  "date": "2026-10-25T02:55:33.998821+00:00",
+  "platform": "CPython 3.12 Windows x64",
+  "inputs": {
+    "requirements-data.lock": "8f8bc5f653652adc2612b3c1f51d5460db3772ed3891b7b6816894bd08bf8c65",
+    "config/native-license-sources.json": "e140ada980b6cb988d1dcb50ecdb21d3ed7bf5a5e6b4dffe8bd5a873a66dcd7e",
+    "docs/evidence/python-lock-sources.json": "d862a5a43c6d0a8c9789ad28d64cc59ab23dcd48ae21d2241951bd93156d75eb",
+    "scripts/native_inventory.py": "935b8c223e234011f75c11618d4033daabccbbba7d54eefcbf96555f47eb200b",
+    "scripts/pe_imports.py": "fd042a809b5a8779acef42bf7c98fbfdbd42678f4eef2d35789918d50e20b051"
+  },
+  "wheel": {
+    "filename": "osmium-4.3.0-cp312-cp312-win_amd64.whl",
+    "sha256": "0d65ddbe5f7038713efe58e0b09dd05944cc0ad697e7f1fd7160670fb14a1499",
+    "source_url": "https://files.pythonhosted.org/packages/bf/f2/026d581d9cf0b3164b979f1587d5aae5c5a47bd6e78b8285c2c1027c8f1a/osmium-4.3.0-cp312-cp312-win_amd64.whl",
+    "original_files_compared": 45,
+    "installed_record_hashes_checked": 49,
+    "wheel_metadata": "Wheel-Version: 1.0\nGenerator: scikit-build-core 0.11.6\nRoot-Is-Purelib: false\nTag: cp312-cp312-win_amd64\n\n",
+    "repair_tool_version": "Version: 1.12.0",
+    "repair_metadata_sha256": "036d6df90e659db44f622c323f2ee6f3a86950f0a4580cedb6bc3a4b9a82fcb0"
+  },
+  "native_components": [
+    {
+      "name": "bzip2",
+      "version": "1.0.8",
+      "version_evidence": {
+        "kind": "runtime_export",
+        "symbol": "BZ2_bzlibVersion",
+        "reported": "1.0.8, 13-Jul-2019"
+      },
+      "file": "osmium.libs/bz2-661cbc1649e89c7a7bef8309641a897f.dll",
+      "sha256": "661cbc1649e89c7a7bef8309641a897f5f1d69a5c5bddc653c8e2d820bff5a4b",
+      "license_files": [
+        {
+          "archive_file": "data/manifests/local/license-archives/bzip2-1.0.8.tar.gz",
+          "archive_sha256": "ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269",
+          "file": "third_party/licenses/native/bzip2-1.0.8.LICENSE",
+          "pgp_signature_verified": false,
+          "sha256": "c6dbbf828498be844a89eaa3b84adbab3199e342eb5cb2ed2f0d4ba7ec0f38a3",
+          "source_file": "bzip2-1.0.8/LICENSE",
+          "source_url": "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz"
+        }
+      ]
+    },
+    {
+      "name": "expat",
+      "version": "2.7.3",
+      "version_evidence": {
+        "kind": "runtime_export",
+        "symbol": "XML_ExpatVersion",
+        "reported": "expat_2.7.3"
+      },
+      "file": "osmium.libs/libexpat-27f2f706e919cbfacab554172cfdf4d1.dll",
+      "sha256": "27f2f706e919cbfacab554172cfdf4d1e59a4fd8d7d18cc0167dcfc59af71f4a",
+      "license_files": [
+        {
+          "file": "third_party/licenses/native/expat-2.7.3-expat_COPYING",
+          "git_blob_sha": "c6d184a8aae845ce7bf4d195b214d8244d457f8f",
+          "release_ref": {
+            "node_id": "MDM6UmVmODAzMTQyMTM6cmVmcy90YWdzL1JfMl83XzM=",
+            "object": {
+              "sha": "2120251ef8e5fd5f398063b6508be27796689bd9",
+              "type": "tag",
+              "url": "https://api.github.com/repos/libexpat/libexpat/git/tags/2120251ef8e5fd5f398063b6508be27796689bd9"
+            },
+            "ref": "refs/tags/R_2_7_3",
+            "url": "https://api.github.com/repos/libexpat/libexpat/git/refs/tags/R_2_7_3"
+          },
+          "repository": "libexpat/libexpat",
+          "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87",
+          "source_file": "expat/COPYING",
+          "source_url": "https://github.com/libexpat/libexpat/blob/4575e52f83e0d6d7bd24939eab8952bbc7bc358f/expat/COPYING",
+          "tag_object": {
+            "message": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEy43nCpDPv2w79cxWliYqz/vTrsYFAmjURRQACgkQliYqz/vT\nrsYMYRAAhWfbEvvTI+8lHppYGqn663rlNXbaDyIv1+7tLBgQ1zZSKXlKVJr5SaRt\n0ByybI8qVQbEyZDWKNl4ANrIv6QB2S1EPy0QpTiFg27kN3uMZMEMK1AR+0OaPFme\n8Po4AQa4icXHBZlyys0b0KFjcoDmSL1stuTB9vM1rC1slseRj+q1F748LaQOZbyU\nCDuowIFqKaysG+pDdslh3uDh7kNchE8AfZKHuLglrIegaeK+zCc8buvgwweSUs6a\nlWnHwklPb3/vIi1LgHbV3qAjYFenuTQlAZS9e3CKu7BfEB2CYiaZe7F5ydFSxeD+\nQiTVwJWhxQ7xLosDg4M0lT36KecAyBuUP3KDKkw6SXPrz+DQhxHfjF82qLnkWvqK\nvQI/kEbKX4UEcfYE4j0RGJhi4IXg+EHwQSL95CAHul1NtG3HC3uVFyExPbytthaN\nsbz9pVBocqXnkPIozsxfz7w6Z8Jaa4Ht66eab8t9w7tpvZsp38cE/DEPuUiwlzYb\nyuBIXWvQzxiJMH7PWUqYOrIRsOJoHOclzodEhbCYGtaM8HofJ3VcBoeahH1sXvl5\nQyeq1ksP1IQIbAUnmmXzY6si3qPs76wbc14blaOjqab6XwZ2kdOxtlu15MZncuuZ\n9QbO4zXBBRdUVYYSoAL1pVYNYoSmGHE/EsEBNXFz2z8xT6m9qyc=\n=gBG6\n-----END PGP SIGNATURE-----\n",
+            "node_id": "TA_kwDOBMl_ZdoAKDIxMjAyNTFlZjhlNWZkNWYzOTgwNjNiNjUwOGJlMjc3OTY2ODliZDk",
+            "object": {
+              "sha": "4575e52f83e0d6d7bd24939eab8952bbc7bc358f",
+              "type": "commit",
+              "url": "https://api.github.com/repos/libexpat/libexpat/git/commits/4575e52f83e0d6d7bd24939eab8952bbc7bc358f"
+            },
+            "sha": "2120251ef8e5fd5f398063b6508be27796689bd9",
+            "tag": "R_2_7_3",
+            "tagger": {
+              "date": "2025-09-24T19:23:00Z",
+              "email": "sping@gentoo.org",
+              "name": "Sebastian Pipping"
+            },
+            "url": "https://api.github.com/repos/libexpat/libexpat/git/tags/2120251ef8e5fd5f398063b6508be27796689bd9",
+            "verification": {
+              "payload": "object 4575e52f83e0d6d7bd24939eab8952bbc7bc358f\ntype commit\ntag R_2_7_3\ntagger Sebastian Pipping <sping@gentoo.org> 1758741780 +0200\n\n",
+              "reason": "valid",
+              "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEy43nCpDPv2w79cxWliYqz/vTrsYFAmjURRQACgkQliYqz/vT\nrsYMYRAAhWfbEvvTI+8lHppYGqn663rlNXbaDyIv1+7tLBgQ1zZSKXlKVJr5SaRt\n0ByybI8qVQbEyZDWKNl4ANrIv6QB2S1EPy0QpTiFg27kN3uMZMEMK1AR+0OaPFme\n8Po4AQa4icXHBZlyys0b0KFjcoDmSL1stuTB9vM1rC1slseRj+q1F748LaQOZbyU\nCDuowIFqKaysG+pDdslh3uDh7kNchE8AfZKHuLglrIegaeK+zCc8buvgwweSUs6a\nlWnHwklPb3/vIi1LgHbV3qAjYFenuTQlAZS9e3CKu7BfEB2CYiaZe7F5ydFSxeD+\nQiTVwJWhxQ7xLosDg4M0lT36KecAyBuUP3KDKkw6SXPrz+DQhxHfjF82qLnkWvqK\nvQI/kEbKX4UEcfYE4j0RGJhi4IXg+EHwQSL95CAHul1NtG3HC3uVFyExPbytthaN\nsbz9pVBocqXnkPIozsxfz7w6Z8Jaa4Ht66eab8t9w7tpvZsp38cE/DEPuUiwlzYb\nyuBIXWvQzxiJMH7PWUqYOrIRsOJoHOclzodEhbCYGtaM8HofJ3VcBoeahH1sXvl5\nQyeq1ksP1IQIbAUnmmXzY6si3qPs76wbc14blaOjqab6XwZ2kdOxtlu15MZncuuZ\n9QbO4zXBBRdUVYYSoAL1pVYNYoSmGHE/EsEBNXFz2z8xT6m9qyc=\n=gBG6\n-----END PGP SIGNATURE-----\n",
+              "verified": true,
+              "verified_at": "2025-09-24T19:24:30Z"
+            }
+          },
+          "upstream_commit": "4575e52f83e0d6d7bd24939eab8952bbc7bc358f"
+        }
+      ]
+    },
+    {
+      "name": "lz4",
+      "version": "1.10.0",
+      "version_evidence": {
+        "kind": "runtime_export",
+        "symbol": "LZ4_versionString",
+        "reported": "1.10.0"
+      },
+      "file": "osmium.libs/lz4-6698ffb82e4e8ece3fd299a3be16b7b3.dll",
+      "sha256": "6698ffb82e4e8ece3fd299a3be16b7b38ba08d42f896470ceee7ccf5399fb390",
+      "license_files": [
+        {
+          "file": "third_party/licenses/native/lz4-1.10.0-lib_LICENSE",
+          "git_blob_sha": "488491695a6b6984aa3a49a8392b192ed2bcac1d",
+          "release_ref": {
+            "node_id": "MDM6UmVmMTgxMDYyNjk6cmVmcy90YWdzL3YxLjEwLjA=",
+            "object": {
+              "sha": "ebb370ca83af193212df4dcbadcc5d87bc0de2f0",
+              "type": "commit",
+              "url": "https://api.github.com/repos/lz4/lz4/git/commits/ebb370ca83af193212df4dcbadcc5d87bc0de2f0"
+            },
+            "ref": "refs/tags/v1.10.0",
+            "url": "https://api.github.com/repos/lz4/lz4/git/refs/tags/v1.10.0"
+          },
+          "repository": "lz4/lz4",
+          "sha256": "8b58c446121a109ccf32edc094bba3010a3d85e4ee3702950db55e4d3e87736c",
+          "source_file": "lib/LICENSE",
+          "source_url": "https://github.com/lz4/lz4/blob/ebb370ca83af193212df4dcbadcc5d87bc0de2f0/lib/LICENSE",
+          "tag_object": null,
+          "upstream_commit": "ebb370ca83af193212df4dcbadcc5d87bc0de2f0"
+        }
+      ]
+    },
+    {
+      "name": "msvcp140",
+      "version": "14.40.33810.0",
+      "version_evidence": {
+        "kind": "PE_file_version_resource"
+      },
+      "file": "osmium.libs/msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+      "sha256": "a4c2229bdc2a2a630acdc095b4d86008e5c3e3bc7773174354f3da4f5beb9cde",
+      "license_files": []
+    },
+    {
+      "name": "zlib",
+      "version": "1.3.1",
+      "version_evidence": {
+        "kind": "runtime_export",
+        "symbol": "zlibVersion",
+        "reported": "1.3.1"
+      },
+      "file": "osmium.libs/zlib1-360284ded87b40282d950ad735fca3aa.dll",
+      "sha256": "360284ded87b40282d950ad735fca3aa39083045796beee71cf4e4b1b764b9ed",
+      "license_files": [
+        {
+          "file": "third_party/licenses/native/zlib-1.3.1-LICENSE",
+          "git_blob_sha": "ab8ee6f71428c3e4646b12b64ad387cde33462e5",
+          "release_ref": {
+            "node_id": "MDM6UmVmMjM1OTM3ODpyZWZzL3RhZ3MvdjEuMy4x",
+            "object": {
+              "sha": "925af44f3cde53c6b076611c297850091b5dc7bb",
+              "type": "tag",
+              "url": "https://api.github.com/repos/madler/zlib/git/tags/925af44f3cde53c6b076611c297850091b5dc7bb"
+            },
+            "ref": "refs/tags/v1.3.1",
+            "url": "https://api.github.com/repos/madler/zlib/git/refs/tags/v1.3.1"
+          },
+          "repository": "madler/zlib",
+          "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243",
+          "source_file": "LICENSE",
+          "source_url": "https://github.com/madler/zlib/blob/51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf/LICENSE",
+          "tag_object": {
+            "message": "zlib 1.3.1\n-----BEGIN PGP SIGNATURE-----\nComment: GPGTools - http://gpgtools.org\n\niF0EABECAB0WIQRe1GpnIdNlWHeR4qp4P82OWLyvugUCZa64owAKCRB4P82OWLyv\nuvscAKDNf1+9KtPTuC3AGNU6PpAZszDXsQCfXt/yndR3i9vERpSTDL+JMVfFPyI=\n=DnBe\n-----END PGP SIGNATURE-----\n",
+            "node_id": "TA_kwDOACQAUtoAKDkyNWFmNDRmM2NkZTUzYzZiMDc2NjExYzI5Nzg1MDA5MWI1ZGM3YmI",
+            "object": {
+              "sha": "51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf",
+              "type": "commit",
+              "url": "https://api.github.com/repos/madler/zlib/git/commits/51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+            },
+            "sha": "925af44f3cde53c6b076611c297850091b5dc7bb",
+            "tag": "v1.3.1",
+            "tagger": {
+              "date": "2024-01-22T18:49:07Z",
+              "email": "madler@alumni.caltech.edu",
+              "name": "Mark Adler"
+            },
+            "url": "https://api.github.com/repos/madler/zlib/git/tags/925af44f3cde53c6b076611c297850091b5dc7bb",
+            "verification": {
+              "payload": "object 51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf\ntype commit\ntag v1.3.1\ntagger Mark Adler <madler@alumni.caltech.edu> 1705949347 -0800\n\nzlib 1.3.1\n",
+              "reason": "valid",
+              "signature": "-----BEGIN PGP SIGNATURE-----\nComment: GPGTools - http://gpgtools.org\n\niF0EABECAB0WIQRe1GpnIdNlWHeR4qp4P82OWLyvugUCZa64owAKCRB4P82OWLyv\nuvscAKDNf1+9KtPTuC3AGNU6PpAZszDXsQCfXt/yndR3i9vERpSTDL+JMVfFPyI=\n=DnBe\n-----END PGP SIGNATURE-----\n",
+              "verified": true,
+              "verified_at": "2024-11-04T21:35:33Z"
+            }
+          },
+          "upstream_commit": "51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+        }
+      ]
+    },
+    {
+      "name": "libosmium",
+      "version": "2.23.0",
+      "version_evidence": {
+        "kind": "wheel_producer_declaration",
+        "file": "osmium/version.py",
+        "sha256": "5a3ba47db2ad0e58764c809105597354818a611be1fe72778b640c12c33b87a8",
+        "attribute": "libosmium_version"
+      },
+      "license_files": [
+        {
+          "file": "third_party/licenses/native/libosmium-2.23.0-LICENSE",
+          "git_blob_sha": "36b7cd93cdfbac762f5be4c6ce276df2ea6305c2",
+          "release_ref": {
+            "node_id": "MDM6UmVmMTE3MzMwNzA6cmVmcy90YWdzL3YyLjIzLjA=",
+            "object": {
+              "sha": "9c49c960569c15dd09ff9eb9e9dce7f383ab6ed2",
+              "type": "commit",
+              "url": "https://api.github.com/repos/osmcode/libosmium/git/commits/9c49c960569c15dd09ff9eb9e9dce7f383ab6ed2"
+            },
+            "ref": "refs/tags/v2.23.0",
+            "url": "https://api.github.com/repos/osmcode/libosmium/git/refs/tags/v2.23.0"
+          },
+          "repository": "osmcode/libosmium",
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "source_file": "LICENSE",
+          "source_url": "https://github.com/osmcode/libosmium/blob/9c49c960569c15dd09ff9eb9e9dce7f383ab6ed2/LICENSE",
+          "tag_object": null,
+          "upstream_commit": "9c49c960569c15dd09ff9eb9e9dce7f383ab6ed2"
+        }
+      ]
+    },
+    {
+      "name": "protozero",
+      "version": "1.8.1",
+      "version_evidence": {
+        "kind": "wheel_producer_declaration",
+        "file": "osmium/version.py",
+        "sha256": "5a3ba47db2ad0e58764c809105597354818a611be1fe72778b640c12c33b87a8",
+        "attribute": "protozero_version"
+      },
+      "license_files": [
+        {
+          "file": "third_party/licenses/native/protozero-1.8.1-LICENSE.md",
+          "git_blob_sha": "5c2ce01d11b1c31a6edbd96d190868e7e7106412",
+          "release_ref": {
+            "node_id": "MDM6UmVmMTg3MTUzNjY6cmVmcy90YWdzL3YxLjguMQ==",
+            "object": {
+              "sha": "89a55ad2962cca3adbe8383a4b6d9a8411352ef2",
+              "type": "commit",
+              "url": "https://api.github.com/repos/mapbox/protozero/git/commits/89a55ad2962cca3adbe8383a4b6d9a8411352ef2"
+            },
+            "ref": "refs/tags/v1.8.1",
+            "url": "https://api.github.com/repos/mapbox/protozero/git/refs/tags/v1.8.1"
+          },
+          "repository": "mapbox/protozero",
+          "sha256": "254c0e9f18d261bfc55ff277cf12e3c1ca25839d56af17fba65d142396021466",
+          "source_file": "LICENSE.md",
+          "source_url": "https://github.com/mapbox/protozero/blob/89a55ad2962cca3adbe8383a4b6d9a8411352ef2/LICENSE.md",
+          "tag_object": null,
+          "upstream_commit": "89a55ad2962cca3adbe8383a4b6d9a8411352ef2"
+        },
+        {
+          "file": "third_party/licenses/native/protozero-folly-1.8.1-LICENSE.from_folly",
+          "git_blob_sha": "f433b1a53f5b830a205fd2df78e2b34974656c7b",
+          "release_ref": {
+            "node_id": "MDM6UmVmMTg3MTUzNjY6cmVmcy90YWdzL3YxLjguMQ==",
+            "object": {
+              "sha": "89a55ad2962cca3adbe8383a4b6d9a8411352ef2",
+              "type": "commit",
+              "url": "https://api.github.com/repos/mapbox/protozero/git/commits/89a55ad2962cca3adbe8383a4b6d9a8411352ef2"
+            },
+            "ref": "refs/tags/v1.8.1",
+            "url": "https://api.github.com/repos/mapbox/protozero/git/refs/tags/v1.8.1"
+          },
+          "repository": "mapbox/protozero",
+          "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+          "source_file": "LICENSE.from_folly",
+          "source_url": "https://github.com/mapbox/protozero/blob/89a55ad2962cca3adbe8383a4b6d9a8411352ef2/LICENSE.from_folly",
+          "tag_object": null,
+          "upstream_commit": "89a55ad2962cca3adbe8383a4b6d9a8411352ef2"
+        }
+      ]
+    },
+    {
+      "name": "pybind11",
+      "version": "3.0.1",
+      "version_evidence": {
+        "kind": "wheel_producer_declaration",
+        "file": "osmium/version.py",
+        "sha256": "5a3ba47db2ad0e58764c809105597354818a611be1fe72778b640c12c33b87a8",
+        "attribute": "pybind11_version"
+      },
+      "license_files": [
+        {
+          "file": "third_party/licenses/native/pybind11-3.0.1-LICENSE",
+          "git_blob_sha": "e466b0dfda14f3a7c8ece512937eb99c8b7b6d68",
+          "release_ref": {
+            "node_id": "MDM6UmVmMzg1ODE2MjY6cmVmcy90YWdzL3YzLjAuMQ==",
+            "object": {
+              "sha": "e86205cb2ba070755d582856430c0f83c0af6694",
+              "type": "tag",
+              "url": "https://api.github.com/repos/pybind/pybind11/git/tags/e86205cb2ba070755d582856430c0f83c0af6694"
+            },
+            "ref": "refs/tags/v3.0.1",
+            "url": "https://api.github.com/repos/pybind/pybind11/git/refs/tags/v3.0.1"
+          },
+          "repository": "pybind/pybind11",
+          "sha256": "83965b843b98f670d3a85bd041ed4b372c8ec50d7b4a5995a83ac697ba675dcb",
+          "source_file": "LICENSE",
+          "source_url": "https://github.com/pybind/pybind11/blob/f5fbe867d2d26e4a0a9177a51f6e568868ad3dc8/LICENSE",
+          "tag_object": {
+            "message": "v3.0.1 release\n",
+            "node_id": "TA_kwDOAky1etoAKGU4NjIwNWNiMmJhMDcwNzU1ZDU4Mjg1NjQzMGMwZjgzYzBhZjY2OTQ",
+            "object": {
+              "sha": "f5fbe867d2d26e4a0a9177a51f6e568868ad3dc8",
+              "type": "commit",
+              "url": "https://api.github.com/repos/pybind/pybind11/git/commits/f5fbe867d2d26e4a0a9177a51f6e568868ad3dc8"
+            },
+            "sha": "e86205cb2ba070755d582856430c0f83c0af6694",
+            "tag": "v3.0.1",
+            "tagger": {
+              "date": "2025-08-22T20:01:24Z",
+              "email": "henryschreineriii@gmail.com",
+              "name": "Henry Schreiner"
+            },
+            "url": "https://api.github.com/repos/pybind/pybind11/git/tags/e86205cb2ba070755d582856430c0f83c0af6694",
+            "verification": {
+              "payload": null,
+              "reason": "unsigned",
+              "signature": null,
+              "verified": false,
+              "verified_at": null
+            }
+          },
+          "upstream_commit": "f5fbe867d2d26e4a0a9177a51f6e568868ad3dc8"
+        }
+      ]
+    }
+  ],
+  "binaries": [
+    {
+      "file": "osmium/area.cp312-win_amd64.pyd",
+      "sha256": "9fceeafeb79845832943e535ef67c92964d7af87c2928737485df7a9e273aeff",
+      "machine": "0x8664",
+      "format": "PE32+",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "KERNEL32.dll",
+        "msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+        "python312.dll",
+        "VCRUNTIME140.dll",
+        "VCRUNTIME140_1.dll"
+      ],
+      "delay_imports": []
+    },
+    {
+      "file": "osmium/filter.cp312-win_amd64.pyd",
+      "sha256": "68d1630a6b29ff9162091fde62c51b925a602111eb27b9fb9fd106f48cc5723d",
+      "machine": "0x8664",
+      "format": "PE32+",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "KERNEL32.dll",
+        "msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+        "python312.dll",
+        "VCRUNTIME140.dll",
+        "VCRUNTIME140_1.dll"
+      ],
+      "delay_imports": []
+    },
+    {
+      "file": "osmium/geom.cp312-win_amd64.pyd",
+      "sha256": "5db40cf7fc3595bc6e8cb88c1b794429c85efc52c39bda313b2dc1c12cf8f6b2",
+      "machine": "0x8664",
+      "format": "PE32+",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "KERNEL32.dll",
+        "msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+        "python312.dll",
+        "VCRUNTIME140.dll",
+        "VCRUNTIME140_1.dll"
+      ],
+      "delay_imports": []
+    },
+    {
+      "file": "osmium/index.cp312-win_amd64.pyd",
+      "sha256": "1d0d50956da42dadc201bdb13cdaa44c97ddc7a8f6a99c96b6bc0b68aa3b094d",
+      "machine": "0x8664",
+      "format": "PE32+",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "KERNEL32.dll",
+        "msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+        "python312.dll",
+        "VCRUNTIME140.dll",
+        "VCRUNTIME140_1.dll"
+      ],
+      "delay_imports": []
+    },
+    {
+      "file": "osmium/io.cp312-win_amd64.pyd",
+      "sha256": "a3e731593d37ca260eaa973d6c3519de7863c6d3b67b31204581bc93421ce2b4",
+      "machine": "0x8664",
+      "format": "PE32+",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "bz2-661cbc1649e89c7a7bef8309641a897f.dll",
+        "KERNEL32.dll",
+        "libexpat-27f2f706e919cbfacab554172cfdf4d1.dll",
+        "lz4-6698ffb82e4e8ece3fd299a3be16b7b3.dll",
+        "msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+        "python312.dll",
+        "VCRUNTIME140.dll",
+        "VCRUNTIME140_1.dll",
+        "zlib1-360284ded87b40282d950ad735fca3aa.dll"
+      ],
+      "delay_imports": []
+    },
+    {
+      "file": "osmium/_osmium.cp312-win_amd64.pyd",
+      "sha256": "39e2a9de0592da67a727ca71539e7e2b72913319c856eebdb1b4a196cd426fe6",
+      "machine": "0x8664",
+      "format": "PE32+",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "bz2-661cbc1649e89c7a7bef8309641a897f.dll",
+        "KERNEL32.dll",
+        "libexpat-27f2f706e919cbfacab554172cfdf4d1.dll",
+        "lz4-6698ffb82e4e8ece3fd299a3be16b7b3.dll",
+        "msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+        "python312.dll",
+        "VCRUNTIME140.dll",
+        "VCRUNTIME140_1.dll",
+        "zlib1-360284ded87b40282d950ad735fca3aa.dll"
+      ],
+      "delay_imports": []
+    },
+    {
+      "file": "osmium/osm/_osm.cp312-win_amd64.pyd",
+      "sha256": "a0c647b0aa68b84afe176064f1a3c58bc6fbd4832e161c13ba6cf414174d8ecc",
+      "machine": "0x8664",
+      "format": "PE32+",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "KERNEL32.dll",
+        "msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+        "python312.dll",
+        "VCRUNTIME140.dll",
+        "VCRUNTIME140_1.dll"
+      ],
+      "delay_imports": []
+    },
+    {
+      "file": "osmium/replication/_replication.cp312-win_amd64.pyd",
+      "sha256": "093b5eae7c169eace0670b5e4cd6c18681bdd44d78c4c8fe02274d21851b60bd",
+      "machine": "0x8664",
+      "format": "PE32+",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "bz2-661cbc1649e89c7a7bef8309641a897f.dll",
+        "KERNEL32.dll",
+        "libexpat-27f2f706e919cbfacab554172cfdf4d1.dll",
+        "lz4-6698ffb82e4e8ece3fd299a3be16b7b3.dll",
+        "msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+        "python312.dll",
+        "VCRUNTIME140.dll",
+        "VCRUNTIME140_1.dll",
+        "zlib1-360284ded87b40282d950ad735fca3aa.dll"
+      ],
+      "delay_imports": []
+    },
+    {
+      "file": "osmium.libs/bz2-661cbc1649e89c7a7bef8309641a897f.dll",
+      "sha256": "661cbc1649e89c7a7bef8309641a897f5f1d69a5c5bddc653c8e2d820bff5a4b",
+      "machine": "0x8664",
+      "format": "PE32+",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "KERNEL32.dll",
+        "VCRUNTIME140.dll"
+      ],
+      "delay_imports": []
+    },
+    {
+      "file": "osmium.libs/libexpat-27f2f706e919cbfacab554172cfdf4d1.dll",
+      "sha256": "27f2f706e919cbfacab554172cfdf4d1e59a4fd8d7d18cc0167dcfc59af71f4a",
+      "machine": "0x8664",
+      "format": "PE32+",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "KERNEL32.dll",
+        "VCRUNTIME140.dll"
+      ],
+      "delay_imports": []
+    },
+    {
+      "file": "osmium.libs/lz4-6698ffb82e4e8ece3fd299a3be16b7b3.dll",
+      "sha256": "6698ffb82e4e8ece3fd299a3be16b7b38ba08d42f896470ceee7ccf5399fb390",
+      "machine": "0x8664",
+      "format": "PE32+",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "KERNEL32.dll",
+        "VCRUNTIME140.dll"
+      ],
+      "delay_imports": []
+    },
+    {
+      "file": "osmium.libs/msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+      "sha256": "a4c2229bdc2a2a630acdc095b4d86008e5c3e3bc7773174354f3da4f5beb9cde",
+      "machine": "0x8664",
+      "format": "PE32+",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "KERNEL32.dll",
+        "VCRUNTIME140.dll",
+        "VCRUNTIME140_1.dll"
+      ],
+      "delay_imports": []
+    },
+    {
+      "file": "osmium.libs/zlib1-360284ded87b40282d950ad735fca3aa.dll",
+      "sha256": "360284ded87b40282d950ad735fca3aa39083045796beee71cf4e4b1b764b9ed",
+      "machine": "0x8664",
+      "format": "PE32+",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "KERNEL32.dll",
+        "VCRUNTIME140.dll"
+      ],
+      "delay_imports": []
+    }
+  ],
+  "nonbundled_import_names": [
+    "api-ms-win-crt-convert-l1-1-0.dll",
+    "api-ms-win-crt-environment-l1-1-0.dll",
+    "api-ms-win-crt-filesystem-l1-1-0.dll",
+    "api-ms-win-crt-heap-l1-1-0.dll",
+    "api-ms-win-crt-locale-l1-1-0.dll",
+    "api-ms-win-crt-math-l1-1-0.dll",
+    "api-ms-win-crt-runtime-l1-1-0.dll",
+    "api-ms-win-crt-stdio-l1-1-0.dll",
+    "api-ms-win-crt-string-l1-1-0.dll",
+    "api-ms-win-crt-time-l1-1-0.dll",
+    "api-ms-win-crt-utility-l1-1-0.dll",
+    "KERNEL32.dll",
+    "python312.dll",
+    "VCRUNTIME140.dll",
+    "VCRUNTIME140_1.dll"
+  ],
+  "toolchains": {
+    "python": {
+      "version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "executable_sha256": "47b0553a0a11b62c53d0d0eca35f06c08b95eca70c717ff93fc1852a8d49cf44",
+      "runtime_dll_sha256": "c250cec687f173b2497d5c96f55ff36cb07a6c0ab9f2d6c7fbc969e9afeaed26",
+      "openssl": "OpenSSL 3.5.8 25 Aug 2026",
+      "license_files": [
+        {
+          "file": "third_party/licenses/toolchain/python-LICENSE.txt",
+          "sha256": "886a0ead2d89030ee62dbff52b04e47ab91998341295bb9c56fb952b4e081c7a"
+        }
+      ]
+    },
+    "node": {
+      "version": "v24.15.0",
+      "executable_sha256": "3331e1ffe19874215472217c5e94f5a0c6d8e18c4ac7111d3937aa0ad5e9b4a5",
+      "embedded_versions": {
+        "node": "24.15.0",
+        "acorn": "8.16.0",
+        "ada": "3.4.4",
+        "amaro": "1.1.8",
+        "ares": "1.34.6",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.2",
+        "llhttp": "9.3.1",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.3",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.68.0",
+        "openssl": "3.5.5",
+        "simdjson": "4.5.0",
+        "simdutf": "6.4.0",
+        "sqlite": "3.51.3",
+        "tz": "2026a",
+        "undici": "7.24.4",
+        "unicode": "17.0",
+        "uv": "1.51.0",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.48",
+        "zlib": "1.3.1-e00f703",
+        "zstd": "1.5.7"
+      },
+      "license_files": [
+        {
+          "file": "third_party/licenses/native/node-24.15.0-LICENSE",
+          "git_blob_sha": "403ea3c5717087b20e9cddaa2b4881256b6b4858",
+          "release_ref": {
+            "node_id": "MDM6UmVmMjcxOTM3Nzk6cmVmcy90YWdzL3YyNC4xNS4w",
+            "object": {
+              "sha": "a20a24415694b80361d661d6ecc1ea0e260d9c32",
+              "type": "tag",
+              "url": "https://api.github.com/repos/nodejs/node/git/tags/a20a24415694b80361d661d6ecc1ea0e260d9c32"
+            },
+            "ref": "refs/tags/v24.15.0",
+            "url": "https://api.github.com/repos/nodejs/node/git/refs/tags/v24.15.0"
+          },
+          "repository": "nodejs/node",
+          "sha256": "4573185d56580da2b890ba34a85a409257640f1c5632eade4300137266194d18",
+          "source_file": "LICENSE",
+          "source_url": "https://github.com/nodejs/node/blob/848430679556aed0bd073f2bc263331ad84fa119/LICENSE",
+          "tag_object": {
+            "message": "2026-04-15 Node.js v24.15.0 Krypton (LTS) Release\nGit-EVTag-v0-SHA512: 4bfd4c83c5d14860c3819f68c27d10fea3c50f2a2ac42b588b85a458c82c066fd108cc1ca50aa313cb4e6cb3c3e77792109c551e20e4329a517a7cc914599f0e\n-----BEGIN PGP SIGNATURE-----\n\niJMEABYKADsWIQRb6KP2yKXAHRBsCtggsaOQsWjTVgUCad/BKx0cZHVoYW1lbGFu\ndG9pbmUxOTk1QGdtYWlsLmNvbQAKCRAgsaOQsWjTVjo4AP9JJsiQEWknMIA7tjas\nSBQwIhZ044YjUU7Xh3AS1D7WOAEAk6pqTx2zPg9B4UnCfxxAliZjkrM/VC7MpFl2\nra0jeA8=\n=0VNn\n-----END PGP SIGNATURE-----\n",
+            "node_id": "TA_kwDOAZ7xs9oAKGEyMGEyNDQxNTY5NGI4MDM2MWQ2NjFkNmVjYzFlYTBlMjYwZDljMzI",
+            "object": {
+              "sha": "848430679556aed0bd073f2bc263331ad84fa119",
+              "type": "commit",
+              "url": "https://api.github.com/repos/nodejs/node/git/commits/848430679556aed0bd073f2bc263331ad84fa119"
+            },
+            "sha": "a20a24415694b80361d661d6ecc1ea0e260d9c32",
+            "tag": "v24.15.0",
+            "tagger": {
+              "date": "2026-04-15T16:47:39Z",
+              "email": "duhamelantoine1995@gmail.com",
+              "name": "Antoine du Hamel"
+            },
+            "url": "https://api.github.com/repos/nodejs/node/git/tags/a20a24415694b80361d661d6ecc1ea0e260d9c32",
+            "verification": {
+              "payload": "object 848430679556aed0bd073f2bc263331ad84fa119\ntype commit\ntag v24.15.0\ntagger Antoine du Hamel <duhamelantoine1995@gmail.com> 1776271659 +0200\n\n2026-04-15 Node.js v24.15.0 Krypton (LTS) Release\nGit-EVTag-v0-SHA512: 4bfd4c83c5d14860c3819f68c27d10fea3c50f2a2ac42b588b85a458c82c066fd108cc1ca50aa313cb4e6cb3c3e77792109c551e20e4329a517a7cc914599f0e\n",
+              "reason": "valid",
+              "signature": "-----BEGIN PGP SIGNATURE-----\n\niJMEABYKADsWIQRb6KP2yKXAHRBsCtggsaOQsWjTVgUCad/BKx0cZHVoYW1lbGFu\ndG9pbmUxOTk1QGdtYWlsLmNvbQAKCRAgsaOQsWjTVjo4AP9JJsiQEWknMIA7tjas\nSBQwIhZ044YjUU7Xh3AS1D7WOAEAk6pqTx2zPg9B4UnCfxxAliZjkrM/VC7MpFl2\nra0jeA8=\n=0VNn\n-----END PGP SIGNATURE-----\n",
+              "verified": true,
+              "verified_at": "2026-04-15T16:59:52Z"
+            }
+          },
+          "upstream_commit": "848430679556aed0bd073f2bc263331ad84fa119"
+        }
+      ]
+    },
+    "npm": {
+      "version": "11.12.1",
+      "license_files": [
+        {
+          "file": "third_party/licenses/toolchain/npm-LICENSE",
+          "sha256": "af1573a67c9d9051fbf8a9c123a22b7f51ec58cb6a588b4c23bead776dd046ab"
+        }
+      ]
+    },
+    "rustc": {
+      "version": "rustc 1.90.0 (1159e78c4 2025-09-14)\nbinary: rustc\ncommit-hash: 1159e78c4747b02ef996e55082b704c09b970588\ncommit-date: 2025-09-14\nhost: x86_64-pc-windows-msvc\nrelease: 1.90.0\nLLVM version: 20.1.8",
+      "executable_sha256": "1a9f8c489a90009ce5db828d0a7436a1354789c42590d73ff5cc8b4e53695612",
+      "license_files": [
+        {
+          "file": "third_party/licenses/toolchain/rustc-MIT.txt",
+          "sha256": "b85dcd3e453d05982552c52b5fc9e0bdd6d23c6f8e844b984a88af32570b0cc0"
+        },
+        {
+          "file": "third_party/licenses/toolchain/rustc-Apache-2.0.txt",
+          "sha256": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff"
+        }
+      ],
+      "installed_copyright_fingerprints": [
+        {
+          "file": "<rust-sysroot>/share/doc/rust/COPYRIGHT.html",
+          "sha256": "8b835bd1b8f3f53135dfdd1539bbaa8006e2a3e1c74fde0b9aa95e9d8ef2d55c",
+          "bytes": 12368099
+        },
+        {
+          "file": "<rust-sysroot>/share/doc/rust/COPYRIGHT-library.html",
+          "sha256": "025c0dd1236493fcd5b6386b68453852e6528722bd5f8dce5949e94d225e7a60",
+          "bytes": 360726
+        }
+      ]
+    },
+    "cargo": {
+      "version": "cargo 1.90.0 (840b83a10 2025-07-30)",
+      "executable_sha256": "5615085f39570e13b4abd6f23e3302521a0ec570b2dd5182e39a98a87e5e9584"
+    }
+  },
+  "review_gaps": [
+    {
+      "component": "msvcp140",
+      "reason": "native_terms_not_retained_or_reviewed"
+    },
+    {
+      "component": "native-and-toolchain",
+      "reason": "vendor_advisory_checks_and_static_transitive_closure_not_complete"
+    },
+    {
+      "component": "historical-external-tools",
+      "reason": "legacy_osmium_tippecanoe_distribution_review_pending"
+    }
+  ],
+  "limits": [
+    "Exact wheel bytes and import graph, not an independent rebuild or proof of every statically linked dependency.",
+    "Header library versions are wheel-producer declarations, distinct from queried DLL exports.",
+    "Nonbundled imports include Python/Windows runtime contracts; OS/driver provenance is not certified.",
+    "Development tools and wheel DLLs are not served by the map preview or copied into client dist.",
+    "License text retention is not redistribution/legal approval or a completed native vulnerability audit."
+  ]
+}

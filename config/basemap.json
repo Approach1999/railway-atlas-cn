@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "id": "osm-standard-muted",
+  "name": "OpenStreetMap · 淡化底图",
+  "tiles": ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
+  "tileSize": 256,
+  "maxzoom": 19,
+  "opacity": 0.48,
+  "saturation": -0.85,
+  "contrast": -0.15,
+  "attribution": "© <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\" rel=\"noopener\">OpenStreetMap contributors</a> · ODbL",
+  "coordinate_system": "WGS84 / Web Mercator",
+  "request_domains": ["tile.openstreetmap.org"],
+  "source_url": "https://www.openstreetmap.org/copyright",
+  "policy_url": "https://operations.osmfoundation.org/policies/tiles/",
+  "verified_at": "2026-10-22",
+  "scope": "本机交互预览；按视野请求，不预取、不打包、不提供离线底图"
+}

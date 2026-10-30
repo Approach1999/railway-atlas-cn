@@ -1,0 +1,78 @@
+{
+  "kind": "basemap",
+  "phase": "http",
+  "error": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#basemap-status').filter({ hasText: '底图已显示' }) to be visible\u001b[22m\n",
+  "cases": [
+    {
+      "kind": "manifest",
+      "phase": "http",
+      "request": {
+        "closed": true,
+        "close_ms": 5
+      },
+      "recovered": true,
+      "raster_fixture_requests": 0
+    },
+    {
+      "kind": "manifest",
+      "phase": "headers",
+      "request": {
+        "closed": true,
+        "close_ms": 15008
+      },
+      "recovered": true,
+      "raster_fixture_requests": 0
+    },
+    {
+      "kind": "manifest",
+      "phase": "cancel",
+      "request": {
+        "closed": true,
+        "close_ms": 25
+      },
+      "recovered": true,
+      "raster_fixture_requests": 0
+    },
+    {
+      "kind": "palette",
+      "phase": "http",
+      "request": {
+        "closed": true,
+        "close_ms": 14
+      },
+      "recovered": true,
+      "raster_fixture_requests": 0
+    },
+    {
+      "kind": "palette",
+      "phase": "body",
+      "request": {
+        "closed": true,
+        "close_ms": 15011
+      },
+      "recovered": true,
+      "raster_fixture_requests": 0
+    },
+    {
+      "kind": "palette",
+      "phase": "cancel",
+      "request": {
+        "closed": true,
+        "close_ms": 201
+      },
+      "recovered": true,
+      "raster_fixture_requests": 0
+    }
+  ],
+  "requests": [
+    {
+      "started": 1793019524238,
+      "closed": true,
+      "close_ms": 22
+    }
+  ],
+  "state": {
+    "url": "http://127.0.0.1:57923/?region=shenyang&snapshot=shenyang-mvp-20261023&feature=node%2F676578837&q=%E6%B2%88%E9%98%B3%E5%8C%97%E7%AB%99&types=other%2Crail%2Cunknown&classes=branch%2Cconventional_main%2Cconventional_other%2Chigh_speed%2Cindustrial%2Clight_rail%2Cmetro%2Cother%2Ctram%2Cunknown&states=mapped&labels=lines%2Cstations&facilities=0&sidings=1#map=13.50/41.81733/123.43854",
+    "text": "╫\n铁路图集\nRAILWAY ATLAS\n沈阳试验区\n铁路数据 2026-10-20\n关于数据 ↗\n500 m\n© OpenStreetMap contributors · ODbL\n从一座城市，读懂铁路\n沿着铁路线\n看见沈阳。\n\n线路、车站与它们之间的真实地理关系。\n\n地区与数据版本\n查找车站\n⌕\n×\n\n搜索沈阳试验区 · 铁路和地铁分别显示\n\n沈阳北站\n地铁 · 站点 · 当前筛选已隐藏 · 点击临时显示\n沈阳北站\n铁路 · 站区 · 沈阳试验区\n沈阳北\n铁路 · 站点 · 沈阳试验区\n\n匹配 3 条站点 / 站区记录。\n\n通过列表查看车站与要素\n键盘操作\n看什么\n铁路概览\n仅高速\n仅普速\n城市轨道\n\n铁路概览 · 当前标注\n\n按类型、等级和状态筛选\n更多显示选项\n读图图例 颜色看类型，虚实看状态\n高速铁路\n普速干线\n普速/未标注\n支线/站场线\n放大后显示\n专用线\n放大后显示\n制式/等级未标注\n○\n车站 / 乘降所\n当前标注\n\n当前标注不保证运营。车站缺少制式标签时保留为“未标注”。\n\n试着从沈阳北站开始\n\n放大查看站场；点击线路或站名，了解名称、等级与来源。\n\n铁路地图已就绪。名称与属性来自源标签，点击可查看依据。\n\n地理铁路图\nSHENYANG / 01\n显示底图\n开\n底图暂不可用，铁路仍可浏览。重试\n分享\n回到试验区\n地图记录\n×\n沈阳北\n铁路\n当前标注\n\n车站记录不按附近轨道推断高铁站或运营状态。\n\n记录类别\n车站点\n制式\n铁路\n别名\n沈阳北 / 沈阳北站\n车站编码\n53885\n运营方标注\n中国铁路沈阳局集团有限公司 沈阳站\n线路归属\n尚未建立完整线路关联\n数据来源与原始标注\n数据、许可与免责声明\n\n地图数据 © OpenStreetMap contributors · 当前标注不保证运营。"
+  }
+}

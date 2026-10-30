@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-27T09:00:23.067596+00:00",
+  "build": {
+    "js": "/assets/index-DF9QuDZj.js",
+    "index_sha256": "147803f977d69b922d447173e0a2fb2b53c09056682ee6ca0df6fa7760913f13",
+    "js_sha256": "3c2fa58424486a8647c4b3bb6cc1977ede9c0da41582d9ddab597f8219b35cab"
+  },
+  "sha256": {
+    "apps/web/client/src/AccessibleExplorer.tsx": "c0ae18351a00e50a517ab26dbe2f60122525480bc36cf1278fdaadab49138266",
+    "scripts/verify_list_share_state.cjs": "2252e78fcb9d06bd1fe40b6038d063aec5e2e5773e4b20c171b9efe70b125a7f",
+    "scripts/verify_accessibility.cjs": "414f94b2ac35459f66cebc2bbf867256042eab60acd71a93afe12fcb770e6a7c",
+    "scripts/browser_target.cjs": "8232047ab043000ece78339b36ba3871d3b2fd69fedf9ebf958441897d56f801",
+    "docs/evidence/history/list-share-before.tsx": "7bc61f882f96d3a23b546a81cc8ff5e4cb318140385e67f5d08f85795ac5ac8d",
+    "docs/evidence/list-share-state-unit.txt": "67ec53d749f9708170371eaae131c629eb2aa9dcfa787a4c531cb9a161f17ec8"
+  },
+  "reports": [
+    {
+      "file": "docs/evidence/list-share-state-before.json",
+      "sha256": "3a998289baea25df63c4cc3d20f1e2bea5ff0af9a85f1f48e4babc97da603e88",
+      "checks": 8,
+      "failures": [
+        "closing detail invalidates previously generated selected-object link",
+        "query change rejects late clipboard failure and removes old link",
+        "older failed copy cannot replace newer successful copy status"
+      ],
+      "build": {
+        "js": "/assets/index-mMKChbqn.js",
+        "index_sha256": "adfdbd6d09c80200215619ba9744cc7ec3fd355e2d1b48b087c07244fb8d4369",
+        "js_sha256": "4e00ce2cbe765b2303b9893ed02eff621da9f3827a4fa6c07413e8e0527ee68d"
+      },
+      "browser": {
+        "channel": "chrome",
+        "version": "156.0.8078.48",
+        "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "product": "Chrome/156.0.8078.48",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      }
+    },
+    {
+      "file": "docs/evidence/list-share-state-chrome.json",
+      "sha256": "11e994cbd1078413614c3d0d84f0b2f6322ae0c12ad9f2b2f1d2cea6b2cb11d9",
+      "checks": 11,
+      "failures": [],
+      "build": {
+        "js": "/assets/index-DF9QuDZj.js",
+        "index_sha256": "147803f977d69b922d447173e0a2fb2b53c09056682ee6ca0df6fa7760913f13",
+        "js_sha256": "3c2fa58424486a8647c4b3bb6cc1977ede9c0da41582d9ddab597f8219b35cab"
+      },
+      "browser": {
+        "channel": "chrome",
+        "version": "156.0.8078.48",
+        "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "product": "Chrome/156.0.8078.48",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      }
+    },
+    {
+      "file": "docs/evidence/list-share-state-edge.json",
+      "sha256": "5d11c7f8e17ccc20e8603b6b6ce7640f0acee1693dd0ef81e7bca72c6db02227",
+      "checks": 11,
+      "failures": [],
+      "build": {
+        "js": "/assets/index-DF9QuDZj.js",
+        "index_sha256": "147803f977d69b922d447173e0a2fb2b53c09056682ee6ca0df6fa7760913f13",
+        "js_sha256": "3c2fa58424486a8647c4b3bb6cc1977ede9c0da41582d9ddab597f8219b35cab"
+      },
+      "browser": {
+        "channel": "msedge",
+        "version": "156.0.4314.42",
+        "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "product": "Edg/156.0.4314.42",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      }
+    },
+    {
+      "file": "docs/evidence/list-share-state-chrome-list.json",
+      "sha256": "16108e06d68d222fd5e291cfcbe22284daac84cea8129c577e021c979973cb81",
+      "checks": 5,
+      "failures": [],
+      "build": null,
+      "browser": {
+        "channel": "chrome",
+        "version": "156.0.8078.48",
+        "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "product": "Chrome/156.0.8078.48",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      }
+    },
+    {
+      "file": "docs/evidence/list-share-state-edge-list.json",
+      "sha256": "a60fc904795dc36a67c8f57d54828d49dc07a274872687487de8c284ce79cf00",
+      "checks": 5,
+      "failures": [],
+      "build": null,
+      "browser": {
+        "channel": "msedge",
+        "version": "156.0.4314.42",
+        "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "product": "Edg/156.0.4314.42",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      }
+    }
+  ],
+  "before_scope": "Initial eight checks captured three failures before product fix. Final verifier adds three checks for new selection and filter transitions; baseline is not a run of the expanded eleven-check verifier.",
+  "implementation": "Invalidate generated URL and status on current encoded view, selected identity, snapshot or open lifecycle change in layout effect. Monotonic request sequence prevents stale clipboard settlement from changing UI; newest copy clears previous status immediately.",
+  "validation": "Strict TypeScript/production build passed; 108 unit tests; 11 targeted checks plus 5 existing list regression groups in each installed Chrome and Edge. Existing list driver does not bind build itself: serial invocation after targeted build with no intervening edits, current build independently checked at archival time.",
+  "limits": [
+    "Controlled clipboard promises and native browser input events; no OS clipboard permission/content, real device or reader proof. Pending OS clipboard work itself is not cancelled by UI invalidation.",
+    "Only 390x844 emulated touch viewport for targeted share checks; this is not full 200% or complete browser/device acceptance.",
+    "Prior font, touch size, contrast, Firefox, performance and full browser results keep their original build identities.",
+    "Full MVP remains active with independent QA, target devices/readers and other required gates incomplete."
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-27T08:08:11.645990+00:00",
+  "build": {
+    "asset": "/assets/index-iogNndbc.js",
+    "index_sha256": "d6528e4e4a014950de9d2c1e6b8e82de9beeb7a32ca71a642424bb6a7699871b",
+    "asset_sha256": "4e00ce2cbe765b2303b9893ed02eff621da9f3827a4fa6c07413e8e0527ee68d"
+  },
+  "sha256": {
+    "scripts/webdriver_client.py": "455b76a5d96f52284acfad2d09a738e7e468a24ee6455e03ebec578a3f72ab47",
+    "scripts/verify_firefox_core.py": "5b8ea34bf7eb939264670b1feeb7acac9ae9573a3c6d9c7184d2d2e0e63e4b4c",
+    "scripts/prepare_firefox_runtime.py": "fd37ba11db76a264c1f779885289fc994f9bd145cf39e2ed55b2d9da77adcb4b",
+    "scripts/verify_list_detail_scroll.cjs": "9ef7278973435321357bc9efe75a122238a60a4ad80c543d0ac2124919b91dba",
+    "config/firefox-test-runtimes.json": "bbd0a221bbc8ccf2dd62a37dd3fa77cae76cd93147b74436c991ca5a31a3e8e2",
+    "apps/web/client/src/AccessibleExplorer.tsx": "7bc61f882f96d3a23b546a81cc8ff5e4cb318140385e67f5d08f85795ac5ac8d",
+    "apps/web/client/dist/index.html": "d6528e4e4a014950de9d2c1e6b8e82de9beeb7a32ca71a642424bb6a7699871b",
+    "apps/web/client/dist/assets/index-iogNndbc.js": "4e00ce2cbe765b2303b9893ed02eff621da9f3827a4fa6c07413e8e0527ee68d",
+    "docs/evidence/history/firefox-list-before-heading-scroll.tsx": "aac5253a78a03e7b9380dc85d578174d43d08f95910608dcf798bc813b4d6c14"
+  },
+  "tests": {
+    "domain_and_unit": 108,
+    "strict_types_and_build": "passed",
+    "firefox_core_tasks": 12,
+    "chrome_edge_targeted_tasks": 6,
+    "chrome_edge_list_regressions": 10
+  },
+  "reports": [
+    {
+      "version": "158.0.1",
+      "report": "docs/evidence/firefox-core-158.0.1.json",
+      "sha256": "3ed630430549e4a55e5608862a6038a5c241edee87f4daf8b453fb18f84818b4",
+      "checks": 6
+    },
+    {
+      "version": "157.0.1",
+      "report": "docs/evidence/firefox-core-157.0.1.json",
+      "sha256": "75e9f95cef4e546e411801a903a2acbf6db645c2202a88295d70dbd4df30b3c7",
+      "checks": 6
+    },
+    {
+      "case": "chrome-scroll",
+      "report": "docs/evidence/firefox-core-chrome-scroll.json",
+      "sha256": "5872386052a8a68b434e82b4bd5a7ea53fbce25568c3bd3e8372e88a18b8d76a",
+      "checks": 3
+    },
+    {
+      "case": "edge-scroll",
+      "report": "docs/evidence/firefox-core-edge-scroll.json",
+      "sha256": "8a5d33b5fe866eb8875750dbe14788118e34e0819b8bc302c15e9b4abbe466e4",
+      "checks": 3
+    },
+    {
+      "case": "chrome-list-regression",
+      "report": "docs/evidence/firefox-core-chrome-list-regression.json",
+      "sha256": "af2a0d937539523ba1144940c898fc3ceda6fdda536bc5aa13ea9799f3a27d41",
+      "checks": 5
+    },
+    {
+      "case": "edge-list-regression",
+      "report": "docs/evidence/firefox-core-edge-list-regression.json",
+      "sha256": "66d95c22d26cea0cd6f7d5dd48d11b4ad36e8b5fbb5d30a6555dd0207c578bbe",
+      "checks": 5
+    }
+  ],
+  "runtime_provenance": {
+    "packages": [
+      {
+        "file": "firefox-158.0.1.exe",
+        "source": "https://archive.mozilla.org/pub/firefox/releases/158.0.1/win64/en-US/Firefox%20Setup%20158.0.1.exe",
+        "sha256": "3259a2f8508e58cf2e383b6c99bfc64d6ddc86d1407b7c2f86f660af955b5d10",
+        "bytes": 94890968
+      },
+      {
+        "file": "firefox-157.0.1.exe",
+        "source": "https://archive.mozilla.org/pub/firefox/releases/157.0.1/win64/en-US/Firefox%20Setup%20157.0.1.exe",
+        "sha256": "71dc620e7749bb65be6df67b99261a303805a804f9c787b76b81c095cfa7d9ca",
+        "bytes": 93445848
+      },
+      {
+        "file": "geckodriver.zip",
+        "source": "https://github.com/mozilla/geckodriver/releases/download/v0.37.1/geckodriver-v0.37.1-win64.zip",
+        "sha256": "dfed9315abe8d2fbc1b6161a2ee8002452e79cf05ee92fdc653a4e26bc35edd8",
+        "bytes": 1780114
+      }
+    ],
+    "schema_version": 1,
+    "purpose": "Optional local browser test runtimes; installers are verified and unpacked, never executed.",
+    "observed_date": "2026-10-27",
+    "version_sources": [
+      "https://product-details.mozilla.org/1.0/firefox_versions.json",
+      "https://product-details.mozilla.org/1.0/firefox_history_stability_releases.json"
+    ],
+    "checksum_sources": [
+      "https://archive.mozilla.org/pub/firefox/releases/158.0.1/SHA256SUMS",
+      "https://archive.mozilla.org/pub/firefox/releases/157.0.1/SHA256SUMS",
+      "https://github.com/mozilla/geckodriver/releases/expanded_assets/v0.37.1"
+    ]
+  },
+  "bug": {
+    "before_heading_css_px": {
+      "top": 902.6500244140624,
+      "bottom": 931.5666961669922,
+      "dialog_bottom": 903
+    },
+    "after_158_heading_css_px": {
+      "bottom": 308.4833221435547,
+      "top": 279.566650390625
+    },
+    "fix": "Current successful detail focus explicitly scrolls its section into view; wheel input cancels late automatic focus/scroll."
+  },
+  "scope": "Official Firefox stable 158/157, separate headless profiles and real W3C commands; verified packages unpacked, installers not executed. Normal process permissions required for Firefox content processes on this host. Chrome/Edge targeted checks use controlled software-rendering arguments.",
+  "limits": [
+    "Six core tasks per Firefox, not the full 43-task Chromium suite or full failure matrix.",
+    "Resource Timing checks concern document resources only, not all browser background networking.",
+    "Headless/390px simulated cases are not physical devices, NVDA/VoiceOver, full contrast or all-version acceptance.",
+    "Previous B5DC1WQs Chrome/Edge matrix and earlier performance reports retain their original builds.",
+    "Native browser test packages are ignored, not application dependencies or a claim of a fresh full native/security/license audit.",
+    "MVP remains active with independent human QA and complete original requirements still pending."
+  ]
+}

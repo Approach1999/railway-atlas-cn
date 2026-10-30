@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "id": "osm-data",
+      "kind": "geographic-data",
+      "producer": "OpenStreetMap contributors",
+      "provider": "Geofabrik",
+      "license_declared": "ODbL-1.0",
+      "source": "https://www.openstreetmap.org/copyright",
+      "provider_source": "https://download.geofabrik.de/asia/china.html",
+      "snapshot_evidence": "docs/real-shenyang-data.md",
+      "distribution": "raw and generated geodata ignored by Git; versioned local preview"
+    },
+    {
+      "id": "osm-standard-basemap",
+      "kind": "remote-raster",
+      "provider": "OpenStreetMap",
+      "license_reference": "https://www.openstreetmap.org/copyright",
+      "service_policy": "https://operations.osmfoundation.org/policies/tiles/",
+      "request_hosts": [
+        "tile.openstreetmap.org"
+      ],
+      "distribution": "viewport requests only; no packaged/offline raster tiles"
+    },
+    {
+      "id": "system-fonts",
+      "kind": "device-font",
+      "families": [
+        "Microsoft YaHei",
+        "PingFang SC",
+        "Inter",
+        "system-ui",
+        "sans-serif"
+      ],
+      "font_files_bundled": false,
+      "font_network_requests": false,
+      "evidence": "Device UI/fallback families in style.css and MAP_FONT_STACK; bundled map subset recorded separately as map-cjk-subset."
+    },
+    {
+      "id": "line-colours",
+      "kind": "display-configuration",
+      "source_config": "config/line-colors.json",
+      "declared_source": "娌堥槼鍦伴搧瀹樼綉绾胯矾鍥撅紙缁忎腑鏂囩淮鍩虹櫨绉戞ā鏉胯浆寮曪級",
+      "source": "https://zh.wikipedia.org/wiki/Template:娌堥槼鍦伴搧棰滆壊",
+      "operator_source": "http://www.symtc.com/content.php?6501",
+      "confidence": "operator-map",
+      "verification_recorded": "2026-10-22",
+      "operator_logos_bundled": false,
+      "limits": "Colour-source evidence is not a grant to reproduce source diagrams or operator logos."
+    },
+    {
+      "id": "application-identity",
+      "kind": "local-ui",
+      "source": "apps/web/client/src/App.tsx and style.css",
+      "description": "Text and CSS railway mark; no external image asset",
+      "code_license": "unselected"
+    },
+    {
+      "id": "map-cjk-subset",
+      "kind": "self-hosted-font",
+      "family": "Railway Atlas CJK",
+      "upstream_family": "Noto Sans CJK SC Regular",
+      "source": "https://github.com/notofonts/noto-cjk/tree/523d033d6cb47f4a80c58a35753646f5c3608a78",
+      "license_declared": "OFL-1.1",
+      "evidence_manifest": "apps/web/client/public/map-font-manifest.json",
+      "font_file": "apps/web/client/src/assets/map-cjk.woff2",
+      "font_sha256": "c5676efeb6382c8d783b273aab69e5199951a78d5b19199f87be6cb8249f0739",
+      "license_files": [
+        {
+          "project_file": "apps/web/client/public/map-font-license.txt",
+          "sha256": "593d7b73e420582f6c4d1fac2b88a4dee28a78169fc1598a0ba775ba54cd3ba0"
+        }
+      ],
+      "request_hosts": [],
+      "distribution": "Renamed subset only; original font and tool wheels remain local/ignored."
+    }
+  ]
+}

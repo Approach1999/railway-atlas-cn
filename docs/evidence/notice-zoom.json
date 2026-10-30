@@ -1,0 +1,140 @@
+{
+  "date": "2026-10-28",
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "build": {
+    "asset": "/assets/index-COabTbcb.js",
+    "index_sha256": "a4038fcf867b47fb387c68b677034132160b96e78692bf04e1ea7b837af3dc56",
+    "asset_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+    "css_asset": "/assets/index-BDgTUEi8.css",
+    "css_sha256": "81da58d626b909810e28630e6c9d90f1776d4efd3dcc7c5cc5c0522279b75155"
+  },
+  "reports": {
+    "center-before-chrome": {
+      "path": "docs/evidence/notice-zoom-center-before-chrome.json",
+      "sha256": "d95e53a52a0474d83fb0e6457c69efa2b1b6c4901fd64d31bb4f954c1f776858"
+    },
+    "center-before-edge": {
+      "path": "docs/evidence/notice-zoom-center-before-edge.json",
+      "sha256": "cd75f14ece7a9ed4dec67bcab29e539c3ccce0a58cea5ced1d3579b507d5bda2"
+    },
+    "occlusion-before": {
+      "path": "docs/evidence/notice-zoom-occlusion-before.log",
+      "sha256": "6cf65b81ba2200a2c9b2d0b8fa8cdbde45510067d40370c79a06803cca1b5c8a"
+    },
+    "intermediate-failed": {
+      "path": "docs/evidence/notice-zoom-intermediate-failed.json",
+      "sha256": "c253b0f58947f538bac03040a74e039df700b4240071050c4b8f4014d9d75d52"
+    },
+    "intermediate-short-pass": {
+      "path": "docs/evidence/notice-zoom-intermediate-short-pass.json",
+      "sha256": "2a1c7fbe73223d5adcc46ca64ddfb903878a6748c99edef41ec4e2593c03ef9b"
+    },
+    "chrome": {
+      "path": "docs/evidence/notice-zoom-chrome.json",
+      "sha256": "18f6e90836cc603f1ac924b1b9da56abeaa58998daa6f13c31fa5142bf1ecb94"
+    },
+    "edge": {
+      "path": "docs/evidence/notice-zoom-edge.log",
+      "sha256": "558dd4ed78e76d04e433aa55753aef1e9bb7938ea21c0ee6eeea130595ed9cb2"
+    },
+    "recovery-chrome": {
+      "path": "docs/evidence/notice-zoom-recovery-chrome.json",
+      "sha256": "1b2a1bdeece0c00605dbc273732fa706f499944a2b8695b4f5c75e1919684075"
+    },
+    "recovery-edge": {
+      "path": "docs/evidence/notice-zoom-recovery-edge.json",
+      "sha256": "500971e37c002d7b604b5a62339bb48cbb3acaf63cda5d92ece7a6abc30e7a08"
+    },
+    "chrome-empty-1552": {
+      "path": "docs/evidence/notice-zoom-chrome-empty-1552.png",
+      "sha256": "0899e1e0d9e521e8b0db937a2375a1ff9640bdd3ed9b03f7f0ab5133d989ac9a"
+    },
+    "chrome-long-empty-1552": {
+      "path": "docs/evidence/notice-zoom-chrome-long-empty-1552.png",
+      "sha256": "2d47e8d2ff0ee8d28d12308d848fe190e76ec9791e71c7212980b8738906de68"
+    },
+    "chrome-empty-1280": {
+      "path": "docs/evidence/notice-zoom-chrome-empty-1280.png",
+      "sha256": "0ede685c09bbd9cf2bddeed9e69782bd53a7e1cbd158c4503c30766c26f3b048"
+    },
+    "chrome-long-empty-1280": {
+      "path": "docs/evidence/notice-zoom-chrome-long-empty-1280.png",
+      "sha256": "ed1f8d11b48a90f56da1fabca25a7fb20894b31b700392d65db9640bb950fb2d"
+    },
+    "edge-empty-1552": {
+      "path": "docs/evidence/notice-zoom-edge-empty-1552.png",
+      "sha256": "2a3c6cd00a38028da15d76ecc261279827da33abdfb75d274f4c7853255e2b4b"
+    },
+    "edge-long-empty-1552": {
+      "path": "docs/evidence/notice-zoom-edge-long-empty-1552.png",
+      "sha256": "b8a7f1dcad49a2d72a56e65802dd86b502b557a8cd61a35eabc50fc1469a5798"
+    },
+    "edge-empty-1280": {
+      "path": "docs/evidence/notice-zoom-edge-empty-1280.png",
+      "sha256": "fb4092eb1639a83a1201eff3155e93a5679b7c38fad2ce2771dd40bb2a32d473"
+    },
+    "edge-long-empty-1280": {
+      "path": "docs/evidence/notice-zoom-edge-long-empty-1280.png",
+      "sha256": "a1eaf33ac5a3104a143e95c6966ab12abab0e2758816e5b26ee49100dd1cb307"
+    },
+    "occlusion-before-1280": {
+      "path": "docs/evidence/notice-zoom-occlusion-before-1280.png",
+      "sha256": "377fdfe74a457116a82838851873a2f14e1a9647e24bc3cf5b6d04a53933830d"
+    },
+    "intermediate-failed-1280": {
+      "path": "docs/evidence/notice-zoom-intermediate-failed-1280.png",
+      "sha256": "4eb8fde26d9f68f270f28c0f336597ff3c8cdffb1212cc405219e5d718abb0fb"
+    },
+    "before-chrome-second": {
+      "path": "docs/evidence/notice-zoom-before-chrome-second.log",
+      "sha256": "558dd4ed78e76d04e433aa55753aef1e9bb7938ea21c0ee6eeea130595ed9cb2"
+    },
+    "after-chrome": {
+      "path": "docs/evidence/notice-zoom-after-chrome.log",
+      "sha256": "f0e39a98760352d913a33b4c5d181db4073c9ad5fd94ee57fd5a9064d6833276"
+    },
+    "final-chrome": {
+      "path": "docs/evidence/notice-zoom-final-chrome.log",
+      "sha256": "11906546a04903f520f5de21cc5637627c170701cd93bd8f32c5c1471e851df7"
+    },
+    "complete-chrome": {
+      "path": "docs/evidence/notice-zoom-complete-chrome.log",
+      "sha256": "c69683e96f24eeb7009caca93b3b22fee7a8b998ba15ec25e302b31cdce6a6f7"
+    },
+    "complete-edge": {
+      "path": "docs/evidence/notice-zoom-complete-edge.log",
+      "sha256": "c69683e96f24eeb7009caca93b3b22fee7a8b998ba15ec25e302b31cdce6a6f7"
+    },
+    "flex-build": {
+      "path": "docs/evidence/notice-zoom-flex-build.log",
+      "sha256": "c0433365f40f7c1186cb62b9f00a47813e6dcc96af170d30767dafeab074db31"
+    }
+  },
+  "source_sha256": {
+    "apps/web/client/src/style.css": "fe9de22a733d01317734e763a30e0b119d75aa123c15c14747a89b3c63fb5db8",
+    "scripts/verify_notice_zoom.cjs": "c75595706ab179d6569b6b6d34fdbee7801d4751befd833e048b2b1dac50ccd3",
+    "scripts/verify_notice_actions.cjs": "67adc486c2ac0df121befe58fe6a2473b22b6d2f295b46024d13c00fc8cbca3e",
+    "docs/evidence/history/notice-zoom-first-verifier.cjs": "39f99014f4bafb8500e4ca1ce5f900bd3d8c7fd37a1dbfae73fecd5e45456ea9",
+    "docs/evidence/history/notice-zoom-center-verifier.cjs": "f8b2935c21ed7c9d0e8d306e31708a25342fd5abc9a66a650315ad82c462e81a",
+    "docs/evidence/history/notice-zoom-grid-verifier.cjs": "46943c37b999bde800df287ca96019f927f10a5dd536387681df2d3b24bac763",
+    "docs/evidence/history/notice-zoom-before-style.css": "3504cb87d0e824a488844010ac55a0cb083e18864a14291c250d691082afdee7",
+    "docs/evidence/history/notice-zoom-mid-style.css": "7e15c4eb90cf57ba284a57d5be10480691fcfef9001743c0ba0ea73c1ed1bfdc"
+  },
+  "checks": {
+    "actual_zoom_total_checks": 78,
+    "baseline_100_percent_checks": 4,
+    "recovery_regression_checks": 36,
+    "typecheck_build_passed": true,
+    "nine_point_original_occlusion_detected": true,
+    "intermediate_scale_overlap_rejected": true,
+    "current_checks_passed": true,
+    "archive_hashes_verified": true,
+    "preview_js_css_hashes_match": true,
+    "preview_http_status": 200
+  },
+  "limits": [
+    "Installed headless Chrome/Edge, two genuine browser zoom window sizes and enumerated tasks; not all N09 or reader/device acceptance.",
+    "Earlier center-only reports passed despite edge occlusion; they are retained as insufficient evidence, not valid no-occlusion acceptance.",
+    "No performance remeasurement or new product logic changes."
+  ]
+}

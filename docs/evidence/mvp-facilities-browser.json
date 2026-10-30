@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-22T11:24:17.947Z",
+  "checks": [
+    "no relation data is honestly identified",
+    "station/area search remains distinguishable",
+    "real source switch rendered and selectable at station zoom",
+    "facility category, source and missing association shown",
+    "facility layer toggles independently",
+    "no external requests or page errors"
+  ],
+  "scope": "Work-in-progress dataset, no real route relations; not MVP acceptance",
+  "errors": []
+}

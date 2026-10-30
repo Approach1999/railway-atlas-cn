@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-28",
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "manifest_sha256": "0455a747024aeb11fd399ee2dfd6255ccd6657af8819360da3ca14c4ac80dfc5",
+  "build": {
+    "asset": "/assets/index-Doio8pOp.js",
+    "index_sha256": "bd3e220d0773df71ad169c76f85401da2b135469ce01bd9e6addafb874ed2b52",
+    "asset_sha256": "c0e5128599c175cda1e1b59be42b19675f048fd7de04a80336c495789ab9989e"
+  },
+  "model_sha256": "10e284cf186c114b8443b195ff6d6fa5c76ef074780c8cf5efa43998158158ee",
+  "reports": {
+    "cold-before": {
+      "path": "docs/evidence/geometry-performance-cold-before.json",
+      "sha256": "923c6812c6ee275a63cf88e01b47f6e5a49be4460340a42c9e47b4e853914a49"
+    },
+    "cold-after": {
+      "path": "docs/evidence/geometry-performance-cold-after.json",
+      "sha256": "2a3b95b7278e1b4aa095682551bee769e39770f6d169d2251599575559d97d92"
+    },
+    "filters-before": {
+      "path": "docs/evidence/geometry-performance-filters-before.json",
+      "sha256": "327d529ea139a36e9521dda21db3d955e116d519bea1a0c28f0d94611ecfd64a"
+    },
+    "filters-after": {
+      "path": "docs/evidence/geometry-performance-filters-after.json",
+      "sha256": "b50ba6428302abfdbc67188ab9f52209f839a9b31611660dec37b3daff50cfae"
+    },
+    "pan-before-default": {
+      "path": "docs/evidence/geometry-performance-pan-before-default.json",
+      "sha256": "2a0cd75b3a840d530158bc6d4e0a3df5dca15079e8aba82d20955199dff75fc9"
+    },
+    "pan-interrupted": {
+      "path": "docs/evidence/geometry-performance-pan-interrupted.json",
+      "sha256": "a2f69f07717710dcd785a61b9f61e83eea3ca4dff825c178e1e59369f9b81844"
+    },
+    "pan-default": {
+      "path": "docs/evidence/geometry-performance-pan-default.json",
+      "sha256": "e49b48a973e1c377f851444a93e4405021c9c719bb0a15af7890fefa6c0b7449"
+    },
+    "pan-software": {
+      "path": "docs/evidence/geometry-performance-pan-software.json",
+      "sha256": "5e0c077b43284911f77bf9af3d260f26aaa9f7edfed8e2276db4b067e898fcfb"
+    },
+    "protocol": {
+      "path": "docs/evidence/geometry-performance-protocol.json",
+      "sha256": "c278e0c3a0f4715920d3dad000130a9db9300864334e59fec663980b763b988e"
+    },
+    "semantic": {
+      "path": "docs/evidence/geometry-performance-semantic.json",
+      "sha256": "fac02d0384610e3838a0d162fe2ad73f6d01ee0a325df40157ede13dd9409614"
+    },
+    "diagnostic": {
+      "path": "docs/evidence/geometry-performance-diagnostic.json",
+      "sha256": "efc7f30eeaaf8324c4309b4c4b496648c72fd2ac578d77e9af7d36e1ce4d4627"
+    },
+    "browser-matrix": {
+      "path": "docs/evidence/geometry-performance-browser-matrix.json",
+      "sha256": "9bca9d2ef1dbb19d51500c16fe5b812143cdbdb6b14a0336fd4796669478602a"
+    },
+    "predicate-edge": {
+      "path": "docs/evidence/geometry-performance-predicate-edge.json",
+      "sha256": "577aa9bce424eb40e745d698e827378b12f1530d6d839f94d3dae5e8e8b46e36"
+    },
+    "browser-chrome-search": {
+      "path": "docs/evidence/geometry-performance-browser-chrome-search.json",
+      "sha256": "4e4229ff396ddb2ef6316df20ac85a0c1cf85d907b1d2f054507b8130799439f"
+    },
+    "browser-chrome-filters": {
+      "path": "docs/evidence/geometry-performance-browser-chrome-filters.json",
+      "sha256": "3612f2bd8604aa2107ff6ea6b2db6926a39e41080c1d8bd55ce78852b7e5e7f4"
+    },
+    "browser-chrome-list": {
+      "path": "docs/evidence/geometry-performance-browser-chrome-list.json",
+      "sha256": "c873e18baf35fe7a7e22aa03eaf5a995b8b5d4294aaa8b9ab9d04e99a1b3b1e4"
+    },
+    "browser-chrome-share": {
+      "path": "docs/evidence/geometry-performance-browser-chrome-share.json",
+      "sha256": "171b29e2fceb35bec85be5f72a1c71339af1a42ef41f8fdb4c44a28b51a97ff3"
+    },
+    "browser-chrome-resources": {
+      "path": "docs/evidence/geometry-performance-browser-chrome-resources.json",
+      "sha256": "aca7ee0d39d2bdab99ed6619c23aec69471256cefcc50d6919db1eb27452d3ff"
+    },
+    "browser-chrome-font": {
+      "path": "docs/evidence/geometry-performance-browser-chrome-font.json",
+      "sha256": "7bcddb0210aac24c65924a6ceeafcb7ee93fed721733eb2f0f7056aedaf7786a"
+    },
+    "browser-msedge-search": {
+      "path": "docs/evidence/geometry-performance-browser-msedge-search.json",
+      "sha256": "e6834401daca4d716487e96afb91065792a19e5c2577fbfff89c2fa6c742b64c"
+    },
+    "browser-msedge-filters": {
+      "path": "docs/evidence/geometry-performance-browser-msedge-filters.json",
+      "sha256": "6308e45334f12ed98aacc921c9c815b60b835d593d8779fd281bd1dee1fd327e"
+    },
+    "browser-msedge-list": {
+      "path": "docs/evidence/geometry-performance-browser-msedge-list.json",
+      "sha256": "13cfaa0abc64101f78c7056f369289281c22837ada4f53b2a0cb52e617007c27"
+    },
+    "browser-msedge-share": {
+      "path": "docs/evidence/geometry-performance-browser-msedge-share.json",
+      "sha256": "0c5724dc8e3397aae3187e0341ef36a941b41bae1131952e169f4f61ace5a677"
+    },
+    "browser-msedge-resources": {
+      "path": "docs/evidence/geometry-performance-browser-msedge-resources.json",
+      "sha256": "ca5edff782829f14a7c6e67ad313bae5e88d4cffbd1b3dc33b05f5d960d7c2a3"
+    },
+    "browser-msedge-font": {
+      "path": "docs/evidence/geometry-performance-browser-msedge-font.json",
+      "sha256": "7a20d959afc7fd712abc5656906643f632b8cfb7af51ba3824d93e0834b11034"
+    },
+    "constant-unit-first.log": {
+      "path": "docs/evidence/geometry-performance-constant-unit-first.log",
+      "sha256": "2ef317fe65a64ddbc3a2f19c41e9db7045b2185dc8d6947f8763a02393a77dbb"
+    },
+    "constant-unit-second.log": {
+      "path": "docs/evidence/geometry-performance-constant-unit-second.log",
+      "sha256": "cb823a89c83f7887d668f156cca7a7914babfcdb8d5203752e914160a4d9173f"
+    },
+    "constant-unit.log": {
+      "path": "docs/evidence/geometry-performance-constant-unit.log",
+      "sha256": "5ebb129b614d79c7607cb345ce9f531de67d29d9f003e6b9770e7800126f3cd9"
+    }
+  },
+  "checks": {
+    "unit_passed": 116,
+    "browser_suites": 12,
+    "browser_checks": 86,
+    "archived_hashes_verified": true,
+    "current_source_fingerprints_verified": true
+  },
+  "thresholds": {
+    "overview_filter_p95_ms": 104.3,
+    "yard_filter_p95_ms": 63.4,
+    "filter_target_ms": 100,
+    "overview_pass": false,
+    "yard_local_profile_pass": true
+  },
+  "limits": [
+    "Headless installed Chrome performance, basemap off, synthetic actions, not GPU/display completion or real devices.",
+    "Before software pan interrupted for about 30 minutes; invalid protocol, retained unedited.",
+    "Existing synthetic urban/minor trackVisible and renderer gate mismatch remains open; zero current source records match.",
+    "Full MVP acceptance and independent human QA remain open."
+  ]
+}

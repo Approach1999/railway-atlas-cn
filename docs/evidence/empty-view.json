@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-28",
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "build": {
+    "asset": "/assets/index-CK9B4UBd.js",
+    "index_sha256": "316fb55cfdff8034700caaebaed06550bd25159477cef005ad6e6706640a5bf6",
+    "asset_sha256": "56b0c0280cde0620a80c91c58b46f8c4de26f5d646400e068e903c7cb048e8bd"
+  },
+  "before_build": {
+    "asset": "/assets/index-tJmMJPE_.js",
+    "index_sha256": "63ee39a19d8f224c8c11011f4e12f7955170831f7ce322121860c53f62aaf169",
+    "asset_sha256": "a08798deece3c35042844b8e956eb91e91d71933f5bf3b980d5e338248c7d5fb"
+  },
+  "source_sha256": {
+    "apps/web/client/src/map-controller.ts": "91fc8b9d124eeb766fc15fe0ed9e88403ccd1ff57a9ac73fb72d8c037f90449c",
+    "scripts/verify_empty_view.cjs": "7cd26b98c1f8d7cbabccaa3c68c4af221e4fef53f28d2ed3a57bf2dbb75fa220",
+    "docs/evidence/history/empty-view-before-controller.ts": "ea0bede6e06ad36f1bdd0db74bb60778be1f2bcfd54615fe8ebfcdf8b0dfea52",
+    "docs/evidence/history/empty-view-before-verifier.cjs": "9df9d5aaf5cff98c31b7fad957ec8202ca515531f07158cd19198c73b768f599"
+  },
+  "manifest_sha256": "0455a747024aeb11fd399ee2dfd6255ccd6657af8819360da3ca14c4ac80dfc5",
+  "reports": {
+    "before": {
+      "path": "docs/evidence/empty-view-before.json",
+      "sha256": "5754d86b8e18207db67c5c3e4316d6b75550f0258e0dc893d3ea8cf4cbe921dc"
+    },
+    "chrome": {
+      "path": "docs/evidence/empty-view-chrome.json",
+      "sha256": "f9d64599914aced7025492e13c6cc9b6191a7bd3319b22cf3c8cb69ebffcb556"
+    },
+    "edge": {
+      "path": "docs/evidence/empty-view-edge.json",
+      "sha256": "b86ba7bab25e9d4b831ff903a9ab7adda93976e6e1ed84148bb7cab231689b6c"
+    },
+    "browser-matrix": {
+      "path": "docs/evidence/empty-view-browser-matrix.json",
+      "sha256": "b523f20ac225dc573ad292e2a52b77fda6ed90627ca5e4c1aff5bdbf65d489ee"
+    },
+    "unit": {
+      "path": "docs/evidence/empty-view-unit.log",
+      "sha256": "6be9d2fad589d285f64f516d8b34256f071a970d81fc254e335ec3c9784ab24b"
+    },
+    "build": {
+      "path": "docs/evidence/empty-view-build.log",
+      "sha256": "8083e21684559ae2ca7a89df8daf6164c66ee987e33f40889f1714f9f1fae385"
+    },
+    "browser-chrome-search": {
+      "path": "docs/evidence/empty-view-browser-chrome-search.json",
+      "sha256": "bd2dc8edfc15ed7afcd126f5506a256e500ef20ce8b6de42b4543bd39674b3f0"
+    },
+    "browser-chrome-filters": {
+      "path": "docs/evidence/empty-view-browser-chrome-filters.json",
+      "sha256": "fa5858d06f61fad4992354bbd024b9772aeca12701ed315c9855de0c4e2526dc"
+    },
+    "browser-chrome-list": {
+      "path": "docs/evidence/empty-view-browser-chrome-list.json",
+      "sha256": "17c0257bb348fed2c953ed870bac09bbf23f8af7ed0338737be227a51b092de3"
+    },
+    "browser-chrome-share": {
+      "path": "docs/evidence/empty-view-browser-chrome-share.json",
+      "sha256": "d503e87cb2866b4f057ac1d5b31e725d1b920096deb84a7fb51292e2b1ec253c"
+    },
+    "browser-chrome-resources": {
+      "path": "docs/evidence/empty-view-browser-chrome-resources.json",
+      "sha256": "50cf6032d68b825023b1065db743cebf8c801a36d601073462e0d8fbdb7bc8ca"
+    },
+    "browser-chrome-font": {
+      "path": "docs/evidence/empty-view-browser-chrome-font.json",
+      "sha256": "63f0ef0a7cf8499642654703e1c96fd57a62f2592c00914291cba11542c72068"
+    },
+    "browser-msedge-search": {
+      "path": "docs/evidence/empty-view-browser-msedge-search.json",
+      "sha256": "4e106044ca62eeb684bc216c20a6e058d44c2db088cfae2ff71c7c8a6e8549e9"
+    },
+    "browser-msedge-filters": {
+      "path": "docs/evidence/empty-view-browser-msedge-filters.json",
+      "sha256": "41644ec9d951697b1f8cbf9336f55da8814027d778e48a4d155a4029a994b91e"
+    },
+    "browser-msedge-list": {
+      "path": "docs/evidence/empty-view-browser-msedge-list.json",
+      "sha256": "860b88143fc6576354b05297e1e56b4fea35e66343c43e44936c3c6b905320ac"
+    },
+    "browser-msedge-share": {
+      "path": "docs/evidence/empty-view-browser-msedge-share.json",
+      "sha256": "cfc979e7751fe7e47cf87fbc39cd7147c0c8f64fdf518c87e7c9043885ccf9d1"
+    },
+    "browser-msedge-resources": {
+      "path": "docs/evidence/empty-view-browser-msedge-resources.json",
+      "sha256": "ee463e2d14ea1cfbb4edaf023baf5c66fe5093b2c61e3a4607be3df717983e29"
+    },
+    "browser-msedge-font": {
+      "path": "docs/evidence/empty-view-browser-msedge-font.json",
+      "sha256": "78842f5e4d51f5242cee67f90a7cd8101778f745671d175de777655ad678d2d3"
+    }
+  },
+  "checks": {
+    "before_issue_reproduced": true,
+    "unit_passed": 119,
+    "typecheck_build_passed": true,
+    "empty_view_checks": 24,
+    "regression_suites": 12,
+    "regression_checks": 86,
+    "archived_hashes_verified": true,
+    "preview_http_status": 200,
+    "preview_matches_build": true
+  },
+  "limits": [
+    "Finite real-data scenarios and injected network delay/503, installed headless Chrome/Edge only.",
+    "Not full R11, reader, 200-percent, browser-version matrix or physical-device acceptance.",
+    "No current-build performance remeasurement; prior timing reports remain tied to their own builds."
+  ]
+}

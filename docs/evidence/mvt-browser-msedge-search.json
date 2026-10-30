@@ -1,0 +1,34 @@
+{
+  "browser_target": {
+    "channel": "msedge",
+    "version": "156.0.4314.42",
+    "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "product": "Edg/156.0.4314.42",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+    "renderer": "forced SwiftShader",
+    "headless": true,
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64"
+    },
+    "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+  },
+  "date": "2026-10-27T15:31:56.722Z",
+  "server_url": "http://127.0.0.1:8772",
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "checks": [
+    "real query caps options at twenty, reports narrowing, initial ArrowUp chooses the last and active descendant references the visible option",
+    "synthetic IME Enter/Escape do not select stale results, clear composition or serialize partial text; confirmation publishes the Chinese query",
+    "same-task edit plus Enter flushes the new exact-name target; modal Escape preserves map selection and closing keyboard-selected details returns to search",
+    "filter changes keep input/active identity and a hidden metro result can temporarily display while high-speed filters remain intact",
+    "history restoration cancels pending query work instead of later replacing the restored address",
+    "same-task input and opening the all-object list uses the latest committed query rather than the earlier URL text",
+    "unavailable snapshot recovery preserves text entered after the failure as well as the shared typed identity",
+    "delayed restored list detail cannot steal editing focus; explicit facility selection transfers focus only after its detail is committed",
+    "390px simulation keeps separated rail/metro results, status text and 44px selection targets within the viewport"
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Actual local indexes, React event integration and synthetic composition/fast-key traces; selected installed browser and 390px simulation, not OS IME, reader, real-device or full MVP acceptance"
+}

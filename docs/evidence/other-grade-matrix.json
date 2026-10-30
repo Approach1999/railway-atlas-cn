@@ -1,0 +1,280 @@
+{
+  "started": "2026-10-28T05:59:41.769Z",
+  "runner_sha256": "f4258ed33758903c08af11904987dc5c05f0bd1006ca53408795da9670d2a231",
+  "build": {
+    "asset": "/assets/index-CtFMFhkg.js",
+    "index_sha256": "33bb576b7238dedf30b1ad7c560cb6d009e4658d01b69fee4b26c075a62f578d",
+    "asset_sha256": "b76a3028a98c89a4580f8e40e35ab16b817671d2b9ee32d47872f7abd30bb903"
+  },
+  "channels": [
+    "chrome",
+    "msedge"
+  ],
+  "suites": [
+    "filters",
+    "list",
+    "share",
+    "resources"
+  ],
+  "results": [
+    {
+      "channel": "chrome",
+      "suite": "filters",
+      "script": "verify_react_filters.cjs",
+      "script_sha256": "aa49c2c46b82306d3889a61ace2a10635202cf20adab56458893eba124d0e569",
+      "started": "2026-10-28T05:59:41.775Z",
+      "finished": "2026-10-28T05:59:49.421Z",
+      "exit": {
+        "code": 0,
+        "signal": null
+      },
+      "log": "chrome\\filters\\process.log",
+      "status": "passed",
+      "report": "chrome\\filters\\react-filters-report.json",
+      "report_sha256": "37ce0d68c12b7f99cae0e7dd02c9cc3340363f6125a93e0e140afa5db21578d2",
+      "checks": 8,
+      "browser_target": {
+        "channel": "chrome",
+        "version": "156.0.8078.48",
+        "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "product": "Chrome/156.0.8078.48",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      }
+    },
+    {
+      "channel": "chrome",
+      "suite": "list",
+      "script": "verify_accessibility.cjs",
+      "script_sha256": "414f94b2ac35459f66cebc2bbf867256042eab60acd71a93afe12fcb770e6a7c",
+      "started": "2026-10-28T05:59:49.424Z",
+      "finished": "2026-10-28T05:59:54.161Z",
+      "exit": {
+        "code": 0,
+        "signal": null
+      },
+      "log": "chrome\\list\\process.log",
+      "status": "passed",
+      "report": "chrome\\list\\report.json",
+      "report_sha256": "dfdfabc647ae3663a89d57a6c068d8c5da98084708f4e1fc20c5ce783b307fa6",
+      "checks": 5,
+      "browser_target": {
+        "channel": "chrome",
+        "version": "156.0.8078.48",
+        "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "product": "Chrome/156.0.8078.48",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      }
+    },
+    {
+      "channel": "chrome",
+      "suite": "share",
+      "script": "verify_react_share.cjs",
+      "script_sha256": "e5b95e5f77c0748a89e2aff5fe4bc19cc5f7b0d30cf2837bf40af87f28e03486",
+      "started": "2026-10-28T05:59:54.163Z",
+      "finished": "2026-10-28T06:00:01.522Z",
+      "exit": {
+        "code": 0,
+        "signal": null
+      },
+      "log": "chrome\\share\\process.log",
+      "status": "passed",
+      "report": "chrome\\share\\report.json",
+      "report_sha256": "28d6c9a5d953acbf988184c3add8d407de3096e7b83faf0eb3c6f9d106cfa50d",
+      "checks": 7,
+      "browser_target": {
+        "channel": "chrome",
+        "version": "156.0.8078.48",
+        "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "product": "Chrome/156.0.8078.48",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      }
+    },
+    {
+      "channel": "chrome",
+      "suite": "resources",
+      "script": "verify_resource_recovery.cjs",
+      "script_sha256": "dc6ca2389a39a3c843f232e55e321fa88971b46df6d3ab9519cf8bc34c75f881",
+      "started": "2026-10-28T06:00:01.525Z",
+      "finished": "2026-10-28T06:00:20.606Z",
+      "exit": {
+        "code": 0,
+        "signal": null
+      },
+      "log": "chrome\\resources\\process.log",
+      "status": "passed",
+      "report": "chrome\\resources\\resource-recovery-report.json",
+      "report_sha256": "415bbf01a2b0393b6208877ca60a40e3548059689122386f0e354d89fb95d96f",
+      "checks": 10,
+      "browser_target": {
+        "channel": "chrome",
+        "version": "156.0.8078.48",
+        "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "product": "Chrome/156.0.8078.48",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      }
+    },
+    {
+      "channel": "msedge",
+      "suite": "filters",
+      "script": "verify_react_filters.cjs",
+      "script_sha256": "aa49c2c46b82306d3889a61ace2a10635202cf20adab56458893eba124d0e569",
+      "started": "2026-10-28T06:00:20.610Z",
+      "finished": "2026-10-28T06:00:29.860Z",
+      "exit": {
+        "code": 0,
+        "signal": null
+      },
+      "log": "msedge\\filters\\process.log",
+      "status": "passed",
+      "report": "msedge\\filters\\react-filters-report.json",
+      "report_sha256": "8e44ca1c9dc319b302869b87866a9376016e326d9d26e50216f732e483a67943",
+      "checks": 8,
+      "browser_target": {
+        "channel": "msedge",
+        "version": "156.0.4314.42",
+        "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "product": "Edg/156.0.4314.42",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      }
+    },
+    {
+      "channel": "msedge",
+      "suite": "list",
+      "script": "verify_accessibility.cjs",
+      "script_sha256": "414f94b2ac35459f66cebc2bbf867256042eab60acd71a93afe12fcb770e6a7c",
+      "started": "2026-10-28T06:00:29.864Z",
+      "finished": "2026-10-28T06:00:35.956Z",
+      "exit": {
+        "code": 0,
+        "signal": null
+      },
+      "log": "msedge\\list\\process.log",
+      "status": "passed",
+      "report": "msedge\\list\\report.json",
+      "report_sha256": "da565d36c349fe15e6fc910be137eb0c79e493060210cb84344125dab7ca3ee3",
+      "checks": 5,
+      "browser_target": {
+        "channel": "msedge",
+        "version": "156.0.4314.42",
+        "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "product": "Edg/156.0.4314.42",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      }
+    },
+    {
+      "channel": "msedge",
+      "suite": "share",
+      "script": "verify_react_share.cjs",
+      "script_sha256": "e5b95e5f77c0748a89e2aff5fe4bc19cc5f7b0d30cf2837bf40af87f28e03486",
+      "started": "2026-10-28T06:00:35.959Z",
+      "finished": "2026-10-28T06:00:44.964Z",
+      "exit": {
+        "code": 0,
+        "signal": null
+      },
+      "log": "msedge\\share\\process.log",
+      "status": "passed",
+      "report": "msedge\\share\\report.json",
+      "report_sha256": "b5821511ecc815e425f13c62569cb1489e4d956a7c2150808aa0894cde19702c",
+      "checks": 7,
+      "browser_target": {
+        "channel": "msedge",
+        "version": "156.0.4314.42",
+        "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "product": "Edg/156.0.4314.42",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      }
+    },
+    {
+      "channel": "msedge",
+      "suite": "resources",
+      "script": "verify_resource_recovery.cjs",
+      "script_sha256": "dc6ca2389a39a3c843f232e55e321fa88971b46df6d3ab9519cf8bc34c75f881",
+      "started": "2026-10-28T06:00:44.967Z",
+      "finished": "2026-10-28T06:01:06.773Z",
+      "exit": {
+        "code": 0,
+        "signal": null
+      },
+      "log": "msedge\\resources\\process.log",
+      "status": "passed",
+      "report": "msedge\\resources\\resource-recovery-report.json",
+      "report_sha256": "38caea7808f9a3f1980ab6dd75746500efe816829240c7dd23adf8e521c8096b",
+      "checks": 10,
+      "browser_target": {
+        "channel": "msedge",
+        "version": "156.0.4314.42",
+        "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "product": "Edg/156.0.4314.42",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      }
+    }
+  ],
+  "status": "passed",
+  "scope": "Installed Chrome/Edge only; functional checks in isolated headless contexts; requested renderer recorded per result. No browser recent-two-version, Firefox/Safari, OS IME, clipboard-permission, reader or physical-device acceptance.",
+  "finished": "2026-10-28T06:01:06.778Z"
+}

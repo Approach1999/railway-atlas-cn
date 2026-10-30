@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-26T12:45:56.162Z",
+  "browser": "155.0.8059.85",
+  "audit_only": false,
+  "requests": [
+    {
+      "closed": true,
+      "close_ms": 296
+    },
+    {
+      "closed": true,
+      "close_ms": 9
+    },
+    {
+      "closed": true,
+      "close_ms": 7
+    },
+    {
+      "closed": true,
+      "close_ms": 6
+    }
+  ],
+  "recovered": true,
+  "errors": [],
+  "external": [],
+  "scope": "Four real loopback HTTP 503 responses with unfinished chunked bodies; same map canvas, selection, query and URL retained; successful retry. Not device or full network acceptance."
+}

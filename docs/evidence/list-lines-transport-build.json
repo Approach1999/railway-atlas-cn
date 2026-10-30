@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-26T12:54:03.375238+00:00",
+  "asset": "/assets/index-DnV9PvjI.js",
+  "unit_tests": {
+    "passed": 79,
+    "failed": 0
+  },
+  "build": "Strict TS/checkJs and production build passed; existing bundle-size warning retained.",
+  "checks": {
+    "real_list_line_index_http_deadline_cancel": 4,
+    "list_keyboard_and_failure_regression": 5
+  },
+  "source_and_evidence_sha256": {
+    "apps/web/client/src/AccessibleExplorer.tsx": "aac5253a78a03e7b9380dc85d578174d43d08f95910608dcf798bc813b4d6c14",
+    "apps/web/client/src/list-request.ts": "22980f61a06ecb44d4cf28de46ef1ef52d0842a1702154b55e2401bc229561e1",
+    "apps/web/client/src/json-request.ts": "dde7010cdaec4bf5e5dc5480f9aa652771ce82b79be1704de76400dccbbe2b20",
+    "apps/web/client/src/list-request.test.mjs": "9075aa0f80165dc9ae0ffea2a15b4fc8816c2bc32247e1307c25897fe99e8a2e",
+    "scripts/verify_list_lines_transport.cjs": "a8d9f88a97630bc7a64c5cf1696febbd60d158e1c3386b02140fa1f71e877d35",
+    "scripts/verify_accessibility.cjs": "925c5d7f6925a815606da8b04c62d20592e23d9a7152e95d00aad8d8da7cba7a",
+    "apps/web/client/dist/index.html": "68e8509352363021d32c33502dded6758e4dd5a4181c9c10f6a091eae818e7e5",
+    "apps/web/client/dist/assets/index-DnV9PvjI.js": "d3da6ef46c33de5822bd4c416464ce0f0dc02c1bedc1757986fd934fa42fc166",
+    "docs/evidence/history/AccessibleExplorer-before-line-reader.tsx": "feec95e2fed7383e5e997c0277ce96305420666e8f44ad262663d211d997ae33",
+    "docs/evidence/list-lines-transport-before.json": "e5de9968d6811af76a456f6df2b93af473b791f4747315c41169c162209a83f8",
+    "docs/evidence/list-lines-transport-after.json": "6e21f3db0c4129505d59026c772e4001564c5ebcdae4ffef2aa4596de8fb48fd",
+    "docs/evidence/list-lines-transport-accessibility.json": "1d6b4781de2e3abc9f1532704ef784eefc595cbee4cc9e3f2d0ed835977ebe63"
+  },
+  "validation_note": "After the successful full run, verifier additionally asserts >=14s for production timeout cases; same saved observations 15004/15009ms satisfy it. No product changes after the run.",
+  "limits": [
+    "One Chrome WebGL-disabled independent list path, not physical device or screen reader acceptance.",
+    "Existing actual-context-loss, performance and 200-percent reports retain their own original builds.",
+    "Full R11/N09, independent source review and real-device matrix remain open."
+  ]
+}

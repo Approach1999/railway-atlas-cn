@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-25T12:39:11.218061+00:00",
+  "acceptance_evidence": false,
+  "cases": [
+    {
+      "case": "map-software",
+      "main_thread_self_sample_percent": {
+        "(program)": 11.347277988826468,
+        "(idle)": 82.65305194570941,
+        "driver_or_other": 1.4911004143426225,
+        "app_asset": 4.238180726816883,
+        "(garbage collector)": 0.27038892430462524
+      },
+      "skia_swap_inclusive_ms": 27562.649,
+      "swap_calls": 1703,
+      "swap_mean_ms": 16.184761597181446,
+      "raw_archive": "data/manifests/local/pan-trace/matched/map-software/browser-trace.json.gz",
+      "raw_archive_sha256": "2a753e1fa05bb8701d8cb236f8c95e7aaf3205a5ede37074f70b39e18dc2e38a",
+      "raw_uncompressed_sha256": "60a6d962ac596724036f6d5e33c71e748c105bdd8a6459b2a3d63ecb039e1c72",
+      "raw_archive_bytes": 15347214
+    },
+    {
+      "case": "clear-canvas-software",
+      "main_thread_self_sample_percent": {
+        "(program)": 3.1943875787089655,
+        "(idle)": 96.68195800365278,
+        "driver_or_other": 0.09036933823381879,
+        "(garbage collector)": 0.03328507940443249
+      },
+      "skia_swap_inclusive_ms": 4608.91,
+      "swap_calls": 3620,
+      "swap_mean_ms": 1.2731795580110497,
+      "raw_archive": "data/manifests/local/pan-trace/matched/clear-canvas-software/browser-trace.json.gz",
+      "raw_archive_sha256": "b829f7408b8a69dea67debb46ff57ffb4895e00f7cfef9df3fd141e2dfc236f0",
+      "raw_uncompressed_sha256": "7529c6fb2035233653d09c6ce283f3fa2045eb0d487d7207d9055b914b6f9e70",
+      "raw_archive_bytes": 21118259
+    },
+    {
+      "case": "map-default",
+      "main_thread_self_sample_percent": {
+        "(program)": 9.50081474345157,
+        "(idle)": 89.63323418339817,
+        "driver_or_other": 0.20857141031609783,
+        "app_asset": 0.4812516641732139,
+        "(garbage collector)": 0.17612799866094783
+      },
+      "skia_swap_inclusive_ms": 326.831,
+      "swap_calls": 3060,
+      "swap_mean_ms": 0.10680751633986929,
+      "raw_archive": "data/manifests/local/pan-trace/matched/map-default/browser-trace.json.gz",
+      "raw_archive_sha256": "739439973fb4479f3dad9a7a85c4e73aa61b89de0529e4ea386b56967b1aa17b",
+      "raw_uncompressed_sha256": "539b30531df0d9b508c7feeb8753d3b3e1c0cb6aad0832f052a523efe6ebd0b7",
+      "raw_archive_bytes": 21840931
+    },
+    {
+      "case": "clear-canvas-default",
+      "main_thread_self_sample_percent": {
+        "(program)": 2.7790292900962745,
+        "(idle)": 97.13607711766412,
+        "driver_or_other": 0.07968161305583545,
+        "(garbage collector)": 0.005211979183779525
+      },
+      "skia_swap_inclusive_ms": 317.517,
+      "swap_calls": 3111,
+      "swap_mean_ms": 0.10206268081002892,
+      "raw_archive": "data/manifests/local/pan-trace/matched/clear-canvas-default/browser-trace.json.gz",
+      "raw_archive_sha256": "d2eb11dc866b1b6eedf4df4b327ecc34a6361f22757f976eabf968386eb2f4c6",
+      "raw_uncompressed_sha256": "87eb5e2a44611a3795adef515fd71e7a2abfb430b136c9adc3faa570f285b059",
+      "raw_archive_bytes": 19191908
+    }
+  ],
+  "interpretation": "Main-thread application asset self samples are small; long inclusive software swap stages warrant graphics/presentation investigation. They include waits and do not prove GPU busy time or a unique subsystem cause.",
+  "control_limits": "Empty control omits map content and app sidebar; same drawable area/context attributes do not isolate every page composition cost."
+}

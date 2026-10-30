@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-25T07:22:13.770Z",
+  "source": "Current pre-fix map-controller lineWidth and outer additions",
+  "checks": [
+    {
+      "id": "track",
+      "errors": []
+    },
+    {
+      "id": "urban-boundary",
+      "errors": [
+        "layers[0].paint.line-width: \"zoom\" expression may only be used as input to a top-level \"step\" or \"interpolate\" expression."
+      ]
+    },
+    {
+      "id": "casing",
+      "errors": [
+        "layers[0].paint.line-width: \"zoom\" expression may only be used as input to a top-level \"step\" or \"interpolate\" expression."
+      ]
+    }
+  ]
+}

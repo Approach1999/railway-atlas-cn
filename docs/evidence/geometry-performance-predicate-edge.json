@@ -1,0 +1,6 @@
+{
+  "source_ids": [],
+  "count": 0,
+  "synthetic_case": "urban preset, sidings=false, subway/branch/mapped: existing trackVisible predicate accepts it while existing minor render layer excludes it",
+  "status": "pre-existing edge, not fixed or counted as global predicate equivalence in this optimization"
+}

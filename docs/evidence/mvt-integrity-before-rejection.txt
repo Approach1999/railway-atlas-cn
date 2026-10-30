@@ -1,0 +1,19 @@
+{"totals":{"tiles":2251,"feature_instances":98715,"bytes":11554621},"failures":{"zero_length_edge":124,"too_few_positions":52,"zero_area_ring":57},"comparison":null}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: MVT geometry integrity failed
+
+233 !== 0
+
+    at file:///C:/Users/21965/Documents/Codex/2026-10-22/referenced-chatgpt-conversation-this-is-an/work/checkout/scripts/verify_mvt_integrity.mjs:65:96 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 233,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.15.0

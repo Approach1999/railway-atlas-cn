@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-28",
+  "build": {
+    "asset": "/assets/index-DQDm9VWe.js",
+    "index_sha256": "e91c791633e21a3bd6b2bb2f5a90ee66ffb641b74c6b2a3ac1ebf56a8b389d13",
+    "asset_sha256": "b76a3028a98c89a4580f8e40e35ab16b817671d2b9ee32d47872f7abd30bb903",
+    "css_asset": "/assets/index-CHGaf3CA.css",
+    "css_sha256": "f9a52c5777c782407af891cb1d4da3495ad97b58afb2da2f774adca35ff6d21f"
+  },
+  "source_sha256": "c200d98fe59d55f10133f809353883f89891909395e9303255a8c6049d8327a9",
+  "reports": {
+    "control-before": {
+      "path": "docs/evidence/buffer-diagnostic-control-before.json",
+      "sha256": "ef5b15a50ec164346ce73acf5d0119e1d23444ae042553ee88a6d5b80ffecb27"
+    },
+    "candidate": {
+      "path": "docs/evidence/buffer-diagnostic-candidate.json",
+      "sha256": "2e82ece50fe1b12809035442e43ed2ff9d1683ffc7c5b282df2537181fca2085"
+    },
+    "control-after": {
+      "path": "docs/evidence/buffer-diagnostic-control-after.json",
+      "sha256": "dc6b8875ed33ffdbfea81b73df163061e59669dae0fce95f080ff974107e405a"
+    }
+  },
+  "identity_comparisons": [
+    {
+      "scene": "overview",
+      "preset": "overview",
+      "before_count": 57,
+      "candidate_count": 57,
+      "after_count": 57,
+      "candidate_lost": [],
+      "candidate_added": [],
+      "controls_equal": true
+    },
+    {
+      "scene": "overview",
+      "preset": "highspeed",
+      "before_count": 20,
+      "candidate_count": 20,
+      "after_count": 20,
+      "candidate_lost": [],
+      "candidate_added": [],
+      "controls_equal": true
+    },
+    {
+      "scene": "station-yard",
+      "preset": "overview",
+      "before_count": 15,
+      "candidate_count": 15,
+      "after_count": 15,
+      "candidate_lost": [],
+      "candidate_added": [],
+      "controls_equal": true
+    },
+    {
+      "scene": "station-yard",
+      "preset": "highspeed",
+      "before_count": 9,
+      "candidate_count": 9,
+      "after_count": 9,
+      "candidate_lost": [],
+      "candidate_added": [],
+      "controls_equal": true
+    }
+  ],
+  "p95_ms": {
+    "control-before": {
+      "overview": 120.7999999821186,
+      "station-yard": 39.400000005960464
+    },
+    "candidate": {
+      "overview": 90.69999998807907,
+      "station-yard": 34.20000001788139
+    },
+    "control-after": {
+      "overview": 103.59999999403954,
+      "station-yard": 41.30000001192093
+    }
+  },
+  "decision": {
+    "diagnostic_only": true,
+    "production_changed": false,
+    "candidate_adopted": false,
+    "next": "Compare label positions, tile-edge/zoom/pan coverage and selection identity before changing the product; run full acceptance benchmark only after those checks."
+  },
+  "limits": [
+    "30 alternating samples per scene, not acceptance benchmark.",
+    "Two viewports/cameras at two fixed zooms, not all boundaries or movements.",
+    "Equal rendered label identities does not prove equal label positions, collision priorities or complete visual equivalence.",
+    "Control-before and control-after timing differs: environmental variation prevents attributing all improvement to the buffer."
+  ]
+}

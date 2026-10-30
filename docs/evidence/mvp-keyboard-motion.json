@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-25T02:17:12.420Z",
+  "base": "http://127.0.0.1:8766",
+  "checks": [
+    "enabling reduced motion during an active home animation completes its exact destination in the preference event task",
+    "keyboard entry focuses the Chinese-named canvas, visible focus ring and mapped description in the accessibility tree",
+    "arrows pan, plus/minus zoom, map movement replaces history and Tab exits the canvas",
+    "Chinese zoom buttons, keyboard search/selection and Escape-to-search focus return work with reduced motion"
+  ],
+  "preference_changes": [
+    {
+      "matches": true,
+      "url": "http://127.0.0.1:8766/?region=shenyang&snapshot=shenyang-mvp-20261023&types=other%2Crail%2Cunknown&classes=branch%2Cconventional_main%2Cconventional_other%2Chigh_speed%2Cindustrial%2Clight_rail%2Cmetro%2Cother%2Ctram%2Cunknown&states=mapped&labels=lines%2Cstations&facilities=0&sidings=1#map=14.00/41.81000/123.44000",
+      "time": 841.0999999046326
+    },
+    {
+      "matches": true,
+      "url": "http://127.0.0.1:8766/?region=shenyang&snapshot=shenyang-mvp-20261023&types=other%2Crail%2Cunknown&classes=branch%2Cconventional_main%2Cconventional_other%2Chigh_speed%2Cindustrial%2Clight_rail%2Cmetro%2Cother%2Ctram%2Cunknown&states=mapped&labels=lines%2Cstations&facilities=0&sidings=1#map=10.50/41.80000/123.42000",
+      "time": 846.7999999523163
+    },
+    {
+      "matches": false,
+      "url": "http://127.0.0.1:8766/?region=shenyang&snapshot=shenyang-mvp-20261023&q=%E6%B2%88%E9%98%B3%E5%8C%97%E7%AB%99&types=other%2Crail%2Cunknown&classes=branch%2Cconventional_main%2Cconventional_other%2Chigh_speed%2Cindustrial%2Clight_rail%2Cmetro%2Cother%2Ctram%2Cunknown&states=mapped&labels=lines%2Cstations&facilities=0&sidings=1#map=13.50/41.81446/123.44022",
+      "time": 2142.5999999046326
+    },
+    {
+      "matches": false,
+      "url": "http://127.0.0.1:8766/?region=shenyang&snapshot=shenyang-mvp-20261023&q=%E6%B2%88%E9%98%B3%E5%8C%97%E7%AB%99&types=other%2Crail%2Cunknown&classes=branch%2Cconventional_main%2Cconventional_other%2Chigh_speed%2Cindustrial%2Clight_rail%2Cmetro%2Cother%2Ctram%2Cunknown&states=mapped&labels=lines%2Cstations&facilities=0&sidings=1#map=13.50/41.81446/123.44022",
+      "time": 2142.5999999046326
+    }
+  ],
+  "map_accessible_description": "地图获得焦点后，用方向键平移，+ / − 缩放；Tab 离开地图。搜索中用上下键选择结果，Enter 查看，Escape 关闭详情。也可以通过要素列表浏览。",
+  "errors": [],
+  "external": [],
+  "scope": "Local Chrome keyboard, actual media-query event tasks and browser accessibility tree; not NVDA/VoiceOver, physical device, OS IME, actual 200% zoom or full N09 acceptance"
+}

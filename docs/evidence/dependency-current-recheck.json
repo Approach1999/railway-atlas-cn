@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-28",
+  "build": {
+    "asset": "/assets/index-DQDm9VWe.js",
+    "index_sha256": "e91c791633e21a3bd6b2bb2f5a90ee66ffb641b74c6b2a3ac1ebf56a8b389d13",
+    "asset_sha256": "b76a3028a98c89a4580f8e40e35ab16b817671d2b9ee32d47872f7abd30bb903"
+  },
+  "reports": {
+    "audit": {
+      "path": "docs/evidence/dependency-current-recheck-audit.json",
+      "sha256": "6fcff511ce2dd5b63359801c717ce1f5f43e6895018a2a5215a92426a95b7bae"
+    },
+    "headers": {
+      "path": "docs/evidence/dependency-current-recheck-headers.json",
+      "sha256": "422309df404e3b5678007a57d69390a9d194d154455c604514e32dfc3f4fa0d2"
+    },
+    "browser": {
+      "path": "docs/evidence/dependency-current-recheck-browser.json",
+      "sha256": "a34d9d012f9c726c9ba6897c07e32765af59ae5dc28496b1c3254097464fe97b"
+    },
+    "browser-process": {
+      "path": "docs/evidence/dependency-current-recheck-browser-process.log",
+      "sha256": "0a43d57eaa0d89ab8d98f872dca3aece15527ca2ec4e7afe45a4332c679439bb"
+    }
+  },
+  "source_sha256": {
+    "scripts/audit_dependencies.py": "518dac81996d3891f497050bd7702a83ac831ff0838faabd037dccce1872de48",
+    "scripts/license_inventory.py": "c21cbc54fa9a5da2723301ec7702bd2fab6f0dfcda71fa6fc2d03f1572c92ed6",
+    "scripts/verify_security_headers.py": "3aff1dd6683a5ebe25462a7b5c591ff7224c548950707f6be326276ca8ec0e55",
+    "scripts/verify_security_browser.cjs": "15db196a0e9ae7bc7ed71c8443bf539a1b30b4d31ce55f2b881bf5d5b961874b",
+    "config/security-headers.json": "6a8f18524e2ced7cde5750e8f8263a9936189cae7796d0b535dc979f781d4c11"
+  },
+  "results": {
+    "license_components": 204,
+    "license_texts": 116,
+    "license_inventory_deterministic_check_passed": true,
+    "npm_client_advisories": 0,
+    "npm_probe_advisories": 0,
+    "unique_osv_queries": 179,
+    "open_advisories": [
+      "RUSTSEC-2026-0249"
+    ],
+    "query_errors": [],
+    "header_paths_passed": 8,
+    "browser_checks": 3,
+    "product_or_dependency_versions_changed": false
+  },
+  "limits": [
+    "Maintenance advisory remains open; no no-known-advisories or full security approval claim.",
+    "Package audit excludes embedded native libraries and OS/browser/toolchain.",
+    "License text completeness is not redistribution approval; Microsoft runtime and other native review items remain open.",
+    "Loopback HTTP and one Chrome fixture run do not prove public HTTPS, all browsers or independent security testing."
+  ]
+}

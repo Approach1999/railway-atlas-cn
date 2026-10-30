@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-23T04:44:53.753375+00:00",
+  "snapshot": "shenyang-mvp-accessible-20261022",
+  "tiles": 2251,
+  "compression": "gzip level 6, mtime 0, matches local HTTP server",
+  "gzip_bytes": {
+    "median": 685,
+    "p95": 3870,
+    "max": 156664,
+    "total": 3421951
+  },
+  "largest_tile": "tiles/9/431/190.pbf",
+  "uncompressed_bytes": 9998761,
+  "individual_tile_budget_bytes": 512000,
+  "all_individual_tiles_within_budget": true,
+  "scope": "Current bounded snapshot only; all zooms checked, not national-scale evidence"
+}

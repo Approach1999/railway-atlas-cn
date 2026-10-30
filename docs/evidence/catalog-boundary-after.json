@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-25T10:32:07.392Z",
+  "browser": "155.0.8059.85",
+  "audit_only": false,
+  "cases": [
+    {
+      "name": "object region name",
+      "map_present": true,
+      "canvas_count": 1,
+      "retry_present": true,
+      "picker_text": "地区与数据版本数据目录暂时无法读取或格式无效；当前地图仍可浏览。重试数据目录",
+      "versions": 0,
+      "errors": [],
+      "recovery_verified": true
+    },
+    {
+      "name": "null camera longitude",
+      "map_present": true,
+      "canvas_count": 1,
+      "retry_present": true,
+      "picker_text": "地区与数据版本数据目录暂时无法读取或格式无效；当前地图仍可浏览。重试数据目录",
+      "versions": 0,
+      "errors": [],
+      "recovery_verified": true
+    },
+    {
+      "name": "string object-list capability",
+      "map_present": true,
+      "canvas_count": 1,
+      "retry_present": true,
+      "picker_text": "地区与数据版本数据目录暂时无法读取或格式无效；当前地图仍可浏览。重试数据目录",
+      "versions": 0,
+      "errors": [],
+      "recovery_verified": true
+    },
+    {
+      "name": "duplicate snapshot identity",
+      "map_present": true,
+      "canvas_count": 1,
+      "retry_present": true,
+      "picker_text": "地区与数据版本数据目录暂时无法读取或格式无效；当前地图仍可浏览。重试数据目录",
+      "versions": 0,
+      "errors": [],
+      "recovery_verified": true
+    },
+    {
+      "name": "missing snapshot identity",
+      "map_present": true,
+      "canvas_count": 1,
+      "retry_present": true,
+      "picker_text": "地区与数据版本数据目录暂时无法读取或格式无效；当前地图仍可浏览。重试数据目录",
+      "versions": 0,
+      "errors": [],
+      "recovery_verified": true
+    },
+    {
+      "name": "unlisted recommended snapshot",
+      "map_present": true,
+      "canvas_count": 1,
+      "retry_present": true,
+      "picker_text": "地区与数据版本数据目录暂时无法读取或格式无效；当前地图仍可浏览。重试数据目录",
+      "versions": 0,
+      "errors": [],
+      "recovery_verified": true
+    },
+    {
+      "name": "object build date",
+      "map_present": true,
+      "canvas_count": 1,
+      "retry_present": true,
+      "picker_text": "地区与数据版本数据目录暂时无法读取或格式无效；当前地图仍可浏览。重试数据目录",
+      "versions": 0,
+      "errors": [],
+      "recovery_verified": true
+    }
+  ],
+  "external": []
+}

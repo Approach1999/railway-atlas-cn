@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-27T04:11:03.331Z",
+  "browser": "155.0.8059.85",
+  "cases": [
+    {
+      "invalid_names": false,
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "layers": 41,
+      "tracks": 605,
+      "accepted": true
+    },
+    {
+      "invalid_names": true,
+      "name_labels": {
+        "status": "error",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "layers": 41,
+      "tracks": 605,
+      "accepted": false
+    }
+  ],
+  "scope": "Real browser ready/error name generation with all track/name layers installed. Invalid case mutates only the name consumer query; actual track source remains drawn. Not performance acceptance."
+}

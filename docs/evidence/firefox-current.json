@@ -1,0 +1,157 @@
+{
+  "date": "2026-10-28",
+  "build": {
+    "asset": "/assets/index-COabTbcb.js",
+    "index_sha256": "a4038fcf867b47fb387c68b677034132160b96e78692bf04e1ea7b837af3dc56",
+    "asset_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7"
+  },
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "manifest_sha256": "0455a747024aeb11fd399ee2dfd6255ccd6657af8819360da3ca14c4ac80dfc5",
+  "runtimes": [
+    {
+      "version": "158.0.1",
+      "binary_sha256": "76732d4e43c864194660c671c52ecf4bad89e43b666d9a0acf89cd4b692ced9b",
+      "same_as_previous_official_binary": true,
+      "driver_sha256": "e95b4eac7960ffcd5acbfd92bb7d49d48f99c1d01a20ddd297fef8c80821020d",
+      "build_id": "20261019185856"
+    },
+    {
+      "version": "157.0.1",
+      "binary_sha256": "f029827ec8841dfd36e75acb95343f2669eb86c296eedd49f0e48d80c2a7d514",
+      "same_as_previous_official_binary": true,
+      "driver_sha256": "e95b4eac7960ffcd5acbfd92bb7d49d48f99c1d01a20ddd297fef8c80821020d",
+      "build_id": "20261005135250"
+    }
+  ],
+  "packages": [
+    {
+      "file": "firefox-158.0.1.exe",
+      "sha256": "3259a2f8508e58cf2e383b6c99bfc64d6ddc86d1407b7c2f86f660af955b5d10",
+      "bytes": 94890968,
+      "matches_pinned_official_package": true
+    },
+    {
+      "file": "firefox-157.0.1.exe",
+      "sha256": "71dc620e7749bb65be6df67b99261a303805a804f9c787b76b81c095cfa7d9ca",
+      "bytes": 93445848,
+      "matches_pinned_official_package": true
+    },
+    {
+      "file": "geckodriver.zip",
+      "sha256": "dfed9315abe8d2fbc1b6161a2ee8002452e79cf05ee92fdc653a4e26bc35edd8",
+      "bytes": 1780114,
+      "matches_pinned_official_package": true
+    }
+  ],
+  "reports": {
+    "158.0.1-report": {
+      "path": "docs/evidence/firefox-current-158.0.1-report.json",
+      "sha256": "2181115830b9985105e2800eb8f8351ff1d040b9b79eb3e5c53fe1df014bed46"
+    },
+    "158.0.1-geckodriver": {
+      "path": "docs/evidence/firefox-current-158.0.1-geckodriver.log",
+      "sha256": "79918a9f1336764f349be2b69a989b8b727aec4a1e402c3311b4a697e17c94d2"
+    },
+    "158.0.1-map": {
+      "path": "docs/evidence/firefox-current-158.0.1-map.png",
+      "sha256": "4f6384750dbcf77d6d5a18c44863bf50145e95ebbfc752552cce70e00c0f9528"
+    },
+    "158.0.1-list-detail": {
+      "path": "docs/evidence/firefox-current-158.0.1-list-detail.png",
+      "sha256": "7244fea2025bbbafa91651a98c8db3129cbec75ae4127a9d4d6a6c5081c026c9"
+    },
+    "158.0.1-recovery-compact": {
+      "path": "docs/evidence/firefox-current-158.0.1-recovery-compact.png",
+      "sha256": "01d18c3de4a4221044a411bbd0381849a57b6269fe555a2685936b63fd835dd0"
+    },
+    "158.0.1-process": {
+      "path": "docs/evidence/firefox-current-158.0.1-process.log",
+      "sha256": "5b4db47ecb52a3fe8e4c77a9407c2e1a2fe5581b392b02324bf6fea6ce72c9ea"
+    },
+    "157.0.1-report": {
+      "path": "docs/evidence/firefox-current-157.0.1-report.json",
+      "sha256": "3c3f1776ee521d3211fad771f7388b1f61606d679719c2a4df22b223acd6bb0b"
+    },
+    "157.0.1-geckodriver": {
+      "path": "docs/evidence/firefox-current-157.0.1-geckodriver.log",
+      "sha256": "fd7779896fd842dabcc4c7b0180bbd53fb89b1d4edced940d249a315cd2499fd"
+    },
+    "157.0.1-map": {
+      "path": "docs/evidence/firefox-current-157.0.1-map.png",
+      "sha256": "4f6384750dbcf77d6d5a18c44863bf50145e95ebbfc752552cce70e00c0f9528"
+    },
+    "157.0.1-list-detail": {
+      "path": "docs/evidence/firefox-current-157.0.1-list-detail.png",
+      "sha256": "5e83aef5b8a2b0a83c3704812f3266ca46e7d0091e57c41a3e3ed54f639e035a"
+    },
+    "157.0.1-recovery-compact": {
+      "path": "docs/evidence/firefox-current-157.0.1-recovery-compact.png",
+      "sha256": "01d18c3de4a4221044a411bbd0381849a57b6269fe555a2685936b63fd835dd0"
+    },
+    "157.0.1-process": {
+      "path": "docs/evidence/firefox-current-157.0.1-process.log",
+      "sha256": "5b546ff99df50f618014d6f01c4709252989fc8a7cd4a943cb217911fa793892"
+    },
+    "restricted-failure": {
+      "path": "docs/evidence/firefox-current-restricted-failure.json",
+      "sha256": "277eefb23de94995ce0fe73c43f722aab42c219d2ba79aee8636237b5975ff5b"
+    },
+    "restricted-geckodriver": {
+      "path": "docs/evidence/firefox-current-restricted-geckodriver.log",
+      "sha256": "2771ded85ace28aaa06f4a5a4a7faddd163f3a2b3ca26ca788ec860c486034a1"
+    },
+    "restricted-process": {
+      "path": "docs/evidence/firefox-current-restricted-process.log",
+      "sha256": "e6eb1e365c2370591f5fa057d12ac480fbaa45217ace89efab2d0ac0e102aed5"
+    },
+    "first-navigation-failure": {
+      "path": "docs/evidence/firefox-current-first-navigation-failure.json",
+      "sha256": "af15db6b9fbf47d3f9ff669c3c886aa7f410d2dbec99f94c30b02e54d3c2b82f"
+    },
+    "first-navigation-geckodriver": {
+      "path": "docs/evidence/firefox-current-first-navigation-geckodriver.log",
+      "sha256": "fce209ec04cd6462b9eccbb3a857d0da5b70dcb8c9dac536cdb932d2f5b19d1a"
+    },
+    "first-navigation-screenshot": {
+      "path": "docs/evidence/firefox-current-first-navigation-screenshot.png",
+      "sha256": "4d37b7dff3e132d78bf2e9ffc43b4de7822bbfe57eb88e328cc71860e3962b83"
+    },
+    "first-navigation-process": {
+      "path": "docs/evidence/firefox-current-first-navigation-process.log",
+      "sha256": "1fce55f682ded1930330190fcd8b7c3a3d0a4227509af373263be74cee8270cd"
+    }
+  },
+  "source_sha256": {
+    "scripts/verify_firefox_core.py": "fadfd6dac488faa2e44d3b87609a53daf0fa55b9dd49934d96c593b59be5b541",
+    "scripts/webdriver_client.py": "455b76a5d96f52284acfad2d09a738e7e468a24ee6455e03ebec578a3f72ab47",
+    "config/firefox-test-runtimes.json": "bbd0a221bbc8ccf2dd62a37dd3fa77cae76cd93147b74436c991ca5a31a3e8e2",
+    "docs/evidence/history/firefox-current-before-verifier.py": "5b8ea34bf7eb939264670b1feeb7acac9ae9573a3c6d9c7184d2d2e0e63e4b4c",
+    "docs/evidence/history/firefox-current-first-verifier.py": "64997727bd83329606942759e754c9b9b6f63397cc6a32f361a7a8699440ae15"
+  },
+  "checks": {
+    "core_tasks": 12,
+    "recovery_tasks": 14,
+    "versions": 2,
+    "compact_css_viewports": {
+      "158.0.1": [
+        650,
+        427
+      ],
+      "157.0.1": [
+        650,
+        427
+      ]
+    },
+    "hashes_verified": true,
+    "preview_build_matches": true,
+    "preview_http_status": 200,
+    "product_code_changed": false
+  },
+  "limits": [
+    "Available pinned official versions; no assertion that these are currently the latest two releases.",
+    "Headless W3C desktop browsers and compact native windows, not actual 200-percent Firefox zoom, mobile devices or screen readers.",
+    "Document resource timing is from the final page, not whole-session request interception or proof of no browser background traffic.",
+    "Initial restricted process launch and first navigation synchronization failure retained; neither is a passing product acceptance run.",
+    "No performance, full fault matrix or independent human acceptance."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "version": "shenyang-preview-1",
+  "note": "概览标注的编辑名单，不代表客流或行政站级；未列站点在高缩放显示。",
+  "major_station_keys": ["node/6179162407", "node/676578837", "node/6179162253", "node/677162780", "node/4507873122"],
+  "station_mode_overrides": {
+    "node/6179162407": {"mode": "rail", "expected_ref": "53876", "evidence": "源标签 operator=中国铁路沈阳局集团有限公司 沈阳站，railway:ref=53876；已核对试验锚点"},
+    "node/676578837": {"mode": "rail", "expected_ref": "53885", "evidence": "源标签 operator=中国铁路沈阳局集团有限公司 沈阳站，railway:ref=53885；已核对试验锚点"},
+    "node/6179162253": {"mode": "rail", "expected_ref": "63623", "evidence": "源标签 operator=中国铁路沈阳局集团有限公司 沈阳站，railway:ref=63623"},
+    "node/677162780": {"mode": "rail", "expected_ref": "63644", "evidence": "源标签 operator=中国铁路沈阳局集团有限公司 沈阳车务段，railway:ref=63644"}
+  }
+}

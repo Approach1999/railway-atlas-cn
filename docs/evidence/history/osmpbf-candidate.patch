@@ -1,0 +1,588 @@
+--- a/Cargo.lock
++++ b/Cargo.lock
+@@ -24,12 +24,6 @@
+ checksum = "330a5ed07fa54e4702c9d6c4174f74427fc0ef6e214bbd677ae50a5099946470"
+ 
+ [[package]]
+-name = "autocfg"
+-version = "1.5.1"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "f2032f911046de80f0a198e0901378627c33f59ea0ac00e363d481118bd70a53"
+-
+-[[package]]
+ name = "bitflags"
+ version = "2.13.2"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+@@ -57,6 +51,31 @@
+ ]
+ 
+ [[package]]
++name = "crossbeam-deque"
++version = "0.8.8"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "622f3fc73690be383c7214310406f28a90e6edeadc3cea882f9d71e495b9711a"
++dependencies = [
++ "crossbeam-epoch",
++ "crossbeam-utils",
++]
++
++[[package]]
++name = "crossbeam-epoch"
++version = "0.9.21"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "dc74980687109a3b14c72fd458107bf0baa1da1a1a805e178d15501ba9b86d9d"
++dependencies = [
++ "crossbeam-utils",
++]
++
++[[package]]
++name = "crossbeam-utils"
++version = "0.8.23"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "a31eee39dddec8330830986fcd7625edb5a24ec90ea038215273bbc3adb08ac6"
++
++[[package]]
+ name = "either"
+ version = "1.19.0"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+@@ -85,12 +104,6 @@
+ checksum = "da7c62ceae207dd37ea5b845da6a0696c799f85e97da1ab5b7910be3c1c80223"
+ 
+ [[package]]
+-name = "flat_map"
+-version = "0.0.10"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "e4fa2a56a33c493fc81acbad4676c599cf2b128f21462a020043ea1eee46244f"
+-
+-[[package]]
+ name = "flate2"
+ version = "1.1.10"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+@@ -98,23 +111,6 @@
+ dependencies = [
+  "crc32fast",
+  "miniz_oxide",
+- "zlib-rs",
+-]
+-
+-[[package]]
+-name = "futures"
+-version = "0.1.31"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "3a471a38ef8ed83cd6e40aa59c1ffe17db6855c18e3604d9c4ed8c08ebc28678"
+-
+-[[package]]
+-name = "futures-cpupool"
+-version = "0.1.8"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "ab90cde24b3319636588d0c35fe03b1333857621051837ed769faefb4c2162e4"
+-dependencies = [
+- "futures",
+- "num_cpus",
+ ]
+ 
+ [[package]]
+@@ -135,12 +131,6 @@
+ checksum = "ed5909b6e89a2db4456e54cd5f673791d7eca6732202bbf2a9cc504fe2f9b84a"
+ 
+ [[package]]
+-name = "hermit-abi"
+-version = "0.5.3"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "e17592d60ebacc7d5e169f4663c5f84f9161cc90328abcfe8456f41e4dfcb284"
+-
+-[[package]]
+ name = "home"
+ version = "0.5.12"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+@@ -196,6 +186,15 @@
+ checksum = "cf8baf1c55e62ffcace7a9f06f4bd9cd3f0c4beb022d3b367256b91b87513d98"
+ 
+ [[package]]
++name = "memmap2"
++version = "0.5.10"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "83faa42c0a078c393f6b29d5db232d8be22776a891f8f56e5284faee4a20b327"
++dependencies = [
++ "libc",
++]
++
++[[package]]
+ name = "miniz_oxide"
+ version = "0.9.1"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+@@ -206,48 +205,23 @@
+ ]
+ 
+ [[package]]
+-name = "num_cpus"
+-version = "1.17.0"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "91df4bbde75afed763b708b7eee1e8e7651e02d97f6d5dd763e89367e957b23b"
+-dependencies = [
+- "hermit-abi",
+- "libc",
+-]
+-
+-[[package]]
+ name = "once_cell"
+ version = "1.21.4"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "9f7c3e4beb33f85d45ae3e3a1792185706c8e16d043238c593331cc7cd313b50"
+ 
+ [[package]]
+-name = "osmpbfreader"
+-version = "0.19.1"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "58a9aad3969d4c846bbbdd37fcdf77174fdc52e173bdc476981d543b0773307e"
++name = "osmpbf"
++version = "0.3.8"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "5d689d6e9f254bbd63893ce00a27147e41fe94bf3abca70f85b5345afb3cb728"
+ dependencies = [
+  "byteorder",
+- "flat_map",
+  "flate2",
+- "par-map",
++ "memmap2",
+  "protobuf",
+  "protobuf-codegen",
+- "pub-iterator-type",
+- "self_cell",
+- "smartstring",
+-]
+-
+-[[package]]
+-name = "par-map"
+-version = "0.1.4"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "2f05b290991702bb8140cf70915b82b0ae1ec7fe478db97305af990048040095"
+-dependencies = [
+- "futures",
+- "futures-cpupool",
+- "num_cpus",
+- "pub-iterator-type",
++ "rayon",
+ ]
+ 
+ [[package]]
+@@ -311,12 +285,6 @@
+ ]
+ 
+ [[package]]
+-name = "pub-iterator-type"
+-version = "0.1.1"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "858afdbecdce657c6e32031348cf7326da7700c869c368a136d31565972f7018"
+-
+-[[package]]
+ name = "quote"
+ version = "1.0.47"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+@@ -335,8 +303,28 @@
+ name = "railway-probe"
+ version = "0.1.0"
+ dependencies = [
+- "osmpbfreader",
++ "osmpbf",
+  "serde_json",
++]
++
++[[package]]
++name = "rayon"
++version = "1.12.0"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "fb39b166781f92d482534ef4b4b1b2568f42613b53e5b6c160e24cfbfa30926d"
++dependencies = [
++ "either",
++ "rayon-core",
++]
++
++[[package]]
++name = "rayon-core"
++version = "1.13.0"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "22e18b0f0062d30d4230b2e85ff77fdfe4326feb054b9783a3460d8435c8ab91"
++dependencies = [
++ "crossbeam-deque",
++ "crossbeam-utils",
+ ]
+ 
+ [[package]]
+@@ -395,12 +383,6 @@
+ ]
+ 
+ [[package]]
+-name = "self_cell"
+-version = "1.3.0"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "2ab42ca02749e120097e328d91d415325bdf43b1c72c4c8badf37375fe40a813"
+-
+-[[package]]
+ name = "serde"
+ version = "1.0.229"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+@@ -449,23 +431,6 @@
+ checksum = "3a219298ac11a56ea9a6d2120044824d6f01aeb034955e7af7bc16858527deea"
+ 
+ [[package]]
+-name = "smartstring"
+-version = "1.0.1"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "3fb72c633efbaa2dd666986505016c32c3044395ceaf881518399d2f4127ee29"
+-dependencies = [
+- "autocfg",
+- "static_assertions",
+- "version_check",
+-]
+-
+-[[package]]
+-name = "static_assertions"
+-version = "1.1.0"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "a2eb9349b6444b326872e140eb1cf5e7c522154d69e7a0ffb0fb81c06b37543f"
+-
+-[[package]]
+ name = "syn"
+ version = "2.0.119"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+@@ -525,12 +490,6 @@
+ version = "1.0.27"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "a2c754d6c33795a1c324727428e5a7dedb5b06195f9890bdbcba760d3e246563"
+-
+-[[package]]
+-name = "version_check"
+-version = "0.9.5"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "0b928f33d975fc6ad9f86c8f283853ad26bdd5b10b7f1542aa2fa15e2289105a"
+ 
+ [[package]]
+ name = "which"
+@@ -633,12 +592,6 @@
+ checksum = "589f6da84c646204747d1270a2a5661ea66ed1cced2631d546fdfb155959f9ec"
+ 
+ [[package]]
+-name = "zlib-rs"
+-version = "0.6.8"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "b268e58e7c693d7c271f93ffc4ba3b380412554231c85bf61ca7af91042a4112"
+-
+-[[package]]
+ name = "zmij"
+ version = "1.0.23"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+--- a/crates/railway-probe/Cargo.toml
++++ b/crates/railway-probe/Cargo.toml
+@@ -5,5 +5,5 @@
+ publish = false
+ 
+ [dependencies]
+-osmpbfreader = "=0.19.1"
++osmpbf = "=0.3.8"
+ serde_json = "=1.0.151"
+--- a/crates/railway-probe/src/main.rs
++++ b/crates/railway-probe/src/main.rs
+@@ -1,8 +1,9 @@
+-use osmpbfreader::{OsmId, OsmObj, OsmPbfReader};
++mod osm_input;
++use osm_input::{OsmId, OsmObj, Tags};
+ use serde_json::{json, Value};
+-use std::{collections::BTreeMap, env, fs, fs::File, io, time::Instant};
+-
+-fn category(tags: &osmpbfreader::Tags) -> (&'static str, String) {
++use std::{collections::BTreeMap, env, fs, io, time::Instant};
++
++fn category(tags: &Tags) -> (&'static str, String) {
+     let railway = tags.get("railway").map(|s| s.as_str()).unwrap_or_else(|| {
+         match tags.get("public_transport").map(|v| v.as_str()) {
+             Some("station") => "station",
+@@ -30,7 +31,7 @@
+     (status, kind.to_string())
+ }
+ 
+-fn relevant(tags: &osmpbfreader::Tags) -> bool {
++fn relevant(tags: &Tags) -> bool {
+     tags.contains_key("railway")
+         || ["station", "platform", "stop_position", "stop_area"].contains(
+             &tags
+@@ -47,7 +48,7 @@
+             .any(|s| tags.contains_key(format!("{s}:railway").as_str()))
+ }
+ 
+-fn effective_mode(tags: &osmpbfreader::Tags, kind: &str) -> String {
++fn effective_mode(tags: &Tags, kind: &str) -> String {
+     if kind == "subway_entrance" {
+         return "subway".into();
+     }
+@@ -110,7 +111,7 @@
+ }
+ 
+ // Versioned display policy: specific track function precedes corridor usage.
+-fn line_class(tags: &osmpbfreader::Tags, mode: &str) -> (&'static str, &'static str, Vec<String>) {
++fn line_class(tags: &Tags, mode: &str) -> (&'static str, &'static str, Vec<String>) {
+     let value = |key: &str| tags.get(key).map(|v| v.as_str()).unwrap_or("");
+     if mode != "rail" {
+         return (
+@@ -188,9 +189,8 @@
+         return Err("outputs exist; use fresh paths".into());
+     }
+     let start = Instant::now();
+-    let mut reader = OsmPbfReader::new(File::open(&args[1])?);
+     // This holds a bounded pilot in memory. Do not feed a country extract directly.
+-    let objects = reader.get_objs_and_deps(|obj| relevant(obj.tags()))?;
++    let objects = osm_input::read(&args[1], relevant)?;
+     let mut features = Vec::new();
+     let mut classes: BTreeMap<String, usize> = BTreeMap::new();
+     let mut status_counts: BTreeMap<String, usize> = BTreeMap::new();
+@@ -361,7 +361,7 @@
+ #[cfg(test)]
+ mod tests {
+     use super::*;
+-    fn tags(pairs: &[(&str, &str)]) -> osmpbfreader::Tags {
++    fn tags(pairs: &[(&str, &str)]) -> Tags {
+         pairs
+             .iter()
+             .map(|(k, v)| ((*k).into(), (*v).into()))
+--- /dev/null
++++ b/crates/railway-probe/src/osm_input.rs
+@@ -0,0 +1,239 @@
++//! Owned objects for the bounded pilot. Keep parsing separate from display rules.
++use osmpbf::{Element, ElementReader, RelMemberType};
++use std::collections::{BTreeMap, BTreeSet};
++
++pub type Tags = BTreeMap<String, String>;
++#[derive(Clone, Copy, Debug, Eq, PartialEq, Ord, PartialOrd)]
++pub struct NodeId(pub i64);
++#[derive(Clone, Copy, Debug, Eq, PartialEq, Ord, PartialOrd)]
++pub struct WayId(pub i64);
++#[derive(Clone, Copy, Debug, Eq, PartialEq, Ord, PartialOrd)]
++pub struct RelationId(pub i64);
++#[derive(Clone, Copy, Debug, Eq, PartialEq, Ord, PartialOrd)]
++pub enum OsmId {
++    Node(NodeId),
++    Way(WayId),
++    Relation(RelationId),
++}
++
++pub struct Node {
++    pub id: NodeId,
++    pub tags: Tags,
++    lat: i32,
++    lon: i32,
++}
++impl Node {
++    // Preserve the existing 1e-7 degree coordinate contract, including signed rounding.
++    pub fn lat(&self) -> f64 {
++        self.lat as f64 * 1e-7
++    }
++    pub fn lon(&self) -> f64 {
++        self.lon as f64 * 1e-7
++    }
++}
++pub struct Way {
++    pub id: WayId,
++    pub tags: Tags,
++    pub nodes: Vec<NodeId>,
++}
++impl Way {
++    pub fn is_closed(&self) -> bool {
++        self.nodes.first() == self.nodes.last()
++    }
++}
++pub struct Member {
++    pub member: OsmId,
++    pub role: String,
++}
++pub struct Relation {
++    pub id: RelationId,
++    pub tags: Tags,
++    pub refs: Vec<Member>,
++}
++pub enum OsmObj {
++    Node(Node),
++    Way(Way),
++    Relation(Relation),
++}
++impl OsmObj {
++    fn id(&self) -> OsmId {
++        match self {
++            Self::Node(n) => OsmId::Node(n.id),
++            Self::Way(w) => OsmId::Way(w.id),
++            Self::Relation(r) => OsmId::Relation(r.id),
++        }
++    }
++    pub fn tags(&self) -> &Tags {
++        match self {
++            Self::Node(n) => &n.tags,
++            Self::Way(w) => &w.tags,
++            Self::Relation(r) => &r.tags,
++        }
++    }
++}
++
++fn own_tags<'a>(tags: impl Iterator<Item = (&'a str, &'a str)>) -> Tags {
++    tags.map(|(k, v)| (k.to_owned(), v.to_owned())).collect()
++}
++
++fn own(element: Element<'_>) -> Result<OsmObj, Box<dyn std::error::Error>> {
++    Ok(match element {
++        Element::Node(n) => OsmObj::Node(Node {
++            id: NodeId(n.id()),
++            tags: own_tags(n.tags()),
++            lat: n.decimicro_lat(),
++            lon: n.decimicro_lon(),
++        }),
++        Element::DenseNode(n) => OsmObj::Node(Node {
++            id: NodeId(n.id()),
++            tags: own_tags(n.tags()),
++            lat: n.decimicro_lat(),
++            lon: n.decimicro_lon(),
++        }),
++        Element::Way(w) => OsmObj::Way(Way {
++            id: WayId(w.id()),
++            tags: own_tags(w.tags()),
++            nodes: w.refs().map(NodeId).collect(),
++        }),
++        Element::Relation(r) => {
++            let mut refs = Vec::new();
++            for m in r.members() {
++                let member = match m.member_type {
++                    RelMemberType::Node => OsmId::Node(NodeId(m.member_id)),
++                    RelMemberType::Way => OsmId::Way(WayId(m.member_id)),
++                    RelMemberType::Relation => OsmId::Relation(RelationId(m.member_id)),
++                };
++                refs.push(Member {
++                    member,
++                    role: m.role()?.to_owned(),
++                });
++            }
++            OsmObj::Relation(Relation {
++                id: RelationId(r.id()),
++                tags: own_tags(r.tags()),
++                refs,
++            })
++        }
++    })
++}
++
++fn retain_dependencies(
++    mut objects: BTreeMap<OsmId, OsmObj>,
++    relevant: impl Fn(&Tags) -> bool,
++) -> BTreeMap<OsmId, OsmObj> {
++    let mut pending: Vec<_> = objects
++        .iter()
++        .filter(|(_, o)| relevant(o.tags()))
++        .map(|(id, _)| *id)
++        .collect();
++    let mut seen = BTreeSet::new();
++    while let Some(id) = pending.pop() {
++        if !seen.insert(id) {
++            continue;
++        }
++        match objects.get(&id) {
++            Some(OsmObj::Way(w)) => pending.extend(w.nodes.iter().copied().map(OsmId::Node)),
++            Some(OsmObj::Relation(r)) => pending.extend(r.refs.iter().map(|m| m.member)),
++            _ => {}
++        }
++    }
++    // Missing references stay missing; downstream quality checks must still see them.
++    objects.retain(|id, _| seen.contains(id));
++    objects
++}
++
++pub fn read(
++    path: &str,
++    relevant: impl Fn(&Tags) -> bool,
++) -> Result<BTreeMap<OsmId, OsmObj>, Box<dyn std::error::Error>> {
++    // The caller supplies a small regional extract, never a country-sized file.
++    let mut objects = BTreeMap::new();
++    let mut conversion_error = None;
++    ElementReader::from_path(path)?.for_each(|element| {
++        if conversion_error.is_some() {
++            return;
++        }
++        match own(element) {
++            Ok(object) => {
++                objects.insert(object.id(), object);
++            }
++            Err(error) => conversion_error = Some(error),
++        }
++    })?;
++    if let Some(error) = conversion_error {
++        return Err(error);
++    }
++    Ok(retain_dependencies(objects, relevant))
++}
++
++#[cfg(test)]
++mod tests {
++    use super::*;
++    #[test]
++    fn recursive_members_keep_dependencies_and_missing_references() {
++        let root = OsmId::Relation(RelationId(1));
++        let nested = OsmId::Relation(RelationId(2));
++        let way = OsmId::Way(WayId(3));
++        let node = OsmId::Node(NodeId(4));
++        let missing = OsmId::Node(NodeId(99));
++        let mut objects = BTreeMap::new();
++        objects.insert(
++            root,
++            OsmObj::Relation(Relation {
++                id: RelationId(1),
++                tags: [("route".into(), "tram".into())].into(),
++                refs: vec![Member {
++                    member: nested,
++                    role: "".into(),
++                }],
++            }),
++        );
++        objects.insert(
++            nested,
++            OsmObj::Relation(Relation {
++                id: RelationId(2),
++                tags: Tags::new(),
++                refs: vec![
++                    Member {
++                        member: root,
++                        role: "cycle".into(),
++                    },
++                    Member {
++                        member: way,
++                        role: "forward".into(),
++                    },
++                ],
++            }),
++        );
++        objects.insert(
++            way,
++            OsmObj::Way(Way {
++                id: WayId(3),
++                tags: Tags::new(),
++                nodes: vec![NodeId(4), NodeId(99)],
++            }),
++        );
++        for id in [4, 5] {
++            objects.insert(
++                OsmId::Node(NodeId(id)),
++                OsmObj::Node(Node {
++                    id: NodeId(id),
++                    tags: Tags::new(),
++                    lat: -123456789,
++                    lon: 123456789,
++                }),
++            );
++        }
++        let selected = retain_dependencies(objects, |tags| tags.contains_key("route"));
++        assert_eq!(
++            selected.keys().copied().collect::<Vec<_>>(),
++            vec![node, way, root, nested]
++        );
++        assert!(!selected.contains_key(&missing));
++        if let OsmObj::Way(w) = &selected[&way] {
++            assert_eq!(w.nodes, vec![NodeId(4), NodeId(99)]);
++        } else {
++            panic!("missing way");
++        }
++    }
++}

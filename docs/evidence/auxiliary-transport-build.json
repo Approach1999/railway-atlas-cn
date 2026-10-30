@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-26T13:03:15.604219+00:00",
+  "asset": "/assets/index-DDn1LNxy.js",
+  "unit_tests": {
+    "passed": 79,
+    "failed": 0
+  },
+  "build": "Strict TS/checkJs and production build passed; existing bundle-size warning retained.",
+  "checks": {
+    "real_auxiliary_transport": 9,
+    "about_regression": 8,
+    "security": 3
+  },
+  "png_fixture": {
+    "bytes": 69,
+    "sha256": "e2ec85599fb9615b91541bb638d7ee1f54999113ba2c4b67e5b10fe4c64b3e40",
+    "valid_chunk_crcs": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ]
+  },
+  "source_and_evidence_sha256": {
+    "apps/web/client/src/AboutDialog.tsx": "15cb697894f2fbbc13f01bf8dd9e431723fd8b5c23a86f0c7f2e1be115638149",
+    "apps/web/client/src/BasemapControl.tsx": "22b5bf72cb67c3ed4e74d53055e6dc4b1586ade538ce8ce0ea5b85a868962c14",
+    "apps/web/client/src/json-request.ts": "dde7010cdaec4bf5e5dc5480f9aa652771ce82b79be1704de76400dccbbe2b20",
+    "apps/web/client/src/list-request.test.mjs": "9075aa0f80165dc9ae0ffea2a15b4fc8816c2bc32247e1307c25897fe99e8a2e",
+    "scripts/verify_auxiliary_transport.cjs": "fa81e4fcb5f7804beb5ca7b2ce22396a66cb68a31157a1fdac5a5bea891fdc2d",
+    "scripts/verify_about_data.cjs": "653c97162a5ebe78d84c22c2322c02b05e195ead9b21724b22697a41163e1a1a",
+    "scripts/verify_security_browser.cjs": "15db196a0e9ae7bc7ed71c8443bf539a1b30b4d31ce55f2b881bf5d5b961874b",
+    "apps/web/client/dist/index.html": "db6b9a1c6d08cb5f7e7273cee90925a56eccf938e53a07dc954143dceeef13cb",
+    "apps/web/client/dist/assets/index-DDn1LNxy.js": "9a044ec47c26fc112aab30e9ed2f0fd5685c342f99b8e7bd5c69c08a37beddf0",
+    "docs/evidence/history/AboutDialog-before-shared-reader.tsx": "9502a2f9a5a92e1346c46e04282636be9b7fa0fa14f6564d89f29c83cb5ca50b",
+    "docs/evidence/history/BasemapControl-before-shared-reader.tsx": "964deaad92bce314301f50c2af2e496a30bbc888f4f3004ff17b59fcfe686140",
+    "docs/evidence/auxiliary-transport-before.json": "8d1f770b94c0e50069002a2f718fae42445150097497d9db802f8a186a77236e",
+    "docs/evidence/auxiliary-transport-after.json": "23ee84104ecd75486df73c89f62bddb8466d1da9bb163943f9cbb751624984f3",
+    "docs/evidence/auxiliary-transport-about.json": "06c3dadce063c2f6019d6b2a8dde5c4f187edfe4fc48e0f914638bc148048fbf",
+    "docs/evidence/auxiliary-transport-security.json": "edb00a77ec54dd5a8fec7ae69297f6a09f4881b7511ff886194e70b8866c6939",
+    "docs/evidence/auxiliary-transport-fixture-failure.json": "eb70468b1fa0a46e3776d2a340bcac78f14d29de82c02dcb24b20c21e22590a4"
+  },
+  "calibration": [
+    "Initial WebGL-disabled setup hides the header about button by design; verifier uses actual map-manifest bootstrap failure for independent about reads.",
+    "Initial raster fixture had invalid IDAT CRC and failed to recover; corrected with verified PNG chunks and reran all nine cases. Failure retained as calibration, not a product failure."
+  ],
+  "limits": [
+    "Loopback HTTP and locally fulfilled raster only, no public tile download or public service uptime acceptance.",
+    "Historical cold, 200-percent and context-loss reports retain original builds.",
+    "Full MVP, browser/reader/device matrix and independent source review remain open."
+  ]
+}

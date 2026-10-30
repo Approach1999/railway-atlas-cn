@@ -1,0 +1,237 @@
+{
+  "date": "2026-10-27T05:02:55.219965+00:00",
+  "asset": "index-B5DC1WQs.js",
+  "sha256": {
+    "apps/web/client/src/map-controller.ts": "0e30245fbd2d8806017f12520121798df3e16a00e29900f4acfa3e6a3e434ac4",
+    "apps/web/client/src/map-font.ts": "2a075b05d2f9a856c7212d8929f4c2479c2c9d71b634c35edba09c5bdccbb77c",
+    "apps/web/client/src/map-font-data.ts": "d54eeb7f465020a3ac26c94d43bc938c35535d6b30b54b2aff43d82f10e0c77e",
+    "apps/web/client/src/map-font.test.mjs": "f3a5a7d06fac9356ef6ff6bda5b5ce9ab6dc1f08a17befcd938c943cde98f741",
+    "apps/web/client/src/line-label-controller.ts": "e6aab01a02282a8b8882e6c09b00da75df66e3584b20e126e59bbdbe758627e2",
+    "apps/web/client/src/line-label-presentation.ts": "e76922a3f26e4f5e4ee24805dbf65a02fbf5806f4429960cdd692229c0dc8e42",
+    "apps/web/client/src/resources.ts": "b6e3226ca291d52533ab5c340c53e9a750227d7fb2b050ddd1373a816db676c2",
+    "apps/web/client/src/AboutDialog.tsx": "13687f72c5da85681730b5be5a23630b8f8e83b6f4ddc24d568f7d2b54dbceff",
+    "apps/web/client/src/assets/map-cjk.woff2": "c5676efeb6382c8d783b273aab69e5199951a78d5b19199f87be6cb8249f0739",
+    "scripts/build_map_font.py": "35d3087c28cb7a103f062aa5b9c3bd5417e6321adffe3ecb705b47a9eebb0b5a",
+    "scripts/test_build_map_font.py": "2f98f49f570b09ed23beed0bf9196cca084ee8baa555f1e7a2f2ba89a5893549",
+    "scripts/fetch_map_font.py": "a7550019d72aa4503f2b19c4802b33e9da0d50305c2c92eab068b024be0f5e24",
+    "scripts/verify_map_font.cjs": "2c06ddfa80b520526b2a10dd829df8cfa97ac24267066b2ebb4f257a2c2cce77",
+    "scripts/license_inventory.py": "c21cbc54fa9a5da2723301ec7702bd2fab6f0dfcda71fa6fc2d03f1572c92ed6",
+    "scripts/test_license_inventory.py": "1a5a14428b7501f34a097097c87a1660c2169f02997cadba8c5f3d5003a7d992",
+    "scripts/audit_dependencies.py": "518dac81996d3891f497050bd7702a83ac831ff0838faabd037dccce1872de48",
+    "scripts/serve_probe.py": "d353f8a59b9578e61f8caab7e31c7211232a5ea07d344f3a95ee656e5496a46d",
+    "scripts/benchmark_client.cjs": "0797f173a5a77adcd8ff1863198e5c1949da931b0d88f62f21d4f58d37d26b4c",
+    "scripts/benchmark_filters.cjs": "51a71acdebd5e86088dc32b3d8b304ecf0ca418fa9172b313bb4dae6f6be3758",
+    "scripts/benchmark_pan.cjs": "dd6de23035cf79e7e78bd91160f5f0743d844271bef49216944f1fa68e65a49e",
+    "scripts/benchmark_style_guard.cjs": "971eb7d6688fecb401a36a429deff7821cab88585e2f2a6fb913aa02b2548c79",
+    "requirements-fonts.lock": "fd8855b295a45bdb7bc0f88090777181fecf752543840cfe7350f809d5fd7da5",
+    "config/font-build-tools.json": "366190159b50df57d4f949973d3a08b7151f14ef01d1a72b2bdeeb2a007ec816",
+    "config/third-party-assets.json": "48398ce02fa46f3a7bd23ce826b578e3468ba9be417028a7e2d77305f43ab9f9",
+    "apps/web/client/public/map-font-manifest.json": "bd5823774d9dfa9a50995f7d936b6f0dca17d140e6eb1fe39547583b38c0be8e",
+    "apps/web/client/public/map-font-license.txt": "593d7b73e420582f6c4d1fac2b88a4dee28a78169fc1598a0ba775ba54cd3ba0",
+    "apps/web/client/dist/assets/index-B5DC1WQs.js": "e89e905c3b5dc3133b36875560568ca5a890e8d416fd34dccc35e9d6fd031706",
+    "apps/web/client/dist/index.html": "a8338821d7d3b3ff4eb1141551b61db4aa1982bb7290658f6089e7aeee0e0fed"
+  },
+  "tests": {
+    "domain_and_unit_passed": 108,
+    "font_build_test_passed": 1,
+    "license_inventory_tests_passed": 7,
+    "audit_helper_tests_passed": 3,
+    "strict_types_build": "passed",
+    "font_regeneration_check": "byte-exact",
+    "inventory_inputs_check": "passed; main Python environment and separate archived font-tool metadata"
+  },
+  "font": {
+    "family": "Railway Atlas CJK",
+    "bytes": 129992,
+    "sha256": "c5676efeb6382c8d783b273aab69e5199951a78d5b19199f87be6cb8249f0739",
+    "codepoints": 501,
+    "upstream_commit": "523d033d6cb47f4a80c58a35753646f5c3608a78",
+    "license": "OFL-1.1"
+  },
+  "reports": {
+    "browser": {
+      "local_path": "data/manifests/local/font-build/browser-settled/report.json",
+      "sha256": "d5e60d129bab9b05347781dc76889d885d09c8c4b95e115c2b628ddc3f5878c5",
+      "checks": 4
+    },
+    "labels": {
+      "local_path": "data/manifests/local/font-build/labels-final/report.json",
+      "sha256": "ec305e49d2839eea79e10625e7d9b030365fe9cb55ec2adeebb732be8c9e77b8",
+      "checks": 6,
+      "asset": "index-DGuO1rYW.js",
+      "original_sha256": "9f36ac933ca50d66eb19abdc5cac508b569c217f347b6b1a350dd89e6dad011e"
+    },
+    "coverage": {
+      "local_path": "data/manifests/local/font-build/coverage-final.json",
+      "sha256": "3f44a556d7780830711cc4e41ef1585570e9ee6ac524b3cbe1077ce50902e2ef"
+    },
+    "advisories": {
+      "local_path": "data/manifests/local/font-build/advisories.json",
+      "sha256": "5ed232e5a673f3b59b829317354f94db9f2b79d2789f1e0606e0e5511816a374"
+    },
+    "cold": {
+      "local_path": "data/manifests/local/font-build/cold-final/benchmark-client.json",
+      "sha256": "9c806fc94c915a35beb66fe81fa470732b1c30459a64931b73f35f7a7647b1ef",
+      "asset": "index-DGuO1rYW.js",
+      "summary": {
+        "first_usable_ms": {
+          "samples": 30,
+          "median": 1913.6000000089407,
+          "p95": 2438.199999988079,
+          "max": 2476.199999988079
+        },
+        "index_ready_ms": {
+          "samples": 30,
+          "median": 1100.1000000089407,
+          "p95": 1580.5,
+          "max": 1587.2999999970198
+        },
+        "own_transfer_bytes": {
+          "samples": 30,
+          "median": 826519,
+          "p95": 826519,
+          "max": 826519
+        }
+      },
+      "environment": {
+        "platform": "win32",
+        "release": "10.0.26200",
+        "arch": "x64",
+        "cpu": "Intel(R) Core(TM) Ultra 5 125H",
+        "logical_cpus": 18,
+        "memory_bytes": 33786552320,
+        "renderer": "Headless Chrome with default renderer",
+        "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      "conditions": {
+        "download_mbps": 10,
+        "latency_ms": 100,
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "http_cache": "disabled; new isolated context each trial",
+        "basemap": "off; no third-party requests",
+        "scope": "Exploratory railway-only headless measurements. Not a substitute for default online basemap, headed/manual checks, or real mobile/tablet N01-N04 acceptance."
+      }
+    },
+    "filters": {
+      "local_path": "data/manifests/local/font-build/filters-final/benchmark-filters.json",
+      "sha256": "940b3b24722bf2c9953ff45a4adc77b2902b604282a65cac21a4cc3fa2ffbd91",
+      "asset": "index-DGuO1rYW.js",
+      "conditions": {
+        "renderer": "default",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "download_mbps": 10,
+        "latency_ms": 100,
+        "basemap": false,
+        "scope": "Alternating real overview/highspeed presets, source-ready render and subsequent idle. Not GPU/display completion, all filter combinations, other browsers or real devices."
+      },
+      "scenes": [
+        {
+          "name": "overview",
+          "summary": {
+            "applied_ms": {
+              "samples": 100,
+              "median": 8.299999997019768,
+              "p95": 10.299999997019768,
+              "max": 15
+            },
+            "rendered_ms": {
+              "samples": 100,
+              "median": 70.40000000596046,
+              "p95": 93.70000000298023,
+              "max": 457.40000000596046
+            },
+            "settled_ms": {
+              "samples": 100,
+              "median": 609.7000000029802,
+              "p95": 683.7999999970198,
+              "max": 754.5
+            }
+          }
+        },
+        {
+          "name": "station-yard",
+          "summary": {
+            "applied_ms": {
+              "samples": 100,
+              "median": 6.5999999940395355,
+              "p95": 9.200000002980232,
+              "max": 14.799999997019768
+            },
+            "rendered_ms": {
+              "samples": 100,
+              "median": 37.69999998807907,
+              "p95": 48.6000000089407,
+              "max": 56.400000005960464
+            },
+            "settled_ms": {
+              "samples": 100,
+              "median": 599.7999999970198,
+              "p95": 630.7999999970198,
+              "max": 642.7000000029802
+            }
+          }
+        }
+      ]
+    },
+    "spacing": {
+      "local_path": "data/manifests/local/font-build/spacing-final/report.json",
+      "sha256": "08cecabfe7233b59898d7ff32d0f368f7e0aad78ea0f69b8a35c5083a8e50e28",
+      "asset": "index-DGuO1rYW.js",
+      "scenes": [
+        {
+          "name": "overview-z10",
+          "anchors": 45,
+          "captions": 19,
+          "same_identity_pairs": 0,
+          "minimum_css_px": null
+        },
+        {
+          "name": "overview-z10-5",
+          "anchors": 51,
+          "captions": 23,
+          "same_identity_pairs": 0,
+          "minimum_css_px": null
+        },
+        {
+          "name": "yard",
+          "anchors": 13,
+          "captions": 0,
+          "same_identity_pairs": 11,
+          "minimum_css_px": 308.3135199153915
+        },
+        {
+          "name": "tram",
+          "anchors": 6,
+          "captions": 0,
+          "same_identity_pairs": 2,
+          "minimum_css_px": 323.1828043028214
+        }
+      ]
+    }
+  },
+  "lineage": "Final B5DC1WQs adds only successful retry status copy after the measured DGuO1rYW controller. Exact parent controller archived and hash verified. Font binary and normal rendering rules identical; do not relabel parent performance as final asset.",
+  "corrections": [
+    "Initial 99 KB subset omitted independent station indexes; final nine-index direct binary cmap audit has no missing map-name characters.",
+    "Retry loading message initially empty, causing premature removal of its card; fixed and final browser waits for actual face loaded and public glyph-cache reset.",
+    "Screenshot capture now waits for settled native placement/fade, not only first usable tracks."
+  ],
+  "limits": [
+    "Current-font CPU/GPU performance remains desktop-only, basemap off; no renewed pan or software-device acceptance.",
+    "Overview filter max 457.4 ms; p95 93.7 ms does not prove absence of occasional delay.",
+    "Covers catalogued map labels and fixed symbols, not arbitrary future names or all UI/detail strings.",
+    "Full R01-R19/D01-D10/N01-N09 goal remains active; independent human QA, reader/browser/device matrix, hosting and licensing/native closure reviews remain open."
+  ],
+  "inventory": {
+    "components": 204,
+    "license_texts": 116,
+    "explicit_package_text_gaps": 0,
+    "legal_approval": false
+  },
+  "raw_downloads": "Original font and wheels remain ignored under data/manifests/local/font-build; only 130 KB renamed subset is versionable."
+}

@@ -1,0 +1,454 @@
+{"cases":6,"checks":51,"failed":[{"size":{"width":1024,"height":768},"name":"notice-copy-and-box","coveredBy":["maplibregl-ctrl-icon"]},{"size":{"width":1024,"height":768},"name":"zoom-out","coveredBy":["maplibregl-ctrl-attrib-inner","maplibregl-ctrl-attrib-inner","maplibregl-ctrl-attrib-inner"]},{"size":{"width":1024,"height":768},"name":"empty-view-share-open","coveredBy":["map-notice","map-notice","map-notice","map-notice","map-notice","map-notice"]},{"size":{"width":1024,"height":768},"name":"empty-view-home","coveredBy":["map-notice","map-notice","map-notice","map-notice","map-notice","map-notice"]},{"size":{"width":1024,"height":768},"name":"empty-view-panel-toggle","coveredBy":["map-notice","map-notice","map-notice","map-notice","map-notice","map-notice"]},{"size":{"width":1024,"height":768},"name":"long-empty-copy-and-box","coveredBy":["maplibregl-ctrl-icon"]},{"size":{"width":1024,"height":768},"name":"long-empty-share-open","coveredBy":["map-notice","map-notice","map-notice","map-notice","map-notice","map-notice"]},{"size":{"width":1024,"height":768},"name":"long-empty-home","coveredBy":["map-notice","map-notice","map-notice","map-notice","map-notice","map-notice"]},{"size":{"width":1024,"height":768},"name":"long-empty-panel-toggle","coveredBy":["map-notice","map-notice","map-notice","map-notice","map-notice","map-notice"]},{"size":{"width":1024,"height":768},"name":"long-empty-zoom-out","coveredBy":["maplibregl-ctrl-attrib-inner","maplibregl-ctrl-attrib-inner","maplibregl-ctrl-attrib-inner"]},{"size":{"width":1024,"height":720},"name":"notice-copy-and-box","coveredBy":["maplibregl-ctrl-icon"]},{"size":{"width":1024,"height":720},"name":"zoom-out","coveredBy":["maplibregl-ctrl-attrib-inner","maplibregl-ctrl-attrib-inner","maplibregl-ctrl-attrib-inner"]},{"size":{"width":1024,"height":720},"name":"empty-view-share-open","coveredBy":["map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice"]},{"size":{"width":1024,"height":720},"name":"empty-view-home","coveredBy":["map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice"]},{"size":{"width":1024,"height":720},"name":"empty-view-panel-toggle","coveredBy":["map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice"]},{"size":{"width":1024,"height":720},"name":"long-empty-copy-and-box","coveredBy":["maplibregl-ctrl-icon"]},{"size":{"width":1024,"height":720},"name":"long-empty-share-open","coveredBy":["map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice"]},{"size":{"width":1024,"height":720},"name":"long-empty-home","coveredBy":["map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice"]},{"size":{"width":1024,"height":720},"name":"long-empty-panel-toggle","coveredBy":["map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice"]},{"size":{"width":1024,"height":720},"name":"long-empty-zoom-out","coveredBy":["maplibregl-ctrl-attrib-inner","maplibregl-ctrl-attrib-inner","maplibregl-ctrl-attrib-inner"]},{"size":{"width":800,"height":720},"name":"notice-copy-and-box","coveredBy":["maplibregl-ctrl-icon"]},{"size":{"width":800,"height":720},"name":"zoom-out","coveredBy":["maplibregl-ctrl-attrib-inner","maplibregl-ctrl-attrib-inner","maplibregl-ctrl-attrib-inner"]},{"size":{"width":800,"height":720},"name":"empty-view-share-open","coveredBy":["map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice"]},{"size":{"width":800,"height":720},"name":"empty-view-home","coveredBy":["map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice"]},{"size":{"width":800,"height":720},"name":"empty-view-panel-toggle","coveredBy":["map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice"]},{"size":{"width":800,"height":720},"name":"long-empty-copy-and-box","coveredBy":["maplibregl-ctrl-icon"]},{"size":{"width":800,"height":720},"name":"long-empty-share-open","coveredBy":["map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice"]},{"size":{"width":800,"height":720},"name":"long-empty-home","coveredBy":["map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice"]},{"size":{"width":800,"height":720},"name":"long-empty-panel-toggle","coveredBy":["map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice","map-notice"]},{"size":{"width":800,"height":720},"name":"long-empty-zoom-out","coveredBy":["maplibregl-ctrl-attrib-inner","maplibregl-ctrl-attrib-inner","maplibregl-ctrl-attrib-inner"]}]}
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+
++ [
++   {
++     coveredBy: [
++       'maplibregl-ctrl-icon'
++     ],
++     name: 'notice-copy-and-box',
++     size: {
++       height: 768,
++       width: 1024
++     }
++   },
++   {
++     coveredBy: [
++       'maplibregl-ctrl-attrib-inner',
++       'maplibregl-ctrl-attrib-inner',
++       'maplibregl-ctrl-attrib-inner'
++     ],
++     name: 'zoom-out',
++     size: {
++       height: 768,
++       width: 1024
++     }
++   },
++   {
++     coveredBy: [
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice'
++     ],
++     name: 'empty-view-share-open',
++     size: {
++       height: 768,
++       width: 1024
++     }
++   },
++   {
++     coveredBy: [
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice'
++     ],
++     name: 'empty-view-home',
++     size: {
++       height: 768,
++       width: 1024
++     }
++   },
++   {
++     coveredBy: [
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice'
++     ],
++     name: 'empty-view-panel-toggle',
++     size: {
++       height: 768,
++       width: 1024
++     }
++   },
++   {
++     coveredBy: [
++       'maplibregl-ctrl-icon'
++     ],
++     name: 'long-empty-copy-and-box',
++     size: {
++       height: 768,
++       width: 1024
++     }
++   },
++   {
++     coveredBy: [
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice'
++     ],
++     name: 'long-empty-share-open',
++     size: {
++       height: 768,
++       width: 1024
++     }
++   },
++   {
++     coveredBy: [
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice'
++     ],
++     name: 'long-empty-home',
++     size: {
++       height: 768,
++       width: 1024
++     }
++   },
++   {
++     coveredBy: [
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice'
++     ],
++     name: 'long-empty-panel-toggle',
++     size: {
++       height: 768,
++       width: 1024
++     }
++   },
++   {
++     coveredBy: [
++       'maplibregl-ctrl-attrib-inner',
++       'maplibregl-ctrl-attrib-inner',
++       'maplibregl-ctrl-attrib-inner'
++     ],
++     name: 'long-empty-zoom-out',
++     size: {
++       height: 768,
++       width: 1024
++     }
++   },
++   {
++     coveredBy: [
++       'maplibregl-ctrl-icon'
++     ],
++     name: 'notice-copy-and-box',
++     size: {
++       height: 720,
++       width: 1024
++     }
++   },
++   {
++     coveredBy: [
++       'maplibregl-ctrl-attrib-inner',
++       'maplibregl-ctrl-attrib-inner',
++       'maplibregl-ctrl-attrib-inner'
++     ],
++     name: 'zoom-out',
++     size: {
++       height: 720,
++       width: 1024
++     }
++   },
++   {
++     coveredBy: [
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice'
++     ],
++     name: 'empty-view-share-open',
++     size: {
++       height: 720,
++       width: 1024
++     }
++   },
++   {
++     coveredBy: [
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice'
++     ],
++     name: 'empty-view-home',
++     size: {
++       height: 720,
++       width: 1024
++     }
++   },
++   {
++     coveredBy: [
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice'
++     ],
++     name: 'empty-view-panel-toggle',
++     size: {
++       height: 720,
++       width: 1024
++     }
++   },
++   {
++     coveredBy: [
++       'maplibregl-ctrl-icon'
++     ],
++     name: 'long-empty-copy-and-box',
++     size: {
++       height: 720,
++       width: 1024
++     }
++   },
++   {
++     coveredBy: [
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice'
++     ],
++     name: 'long-empty-share-open',
++     size: {
++       height: 720,
++       width: 1024
++     }
++   },
++   {
++     coveredBy: [
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice'
++     ],
++     name: 'long-empty-home',
++     size: {
++       height: 720,
++       width: 1024
++     }
++   },
++   {
++     coveredBy: [
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice'
++     ],
++     name: 'long-empty-panel-toggle',
++     size: {
++       height: 720,
++       width: 1024
++     }
++   },
++   {
++     coveredBy: [
++       'maplibregl-ctrl-attrib-inner',
++       'maplibregl-ctrl-attrib-inner',
++       'maplibregl-ctrl-attrib-inner'
++     ],
++     name: 'long-empty-zoom-out',
++     size: {
++       height: 720,
++       width: 1024
++     }
++   },
++   {
++     coveredBy: [
++       'maplibregl-ctrl-icon'
++     ],
++     name: 'notice-copy-and-box',
++     size: {
++       height: 720,
++       width: 800
++     }
++   },
++   {
++     coveredBy: [
++       'maplibregl-ctrl-attrib-inner',
++       'maplibregl-ctrl-attrib-inner',
++       'maplibregl-ctrl-attrib-inner'
++     ],
++     name: 'zoom-out',
++     size: {
++       height: 720,
++       width: 800
++     }
++   },
++   {
++     coveredBy: [
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice'
++     ],
++     name: 'empty-view-share-open',
++     size: {
++       height: 720,
++       width: 800
++     }
++   },
++   {
++     coveredBy: [
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice'
++     ],
++     name: 'empty-view-home',
++     size: {
++       height: 720,
++       width: 800
++     }
++   },
++   {
++     coveredBy: [
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice'
++     ],
++     name: 'empty-view-panel-toggle',
++     size: {
++       height: 720,
++       width: 800
++     }
++   },
++   {
++     coveredBy: [
++       'maplibregl-ctrl-icon'
++     ],
++     name: 'long-empty-copy-and-box',
++     size: {
++       height: 720,
++       width: 800
++     }
++   },
++   {
++     coveredBy: [
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice'
++     ],
++     name: 'long-empty-share-open',
++     size: {
++       height: 720,
++       width: 800
++     }
++   },
++   {
++     coveredBy: [
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice'
++     ],
++     name: 'long-empty-home',
++     size: {
++       height: 720,
++       width: 800
++     }
++   },
++   {
++     coveredBy: [
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice',
++       'map-notice'
++     ],
++     name: 'long-empty-panel-toggle',
++     size: {
++       height: 720,
++       width: 800
++     }
++   },
++   {
++     coveredBy: [
++       'maplibregl-ctrl-attrib-inner',
++       'maplibregl-ctrl-attrib-inner',
++       'maplibregl-ctrl-attrib-inner'
++     ],
++     name: 'long-empty-zoom-out',
++     size: {
++       height: 720,
++       width: 800
++     }
++   }
++ ]
+- []
+
+    at C:\Users\21965\Documents\Codex\2026-10-22\referenced-chatgpt-conversation-this-is-an\work\checkout\scripts\verify_notice_zoom.cjs:55:332 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: [Array],
+  expected: [],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}

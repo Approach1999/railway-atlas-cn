@@ -1,0 +1,1291 @@
+{
+  "date": "2026-10-25T12:25:56.098Z",
+  "browser": "155.0.8059.85",
+  "control": "map",
+  "renderer_mode": "default",
+  "acceptance_evidence": false,
+  "duration_ms": 30150,
+  "input_samples": 3072,
+  "data_loss_occurred": false,
+  "environment": {
+    "width": 1440,
+    "height": 1000,
+    "dpr": 1,
+    "canvas": {
+      "width": 1094,
+      "height": 924
+    },
+    "context": {
+      "alpha": true,
+      "antialias": false,
+      "depth": true,
+      "desynchronized": false,
+      "failIfMajorPerformanceCaveat": false,
+      "powerPreference": "high-performance",
+      "premultipliedAlpha": true,
+      "preserveDrawingBuffer": false,
+      "stencil": true,
+      "xrCompatible": false
+    },
+    "renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "style_layers": {
+      "expected": [
+        "urban-boundary",
+        "casing-major-mapped",
+        "track-major-mapped",
+        "casing-major-construction",
+        "track-major-construction",
+        "casing-major-proposed",
+        "track-major-proposed",
+        "casing-major-disused",
+        "track-major-disused",
+        "casing-major-abandoned",
+        "track-major-abandoned",
+        "casing-major-razed",
+        "track-major-razed",
+        "casing-major-conflict",
+        "track-major-conflict",
+        "warning-major-conflict",
+        "casing-major-unknown",
+        "track-major-unknown",
+        "warning-major-unknown",
+        "casing-minor-mapped",
+        "track-minor-mapped",
+        "casing-minor-construction",
+        "track-minor-construction",
+        "casing-minor-proposed",
+        "track-minor-proposed",
+        "casing-minor-disused",
+        "track-minor-disused",
+        "casing-minor-abandoned",
+        "track-minor-abandoned",
+        "casing-minor-razed",
+        "track-minor-razed",
+        "casing-minor-conflict",
+        "track-minor-conflict",
+        "warning-minor-conflict",
+        "casing-minor-unknown",
+        "track-minor-unknown",
+        "warning-minor-unknown"
+      ],
+      "missing": []
+    }
+  },
+  "fingerprints": {
+    "scripts/diagnose_pan_trace.cjs": "312cd7fcb87ed69214233d612838d386eda5237eb78fd779675c846a72ed8032",
+    "scripts/pan_drag.cjs": "475a17a906563eebc3cab6b86f94918af3a63bcb1f902699c6d8d981940ea0a2",
+    "apps/web/client/dist/index.html": "6f0f7f1b71b7f7623f5639d6c3ec5b6ea3509c798353f72c9d84b931694497b3",
+    "browser-trace.json.gz": "739439973fb4479f3dad9a7a85c4e73aa61b89de0529e4ea386b56967b1aa17b",
+    "main-thread.cpuprofile": "f0451a99a1405c3dfae54f0d4eee23112bf469a0f4382672ef880643e850bd6d",
+    "uncompressed_trace": "539b30531df0d9b508c7feeb8753d3b3e1c0cb6aad0832f052a523efe6ebd0b7"
+  },
+  "trace_events": 1063580,
+  "top_events": [
+    {
+      "pid": 22168,
+      "tid": 26504,
+      "name": "WaitForVSync Sleep",
+      "category": "gpu",
+      "count": 3112,
+      "total_us": 29937438,
+      "max_us": 17029,
+      "process": "GPU Process",
+      "thread": "GpuVSyncThread"
+    },
+    {
+      "pid": 24920,
+      "tid": 17556,
+      "name": "ProxyMain::BeginMainFrame",
+      "category": "cc,benchmark",
+      "count": 3085,
+      "total_us": 3089860,
+      "max_us": 25262,
+      "process": "Renderer",
+      "thread": "CrRendererMain"
+    },
+    {
+      "pid": 24920,
+      "tid": 17556,
+      "name": "FireAnimationFrame",
+      "category": "devtools.timeline",
+      "count": 6131,
+      "total_us": 2571286,
+      "max_us": 24577,
+      "process": "Renderer",
+      "thread": "CrRendererMain"
+    },
+    {
+      "pid": 24920,
+      "tid": 17556,
+      "name": "FunctionCall",
+      "category": "devtools.timeline",
+      "count": 6191,
+      "total_us": 2503946,
+      "max_us": 5329,
+      "process": "Renderer",
+      "thread": "CrRendererMain"
+    },
+    {
+      "pid": 22168,
+      "tid": 20224,
+      "name": "Scheduler::RunTask",
+      "category": "gpu,toplevel.flow",
+      "count": 12846,
+      "total_us": 2465257,
+      "max_us": 282149,
+      "process": "GPU Process",
+      "thread": "CrGpuMain"
+    },
+    {
+      "pid": 22168,
+      "tid": 20224,
+      "name": "GpuChannel::ExecuteDeferredRequest",
+      "category": "gpu",
+      "count": 6715,
+      "total_us": 1642474,
+      "max_us": 282146,
+      "process": "GPU Process",
+      "thread": "CrGpuMain"
+    },
+    {
+      "pid": 22168,
+      "tid": 20224,
+      "name": "CommandBuffer::Flush",
+      "category": "gpu,toplevel.flow",
+      "count": 6681,
+      "total_us": 1552593,
+      "max_us": 282130,
+      "process": "GPU Process",
+      "thread": "CrGpuMain"
+    },
+    {
+      "pid": 22168,
+      "tid": 20224,
+      "name": "CommandBufferStub::OnAsyncFlush",
+      "category": "gpu",
+      "count": 6681,
+      "total_us": 1545970,
+      "max_us": 282126,
+      "process": "GPU Process",
+      "thread": "CrGpuMain"
+    },
+    {
+      "pid": 22168,
+      "tid": 20224,
+      "name": "CommandBufferService:PutChanged",
+      "category": "gpu",
+      "count": 6681,
+      "total_us": 1510343,
+      "max_us": 282107,
+      "process": "GPU Process",
+      "thread": "CrGpuMain"
+    },
+    {
+      "pid": 22168,
+      "tid": 20224,
+      "name": "WebGL",
+      "category": "gpu",
+      "count": 6370,
+      "total_us": 1235146,
+      "max_us": 1160,
+      "process": "GPU Process",
+      "thread": "CrGpuMain"
+    },
+    {
+      "pid": 22168,
+      "tid": 29384,
+      "name": "Graphics.Pipeline",
+      "category": "viz,benchmark,graphics.pipeline",
+      "count": 18426,
+      "total_us": 892483,
+      "max_us": 479,
+      "process": "GPU Process",
+      "thread": "VizCompositorThread"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "Graphics.Pipeline",
+      "category": "viz,benchmark,graphics.pipeline",
+      "count": 9231,
+      "total_us": 794086,
+      "max_us": 1515,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 22168,
+      "tid": 29384,
+      "name": "DisplayScheduler::OnBeginFrameDeadline",
+      "category": "viz,input.scrolling",
+      "count": 3086,
+      "total_us": 569086,
+      "max_us": 483,
+      "process": "GPU Process",
+      "thread": "VizCompositorThread"
+    },
+    {
+      "pid": 22168,
+      "tid": 29384,
+      "name": "DisplayScheduler::DrawAndSwap",
+      "category": "viz",
+      "count": 3060,
+      "total_us": 564161,
+      "max_us": 481,
+      "process": "GPU Process",
+      "thread": "VizCompositorThread"
+    },
+    {
+      "pid": 22168,
+      "tid": 29384,
+      "name": "Display::DrawAndSwap",
+      "category": "viz",
+      "count": 3060,
+      "total_us": 560734,
+      "max_us": 480,
+      "process": "GPU Process",
+      "thread": "VizCompositorThread"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "ProxyImpl::ScheduledActionDraw",
+      "category": "cc",
+      "count": 3059,
+      "total_us": 420674,
+      "max_us": 1517,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "MainFrame.Draw",
+      "category": "cc,benchmark",
+      "count": 3059,
+      "total_us": 417426,
+      "max_us": 1517,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "ProxyImpl::ReadyToCommit",
+      "category": "cc,benchmark",
+      "count": 3060,
+      "total_us": 384597,
+      "max_us": 552,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 22168,
+      "tid": 20224,
+      "name": "SkiaOutputSurfaceImplOnGpu::FinishPaintRenderPass",
+      "category": "viz",
+      "count": 3060,
+      "total_us": 376864,
+      "max_us": 442,
+      "process": "GPU Process",
+      "thread": "CrGpuMain"
+    },
+    {
+      "pid": 22168,
+      "tid": 20224,
+      "name": "SkiaOutputSurfaceImplOnGpu::SwapBuffers",
+      "category": "viz",
+      "count": 3060,
+      "total_us": 326831,
+      "max_us": 700,
+      "process": "GPU Process",
+      "thread": "CrGpuMain"
+    },
+    {
+      "pid": 22168,
+      "tid": 20224,
+      "name": "RendererRasterWorker",
+      "category": "gpu",
+      "count": 320,
+      "total_us": 326499,
+      "max_us": 282131,
+      "process": "GPU Process",
+      "thread": "CrGpuMain"
+    },
+    {
+      "pid": 22168,
+      "tid": 20224,
+      "name": "RasterDecoderImpl::DoEndRasterCHROMIUM",
+      "category": "gpu",
+      "count": 236,
+      "total_us": 309258,
+      "max_us": 281619,
+      "process": "GPU Process",
+      "thread": "CrGpuMain"
+    },
+    {
+      "pid": 22168,
+      "tid": 20224,
+      "name": "RasterDecoderImpl::DoEndRasterCHROMIUM::Flush",
+      "category": "gpu",
+      "count": 236,
+      "total_us": 307940,
+      "max_us": 281608,
+      "process": "GPU Process",
+      "thread": "CrGpuMain"
+    },
+    {
+      "pid": 22168,
+      "tid": 20224,
+      "name": "Graphics.Pipeline",
+      "category": "viz,benchmark,graphics.pipeline",
+      "count": 6120,
+      "total_us": 286037,
+      "max_us": 668,
+      "process": "GPU Process",
+      "thread": "CrGpuMain"
+    },
+    {
+      "pid": 22168,
+      "tid": 29384,
+      "name": "DirectRenderer::DrawFrame",
+      "category": "viz,benchmark",
+      "count": 3060,
+      "total_us": 262599,
+      "max_us": 250,
+      "process": "GPU Process",
+      "thread": "VizCompositorThread"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "LayerTreeHostImpl::CommitComplete",
+      "category": "cc,benchmark",
+      "count": 3060,
+      "total_us": 229489,
+      "max_us": 313,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 24920,
+      "tid": 17556,
+      "name": "EventDispatch",
+      "category": "devtools.timeline",
+      "count": 3081,
+      "total_us": 210827,
+      "max_us": 688,
+      "process": "Renderer",
+      "thread": "CrRendererMain"
+    },
+    {
+      "pid": 22168,
+      "tid": 29384,
+      "name": "DirectRenderer::DrawRenderPass",
+      "category": "viz",
+      "count": 3060,
+      "total_us": 206758,
+      "max_us": 169,
+      "process": "GPU Process",
+      "thread": "VizCompositorThread"
+    },
+    {
+      "pid": 22168,
+      "tid": 20224,
+      "name": "SkiaOutputDevice->ScheduleOverlays()",
+      "category": "viz",
+      "count": 3060,
+      "total_us": 196549,
+      "max_us": 638,
+      "process": "GPU Process",
+      "thread": "CrGpuMain"
+    },
+    {
+      "pid": 22168,
+      "tid": 29384,
+      "name": "ExternalBeginFrameSource::OnBeginFrame",
+      "category": "viz,input.scrolling",
+      "count": 3085,
+      "total_us": 178863,
+      "max_us": 249,
+      "process": "GPU Process",
+      "thread": "VizCompositorThread"
+    },
+    {
+      "pid": 22168,
+      "tid": 20224,
+      "name": "DXGISwapChainImageBacking::Present",
+      "category": "gpu",
+      "count": 3060,
+      "total_us": 172583,
+      "max_us": 623,
+      "process": "GPU Process",
+      "thread": "CrGpuMain"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "ExternalBeginFrameSource::OnBeginFrame",
+      "category": "viz,input.scrolling",
+      "count": 3086,
+      "total_us": 135237,
+      "max_us": 193,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "auto cc::LayerTreeHostImpl::PrepareTiles()::(lambda)::operator()()::(lambda)::operator()(uint32_t) const",
+      "category": "cc",
+      "count": 3085,
+      "total_us": 131125,
+      "max_us": 183,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "auto cc::TileManager::PrepareTiles(const GlobalStateThatImpactsTilePriority &)::(lambda)::operator()()::(lambda)::operator()(uint32_t) const",
+      "category": "cc",
+      "count": 3085,
+      "total_us": 127324,
+      "max_us": 178,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "TileManager::PrepareTiles",
+      "category": "cc,benchmark",
+      "count": 3085,
+      "total_us": 124314,
+      "max_us": 173,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "Scheduler::BeginFrame",
+      "category": "cc,benchmark",
+      "count": 3086,
+      "total_us": 115667,
+      "max_us": 184,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "TileManager::CheckForCompletedTasksAndIssueSignals",
+      "category": "cc",
+      "count": 3320,
+      "total_us": 114821,
+      "max_us": 137,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "ProxyImpl::Commit",
+      "category": "cc,benchmark",
+      "count": 3060,
+      "total_us": 112921,
+      "max_us": 470,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 22168,
+      "tid": 26504,
+      "name": "WinVSyncProvider::GetVSyncIntervalIfAvailable",
+      "category": "gpu",
+      "count": 3113,
+      "total_us": 111278,
+      "max_us": 326,
+      "process": "GPU Process",
+      "thread": "GpuVSyncThread"
+    },
+    {
+      "pid": 24920,
+      "tid": 17556,
+      "name": "PrePaint",
+      "category": "devtools.timeline",
+      "count": 3326,
+      "total_us": 108524,
+      "max_us": 184,
+      "process": "Renderer",
+      "thread": "CrRendererMain"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "TileManager::CheckPendingGpuWorkAndIssueSignals",
+      "category": "cc",
+      "count": 5238,
+      "total_us": 106638,
+      "max_us": 126,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "Scheduler::BeginImplFrame",
+      "category": "cc,benchmark",
+      "count": 3086,
+      "total_us": 99028,
+      "max_us": 176,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "TileManager::ScheduleTasks",
+      "category": "cc",
+      "count": 3085,
+      "total_us": 84636,
+      "max_us": 129,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "LayerTreeHostImpl::PrepareToDraw",
+      "category": "cc",
+      "count": 3059,
+      "total_us": 80683,
+      "max_us": 106,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "LayerTreeImpl::UpdateDrawProperties",
+      "category": "cc,benchmark",
+      "count": 3062,
+      "total_us": 69195,
+      "max_us": 115,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "LayerTreeHostImpl::ActivateSyncTree",
+      "category": "cc,benchmark",
+      "count": 3060,
+      "total_us": 66633,
+      "max_us": 80,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 22168,
+      "tid": 3716,
+      "name": "GpuChannelMessageFilter::FlushDeferredRequests",
+      "category": "gpu",
+      "count": 6625,
+      "total_us": 65059,
+      "max_us": 101,
+      "process": "GPU Process",
+      "thread": "Chrome_ChildIOThread"
+    },
+    {
+      "pid": 22168,
+      "tid": 20224,
+      "name": "DCompPresenter::Present",
+      "category": "gpu",
+      "count": 3060,
+      "total_us": 60993,
+      "max_us": 109,
+      "process": "GPU Process",
+      "thread": "CrGpuMain"
+    },
+    {
+      "pid": 24920,
+      "tid": 17556,
+      "name": "LocalFrameView::ScheduleAnimation",
+      "category": "cc",
+      "count": 9212,
+      "total_us": 60504,
+      "max_us": 61,
+      "process": "Renderer",
+      "thread": "CrRendererMain"
+    },
+    {
+      "pid": 24920,
+      "tid": 17556,
+      "name": "CommandBufferHelper::Flush",
+      "category": "gpu",
+      "count": 3337,
+      "total_us": 58035,
+      "max_us": 125,
+      "process": "Renderer",
+      "thread": "CrRendererMain"
+    },
+    {
+      "pid": 24920,
+      "tid": 17556,
+      "name": "MinorGC",
+      "category": "devtools.timeline,v8",
+      "count": 56,
+      "total_us": 54383,
+      "max_us": 1480,
+      "process": "Renderer",
+      "thread": "CrRendererMain"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "LayerTreeHostImpl::FinishCommit",
+      "category": "cc,benchmark",
+      "count": 3060,
+      "total_us": 53355,
+      "max_us": 75,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 22168,
+      "tid": 29384,
+      "name": "Surface::CommitFrame",
+      "category": "viz",
+      "count": 3061,
+      "total_us": 53043,
+      "max_us": 74,
+      "process": "GPU Process",
+      "thread": "VizCompositorThread"
+    },
+    {
+      "pid": 24920,
+      "tid": 17556,
+      "name": "LayerTreeHost::DoUpdateLayers",
+      "category": "cc,benchmark",
+      "count": 3060,
+      "total_us": 52488,
+      "max_us": 131,
+      "process": "Renderer",
+      "thread": "CrRendererMain"
+    },
+    {
+      "pid": 24920,
+      "tid": 17556,
+      "name": "V8.GC_SCAVENGER",
+      "category": "devtools.timeline,disabled-by-default-v8.gc",
+      "count": 56,
+      "total_us": 50463,
+      "max_us": 1419,
+      "process": "Renderer",
+      "thread": "CrRendererMain"
+    },
+    {
+      "pid": 24920,
+      "tid": 17556,
+      "name": "V8.GC_SCAVENGER_SCAVENGE",
+      "category": "devtools.timeline,disabled-by-default-v8.gc",
+      "count": 56,
+      "total_us": 49599,
+      "max_us": 1402,
+      "process": "Renderer",
+      "thread": "CrRendererMain"
+    },
+    {
+      "pid": 24920,
+      "tid": 17556,
+      "name": "CommandBufferProxyImpl::Flush",
+      "category": "gpu",
+      "count": 3336,
+      "total_us": 48547,
+      "max_us": 98,
+      "process": "Renderer",
+      "thread": "CrRendererMain"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "LayerTreeImpl::PullProperties",
+      "category": "cc",
+      "count": 3060,
+      "total_us": 46905,
+      "max_us": 68,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "LayerTreeHostImpl::CalculateRenderPasses",
+      "category": "cc,benchmark",
+      "count": 3059,
+      "total_us": 45597,
+      "max_us": 60,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 22168,
+      "tid": 29384,
+      "name": "DisplayScheduler::BeginFrame",
+      "category": "viz",
+      "count": 3099,
+      "total_us": 44006,
+      "max_us": 75,
+      "process": "GPU Process",
+      "thread": "VizCompositorThread"
+    },
+    {
+      "pid": 22168,
+      "tid": 29384,
+      "name": "Surface::ActivateFrame",
+      "category": "viz",
+      "count": 3061,
+      "total_us": 43292,
+      "max_us": 70,
+      "process": "GPU Process",
+      "thread": "VizCompositorThread"
+    },
+    {
+      "pid": 22168,
+      "tid": 20224,
+      "name": "GLContextEGL::MakeCurrent",
+      "category": "gpu",
+      "count": 6124,
+      "total_us": 41446,
+      "max_us": 62,
+      "process": "GPU Process",
+      "thread": "CrGpuMain"
+    },
+    {
+      "pid": 22168,
+      "tid": 3716,
+      "name": "Scheduler::ScheduleTask",
+      "category": "gpu,toplevel.flow",
+      "count": 6531,
+      "total_us": 36043,
+      "max_us": 33,
+      "process": "GPU Process",
+      "thread": "Chrome_ChildIOThread"
+    },
+    {
+      "pid": 24920,
+      "tid": 17556,
+      "name": "V8.GC_SCAVENGER_SCAVENGE_PARALLEL_PHASE",
+      "category": "devtools.timeline,disabled-by-default-v8.gc",
+      "count": 56,
+      "total_us": 34305,
+      "max_us": 985,
+      "process": "Renderer",
+      "thread": "CrRendererMain"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "LayerTreeImpl::UpdateDrawProperties::CalculateDrawProperties",
+      "category": "cc,benchmark",
+      "count": 3062,
+      "total_us": 33968,
+      "max_us": 57,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 22168,
+      "tid": 29384,
+      "name": "SkiaRenderer::SwapBuffers",
+      "category": "viz,benchmark",
+      "count": 3060,
+      "total_us": 32208,
+      "max_us": 99,
+      "process": "GPU Process",
+      "thread": "VizCompositorThread"
+    },
+    {
+      "pid": 22168,
+      "tid": 29384,
+      "name": "DisplayScheduler::ScheduleBeginFrameDeadline",
+      "category": "viz",
+      "count": 9048,
+      "total_us": 30597,
+      "max_us": 61,
+      "process": "GPU Process",
+      "thread": "VizCompositorThread"
+    },
+    {
+      "pid": 22168,
+      "tid": 20224,
+      "name": "DCLayerTree::CommitAndClearPendingOverlays",
+      "category": "gpu",
+      "count": 3060,
+      "total_us": 30186,
+      "max_us": 97,
+      "process": "GPU Process",
+      "thread": "CrGpuMain"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "LayerTreeImpl::UpdateDrawProperties::Occlusion",
+      "category": "cc,benchmark",
+      "count": 3062,
+      "total_us": 29774,
+      "max_us": 90,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "ProxyImpl::ScheduledActionSendBeginMainFrame",
+      "category": "cc,benchmark",
+      "count": 3085,
+      "total_us": 29725,
+      "max_us": 145,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 22168,
+      "tid": 29384,
+      "name": "auto viz::SkiaRenderer::FlushOutputSurface()::(lambda)::operator()()::(lambda)::operator()(uint32_t) const",
+      "category": "viz",
+      "count": 3060,
+      "total_us": 27606,
+      "max_us": 98,
+      "process": "GPU Process",
+      "thread": "VizCompositorThread"
+    },
+    {
+      "pid": 22168,
+      "tid": 29384,
+      "name": "SkiaOutputSurfaceImpl::FlushGpuTasks",
+      "category": "viz",
+      "count": 6118,
+      "total_us": 27534,
+      "max_us": 96,
+      "process": "GPU Process",
+      "thread": "VizCompositorThread"
+    },
+    {
+      "pid": 24920,
+      "tid": 17556,
+      "name": "Layout",
+      "category": "devtools.timeline",
+      "count": 238,
+      "total_us": 26553,
+      "max_us": 1964,
+      "process": "Renderer",
+      "thread": "CrRendererMain"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "auto viz::ClientResourceProvider::ReceiveReturnsFromParent(std::vector<ReturnedResource>)::(lambda)::operator()()::(lambda)::operator()(uint32_t) const",
+      "category": "viz",
+      "count": 6092,
+      "total_us": 24081,
+      "max_us": 69,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 22168,
+      "tid": 29384,
+      "name": "DirectRenderer::DrawFrame ProcessForOverlays",
+      "category": "viz,benchmark",
+      "count": 3060,
+      "total_us": 21864,
+      "max_us": 27,
+      "process": "GPU Process",
+      "thread": "VizCompositorThread"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "GpuChannelHost::VerifyFlush",
+      "category": "gpu",
+      "count": 247,
+      "total_us": 21427,
+      "max_us": 487,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "LayerTreeHostImpl::BeginCommit",
+      "category": "cc",
+      "count": 3060,
+      "total_us": 20924,
+      "max_us": 440,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 24920,
+      "tid": 17556,
+      "name": "ProxyMain::BeginMainFrame::commit",
+      "category": "cc,benchmark",
+      "count": 3060,
+      "total_us": 20857,
+      "max_us": 174,
+      "process": "Renderer",
+      "thread": "CrRendererMain"
+    },
+    {
+      "pid": 24920,
+      "tid": 23356,
+      "name": "Scheduler::ScheduleBeginImplFrameDeadline",
+      "category": "cc",
+      "count": 6133,
+      "total_us": 19635,
+      "max_us": 32,
+      "process": "Renderer",
+      "thread": "Compositor"
+    },
+    {
+      "pid": 24920,
+      "tid": 34096,
+      "name": "V8.GC_SCAVENGER_BACKGROUND_SCAVENGE_PARALLEL",
+      "category": "devtools.timeline,disabled-by-default-v8.gc",
+      "count": 115,
+      "total_us": 18917,
+      "max_us": 737,
+      "process": "Renderer",
+      "thread": "ThreadPoolForegroundWorker"
+    }
+  ],
+  "cpu_sampled_us": 30206441,
+  "cpu_top": [
+    {
+      "function": "(idle)",
+      "url": "",
+      "line": -1,
+      "column": -1,
+      "self_us": 27075010,
+      "percentage": 89.63323418339817
+    },
+    {
+      "function": "(program)",
+      "url": "",
+      "line": -1,
+      "column": -1,
+      "self_us": 2869858,
+      "percentage": 9.50081474345157
+    },
+    {
+      "function": "(garbage collector)",
+      "url": "",
+      "line": -1,
+      "column": -1,
+      "self_us": 53202,
+      "percentage": 0.17612799866094783
+    },
+    {
+      "function": "set",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 8,
+      "column": 276334,
+      "self_us": 17016,
+      "percentage": 0.05633235640041142
+    },
+    {
+      "function": "",
+      "url": "",
+      "line": -1,
+      "column": -1,
+      "self_us": 13750,
+      "percentage": 0.045520092883501236
+    },
+    {
+      "function": "uniformMatrix4fv",
+      "url": "",
+      "line": -1,
+      "column": -1,
+      "self_us": 11417,
+      "percentage": 0.03779657457824972
+    },
+    {
+      "function": "eN",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 821,
+      "column": 34528,
+      "self_us": 4008,
+      "percentage": 0.013268693256514396
+    },
+    {
+      "function": "draw",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 821,
+      "column": 1264,
+      "self_us": 3836,
+      "percentage": 0.012699278276444417
+    },
+    {
+      "function": "requestAnimationFrame",
+      "url": "",
+      "line": -1,
+      "column": -1,
+      "self_us": 3752,
+      "percentage": 0.012421191890828846
+    },
+    {
+      "function": "renderLayer",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 821,
+      "column": 63872,
+      "self_us": 3645,
+      "percentage": 0.012066962804389965
+    },
+    {
+      "function": "de",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 8,
+      "column": 57729,
+      "self_us": 3311,
+      "percentage": 0.010961238366347098
+    },
+    {
+      "function": "FM",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 821,
+      "column": 22980,
+      "self_us": 3297,
+      "percentage": 0.01091489063541117
+    },
+    {
+      "function": "draw",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 821,
+      "column": 1264,
+      "self_us": 3253,
+      "percentage": 0.010769226338183965
+    },
+    {
+      "function": "hasTransition",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 8,
+      "column": 241348,
+      "self_us": 3200,
+      "percentage": 0.010593767071069378
+    },
+    {
+      "function": "isTypedArray",
+      "url": "",
+      "line": 64,
+      "column": 21,
+      "self_us": 3183,
+      "percentage": 0.010537487683504322
+    },
+    {
+      "function": "render",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 821,
+      "column": 61056,
+      "self_us": 2713,
+      "percentage": 0.008981528144941008
+    },
+    {
+      "function": "innerSerialize",
+      "url": "",
+      "line": 185,
+      "column": 23,
+      "self_us": 2483,
+      "percentage": 0.008220101136707895
+    },
+    {
+      "function": "bufferData",
+      "url": "",
+      "line": -1,
+      "column": -1,
+      "self_us": 2422,
+      "percentage": 0.008018157451915637
+    },
+    {
+      "function": "vD",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 8,
+      "column": 651526,
+      "self_us": 2391,
+      "percentage": 0.007915530333414652
+    },
+    {
+      "function": "_render",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 821,
+      "column": 183192,
+      "self_us": 2366,
+      "percentage": 0.007832766528171923
+    },
+    {
+      "function": "hasTransition",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 8,
+      "column": 241348,
+      "self_us": 2363,
+      "percentage": 0.007822834871542795
+    },
+    {
+      "function": "getBoundingClientRect",
+      "url": "",
+      "line": -1,
+      "column": -1,
+      "self_us": 2338,
+      "percentage": 0.007740071066300065
+    },
+    {
+      "function": "jD",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 8,
+      "column": 657199,
+      "self_us": 2264,
+      "percentage": 0.007495090202781585
+    },
+    {
+      "function": "jM",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 821,
+      "column": 20568,
+      "self_us": 2185,
+      "percentage": 0.00723355657821456
+    },
+    {
+      "function": "draw",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 821,
+      "column": 1264,
+      "self_us": 2087,
+      "percentage": 0.00690912246166306
+    },
+    {
+      "function": "getBoundingClientRect",
+      "url": "",
+      "line": -1,
+      "column": -1,
+      "self_us": 1991,
+      "percentage": 0.006591309449530979
+    },
+    {
+      "function": "bindVertexArray",
+      "url": "",
+      "line": -1,
+      "column": -1,
+      "self_us": 1986,
+      "percentage": 0.006574756688482434
+    },
+    {
+      "function": "prepare",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 8,
+      "column": 634816,
+      "self_us": 1905,
+      "percentage": 0.00630660195949599
+    },
+    {
+      "function": "getScale",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 8,
+      "column": 78029,
+      "self_us": 1897,
+      "percentage": 0.006280117541818316
+    },
+    {
+      "function": "uniform4f",
+      "url": "",
+      "line": -1,
+      "column": -1,
+      "self_us": 1785,
+      "percentage": 0.005909335694330888
+    },
+    {
+      "function": "constantOr",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 8,
+      "column": 242323,
+      "self_us": 1774,
+      "percentage": 0.005872919620024087
+    },
+    {
+      "function": "getBoundingClientRect",
+      "url": "",
+      "line": -1,
+      "column": -1,
+      "self_us": 1580,
+      "percentage": 0.005230672491340506
+    },
+    {
+      "function": "",
+      "url": "",
+      "line": 5433,
+      "column": 35,
+      "self_us": 1544,
+      "percentage": 0.005111492611790975
+    },
+    {
+      "function": "upload",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 819,
+      "column": 117277,
+      "self_us": 1511,
+      "percentage": 0.005002244388870572
+    },
+    {
+      "function": "Zt",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 8,
+      "column": 71480,
+      "self_us": 1501,
+      "percentage": 0.004969138866773481
+    },
+    {
+      "function": "getProgram",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 821,
+      "column": 16821,
+      "self_us": 1476,
+      "percentage": 0.004886375061530751
+    },
+    {
+      "function": "bind",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 819,
+      "column": 117680,
+      "self_us": 1453,
+      "percentage": 0.00481023236070744
+    },
+    {
+      "function": "get pitch",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 819,
+      "column": 17321,
+      "self_us": 1442,
+      "percentage": 0.004773816286400639
+    },
+    {
+      "function": "setDepthMode",
+      "url": "http://127.0.0.1:8766/assets/index-B5hj9MUm.js",
+      "line": 819,
+      "column": 125624,
+      "self_us": 1436,
+      "percentage": 0.004753952973142384
+    },
+    {
+      "function": "depthMask",
+      "url": "",
+      "line": -1,
+      "column": -1,
+      "self_us": 1436,
+      "percentage": 0.004753952973142384
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Profiling overhead; inclusive nested trace durations must not be added as CPU percentages. CPU samples describe only the page main thread. Map or empty WebGL control with the same synthetic DOM input. Controls omit all map content and cannot be acceptance evidence. Not a performance pass or physical frame proof."
+}

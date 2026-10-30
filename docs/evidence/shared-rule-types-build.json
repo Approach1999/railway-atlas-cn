@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-25T07:01:32.333674+00:00",
+  "unit_tests": {
+    "passed": 63,
+    "failed": 0
+  },
+  "compiler_fault_cases_rejected": 3,
+  "build": "strict TS/checkJs production build passed; only client TS/TSX and the named shared module are in this check scope",
+  "files": [
+    {
+      "path": "apps/web/shared/model.mjs",
+      "sha256": "341fd049c9497d19b0a5ea4fb35ecefd70ff12154661c9b5e5601e4ff45a27f9",
+      "bytes": 9133,
+      "served_bytes_match": true
+    },
+    {
+      "path": "apps/web/shared/atlas-types.ts",
+      "sha256": "d4e0e47a9f1c02f51dfe0bcb1230767701ce1df71863d33da219602a7bcecdd2",
+      "bytes": 3679
+    },
+    {
+      "path": "apps/web/client/tsconfig.json",
+      "sha256": "71c76b1cccb0b5280092e5c7bd5080a3173877239f4fdbf445422c362ed5fa6e",
+      "bytes": 595
+    },
+    {
+      "path": "apps/web/client/package.json",
+      "sha256": "9936457d2526b83744c2b6d9c53e92d614078435c6c7750e5b99c820384271a3",
+      "bytes": 720
+    },
+    {
+      "path": "scripts/verify_shared_types.mjs",
+      "sha256": "6e22fffb4bc609f4852e848ae97b7a416daee2eb779c621baae41c8028aa63f0",
+      "bytes": 3539
+    },
+    {
+      "path": "scripts/verify_shared_rules.mjs",
+      "sha256": "c5bdee58a4e6475279ed826e864cf0f19d65011ff1c1c62c2b33693c0e0e0dcd",
+      "bytes": 4757
+    },
+    {
+      "path": "scripts/verify_shared_rules_browser.cjs",
+      "sha256": "2c391137088209dcfe862ad9027aa0206d81238f880b8361c6bbecef4b681b10",
+      "bytes": 4290
+    },
+    {
+      "path": "apps/web/client/dist/dependency-inventory.json",
+      "sha256": "6b7966d071b60992bb6fbc7d540410fefd12154d9810c6bf8adf5fca53ddc813",
+      "bytes": 173494,
+      "served_bytes_match": true
+    },
+    {
+      "path": "apps/web/client/dist/index.html",
+      "sha256": "6e0c1d82f153a7bb90720ded0f33718bbbbeb5d170bc7a5eec8e632acdc89e27",
+      "bytes": 733,
+      "served_bytes_match": true
+    },
+    {
+      "path": "apps/web/client/dist/third-party-notices.txt",
+      "sha256": "d3e6d63ceb754261ab291751ba29c3c957f9bc1ae1cdd71243d53a7c9e121c27",
+      "bytes": 533309,
+      "served_bytes_match": true
+    },
+    {
+      "path": "apps/web/client/dist/assets/index-CkBTDq4Z.css",
+      "sha256": "d92e2d9b5171cad98dd163ba6a470c25a2be867f9df01744fa86ff02b1efad8a",
+      "bytes": 88044,
+      "served_bytes_match": true
+    },
+    {
+      "path": "apps/web/client/dist/assets/index-DxJQUOG3.js",
+      "sha256": "cff7ccc6a512da674ab3fc09157e85d9a783148f92eeb0d0583f66cf49d8a7bd",
+      "bytes": 1392467,
+      "served_bytes_match": true
+    },
+    {
+      "path": "apps/web/client/dist/assets/maplibre-gl-worker-BWso-Bu4.js",
+      "sha256": "85cce15680b9b7a722d6a5acc8b3674fe56c9cd8d9a34199b889e5e5fe43074f",
+      "bytes": 518423,
+      "served_bytes_match": true
+    }
+  ],
+  "browser_reports": [
+    {
+      "path": "docs/evidence/shared-rules-browser.json",
+      "sha256": "ae50dda0297edb127dffa9841a9b2e8133c1b73cd47f3f3f07050bc6274dca53",
+      "checks": 4
+    },
+    {
+      "path": "docs/evidence/shared-rules-filters.json",
+      "sha256": "70eac6d3511123d6d1f09362bd09b039f7bfac605cf61cef56fc1337f703ef52",
+      "checks": 8
+    },
+    {
+      "path": "docs/evidence/shared-rules-search.json",
+      "sha256": "98d9566500fb3b4421d01ea2859e720af373ee02c0c08720c0bc52fc0ec91e06",
+      "checks": 9
+    },
+    {
+      "path": "docs/evidence/shared-rules-accessibility.json",
+      "sha256": "eb1fd3462c6e6dbd8e37f94e055390943f20cd0843788423ec3da10ca2e84935",
+      "checks": 5
+    },
+    {
+      "path": "docs/evidence/shared-rules-routes.json",
+      "sha256": "cc3ebd9eb2a37bba7a1ab615ba51e45a4fd71597713f746af4420a8036b592df",
+      "checks": 4
+    },
+    {
+      "path": "docs/evidence/shared-rules-fields.json",
+      "sha256": "8412bcb9d06d7622fd4de238123433e01d163d06cb0863cf7c0c5b3e11ae1e64",
+      "checks": 12
+    }
+  ],
+  "limits": [
+    "Finite differential grid, local actual snapshots and simulated failures only.",
+    "Not independent classification, actual 200% zoom, physical devices or reader acceptance.",
+    "Full MVP, maintenance warning and native/tool review remain open."
+  ]
+}

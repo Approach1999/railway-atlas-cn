@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-25T06:54:04.503Z",
+  "before_sha256": "1716604e61b3a49f66e1b3488c757c7bc803194f98e80f6b6eac1e6b6b2b23ea",
+  "implementation_sha256": "341fd049c9497d19b0a5ea4fb35ecefd70ff12154661c9b5e5601e4ff45a27f9",
+  "stations_sha256": "b0113a6ee3db3f7722f2aec8170e37daa4ebfe142fb26d4fb1d129b6f1220d70",
+  "stations": 361,
+  "search_queries": 9,
+  "states": 144,
+  "properties": 792,
+  "predicate_comparisons": 798336,
+  "expression_comparisons": 3024,
+  "identical_results_sha256": "f3aa7d3e0af00c080bf6256fdce72208307d545399e03d5b7e0252a756659a1f",
+  "intended_metadata_change": {
+    "MODE_LABELS.other": "其他轨道"
+  },
+  "scope": "Finite migration grid, including missing properties, exact line tokens and current station searches. Not all possible filters, real rendering or independent railway classification acceptance."
+}

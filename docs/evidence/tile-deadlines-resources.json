@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-25T15:32:35.667Z",
+  "server_url": "http://127.0.0.1:8766",
+  "snapshot": "shenyang-mvp-20261023",
+  "checks": [
+    "palette HTTP 503: tracks remain drawn, retry restores only failed index, preserves canvas/camera/query/filter",
+    "palette invalid JSON shape: tracks remain drawn, retry restores only failed index, preserves canvas/camera/query/filter",
+    "stations invalid JSON shape: tracks remain drawn, retry restores only failed index, preserves canvas/camera/query/filter",
+    "lines HTTP 503: tracks remain drawn, retry restores only failed index, preserves canvas/camera/query/filter",
+    "manifest failure retries in place and preserves text entered before startup completes",
+    "tile 503 leaves search/details usable; deliberately late pre-retry zoom failures each retry once, restore real rendered tracks and keep selection/camera",
+    "partial tile failure keeps rendered content; repeated failure offers another explicit retry without a loop, successful tiles are not downloaded again",
+    "detail retry preserves filtered-out temporary search selection, camera and keyboard focus",
+    "late retry from previous snapshot is discarded after successful version switch",
+    "simulated narrow viewport keeps recovery control within screen with at least 44px touch height"
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Injected failures and retries against local actual data; no real-device, reader or independent human acceptance claim"
+}

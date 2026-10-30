@@ -1,0 +1,218 @@
+{
+  "date": "2026-10-28T05:19:55.788Z",
+  "browser_target": {
+    "channel": "msedge",
+    "version": "156.0.4314.42",
+    "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "product": "Edg/156.0.4314.42",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+    "renderer": "forced SwiftShader",
+    "headless": true,
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64"
+    },
+    "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+  },
+  "source_sha256": "67adc486c2ac0df121befe58fe6a2473b22b6d2f295b46024d13c00fc8cbca3e",
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "build": {
+    "asset": "/assets/index-AnsEeJYS.js",
+    "index_sha256": "0e0148d1668fa060f64958e321da4790737c3e9b4554473a39c44bf45306bc54",
+    "asset_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7"
+  },
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "name": "keyboard-reset-preserves-camera-query-snapshot-basemap-and-returns-focus"
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "name": "reset-can-be-undone-to-the-original-empty-selection"
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "name": "actual-empty-view-recovery-works-with-compact-panel-collapsed"
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "name": "empty-line-recovery-preserves-other-filters"
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "name": "missing-line-recovery-preserves-other-filters"
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "name": "coverage-recovery-returns-home-without-resetting-filters-or-query"
+    },
+    {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "name": "keyboard-reset-preserves-camera-query-snapshot-basemap-and-returns-focus"
+    },
+    {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "name": "reset-can-be-undone-to-the-original-empty-selection"
+    },
+    {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "name": "actual-empty-view-recovery-works-with-compact-panel-collapsed"
+    },
+    {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "name": "empty-line-recovery-preserves-other-filters"
+    },
+    {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "name": "missing-line-recovery-preserves-other-filters"
+    },
+    {
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "name": "coverage-recovery-returns-home-without-resetting-filters-or-query"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "keyboard-reset-preserves-camera-query-snapshot-basemap-and-returns-focus"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "reset-can-be-undone-to-the-original-empty-selection"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "actual-empty-view-recovery-works-with-compact-panel-collapsed"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "empty-line-recovery-preserves-other-filters"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "missing-line-recovery-preserves-other-filters"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "coverage-recovery-returns-home-without-resetting-filters-or-query"
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "captures": [
+    {
+      "original_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+      "observed_sha256": "53d31e5daf7464dacf7200d9bd662e7a600cef11d55f27d147ead21eb383027f"
+    },
+    {
+      "original_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+      "observed_sha256": "53d31e5daf7464dacf7200d9bd662e7a600cef11d55f27d147ead21eb383027f"
+    },
+    {
+      "original_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+      "observed_sha256": "53d31e5daf7464dacf7200d9bd662e7a600cef11d55f27d147ead21eb383027f"
+    },
+    {
+      "original_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+      "observed_sha256": "53d31e5daf7464dacf7200d9bd662e7a600cef11d55f27d147ead21eb383027f"
+    },
+    {
+      "original_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+      "observed_sha256": "53d31e5daf7464dacf7200d9bd662e7a600cef11d55f27d147ead21eb383027f"
+    },
+    {
+      "original_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+      "observed_sha256": "53d31e5daf7464dacf7200d9bd662e7a600cef11d55f27d147ead21eb383027f"
+    },
+    {
+      "original_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+      "observed_sha256": "53d31e5daf7464dacf7200d9bd662e7a600cef11d55f27d147ead21eb383027f"
+    },
+    {
+      "original_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+      "observed_sha256": "53d31e5daf7464dacf7200d9bd662e7a600cef11d55f27d147ead21eb383027f"
+    },
+    {
+      "original_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+      "observed_sha256": "53d31e5daf7464dacf7200d9bd662e7a600cef11d55f27d147ead21eb383027f"
+    },
+    {
+      "original_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+      "observed_sha256": "53d31e5daf7464dacf7200d9bd662e7a600cef11d55f27d147ead21eb383027f"
+    },
+    {
+      "original_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+      "observed_sha256": "53d31e5daf7464dacf7200d9bd662e7a600cef11d55f27d147ead21eb383027f"
+    },
+    {
+      "original_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+      "observed_sha256": "53d31e5daf7464dacf7200d9bd662e7a600cef11d55f27d147ead21eb383027f"
+    },
+    {
+      "original_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+      "observed_sha256": "53d31e5daf7464dacf7200d9bd662e7a600cef11d55f27d147ead21eb383027f"
+    },
+    {
+      "original_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+      "observed_sha256": "53d31e5daf7464dacf7200d9bd662e7a600cef11d55f27d147ead21eb383027f"
+    },
+    {
+      "original_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+      "observed_sha256": "53d31e5daf7464dacf7200d9bd662e7a600cef11d55f27d147ead21eb383027f"
+    }
+  ],
+  "scope": "Actual snapshot and keyboard activation, CSS phone/tablet sizes and touch flags; not actual mobile browser, screen reader or 200-percent acceptance."
+}

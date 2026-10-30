@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "lock_sha256": "fd8855b295a45bdb7bc0f88090777181fecf752543840cfe7350f809d5fd7da5",
+  "components": [
+    {
+      "name": "fonttools",
+      "version": "4.67.0",
+      "filename": "fonttools-4.67.0-py3-none-any.whl",
+      "sha256": "4304f03ed7f4ba000a8dcc941ad854bfa52e2f3b6112b8f099b6f431cf98e701",
+      "source": "https://files.pythonhosted.org/packages/3d/61/4161946319472aaa9b897bd18ad5108a5b10f5ebaa503d921a001ac4fff9/fonttools-4.67.0-py3-none-any.whl",
+      "id": "python:fonttools@4.67.0",
+      "ecosystem": "python",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "project_file": "third_party/licenses/font-build-fonttools/LICENSE",
+          "sha256": "6787208f83f659ccbc2223b2fde952ffa6f7e8aca62f1a8a2bf5bc51bb1b2383",
+          "wheel_file": "fonttools-4.67.0.dist-info/licenses/LICENSE"
+        },
+        {
+          "project_file": "third_party/licenses/font-build-fonttools/LICENSE.external",
+          "sha256": "94a83aaee0729a0f302d34acc4acecbd9d58366f262429075fe557e4a54b2e69",
+          "wheel_file": "fonttools-4.67.0.dist-info/licenses/LICENSE.external"
+        }
+      ],
+      "metadata_file": "third_party/font-build/fonttools-4.67.0.METADATA",
+      "metadata_sha256": "33dec14bec601b457a07a6550086cb6725b5aaedc3a881f9fa7a84d3841ddcfe"
+    },
+    {
+      "name": "brotli",
+      "version": "1.2.1",
+      "filename": "brotli-1.2.1-cp312-cp312-win_amd64.whl",
+      "sha256": "f5342b8256476554b4045db8b7bf4dc4044d0405485f220f0cd80764bc0d7faf",
+      "source": "https://files.pythonhosted.org/packages/3e/82/b7f6c56393f2224ff4108cf1cc255921be1c0ae5962163edbe367c8a55bc/brotli-1.2.1-cp312-cp312-win_amd64.whl",
+      "id": "python:brotli@1.2.1",
+      "ecosystem": "python",
+      "license_declared": "MIT",
+      "license_files": [
+        {
+          "project_file": "third_party/licenses/font-build-brotli/LICENSE",
+          "sha256": "60ae0f13e76cc2eaaa108677eefa4ce16b647f6bbe8cf0a1ac9429d82eca7248",
+          "wheel_file": "brotli-1.2.1.dist-info/licenses/LICENSE"
+        }
+      ],
+      "metadata_file": "third_party/font-build/brotli-1.2.1.METADATA",
+      "metadata_sha256": "dd37f7b084bbf2787aa6423e7cf9d268f43c50e0b7397a59317508df83711fa6"
+    }
+  ]
+}

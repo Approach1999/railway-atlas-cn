@@ -1,0 +1,2 @@
+# Direct data-tool pin. Use requirements-data.lock for the complete hashed environment.
+osmium==4.3.0

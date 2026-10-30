@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-26T13:48:44.782554+00:00",
+  "product_asset": "/assets/index-BPD_xofR.js",
+  "adopted": false,
+  "unit_tests": {
+    "passed": 89,
+    "failed": 0,
+    "new_candidate_domain_tests": 5
+  },
+  "build": "Strict TS/checkJs and production build passed; product bundle unchanged because candidate module is not imported. Existing bundle-size warning retained.",
+  "source_and_evidence_sha256": {
+    "apps/web/client/src/line-label-candidates.ts": "ecc2e49b5b003235cb737aa4533ed83f3b610c68d8b8defe061ca141e409acb1",
+    "apps/web/client/src/line-label-candidates.test.mjs": "9b516b9a00654181d96f0b9f741677927b697e239a3a7992385ceb7e0a0a9a87",
+    "scripts/prototype_line_labels.cjs": "d6eb57a05ce16e2d70ea697abbf8fa8933a96e985ab610483224fedebd98bb92",
+    "scripts/audit_line_label_prototype.mjs": "d180c7122c6d4f22b1c661170562932371d16c3b3c4c10ae63ca41810a3010c8",
+    "scripts/verify_sdk_label_merge.mjs": "b2ce02ea7530da5d6bdc0d36b283256c1ecba8747376e10886244c8c38fdbcc8",
+    "apps/web/client/node_modules/maplibre-gl/src/data/bucket/symbol_bucket.ts": "e6c172fb62cd3912c1bd33f22b58f4932b0c127cba6aa15d8403764d08d94c41",
+    "apps/web/client/node_modules/maplibre-gl/src/symbol/merge_lines.ts": "73c8fe42cfb57ce1f11ed48c9627a71392be3786cae44edbceeddd9ddcd29ebe",
+    "apps/web/client/node_modules/maplibre-gl/src/symbol/symbol_layout.ts": "5ed922307bf8986438ce5ba4eb803a1a4270b0c9c1bcc4caea65c75688979a78",
+    "docs/line-label-prototype.md": "e095065eb2558b269992c4a380eff568c689f3d414b11d3962733269d50f9605",
+    "docs/line-label-levels.md": "be08901868dda779a9aa173356e77bb041d7b5d461e3743fef72f89a2fd5c170",
+    "docs/evidence/line-label-prototype-browser.json": "f53f87cf3049bd43cd37e9bcc2becaf333ba8997d02eca8b6bcb225516aeb639",
+    "docs/evidence/line-label-prototype-audit.json": "4880f702913abad8afc140543d01855151391783c010404baa8fdbb8c443a691",
+    "docs/evidence/line-label-prototype-sdk.json": "7d50b4a24257428dacbae5d7a47c5f58b1a1f38cd609eca056fcda292f35e8c6"
+  },
+  "unchanged_prior_fingerprints": {
+    "apps/web/client/src/map-controller.ts": "1876596d75360406c8ef11dd7b367d2815d3945800d6b49642ae50677665c153",
+    "scripts/diagnose_line_labels.cjs": "3f2635eccec2613ce718a4902645aa296349a84e36986c725cf1f80f472d3538",
+    "scripts/verify_line_label_levels.cjs": "d9a8c1afe895dd6fae49f353ff3eedae0ab47ef868bd23e8b7f7619c14e6ee95",
+    "scripts/verify_react_filters.cjs": "5328dce234500404c25ce2e2d05e854e2a4871110b84b243b9f2ba246e104f99",
+    "scripts/verify_real_routes.cjs": "15d00d8c47d07febab41d4bb37c016b143f3d6d379a78ca3c51125789530883a",
+    "apps/web/client/node_modules/maplibre-gl/src/symbol/symbol_layout.ts": "5ed922307bf8986438ce5ba4eb803a1a4270b0c9c1bcc4caea65c75688979a78",
+    "apps/web/client/node_modules/maplibre-gl/src/symbol/placement.ts": "39f5965414d5746323cd6a2c7cfe0afbc5ab141fc9a613af50ec5264f3b90baf",
+    "apps/web/client/node_modules/maplibre-gl/package.json": "aa2c307c0a3efd8da11ebace266ca2e39c433f9d19efa1b67b3ede9f7904e559",
+    "apps/web/client/dist/index.html": "e6aa1bf3fd816c253f19884b46252960d0ef5a9a5a8cfe61480cc2bd36a2cf40",
+    "apps/web/client/dist/assets/index-BPD_xofR.js": "04f6f3f9b0055038d743f77dbee2a30555ba4bb6178373c1df9c47976dc50609",
+    "docs/evidence/history/map-controller-before-line-levels.ts": "9d24be110434239850c6aa3a58b0ebd166bda4484e0b66020c3968ca51344e6f",
+    "docs/evidence/line-label-spacing-current.json": "e11819c1d369f2d1b1fb86175b1d6d26d2a25f7928fc9dce8467828e6c23cb02",
+    "docs/evidence/line-label-spacing-600.json": "0b07d0baca3b20c6f286ed4681bfb7685210150d4e32dd3c41dd5a1888809dc0",
+    "docs/evidence/line-label-levels-browser.json": "08da2fc1efd4e20da3c9d10f2720e265064b1dec1983141e8aae25ce83791316",
+    "docs/evidence/line-label-levels-filters.json": "2956378b5366eb6e01ad7dd22bcff4c590f6ea044d17a6f5dea7e400ef47129d",
+    "docs/evidence/line-label-levels-routes.json": "efb9e7f2458ed32c21c5913bede8795846c08ddcc72ee149cad2e35e138ad89c",
+    "docs/evidence/line-label-levels-detailed.png": "bd8ce59cbad58cd3ff3d7ba1a84fa0a90dfe5d26339cd4ef33e7863f891d58c6",
+    "docs/evidence/station-label-build.json": "0c03ea79f80a55f38726950e6432a1337872bf3aaa192ff1d51de3ec7c0ab55d"
+  },
+  "ignored_raw_capture_sha256": {
+    "data/manifests/local/line-label-prototype/overview-z10-input.json": "73e88718b8d118ab0dfe5240228050a7fc63596666d1311946cdcaa9c0bbb9eb",
+    "data/manifests/local/line-label-prototype/overview-z10-candidates.json": "e16e4d647b2fc6ff7f68880fb78d72fa9a2ba6419171301485cd2979f02df48a",
+    "data/manifests/local/line-label-prototype/overview-z10-5-input.json": "043714a9b209749753ed6d09a5a6464bc7e9bad0a60cb338572e117727f05e83",
+    "data/manifests/local/line-label-prototype/overview-z10-5-candidates.json": "8f1ccca44f64b4100651c7960edcc58e2f521b8f5d5f56562f9f76d491da9d61",
+    "data/manifests/local/line-label-prototype/yard-input.json": "e2c703248a2f5c2fbf53a494ec7b43352111ff797047e926ba9fa69fe6cc9223",
+    "data/manifests/local/line-label-prototype/yard-candidates.json": "8989a690d942ae28b17568cb838b233909f5f7b7fa5134c84d4ef449bcdb8389",
+    "data/manifests/local/line-label-prototype/tram-input.json": "be6bd61560e2338eacf3b9296a177d42e0be453cba366f5df1f40ec0f2f07dc6",
+    "data/manifests/local/line-label-prototype/tram-candidates.json": "507c34bef8096ffbf77da2497a0b2408e229dcd1cd0ea48deccd76cdccee283f"
+  },
+  "supersedes_interpretation": "Prior 600-spacing label-associated source-ID counts do not alone prove loss of independent source-label coverage; installed SDK merges same-text endpoint-connected source geometries before placement. Historical raw evidence and build JSON are retained.",
+  "prototype_limit": "No <300px same-identity observed pairs in four views, but overview name coverage regressed; prototype is not adopted and complete R17 is not achieved.",
+  "calibration": "Initial Playwright serialization omitted getter-backed geometry. Captures now materialize plain Feature geometry/properties and replay byte-identically.",
+  "remaining": [
+    "Short source fragment labeling without unproven same-name infrastructure merging.",
+    "Dynamic map/source/filter/snapshot lifecycle, browser/worker performance and first-usable integration.",
+    "Full R07/R17/N09, physical devices, readers, browser matrix and independent human classification review."
+  ]
+}

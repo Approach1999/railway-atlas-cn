@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "packages": {
+    "cargo:r-efi@6.0.0": [
+      {"file": "AUTHORS", "sha256": "d027e91dbc9cdbb2f1190068e498bd6b61cff022b6a032b191021ba658d96111"}
+    ],
+    "npm:murmurhash-js@1.0.0": [
+      {"file": "README.md", "sha256": "e137ced8967fc334ec9b5fc5c8500992f9e49d2e9cc0f6e2439e46af2f2481a4"}
+    ]
+  }
+}

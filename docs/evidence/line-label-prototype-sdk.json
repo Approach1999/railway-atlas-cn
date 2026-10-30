@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-26T13:45:32.634Z",
+  "source": "apps/web/client/node_modules/maplibre-gl/src/symbol/merge_lines.ts",
+  "source_sha256": "73c8fe42cfb57ce1f11ed48c9627a71392be3786cae44edbceeddd9ddcd29ebe",
+  "checks": {
+    "distinct_ids_same_text_and_shared_endpoint": {
+      "input_ids": [
+        "way/1",
+        "way/2"
+      ],
+      "output_ids": [
+        "way/1"
+      ],
+      "output_points": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 10,
+          "y": 0
+        },
+        {
+          "x": 20,
+          "y": 0
+        }
+      ]
+    },
+    "different_text_not_merged": 2
+  },
+  "scope": "Exact installed SDK mergeLines source executed on synthetic fragments. Establishes text/endpoint-only merging despite distinct source IDs; not real OSM equivalence or current product acceptance."
+}

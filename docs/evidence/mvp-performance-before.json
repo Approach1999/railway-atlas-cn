@@ -1,0 +1,385 @@
+{
+  "date": "2026-10-23T04:37:10.127Z",
+  "browser": "155.0.8059.85",
+  "environment": {
+    "platform": "win32",
+    "release": "10.0.26200",
+    "arch": "x64",
+    "cpu": "Intel(R) Core(TM) Ultra 5 125H",
+    "logical_cpus": 18,
+    "memory_bytes": 33786552320,
+    "renderer": "Headless Chrome with SwiftShader; hardware/device acceptance remains outstanding"
+  },
+  "conditions": {
+    "download_mbps": 10,
+    "latency_ms": 100,
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "http_cache": "disabled; new isolated context each trial",
+    "basemap": "off; no third-party requests",
+    "scope": "Exploratory railway-only baseline. Not a substitute for actual default basemap, real mobile/tablet, or hardware-rendered N01-N04 acceptance."
+  },
+  "summary": {
+    "first_usable_ms": {
+      "samples": 3,
+      "median": 3461.2000000476837,
+      "p95": 3549.0999999046326,
+      "max": 3549.0999999046326
+    },
+    "index_ready_ms": {
+      "samples": 3,
+      "median": 2385.5999999046326,
+      "p95": 2439.899999856949,
+      "max": 2439.899999856949
+    },
+    "own_transfer_bytes": {
+      "samples": 3,
+      "median": 2627458,
+      "p95": 2627458,
+      "max": 2627458
+    }
+  },
+  "warm": null,
+  "runs": [
+    {
+      "first_usable_ms": 3549.0999999046326,
+      "index_ready_ms": 2439.899999856949,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-accessible-20261022",
+      "own_encoded_body_bytes": 2623519,
+      "own_transfer_bytes": 2627458,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8772/",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 283,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/assets/index-B85q9xjB.css",
+          "status": 200,
+          "encoded_body_bytes": 83976,
+          "header_bytes": 284,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/assets/index-p_z82O_C.js",
+          "status": 200,
+          "encoded_body_bytes": 1349961,
+          "header_bytes": 293,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 758,
+          "header_bytes": 218,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 275,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 3746,
+          "header_bytes": 276,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 30417,
+          "header_bytes": 277,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 276206,
+          "header_bytes": 282,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 158,
+          "header_bytes": 275,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 292,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 136102,
+          "header_bytes": 296,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 228907,
+          "header_bytes": 296,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 235726,
+          "header_bytes": 296,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 276062,
+          "header_bytes": 296,
+          "content_encoding": "identity"
+        }
+      ],
+      "long_tasks": [
+        {
+          "start": 1530.3999998569489,
+          "duration": 119
+        },
+        {
+          "start": 1663.3999998569489,
+          "duration": 58
+        }
+      ]
+    },
+    {
+      "first_usable_ms": 3431.899999856949,
+      "index_ready_ms": 2346.2999999523163,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-accessible-20261022",
+      "own_encoded_body_bytes": 2623519,
+      "own_transfer_bytes": 2627458,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8772/",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 283,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/assets/index-B85q9xjB.css",
+          "status": 200,
+          "encoded_body_bytes": 83976,
+          "header_bytes": 284,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/assets/index-p_z82O_C.js",
+          "status": 200,
+          "encoded_body_bytes": 1349961,
+          "header_bytes": 293,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 758,
+          "header_bytes": 218,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 3746,
+          "header_bytes": 276,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 275,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 30417,
+          "header_bytes": 277,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 276206,
+          "header_bytes": 282,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 158,
+          "header_bytes": 275,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 292,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 136102,
+          "header_bytes": 296,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 228907,
+          "header_bytes": 296,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 235726,
+          "header_bytes": 296,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 276062,
+          "header_bytes": 296,
+          "content_encoding": "identity"
+        }
+      ],
+      "long_tasks": []
+    },
+    {
+      "first_usable_ms": 3461.2000000476837,
+      "index_ready_ms": 2385.5999999046326,
+      "rendered_tracks": 778,
+      "snapshot": "shenyang-mvp-accessible-20261022",
+      "own_encoded_body_bytes": 2623519,
+      "own_transfer_bytes": 2627458,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8772/",
+          "status": 200,
+          "encoded_body_bytes": 733,
+          "header_bytes": 283,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/assets/index-B85q9xjB.css",
+          "status": 200,
+          "encoded_body_bytes": 83976,
+          "header_bytes": 284,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/assets/index-p_z82O_C.js",
+          "status": 200,
+          "encoded_body_bytes": 1349961,
+          "header_bytes": 293,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/catalog.json",
+          "status": 200,
+          "encoded_body_bytes": 758,
+          "header_bytes": 218,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/basemap.json",
+          "status": 200,
+          "encoded_body_bytes": 767,
+          "header_bytes": 275,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/palette.json",
+          "status": 200,
+          "encoded_body_bytes": 3746,
+          "header_bytes": 276,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/dataset.json",
+          "status": 200,
+          "encoded_body_bytes": 30417,
+          "header_bytes": 277,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/stations.geojson",
+          "status": 200,
+          "encoded_body_bytes": 276206,
+          "header_bytes": 282,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/lines.json",
+          "status": 200,
+          "encoded_body_bytes": 158,
+          "header_bytes": 275,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/assets/maplibre-gl-worker-BWso-Bu4.js",
+          "status": 200,
+          "encoded_body_bytes": 0,
+          "header_bytes": 292,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/tiles/10/863/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 136102,
+          "header_bytes": 296,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/tiles/10/863/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 228907,
+          "header_bytes": 296,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/tiles/10/862/380.pbf",
+          "status": 200,
+          "encoded_body_bytes": 235726,
+          "header_bytes": 296,
+          "content_encoding": "identity"
+        },
+        {
+          "url": "http://127.0.0.1:8772/tiles/10/862/381.pbf",
+          "status": 200,
+          "encoded_body_bytes": 276062,
+          "header_bytes": 296,
+          "content_encoding": "identity"
+        }
+      ],
+      "long_tasks": []
+    }
+  ],
+  "errors": [],
+  "external": []
+}

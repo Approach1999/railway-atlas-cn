@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-24T15:02:51.477Z",
+  "server_url": "http://127.0.0.1:8766",
+  "checks": [
+    {
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "checks": [
+        "page and panels fit viewport",
+        "caption hidden in short landscape or separated from toolbar",
+        "44px touch zoom controls remain exposed with detail open",
+        "search to station detail and close",
+        "share and about fit and close",
+        "panel collapse and reopen"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "checks": [
+        "page and panels fit viewport",
+        "caption hidden in short landscape or separated from toolbar",
+        "44px touch zoom controls remain exposed with detail open",
+        "search to station detail and close",
+        "share and about fit and close",
+        "panel collapse and reopen"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 667,
+        "height": 375
+      },
+      "checks": [
+        "page and panels fit viewport",
+        "caption hidden in short landscape or separated from toolbar",
+        "44px touch zoom controls remain exposed with detail open",
+        "search to station detail and close",
+        "share and about fit and close",
+        "panel collapse and reopen"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 640,
+        "height": 400
+      },
+      "checks": [
+        "page and panels fit viewport",
+        "caption hidden in short landscape or separated from toolbar",
+        "44px touch zoom controls remain exposed with detail open",
+        "search to station detail and close",
+        "share and about fit and close",
+        "panel collapse and reopen"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 720,
+        "height": 500
+      },
+      "checks": [
+        "page and panels fit viewport",
+        "caption hidden in short landscape or separated from toolbar",
+        "44px touch zoom controls remain exposed with detail open",
+        "search to station detail and close",
+        "share and about fit and close"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "checks": [
+        "page and panels fit viewport",
+        "caption hidden in short landscape or separated from toolbar",
+        "44px touch zoom controls remain exposed with detail open",
+        "search to station detail and close",
+        "share and about fit and close"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "checks": [
+        "page and panels fit viewport",
+        "caption hidden in short landscape or separated from toolbar",
+        "44px touch zoom controls remain exposed with detail open",
+        "search to station detail and close",
+        "share and about fit and close"
+      ]
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Local Chrome seven viewport sizes with touch emulation and basemap off; 720x500 approximates CSS space of 1440x1000 at 200%, not actual browser zoom, mobile OS, Safari, NVDA or VoiceOver acceptance"
+}

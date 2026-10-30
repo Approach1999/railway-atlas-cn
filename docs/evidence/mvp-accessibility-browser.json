@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-23T05:31:58.853Z",
+  "server_url": "http://127.0.0.1:8775",
+  "snapshot": "shenyang-mvp-20261023",
+  "checks": [
+    "on-demand list supports keyboard selection, source details, focus return and map focus",
+    "real source facilities have list details and snapshot/feature share links",
+    "simulated context loss opens the list and modal contains keyboard focus",
+    "WebGL unavailable automatically opens usable list; 390px layout fits and list can reopen",
+    "index and detail 503 errors retry independently, preserve loaded records, and empty filters recover"
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Chrome keyboard, simulated WebGL failure and 390px viewport; not full WCAG/NVDA/VoiceOver/real-device acceptance"
+}

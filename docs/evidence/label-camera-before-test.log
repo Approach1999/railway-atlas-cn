@@ -1,0 +1,39 @@
+✖ camera change does not prepare old loaded tiles before the next idle view (3.5773ms)
+✔ filter changes reuse geometry but still select current candidates; tile/camera/retry/disable reset the bounded preparation (1.2946ms)
+✔ render-only labels resolve to validated original track geometry and cannot borrow another source identity (0.8491ms)
+✔ unchanged views do not resubmit, motion defers work, zoom keeps old labels hidden until ready (0.5036ms)
+✔ filter replacement retains previous rendered targets and ignores a loaded notification while the new worker is pending (0.5185ms)
+✔ malformed names fail independently without clearing loaded data, and explicit retry restores in place (0.4369ms)
+✔ worker deadline offers recovery and reset cancels the previous snapshot timer (0.7893ms)
+✔ disabling names cancels obsolete failure notices and reenabling starts a bounded new request (0.3661ms)
+✔ an initial name failure requests a render so usable track readiness can publish its partial-error state (0.2208ms)
+✔ an unchanged request during zoom source replacement cannot reveal labels from the old zoom (1.2719ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 9
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 164.709
+
+✖ failing tests:
+
+test at apps\web\client\src\line-label-controller.test.mjs:22:1
+✖ camera change does not prepare old loaded tiles before the next idle view (3.5773ms)
+  AssertionError [ERR_ASSERTION]: source can still report loaded for the previous view
+  
+  2 !== 1
+  
+      at TestContext.<anonymous> (file:///C:/Users/21965/Documents/Codex/2026-10-22/referenced-chatgpt-conversation-this-is-an/work/checkout/apps/web/client/src/line-label-controller.test.mjs:24:43)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1201:25)
+      at Test.start (node:internal/test_runner/test:1096:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 2,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

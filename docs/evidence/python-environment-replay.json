@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-24T15:16:43.721208+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "certifi": "2026.10.19",
+    "charset-normalizer": "3.5.2",
+    "idna": "3.20",
+    "osmium": "4.3.0",
+    "pip": "26.2",
+    "requests": "2.34.2",
+    "urllib3": "2.8.0"
+  },
+  "requirements_lock_sha256": "8f8bc5f653652adc2612b3c1f51d5460db3772ed3891b7b6816894bd08bf8c65",
+  "source_xml_sha256": "1ee4dc51c8bf8720f66645f8a53df223f8a2c7cce7552a1baccb9506b273c342",
+  "replay_pbf_sha256": "3a005e54db7eb595f93a3ec9c07b4bcd5914cad71f3eb3463cb07eab08f2e729",
+  "counts": {
+    "node": 32803,
+    "way": 4223,
+    "relation": 207
+  },
+  "original_and_replay_metadata_equal": true,
+  "original_metadata_sha256": "bde66ce779e79169805ad3a22ae1d24a5fe169ca2799f2d60e66098cbf96d9a1",
+  "replay_metadata_sha256": "bde66ce779e79169805ad3a22ae1d24a5fe169ca2799f2d60e66098cbf96d9a1",
+  "scope": "New pinned CPython 3.12 Windows x64 environment imports osmium and reproduces existing PBF and full object metadata; not human classification or cross-platform acceptance"
+}

@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-24T09:59:31.016271+00:00",
+  "build": "strict TypeScript and Vite passed; existing bundle-size warning remains",
+  "unit_tests": {
+    "passed": 50,
+    "failed": 0
+  },
+  "source_sha256": {
+    "apps/web/client/src/AboutDialog.tsx": "035499e6b9468476421bef5c465aa2870ec0f1a0b2dea001c4a39339976eeb65",
+    "apps/web/client/src/about-data.ts": "47e4190d730da15b7382f6627e9c15ad14b0a9324fb4295288460f5ca3f4be5d",
+    "apps/web/client/src/about-data.test.mjs": "03e9c0ad0dee35e172c569bb0e090c6ba732291789785ed89efbd6d867686962",
+    "apps/web/client/src/App.tsx": "1e64e15169a3ed4e004e7d261315ce684ca4495934808b2d5d53520931aaac00",
+    "apps/web/client/src/RecordFields.tsx": "e06bd883ece7633dc161fa38d4490f978f93e2402866c69a25370fed3e6a77e7",
+    "apps/web/client/src/FeaturePanels.tsx": "4c662f768bdfc038855f3bb0e5cff309fab59406bc9151010bb18c7abbffc898",
+    "apps/web/client/src/AccessibleExplorer.tsx": "212931cc07aa036db7ef09dd4632605703ddf57e5625f9dbd840144e1a2d696a",
+    "apps/web/client/src/RailwayControls.tsx": "f4f9830c81f08fc1eaf6fde0752ec30c5d5ea2e3207173e673b20ae816770a2e",
+    "apps/web/client/src/railway-controls.ts": "c4d9e7c2fddb0fe831664dc863eb626973047ec0bba8c43f5678d0fe2dc5e64b",
+    "apps/web/client/src/map-controller.ts": "190dc88add4cac16621220a6c294d81ba2cc19432b02463eec63d3313e34aedb",
+    "apps/web/client/src/dataset-validation.ts": "e352cfbb7335787797b647abe45cf602ed2b4342a62293efd8d3a5d56645486c",
+    "apps/web/shared/atlas-types.ts": "d4e0e47a9f1c02f51dfe0bcb1230767701ce1df71863d33da219602a7bcecdd2",
+    "apps/web/client/src/style.css": "a5828753822c572ed6887a429e37dade1a82caf5d997dd2512db714c4dc59d19",
+    "scripts/verify_about_data.cjs": "653c97162a5ebe78d84c22c2322c02b05e195ead9b21724b22697a41163e1a1a"
+  },
+  "browser_reports": {
+    "about": {
+      "file": "data/manifests/local/about-data/report.json",
+      "date": "2026-10-24T09:58:27.418Z",
+      "checks": 8,
+      "sha256": "b9153a0e44a458da7ed739758569b075b2bf045d9c5d2530912609173676158e"
+    },
+    "catalog": {
+      "file": "data/manifests/local/catalog-browser/report.json",
+      "date": "2026-10-24T09:55:06.883Z",
+      "checks": 8,
+      "sha256": "686ef99b607c2664826767a7121744a6113556033c07464155beed7094f510dc"
+    },
+    "filters": {
+      "file": "data/manifests/local/react-filters/react-filters-report.json",
+      "date": "2026-10-24T09:55:05.861Z",
+      "checks": 8,
+      "sha256": "0f8944898b5670f29005a5c1be184f289b5be070b9a5ece782a738354b3b13c3"
+    }
+  },
+  "notes": [
+    "About 8-case report uses final built code. Catalog/filter regressions preceded the final about wording/sticky-close CSS change in this phase.",
+    "Initial new locator matched both subway 2 and tram 2; corrected to the specific source-summary aria-label, without changing product names."
+  ],
+  "limits": [
+    "Actual configuration verification date is metadata evidence, not an operating-status confirmation or current external-source revalidation.",
+    "Original list timeouts, license gaps, full performance/device/reader matrix and independent acceptance remain unproven."
+  ]
+}

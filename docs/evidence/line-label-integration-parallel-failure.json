@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-27T03:49:39.208Z",
+  "error": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#dataset-switch-status').filter({ hasText: '已切换数据版本' }) to be visible\u001b[22m\n",
+  "checks": [
+    {
+      "check": "first usable includes the product name source; no injected replacement source",
+      "features": 747,
+      "rendered": 57,
+      "source_loaded": true,
+      "expected_layers": 41,
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      }
+    },
+    {
+      "check": "actual short caption click opens original track identity and share preserves it; caption boxes are single-row",
+      "id": "way/136823634",
+      "name": "苏抚线",
+      "captions_checked": 26
+    },
+    {
+      "check": "shared track restores original detail; line-name switch hides and restores every name layer"
+    },
+    {
+      "check": "actual zoom/pan rebuilds names and minor labels obey siding visibility"
+    },
+    {
+      "check": "malformed name source fails independently, leaves track drawing and URL, explicit retry recovers"
+    }
+  ],
+  "errors": [],
+  "states": [
+    {
+      "url": "http://127.0.0.1:8766/?region=shenyang&snapshot=shenyang-mvp-progress-20261022&types=other%2Crail%2Cunknown&classes=branch%2Cconventional_main%2Cconventional_other%2Chigh_speed%2Cindustrial%2Clight_rail%2Cmetro%2Cother%2Ctram%2Cunknown&states=mapped&labels=lines%2Cstations&facilities=0&sidings=1#map=10.50/41.80000/123.42000",
+      "text": "╫\n铁路图集\nRAILWAY ATLAS\n沈阳试验区\n铁路数据 2026-10-22\n关于数据 ↗\n3 km\n© OpenStreetMap contributors · ODbL\n从一座城市，读懂铁路\n沿着铁路线\n看见沈阳。\n\n线路、车站与它们之间的真实地理关系。\n\n地区与数据版本\n可用地区\n沈阳试验区\n\n仅列出已有数据的地区。沈阳范围为试验矩形，其他地区尚未提供。\n\n数据版本\n2026/10/23 13:21:42 · 当前推荐 · 完整要素列表\n2026/10/22 19:32:41 · 完整要素列表\n2026/10/22 19:19:29 · 车站列表\n\n构建于 2026/10/23 13:21:42。此版本保留至 2027/10/23 13:21:42。\n\n使用此版本\n\n版本切换会清除选中对象、回到地区默认视图，并保留筛选、查询和底图偏好。\n\n版本加载失败，已保留原地图、视图和选中记录。可重试或选择其他版本。\n\n查找车站\n⌕\n×\n\n搜索沈阳试验区 · 铁路和地铁分别显示\n\n通过列表查看车站与要素\n键盘操作\n看什么\n铁路概览\n仅高速\n仅普速\n城市轨道\n\n铁路概览 · 当前标注\n\n按类型、等级和状态筛选\n更多显示选项\n包含建设、规划与历史标注\n放大后显示支线与站场线\n线路名称\n车站名称\n站场与设施（放大后显示）\n\n恢复默认图层\n读图图例 颜色看类型，虚实看状态\n高速铁路\n普速干线\n普速/未标注\n支线/站场线\n放大后显示\n专用线\n放大后显示\n制式/等级未标注\n○\n车站 / 乘降所\n当前标注\n\n当前标注不保证运营。车站缺少制式标签时保留为“未标注”。\n\n试着从沈阳北站开始\n\n放大查看站场；点击线路或站名，了解名称、等级与来源。\n\n铁路地图已就绪。名称与属性来自源标签，点击可查看依据。\n\n地理铁路图\nSHENYANG / 01\n显示底图\n关\n底图已隐藏\n分享\n回到试验区"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "rail": "铁路地图已就绪。名称与属性来自源标签，点击可查看依据。",
+  "basemap": "底图已显示",
+  "errors": [],
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "tiles_requested": 42,
+  "tile_statuses": [
+    200
+  ],
+  "scope": "Single initial viewport, no automated pan or zoom; real OSM tile service; persistent browser cache"
+}

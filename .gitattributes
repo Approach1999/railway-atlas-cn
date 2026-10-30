@@ -1,2 +1,8 @@
 * text=auto eol=lf
 *.pbf -text
+# Keep checksum-bound evidence and distributed assets byte-for-byte.
+docs/evidence/** -text
+docs/qa/** -text
+third_party/** -text
+apps/web/client/public/** -text
+config/** -text

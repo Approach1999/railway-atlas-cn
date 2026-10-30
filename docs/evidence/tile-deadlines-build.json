@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-26T12:43:24.183030+00:00",
+  "asset": "/assets/index-CfMfsslN.js",
+  "unit_tests": {
+    "passed": 77,
+    "failed": 0
+  },
+  "build": "strict TS/checkJs and production build passed; existing bundle-size warning retained",
+  "source_and_evidence_sha256": {
+    "apps/web/client/src/rail-tile-request.ts": "9cced97980c33732f7ef11772b7b4326c99d8468bd447cdfa2ff30a99db75597",
+    "apps/web/client/src/rail-tile-request.test.mjs": "c3b18e6781613cb68d15c2c5b5d4d1689deb707ffd26ae35ab884d7bfb13389f",
+    "apps/web/client/src/map-controller.ts": "16078a5b37581e324c4e742c9e83f10db802d78673bbd0a8578be5f4391eeb83",
+    "scripts/verify_tile_timeouts.cjs": "47f18a0e8b5d53044c9124b282a1d8f9c0d975e4b1cb11554df4825a126d9ea8",
+    "scripts/benchmark_client.cjs": "b946ade5888c4a47c4a9e8b7cafc2facec7336f07359f06402cb078e32325d20",
+    "scripts/verify_resource_recovery.cjs": "b880b89c6cc2dc298664eb44ce4a252bc3d54ff48d42df78e4086138c0789d25",
+    "scripts/verify_real_routes.cjs": "15d00d8c47d07febab41d4bb37c016b143f3d6d379a78ca3c51125789530883a",
+    "scripts/verify_security_browser.cjs": "15db196a0e9ae7bc7ed71c8443bf539a1b30b4d31ce55f2b881bf5d5b961874b",
+    "apps/web/client/package.json": "9936457d2526b83744c2b6d9c53e92d614078435c6c7750e5b99c820384271a3",
+    "apps/web/client/package-lock.json": "5ca37628645c37cfbce73cd0148b2ed2e9f15c222db10acdeaac998f0a38c7b0",
+    "apps/web/client/dist/index.html": "1627d51f57c979b0ff2b6399df719dadd3f82f8d87aa53a71bc0d00d3f4de320",
+    "apps/web/client/dist/assets/index-CfMfsslN.js": "8a34a13125452b6c2a614f516437f5ff349af39078733ae8681e78f3ecfd81a2",
+    "docs/evidence/history/map-controller-before-tile-deadline.ts": "02a8ab406a55bccfb4af06cb5270ec7a9f53bb7ff8b4fe0c64e68097f01e4457",
+    "docs/evidence/tile-deadlines-before.json": "0c443700b85d0ebdc1034b282a61ad41a1b3710991e35a8c5b2b63783a01040b",
+    "docs/evidence/tile-deadlines-browser.json": "31a56ff17be6a1432f84e9ee0e9678b650215e8c293c61da0639a8183c982cff",
+    "docs/evidence/tile-deadlines-resources.json": "bbe2f8e5a3025948798308100247dd6966eeb777146879d612f1b3f16ab5b542",
+    "docs/evidence/tile-deadlines-routes.json": "41aaddb34c9d85a5b3e3faa07ada68c83140e1e65595590a25d1def188879a31",
+    "docs/evidence/tile-deadlines-security.json": "87cb8d0873d6d1530fba5575cab9584274cd18f24629b96015419ff5aafc810b",
+    "docs/evidence/tile-deadlines-cold.json": "70a990df420008490aab5cf5991ab589fff7a666d6fad79c8e20cc431b627d2b"
+  },
+  "checks": {
+    "real_http_tile_deadline_and_switch": 3,
+    "resource_recovery": 10,
+    "real_routes": 4,
+    "security": 3,
+    "serial_cold_contexts": 30
+  },
+  "tile_deadline_ms": 15000,
+  "scope": "Same-origin snapshot MVT headers and full binary body; public MapLibre addProtocol bridge preserves bytes and cache metadata. Basemap path unchanged.",
+  "calibration_notes": [
+    "All-connections-held exploratory switch probe is not isolated source-removal cancellation evidence; successful switch case holds one request.",
+    "Preview was confirmed unavailable after turn interruption and restarted before final successful full fixture.",
+    "Unit-test description was clarified after the 77-pass run; behavior unchanged."
+  ],
+  "limits": [
+    "Does not resolve the earlier intermittent version-status timeout.",
+    "Cold benchmark uses desktop headless default renderer, basemap off, fixed source, cache off; no warm interaction rerun.",
+    "Historical actual 200-percent and other performance reports retain their original builds.",
+    "Real devices, independent human source QA, browser/screen-reader matrix and other full MVP requirements remain open."
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "date": "2026-10-27T07:19:06.840419+00:00",
+  "build": {
+    "asset": "/assets/index-B5DC1WQs.js",
+    "index_sha256": "a8338821d7d3b3ff4eb1141551b61db4aa1982bb7290658f6089e7aeee0e0fed",
+    "asset_sha256": "e89e905c3b5dc3133b36875560568ca5a890e8d416fd34dccc35e9d6fd031706"
+  },
+  "tests": {
+    "browser_target_unit_tests": 2,
+    "functional_suites": 12,
+    "functional_checks": 86
+  },
+  "browsers": {
+    "chrome": {
+      "channel": "chrome",
+      "version": "155.0.8059.85",
+      "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+      "product": "Chrome/155.0.8059.85",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+      "renderer": "forced SwiftShader",
+      "headless": true,
+      "os": {
+        "platform": "win32",
+        "release": "10.0.26200",
+        "arch": "x64"
+      },
+      "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+    },
+    "msedge": {
+      "channel": "msedge",
+      "version": "156.0.4314.42",
+      "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+      "product": "Edg/156.0.4314.42",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+      "renderer": "forced SwiftShader",
+      "headless": true,
+      "os": {
+        "platform": "win32",
+        "release": "10.0.26200",
+        "arch": "x64"
+      },
+      "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+    }
+  },
+  "reports": [
+    {
+      "channel": "chrome",
+      "suite": "search",
+      "checks": 9,
+      "file": "docs/evidence/installed-browsers-chrome-search.json",
+      "sha256": "e4600cb4b48e903d22ecc97f185e4b1e8858a9dcaf818141329e7f5c47f60d93"
+    },
+    {
+      "channel": "chrome",
+      "suite": "filters",
+      "checks": 8,
+      "file": "docs/evidence/installed-browsers-chrome-filters.json",
+      "sha256": "e099497086a1d95b3611d5921d8b6b4447bd15c9f1985d5c67fc2bf8559d3e8f"
+    },
+    {
+      "channel": "chrome",
+      "suite": "list",
+      "checks": 5,
+      "file": "docs/evidence/installed-browsers-chrome-list.json",
+      "sha256": "3e4857f0d39715208c59ed854f41fb5c51fff17baccf6325470a642619bf0f9c"
+    },
+    {
+      "channel": "chrome",
+      "suite": "share",
+      "checks": 7,
+      "file": "docs/evidence/installed-browsers-chrome-share.json",
+      "sha256": "9be5adbbcedaa4cdfaec83e49486427c3fe7005953f94a131dbe65f04c83f733"
+    },
+    {
+      "channel": "chrome",
+      "suite": "resources",
+      "checks": 10,
+      "file": "docs/evidence/installed-browsers-chrome-resources.json",
+      "sha256": "8f4c9b5f0cd502ec664c75b058cf93c4e05d8db64aac51fb6f4ae947428be52e"
+    },
+    {
+      "channel": "chrome",
+      "suite": "font",
+      "checks": 4,
+      "file": "docs/evidence/installed-browsers-chrome-font.json",
+      "sha256": "ded2b99824f89650223c74eb7161527cf98a56887ebb872fa0002dc325a6e981"
+    },
+    {
+      "channel": "msedge",
+      "suite": "search",
+      "checks": 9,
+      "file": "docs/evidence/installed-browsers-msedge-search.json",
+      "sha256": "6db95941098336ba517b5ceb1c6ff36d8875eb36fe7f74636bef48e69e0f317b"
+    },
+    {
+      "channel": "msedge",
+      "suite": "filters",
+      "checks": 8,
+      "file": "docs/evidence/installed-browsers-msedge-filters.json",
+      "sha256": "d2a8a70c52b0d2ac6654fa124ed9741e0124d6171299b3d3bfc79bee5865eac1"
+    },
+    {
+      "channel": "msedge",
+      "suite": "list",
+      "checks": 5,
+      "file": "docs/evidence/installed-browsers-msedge-list.json",
+      "sha256": "a8e7b9b9d8b844079abf34c4191ec0645c76507cc89c0d0c652392c5aa74b122"
+    },
+    {
+      "channel": "msedge",
+      "suite": "share",
+      "checks": 7,
+      "file": "docs/evidence/installed-browsers-msedge-share.json",
+      "sha256": "d8f3e37179a2e381b5f4b93f33cde17b0af0cf9a082005c1d9b4d4fe38635037"
+    },
+    {
+      "channel": "msedge",
+      "suite": "resources",
+      "checks": 10,
+      "file": "docs/evidence/installed-browsers-msedge-resources.json",
+      "sha256": "46e02e9d364b4212bf4136d5d76e0f1a873450c3f43269a258e51405fbc87eae"
+    },
+    {
+      "channel": "msedge",
+      "suite": "font",
+      "checks": 4,
+      "file": "docs/evidence/installed-browsers-msedge-font.json",
+      "sha256": "85d1bf12a76cc7ad52e8491e1fe08c8e3d310e0db3d468dfcda94dc8902ea9c8"
+    }
+  ],
+  "sha256": {
+    "apps/web/client/dist/assets/index-B5DC1WQs.js": "e89e905c3b5dc3133b36875560568ca5a890e8d416fd34dccc35e9d6fd031706",
+    "apps/web/client/dist/index.html": "a8338821d7d3b3ff4eb1141551b61db4aa1982bb7290658f6089e7aeee0e0fed",
+    "config/catalog.json": "d1f962685ecb0410c831902e42b989d2d1685d3a735b3f977b84d6aaff0c364a",
+    "data/processed/shenyang-mvp-20261023/dataset.json": "e5d9da79170c41c428d8f971ddc8a3bb12bda3c66b856f4243c912d5469d2404",
+    "data/processed/shenyang-mvp-accessible-20261022/dataset.json": "70cd58665f662b0eefd33acfe2f9dcbcdb276f66e03f6701b706448f4b1d6111",
+    "data/processed/shenyang-mvp-progress-20261022/dataset.json": "7b2273911209d16f99a97416de8356f9ef2c6d2f1e688d2dbfb8eff0b2c8f536",
+    "scripts/browser_target.cjs": "8232047ab043000ece78339b36ba3871d3b2fd69fedf9ebf958441897d56f801",
+    "scripts/browser_target.test.cjs": "8485ee9dfd7b18ff6874ba4012c9df61835a342473a6a08106cbd9eb12b3cc16",
+    "scripts/verify_accessibility.cjs": "414f94b2ac35459f66cebc2bbf867256042eab60acd71a93afe12fcb770e6a7c",
+    "scripts/verify_installed_browsers.cjs": "f4258ed33758903c08af11904987dc5c05f0bd1006ca53408795da9670d2a231",
+    "scripts/verify_map_font.cjs": "60e13e5d8aff1f206a570f4317805a5d8d78146cdae5f65accb67976ccaf9283",
+    "scripts/verify_react_filters.cjs": "0d78fd467162482641d3302ff78ac5b5bed3efdf97bb4adac4ae2f13fef4b565",
+    "scripts/verify_react_search.cjs": "6f8281d1307496ec8159f46d345d0376407acace694f0dd8175c111ea4b6263b",
+    "scripts/verify_react_share.cjs": "e5b95e5f77c0748a89e2aff5fe4bc19cc5f7b0d30cf2837bf40af87f28e03486",
+    "scripts/verify_resource_recovery.cjs": "b95c570a65f40f137cf14f770294aea663d086a124f966b4843d0cac9b572826"
+  },
+  "executed_initial_runner": {
+    "file": "docs/evidence/history/installed-browsers-initial-runner.cjs",
+    "sha256": "734f7534f2aa52ed91e503b56713733c6ff227184ac4ab2ea41b815409e0ae12"
+  },
+  "post_run_checks": [
+    "Asset content and HTML rechecked against original matrix SHA.",
+    "Current runner later gained self-fingerprint and end-of-run asset hash check; these are not claimed as initial-run operations.",
+    "Historical map-font verifier recovered with exact original evidence SHA."
+  ],
+  "scope": "Same B5DC1WQs product, actual installed Chrome/Edge, isolated headless profiles with explicit SwiftShader/enable-automation flags; renderer field denotes requested launch mode, not a physical GPU audit. No application code changed.",
+  "limits": [
+    "Only one installed version of each Chromium browser; four-browser/recent-two-version requirement remains open.",
+    "Firefox absent at checked common install locations; Safari not verified on this Windows host.",
+    "Synthetic IME, clipboard and WebGL failure/viewport tests are not actual OS input method, clipboard permission, real GPU failure, reader or device acceptance.",
+    "Previous headed Edge 200% report retains its original scope and unknown version.",
+    "Full MVP goal remains active including independent two-person data QA, complete R17/N09 and existing performance/hosting/native-license gates."
+  ]
+}

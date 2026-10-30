@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-26T13:02:00.889Z",
+  "browser": "155.0.8059.85",
+  "audit_only": false,
+  "cases": [
+    {
+      "kind": "manifest",
+      "phase": "http",
+      "request": {
+        "closed": true,
+        "close_ms": 30
+      },
+      "recovered": true,
+      "raster_fixture_requests": 0
+    },
+    {
+      "kind": "manifest",
+      "phase": "headers",
+      "request": {
+        "closed": true,
+        "close_ms": 15012
+      },
+      "recovered": true,
+      "raster_fixture_requests": 0
+    },
+    {
+      "kind": "manifest",
+      "phase": "cancel",
+      "request": {
+        "closed": true,
+        "close_ms": 30
+      },
+      "recovered": true,
+      "raster_fixture_requests": 0
+    },
+    {
+      "kind": "palette",
+      "phase": "http",
+      "request": {
+        "closed": true,
+        "close_ms": 8
+      },
+      "recovered": true,
+      "raster_fixture_requests": 0
+    },
+    {
+      "kind": "palette",
+      "phase": "body",
+      "request": {
+        "closed": true,
+        "close_ms": 15027
+      },
+      "recovered": true,
+      "raster_fixture_requests": 0
+    },
+    {
+      "kind": "palette",
+      "phase": "cancel",
+      "request": {
+        "closed": true,
+        "close_ms": 128
+      },
+      "recovered": true,
+      "raster_fixture_requests": 0
+    },
+    {
+      "kind": "basemap",
+      "phase": "http",
+      "request": {
+        "closed": true,
+        "close_ms": 25
+      },
+      "recovered": true,
+      "raster_fixture_requests": 42
+    },
+    {
+      "kind": "basemap",
+      "phase": "headers",
+      "request": {
+        "closed": true,
+        "close_ms": 14998
+      },
+      "recovered": true,
+      "raster_fixture_requests": 42
+    },
+    {
+      "kind": "basemap",
+      "phase": "body",
+      "request": {
+        "closed": true,
+        "close_ms": 15004
+      },
+      "recovered": true,
+      "raster_fixture_requests": 42
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Real loopback transport for about manifest/palette and basemap configuration; software WebGL; all OSM raster requests fulfilled locally with a PNG, no public tile download. Not full R10/R11/R19/N09 or device acceptance."
+}

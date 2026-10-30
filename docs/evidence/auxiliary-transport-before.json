@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-26T12:57:23.065Z",
+  "browser": "155.0.8059.85",
+  "audit_only": true,
+  "cases": [
+    {
+      "kind": "manifest",
+      "phase": "http",
+      "request": {
+        "closed": false
+      },
+      "recovered": true,
+      "raster_fixture_requests": 0
+    },
+    {
+      "kind": "palette",
+      "phase": "http",
+      "request": {
+        "closed": false
+      },
+      "recovered": true,
+      "raster_fixture_requests": 0
+    },
+    {
+      "kind": "basemap",
+      "phase": "headers",
+      "request": {
+        "closed": false
+      },
+      "recovered": false,
+      "raster_fixture_requests": 0,
+      "baseline": {
+        "retry_present": 0,
+        "message": "底图加载中"
+      }
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Real loopback transport for about manifest/palette and basemap configuration; software WebGL; all OSM raster requests fulfilled locally with a PNG, no public tile download. Not full R10/R11/R19/N09 or device acceptance."
+}

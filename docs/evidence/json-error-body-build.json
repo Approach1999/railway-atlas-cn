@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-26T12:47:45.482283+00:00",
+  "asset": "/assets/index-C8EflA5L.js",
+  "unit_tests": {
+    "passed": 79,
+    "failed": 0
+  },
+  "build": "Strict TS/checkJs and production build passed; existing bundle-size warning retained.",
+  "checks": {
+    "real_unfinished_503_bodies_before": 4,
+    "real_unfinished_503_bodies_after": 4,
+    "catalog": 8,
+    "resource_recovery": 10
+  },
+  "source_and_evidence_sha256": {
+    "apps/web/client/src/json-request.ts": "dde7010cdaec4bf5e5dc5480f9aa652771ce82b79be1704de76400dccbbe2b20",
+    "apps/web/client/src/list-request.test.mjs": "9075aa0f80165dc9ae0ffea2a15b4fc8816c2bc32247e1307c25897fe99e8a2e",
+    "scripts/verify_json_error_body.cjs": "b970fbcc45f4b0645d5c482d96eda77ec05aaa3b922d38b915d392a8bb1a5159",
+    "scripts/verify_catalog.cjs": "8cd06eae5466d9a718cfc384a8b11017351445bc08e634198eef9f4026d358d8",
+    "scripts/verify_resource_recovery.cjs": "b880b89c6cc2dc298664eb44ce4a252bc3d54ff48d42df78e4086138c0789d25",
+    "apps/web/client/dist/index.html": "906915e050009a14a90bee72441cbacb2ebb02b28ddbd1c859b58814ae3a8d2c",
+    "apps/web/client/dist/assets/index-C8EflA5L.js": "0856099187dd46f65384976ac4879fc348af22097a1e0d8f29c033e0d5f98fdd",
+    "docs/evidence/json-error-body-before.json": "e44234756d41fc06cc1fde311544c9532aa2aabfcb1d2649fbcf109699404873",
+    "docs/evidence/json-error-body-after.json": "8bd8662c22b8f714efcd5698980c747fd8c1374cab9f03f6f68b7398b0047239",
+    "docs/evidence/json-error-body-catalog.json": "2e36a0d068d47e98acac3bdcaf55fb96e244c1fbb6b9b628f59e13dbd7ddb3d7",
+    "docs/evidence/json-error-body-resources.json": "78f8b22bcf5bbadd0a61cc07ce9393d58507c4e07f84bd0f62c2265ef81cd2ff"
+  },
+  "calibration": "Initial catalog runner used its default inactive port 8771 and failed connection; rerun explicitly targeted verified live preview 8766. No server restart.",
+  "limits": [
+    "Real loopback error-body disposal and related regressions only; does not establish full R11 acceptance.",
+    "Previous cold/performance and actual 200-percent evidence retain their original builds.",
+    "No new real-device, independent QA, hosted retention or browser-matrix evidence."
+  ]
+}

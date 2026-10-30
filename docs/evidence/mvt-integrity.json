@@ -1,0 +1,1410 @@
+{
+  "date": "2026-10-27T15:50:44.679584+00:00",
+  "current_snapshot": "shenyang-mvp-geometry-20261027",
+  "previous_snapshot": "shenyang-mvp-20261023",
+  "source_date": "2026-10-20T20:23:47Z",
+  "build": {
+    "asset": "/assets/index-Dv8VHl6p.js",
+    "index_sha256": "53b9b83c37eb7c9a111ee026d9290c78eb429b07af99a301299230c705456125",
+    "asset_sha256": "d4a294541fec64a33a1bcc1245332ac5aaa6461dd524de426070eec511a3e189"
+  },
+  "sha256": {
+    "apps/web/probe/build-tiles.mjs": "d493ed2eb8bf4e7a90e80bf90fddeb2cafcd74dc79afcc6d0099724e7dd7cdde",
+    "apps/web/probe/quantized-geometry.mjs": "eb5dae2febd2d4a4758c64bc858ec191c16492ac394615f92d41c65f2d86d525",
+    "apps/web/probe/quantized-geometry.test.mjs": "f1e4170ebd6bdd9fb7b7cb60a8ad48bede89275f9a87591000f9a927762fec7b",
+    "scripts/build_mvp.py": "5225787a1d98d7a8b386ba074bbd8eb930e9274619c7e06d5688383ed4f0fca2",
+    "scripts/verify_mvt_integrity.mjs": "81cfa572adece38bb0725d06c01c33fcaa3f0697c8b3dba3611fa995ab0f373f",
+    "scripts/test_mvt_publication_gate.py": "9f58fb8c87ce2b55a0b551e59bd8e53993735b56877975855c8dc38949fc1ab0",
+    "scripts/verify_snapshot_promotion.cjs": "15e337bd81654cccebcd42e96a4135924e06198b568258da267663ec68e849e8",
+    "scripts/verify_resource_recovery.cjs": "dc6ca2389a39a3c843f232e55e321fa88971b46df6d3ab9519cf8bc34c75f881",
+    "scripts/verify_react_filters.cjs": "aa49c2c46b82306d3889a61ace2a10635202cf20adab56458893eba124d0e569",
+    "scripts/verify_map_font.cjs": "c9aa420b81266313adc8adb53f7e25a2ff89d2f26a1aa2c62ae3a9dd65cb8506",
+    "scripts/serve_probe.py": "7eefe5ce5fa6708b5c41a1defc7123a6a911c1b8e6343ea6c92e06fcebb19b9c",
+    "config/catalog.json": "c7a401f4650eabd9091a6f0ee35dcc9009163bfda90ec0b3c9ee29ace50a1836",
+    "Cargo.lock": "42f3007944f6131c998b58622f667a60e2b0e5836f6fb2dfe75072279e281a31",
+    "apps/web/probe/package-lock.json": "ed148e40f0d7940ba5e69e1e75452ab04351fb58ee3bac2585e6f7ee50aee87d",
+    "apps/web/client/package.json": "55444320825e3b2d7945c84224301c564267f9a17814e0f28cbdfd074aa0a587",
+    "apps/web/client/public/map-font-manifest.json": "29a81b7fb11a3d459472af26842406d9c96c43a4022343fa9132f3b8c507a3e6",
+    "apps/web/client/public/dependency-inventory.json": "44ebb52a51405aa40c9dcdfe4a511547799f2ab1f7cea7157c2349c8684ec26a",
+    "docs/qa/shenyang-geometry-20261027-samples.json": "1b3aa6dd39eab3dbed73104f9e04b1d877bef59b369d278734818c8e595f720a",
+    "docs/evidence/mvt-integrity-build.txt": "935add0740af67c17beb32385795b8ef2b672c36d6e720ce69c20205d7810f24",
+    "docs/evidence/mvt-integrity-unit.txt": "55b8dc03ea09140c60c29b4eff8e3e15136457bc101393fb57a11884e2bad777",
+    "docs/evidence/mvt-integrity-geometry-unit.txt": "9788ecf0c3dd763c54d55814a47795b8ed284caff024caa4c967de9cc080c39a",
+    "docs/evidence/mvt-integrity-before-rejection.txt": "f005044f4eda472c99705ebcc172a492bf82e2e4bc6c46b6945e025d2cb788ba",
+    "docs/evidence/mvt-integrity-preview.png": "9ccb7b3e2428427da29e8f7d780dfb62b20835118e82a7103fb74740d93fde06",
+    "docs/evidence/history/mvt-before-normalization-builder.mjs": "8cbd8507277d860f8f4e7acce47a8595c4555a99ed463398c61ae2d6b49080fa",
+    "docs/evidence/history/mvt-build-before-auto-audit.py": "1883d92faa54a12645d50b8110be1e88337b9877745075305b67ca60866db753",
+    "docs/evidence/history/mvt-catalog-before.json": "d1f962685ecb0410c831902e42b989d2d1685d3a735b3f977b84d6aaff0c364a",
+    "docs/evidence/history/mvt-filter-driver-before.cjs": "0d78fd467162482641d3302ff78ac5b5bed3efdf97bb4adac4ae2f13fef4b565",
+    "docs/evidence/history/mvt-font-driver-before.cjs": "60e13e5d8aff1f206a570f4317805a5d8d78146cdae5f65accb67976ccaf9283",
+    "docs/evidence/history/mvt-font-manifest-before.json": "bd5823774d9dfa9a50995f7d936b6f0dca17d140e6eb1fe39547583b38c0be8e",
+    "docs/evidence/history/mvt-promotion-first-driver.cjs": "f09241cd7e468a6c917400d932a97ac68208c1193ff41abbf7169cfcd41b9c50",
+    "docs/evidence/history/mvt-resource-driver-before.cjs": "b95c570a65f40f137cf14f770294aea663d086a124f966b4843d0cac9b572826",
+    "docs/evidence/history/mvt-server-before.py": "d353f8a59b9578e61f8caab7e31c7211232a5ea07d344f3a95ee656e5496a46d"
+  },
+  "reports": [
+    {
+      "file": "docs/evidence/mvt-integrity-before.json",
+      "sha256": "cb123b0e06db26ede672060070b26cef01911f950bfcccfff07e56a91955e176"
+    },
+    {
+      "file": "docs/evidence/mvt-integrity-candidate.json",
+      "sha256": "e87c1d58f1f825d66c667eea13a09db8c566c71d7b7737852a2ebc53a6e1762d"
+    },
+    {
+      "file": "docs/evidence/mvt-integrity-after.json",
+      "sha256": "6bbb90e418331fa56857a6d0369c688694016402012e494265fd315ba47f5209"
+    },
+    {
+      "file": "docs/evidence/mvt-integrity-snapshot.json",
+      "sha256": "a2096cf3b5eb30c2f1a157d300a0523b31037634e6072c081b41555a1c069edc"
+    },
+    {
+      "file": "docs/evidence/mvt-integrity-sizes.json",
+      "sha256": "f65010bcfc4fb6e64b56cd7c5c9fe33b6433b23ddc3298eb29525bdf950e427f"
+    },
+    {
+      "file": "docs/evidence/mvt-integrity-details.json",
+      "sha256": "fdcde5315075338a0aa16a25e2f3c3d83b31dcc248de7cded1fc35ed011f27d3"
+    },
+    {
+      "file": "docs/evidence/mvt-integrity-browser-matrix.json",
+      "sha256": "a4a6fa93ab472ba2792e8253212c0b12ee6981a619daafc116a1ca9e3a4f100b"
+    },
+    {
+      "file": "docs/evidence/mvt-integrity-promotion.json",
+      "sha256": "a847f0dae3b17a5bd7173d26ed2f91bb52a241fb0cbe5e404624314e5e8d24d4"
+    }
+  ],
+  "browser_reports": [
+    {
+      "original": "chrome\\search\\react-search-report.json",
+      "file": "docs/evidence/mvt-browser-chrome-search.json",
+      "sha256": "5f1652edb1018edd422ea1ad9b72f11e49b797418aa0c50f16a89291e21d7f69",
+      "checks": 9
+    },
+    {
+      "original": "chrome\\filters\\react-filters-report.json",
+      "file": "docs/evidence/mvt-browser-chrome-filters.json",
+      "sha256": "779107c8d45d7ae66c08d38ec73d2a2e053f54d7a6c4d6c0a4d96c37eb04e2fd",
+      "checks": 8
+    },
+    {
+      "original": "chrome\\list\\report.json",
+      "file": "docs/evidence/mvt-browser-chrome-list.json",
+      "sha256": "ce94d6d6290c0e0ba676e6eb32e73380d26542c898bffbcb58e8761b9f85a28c",
+      "checks": 5
+    },
+    {
+      "original": "chrome\\share\\report.json",
+      "file": "docs/evidence/mvt-browser-chrome-share.json",
+      "sha256": "ca326c6d9e556f514b0c334cf305a09c38fbac14ef546c5fdb502c2649a412b4",
+      "checks": 7
+    },
+    {
+      "original": "chrome\\resources\\resource-recovery-report.json",
+      "file": "docs/evidence/mvt-browser-chrome-resources.json",
+      "sha256": "369cee0e427acc9f4f15e5f9deffb8a6276498e92d247cb09ee17f3988453c03",
+      "checks": 10
+    },
+    {
+      "original": "chrome\\font\\report.json",
+      "file": "docs/evidence/mvt-browser-chrome-font.json",
+      "sha256": "d18ec06b2bd8fe5ea393665b38ac59ab97c476a93cd47f825817ab74a53ef413",
+      "checks": 4
+    },
+    {
+      "original": "msedge\\search\\react-search-report.json",
+      "file": "docs/evidence/mvt-browser-msedge-search.json",
+      "sha256": "4079818cae4aeeb23f713862ed76275ee4cfbc932f9d9f3b6ebcb750bd54f8a5",
+      "checks": 9
+    },
+    {
+      "original": "msedge\\filters\\react-filters-report.json",
+      "file": "docs/evidence/mvt-browser-msedge-filters.json",
+      "sha256": "3adfe5cda298c82c04a92db90645a495d8392d47cd0270f9ca73ef52600a4cf6",
+      "checks": 8
+    },
+    {
+      "original": "msedge\\list\\report.json",
+      "file": "docs/evidence/mvt-browser-msedge-list.json",
+      "sha256": "bb939f28bde9ff474e8626eb371b3ca8db2ef4fb39bd773bf8ff519b0978888f",
+      "checks": 5
+    },
+    {
+      "original": "msedge\\share\\report.json",
+      "file": "docs/evidence/mvt-browser-msedge-share.json",
+      "sha256": "696650f4d7aa0112aa92a96a924f5eb9c9d6a3fb2fad1dbf3e629da8a1929f88",
+      "checks": 7
+    },
+    {
+      "original": "msedge\\resources\\resource-recovery-report.json",
+      "file": "docs/evidence/mvt-browser-msedge-resources.json",
+      "sha256": "7f35694bd3556cbcc96ffcfbad80615dcd34465abbb86b1084414f7189c9fc57",
+      "checks": 10
+    },
+    {
+      "original": "msedge\\font\\report.json",
+      "file": "docs/evidence/mvt-browser-msedge-font.json",
+      "sha256": "62f916a689f5d18c54af2b00dbcd84dab39b4829db91344bcf427c906d23dd24",
+      "checks": 4
+    }
+  ],
+  "inputs": {
+    "current_manifest_sha256": "0455a747024aeb11fd399ee2dfd6255ccd6657af8819360da3ca14c4ac80dfc5",
+    "previous_manifest_sha256": "e5d9da79170c41c428d8f971ddc8a3bb12bda3c66b856f4243c912d5469d2404",
+    "current_tiles_index_sha256": "f6cd3bbe0ca2a58a64b71f7282dbb2349664a5820a712c873c49e005fd5efb90",
+    "previous_tiles_index_sha256": "3c7af78a778317872bf1b6603d61b3d1fe5789bad87f66263272c67b7f5289c7",
+    "fixed_pbf_sha256": "3a005e54db7eb595f93a3ec9c07b4bcd5914cad71f3eb3463cb07eab08f2e729",
+    "source_manifest": {
+      "attribution": "OpenStreetMap contributors; regional extract supplied by Geofabrik",
+      "bbox": [
+        123.0,
+        41.5,
+        123.8,
+        42.1
+      ],
+      "bytes": 6506111,
+      "extracted_at": "2026-10-23T05:13:32.674094+00:00",
+      "license": "ODbL 1.0",
+      "metadata_counts": {
+        "changeset": 0,
+        "timestamp": 37233,
+        "version": 37233
+      },
+      "metadata_note": "Geofabrik public extract omits contributor identity and changeset IDs; absent fields stay unlabelled",
+      "missing_refs": 0,
+      "nodes": 32803,
+      "processing_seconds": 43.831,
+      "provider": "Geofabrik / OpenStreetMap contributors",
+      "relations": 207,
+      "scope": "Bounded Shenyang rectangle, not administrative boundary; full selected source objects may extend beyond it",
+      "seed_objects": 10672,
+      "seed_relations": 207,
+      "sha256": "1ee4dc51c8bf8720f66645f8a53df223f8a2c7cce7552a1baccb9506b273c342",
+      "source_pbf_bytes": 28536638,
+      "source_pbf_md5": "c874eac87d81adaa5375c143656ef5f5",
+      "source_pbf_sha256": "9ca145eb49d5913f9b92e320e5983c4d7439532d1c448a291692efc89dd74e83",
+      "source_time": "2026-10-20T20:23:47Z",
+      "source_url": "https://download.geofabrik.de/asia/china/liaoning-261020.osm.pbf",
+      "strategy": "spatial rail-context seeds; full ways; recursive urban/rail-stop/rail-area relation members",
+      "ways": 4223
+    },
+    "prior_manifest_still_matches_historical_qa": true
+  },
+  "toolchain": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "node": "v24.15.0",
+    "cargo": "cargo 1.90.0 (840b83a10 2025-07-30)",
+    "rustc": "rustc 1.90.0 (1159e78c4 2025-09-14)"
+  },
+  "normalization": {
+    "version": "quantized-geometry-v1",
+    "duplicate_vertices_removed": 124,
+    "collapsed_line_parts": 40,
+    "collapsed_polygon_rings": 57,
+    "collapsed_features": 97,
+    "events": [
+      {
+        "tile": "8/215/94.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1263256226",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/42645749",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/205538944",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/385360773",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/423528965",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/905186842",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/907281561",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1366618269",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1366618271",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1366618273",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1367421801",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1367421819",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1370985542",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1370985543",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1370985561",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1371197631",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1372237267",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1372705447",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1372705449",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1372705463",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1372705543",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1373439645",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/66989786",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/66989787",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/66989788",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/659985359",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/659985361",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/659985362",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/659985363",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/659985364",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/659985365",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/659985366",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/659985367",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/659985368",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475506",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475507",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475520",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475521",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475531",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475532",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475552",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475553",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475577",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475578",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1251282620",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1251282628",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1351985518",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1351987033",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1352000514",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1352000515",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1352000521",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1352000524",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1377937973",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1500639967",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1500639968",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1526197077",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_stations",
+        "osm_id": "way/53555662",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_stations",
+        "osm_id": "way/658333063",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/215/95.pbf",
+        "layer": "rail_stations",
+        "osm_id": "way/658333064",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/216/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475506",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "8/216/95.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475507",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/430/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1251282620",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/430/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1251282628",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/793408629",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1169517121",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1173832624",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1351261763",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1352000545",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1370985513",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1372237273",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1372237277",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/66989786",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/66989787",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/659985361",
+        "duplicate_vertices_removed": 2,
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/659985363",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/659985364",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/659985366",
+        "duplicate_vertices_removed": 2,
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/659985367",
+        "duplicate_vertices_removed": 2,
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475506",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475507",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475520",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475521",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475531",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475532",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475552",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475553",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475577",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475578",
+        "duplicate_vertices_removed": 2,
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1251282620",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1251282628",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1351985518",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1352000521",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1352000524",
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1377937973",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1500639967",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1500639968",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1526197077",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "9/431/190.pbf",
+        "layer": "rail_stations",
+        "osm_id": "way/658333063",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "9/431/191.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/607317421",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "10/861/380.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1251282620",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "10/862/380.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/471477516",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "10/862/380.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1409138940",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "10/862/380.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/66989789",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "10/862/380.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1251282620",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "10/862/381.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/232198192",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "10/863/380.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/652423721",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "10/863/380.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/933956103",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "10/863/380.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1467226387",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "10/863/380.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475506",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "10/863/380.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475552",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "10/863/380.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475553",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "10/863/381.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/936154471",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "10/863/381.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475552",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "10/863/381.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/956475553",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "11/1725/761.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/87074122",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "11/1725/761.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1409138938",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "11/1727/763.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/513093169",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "12/3447/1520.pbf",
+        "layer": "rail_facilities",
+        "osm_id": "way/1251282620",
+        "duplicate_vertices_removed": 1,
+        "collapsed_polygon_rings": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "12/3450/1523.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/651695791",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "12/3451/1525.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/229744138",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "12/3452/1523.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1364303247",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "12/3452/1525.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/607142852",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "12/3452/1526.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1537392898",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "12/3454/1522.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/385360736",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "12/3454/1523.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/639473591",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "12/3455/1523.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1203885984",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "12/3456/1523.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1203885984",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "13/6899/3047.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/317156638",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "13/6899/3047.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/317156648",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "13/6901/3046.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/42675547",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "13/6901/3046.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/652078501",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "13/6902/3051.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1018173386",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "13/6903/3045.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1365731281",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "13/6904/3052.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1524241109",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "13/6907/3045.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1125330420",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "13/6907/3048.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/956475573",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "13/6909/3046.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/639473600",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "13/6909/3047.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/639473600",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "13/6909/3055.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/292664091",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "13/6911/3045.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1185664734",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "13/6912/3045.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1186180073",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "13/6912/3046.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1186180073",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "14/13794/6103.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1432294965",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "14/13795/6103.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1432294948",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "14/13802/6098.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1296046739",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "14/13805/6092.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1365731255",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "14/13805/6101.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/742514905",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "14/13805/6101.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1018173343",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "14/13805/6102.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/607427657",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "14/13810/6096.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/687607288",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "14/13811/6099.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/904765282",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "14/13824/6093.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1186152851",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "14/13825/6092.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1561877021",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "14/13826/6091.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1467226381",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "15/27585/12166.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1251282622",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "15/27585/12166.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1251282623",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "15/27590/12206.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1347310323",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "15/27593/12201.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1526422270",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "15/27596/12180.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1352004701",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "15/27596/12192.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1352004731",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "15/27597/12173.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/652078452",
+        "duplicate_vertices_removed": 1,
+        "collapsed_line_parts": 1,
+        "collapsed_features": 1
+      },
+      {
+        "tile": "15/27599/12193.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1409138937",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "15/27601/12177.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1352000520",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "15/27603/12178.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1352029888",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "15/27603/12179.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1352029888",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "15/27612/12202.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1018173363",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "15/27619/12186.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1364948215",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "15/27622/12177.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1211487918",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "15/27622/12190.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1468759093",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "15/27623/12205.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/404366083",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "15/27625/12185.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1348465609",
+        "duplicate_vertices_removed": 1
+      },
+      {
+        "tile": "15/27647/12183.pbf",
+        "layer": "rail_tracks",
+        "osm_id": "way/1186180071",
+        "duplicate_vertices_removed": 1
+      }
+    ]
+  },
+  "validation": {
+    "frontend_checks": 113,
+    "candidate_browser_checks": 86,
+    "primary_promotion_checks": 5,
+    "python_geometry_checks": 7,
+    "python_mvt_gate_fixture_checks": 1,
+    "new_qa_objects": 115,
+    "qa_groups": 45,
+    "human_review_complete": false,
+    "font_binary_unchanged": true,
+    "application_asset_unchanged_after_metadata_build": true
+  },
+  "publication_gate_timing": "Actual PBF build used archived mvt-build-before-auto-audit.py (original CRLF bytes matched earlier source hash). Dataset manually passed identical full MVT audit afterwards. Current build_mvp calls auditor before final rename; main-path controlled subprocess fixture proves failures prevent publish. Original build was not already auto-gated.",
+  "driver_repairs": [
+    "Fixed-snapshot references now derive actual tested root manifest. 8772 candidate matrix then 8766 promotion checked separately.",
+    "First promotion driver expected folded source text in innerText. Opens provenance before final assertions; original driver archived.",
+    "First archive attempt normalized CRLF and failed protected hash assertion. Retried original bytes and matched known prior fingerprint."
+  ],
+  "limits": [
+    "Geometry fault counts overlap. Removed 97 entries are tile/zoom instances, not removed source objects.",
+    "Not full MVT conformance/topology, real-world accuracy, every label/zoom or complete N05 acceptance.",
+    "No new first-view/pan or real-device/reader/recent-two-version performance or independent human QA.",
+    "License inventory is not legal approval or a new full vulnerability audit; existing Rust maintenance warning remains.",
+    "No external publish, commit or push. Large data remain ignored; full MVP objective remains active."
+  ]
+}

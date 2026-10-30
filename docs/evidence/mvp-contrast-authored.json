@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-25T08:08:30.658Z",
+  "snapshot": "shenyang-mvp-20261023",
+  "tracks": 4150,
+  "minimum_center_to_opaque_casing": 3.9098841407064797,
+  "worst": {
+    "id": "way/1018173380",
+    "center": "#A17A3F",
+    "casing": "#ffffff",
+    "ratio": 3.9098841407064797
+  },
+  "badges": [
+    {
+      "line": "shenyang-metro/1",
+      "background": "#E5001C",
+      "foreground": "#ffffff",
+      "ratio": 4.829394985614317
+    },
+    {
+      "line": "shenyang-metro/2",
+      "background": "#F08439",
+      "foreground": "#000000",
+      "ratio": 8.064640189259071
+    },
+    {
+      "line": "shenyang-metro/3",
+      "background": "#E6669F",
+      "foreground": "#000000",
+      "ratio": 6.7657879711768185
+    },
+    {
+      "line": "shenyang-metro/4",
+      "background": "#6E3E94",
+      "foreground": "#ffffff",
+      "ratio": 7.554846131069634
+    },
+    {
+      "line": "shenyang-metro/9",
+      "background": "#0095D2",
+      "foreground": "#000000",
+      "ratio": 6.229607096088787
+    },
+    {
+      "line": "shenyang-metro/10",
+      "background": "#8CBB48",
+      "foreground": "#000000",
+      "ratio": 9.316795274271513
+    },
+    {
+      "line": "osm/relation/5490398",
+      "background": "#2E8B57",
+      "foreground": "#000000",
+      "ratio": 4.946839941254965
+    },
+    {
+      "line": "osm/relation/5490399",
+      "background": "#2E8B57",
+      "foreground": "#000000",
+      "ratio": 4.946839941254965
+    },
+    {
+      "line": "osm/relation/5490400",
+      "background": "#2E8B57",
+      "foreground": "#000000",
+      "ratio": 4.946839941254965
+    },
+    {
+      "line": "osm/relation/17703083",
+      "background": "#2E8B57",
+      "foreground": "#000000",
+      "ratio": 4.946839941254965
+    },
+    {
+      "line": "osm/relation/17703079",
+      "background": "#2E8B57",
+      "foreground": "#000000",
+      "ratio": 4.946839941254965
+    },
+    {
+      "line": "osm/relation/17703082",
+      "background": "#2E8B57",
+      "foreground": "#000000",
+      "ratio": 4.946839941254965
+    }
+  ],
+  "verified_metro_colors": [
+    "1",
+    "10",
+    "2",
+    "3",
+    "4",
+    "9"
+  ],
+  "source_sha256": {
+    "apps/web/client/src/contrast.ts": "22cc1b7051cb96c4c84d514cc7cb59197038cf71f7681c99fcc12c66493b2697",
+    "apps/web/client/src/palette-colours.ts": "16148efd0b97b4a3d1e5e106b4048f457924d42dc8e3810c903f47a4bba0788c",
+    "apps/web/client/src/map-controller.ts": "83d719768bf2ff8ac492f128290229767e205c7699621e0fc29b22d68621a7cc",
+    "apps/web/shared/model.mjs": "4c615df43e17739fa09a11c06251a032f069d49f8175ea941fe252077cf2ea14"
+  },
+  "scope": "Actual published track properties evaluated by MapLibre style-spec using renderer colour expressions. Authored RGB contrast, not antialiasing, all basemap pixels, physical devices or full WCAG acceptance."
+}

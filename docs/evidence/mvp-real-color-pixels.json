@@ -1,0 +1,30 @@
+{
+  "snapshot": "shenyang-mvp-20261023",
+  "scope": "Exact pixels in map-only screenshot, excluding sidebar swatches; not a complete contrast/accessibility audit",
+  "subway_line_colors": {
+    "1": {
+      "color": "#E5001C",
+      "exact_map_pixels": 603
+    },
+    "2": {
+      "color": "#F08439",
+      "exact_map_pixels": 505
+    },
+    "3": {
+      "color": "#E6669F",
+      "exact_map_pixels": 486
+    },
+    "4": {
+      "color": "#6E3E94",
+      "exact_map_pixels": 479
+    },
+    "9": {
+      "color": "#0095D2",
+      "exact_map_pixels": 340
+    },
+    "10": {
+      "color": "#8CBB48",
+      "exact_map_pixels": 363
+    }
+  }
+}

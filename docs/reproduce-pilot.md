@@ -1,4 +1,8 @@
-# 复现本次沈阳探针
+# 复现历史沈阳技术探针
+
+以下命令与 GeoJSON 字节哈希对应 **cc943a0** 版本，应在该历史版本的独立 checkout 执行。
+当前 CLI 已增加分类与名称属性，浏览器也已升级；旧格式切换界面和字节哈希不适用于当前代码。
+新主图请按 [第一批预览指南](preview-v1.md) 构建和启动；历史证据保持不变。
 
 本次实测使用 Windows 11 + Rust 1.90.0、WSL Ubuntu + Osmium 1.16.0 + Tippecanoe 2.49.0。
 下面统一使用 Linux/WSL shell 以避免跨系统路径；首次构建会下载锁定依赖。
@@ -48,7 +52,7 @@ target/release/railway-probe data/processed/shenyang/railway.osm.pbf data/proces
 ```sh
 tippecanoe -Z8 -z14 --no-feature-limit --no-tile-size-limit --no-progress-indicator --exclude=tags -l railway -o data/processed/probe-v2/railway.pmtiles data/processed/probe-v2/railway.geojson
 npm ci --prefix apps/web/probe --ignore-scripts
-python3 scripts/serve_probe.py
+python3 scripts/serve_probe.py --app probe --data-dir data/processed/probe-v2
 ```
 
 打开 `http://127.0.0.1:8765`。验证：

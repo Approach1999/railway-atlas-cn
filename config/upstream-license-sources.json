@@ -1,0 +1,74 @@
+{
+  "components": {
+    "cargo:flat_map@0.0.10": {
+      "checksum": "e4fa2a56a33c493fc81acbad4676c599cf2b128f21462a020043ea1eee46244f",
+      "ecosystem": "cargo",
+      "kind": "crate_vcs",
+      "license_files": [
+        {
+          "file": "third_party/licenses/upstream/cargo-flat_map-0.0.10.LICENSE",
+          "git_blob_sha": "8f71f43fee3f78649d238238cbde51e6d7055c82",
+          "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08",
+          "source_file": "LICENSE",
+          "source_url": "https://github.com/toffaletti/flat_map/blob/ae34e34d206182cb474d4a4304575afbbe532ada/LICENSE"
+        }
+      ],
+      "name": "flat_map",
+      "repository": "toffaletti/flat_map",
+      "retrieved_utc": "2026-10-25T02:30:27.731811+00:00",
+      "upstream_commit": "ae34e34d206182cb474d4a4304575afbbe532ada",
+      "version": "0.0.10",
+      "version_proof": {
+        "file": "third_party/license-provenance/cargo-flat_map-0.0.10.json",
+        "sha256": "a2fa223b20295f906817454e2ecff0cd069d00f72926310800a0b697db45ed93"
+      }
+    },
+    "npm:client:node_modules/@rolldown/binding-win32-x64-msvc@1.2.15": {
+      "ecosystem": "npm",
+      "integrity": "sha512-HFZd2QNQYn1JbIi+Hpd7H+r/lkWxcfIu28nirZ6eCn2LafuvmExMlb/P96Sfx5tf7pPArw39IdhmCF8vmV+NhQ==",
+      "kind": "npm_release_binding",
+      "license_files": [
+        {
+          "file": "third_party/licenses/upstream/npm-_rolldown_binding-win32-x64-msvc-1.2.15.LICENSE",
+          "git_blob_sha": "afc0cdbabfb99ed4030bf9be2b852977f1ed72a0",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+          "source_file": "LICENSE",
+          "source_url": "https://github.com/rolldown/rolldown/blob/89d821ca07cf9ccd84dd92bd3f48af0f579ab21a/LICENSE"
+        }
+      ],
+      "name": "@rolldown/binding-win32-x64-msvc",
+      "repository": "rolldown/rolldown",
+      "retrieved_utc": "2026-10-25T02:30:27.787700+00:00",
+      "upstream_commit": "89d821ca07cf9ccd84dd92bd3f48af0f579ab21a",
+      "version": "1.2.15",
+      "version_proof": {
+        "file": "third_party/license-provenance/npm-_rolldown_binding-win32-x64-msvc-1.2.15.json",
+        "sha256": "b888360fff43c6b4cb3e569e3518fc640e3a981ab3c6dbaf451ae589fe390c63"
+      }
+    },
+    "npm:probe:node_modules/pmtiles@4.5.0": {
+      "ecosystem": "npm",
+      "integrity": "sha512-CBeD4SoUluFziGdy/8k7FOjQxQy486n+929W/tWophauvMICpkZ26vGBWhDt/6b1FZQWNaf4jFdT/5+q0Wii5w==",
+      "kind": "npm_git_head",
+      "license_files": [
+        {
+          "file": "third_party/licenses/upstream/npm-pmtiles-4.5.0.LICENSE",
+          "git_blob_sha": "ec3d69a55220793cb4b2074ebe202df25f9cb417",
+          "sha256": "0371c38f338835f7fc13ed71176f3d92144e22c8b736a31cced57adbbeb647b3",
+          "source_file": "LICENSE",
+          "source_url": "https://github.com/protomaps/PMTiles/blob/3b10e67edb65c6b04549f74c0279cef8328d859c/LICENSE"
+        }
+      ],
+      "name": "pmtiles",
+      "repository": "protomaps/PMTiles",
+      "retrieved_utc": "2026-10-25T02:30:27.748579+00:00",
+      "upstream_commit": "3b10e67edb65c6b04549f74c0279cef8328d859c",
+      "version": "4.5.0",
+      "version_proof": {
+        "file": "third_party/license-provenance/npm-pmtiles-4.5.0.json",
+        "sha256": "270a779499acedb559b9885e50c03ecce3811f2422c58bc805528ced86f57c88"
+      }
+    }
+  },
+  "schema_version": 1
+}

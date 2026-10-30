@@ -1,0 +1,3801 @@
+{
+  "date": "2026-10-27T08:24:13.445Z",
+  "build": {
+    "js": "/assets/index-Cc2uO5a7.js",
+    "css": "/assets/index-DfhfmoQw.css",
+    "index_sha256": "37d0d4a86043589b3f643052b757fd45ed99b32cdb4e8c68be9f6991c7ee148c",
+    "js_sha256": "4e00ce2cbe765b2303b9893ed02eff621da9f3827a4fa6c07413e8e0527ee68d",
+    "css_sha256": "2a296b10af177d6c3c4c14ad65eed3b06119a17c82ebc9c64a12bb0296db8226"
+  },
+  "browser_target": {
+    "channel": "msedge",
+    "version": "156.0.4314.42",
+    "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "product": "Edg/156.0.4314.42",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+    "renderer": "forced SwiftShader",
+    "headless": true,
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64"
+    },
+    "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+  },
+  "mode": "validation",
+  "status": "passes-threshold",
+  "samples": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "selector": "#search",
+      "boundary": ".search-box",
+      "phase": "default",
+      "border_min": 3.846816962915316,
+      "text_ratio": 11.497990005260991,
+      "placeholder_ratio": 5.85664616407681,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          0.9803921568627451,
+          0.9882352941176471,
+          0.9764705882352941
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          0.9803921568627451,
+          0.9882352941176471,
+          0.9764705882352941
+        ],
+        "placeholder": [
+          0.3215686274509804,
+          0.4,
+          0.4235294117647059,
+          1
+        ],
+        "placeholder_opacity": 1,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "selector": "#search",
+      "boundary": ".search-box",
+      "phase": "hover",
+      "border_min": 3.846816962915316,
+      "text_ratio": 11.497990005260991,
+      "placeholder_ratio": 5.85664616407681,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          0.9803921568627451,
+          0.9882352941176471,
+          0.9764705882352941
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          0.9803921568627451,
+          0.9882352941176471,
+          0.9764705882352941
+        ],
+        "placeholder": [
+          0.3215686274509804,
+          0.4,
+          0.4235294117647059,
+          1
+        ],
+        "placeholder_opacity": 1,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "selector": "#search",
+      "boundary": ".search-box",
+      "phase": "keyboard-focus",
+      "border_min": 3.846816962915316,
+      "text_ratio": 11.497990005260991,
+      "placeholder_ratio": 5.85664616407681,
+      "focus_ratio": 4.592601071519334,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          0.9803921568627451,
+          0.9882352941176471,
+          0.9764705882352941
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          0.9803921568627451,
+          0.9882352941176471,
+          0.9764705882352941
+        ],
+        "placeholder": [
+          0.3215686274509804,
+          0.4,
+          0.4235294117647059,
+          1
+        ],
+        "placeholder_opacity": 1,
+        "outline": [
+          0.1568627450980392,
+          0.49019607843137253,
+          0.5686274509803921,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "solid",
+        "focus_visible": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "selector": "#dataset-region",
+      "boundary": "#dataset-region",
+      "phase": "default",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "selector": "#dataset-region",
+      "boundary": "#dataset-region",
+      "phase": "hover",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "selector": "#dataset-region",
+      "boundary": "#dataset-region",
+      "phase": "keyboard-focus",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": 4.737693901348017,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.1568627450980392,
+          0.49019607843137253,
+          0.5686274509803921,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "solid",
+        "focus_visible": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "selector": "#dataset-version",
+      "boundary": "#dataset-version",
+      "phase": "default",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "selector": "#dataset-version",
+      "boundary": "#dataset-version",
+      "phase": "hover",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "selector": "#dataset-version",
+      "boundary": "#dataset-version",
+      "phase": "keyboard-focus",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": 4.737693901348017,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.1568627450980392,
+          0.49019607843137253,
+          0.5686274509803921,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "solid",
+        "focus_visible": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "selector": "#share-link",
+      "boundary": "#share-link",
+      "phase": "default",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 21,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "selector": "#share-link",
+      "boundary": "#share-link",
+      "phase": "hover",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 21,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "selector": "#share-link",
+      "boundary": "#share-link",
+      "phase": "keyboard-focus",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 21,
+      "placeholder_ratio": null,
+      "focus_ratio": 4.737693901348017,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.1568627450980392,
+          0.49019607843137253,
+          0.5686274509803921,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "solid",
+        "focus_visible": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "selector": "#list-query",
+      "boundary": "#list-query",
+      "phase": "default",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "selector": "#list-query",
+      "boundary": "#list-query",
+      "phase": "hover",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "selector": "#list-query",
+      "boundary": "#list-query",
+      "phase": "keyboard-focus",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": 4.737693901348017,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.1568627450980392,
+          0.49019607843137253,
+          0.5686274509803921,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "solid",
+        "focus_visible": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "selector": "#list-kind",
+      "boundary": "#list-kind",
+      "phase": "default",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "selector": "#list-kind",
+      "boundary": "#list-kind",
+      "phase": "hover",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "selector": "#list-kind",
+      "boundary": "#list-kind",
+      "phase": "keyboard-focus",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": 4.737693901348017,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.1568627450980392,
+          0.49019607843137253,
+          0.5686274509803921,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "solid",
+        "focus_visible": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "selector": "#list-share",
+      "boundary": "#list-share",
+      "phase": "default",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "selector": "#list-share",
+      "boundary": "#list-share",
+      "phase": "hover",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "selector": "#list-share",
+      "boundary": "#list-share",
+      "phase": "keyboard-focus",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": 4.737693901348017,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.1568627450980392,
+          0.49019607843137253,
+          0.5686274509803921,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "solid",
+        "focus_visible": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selector": "#search",
+      "boundary": ".search-box",
+      "phase": "default",
+      "border_min": 3.846816962915316,
+      "text_ratio": 11.497990005260991,
+      "placeholder_ratio": 5.85664616407681,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          0.9803921568627451,
+          0.9882352941176471,
+          0.9764705882352941
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          0.9803921568627451,
+          0.9882352941176471,
+          0.9764705882352941
+        ],
+        "placeholder": [
+          0.3215686274509804,
+          0.4,
+          0.4235294117647059,
+          1
+        ],
+        "placeholder_opacity": 1,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selector": "#search",
+      "boundary": ".search-box",
+      "phase": "hover",
+      "border_min": 3.846816962915316,
+      "text_ratio": 11.497990005260991,
+      "placeholder_ratio": 5.85664616407681,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          0.9803921568627451,
+          0.9882352941176471,
+          0.9764705882352941
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          0.9803921568627451,
+          0.9882352941176471,
+          0.9764705882352941
+        ],
+        "placeholder": [
+          0.3215686274509804,
+          0.4,
+          0.4235294117647059,
+          1
+        ],
+        "placeholder_opacity": 1,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selector": "#search",
+      "boundary": ".search-box",
+      "phase": "keyboard-focus",
+      "border_min": 3.846816962915316,
+      "text_ratio": 11.497990005260991,
+      "placeholder_ratio": 5.85664616407681,
+      "focus_ratio": 4.592601071519334,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          0.9803921568627451,
+          0.9882352941176471,
+          0.9764705882352941
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          0.9803921568627451,
+          0.9882352941176471,
+          0.9764705882352941
+        ],
+        "placeholder": [
+          0.3215686274509804,
+          0.4,
+          0.4235294117647059,
+          1
+        ],
+        "placeholder_opacity": 1,
+        "outline": [
+          0.1568627450980392,
+          0.49019607843137253,
+          0.5686274509803921,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "solid",
+        "focus_visible": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selector": "#dataset-region",
+      "boundary": "#dataset-region",
+      "phase": "default",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selector": "#dataset-region",
+      "boundary": "#dataset-region",
+      "phase": "hover",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selector": "#dataset-region",
+      "boundary": "#dataset-region",
+      "phase": "keyboard-focus",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": 4.737693901348017,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.1568627450980392,
+          0.49019607843137253,
+          0.5686274509803921,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "solid",
+        "focus_visible": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selector": "#dataset-version",
+      "boundary": "#dataset-version",
+      "phase": "default",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selector": "#dataset-version",
+      "boundary": "#dataset-version",
+      "phase": "hover",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selector": "#dataset-version",
+      "boundary": "#dataset-version",
+      "phase": "keyboard-focus",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": 4.737693901348017,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.1568627450980392,
+          0.49019607843137253,
+          0.5686274509803921,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "solid",
+        "focus_visible": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selector": "#share-link",
+      "boundary": "#share-link",
+      "phase": "default",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 21,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selector": "#share-link",
+      "boundary": "#share-link",
+      "phase": "hover",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 21,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selector": "#share-link",
+      "boundary": "#share-link",
+      "phase": "keyboard-focus",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 21,
+      "placeholder_ratio": null,
+      "focus_ratio": 4.737693901348017,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.1568627450980392,
+          0.49019607843137253,
+          0.5686274509803921,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "solid",
+        "focus_visible": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selector": "#list-query",
+      "boundary": "#list-query",
+      "phase": "default",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selector": "#list-query",
+      "boundary": "#list-query",
+      "phase": "hover",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selector": "#list-query",
+      "boundary": "#list-query",
+      "phase": "keyboard-focus",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": 4.737693901348017,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.1568627450980392,
+          0.49019607843137253,
+          0.5686274509803921,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "solid",
+        "focus_visible": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selector": "#list-kind",
+      "boundary": "#list-kind",
+      "phase": "default",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selector": "#list-kind",
+      "boundary": "#list-kind",
+      "phase": "hover",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selector": "#list-kind",
+      "boundary": "#list-kind",
+      "phase": "keyboard-focus",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": 4.737693901348017,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.1568627450980392,
+          0.49019607843137253,
+          0.5686274509803921,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "solid",
+        "focus_visible": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selector": "#list-share",
+      "boundary": "#list-share",
+      "phase": "default",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selector": "#list-share",
+      "boundary": "#list-share",
+      "phase": "hover",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": null,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "none",
+        "focus_visible": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "selector": "#list-share",
+      "boundary": "#list-share",
+      "phase": "keyboard-focus",
+      "border_min": 3.9683484328362852,
+      "text_ratio": 11.861242959572856,
+      "placeholder_ratio": null,
+      "focus_ratio": 4.737693901348017,
+      "computed": {
+        "sides": [
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          },
+          {
+            "color": [
+              0.4196078431372549,
+              0.5215686274509804,
+              0.5019607843137255,
+              1
+            ],
+            "style": "solid",
+            "width": 1
+          }
+        ],
+        "inside": [
+          1,
+          1,
+          1
+        ],
+        "outside": [
+          1,
+          1,
+          1
+        ],
+        "text": [
+          0.12549019607843137,
+          0.23137254901960785,
+          0.26666666666666666,
+          1
+        ],
+        "text_background": [
+          1,
+          1,
+          1
+        ],
+        "placeholder": null,
+        "placeholder_opacity": null,
+        "outline": [
+          0.1568627450980392,
+          0.49019607843137253,
+          0.5686274509803921,
+          1
+        ],
+        "outline_width": 3,
+        "outline_style": "solid",
+        "focus_visible": true
+      }
+    }
+  ],
+  "failures": [],
+  "errors": [],
+  "external": [],
+  "scope": "Seven active authored form boundaries in default/hover/actual keyboard focus, desktop and 390px simulation. Opaque computed sRGB pairs only; not native popup/selection rendering, antialiasing, every control, all browsers, devices or complete WCAG."
+}

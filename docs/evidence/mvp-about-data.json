@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-24T09:58:27.418Z",
+  "snapshots": [
+    "shenyang-mvp-20261023",
+    "shenyang-mvp-progress-20261022"
+  ],
+  "checks": [
+    "current map about uses real snapshot metadata and palette verification date; line provenance shows the same actual date and close returns focus",
+    "list using a different immutable snapshot overrides map metadata and requests its own palette; nested close returns to that list record",
+    "WebGL failure list supplies full version/provider metadata and colour provenance without a map controller",
+    "about palette 503 preserves manifest and source view; explicit retry restores real records and meaningful focus without changing URL",
+    "a late palette response from a closed map about cannot overwrite reopened older-snapshot list about",
+    "about can independently retry its manifest before map bootstrap succeeds; recovery does not hide the map resource failure",
+    "390px long provenance remains scrollable without page overflow; sticky 44px close and Tab loop remain available at the bottom",
+    "expired manifest explains retention in about without silently displaying current-version metadata"
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Local Chrome, actual immutable snapshots and injected transport races; no reader, real-device, source-license or full MVP acceptance claim"
+}

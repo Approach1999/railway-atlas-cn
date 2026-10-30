@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-24T15:03:31.6267255Z",
+  "build": "npm run build --prefix apps/web/client: passed",
+  "files": [
+    {
+      "path": "apps/web/client/src/style.css",
+      "sha256": "0e310f1baf84425e6bc640a3c7b524a4eaba8149cbaa97788a6df1cfbc355ff2"
+    },
+    {
+      "path": "scripts/verify_responsive_layout.cjs",
+      "sha256": "4992e53d6563500b9fc1e852809fbb8451c55283f245cc21d498ef2270acd227"
+    },
+    {
+      "path": "apps/web/client/dist/index.html",
+      "sha256": "eb06a0196f00dbac00e0b78970bea0fdf83c8b8dde2fa0c17ad3e06148dcc9b5"
+    },
+    {
+      "path": "apps/web/client/dist/assets/index-CCTZ5JlP.css",
+      "sha256": "64183e34551c7124026294d764d2dcc307a01af140b973dafd080b8c4302a5d5"
+    },
+    {
+      "path": "apps/web/client/dist/assets/index-BhFzn4_4.js",
+      "sha256": "cb11dbd779062bab9035180826ca7b51bb5c659c17f83df8f96915d38e7ce0e1"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+*** You are running in headless mode.
+Dynamically enable window occlusion 0
+Read port: 59237
+[WARN  rkv::backend::impl_safe::environment] `load_ratio()` is irrelevant for this storage backend.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+[ERROR shell_windows::limited_access_features] Error generating feature token: NS_ERROR_FAILURE
+console.error: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIWinTaskbar.getTaskbarProgress]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: moz-src:///browser/components/downloads/DownloadsTaskbar.sys.mjs :: #windowsAttachIndicator :: line 181"  data: no]
+console.error: "Experiment desktop-release-rollout-show-relay-to-all-browsers-next-sign-up-modal-cta has unknown featureId: email-autocomplete-relay"
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+console.error: "Experiment enable-nimbus-unenrollment-synchronization has unknown featureId: nimbusStore"
+console.error: "Experiment private-window-visual-refresh-design-change-only has unknown featureId: feltPrivacy"
+[ERROR shell_windows::taskbar] Error pinning with WinRT API: GetAumid(Error { code: HRESULT(0x80004005), message: "未指定的错误" })
+JavaScript warning: http://127.0.0.1:8766/?snapshot=shenyang-mvp-geometry-20261027&q=%E6%B2%88%E9%98%B3&types=light_rail#map=10.50/41.80000/123.42000, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: http://127.0.0.1:8766/assets/index-COabTbcb.js, line 9: Script terminated by timeout at:
+frame/a<@http://127.0.0.1:8766/assets/index-COabTbcb.js:9:75091
+
+JavaScript error: resource://gre/modules/PrivateBrowsingUtils.sys.mjs, line 50: TypeError: can't access property "QueryInterface", aWindow.docShell is null
+Dynamically enable window occlusion 1

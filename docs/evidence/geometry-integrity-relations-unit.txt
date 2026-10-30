@@ -1,0 +1,18 @@
+test_concave_station_anchor_is_inside_not_bbox_center (test_mvp_data.MembershipTests.test_concave_station_anchor_is_inside_not_bbox_center) ... ok
+test_conflicting_masters_do_not_choose_by_input_order (test_mvp_data.MembershipTests.test_conflicting_masters_do_not_choose_by_input_order) ... ok
+test_directions_share_line_identity_not_false_shared_segment (test_mvp_data.MembershipTests.test_directions_share_line_identity_not_false_shared_segment) ... ok
+test_explicit_master_supplies_missing_identity_without_changing_source_tags (test_mvp_data.MembershipTests.test_explicit_master_supplies_missing_identity_without_changing_source_tags) ... ok
+test_incomplete_relations_cannot_claim_uniquely_colored_segment (test_mvp_data.MembershipTests.test_incomplete_relations_cannot_claim_uniquely_colored_segment) ... ok
+test_master_does_not_override_explicit_ref_or_incompatible_mode (test_mvp_data.MembershipTests.test_master_does_not_override_explicit_ref_or_incompatible_mode) ... ok
+test_only_explicit_stop_area_confirms_station_links (test_mvp_data.MembershipTests.test_only_explicit_stop_area_confirms_station_links) ... ok
+test_operator_not_inferred_from_number_or_bbox (test_mvp_data.MembershipTests.test_operator_not_inferred_from_number_or_bbox) ... ok
+test_relation_color_override_is_separate_from_classification (test_mvp_data.MembershipTests.test_relation_color_override_is_separate_from_classification) ... ok
+test_route_does_not_paint_walking_member_as_subway_track (test_mvp_data.MembershipTests.test_route_does_not_paint_walking_member_as_subway_track) ... ok
+test_shared_segment_uses_fallback_and_retains_both_lines (test_mvp_data.MembershipTests.test_shared_segment_uses_fallback_and_retains_both_lines) ... ok
+test_stop_areas_link_interchange_poi_without_cross_contaminating_platforms (test_mvp_data.MembershipTests.test_stop_areas_link_interchange_poi_without_cross_contaminating_platforms) ... ok
+test_unknown_network_uses_master_typed_identity_and_tram_mode_color (test_mvp_data.MembershipTests.test_unknown_network_uses_master_typed_identity_and_tram_mode_color) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.001s
+
+OK

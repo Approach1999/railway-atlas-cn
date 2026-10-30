@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-23T12:55:18.296Z",
+  "snapshot": "shenyang-mvp-20261023",
+  "checks": [
+    "published line-index coverage matches active immutable snapshot",
+    "station/area search remains distinguishable",
+    "real source switch rendered and selectable at station zoom",
+    "facility category, source and missing association shown",
+    "facility layer toggles independently",
+    "no external requests or page errors"
+  ],
+  "scope": "Real bounded-source facility integration; not full MVP, independent human or real-device acceptance",
+  "errors": []
+}

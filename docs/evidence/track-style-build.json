@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-25T08:12:42.407353+00:00",
+  "unit_tests": {
+    "passed": 65,
+    "failed": 0
+  },
+  "build": "strict TS/checkJs and production build passed",
+  "asset": "/assets/index-Bmlm6J-x.js",
+  "source_and_dist_files": [
+    {
+      "path": "apps/web/client/dist/assets/index-Bmlm6J-x.js",
+      "sha256": "f6540360d6c6177a8a59d6cf35f9dee1e8a014d075e16a221848b8193fcbfa17",
+      "bytes": 1392834
+    },
+    {
+      "path": "apps/web/client/dist/assets/index-_knIG9CR.css",
+      "sha256": "22da1fe20d8e085839a2b1f536cf329fd53a22d452f3240d21dc4b7396cc0781",
+      "bytes": 88281
+    },
+    {
+      "path": "apps/web/client/dist/assets/maplibre-gl-worker-BWso-Bu4.js",
+      "sha256": "85cce15680b9b7a722d6a5acc8b3674fe56c9cd8d9a34199b889e5e5fe43074f",
+      "bytes": 518423
+    },
+    {
+      "path": "apps/web/client/dist/dependency-inventory.json",
+      "sha256": "6b7966d071b60992bb6fbc7d540410fefd12154d9810c6bf8adf5fca53ddc813",
+      "bytes": 173494
+    },
+    {
+      "path": "apps/web/client/dist/index.html",
+      "sha256": "97c82e3e110d24d62625333b24769e1066634757586199107e49cb2b13ff594c",
+      "bytes": 733
+    },
+    {
+      "path": "apps/web/client/dist/third-party-notices.txt",
+      "sha256": "d3e6d63ceb754261ab291751ba29c3c957f9bc1ae1cdd71243d53a7c9e121c27",
+      "bytes": 533309
+    },
+    {
+      "path": "apps/web/client/src/App.tsx",
+      "sha256": "b60031ac1e1c9b453012f26b9c54296e2c515842862afc353508af7227f974e3",
+      "bytes": 8292
+    },
+    {
+      "path": "apps/web/client/src/FeaturePanels.tsx",
+      "sha256": "147ded96902ecd32dcb9517b439aa8deaa46687292602580be8e839950757390",
+      "bytes": 5217
+    },
+    {
+      "path": "apps/web/client/src/MapFeedback.tsx",
+      "sha256": "c23593b3834eb1eefb20d1e14ecdf326324eac924530ff4967785d660840f45d",
+      "bytes": 1425
+    },
+    {
+      "path": "apps/web/client/src/map-controller.ts",
+      "sha256": "83d719768bf2ff8ac492f128290229767e205c7699621e0fc29b22d68621a7cc",
+      "bytes": 46612
+    },
+    {
+      "path": "apps/web/client/src/style.css",
+      "sha256": "63aa90edc90f374f2e1d37bc5c0700848cbaf04e1f4f79c01cb525d5a05535d1",
+      "bytes": 17244
+    },
+    {
+      "path": "apps/web/client/src/track-width.test.mjs",
+      "sha256": "ffeeb3e72de3bab495ab315f504fb7a1ab33ed9df3692d428bcac8feb964ff3e",
+      "bytes": 2831
+    },
+    {
+      "path": "apps/web/client/src/track-width.ts",
+      "sha256": "53c635b6c68cd8865487de37e4644b6c35fd764f9b490af1ee1bec33f48ad848",
+      "bytes": 581
+    },
+    {
+      "path": "apps/web/shared/model.mjs",
+      "sha256": "4c615df43e17739fa09a11c06251a032f069d49f8175ea941fe252077cf2ea14",
+      "bytes": 9153
+    },
+    {
+      "path": "scripts/verify_shared_rules.mjs",
+      "sha256": "fc74f45efd8f3fb91c89f7f7d073e1bfafbde78d8f3990e53d7d75fb0e66c6a4",
+      "bytes": 5190
+    }
+  ],
+  "evidence": [
+    {
+      "path": "docs/evidence/track-width-before.json",
+      "sha256": "ec7b5fd821570505fe62e41101ae08c2db1ccb276d146290890a89bac60c59cc"
+    },
+    {
+      "path": "docs/evidence/track-style-rule-replay.json",
+      "sha256": "3427d08076cdc02450e48a799fa3a1a66f8903ee1aafa373e39d100963c950a7"
+    },
+    {
+      "path": "docs/evidence/track-style-compiler-guard.json",
+      "sha256": "f15f86f6e13e2859c7f3287dd576da337e1b5779ba74d25b4f9269307c8ccf19"
+    },
+    {
+      "path": "docs/evidence/track-style-edge.json",
+      "sha256": "02060cbbf3d0508a5bc3f3e6381841abf83870b9c58a56281d0efae8e9b0b146"
+    },
+    {
+      "path": "docs/evidence/track-outline-edge.png",
+      "sha256": "02bd63a9f13aef387b6221c909dd358d7f3094b2baf3e41810830c1f2cd35a74"
+    },
+    {
+      "path": "docs/evidence/actual-zoom-200.json",
+      "sha256": "f06a79f4cd367971d64a945afda7fa7f2dd3a8370f08944044cb25db275bb34d"
+    },
+    {
+      "path": "docs/evidence/actual-zoom-200-before.png",
+      "sha256": "face5fa8fdb18f0d0742000f60fa8e71ec6f4a3978c2e4fa1d37d7efb306bef0"
+    },
+    {
+      "path": "docs/evidence/actual-zoom-200-after.png",
+      "sha256": "08522b811fb48b849cafbba01986d6da5bb31b48370fe7c0af965cd8182aaf17"
+    },
+    {
+      "path": "docs/evidence/mvp-contrast-authored.json",
+      "sha256": "2c6a686f301f0debf7e5a32df759f2f84cfac72ae4da93f5eda5759577c5a31a"
+    }
+  ],
+  "actual_200_core_walkthrough_passed_for_observed_instance": true,
+  "exact_browser_version_verified": false,
+  "performance_status": "Previous timings are historical; remeasure N01-N04 after actual casing rendering.",
+  "limits": [
+    "One Edge instance with user-set actual 200%; not the two-stable-version browser matrix.",
+    "No full N09, mobile/reader/independent acceptance claim.",
+    "No changed source snapshot, code license selection, commit or push."
+  ]
+}

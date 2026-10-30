@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-28",
+  "scope_requirements": [
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "D05",
+    "D06",
+    "D07",
+    "D08",
+    "D09",
+    "D10",
+    "N01",
+    "N02",
+    "N03",
+    "N04",
+    "N05",
+    "N06",
+    "N07",
+    "N08",
+    "N09",
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05",
+    "R06",
+    "R07",
+    "R08",
+    "R09",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "R18",
+    "R19"
+  ],
+  "requirements_sha256": "17146a125e691614ab0431d4c635b7a0af13c9298712f6b1ead26c18017780fb",
+  "build": {
+    "asset": "/assets/index-DQDm9VWe.js",
+    "index_sha256": "e91c791633e21a3bd6b2bb2f5a90ee66ffb641b74c6b2a3ac1ebf56a8b389d13"
+  },
+  "qa": {
+    "path": "docs/qa/shenyang-geometry-20261027-samples.json",
+    "sha256": "1b3aa6dd39eab3dbed73104f9e04b1d877bef59b369d278734818c8e595f720a",
+    "sample_objects": 115,
+    "groups": 45,
+    "referenced_inputs_verified": true,
+    "human_review_complete": false,
+    "unfilled_fields": {
+      "map_display_review": 115,
+      "classification_review": 115,
+      "deviation": 115,
+      "independent_reviewer_1": 115,
+      "independent_reviewer_2": 115
+    }
+  },
+  "reviewed_performance_records": [
+    {
+      "path": "docs/evidence/geometry-performance.json",
+      "sha256": "d2fb7bbc973bed9a5d29a2eb5512263c99b5ddb4dff2a39228e0cffd5a66d66d",
+      "asset": "/assets/index-Doio8pOp.js",
+      "current": false
+    },
+    {
+      "path": "docs/evidence/urban-boundary.json",
+      "sha256": "3499233ae1bd4466649dcf514b3e6e793ee8c5c7161c02d9ea3c7f43d3c1e839",
+      "asset": "/assets/index-tJmMJPE_.js",
+      "current": false
+    }
+  ],
+  "next_automated_work": "Current-build desktop performance remeasurement",
+  "remaining_gates": [
+    "Real Android/iPhone/tablet performance",
+    "NVDA/VoiceOver and remaining browser/device/contrast coverage",
+    "Two independent classification reviewers: zero severe errors, at least 95 percent agreement",
+    "At least three independent desktop/phone usability participants",
+    "Actual hosting retention/rollback/HTTPS evidence",
+    "Native/transitive/tool/redistribution review and maintenance advisory disposition"
+  ],
+  "mvp_complete": false,
+  "limits": [
+    "Focused remaining-gate audit, not proof that every other requirement is complete.",
+    "No automated or implementing-agent check substitutes for independent reviewers."
+  ]
+}

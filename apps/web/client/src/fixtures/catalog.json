@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "regions": [
+    {
+      "id": "shenyang",
+      "name": "沈阳试验区",
+      "default_view": {
+        "longitude": 123.42,
+        "latitude": 41.8,
+        "zoom": 10.5
+      },
+      "snapshots": [
+        {
+          "id": "shenyang-mvp-20261023",
+          "build_time": "2026-10-23T05:21:42.180277+00:00",
+          "retention_until": "2027-10-23T05:21:42.180277+00:00",
+          "object_list": true
+        },
+        {
+          "id": "shenyang-mvp-accessible-20261022",
+          "build_time": "2026-10-22T11:32:41.610924+00:00",
+          "retention_until": "2027-10-22T11:32:41.610924+00:00",
+          "object_list": true
+        },
+        {
+          "id": "shenyang-mvp-progress-20261022",
+          "build_time": "2026-10-22T11:19:29.288526+00:00",
+          "retention_until": "2027-10-22T11:19:29.288526+00:00",
+          "object_list": false
+        }
+      ],
+      "current_snapshot": "shenyang-mvp-20261023"
+    }
+  ],
+  "fixture_provenance": {
+    "scope": "Small directory metadata fixture only; source datasets are not required to run unit tests.",
+    "manifests": [
+      {
+        "snapshot": "shenyang-mvp-20261023",
+        "manifest_sha256": "e5d9da79170c41c428d8f971ddc8a3bb12bda3c66b856f4243c912d5469d2404"
+      },
+      {
+        "snapshot": "shenyang-mvp-accessible-20261022",
+        "manifest_sha256": "70cd58665f662b0eefd33acfe2f9dcbcdb276f66e03f6701b706448f4b1d6111"
+      },
+      {
+        "snapshot": "shenyang-mvp-progress-20261022",
+        "manifest_sha256": "7b2273911209d16f99a97416de8356f9ef2c6d2f1e688d2dbfb8eff0b2c8f536"
+      }
+    ]
+  }
+}

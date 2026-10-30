@@ -1,0 +1,221 @@
+{
+  "date": "2026-10-27T09:43:03.219360+00:00",
+  "build": {
+    "asset": "/assets/index-Dv8VHl6p.js",
+    "index_sha256": "53b9b83c37eb7c9a111ee026d9290c78eb429b07af99a301299230c705456125",
+    "js_sha256": "d4a294541fec64a33a1bcc1245332ac5aaa6461dd524de426070eec511a3e189"
+  },
+  "sha256": {
+    "apps/web/client/src/App.tsx": "aaf0d87167b23ae654591b763333e5a64b339977a827330d323b1cd49658e1d8",
+    "apps/web/client/src/map-controller.ts": "d62987051801b7ce8a489095407fc9c6533597af0fab2c46c250aa36019be17b",
+    "scripts/verify_panel_keyboard.cjs": "729f28997ad401aefe4e113e87a73728eb970bcfb3490959a36cca4127ceaf36",
+    "scripts/browser_target.cjs": "7bf3c18fef1750a2b4dcb9acb26c7eeea973d015d0892506eb2764e286de6dd5",
+    "scripts/verify_react_search.cjs": "6f8281d1307496ec8159f46d345d0376407acace694f0dd8175c111ea4b6263b",
+    "scripts/verify_browser_zoom.cjs": "0439fbb3d811e3e5482abcfca7b1af30408f1cfca1e4c67fa13f7884138fb106",
+    "docs/evidence/history/panel-keyboard-first-driver.cjs": "ff8880ef31fad5764b29aa7c0b5b1f94ea6e0d42c196849a3ba2edc79b42819a",
+    "docs/evidence/history/panel-keyboard-before-App.tsx": "b60031ac1e1c9b453012f26b9c54296e2c515842862afc353508af7227f974e3",
+    "docs/evidence/history/panel-keyboard-before-controller.ts": "4ff05aa6c1c266df3204b46b9d159a77603bb7e8f4f46ff4967072dd5f2d3dcd",
+    "docs/evidence/panel-keyboard-driver-failure.json": "947fe90f3fb09e5452e16e1baa447406b5834c70673ae24e86a84f04ab57f1c8",
+    "docs/evidence/panel-keyboard-unit.txt": "e6aa65f92499c4b7e8329d8bf2ce9ea6c239d4c7d5959af21bd9e438d13d8523",
+    "docs/evidence/panel-keyboard-before.png": "cb01f13489f60e4134429db7a5c2722580a0de39459fb5098bcf087c4cb4a61d",
+    "docs/evidence/panel-keyboard-after.png": "f3d37d10c00c22fe1bcfdce2cdd604038c52729c02da71a099a75a74dc548ff0"
+  },
+  "reports": [
+    {
+      "file": "docs/evidence/panel-keyboard-before.json",
+      "sha256": "55fa11483686985e44e3996c52bb8a5b4a13f1ecdf703ccad2f1ebdac7fc3e1e",
+      "checks": 6,
+      "task_checks": 0,
+      "failures": [
+        "expanding beyond compact layout restores panel and removes inaccessible collapsed state",
+        "hidden compact toggle returns keyboard focus to visible search",
+        "closing details with hidden search returns focus to usable map canvas"
+      ],
+      "build": {
+        "asset": "/assets/index-CtnPWcB4.js",
+        "index_sha256": "df2515c65609ac60d375b5b8494ab3e58b3b6c1736d0b7b983d305359eec65d1",
+        "js_sha256": "079cde2df7ba775fdbaecae3071d4ec8704d04a67e63c8d2c61db830ec178a56"
+      },
+      "browser": {
+        "channel": "chrome",
+        "version": "156.0.8078.48",
+        "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "product": "Chrome/156.0.8078.48",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      }
+    },
+    {
+      "file": "docs/evidence/panel-keyboard-chrome.json",
+      "sha256": "373ede5da4bff7f088ae62e52573420032bb3eabd9ea461dccacfa6abfc3e1e2",
+      "checks": 8,
+      "task_checks": 0,
+      "failures": [],
+      "build": {
+        "asset": "/assets/index-Dv8VHl6p.js",
+        "index_sha256": "53b9b83c37eb7c9a111ee026d9290c78eb429b07af99a301299230c705456125",
+        "js_sha256": "d4a294541fec64a33a1bcc1245332ac5aaa6461dd524de426070eec511a3e189"
+      },
+      "browser": {
+        "channel": "chrome",
+        "version": "156.0.8078.48",
+        "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "product": "Chrome/156.0.8078.48",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      }
+    },
+    {
+      "file": "docs/evidence/panel-keyboard-edge.json",
+      "sha256": "ee7477c016485ccde1d472896177ada395a9ee2df78a31908e3c40b0d36e3a4e",
+      "checks": 8,
+      "task_checks": 0,
+      "failures": [],
+      "build": {
+        "asset": "/assets/index-Dv8VHl6p.js",
+        "index_sha256": "53b9b83c37eb7c9a111ee026d9290c78eb429b07af99a301299230c705456125",
+        "js_sha256": "d4a294541fec64a33a1bcc1245332ac5aaa6461dd524de426070eec511a3e189"
+      },
+      "browser": {
+        "channel": "msedge",
+        "version": "156.0.4314.42",
+        "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "product": "Edg/156.0.4314.42",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      }
+    },
+    {
+      "file": "docs/evidence/panel-keyboard-chrome-search.json",
+      "sha256": "e7ed6a60c3135c24f833b6eb823a5c5d02771c2c61b3fdffdb52c77decf3a7e7",
+      "checks": 9,
+      "task_checks": 0,
+      "failures": [],
+      "build": null,
+      "browser": {
+        "channel": "chrome",
+        "version": "156.0.8078.48",
+        "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "product": "Chrome/156.0.8078.48",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      }
+    },
+    {
+      "file": "docs/evidence/panel-keyboard-edge-search.json",
+      "sha256": "22b20926635558ea6496b6314bc3c818d776082c5673abcdc1e9fff8234adb7d",
+      "checks": 9,
+      "task_checks": 0,
+      "failures": [],
+      "build": null,
+      "browser": {
+        "channel": "msedge",
+        "version": "156.0.4314.42",
+        "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "product": "Edg/156.0.4314.42",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      }
+    },
+    {
+      "file": "docs/evidence/panel-keyboard-chrome-zoom.json",
+      "sha256": "460047bb9488514f8b01824c92f6032f7a0a20c42553eaef8a4db3c01f4cc819",
+      "checks": 0,
+      "task_checks": 18,
+      "failures": [],
+      "build": {
+        "asset": "/assets/index-Dv8VHl6p.js",
+        "index_sha256": "53b9b83c37eb7c9a111ee026d9290c78eb429b07af99a301299230c705456125",
+        "js_sha256": "d4a294541fec64a33a1bcc1245332ac5aaa6461dd524de426070eec511a3e189"
+      },
+      "browser": {
+        "channel": "chrome",
+        "version": "156.0.8078.48",
+        "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "product": "Chrome/156.0.8078.48",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      }
+    },
+    {
+      "file": "docs/evidence/panel-keyboard-edge-zoom.json",
+      "sha256": "dfbda74320ca1e569ec50572348c602676dc92962b9a86acf10b545350deafb8",
+      "checks": 0,
+      "task_checks": 18,
+      "failures": [],
+      "build": {
+        "asset": "/assets/index-Dv8VHl6p.js",
+        "index_sha256": "53b9b83c37eb7c9a111ee026d9290c78eb429b07af99a301299230c705456125",
+        "js_sha256": "d4a294541fec64a33a1bcc1245332ac5aaa6461dd524de426070eec511a3e189"
+      },
+      "browser": {
+        "channel": "msedge",
+        "version": "156.0.4314.42",
+        "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "product": "Edg/156.0.4314.42",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      }
+    }
+  ],
+  "validation": "Strict TypeScript/production build, 108 unit checks; actual installed Chrome/Edge each eight targeted tasks and nine original search regression groups. Current build each browser two 100% baselines and sixteen actual 200% zoom tasks, complete screenshot dimension guards passed (36 including four baselines).",
+  "before_scope": "Corrected six-check driver has three failed assertions for two real bugs. Final adds precise boundary and return-to-mobile checks. Earlier 768px setup erroneously attempted a mobile-only button, failed before assertions; retained separately, not a product defect.",
+  "implementation": "Restore panel outside max-width700px layout. Recover search focus only when collapsed toggle/body lost its position; preserve canvas focus. Selection close tests real layout visibility and inert/hidden ancestors before choosing origin/search/canvas; visible noncanvas targets may scroll into view.",
+  "limits": [
+    "Native keyboard and real browser CSS breakpoint resizing; not OS reader/IME or physical rotation/device.",
+    "Eight Tab steps sample traversal, not a complete keyboard graph.",
+    "Layout screenshots may include label fades; no complete line label coverage/legibility inference.",
+    "Search regression driver lacks self build binding: executed serially between same-build targeted/zoom suites with no intervening product edits.",
+    "No current performance or complete target browser/reader/device/human QA acceptance; full MVP remains active.",
+    "Shell command entry recovered for this turn and successfully executed build/tests; prior 1909 history is not deleted."
+  ]
+}

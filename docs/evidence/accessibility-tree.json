@@ -1,0 +1,325 @@
+{
+  "date": "2026-10-28",
+  "build": {
+    "asset": "/assets/index-DHoae-HU.js",
+    "index_sha256": "cc48518151754c499909164e166c6b46480488d6f237b3af871cfe38a744564a",
+    "asset_sha256": "11edb4135ffd31bcfcc5b9d441d1395498b9dfea8f374120f3ecb99b498b9cfb"
+  },
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "reports": {
+    "before": {
+      "path": "docs/evidence/accessibility-tree-before.json",
+      "sha256": "d65b31375af13228426c0a2144e22bca2a9fd0dd28ca57f00f655879bb186ce9"
+    },
+    "first-fixed": {
+      "path": "docs/evidence/accessibility-tree-first-fixed.json",
+      "sha256": "4018e54f0e66519bdabb10701bf39c47e3d4666f08cecf4804ad8dd4788d8192"
+    },
+    "chrome": {
+      "path": "docs/evidence/accessibility-tree-chrome.json",
+      "sha256": "aa53f73a2732a3a7b5b98653159b0dd865bc1cd9f0e7932782026f978d01e936"
+    },
+    "edge": {
+      "path": "docs/evidence/accessibility-tree-edge.json",
+      "sha256": "9194a6ba31bbad59a8a3daa9f1553459db68fae5bc962bf609014366f876c8b2"
+    },
+    "panel-chrome": {
+      "path": "docs/evidence/accessibility-tree-panel-chrome.json",
+      "sha256": "38fa060629426ca492da0d000584881c5ae2e09c6afec942497f0bd174b81710"
+    },
+    "panel-edge": {
+      "path": "docs/evidence/accessibility-tree-panel-edge.json",
+      "sha256": "01e9b172b1ed5b1a70c1dcccb4f0f0d577e99f9d96719a0a88d00b8a5b5275e0"
+    },
+    "matrix": {
+      "path": "docs/evidence/accessibility-tree-matrix.json",
+      "sha256": "01edb86d150f5f22fac406a5588cca5f334348eb768750f52270123435433822"
+    },
+    "browser-chrome-search": {
+      "path": "docs/evidence/accessibility-tree-browser-chrome-search.json",
+      "sha256": "c3a7c508cfe72c683352fc479243899abbe1e8555bff5e2ae39b865baee27888"
+    },
+    "browser-chrome-list": {
+      "path": "docs/evidence/accessibility-tree-browser-chrome-list.json",
+      "sha256": "13663024488601ce8c9070ebc15b61e00cf1dc41e889834281e104dcf652590d"
+    },
+    "browser-chrome-share": {
+      "path": "docs/evidence/accessibility-tree-browser-chrome-share.json",
+      "sha256": "f399e84c5a9d711514c652b9d0b5288f721a3655decd3d1c51c14fab9dc07759"
+    },
+    "browser-msedge-search": {
+      "path": "docs/evidence/accessibility-tree-browser-msedge-search.json",
+      "sha256": "6d8a16e6c5e546e9256535cc8dbde219aed657e1cbbe9de4fcea08d698a3e04c"
+    },
+    "browser-msedge-list": {
+      "path": "docs/evidence/accessibility-tree-browser-msedge-list.json",
+      "sha256": "be8c346b34041b8f23000f09805c9e2b2c87f8d05960050488e47ca8b5209ec3"
+    },
+    "browser-msedge-share": {
+      "path": "docs/evidence/accessibility-tree-browser-msedge-share.json",
+      "sha256": "eb74f3c8aa2b4452fbce8a500ec816a5f7ef6d2b0c94b48c57cfd7680420a746"
+    },
+    "before-process": {
+      "path": "docs/evidence/accessibility-tree-before-process.log",
+      "sha256": "550dc3556809c05eaf3ffa67c58b9049c54bcfbb0aeddf62ccf505f577d1447e"
+    },
+    "after-chrome-process": {
+      "path": "docs/evidence/accessibility-tree-after-chrome-process.log",
+      "sha256": "b748a923e035bccf02e2323f3d4ea4b648ba39789f47d3b959a7b19edfa555d7"
+    },
+    "final-chrome-process": {
+      "path": "docs/evidence/accessibility-tree-final-chrome-process.log",
+      "sha256": "a99fd13aa6075b87888e3078c5405726d3289ab6b4272c09fac8fbcc071c57b7"
+    },
+    "final-edge-process": {
+      "path": "docs/evidence/accessibility-tree-final-edge-process.log",
+      "sha256": "a99fd13aa6075b87888e3078c5405726d3289ab6b4272c09fac8fbcc071c57b7"
+    },
+    "panel-chrome-process": {
+      "path": "docs/evidence/accessibility-tree-panel-chrome-process.log",
+      "sha256": "d57bed54d0eb7ab43defcef5600140fe10e1bbb704ee6ed82e9fe996bdec6d67"
+    },
+    "panel-edge-process": {
+      "path": "docs/evidence/accessibility-tree-panel-edge-process.log",
+      "sha256": "d57bed54d0eb7ab43defcef5600140fe10e1bbb704ee6ed82e9fe996bdec6d67"
+    },
+    "build": {
+      "path": "docs/evidence/accessibility-tree-build.log",
+      "sha256": "557063ccf1afd264aa26f4fb1500bdd72e53dd14ef309af8077cf08c9935ad2d"
+    }
+  },
+  "scenes": [
+    {
+      "phase": "before",
+      "name": "initial",
+      "path": "docs/evidence/accessibility-tree/before-initial.json.gz",
+      "sha256": "b8981190670806322d19e83df02b604da9b304e3a1ef78e40427196e6f0c56a5",
+      "raw_sha256": "74d95c578876c66780ae5d565a560279e7892c6b198f7fb063514bdfef5c45b1"
+    },
+    {
+      "phase": "before",
+      "name": "search-options",
+      "path": "docs/evidence/accessibility-tree/before-search-options.json.gz",
+      "sha256": "8b004c8ebf1d614b107fb7599b3ef52107aa933f043014baadcfa5599c9229f7",
+      "raw_sha256": "707075a8d7879e1ae6a366f4b9cc8d8c16ee323b659a9f8f25d4b136af55e9b1"
+    },
+    {
+      "phase": "before",
+      "name": "feature-detail",
+      "path": "docs/evidence/accessibility-tree/before-feature-detail.json.gz",
+      "sha256": "a089b7ff528db18f4cc3f3b8ea016a38314a271570daccecc676ba84a66070e5",
+      "raw_sha256": "6e61bbfa461413b2c9e51b266af80b6e4dfb8d858bf6386c1c997132c5587fc5"
+    },
+    {
+      "phase": "before",
+      "name": "share-modal",
+      "path": "docs/evidence/accessibility-tree/before-share-modal.json.gz",
+      "sha256": "ee569bc2271340ea1dfad09210698a2eaab8bb7f3847cfd497934599950902c8",
+      "raw_sha256": "634aea15a2a1b7e6877e60aec928f418b9bf2ad0049877e0bddd3809361dfbbc"
+    },
+    {
+      "phase": "before",
+      "name": "list-modal",
+      "path": "docs/evidence/accessibility-tree/before-list-modal.json.gz",
+      "sha256": "8adf155d6ef3221c9d41d89de5e1d5c7832b0695a0ba0cd761928f2be0311448",
+      "raw_sha256": "6f46a869e937899d222f5f46049af33c21e2d48cc61c41a117c2acdd19f2c2fc"
+    },
+    {
+      "phase": "before",
+      "name": "checked-filter",
+      "path": "docs/evidence/accessibility-tree/before-checked-filter.json.gz",
+      "sha256": "589705e3465e191a3000ecd0f7f9b14e44e929b1868f0332f853f0b649f17179",
+      "raw_sha256": "7ee5f2630d8c91ed27ee526d591152f47250545f0f2d002482f55ad9256eea85"
+    },
+    {
+      "phase": "before",
+      "name": "empty-recovery",
+      "path": "docs/evidence/accessibility-tree/before-empty-recovery.json.gz",
+      "sha256": "50218d8cfa8d7e9bf93ddbe44c47a98b7c53b2509a5b7ae6a3eee1b0a4270ae2",
+      "raw_sha256": "0a1de6fceabf4d223704b3508c46d0b1712f86a3bfb201cb34e35d84dae9a051"
+    },
+    {
+      "phase": "first-fixed",
+      "name": "initial",
+      "path": "docs/evidence/accessibility-tree/first-fixed-initial.json.gz",
+      "sha256": "719105264d1fc0fa869651312132872f318b2bf6f60f1ecb19e817631244a630",
+      "raw_sha256": "395f0e2ada9ddb33ae34460c5df440c2e75620961305c089d9366e4bbffb1a5c"
+    },
+    {
+      "phase": "first-fixed",
+      "name": "search-options",
+      "path": "docs/evidence/accessibility-tree/first-fixed-search-options.json.gz",
+      "sha256": "77aab051bd3f007fda9e90905d743250ea7012be84817b7529153c8a9051b961",
+      "raw_sha256": "0dcf93fa871107eb15044f7203cf4829e55145224999066eec302ae21137a74f"
+    },
+    {
+      "phase": "first-fixed",
+      "name": "feature-detail",
+      "path": "docs/evidence/accessibility-tree/first-fixed-feature-detail.json.gz",
+      "sha256": "1fa554e12cce31e91ed96ad1c7bae135969f211b79855b7079548eec3a044b78",
+      "raw_sha256": "688df3c3c2bda65f958023f0db69adcc788a5d0eedbdb9d3e30554a67ecef43a"
+    },
+    {
+      "phase": "first-fixed",
+      "name": "share-modal",
+      "path": "docs/evidence/accessibility-tree/first-fixed-share-modal.json.gz",
+      "sha256": "463a61351ae40d665ff42983f00ac8f5bb8067783f91014fba866e3b926b082a",
+      "raw_sha256": "acbb58a1ff13300f4942a82e686625183050b98889612998e92104ac9f3ef249"
+    },
+    {
+      "phase": "first-fixed",
+      "name": "list-modal",
+      "path": "docs/evidence/accessibility-tree/first-fixed-list-modal.json.gz",
+      "sha256": "be541d5115359c698565b098af560d6bb034ecd71c73075fca0bf1ca7a58a004",
+      "raw_sha256": "dc48ad6b6b815001ea770da3d59af83013210e8029b9b83c51cbf822e77c12ce"
+    },
+    {
+      "phase": "first-fixed",
+      "name": "checked-filter",
+      "path": "docs/evidence/accessibility-tree/first-fixed-checked-filter.json.gz",
+      "sha256": "ff5e2917c51d0500c9b591c12d06de84dfa9fcea12061c3453bb69ab4294c516",
+      "raw_sha256": "7d2326977dc83c50b8017d1cc5b67d9686d49dc06ac251c78b70eae46a0f2c93"
+    },
+    {
+      "phase": "first-fixed",
+      "name": "empty-recovery",
+      "path": "docs/evidence/accessibility-tree/first-fixed-empty-recovery.json.gz",
+      "sha256": "8c23ed3b5a6fd93c5fa38d52d9773ae4697d9f9b62be6924944130db5f0b751f",
+      "raw_sha256": "e22588e8c08307ea35453287f3b4b789730e9ec5bdf36992f13226b37b663051"
+    },
+    {
+      "phase": "chrome",
+      "name": "initial",
+      "path": "docs/evidence/accessibility-tree/chrome-initial.json.gz",
+      "sha256": "a91cc8dde78f2850418a3d266082d6322043262ca15b79990e6dce3a9ecbed33",
+      "raw_sha256": "62e6a603fdcb5f88a372fda5ce91dd2ddd458eae1b1a2b3af8ca16ee48501666"
+    },
+    {
+      "phase": "chrome",
+      "name": "collapsed-panel",
+      "path": "docs/evidence/accessibility-tree/chrome-collapsed-panel.json.gz",
+      "sha256": "8ab1b8cf7627cf17cb97534f4aa2392ccd567da3f1e0a256f31336272340f05f",
+      "raw_sha256": "9e9c40035c5a6c8d997a09a40c950a690eab6d6ef69381c7e1c9e48e5a17b2e7"
+    },
+    {
+      "phase": "chrome",
+      "name": "search-options",
+      "path": "docs/evidence/accessibility-tree/chrome-search-options.json.gz",
+      "sha256": "151cb3722bd06ea2d8a4d122f8727f73b98fdc22f6bfd3a094758d875283a7e2",
+      "raw_sha256": "b6df7450e953fe1d9f9ee71677b770a105d1f962cbdc9afa797336544ee70c79"
+    },
+    {
+      "phase": "chrome",
+      "name": "feature-detail",
+      "path": "docs/evidence/accessibility-tree/chrome-feature-detail.json.gz",
+      "sha256": "118235cc73983a9127713f7f8ca11ce26f7913f5ab46d4ba63f8090cfc9f5ecd",
+      "raw_sha256": "c00f5a0a647ac90be98e3f48530e011bb6db990fa6c1e4e2ca3bbcd5e8801148"
+    },
+    {
+      "phase": "chrome",
+      "name": "share-modal",
+      "path": "docs/evidence/accessibility-tree/chrome-share-modal.json.gz",
+      "sha256": "0b879eb31f309be2a8e86b5e1f486b83e9b21746b45f4cebe01f5c167390034c",
+      "raw_sha256": "ce2d9cda1b5c670da92eb049daae73f6ace39b376fedfff85d463521e68169fe"
+    },
+    {
+      "phase": "chrome",
+      "name": "list-modal",
+      "path": "docs/evidence/accessibility-tree/chrome-list-modal.json.gz",
+      "sha256": "16597b0eb2f56214f7bfd53b686b8e67e5a3a1638427af97da262c4b72dcca0c",
+      "raw_sha256": "0a2fa80d50883329ff58059024c3496837a39a9d3de176308f05169160085e94"
+    },
+    {
+      "phase": "chrome",
+      "name": "checked-filter",
+      "path": "docs/evidence/accessibility-tree/chrome-checked-filter.json.gz",
+      "sha256": "d50954bbb1c9875311fa9e11fb4e52fe8c331d8f136b6ed49479f8d7260a3c76",
+      "raw_sha256": "3ac9ccdaf91c7738b746803951616013bc1ece613d9e9ab02caf968801286188"
+    },
+    {
+      "phase": "chrome",
+      "name": "empty-recovery",
+      "path": "docs/evidence/accessibility-tree/chrome-empty-recovery.json.gz",
+      "sha256": "305e6832e048d705d69aff82709259b7a0bdda89d690c49e5ad3ef2a26d704c0",
+      "raw_sha256": "f3afcff0d51a7b25fa214d7ece13a901fca503fee28bf8cf275ede219a41e583"
+    },
+    {
+      "phase": "edge",
+      "name": "initial",
+      "path": "docs/evidence/accessibility-tree/edge-initial.json.gz",
+      "sha256": "356b77a8e7d654f4b4c672f0d028be9c26956bd610720cd67f40374bdd70bdfd",
+      "raw_sha256": "a3ad518b4fd5fa49ea89ad03d18e21740c14d15cd2cb63f922e8268366b3ed43"
+    },
+    {
+      "phase": "edge",
+      "name": "collapsed-panel",
+      "path": "docs/evidence/accessibility-tree/edge-collapsed-panel.json.gz",
+      "sha256": "a36230155dee6573b3603c00d00ba8210fd6f17aab8b65ef3c05b0d846b42504",
+      "raw_sha256": "cc79ca47ddebba99d4ada2df2c9e0d69387d4f1028bf47091630c33c4a5b110a"
+    },
+    {
+      "phase": "edge",
+      "name": "search-options",
+      "path": "docs/evidence/accessibility-tree/edge-search-options.json.gz",
+      "sha256": "d3bdd76f5e34c4054d345eefdfa81ff3edcebcbb39cbe6b420c011fd8449cdc4",
+      "raw_sha256": "11af59d8d4244917f00d1532e58e360ffadf14f316d0d064f8f02bc048947d5a"
+    },
+    {
+      "phase": "edge",
+      "name": "feature-detail",
+      "path": "docs/evidence/accessibility-tree/edge-feature-detail.json.gz",
+      "sha256": "7f542d5399dd8b70aff78d2a7444201a3f30ff668aff4ab3049f14ffc665de0d",
+      "raw_sha256": "1053323caf9355deb7068ad608aafdd35768120c826826c403140d7ad5f40e6d"
+    },
+    {
+      "phase": "edge",
+      "name": "share-modal",
+      "path": "docs/evidence/accessibility-tree/edge-share-modal.json.gz",
+      "sha256": "7407657f5f7947c06d71ef3d72c6742962437ef7a6ba6d4c95b79e3d51cab894",
+      "raw_sha256": "65a5a2406fadd619a693825b6a96f6f79710c0117f91c529cd3474836cfe7068"
+    },
+    {
+      "phase": "edge",
+      "name": "list-modal",
+      "path": "docs/evidence/accessibility-tree/edge-list-modal.json.gz",
+      "sha256": "d9a835d1bc089d90542bdf675461c4a5eae652615b5b99a72f72b3fd65ce911a",
+      "raw_sha256": "feb1f537387f2c6c5b3dd0eae9bdf76b2afd28143d70c6c27fab24e0e565d20e"
+    },
+    {
+      "phase": "edge",
+      "name": "checked-filter",
+      "path": "docs/evidence/accessibility-tree/edge-checked-filter.json.gz",
+      "sha256": "1930b7f0856836688ae1e50af847fb9d1ffd7b477e616d39a2d9c7a120ca8f3b",
+      "raw_sha256": "aca0aea3ae04b45228d58d9f454a241b47e660ccf5225bc8e6e3696786276ee2"
+    },
+    {
+      "phase": "edge",
+      "name": "empty-recovery",
+      "path": "docs/evidence/accessibility-tree/edge-empty-recovery.json.gz",
+      "sha256": "89f9fd33e580b672b79ba9c0e17cc984af8eafbb355b706ee9179dab38b3be1d",
+      "raw_sha256": "081c0724c9143dc261441c607f5755b22f7d98fb0f9a18a7d96e61903ee114ad"
+    }
+  ],
+  "source_sha256": {
+    "apps/web/client/src/App.tsx": "98768bfd3269e91fcc642b799e318c5aa6d5827020a13346ab735c9174dff8fd",
+    "apps/web/client/src/map-controller.ts": "70666b19f64f5a6a9cc861bb00e02485d81e7b705a3909ccd6461b15ba59212e",
+    "scripts/verify_accessibility_tree.cjs": "1a01bef762559d991cf26d41ad6217b6538ef3b8ccf911d18ec2690310e0fbc4",
+    "docs/evidence/history/accessibility-tree-before-app.tsx": "e164c5c441a47aab796cd8efe520c12326b617efd77716fabefa51fec82ddd5b",
+    "docs/evidence/history/accessibility-tree-first-verifier.cjs": "919c7f933387512092e21aaac34ec7531d07b1eaeea4cf31233192fb97e693bf"
+  },
+  "checks": {
+    "original_failed_checks": 2,
+    "current_accessibility_tree_checks": 28,
+    "panel_keyboard_regression_checks": 16,
+    "search_list_share_regression_checks": 42,
+    "typecheck_build_passed": true,
+    "raw_tree_archives_lossless_verified": true,
+    "preview_build_hash_matches": true,
+    "preview_http_status": 200
+  },
+  "limits": [
+    "Browser-computed CDP accessibility tree, finite scenes. Not actual NVDA/VoiceOver speech or OS accessibility bridge acceptance.",
+    "No new Firefox, performance, actual-200-percent or physical-device remeasurement; previous reports retain their build identities.",
+    "Compressed trees retain all original nodes, names, states and sources; reports are unmodified."
+  ]
+}

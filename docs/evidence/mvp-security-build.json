@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-25T02:11:39.2072827Z",
+  "files": [
+    {
+      "path": "config/security-headers.json",
+      "sha256": "6a8f18524e2ced7cde5750e8f8263a9936189cae7796d0b535dc979f781d4c11"
+    },
+    {
+      "path": "scripts/serve_probe.py",
+      "sha256": "197452d42f092aeafb368933c872936391329e457703ef675d51f3d548a801e5"
+    },
+    {
+      "path": "scripts/verify_security_headers.py",
+      "sha256": "3aff1dd6683a5ebe25462a7b5c591ff7224c548950707f6be326276ca8ec0e55"
+    },
+    {
+      "path": "scripts/verify_security_browser.cjs",
+      "sha256": "15db196a0e9ae7bc7ed71c8443bf539a1b30b4d31ce55f2b881bf5d5b961874b"
+    },
+    {
+      "path": "apps/web/client/dist/index.html",
+      "sha256": "eb06a0196f00dbac00e0b78970bea0fdf83c8b8dde2fa0c17ad3e06148dcc9b5"
+    }
+  ]
+}

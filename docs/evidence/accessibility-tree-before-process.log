@@ -1,0 +1,24 @@
+{"checks":11,"failed":[{"name":"one named map region, without duplicate nested landmarks","passed":false},{"name":"map region exposes its keyboard instructions","passed":false}]}
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+
++ [
++   {
++     name: 'one named map region, without duplicate nested landmarks',
++     passed: false
++   },
++   {
++     name: 'map region exposes its keyboard instructions',
++     passed: false
++   }
++ ]
+- []
+
+    at C:\Users\21965\Documents\Codex\2026-10-22\referenced-chatgpt-conversation-this-is-an\work\checkout\scripts\verify_accessibility_tree.cjs:37:197 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: [Array],
+  expected: [],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}

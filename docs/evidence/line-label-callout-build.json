@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-26T14:28:05.231502+00:00",
+  "product_asset": "/assets/index-BPD_xofR.js",
+  "adopted": false,
+  "unit_tests": "93 passed in prior turn; candidate/fragment algorithms unchanged and hashes revalidated; not rerun for a static unused layout module.",
+  "build": "New layout strict typecheck and production build passed; product JS byte-identical and unused layout excluded from the bundle. Existing bundle-size warning retained.",
+  "checks": {
+    "positive_views": 4,
+    "actual_cjk_caption_boxes": 43,
+    "negative_vertical_boxes_rejected": 20
+  },
+  "comparison": [
+    {
+      "scene": "overview-z10",
+      "anchors_padding12": 53,
+      "anchors_padding20": 46,
+      "short_padding12": 27,
+      "short_padding20": 20,
+      "same_name_texts": [
+        "于揽三线",
+        "于虎线",
+        "京哈线",
+        "京哈高速线",
+        "沈丹客专线",
+        "沈丹线",
+        "沈于线",
+        "沈佳高速线",
+        "沈吉线",
+        "沈大线",
+        "沈大高速线",
+        "沈山线",
+        "沈金线",
+        "浑揽线",
+        "田东线",
+        "苏抚线"
+      ]
+    },
+    {
+      "scene": "overview-z10-5",
+      "anchors_padding12": 56,
+      "anchors_padding20": 51,
+      "short_padding12": 28,
+      "short_padding20": 23,
+      "same_name_texts": [
+        "于揽三线",
+        "于虎线",
+        "于马三线",
+        "京哈线",
+        "京哈高速线",
+        "沈于线",
+        "沈佳高速线",
+        "沈吉延长线",
+        "沈吉线",
+        "沈大线",
+        "沈大高速线",
+        "沈山线",
+        "沈金线",
+        "浑揽线",
+        "田东线",
+        "苏抚线"
+      ]
+    },
+    {
+      "scene": "yard",
+      "anchors_padding12": 15,
+      "anchors_padding20": 14,
+      "short_padding12": 1,
+      "short_padding20": 0,
+      "same_name_texts": [
+        "于虎线",
+        "京哈高速线",
+        "西转出发线",
+        "转西直通线"
+      ]
+    },
+    {
+      "scene": "tram",
+      "anchors_padding12": 6,
+      "anchors_padding20": 6,
+      "short_padding12": 0,
+      "short_padding20": 0,
+      "same_name_texts": [
+        "有轨电车 1号线",
+        "有轨电车 2号线",
+        "沈阳有轨电车"
+      ]
+    }
+  ],
+  "source_and_evidence_sha256": {
+    "apps/web/client/src/line-label-presentation.ts": "66be279ede4eea13c7296a1151f11a6746c09422cd3218749e5d393150d686fa",
+    "apps/web/client/src/line-label-candidates.ts": "ebbae891c5c6cffbfa5e47aad18e2f744e6e69dfa3a73c28f7f8485913cec1c2",
+    "apps/web/client/src/line-label-fragments.ts": "cbb98818cd87f12e5fc87af25ece19b24a450b1f2dd13dea760a714dde21406f",
+    "scripts/prototype_line_labels.cjs": "8a2b63efd72208e38da901c26d9b5b880e12d251d373f4c4ea627d3ae4795c60",
+    "scripts/caption_layout_guard.cjs": "b6cb82cd91dfa6cf8c6b647c7cc13fbbfc05012553557ce6511ee3923eb61bb3",
+    "scripts/audit_line_label_prototype.mjs": "978b67b92c27afa282f4605f15907460ff4cbc72c3e033a54537e2444b94a08a",
+    "apps/web/client/node_modules/maplibre-gl/src/symbol/symbol_layout.ts": "5ed922307bf8986438ce5ba4eb803a1a4270b0c9c1bcc4caea65c75688979a78",
+    "apps/web/client/dist/index.html": "e6aa1bf3fd816c253f19884b46252960d0ef5a9a5a8cfe61480cc2bd36a2cf40",
+    "apps/web/client/dist/assets/index-BPD_xofR.js": "04f6f3f9b0055038d743f77dbee2a30555ba4bb6178373c1df9c47976dc50609",
+    "docs/line-label-callout.md": "5cf0a8a16bfc500b13621acfe079113995618c77a883cc96792d551d27860128",
+    "docs/evidence/line-label-callout-padding12.json": "ef96f76c11ec6d16858c6e4abeab46627a62b089086e1e0ea001f959f1a616a2",
+    "docs/evidence/line-label-callout-padding20.json": "72c6710d6b62aa4f45e03c691c2b20a33c59148ec630eacbeee7ba693e24f486",
+    "docs/evidence/line-label-callout-negative.json": "9740f677ba2d6608b5d8bb7fed1ce97aed39c29350fc1374d43aa7d085c918fb",
+    "docs/evidence/line-label-callout-audit.json": "e7017bf133cc13f203ba93d48e4afd4d3f53f2f5a198537c246b5720a2257202",
+    "docs/evidence/line-label-callout-overview.png": "1053a88f37e071dfbd28ead7da5794a7d4569d11bd37d4608b69a6de2085325b"
+  },
+  "correction": "Previous screenshot direction attribution was not established: point text-max-width=0 wrapped CJK into vertical columns. Corrected positive width and native negative/positive shape guard now record the actual layout.",
+  "calibration": [
+    "Initial shape reader shadowed the canvas box variable; fixed before successful measurements.",
+    "Map.loaded alone could be observed before new source buckets entered placement; wait now verifies bucket opacity inputs/retained query data and completed fade. Zero-anchor probe is not a product blank-map claim."
+  ],
+  "limits": [
+    "Prototype only; product click/selection, dynamic/source/filter/snapshot lifecycle and performance still need integration.",
+    "Shape guard covers observed captions containing three or more CJK characters, not every font/script or glyph-pixel contrast.",
+    "One hidden name still appears only under isolated-name layout; complete view is not claimed to show it.",
+    "Full MVP/independent human QA/readers/devices/browser matrix remain open."
+  ]
+}

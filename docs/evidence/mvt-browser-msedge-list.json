@@ -1,0 +1,30 @@
+{
+  "browser_target": {
+    "channel": "msedge",
+    "version": "156.0.4314.42",
+    "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "product": "Edg/156.0.4314.42",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+    "renderer": "forced SwiftShader",
+    "headless": true,
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64"
+    },
+    "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+  },
+  "date": "2026-10-27T15:32:18.287Z",
+  "server_url": "http://127.0.0.1:8772",
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "checks": [
+    "on-demand list supports keyboard selection, source details, focus return and map focus",
+    "real source facilities have list details and snapshot/feature share links",
+    "simulated context loss opens the list and modal contains keyboard focus",
+    "WebGL unavailable automatically opens usable list; 390px layout fits and list can reopen",
+    "index and detail 503 errors retry independently, preserve loaded records, and empty filters recover"
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Selected installed browser keyboard, simulated WebGL failure and 390px viewport; not full WCAG/NVDA/VoiceOver/real-device acceptance"
+}

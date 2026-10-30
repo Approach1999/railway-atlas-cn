@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-28",
+  "build": {
+    "asset": "/assets/index-CtFMFhkg.js",
+    "index_sha256": "33bb576b7238dedf30b1ad7c560cb6d009e4658d01b69fee4b26c075a62f578d",
+    "asset_sha256": "b76a3028a98c89a4580f8e40e35ab16b817671d2b9ee32d47872f7abd30bb903"
+  },
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "manifest_sha256": "0455a747024aeb11fd399ee2dfd6255ccd6657af8819360da3ca14c4ac80dfc5",
+  "reports": {
+    "before": {
+      "path": "docs/evidence/other-grade-before.json",
+      "sha256": "5519bc33cb7cbe9b53b3926c081873f599d8ec9d84cb569e7b46855bb08371d9"
+    },
+    "intermediate-chrome": {
+      "path": "docs/evidence/other-grade-intermediate-chrome.json",
+      "sha256": "d24f8e5ee6b51f24ff35b5145d15a018d17d466a13e0fefe7cc5a5d84e9e88a3"
+    },
+    "chrome": {
+      "path": "docs/evidence/other-grade-chrome.json",
+      "sha256": "7991f46abe92e86b2dbf2504bd3340735666921685fe9ae15c8d4434d8595405"
+    },
+    "edge": {
+      "path": "docs/evidence/other-grade-edge.json",
+      "sha256": "9348ac7217f346b9874c53bc2cbe08f87a4b532b4a620f71ed6f2a80cfaf0149"
+    },
+    "first-failure-failure": {
+      "path": "docs/evidence/other-grade-first-failure-failure.json",
+      "sha256": "9183c295fae32faffa239678b6aece29a99d3b2684c77c57b1431f2c4704c525"
+    },
+    "first-failure-failure-0": {
+      "path": "docs/evidence/other-grade-first-failure-failure-0.png",
+      "sha256": "b4162c1de061f9d7dd5d58a966b773f9fe0733c7e8f764331b6dbeb29e7735d8"
+    },
+    "second-failure-failure": {
+      "path": "docs/evidence/other-grade-second-failure-failure.json",
+      "sha256": "c85204e0de4a347f6d98359e4668b3bf9d9b3962f315a420fa3e6554b5ff66ae"
+    },
+    "second-failure-failure-0": {
+      "path": "docs/evidence/other-grade-second-failure-failure-0.png",
+      "sha256": "3ad648527d87835b7bfce3e713ed9c61d79877b58cf4d3c7a8cf97dd433ea4bd"
+    },
+    "before-process": {
+      "path": "docs/evidence/other-grade-before-process.log",
+      "sha256": "ce1e88691a9d0f55fd0c4145ec8096709ebf50cb7a63a5b2d746e7a51cc514c1"
+    },
+    "after-chrome-process": {
+      "path": "docs/evidence/other-grade-after-chrome-process.log",
+      "sha256": "490390a1e4645cf20b576105b01b0c93a4ee8c787b59fc3a5e6adb9326b9210f"
+    },
+    "final-chrome-process": {
+      "path": "docs/evidence/other-grade-final-chrome-process.log",
+      "sha256": "bb7fb24b159e427546c841218eed5d156ab3a872d29345252824ad19f8fcb624"
+    },
+    "complete-chrome-process": {
+      "path": "docs/evidence/other-grade-complete-chrome-process.log",
+      "sha256": "30fd4fb57c656451a684277380e8897b718aecb974624366b41ab7aef5e8c81e"
+    },
+    "release-chrome-process": {
+      "path": "docs/evidence/other-grade-release-chrome-process.log",
+      "sha256": "30fd4fb57c656451a684277380e8897b718aecb974624366b41ab7aef5e8c81e"
+    },
+    "release-edge-process": {
+      "path": "docs/evidence/other-grade-release-edge-process.log",
+      "sha256": "30fd4fb57c656451a684277380e8897b718aecb974624366b41ab7aef5e8c81e"
+    },
+    "unit-process": {
+      "path": "docs/evidence/other-grade-unit-process.log",
+      "sha256": "fb7bcf2d0492ca5e9f4606047d994a70e354715b99fa967808ed74f8a2cf757c"
+    },
+    "build-process": {
+      "path": "docs/evidence/other-grade-build-process.log",
+      "sha256": "a03d0ba85c3295b267d19200927c8365ec226d804bcf4ff4f9ebc6c7ad0be8f5"
+    },
+    "final-build-process": {
+      "path": "docs/evidence/other-grade-final-build-process.log",
+      "sha256": "9e35157eb8816fa37ab577bbf504a686a60d73e6936ae531ac51a562c0c83af7"
+    },
+    "model-scope": {
+      "path": "docs/evidence/other-grade-model-scope.json",
+      "sha256": "f144098470a28a112c705296f339f0144e77fdfc7564b1a39edc2a010a2aef65"
+    },
+    "matrix": {
+      "path": "docs/evidence/other-grade-matrix.json",
+      "sha256": "b782ceca34c0ac5647197733ce8267cd7f7ff0788517172dc97cc28b9f2712c8"
+    },
+    "browser-chrome-filters": {
+      "path": "docs/evidence/other-grade-browser-chrome-filters.json",
+      "sha256": "37ce0d68c12b7f99cae0e7dd02c9cc3340363f6125a93e0e140afa5db21578d2"
+    },
+    "browser-chrome-list": {
+      "path": "docs/evidence/other-grade-browser-chrome-list.json",
+      "sha256": "dfdfabc647ae3663a89d57a6c068d8c5da98084708f4e1fc20c5ce783b307fa6"
+    },
+    "browser-chrome-share": {
+      "path": "docs/evidence/other-grade-browser-chrome-share.json",
+      "sha256": "28d6c9a5d953acbf988184c3add8d407de3096e7b83faf0eb3c6f9d106cfa50d"
+    },
+    "browser-chrome-resources": {
+      "path": "docs/evidence/other-grade-browser-chrome-resources.json",
+      "sha256": "415bbf01a2b0393b6208877ca60a40e3548059689122386f0e354d89fb95d96f"
+    },
+    "browser-msedge-filters": {
+      "path": "docs/evidence/other-grade-browser-msedge-filters.json",
+      "sha256": "8e44ca1c9dc319b302869b87866a9376016e326d9d26e50216f732e483a67943"
+    },
+    "browser-msedge-list": {
+      "path": "docs/evidence/other-grade-browser-msedge-list.json",
+      "sha256": "da565d36c349fe15e6fc910be137eb0c79e493060210cb84344125dab7ca3ee3"
+    },
+    "browser-msedge-share": {
+      "path": "docs/evidence/other-grade-browser-msedge-share.json",
+      "sha256": "b5821511ecc815e425f13c62569cb1489e4d956a7c2150808aa0894cde19702c"
+    },
+    "browser-msedge-resources": {
+      "path": "docs/evidence/other-grade-browser-msedge-resources.json",
+      "sha256": "38caea7808f9a3f1980ab6dd75746500efe816829240c7dd23adf8e521c8096b"
+    }
+  },
+  "source_sha256": {
+    "apps/web/shared/model.mjs": "442bd9880b4913b5ed5ee01f426feda759cbf6fe5638c92a134eda96c0f75bfd",
+    "apps/web/client/src/RailwayControls.tsx": "2b5f0233a5113fb7682b6d72b579f11f976ea63d62befb0ea72882942e6eb848",
+    "apps/web/client/src/AccessibleExplorer.tsx": "b533a811c84046eae5565d4ed6cd6d610819b484d9f528825bfd1efab520370b",
+    "scripts/verify_other_grade.cjs": "5f4c8d67f1b29314c9d9cd401a07ccacd7217689cf25f20895fc6622d2be0388",
+    "docs/evidence/history/other-grade-before-model.mjs": "9b2200ab806692934afd4c4183ea197e211eb4054acf6cf73bdcad82be7cd334",
+    "docs/evidence/history/other-grade-before-controls.tsx": "c520294917ebfbecbfcfecd83e4131a900e2db78acd551fc6a18e30401ddd400",
+    "docs/evidence/history/other-grade-before-list.tsx": "c0ae18351a00e50a517ab26dbe2f60122525480bc36cf1278fdaadab49138266",
+    "docs/evidence/history/other-grade-first-verifier.cjs": "f060e0bd1a36fb79c6f381deaedaf90c8b201b4ebbe3a53d8d6c1dec6eb19226",
+    "docs/evidence/history/other-grade-second-verifier.cjs": "802204e36877dd5f56aaf8b84a015d681ed0be01d18a64b6fca3580064add48e"
+  },
+  "checks": {
+    "missing_controls_reproduced_before": true,
+    "unit_passed": 119,
+    "typecheck_build_passed": true,
+    "new_grade_browser_checks": 18,
+    "regression_checks": 60,
+    "model_functions_unchanged": 8,
+    "current_source_other_tracks": 0,
+    "source_snapshot_unchanged": true,
+    "archive_hashes_verified": true,
+    "preview_build_matches": true,
+    "preview_http_status": 200
+  },
+  "limits": [
+    "No other-grade source tracks in the current snapshot: valid filter controls tested, not fabricated source rendering.",
+    "Legacy nine-entry palette is a controlled compatibility case.",
+    "Native keyboard tests in headless installed Chrome/Edge, 1440 and 390 CSS widths; not real mobile/reader/actual-zoom acceptance.",
+    "Two initial harness assumptions corrected and their failures retained; no production legend behavior changed to satisfy those assumptions.",
+    "No current-build performance or Firefox remeasurement."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-25T02:09:06.241389+00:00",
+  "server_url": "http://127.0.0.1:8781",
+  "snapshot": "shenyang-mvp-20261023",
+  "checks": [
+    "negotiated gzip round trip and encoded Content-Length",
+    "Vary separates encodings",
+    "byte ranges use original immutable bytes",
+    "explicit gzip refusal returns identity"
+  ],
+  "original_bytes": 30985,
+  "gzip_bytes": 13733
+}

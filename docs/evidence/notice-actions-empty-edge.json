@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-28T05:20:32.549Z",
+  "browser_target": {
+    "channel": "msedge",
+    "version": "156.0.4314.42",
+    "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "product": "Edg/156.0.4314.42",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+    "renderer": "forced SwiftShader",
+    "headless": true,
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64"
+    },
+    "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+  },
+  "before": false,
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "source_sha256": "7cd26b98c1f8d7cbabccaa3c68c4af221e4fef53f28d2ed3a57bf2dbb75fa220",
+  "controller_sha256": "70666b19f64f5a6a9cc861bb00e02485d81e7b705a3909ccd6461b15ba59212e",
+  "build": {
+    "asset": "/assets/index-AnsEeJYS.js",
+    "index_sha256": "0e0148d1668fa060f64958e321da4790737c3e9b4554473a39c44bf45306bc54",
+    "asset_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7"
+  },
+  "checks": [
+    {
+      "name": "loaded-empty-selection-explained",
+      "rendered": 0,
+      "notice": "当前视野在这些筛选下没有可见要素。可继续放大以查看支线和站场线，或调整筛选。恢复默认图层",
+      "notice_hidden": false
+    },
+    {
+      "name": "camera-motion-clears-stale-empty-hint-and-settling-restores-it"
+    },
+    {
+      "name": "preset-recovery-clears-empty-hint"
+    },
+    {
+      "name": "higher-zoom-empty-view-gives-filter-and-pan-guidance"
+    },
+    {
+      "name": "explicit-empty-dimension-message-has-priority"
+    },
+    {
+      "name": "hidden-selection-explanation-has-priority"
+    },
+    {
+      "name": "out-of-coverage-is-not-filtered-empty"
+    },
+    {
+      "name": "delayed-index-does-not-report-empty-before-loading-completes"
+    },
+    {
+      "name": "failed-index-is-not-misreported-as-empty"
+    },
+    {
+      "name": "successful-index-retry-restores-empty-view-explanation"
+    },
+    {
+      "name": "tile-failure-does-not-claim-an-empty-selection"
+    },
+    {
+      "name": "tile-recovery-rechecks-the-complete-view"
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "captures": [
+    {
+      "original_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+      "observed_sha256": "1dad248da8d477576aaeae314e7f95490bd3853971ce50e64cc8769fe1a71eee"
+    },
+    {
+      "original_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+      "observed_sha256": "1dad248da8d477576aaeae314e7f95490bd3853971ce50e64cc8769fe1a71eee"
+    },
+    {
+      "original_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+      "observed_sha256": "1dad248da8d477576aaeae314e7f95490bd3853971ce50e64cc8769fe1a71eee"
+    },
+    {
+      "original_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+      "observed_sha256": "1dad248da8d477576aaeae314e7f95490bd3853971ce50e64cc8769fe1a71eee"
+    },
+    {
+      "original_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+      "observed_sha256": "1dad248da8d477576aaeae314e7f95490bd3853971ce50e64cc8769fe1a71eee"
+    },
+    {
+      "original_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+      "observed_sha256": "1dad248da8d477576aaeae314e7f95490bd3853971ce50e64cc8769fe1a71eee"
+    },
+    {
+      "original_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+      "observed_sha256": "1dad248da8d477576aaeae314e7f95490bd3853971ce50e64cc8769fe1a71eee"
+    },
+    {
+      "original_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7",
+      "observed_sha256": "1dad248da8d477576aaeae314e7f95490bd3853971ce50e64cc8769fe1a71eee"
+    }
+  ],
+  "scope": "Capture public Map reference only; real current immutable snapshot, no fabricated empty tiles. Synthetic network delay/503. Installed browsers, not reader or physical-device acceptance."
+}

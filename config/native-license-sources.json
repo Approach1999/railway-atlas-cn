@@ -1,0 +1,306 @@
+{
+  "components": {
+    "bzip2": {
+      "license_files": [
+        {
+          "archive_file": "data/manifests/local/license-archives/bzip2-1.0.8.tar.gz",
+          "archive_sha256": "ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269",
+          "file": "third_party/licenses/native/bzip2-1.0.8.LICENSE",
+          "pgp_signature_verified": false,
+          "sha256": "c6dbbf828498be844a89eaa3b84adbab3199e342eb5cb2ed2f0d4ba7ec0f38a3",
+          "source_file": "bzip2-1.0.8/LICENSE",
+          "source_url": "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz"
+        }
+      ],
+      "version": "1.0.8"
+    },
+    "expat": {
+      "license_files": [
+        {
+          "file": "third_party/licenses/native/expat-2.7.3-expat_COPYING",
+          "git_blob_sha": "c6d184a8aae845ce7bf4d195b214d8244d457f8f",
+          "release_ref": {
+            "node_id": "MDM6UmVmODAzMTQyMTM6cmVmcy90YWdzL1JfMl83XzM=",
+            "object": {
+              "sha": "2120251ef8e5fd5f398063b6508be27796689bd9",
+              "type": "tag",
+              "url": "https://api.github.com/repos/libexpat/libexpat/git/tags/2120251ef8e5fd5f398063b6508be27796689bd9"
+            },
+            "ref": "refs/tags/R_2_7_3",
+            "url": "https://api.github.com/repos/libexpat/libexpat/git/refs/tags/R_2_7_3"
+          },
+          "repository": "libexpat/libexpat",
+          "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87",
+          "source_file": "expat/COPYING",
+          "source_url": "https://github.com/libexpat/libexpat/blob/4575e52f83e0d6d7bd24939eab8952bbc7bc358f/expat/COPYING",
+          "tag_object": {
+            "message": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEy43nCpDPv2w79cxWliYqz/vTrsYFAmjURRQACgkQliYqz/vT\nrsYMYRAAhWfbEvvTI+8lHppYGqn663rlNXbaDyIv1+7tLBgQ1zZSKXlKVJr5SaRt\n0ByybI8qVQbEyZDWKNl4ANrIv6QB2S1EPy0QpTiFg27kN3uMZMEMK1AR+0OaPFme\n8Po4AQa4icXHBZlyys0b0KFjcoDmSL1stuTB9vM1rC1slseRj+q1F748LaQOZbyU\nCDuowIFqKaysG+pDdslh3uDh7kNchE8AfZKHuLglrIegaeK+zCc8buvgwweSUs6a\nlWnHwklPb3/vIi1LgHbV3qAjYFenuTQlAZS9e3CKu7BfEB2CYiaZe7F5ydFSxeD+\nQiTVwJWhxQ7xLosDg4M0lT36KecAyBuUP3KDKkw6SXPrz+DQhxHfjF82qLnkWvqK\nvQI/kEbKX4UEcfYE4j0RGJhi4IXg+EHwQSL95CAHul1NtG3HC3uVFyExPbytthaN\nsbz9pVBocqXnkPIozsxfz7w6Z8Jaa4Ht66eab8t9w7tpvZsp38cE/DEPuUiwlzYb\nyuBIXWvQzxiJMH7PWUqYOrIRsOJoHOclzodEhbCYGtaM8HofJ3VcBoeahH1sXvl5\nQyeq1ksP1IQIbAUnmmXzY6si3qPs76wbc14blaOjqab6XwZ2kdOxtlu15MZncuuZ\n9QbO4zXBBRdUVYYSoAL1pVYNYoSmGHE/EsEBNXFz2z8xT6m9qyc=\n=gBG6\n-----END PGP SIGNATURE-----\n",
+            "node_id": "TA_kwDOBMl_ZdoAKDIxMjAyNTFlZjhlNWZkNWYzOTgwNjNiNjUwOGJlMjc3OTY2ODliZDk",
+            "object": {
+              "sha": "4575e52f83e0d6d7bd24939eab8952bbc7bc358f",
+              "type": "commit",
+              "url": "https://api.github.com/repos/libexpat/libexpat/git/commits/4575e52f83e0d6d7bd24939eab8952bbc7bc358f"
+            },
+            "sha": "2120251ef8e5fd5f398063b6508be27796689bd9",
+            "tag": "R_2_7_3",
+            "tagger": {
+              "date": "2025-09-24T19:23:00Z",
+              "email": "sping@gentoo.org",
+              "name": "Sebastian Pipping"
+            },
+            "url": "https://api.github.com/repos/libexpat/libexpat/git/tags/2120251ef8e5fd5f398063b6508be27796689bd9",
+            "verification": {
+              "payload": "object 4575e52f83e0d6d7bd24939eab8952bbc7bc358f\ntype commit\ntag R_2_7_3\ntagger Sebastian Pipping <sping@gentoo.org> 1758741780 +0200\n\n",
+              "reason": "valid",
+              "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEy43nCpDPv2w79cxWliYqz/vTrsYFAmjURRQACgkQliYqz/vT\nrsYMYRAAhWfbEvvTI+8lHppYGqn663rlNXbaDyIv1+7tLBgQ1zZSKXlKVJr5SaRt\n0ByybI8qVQbEyZDWKNl4ANrIv6QB2S1EPy0QpTiFg27kN3uMZMEMK1AR+0OaPFme\n8Po4AQa4icXHBZlyys0b0KFjcoDmSL1stuTB9vM1rC1slseRj+q1F748LaQOZbyU\nCDuowIFqKaysG+pDdslh3uDh7kNchE8AfZKHuLglrIegaeK+zCc8buvgwweSUs6a\nlWnHwklPb3/vIi1LgHbV3qAjYFenuTQlAZS9e3CKu7BfEB2CYiaZe7F5ydFSxeD+\nQiTVwJWhxQ7xLosDg4M0lT36KecAyBuUP3KDKkw6SXPrz+DQhxHfjF82qLnkWvqK\nvQI/kEbKX4UEcfYE4j0RGJhi4IXg+EHwQSL95CAHul1NtG3HC3uVFyExPbytthaN\nsbz9pVBocqXnkPIozsxfz7w6Z8Jaa4Ht66eab8t9w7tpvZsp38cE/DEPuUiwlzYb\nyuBIXWvQzxiJMH7PWUqYOrIRsOJoHOclzodEhbCYGtaM8HofJ3VcBoeahH1sXvl5\nQyeq1ksP1IQIbAUnmmXzY6si3qPs76wbc14blaOjqab6XwZ2kdOxtlu15MZncuuZ\n9QbO4zXBBRdUVYYSoAL1pVYNYoSmGHE/EsEBNXFz2z8xT6m9qyc=\n=gBG6\n-----END PGP SIGNATURE-----\n",
+              "verified": true,
+              "verified_at": "2025-09-24T19:24:30Z"
+            }
+          },
+          "upstream_commit": "4575e52f83e0d6d7bd24939eab8952bbc7bc358f"
+        }
+      ],
+      "version": "2.7.3"
+    },
+    "libosmium": {
+      "license_files": [
+        {
+          "file": "third_party/licenses/native/libosmium-2.23.0-LICENSE",
+          "git_blob_sha": "36b7cd93cdfbac762f5be4c6ce276df2ea6305c2",
+          "release_ref": {
+            "node_id": "MDM6UmVmMTE3MzMwNzA6cmVmcy90YWdzL3YyLjIzLjA=",
+            "object": {
+              "sha": "9c49c960569c15dd09ff9eb9e9dce7f383ab6ed2",
+              "type": "commit",
+              "url": "https://api.github.com/repos/osmcode/libosmium/git/commits/9c49c960569c15dd09ff9eb9e9dce7f383ab6ed2"
+            },
+            "ref": "refs/tags/v2.23.0",
+            "url": "https://api.github.com/repos/osmcode/libosmium/git/refs/tags/v2.23.0"
+          },
+          "repository": "osmcode/libosmium",
+          "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566",
+          "source_file": "LICENSE",
+          "source_url": "https://github.com/osmcode/libosmium/blob/9c49c960569c15dd09ff9eb9e9dce7f383ab6ed2/LICENSE",
+          "tag_object": null,
+          "upstream_commit": "9c49c960569c15dd09ff9eb9e9dce7f383ab6ed2"
+        }
+      ],
+      "version": "2.23.0"
+    },
+    "lz4": {
+      "license_files": [
+        {
+          "file": "third_party/licenses/native/lz4-1.10.0-lib_LICENSE",
+          "git_blob_sha": "488491695a6b6984aa3a49a8392b192ed2bcac1d",
+          "release_ref": {
+            "node_id": "MDM6UmVmMTgxMDYyNjk6cmVmcy90YWdzL3YxLjEwLjA=",
+            "object": {
+              "sha": "ebb370ca83af193212df4dcbadcc5d87bc0de2f0",
+              "type": "commit",
+              "url": "https://api.github.com/repos/lz4/lz4/git/commits/ebb370ca83af193212df4dcbadcc5d87bc0de2f0"
+            },
+            "ref": "refs/tags/v1.10.0",
+            "url": "https://api.github.com/repos/lz4/lz4/git/refs/tags/v1.10.0"
+          },
+          "repository": "lz4/lz4",
+          "sha256": "8b58c446121a109ccf32edc094bba3010a3d85e4ee3702950db55e4d3e87736c",
+          "source_file": "lib/LICENSE",
+          "source_url": "https://github.com/lz4/lz4/blob/ebb370ca83af193212df4dcbadcc5d87bc0de2f0/lib/LICENSE",
+          "tag_object": null,
+          "upstream_commit": "ebb370ca83af193212df4dcbadcc5d87bc0de2f0"
+        }
+      ],
+      "version": "1.10.0"
+    },
+    "node": {
+      "license_files": [
+        {
+          "file": "third_party/licenses/native/node-24.15.0-LICENSE",
+          "git_blob_sha": "403ea3c5717087b20e9cddaa2b4881256b6b4858",
+          "release_ref": {
+            "node_id": "MDM6UmVmMjcxOTM3Nzk6cmVmcy90YWdzL3YyNC4xNS4w",
+            "object": {
+              "sha": "a20a24415694b80361d661d6ecc1ea0e260d9c32",
+              "type": "tag",
+              "url": "https://api.github.com/repos/nodejs/node/git/tags/a20a24415694b80361d661d6ecc1ea0e260d9c32"
+            },
+            "ref": "refs/tags/v24.15.0",
+            "url": "https://api.github.com/repos/nodejs/node/git/refs/tags/v24.15.0"
+          },
+          "repository": "nodejs/node",
+          "sha256": "4573185d56580da2b890ba34a85a409257640f1c5632eade4300137266194d18",
+          "source_file": "LICENSE",
+          "source_url": "https://github.com/nodejs/node/blob/848430679556aed0bd073f2bc263331ad84fa119/LICENSE",
+          "tag_object": {
+            "message": "2026-04-15 Node.js v24.15.0 Krypton (LTS) Release\nGit-EVTag-v0-SHA512: 4bfd4c83c5d14860c3819f68c27d10fea3c50f2a2ac42b588b85a458c82c066fd108cc1ca50aa313cb4e6cb3c3e77792109c551e20e4329a517a7cc914599f0e\n-----BEGIN PGP SIGNATURE-----\n\niJMEABYKADsWIQRb6KP2yKXAHRBsCtggsaOQsWjTVgUCad/BKx0cZHVoYW1lbGFu\ndG9pbmUxOTk1QGdtYWlsLmNvbQAKCRAgsaOQsWjTVjo4AP9JJsiQEWknMIA7tjas\nSBQwIhZ044YjUU7Xh3AS1D7WOAEAk6pqTx2zPg9B4UnCfxxAliZjkrM/VC7MpFl2\nra0jeA8=\n=0VNn\n-----END PGP SIGNATURE-----\n",
+            "node_id": "TA_kwDOAZ7xs9oAKGEyMGEyNDQxNTY5NGI4MDM2MWQ2NjFkNmVjYzFlYTBlMjYwZDljMzI",
+            "object": {
+              "sha": "848430679556aed0bd073f2bc263331ad84fa119",
+              "type": "commit",
+              "url": "https://api.github.com/repos/nodejs/node/git/commits/848430679556aed0bd073f2bc263331ad84fa119"
+            },
+            "sha": "a20a24415694b80361d661d6ecc1ea0e260d9c32",
+            "tag": "v24.15.0",
+            "tagger": {
+              "date": "2026-04-15T16:47:39Z",
+              "email": "duhamelantoine1995@gmail.com",
+              "name": "Antoine du Hamel"
+            },
+            "url": "https://api.github.com/repos/nodejs/node/git/tags/a20a24415694b80361d661d6ecc1ea0e260d9c32",
+            "verification": {
+              "payload": "object 848430679556aed0bd073f2bc263331ad84fa119\ntype commit\ntag v24.15.0\ntagger Antoine du Hamel <duhamelantoine1995@gmail.com> 1776271659 +0200\n\n2026-04-15 Node.js v24.15.0 Krypton (LTS) Release\nGit-EVTag-v0-SHA512: 4bfd4c83c5d14860c3819f68c27d10fea3c50f2a2ac42b588b85a458c82c066fd108cc1ca50aa313cb4e6cb3c3e77792109c551e20e4329a517a7cc914599f0e\n",
+              "reason": "valid",
+              "signature": "-----BEGIN PGP SIGNATURE-----\n\niJMEABYKADsWIQRb6KP2yKXAHRBsCtggsaOQsWjTVgUCad/BKx0cZHVoYW1lbGFu\ndG9pbmUxOTk1QGdtYWlsLmNvbQAKCRAgsaOQsWjTVjo4AP9JJsiQEWknMIA7tjas\nSBQwIhZ044YjUU7Xh3AS1D7WOAEAk6pqTx2zPg9B4UnCfxxAliZjkrM/VC7MpFl2\nra0jeA8=\n=0VNn\n-----END PGP SIGNATURE-----\n",
+              "verified": true,
+              "verified_at": "2026-04-15T16:59:52Z"
+            }
+          },
+          "upstream_commit": "848430679556aed0bd073f2bc263331ad84fa119"
+        }
+      ],
+      "version": "24.15.0"
+    },
+    "protozero": {
+      "license_files": [
+        {
+          "file": "third_party/licenses/native/protozero-1.8.1-LICENSE.md",
+          "git_blob_sha": "5c2ce01d11b1c31a6edbd96d190868e7e7106412",
+          "release_ref": {
+            "node_id": "MDM6UmVmMTg3MTUzNjY6cmVmcy90YWdzL3YxLjguMQ==",
+            "object": {
+              "sha": "89a55ad2962cca3adbe8383a4b6d9a8411352ef2",
+              "type": "commit",
+              "url": "https://api.github.com/repos/mapbox/protozero/git/commits/89a55ad2962cca3adbe8383a4b6d9a8411352ef2"
+            },
+            "ref": "refs/tags/v1.8.1",
+            "url": "https://api.github.com/repos/mapbox/protozero/git/refs/tags/v1.8.1"
+          },
+          "repository": "mapbox/protozero",
+          "sha256": "254c0e9f18d261bfc55ff277cf12e3c1ca25839d56af17fba65d142396021466",
+          "source_file": "LICENSE.md",
+          "source_url": "https://github.com/mapbox/protozero/blob/89a55ad2962cca3adbe8383a4b6d9a8411352ef2/LICENSE.md",
+          "tag_object": null,
+          "upstream_commit": "89a55ad2962cca3adbe8383a4b6d9a8411352ef2"
+        },
+        {
+          "file": "third_party/licenses/native/protozero-folly-1.8.1-LICENSE.from_folly",
+          "git_blob_sha": "f433b1a53f5b830a205fd2df78e2b34974656c7b",
+          "release_ref": {
+            "node_id": "MDM6UmVmMTg3MTUzNjY6cmVmcy90YWdzL3YxLjguMQ==",
+            "object": {
+              "sha": "89a55ad2962cca3adbe8383a4b6d9a8411352ef2",
+              "type": "commit",
+              "url": "https://api.github.com/repos/mapbox/protozero/git/commits/89a55ad2962cca3adbe8383a4b6d9a8411352ef2"
+            },
+            "ref": "refs/tags/v1.8.1",
+            "url": "https://api.github.com/repos/mapbox/protozero/git/refs/tags/v1.8.1"
+          },
+          "repository": "mapbox/protozero",
+          "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+          "source_file": "LICENSE.from_folly",
+          "source_url": "https://github.com/mapbox/protozero/blob/89a55ad2962cca3adbe8383a4b6d9a8411352ef2/LICENSE.from_folly",
+          "tag_object": null,
+          "upstream_commit": "89a55ad2962cca3adbe8383a4b6d9a8411352ef2"
+        }
+      ],
+      "version": "1.8.1"
+    },
+    "pybind11": {
+      "license_files": [
+        {
+          "file": "third_party/licenses/native/pybind11-3.0.1-LICENSE",
+          "git_blob_sha": "e466b0dfda14f3a7c8ece512937eb99c8b7b6d68",
+          "release_ref": {
+            "node_id": "MDM6UmVmMzg1ODE2MjY6cmVmcy90YWdzL3YzLjAuMQ==",
+            "object": {
+              "sha": "e86205cb2ba070755d582856430c0f83c0af6694",
+              "type": "tag",
+              "url": "https://api.github.com/repos/pybind/pybind11/git/tags/e86205cb2ba070755d582856430c0f83c0af6694"
+            },
+            "ref": "refs/tags/v3.0.1",
+            "url": "https://api.github.com/repos/pybind/pybind11/git/refs/tags/v3.0.1"
+          },
+          "repository": "pybind/pybind11",
+          "sha256": "83965b843b98f670d3a85bd041ed4b372c8ec50d7b4a5995a83ac697ba675dcb",
+          "source_file": "LICENSE",
+          "source_url": "https://github.com/pybind/pybind11/blob/f5fbe867d2d26e4a0a9177a51f6e568868ad3dc8/LICENSE",
+          "tag_object": {
+            "message": "v3.0.1 release\n",
+            "node_id": "TA_kwDOAky1etoAKGU4NjIwNWNiMmJhMDcwNzU1ZDU4Mjg1NjQzMGMwZjgzYzBhZjY2OTQ",
+            "object": {
+              "sha": "f5fbe867d2d26e4a0a9177a51f6e568868ad3dc8",
+              "type": "commit",
+              "url": "https://api.github.com/repos/pybind/pybind11/git/commits/f5fbe867d2d26e4a0a9177a51f6e568868ad3dc8"
+            },
+            "sha": "e86205cb2ba070755d582856430c0f83c0af6694",
+            "tag": "v3.0.1",
+            "tagger": {
+              "date": "2025-08-22T20:01:24Z",
+              "email": "henryschreineriii@gmail.com",
+              "name": "Henry Schreiner"
+            },
+            "url": "https://api.github.com/repos/pybind/pybind11/git/tags/e86205cb2ba070755d582856430c0f83c0af6694",
+            "verification": {
+              "payload": null,
+              "reason": "unsigned",
+              "signature": null,
+              "verified": false,
+              "verified_at": null
+            }
+          },
+          "upstream_commit": "f5fbe867d2d26e4a0a9177a51f6e568868ad3dc8"
+        }
+      ],
+      "version": "3.0.1"
+    },
+    "zlib": {
+      "license_files": [
+        {
+          "file": "third_party/licenses/native/zlib-1.3.1-LICENSE",
+          "git_blob_sha": "ab8ee6f71428c3e4646b12b64ad387cde33462e5",
+          "release_ref": {
+            "node_id": "MDM6UmVmMjM1OTM3ODpyZWZzL3RhZ3MvdjEuMy4x",
+            "object": {
+              "sha": "925af44f3cde53c6b076611c297850091b5dc7bb",
+              "type": "tag",
+              "url": "https://api.github.com/repos/madler/zlib/git/tags/925af44f3cde53c6b076611c297850091b5dc7bb"
+            },
+            "ref": "refs/tags/v1.3.1",
+            "url": "https://api.github.com/repos/madler/zlib/git/refs/tags/v1.3.1"
+          },
+          "repository": "madler/zlib",
+          "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243",
+          "source_file": "LICENSE",
+          "source_url": "https://github.com/madler/zlib/blob/51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf/LICENSE",
+          "tag_object": {
+            "message": "zlib 1.3.1\n-----BEGIN PGP SIGNATURE-----\nComment: GPGTools - http://gpgtools.org\n\niF0EABECAB0WIQRe1GpnIdNlWHeR4qp4P82OWLyvugUCZa64owAKCRB4P82OWLyv\nuvscAKDNf1+9KtPTuC3AGNU6PpAZszDXsQCfXt/yndR3i9vERpSTDL+JMVfFPyI=\n=DnBe\n-----END PGP SIGNATURE-----\n",
+            "node_id": "TA_kwDOACQAUtoAKDkyNWFmNDRmM2NkZTUzYzZiMDc2NjExYzI5Nzg1MDA5MWI1ZGM3YmI",
+            "object": {
+              "sha": "51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf",
+              "type": "commit",
+              "url": "https://api.github.com/repos/madler/zlib/git/commits/51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+            },
+            "sha": "925af44f3cde53c6b076611c297850091b5dc7bb",
+            "tag": "v1.3.1",
+            "tagger": {
+              "date": "2024-01-22T18:49:07Z",
+              "email": "madler@alumni.caltech.edu",
+              "name": "Mark Adler"
+            },
+            "url": "https://api.github.com/repos/madler/zlib/git/tags/925af44f3cde53c6b076611c297850091b5dc7bb",
+            "verification": {
+              "payload": "object 51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf\ntype commit\ntag v1.3.1\ntagger Mark Adler <madler@alumni.caltech.edu> 1705949347 -0800\n\nzlib 1.3.1\n",
+              "reason": "valid",
+              "signature": "-----BEGIN PGP SIGNATURE-----\nComment: GPGTools - http://gpgtools.org\n\niF0EABECAB0WIQRe1GpnIdNlWHeR4qp4P82OWLyvugUCZa64owAKCRB4P82OWLyv\nuvscAKDNf1+9KtPTuC3AGNU6PpAZszDXsQCfXt/yndR3i9vERpSTDL+JMVfFPyI=\n=DnBe\n-----END PGP SIGNATURE-----\n",
+              "verified": true,
+              "verified_at": "2024-11-04T21:35:33Z"
+            }
+          },
+          "upstream_commit": "51b7f2abdade71cd9bb0e7a373ef2610ec6f9daf"
+        }
+      ],
+      "version": "1.3.1"
+    }
+  },
+  "schema_version": 1
+}

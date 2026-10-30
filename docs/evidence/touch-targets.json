@@ -1,0 +1,144 @@
+{
+  "date": "2026-10-27T08:55:22.593455+00:00",
+  "build": {
+    "js": "/assets/index-mMKChbqn.js",
+    "css": "/assets/index-BwFbEAPn.css",
+    "index_sha256": "adfdbd6d09c80200215619ba9744cc7ec3fd355e2d1b48b087c07244fb8d4369",
+    "js_sha256": "4e00ce2cbe765b2303b9893ed02eff621da9f3827a4fa6c07413e8e0527ee68d",
+    "css_sha256": "005158759e896e4189f90615ac568f2619d8072495a0b78fbc94936119ee6713"
+  },
+  "sha256": {
+    "apps/web/client/src/style.css": "126f2c8c544fdcd2aaa416be4c3f43b79e27fb9203f75c5af4c464e543a5c149",
+    "scripts/verify_touch_targets.cjs": "14ca5642d3d20ed996349e38b555fa44a67995e85d2241482d0dbfeafdd1e8d8",
+    "scripts/browser_target.cjs": "8232047ab043000ece78339b36ba3871d3b2fd69fedf9ebf958441897d56f801",
+    "docs/evidence/history/touch-targets-before.css": "aa6211dbf5526f691d11645a7141a6696438c329d51f48a693ff6783ebb680d7",
+    "docs/evidence/history/touch-targets-first-verifier.cjs": "d36aedcffef52eafb4fd9eb340f8c09e93130529210399460ed26724f96e09bf",
+    "docs/evidence/history/touch-targets-before-field-verifier.cjs": "f8241a07f93e2ca78b6e1b6005acf2a94c19b7522b827a9a2c4260e26f1c040c",
+    "docs/evidence/touch-targets-320.png": "d0990cd0863ac7e09b5d7ace77b31ee82161a97d8b76c3ca5c7ddac51cf5c592"
+  },
+  "reports": [
+    {
+      "file": "docs/evidence/touch-targets-before.json",
+      "sha256": "26a935de24641de501feb4e4450587bba0bd5e7375e9fa95246b498129a9afb2",
+      "status": "fails-size",
+      "scenes": 8,
+      "control_observations": 307,
+      "undersize_observations": 28,
+      "browser": {
+        "channel": "chrome",
+        "version": "156.0.8078.48",
+        "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "product": "Chrome/156.0.8078.48",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      },
+      "build": null
+    },
+    {
+      "file": "docs/evidence/touch-targets-field-before.json",
+      "sha256": "db7c57dd026d37c7f3406c9eaa5a8b1bae9841aee9aa87cd8675341cb55683d4",
+      "status": "fails-size",
+      "scenes": 8,
+      "control_observations": 325,
+      "undersize_observations": 5,
+      "browser": {
+        "channel": "chrome",
+        "version": "156.0.8078.48",
+        "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "product": "Chrome/156.0.8078.48",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      },
+      "build": {
+        "js": "/assets/index-Db8Slr_f.js",
+        "css": "/assets/index-P88cN8OL.css",
+        "index_sha256": "ca5734e9289d193260f5942930f510f9ed53780ef88cdeb2b64d7a8d06a99ea2",
+        "js_sha256": "4e00ce2cbe765b2303b9893ed02eff621da9f3827a4fa6c07413e8e0527ee68d",
+        "css_sha256": "9acea7eb83a1a70e322c83c067c31a19dd273cc5a07b80823686fb8bf0619a64"
+      }
+    },
+    {
+      "file": "docs/evidence/touch-targets-chrome.json",
+      "sha256": "f5dffb38998156d2cd1fa2461aa7802197dacbfe80c877bfd576b4b94b3e0fb9",
+      "status": "passes-size",
+      "scenes": 32,
+      "control_observations": 1295,
+      "undersize_observations": 0,
+      "browser": {
+        "channel": "chrome",
+        "version": "156.0.8078.48",
+        "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "product": "Chrome/156.0.8078.48",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      },
+      "build": {
+        "js": "/assets/index-mMKChbqn.js",
+        "css": "/assets/index-BwFbEAPn.css",
+        "index_sha256": "adfdbd6d09c80200215619ba9744cc7ec3fd355e2d1b48b087c07244fb8d4369",
+        "js_sha256": "4e00ce2cbe765b2303b9893ed02eff621da9f3827a4fa6c07413e8e0527ee68d",
+        "css_sha256": "005158759e896e4189f90615ac568f2619d8072495a0b78fbc94936119ee6713"
+      }
+    },
+    {
+      "file": "docs/evidence/touch-targets-edge.json",
+      "sha256": "4d764bae42a406f4edbe93d35b8aa76d34951cf42d0caa9c8de00982a5c9b122",
+      "status": "passes-size",
+      "scenes": 32,
+      "control_observations": 1295,
+      "undersize_observations": 0,
+      "browser": {
+        "channel": "msedge",
+        "version": "156.0.4314.42",
+        "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "product": "Edg/156.0.4314.42",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0",
+        "renderer": "forced SwiftShader",
+        "headless": true,
+        "os": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64"
+        },
+        "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+      },
+      "build": {
+        "js": "/assets/index-mMKChbqn.js",
+        "css": "/assets/index-BwFbEAPn.css",
+        "index_sha256": "adfdbd6d09c80200215619ba9744cc7ec3fd355e2d1b48b087c07244fb8d4369",
+        "js_sha256": "4e00ce2cbe765b2303b9893ed02eff621da9f3827a4fa6c07413e8e0527ee68d",
+        "css_sha256": "005158759e896e4189f90615ac568f2619d8072495a0b78fbc94936119ee6713"
+      }
+    }
+  ],
+  "validation": "Strict TypeScript check and production build passed; final installed Chrome and Edge suites each 32 scenes, 1295 laid-out control-state observations, no undersized measured targets, no overflow, no pageerrors or cross-origin page requests. Eight touch action checks per browser. CSS-only change, domain tests not repeated.",
+  "scope": "Product R12/N09 44x44 CSS px requirement. Coarse-pointer emulation at 320x640,390x844,768x1024,667x375. Eight states: overview,search,dataset,detail,share,about,list,basemap configuration failure. Active laid-out buttons, disclosure summaries, authored text/select fields, associated checkbox/radio labels. Counts are repeated observations, not unique controls.",
+  "limits": [
+    "No inline link, every field/state (including generated list-share field), occlusion, overlap, map pick-radius or physical-device proof.",
+    "any-pointer coarse covers hybrid devices by CSS rule; automated runs emulate primary touch only.",
+    "True phone/tablet, OS zoom/reader/IME and independent data QA gates remain open.",
+    "Screenshot includes transient native tap highlight; not a color/focus audit.",
+    "Prior functional, actual Edge 200% and performance reports retain their historical builds."
+  ]
+}

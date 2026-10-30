@@ -1,0 +1,31 @@
+{
+  "browser_target": {
+    "channel": "chrome",
+    "version": "156.0.8078.48",
+    "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "product": "Chrome/156.0.8078.48",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "renderer": "forced SwiftShader",
+    "headless": true,
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64"
+    },
+    "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+  },
+  "date": "2026-10-27T15:30:46.875Z",
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "checks": [
+    "default visible share encodes the isolated real line; original share restores prior explicit line exclusions without mutating the source URL, camera, query or selected temporary station",
+    "clipboard denial selects a manual-copy link; success copies the selected mode, radio arrows work, and Escape returns focus without closing the underlying detail or isolation",
+    "visible recipient opens immutable data with explicit filters and temporary typed station; closing details restores exactly the link filters",
+    "original recipient opens immutable data with explicit filters and temporary typed station; closing details restores exactly the link filters",
+    "reopening resets to visible share; a copy rejection from a closed dialog cannot alter the new session or its focus",
+    "without isolation both choices preserve explicit empty lifecycle filters rather than expanding them",
+    "390px native modal fits the screen, keeps keyboard focus inside and provides 44px share targets"
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Selected installed browser and real immutable Shenyang data; simulated clipboard and narrow viewport, not actual clipboard permissions, reader, physical devices or full MVP acceptance"
+}

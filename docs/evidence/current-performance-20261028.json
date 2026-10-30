@@ -1,0 +1,154 @@
+{
+  "date": "2026-10-28",
+  "build": {
+    "asset": "/assets/index-DQDm9VWe.js",
+    "index_sha256": "e91c791633e21a3bd6b2bb2f5a90ee66ffb641b74c6b2a3ac1ebf56a8b389d13",
+    "asset_sha256": "b76a3028a98c89a4580f8e40e35ab16b817671d2b9ee32d47872f7abd30bb903",
+    "css_asset": "/assets/index-CHGaf3CA.css",
+    "css_sha256": "f9a52c5777c782407af891cb1d4da3495ad97b58afb2da2f774adca35ff6d21f"
+  },
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "reports": {
+    "cold": {
+      "path": "docs/evidence/current-performance-20261028-cold.json",
+      "sha256": "dc4c0f094d4a642677a684966575c52b0df59f352913304d30ffc2ee84d6b53e"
+    },
+    "filters": {
+      "path": "docs/evidence/current-performance-20261028-filters.json",
+      "sha256": "8b3b0ed3737137b986b0af526f854935f306ed77c5555ae053e6e83ccec4541d"
+    },
+    "pan-default": {
+      "path": "docs/evidence/current-performance-20261028-pan-default.json",
+      "sha256": "e905eebde5ec6754c72cc921251dd0d68095649eaa92694405d166efb6cd9328"
+    },
+    "pan-software": {
+      "path": "docs/evidence/current-performance-20261028-pan-software.json",
+      "sha256": "4315f0948fc91687ad6226ec1cbfbade2b9e434d6acccc487bdf14d3fb270b71"
+    },
+    "pan-default-process": {
+      "path": "docs/evidence/current-performance-20261028-pan-default.log",
+      "sha256": "c6d8760196dd25ee2547f40efe6a9ef32e34f63a8189b697f4fa5d6d5b315c43"
+    },
+    "pan-software-process": {
+      "path": "docs/evidence/current-performance-20261028-pan-software.log",
+      "sha256": "e52f4722d8c9d52fcb900cd04213b74dfefe0d29a6e25aaa0752cfbd4b9318b2"
+    },
+    "pan-software-capture-process": {
+      "path": "docs/evidence/current-performance-20261028-pan-software-capture.log",
+      "sha256": "763b396a31712e18cd5325f09c2d1e461940dce1553f5f01c38406f38c50b2e3"
+    }
+  },
+  "measurements": {
+    "cold": {
+      "first_usable_ms": {
+        "samples": 30,
+        "median": 1924.7999999821186,
+        "p95": 1959.5,
+        "max": 1970.5999999940395
+      },
+      "index_ready_ms": {
+        "samples": 30,
+        "median": 1104,
+        "p95": 1123.5,
+        "max": 1135.4000000059605
+      },
+      "own_transfer_bytes": {
+        "samples": 30,
+        "median": 829377,
+        "p95": 829377,
+        "max": 829377
+      }
+    },
+    "warm_search": {
+      "samples": 100,
+      "median": 208.60000002384186,
+      "p95": 214.7000000178814,
+      "max": 221.59999999403954
+    },
+    "ui_only_filter": {
+      "samples": 100,
+      "median": 15.599999994039536,
+      "p95": 22.799999982118607,
+      "max": 33.29999998211861
+    },
+    "filters": {
+      "overview": {
+        "applied_ms": {
+          "samples": 100,
+          "median": 4.200000017881393,
+          "p95": 6.299999982118607,
+          "max": 9
+        },
+        "rendered_ms": {
+          "samples": 100,
+          "median": 68.90000000596046,
+          "p95": 100.5,
+          "max": 123.5
+        },
+        "settled_ms": {
+          "samples": 100,
+          "median": 620.9000000059605,
+          "p95": 697,
+          "max": 1453
+        }
+      },
+      "station-yard": {
+        "applied_ms": {
+          "samples": 100,
+          "median": 2,
+          "p95": 3.199999988079071,
+          "max": 5.699999988079071
+        },
+        "rendered_ms": {
+          "samples": 100,
+          "median": 34.79999998211861,
+          "p95": 61.099999994039536,
+          "max": 87.2000000178814
+        },
+        "settled_ms": {
+          "samples": 100,
+          "median": 599.5,
+          "p95": 639.4000000059605,
+          "max": 680.7000000178814
+        }
+      }
+    },
+    "pan_default": {
+      "samples": 2510,
+      "median": 10,
+      "p95": 35.39999997615814,
+      "max": 47.400000005960464
+    },
+    "pan_software": {
+      "samples": 1304,
+      "median": 20.700000017881393,
+      "p95": 33.19999998807907,
+      "max": 50.20000001788139
+    },
+    "default_drop_proxy": 0.06876155268022181,
+    "software_drop_proxy": 0.3410813542193027
+  },
+  "local_thresholds": {
+    "first_view_p95_within_3000ms": true,
+    "search_p95_within_300ms": true,
+    "own_transfer_within_2MiB": true,
+    "overview_filter_within_100ms": false,
+    "yard_filter_within_100ms": true,
+    "default_pan_within_33ms": false,
+    "software_pan_within_33ms": false
+  },
+  "source_sha256": {
+    "scripts/benchmark_client.cjs": "aaa49aa0642f39d09e384fe02fe2c5fd9dc625fc1d59ff18af7a5be9fad5de9c",
+    "scripts/benchmark_filters.cjs": "16c5112e5673da1ebf07c39f56ddfa3191bcc921cabf82d7e203c90243b77394",
+    "scripts/benchmark_pan.cjs": "1d3c204cd0dcf9d6be762aaf93d2f49261de1ddfe46a2097381f56ebfc297dc3",
+    "docs/evidence/history/current-perf-pan-before.cjs": "cf2f63154aff9b72022a12fa82578288c56c3200492aa6e2055100788843595b"
+  },
+  "limits": [
+    "Default Intel Arc/Chrome156 headless, basemap off, 10Mbps/100ms, fixed immutable data. No real mobile or public-basemap acceptance.",
+    "New isolated contexts and HTTP cache disabled in same browser process, not fresh GPU/server/process per cold run.",
+    "Render events/RAF and estimated frame drops are proxies, not GPU/display completion.",
+    "First software run failed endpoint guard before raw report could be written; log retained. One justified repeat captured a valid trace, not a replacement for valid failing default path.",
+    "Pan driver now saves raw report before rejecting endpoint failure; thresholds unchanged.",
+    "Current N02/N03 and full MVP remain incomplete."
+  ]
+}

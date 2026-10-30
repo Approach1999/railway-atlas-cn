@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-25T12:02:47.956Z",
+  "source_anchor": "node/676578837",
+  "source_anchor_name": "沈阳北",
+  "moves": [
+    {
+      "delta": [
+        240,
+        120
+      ],
+      "samples": 52,
+      "expected_world": [
+        19997922.892928608,
+        8823762.484791338
+      ],
+      "actual_world": [
+        19997922.65485304,
+        8823762.612071354
+      ],
+      "error_css_px": 0.2699632920037082,
+      "url": "http://127.0.0.1:8766/?region=shenyang&snapshot=shenyang-mvp-20261023&types=other%2Crail%2Cunknown&classes=branch%2Cconventional_main%2Cconventional_other%2Chigh_speed%2Cindustrial%2Clight_rail%2Cmetro%2Cother%2Ctram%2Cunknown&states=mapped&labels=lines%2Cstations&facilities=0&sidings=1#map=15.50/41.81869/123.42579"
+    },
+    {
+      "delta": [
+        -240,
+        -120
+      ],
+      "samples": 51,
+      "expected_world": [
+        19998162.892928608,
+        8823882.484791338
+      ],
+      "actual_world": [
+        19998163.215873543,
+        8823882.88274155
+      ],
+      "error_css_px": 0.5125015143122766,
+      "url": "http://127.0.0.1:8766/?region=shenyang&snapshot=shenyang-mvp-20261023&types=other%2Crail%2Cunknown&classes=branch%2Cconventional_main%2Cconventional_other%2Chigh_speed%2Cindustrial%2Clight_rail%2Cmetro%2Cother%2Ctram%2Cunknown&states=mapped&labels=lines%2Cstations&facilities=0&sidings=1#map=15.50/41.81733/123.42944"
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Synthetic DOM drag is verified against actual URL camera displacement; not a real mouse/device acceptance."
+}

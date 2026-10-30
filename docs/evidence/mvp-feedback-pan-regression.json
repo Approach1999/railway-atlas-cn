@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-25T03:39:32.365Z",
+  "snapshot": "shenyang-mvp-20261023",
+  "source_switch": "node/12640376185",
+  "checks": [
+    "same-zoom keyboard pan changes camera URL but causes zero unchanged notice DOM mutations and retains the facility input/filter",
+    "zoom crosses 14/15 thresholds with facilities already enabled, updates hint and reveals a selectable actual source switch without toggling filters",
+    "zooming back below threshold updates the hint; camera optimization keeps zoom-dependent controls working"
+  ],
+  "notice_mutations": 0,
+  "errors": [],
+  "external": [],
+  "scope": "Local Chrome keyboard/zoom and actual switch selection. Not full performance/device acceptance."
+}

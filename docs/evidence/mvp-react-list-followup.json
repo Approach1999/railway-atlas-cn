@@ -1,0 +1,22 @@
+{
+  "date_observed": "2026-10-23",
+  "snapshot": "shenyang-mvp-20261023",
+  "initial_result": {
+    "script": "scripts/verify_accessibility.cjs",
+    "mode": "concurrent with other browser regression work",
+    "result": "timeout",
+    "message": "locator.click: Timeout 30000ms exceeded waiting for locator('.object-list button').first()",
+    "step": "reopen list after returning to map; search switches and enable facilities"
+  },
+  "root_cause": null,
+  "unmodified_script_standalone_passes_utc": [
+    "2026-10-23T14:34:52.388Z",
+    "2026-10-23T14:37:21.062Z",
+    "2026-10-23T14:37:27.005Z",
+    "2026-10-23T14:37:32.780Z"
+  ],
+  "diagnostic_delayed_run_counted_as_acceptance": false,
+  "status": "not reproduced in standalone reruns; retained for further load/target-device checking",
+  "scope": "Observed local test timeout and actual rerun outputs; not a root-cause finding, claimed fix, independent audit or full accessibility acceptance",
+  "later_concurrent_pass_utc": "2026-10-23T14:42:16.116Z"
+}

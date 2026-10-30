@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-27T04:49:03.310703+00:00",
+  "queries": [
+    {
+      "package": {
+        "ecosystem": "PyPI",
+        "name": "fonttools"
+      },
+      "version": "4.67.0"
+    },
+    {
+      "package": {
+        "ecosystem": "PyPI",
+        "name": "brotli"
+      },
+      "version": "1.2.1"
+    }
+  ],
+  "responses": [
+    {
+      "results": [
+        {},
+        {}
+      ]
+    }
+  ],
+  "results": [
+    [],
+    []
+  ],
+  "lock_sha256": "fd8855b295a45bdb7bc0f88090777181fecf752543840cfe7350f809d5fd7da5",
+  "scope": "Only the two newly introduced offline font build packages; not a renewed full application/native dependency audit."
+}

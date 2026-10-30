@@ -1,0 +1,154 @@
+{
+  "date": "2026-10-27T09:19:45.191Z",
+  "error": "AssertionError [ERR_ASSERTION]: protocol must confirm actual browser page zoom\n\n1 !== 2\n",
+  "cases": [
+    {
+      "size": {
+        "width": 1552,
+        "height": 1000
+      },
+      "factor": 1,
+      "profile": "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\browser-zoom\\invalid-scalar\\profile-Lr3kPu",
+      "preferences": {
+        "partition": {
+          "default_zoom_level": 0
+        }
+      },
+      "checks": [
+        "baseline actual page zoom is 1"
+      ],
+      "samples": [
+        {
+          "state": "overview",
+          "metrics": {
+            "layoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900
+            },
+            "visualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900,
+              "scale": 1,
+              "zoom": 1
+            },
+            "contentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 1526,
+              "height": 900
+            },
+            "cssLayoutViewport": {
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900
+            },
+            "cssVisualViewport": {
+              "offsetX": 0,
+              "offsetY": 0,
+              "pageX": 0,
+              "pageY": 0,
+              "clientWidth": 1526,
+              "clientHeight": 900,
+              "scale": 1,
+              "zoom": 1
+            },
+            "cssContentSize": {
+              "x": 0,
+              "y": 0,
+              "width": 1526,
+              "height": 900
+            }
+          },
+          "dom": {
+            "width": 1526,
+            "height": 900,
+            "dpr": 1,
+            "pinch": 1,
+            "scroll": 1526,
+            "client": 1526,
+            "searchFont": "14px",
+            "cssZoom": "1"
+          }
+        }
+      ]
+    }
+  ],
+  "checks": [],
+  "samples": [
+    {
+      "state": "overview",
+      "metrics": {
+        "layoutViewport": {
+          "pageX": 0,
+          "pageY": 0,
+          "clientWidth": 1526,
+          "clientHeight": 900
+        },
+        "visualViewport": {
+          "offsetX": 0,
+          "offsetY": 0,
+          "pageX": 0,
+          "pageY": 0,
+          "clientWidth": 1526,
+          "clientHeight": 900,
+          "scale": 1,
+          "zoom": 1
+        },
+        "contentSize": {
+          "x": 0,
+          "y": 0,
+          "width": 1526,
+          "height": 900
+        },
+        "cssLayoutViewport": {
+          "pageX": 0,
+          "pageY": 0,
+          "clientWidth": 1526,
+          "clientHeight": 900
+        },
+        "cssVisualViewport": {
+          "offsetX": 0,
+          "offsetY": 0,
+          "pageX": 0,
+          "pageY": 0,
+          "clientWidth": 1526,
+          "clientHeight": 900,
+          "scale": 1,
+          "zoom": 1
+        },
+        "cssContentSize": {
+          "x": 0,
+          "y": 0,
+          "width": 1526,
+          "height": 900
+        }
+      },
+      "dom": {
+        "width": 1526,
+        "height": 900,
+        "dpr": 1,
+        "pinch": 1,
+        "scroll": 1526,
+        "client": 1526,
+        "searchFont": "14px",
+        "cssZoom": "1"
+      }
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "states": [
+    {
+      "url": "http://127.0.0.1:8766/?region=shenyang&snapshot=shenyang-mvp-20261023&types=other%2Crail%2Cunknown&classes=branch%2Cconventional_main%2Cconventional_other%2Chigh_speed%2Cindustrial%2Clight_rail%2Cmetro%2Cother%2Ctram%2Cunknown&states=mapped&labels=lines%2Cstations&facilities=0&sidings=1#map=10.50/41.80000/123.42000",
+      "text": "╫\n铁路图集\nRAILWAY ATLAS\n沈阳试验区\n铁路数据 2026-10-20\n关于数据 ↗\n3 km\n© OpenStreetMap contributors · ODbL\n从一座城市，读懂铁路\n沿着铁路线\n看见沈阳。\n\n线路、车站与它们之间的真实地理关系。\n\n地区与数据版本\n查找车站\n⌕\n×\n\n搜索沈阳试验区 · 铁路和地铁分别显示\n\n通过列表查看车站与要素\n键盘操作\n看什么\n铁路概览\n仅高速\n仅普速\n城市轨道\n\n铁路概览 · 当前标注\n\n按类型、等级和状态筛选\n更多显示选项\n读图图例 颜色看类型，虚实看状态\n高速铁路\n普速干线\n普速/未标注\n支线/站场线\n放大后显示\n专用线\n放大后显示\n制式/等级未标注\n○\n车站 / 乘降所\n当前标注\n\n当前标注不保证运营。车站缺少制式标签时保留为“未标注”。\n\n试着从沈阳北站开始\n\n放大查看站场；点击线路或站名，了解名称、等级与来源。\n\n铁路地图已就绪。名称与属性来自源标签，点击可查看依据。\n\n地理铁路图\nSHENYANG / 01\n显示底图\n关\n底图已隐藏\n分享\n回到试验区",
+      "focus": "<body>\n    <div id=\"root\"><div><header><a class=\"brand\" href=\"/\" aria-label=\"铁路图集首页\"><span class=\"brand-icon\">╫</span><span>铁路图集 <small>RAILWAY ATLAS</small></span></a><div class=\"region\">沈阳试验区 <span id=\"source-date\">铁路数据 2026-10-20</span></div><button id=\"about-open\" class=\"quiet\">关于数据 ↗</button></header><main><section id=\"map\" aria-label=\"沈阳铁路地图\" class=\"maplibregl-map\"><div class=\"maplibregl-canvas-container maplibregl-interactive maplibregl-touch-drag-pan maplibregl-touch-zoom-rotate\"><canvas class=\"maplibregl-canvas\" tabindex=\"0\" aria-label=\"沈阳铁路地图\" role=\"region\" width=\"1180\" height=\"824\" style=\"width: 1180px; height: 824px;\" aria-describedby=\"map-keyboard-help\"></canvas></div><div class=\"maplibregl-control-container\"><div class=\"maplibregl-ctrl-top-left \"></div><div class=\"maplibregl-ctrl-top-right \"><div class=\"maplibregl-ctrl maplibregl-ctrl-group\"><button class=\"maplibregl-ctrl-zoom-in\" type=\"button\" title=\"放大地图\" aria-label=\"放大地图\" aria-disabled=\"false\"><span class=\"maplibregl-ctrl-icon\" aria-hidden=\"true\"></span></button><button class=\"maplibregl-ctrl-zoom-out\" type=\"button\" title=\"缩小地图\" aria-label=\"缩小地图\" aria-disabled=\"false\"><span class=\"maplibregl-ctrl-icon\" aria-hidden="
+    }
+  ]
+}

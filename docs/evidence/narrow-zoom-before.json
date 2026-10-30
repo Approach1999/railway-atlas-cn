@@ -1,0 +1,4112 @@
+{
+  "date": "2026-10-28T06:08:01.008Z",
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "build": {
+    "asset": "/assets/index-CtFMFhkg.js",
+    "index_sha256": "33bb576b7238dedf30b1ad7c560cb6d009e4658d01b69fee4b26c075a62f578d",
+    "asset_sha256": "b76a3028a98c89a4580f8e40e35ab16b817671d2b9ee32d47872f7abd30bb903"
+  },
+  "browser_target": {
+    "channel": "chrome",
+    "version": "156.0.8078.48",
+    "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "product": "Chrome/156.0.8078.48",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "renderer": "forced SwiftShader",
+    "headless": true,
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64"
+    },
+    "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+  },
+  "cases": [
+    {
+      "size": {
+        "width": 1024,
+        "height": 768
+      },
+      "factor": 1,
+      "first": {
+        "metrics": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 998,
+            "clientHeight": 668
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 998,
+            "clientHeight": 668,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 998,
+            "height": 668
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 998,
+            "clientHeight": 668
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 998,
+            "clientHeight": 668,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 998,
+            "height": 668
+          }
+        },
+        "dom": {
+          "width": 998,
+          "height": 668,
+          "dpr": 1,
+          "pinch": 1,
+          "cssZoom": "1",
+          "searchFont": "14px",
+          "overflow": false
+        }
+      },
+      "checks": [
+        {
+          "name": "actual-100-percent-baseline",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 1024,
+        "height": 768
+      },
+      "factor": 2,
+      "first": {
+        "metrics": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 998,
+            "clientHeight": 668
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 998,
+            "clientHeight": 668,
+            "scale": 1,
+            "zoom": 2
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 998,
+            "height": 668
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 499,
+            "clientHeight": 334
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 499,
+            "clientHeight": 334,
+            "scale": 1,
+            "zoom": 2
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 499,
+            "height": 334
+          }
+        },
+        "dom": {
+          "width": 499,
+          "height": 334,
+          "dpr": 2,
+          "pinch": 1,
+          "cssZoom": "1",
+          "searchFont": "14px",
+          "overflow": false
+        }
+      },
+      "checks": [
+        {
+          "name": "empty-reset-action",
+          "passed": true,
+          "rect": {
+            "x": 31,
+            "y": 124.765625,
+            "width": 94,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 334
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 39,
+              "y": 132.765625,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 39,
+              "y": 146.765625,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 39,
+              "y": 160.765625,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 78,
+              "y": 132.765625,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 78,
+              "y": 146.765625,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 78,
+              "y": 160.765625,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 117,
+              "y": 132.765625,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 117,
+              "y": 146.765625,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 117,
+              "y": 160.765625,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "notice-copy-and-box",
+          "passed": false,
+          "rect": {
+            "x": 12,
+            "y": 91.265625,
+            "width": 475,
+            "height": 88.5
+          },
+          "viewport": {
+            "width": 499,
+            "height": 334
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 20,
+              "y": 99.265625,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 20,
+              "y": 135.515625,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 20,
+              "y": 171.765625,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 249.5,
+              "y": 99.265625,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 249.5,
+              "y": 135.515625,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 249.5,
+              "y": 171.765625,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 479,
+              "y": 99.265625,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 479,
+              "y": 135.515625,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 479,
+              "y": 171.765625,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-icon"
+            }
+          ],
+          "coveredBy": [
+            "maplibregl-ctrl-icon"
+          ]
+        },
+        {
+          "name": "zoom-in",
+          "passed": true,
+          "rect": {
+            "x": 458,
+            "y": 140,
+            "width": 29,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 334
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 465.25,
+              "y": 148,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 465.25,
+              "y": 162,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 465.25,
+              "y": 176,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 472.5,
+              "y": 148,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 472.5,
+              "y": 162,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 472.5,
+              "y": 176,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 479.75,
+              "y": 148,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 479.75,
+              "y": 162,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 479.75,
+              "y": 176,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "zoom-out",
+          "passed": false,
+          "rect": {
+            "x": 458,
+            "y": 176,
+            "width": 29,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 334
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 465.25,
+              "y": 184,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 465.25,
+              "y": 198,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-attrib-inner"
+            },
+            {
+              "x": 465.25,
+              "y": 212,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 472.5,
+              "y": 184,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 472.5,
+              "y": 198,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-attrib-inner"
+            },
+            {
+              "x": 472.5,
+              "y": 212,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 479.75,
+              "y": 184,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 479.75,
+              "y": 198,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-attrib-inner"
+            },
+            {
+              "x": 479.75,
+              "y": 212,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            }
+          ],
+          "coveredBy": [
+            "maplibregl-ctrl-attrib-inner",
+            "maplibregl-ctrl-attrib-inner",
+            "maplibregl-ctrl-attrib-inner"
+          ]
+        },
+        {
+          "name": "empty-view-share-open",
+          "passed": false,
+          "rect": {
+            "x": 327,
+            "y": 77,
+            "width": 34,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 334
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 335,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "share-open"
+            },
+            {
+              "x": 335,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 335,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 344,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "share-open"
+            },
+            {
+              "x": 344,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 344,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 353,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "share-open"
+            },
+            {
+              "x": 353,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 353,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            }
+          ],
+          "coveredBy": [
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice"
+          ]
+        },
+        {
+          "name": "empty-view-home",
+          "passed": false,
+          "rect": {
+            "x": 365,
+            "y": 77,
+            "width": 64,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 334
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 373,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "home"
+            },
+            {
+              "x": 373,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 373,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 397,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "home"
+            },
+            {
+              "x": 397,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 397,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 421,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "home"
+            },
+            {
+              "x": 421,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 421,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            }
+          ],
+          "coveredBy": [
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice"
+          ]
+        },
+        {
+          "name": "empty-view-panel-toggle",
+          "passed": false,
+          "rect": {
+            "x": 433,
+            "y": 77,
+            "width": 54,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 334
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 441,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            },
+            {
+              "x": 441,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 441,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 460,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            },
+            {
+              "x": 460,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 460,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 479,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            },
+            {
+              "x": 479,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 479,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            }
+          ],
+          "coveredBy": [
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice"
+          ]
+        },
+        {
+          "name": "attribution",
+          "passed": true,
+          "rect": {
+            "x": 333.359375,
+            "y": 204.265625,
+            "width": 125.625,
+            "height": 11
+          },
+          "viewport": {
+            "width": 499,
+            "height": 334
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 341.359375,
+              "y": 207.015625,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 341.359375,
+              "y": 209.765625,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 341.359375,
+              "y": 212.515625,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 396.171875,
+              "y": 207.015625,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 396.171875,
+              "y": 209.765625,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 396.171875,
+              "y": 212.515625,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 450.984375,
+              "y": 207.015625,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 450.984375,
+              "y": 209.765625,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 450.984375,
+              "y": 212.515625,
+              "hit": true,
+              "coveredBy": "A"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "long-empty-copy-and-box",
+          "passed": false,
+          "rect": {
+            "x": 12,
+            "y": 91.265625,
+            "width": 475,
+            "height": 88.5
+          },
+          "viewport": {
+            "width": 499,
+            "height": 334
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 20,
+              "y": 99.265625,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 20,
+              "y": 135.515625,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 20,
+              "y": 171.765625,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 249.5,
+              "y": 99.265625,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 249.5,
+              "y": 135.515625,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 249.5,
+              "y": 171.765625,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 479,
+              "y": 99.265625,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 479,
+              "y": 135.515625,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 479,
+              "y": 171.765625,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-icon"
+            }
+          ],
+          "coveredBy": [
+            "maplibregl-ctrl-icon"
+          ]
+        },
+        {
+          "name": "long-empty-reset",
+          "passed": true,
+          "rect": {
+            "x": 31,
+            "y": 124.765625,
+            "width": 94,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 334
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 39,
+              "y": 132.765625,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 39,
+              "y": 146.765625,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 39,
+              "y": 160.765625,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 78,
+              "y": 132.765625,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 78,
+              "y": 146.765625,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 78,
+              "y": 160.765625,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 117,
+              "y": 132.765625,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 117,
+              "y": 146.765625,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 117,
+              "y": 160.765625,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "long-empty-share-open",
+          "passed": false,
+          "rect": {
+            "x": 327,
+            "y": 77,
+            "width": 34,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 334
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 335,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "share-open"
+            },
+            {
+              "x": 335,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 335,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 344,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "share-open"
+            },
+            {
+              "x": 344,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 344,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 353,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "share-open"
+            },
+            {
+              "x": 353,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 353,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            }
+          ],
+          "coveredBy": [
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice"
+          ]
+        },
+        {
+          "name": "long-empty-home",
+          "passed": false,
+          "rect": {
+            "x": 365,
+            "y": 77,
+            "width": 64,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 334
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 373,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "home"
+            },
+            {
+              "x": 373,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 373,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 397,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "home"
+            },
+            {
+              "x": 397,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 397,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 421,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "home"
+            },
+            {
+              "x": 421,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 421,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            }
+          ],
+          "coveredBy": [
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice"
+          ]
+        },
+        {
+          "name": "long-empty-panel-toggle",
+          "passed": false,
+          "rect": {
+            "x": 433,
+            "y": 77,
+            "width": 54,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 334
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 441,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            },
+            {
+              "x": 441,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 441,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 460,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            },
+            {
+              "x": 460,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 460,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 479,
+              "y": 85,
+              "hit": true,
+              "coveredBy": "panel-toggle"
+            },
+            {
+              "x": 479,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 479,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            }
+          ],
+          "coveredBy": [
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice"
+          ]
+        },
+        {
+          "name": "long-empty-zoom-in",
+          "passed": true,
+          "rect": {
+            "x": 458,
+            "y": 140,
+            "width": 29,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 334
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 465.25,
+              "y": 148,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 465.25,
+              "y": 162,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 465.25,
+              "y": 176,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 472.5,
+              "y": 148,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 472.5,
+              "y": 162,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 472.5,
+              "y": 176,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 479.75,
+              "y": 148,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 479.75,
+              "y": 162,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 479.75,
+              "y": 176,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "long-empty-zoom-out",
+          "passed": false,
+          "rect": {
+            "x": 458,
+            "y": 176,
+            "width": 29,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 334
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 465.25,
+              "y": 184,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 465.25,
+              "y": 198,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-attrib-inner"
+            },
+            {
+              "x": 465.25,
+              "y": 212,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 472.5,
+              "y": 184,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 472.5,
+              "y": 198,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-attrib-inner"
+            },
+            {
+              "x": 472.5,
+              "y": 212,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 479.75,
+              "y": 184,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 479.75,
+              "y": 198,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-attrib-inner"
+            },
+            {
+              "x": 479.75,
+              "y": 212,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            }
+          ],
+          "coveredBy": [
+            "maplibregl-ctrl-attrib-inner",
+            "maplibregl-ctrl-attrib-inner",
+            "maplibregl-ctrl-attrib-inner"
+          ]
+        },
+        {
+          "name": "long-empty-attribution",
+          "passed": true,
+          "rect": {
+            "x": 333.359375,
+            "y": 204.265625,
+            "width": 125.625,
+            "height": 11
+          },
+          "viewport": {
+            "width": 499,
+            "height": 334
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 341.359375,
+              "y": 207.015625,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 341.359375,
+              "y": 209.765625,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 341.359375,
+              "y": 212.515625,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 396.171875,
+              "y": 207.015625,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 396.171875,
+              "y": 209.765625,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 396.171875,
+              "y": 212.515625,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 450.984375,
+              "y": 207.015625,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 450.984375,
+              "y": 209.765625,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 450.984375,
+              "y": 212.515625,
+              "hit": true,
+              "coveredBy": "A"
+            }
+          ],
+          "coveredBy": []
+        }
+      ],
+      "screenshots": [
+        "empty-1024x768.png",
+        "long-empty-1024x768.png"
+      ]
+    },
+    {
+      "size": {
+        "width": 1024,
+        "height": 720
+      },
+      "factor": 1,
+      "first": {
+        "metrics": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 998,
+            "clientHeight": 620
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 998,
+            "clientHeight": 620,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 998,
+            "height": 620
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 998,
+            "clientHeight": 620
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 998,
+            "clientHeight": 620,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 998,
+            "height": 620
+          }
+        },
+        "dom": {
+          "width": 998,
+          "height": 620,
+          "dpr": 1,
+          "pinch": 1,
+          "cssZoom": "1",
+          "searchFont": "14px",
+          "overflow": false
+        }
+      },
+      "checks": [
+        {
+          "name": "actual-100-percent-baseline",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 1024,
+        "height": 720
+      },
+      "factor": 2,
+      "first": {
+        "metrics": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 998,
+            "clientHeight": 620
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 998,
+            "clientHeight": 620,
+            "scale": 1,
+            "zoom": 2
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 998,
+            "height": 620
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 499,
+            "clientHeight": 310
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 499,
+            "clientHeight": 310,
+            "scale": 1,
+            "zoom": 2
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 499,
+            "height": 310
+          }
+        },
+        "dom": {
+          "width": 499,
+          "height": 310,
+          "dpr": 2,
+          "pinch": 1,
+          "cssZoom": "1",
+          "searchFont": "14px",
+          "overflow": false
+        }
+      },
+      "checks": [
+        {
+          "name": "empty-reset-action",
+          "passed": true,
+          "rect": {
+            "x": 31,
+            "y": 110.84375,
+            "width": 94,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 310
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 39,
+              "y": 118.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 39,
+              "y": 132.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 39,
+              "y": 146.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 78,
+              "y": 118.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 78,
+              "y": 132.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 78,
+              "y": 146.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 117,
+              "y": 118.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 117,
+              "y": 132.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 117,
+              "y": 146.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "notice-copy-and-box",
+          "passed": false,
+          "rect": {
+            "x": 12,
+            "y": 77.34375,
+            "width": 475,
+            "height": 88.5
+          },
+          "viewport": {
+            "width": 499,
+            "height": 310
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 20,
+              "y": 85.34375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 20,
+              "y": 121.59375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 20,
+              "y": 157.84375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 249.5,
+              "y": 85.34375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 249.5,
+              "y": 121.59375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 249.5,
+              "y": 157.84375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 479,
+              "y": 85.34375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 479,
+              "y": 121.59375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 479,
+              "y": 157.84375,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-icon"
+            }
+          ],
+          "coveredBy": [
+            "maplibregl-ctrl-icon"
+          ]
+        },
+        {
+          "name": "zoom-in",
+          "passed": true,
+          "rect": {
+            "x": 458,
+            "y": 140,
+            "width": 29,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 310
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 465.25,
+              "y": 148,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 465.25,
+              "y": 162,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 465.25,
+              "y": 176,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 472.5,
+              "y": 148,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 472.5,
+              "y": 162,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 472.5,
+              "y": 176,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 479.75,
+              "y": 148,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 479.75,
+              "y": 162,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 479.75,
+              "y": 176,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "zoom-out",
+          "passed": false,
+          "rect": {
+            "x": 458,
+            "y": 162,
+            "width": 29,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 310
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 465.25,
+              "y": 170,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-attrib-inner"
+            },
+            {
+              "x": 465.25,
+              "y": 184,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 465.25,
+              "y": 198,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 472.5,
+              "y": 170,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-attrib-inner"
+            },
+            {
+              "x": 472.5,
+              "y": 184,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 472.5,
+              "y": 198,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 479.75,
+              "y": 170,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-attrib-inner"
+            },
+            {
+              "x": 479.75,
+              "y": 184,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 479.75,
+              "y": 198,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            }
+          ],
+          "coveredBy": [
+            "maplibregl-ctrl-attrib-inner",
+            "maplibregl-ctrl-attrib-inner",
+            "maplibregl-ctrl-attrib-inner"
+          ]
+        },
+        {
+          "name": "empty-view-share-open",
+          "passed": false,
+          "rect": {
+            "x": 327,
+            "y": 77,
+            "width": 34,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 310
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 335,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 335,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 335,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 344,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 344,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 344,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 353,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 353,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 353,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            }
+          ],
+          "coveredBy": [
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice"
+          ]
+        },
+        {
+          "name": "empty-view-home",
+          "passed": false,
+          "rect": {
+            "x": 365,
+            "y": 77,
+            "width": 64,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 310
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 373,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 373,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 373,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 397,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 397,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 397,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 421,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 421,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 421,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            }
+          ],
+          "coveredBy": [
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice"
+          ]
+        },
+        {
+          "name": "empty-view-panel-toggle",
+          "passed": false,
+          "rect": {
+            "x": 433,
+            "y": 77,
+            "width": 54,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 310
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 441,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 441,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 441,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 460,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 460,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 460,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 479,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 479,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 479,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            }
+          ],
+          "coveredBy": [
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice"
+          ]
+        },
+        {
+          "name": "attribution",
+          "passed": true,
+          "rect": {
+            "x": 333.359375,
+            "y": 190.34375,
+            "width": 125.625,
+            "height": 11
+          },
+          "viewport": {
+            "width": 499,
+            "height": 310
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 341.359375,
+              "y": 193.09375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 341.359375,
+              "y": 195.84375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 341.359375,
+              "y": 198.59375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 396.171875,
+              "y": 193.09375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 396.171875,
+              "y": 195.84375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 396.171875,
+              "y": 198.59375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 450.984375,
+              "y": 193.09375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 450.984375,
+              "y": 195.84375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 450.984375,
+              "y": 198.59375,
+              "hit": true,
+              "coveredBy": "A"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "long-empty-copy-and-box",
+          "passed": false,
+          "rect": {
+            "x": 12,
+            "y": 77.34375,
+            "width": 475,
+            "height": 88.5
+          },
+          "viewport": {
+            "width": 499,
+            "height": 310
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 20,
+              "y": 85.34375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 20,
+              "y": 121.59375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 20,
+              "y": 157.84375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 249.5,
+              "y": 85.34375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 249.5,
+              "y": 121.59375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 249.5,
+              "y": 157.84375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 479,
+              "y": 85.34375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 479,
+              "y": 121.59375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 479,
+              "y": 157.84375,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-icon"
+            }
+          ],
+          "coveredBy": [
+            "maplibregl-ctrl-icon"
+          ]
+        },
+        {
+          "name": "long-empty-reset",
+          "passed": true,
+          "rect": {
+            "x": 31,
+            "y": 110.84375,
+            "width": 94,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 310
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 39,
+              "y": 118.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 39,
+              "y": 132.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 39,
+              "y": 146.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 78,
+              "y": 118.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 78,
+              "y": 132.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 78,
+              "y": 146.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 117,
+              "y": 118.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 117,
+              "y": 132.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 117,
+              "y": 146.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "long-empty-share-open",
+          "passed": false,
+          "rect": {
+            "x": 327,
+            "y": 77,
+            "width": 34,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 310
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 335,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 335,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 335,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 344,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 344,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 344,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 353,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 353,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 353,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            }
+          ],
+          "coveredBy": [
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice"
+          ]
+        },
+        {
+          "name": "long-empty-home",
+          "passed": false,
+          "rect": {
+            "x": 365,
+            "y": 77,
+            "width": 64,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 310
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 373,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 373,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 373,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 397,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 397,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 397,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 421,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 421,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 421,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            }
+          ],
+          "coveredBy": [
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice"
+          ]
+        },
+        {
+          "name": "long-empty-panel-toggle",
+          "passed": false,
+          "rect": {
+            "x": 433,
+            "y": 77,
+            "width": 54,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 310
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 441,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 441,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 441,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 460,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 460,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 460,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 479,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 479,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 479,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            }
+          ],
+          "coveredBy": [
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice"
+          ]
+        },
+        {
+          "name": "long-empty-zoom-in",
+          "passed": true,
+          "rect": {
+            "x": 458,
+            "y": 140,
+            "width": 29,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 310
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 465.25,
+              "y": 148,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 465.25,
+              "y": 162,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 465.25,
+              "y": 176,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 472.5,
+              "y": 148,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 472.5,
+              "y": 162,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 472.5,
+              "y": 176,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 479.75,
+              "y": 148,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 479.75,
+              "y": 162,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 479.75,
+              "y": 176,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "long-empty-zoom-out",
+          "passed": false,
+          "rect": {
+            "x": 458,
+            "y": 162,
+            "width": 29,
+            "height": 44
+          },
+          "viewport": {
+            "width": 499,
+            "height": 310
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 465.25,
+              "y": 170,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-attrib-inner"
+            },
+            {
+              "x": 465.25,
+              "y": 184,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 465.25,
+              "y": 198,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 472.5,
+              "y": 170,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-attrib-inner"
+            },
+            {
+              "x": 472.5,
+              "y": 184,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 472.5,
+              "y": 198,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 479.75,
+              "y": 170,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-attrib-inner"
+            },
+            {
+              "x": 479.75,
+              "y": 184,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 479.75,
+              "y": 198,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            }
+          ],
+          "coveredBy": [
+            "maplibregl-ctrl-attrib-inner",
+            "maplibregl-ctrl-attrib-inner",
+            "maplibregl-ctrl-attrib-inner"
+          ]
+        },
+        {
+          "name": "long-empty-attribution",
+          "passed": true,
+          "rect": {
+            "x": 333.359375,
+            "y": 190.34375,
+            "width": 125.625,
+            "height": 11
+          },
+          "viewport": {
+            "width": 499,
+            "height": 310
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 341.359375,
+              "y": 193.09375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 341.359375,
+              "y": 195.84375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 341.359375,
+              "y": 198.59375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 396.171875,
+              "y": 193.09375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 396.171875,
+              "y": 195.84375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 396.171875,
+              "y": 198.59375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 450.984375,
+              "y": 193.09375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 450.984375,
+              "y": 195.84375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 450.984375,
+              "y": 198.59375,
+              "hit": true,
+              "coveredBy": "A"
+            }
+          ],
+          "coveredBy": []
+        }
+      ],
+      "screenshots": [
+        "empty-1024x720.png",
+        "long-empty-1024x720.png"
+      ]
+    },
+    {
+      "size": {
+        "width": 800,
+        "height": 720
+      },
+      "factor": 1,
+      "first": {
+        "metrics": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 774,
+            "clientHeight": 620
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 774,
+            "clientHeight": 620,
+            "scale": 1,
+            "zoom": 1
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 774,
+            "height": 620
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 774,
+            "clientHeight": 620
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 774,
+            "clientHeight": 620,
+            "scale": 1,
+            "zoom": 1
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 774,
+            "height": 620
+          }
+        },
+        "dom": {
+          "width": 774,
+          "height": 620,
+          "dpr": 1,
+          "pinch": 1,
+          "cssZoom": "1",
+          "searchFont": "14px",
+          "overflow": false
+        }
+      },
+      "checks": [
+        {
+          "name": "actual-100-percent-baseline",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 800,
+        "height": 720
+      },
+      "factor": 2,
+      "first": {
+        "metrics": {
+          "layoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 774,
+            "clientHeight": 620
+          },
+          "visualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 774,
+            "clientHeight": 620,
+            "scale": 1,
+            "zoom": 2
+          },
+          "contentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 774,
+            "height": 620
+          },
+          "cssLayoutViewport": {
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 387,
+            "clientHeight": 310
+          },
+          "cssVisualViewport": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "pageX": 0,
+            "pageY": 0,
+            "clientWidth": 387,
+            "clientHeight": 310,
+            "scale": 1,
+            "zoom": 2
+          },
+          "cssContentSize": {
+            "x": 0,
+            "y": 0,
+            "width": 387,
+            "height": 310
+          }
+        },
+        "dom": {
+          "width": 387,
+          "height": 310,
+          "dpr": 2,
+          "pinch": 1,
+          "cssZoom": "1",
+          "searchFont": "14px",
+          "overflow": false
+        }
+      },
+      "checks": [
+        {
+          "name": "empty-reset-action",
+          "passed": true,
+          "rect": {
+            "x": 31,
+            "y": 110.84375,
+            "width": 94,
+            "height": 44
+          },
+          "viewport": {
+            "width": 387,
+            "height": 310
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 39,
+              "y": 118.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 39,
+              "y": 132.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 39,
+              "y": 146.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 78,
+              "y": 118.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 78,
+              "y": 132.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 78,
+              "y": 146.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 117,
+              "y": 118.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 117,
+              "y": 132.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 117,
+              "y": 146.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "notice-copy-and-box",
+          "passed": false,
+          "rect": {
+            "x": 12,
+            "y": 77.34375,
+            "width": 363,
+            "height": 88.5
+          },
+          "viewport": {
+            "width": 387,
+            "height": 310
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 20,
+              "y": 85.34375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 20,
+              "y": 121.59375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 20,
+              "y": 157.84375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 193.5,
+              "y": 85.34375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 193.5,
+              "y": 121.59375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 193.5,
+              "y": 157.84375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 367,
+              "y": 85.34375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 367,
+              "y": 121.59375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 367,
+              "y": 157.84375,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-icon"
+            }
+          ],
+          "coveredBy": [
+            "maplibregl-ctrl-icon"
+          ]
+        },
+        {
+          "name": "zoom-in",
+          "passed": true,
+          "rect": {
+            "x": 346,
+            "y": 140,
+            "width": 29,
+            "height": 44
+          },
+          "viewport": {
+            "width": 387,
+            "height": 310
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 353.25,
+              "y": 148,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 353.25,
+              "y": 162,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 353.25,
+              "y": 176,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 360.5,
+              "y": 148,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 360.5,
+              "y": 162,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 360.5,
+              "y": 176,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 367.75,
+              "y": 148,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 367.75,
+              "y": 162,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 367.75,
+              "y": 176,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "zoom-out",
+          "passed": false,
+          "rect": {
+            "x": 346,
+            "y": 162,
+            "width": 29,
+            "height": 44
+          },
+          "viewport": {
+            "width": 387,
+            "height": 310
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 353.25,
+              "y": 170,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-attrib-inner"
+            },
+            {
+              "x": 353.25,
+              "y": 184,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 353.25,
+              "y": 198,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 360.5,
+              "y": 170,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-attrib-inner"
+            },
+            {
+              "x": 360.5,
+              "y": 184,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 360.5,
+              "y": 198,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 367.75,
+              "y": 170,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-attrib-inner"
+            },
+            {
+              "x": 367.75,
+              "y": 184,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 367.75,
+              "y": 198,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            }
+          ],
+          "coveredBy": [
+            "maplibregl-ctrl-attrib-inner",
+            "maplibregl-ctrl-attrib-inner",
+            "maplibregl-ctrl-attrib-inner"
+          ]
+        },
+        {
+          "name": "empty-view-share-open",
+          "passed": false,
+          "rect": {
+            "x": 215,
+            "y": 77,
+            "width": 34,
+            "height": 44
+          },
+          "viewport": {
+            "width": 387,
+            "height": 310
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 223,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 223,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 223,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 232,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 232,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 232,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 241,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 241,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 241,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            }
+          ],
+          "coveredBy": [
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice"
+          ]
+        },
+        {
+          "name": "empty-view-home",
+          "passed": false,
+          "rect": {
+            "x": 253,
+            "y": 77,
+            "width": 64,
+            "height": 44
+          },
+          "viewport": {
+            "width": 387,
+            "height": 310
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 261,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 261,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 261,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 285,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 285,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 285,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 309,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 309,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 309,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            }
+          ],
+          "coveredBy": [
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice"
+          ]
+        },
+        {
+          "name": "empty-view-panel-toggle",
+          "passed": false,
+          "rect": {
+            "x": 321,
+            "y": 77,
+            "width": 54,
+            "height": 44
+          },
+          "viewport": {
+            "width": 387,
+            "height": 310
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 329,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 329,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 329,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 348,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 348,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 348,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 367,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 367,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 367,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            }
+          ],
+          "coveredBy": [
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice"
+          ]
+        },
+        {
+          "name": "attribution",
+          "passed": true,
+          "rect": {
+            "x": 221.359375,
+            "y": 190.34375,
+            "width": 125.625,
+            "height": 11
+          },
+          "viewport": {
+            "width": 387,
+            "height": 310
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 229.359375,
+              "y": 193.09375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 229.359375,
+              "y": 195.84375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 229.359375,
+              "y": 198.59375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 284.171875,
+              "y": 193.09375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 284.171875,
+              "y": 195.84375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 284.171875,
+              "y": 198.59375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 338.984375,
+              "y": 193.09375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 338.984375,
+              "y": 195.84375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 338.984375,
+              "y": 198.59375,
+              "hit": true,
+              "coveredBy": "A"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "long-empty-copy-and-box",
+          "passed": false,
+          "rect": {
+            "x": 12,
+            "y": 62.84375,
+            "width": 363,
+            "height": 103
+          },
+          "viewport": {
+            "width": 387,
+            "height": 310
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 20,
+              "y": 70.84375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 20,
+              "y": 114.34375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 20,
+              "y": 157.84375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 193.5,
+              "y": 70.84375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 193.5,
+              "y": 114.34375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 193.5,
+              "y": 157.84375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 367,
+              "y": 70.84375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 367,
+              "y": 114.34375,
+              "hit": true,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 367,
+              "y": 157.84375,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-icon"
+            }
+          ],
+          "coveredBy": [
+            "maplibregl-ctrl-icon"
+          ]
+        },
+        {
+          "name": "long-empty-reset",
+          "passed": true,
+          "rect": {
+            "x": 31,
+            "y": 110.84375,
+            "width": 94,
+            "height": 44
+          },
+          "viewport": {
+            "width": 387,
+            "height": 310
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 39,
+              "y": 118.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 39,
+              "y": 132.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 39,
+              "y": 146.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 78,
+              "y": 118.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 78,
+              "y": 132.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 78,
+              "y": 146.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 117,
+              "y": 118.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 117,
+              "y": 132.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            },
+            {
+              "x": 117,
+              "y": 146.84375,
+              "hit": true,
+              "coveredBy": "BUTTON"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "long-empty-share-open",
+          "passed": false,
+          "rect": {
+            "x": 215,
+            "y": 77,
+            "width": 34,
+            "height": 44
+          },
+          "viewport": {
+            "width": 387,
+            "height": 310
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 223,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 223,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 223,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 232,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 232,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 232,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 241,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 241,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 241,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            }
+          ],
+          "coveredBy": [
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice"
+          ]
+        },
+        {
+          "name": "long-empty-home",
+          "passed": false,
+          "rect": {
+            "x": 253,
+            "y": 77,
+            "width": 64,
+            "height": 44
+          },
+          "viewport": {
+            "width": 387,
+            "height": 310
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 261,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 261,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 261,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 285,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 285,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 285,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 309,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 309,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 309,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            }
+          ],
+          "coveredBy": [
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice"
+          ]
+        },
+        {
+          "name": "long-empty-panel-toggle",
+          "passed": false,
+          "rect": {
+            "x": 321,
+            "y": 77,
+            "width": 54,
+            "height": 44
+          },
+          "viewport": {
+            "width": 387,
+            "height": 310
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 329,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 329,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 329,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 348,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 348,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 348,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 367,
+              "y": 85,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 367,
+              "y": 99,
+              "hit": false,
+              "coveredBy": "map-notice"
+            },
+            {
+              "x": 367,
+              "y": 113,
+              "hit": false,
+              "coveredBy": "map-notice"
+            }
+          ],
+          "coveredBy": [
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice",
+            "map-notice"
+          ]
+        },
+        {
+          "name": "long-empty-zoom-in",
+          "passed": true,
+          "rect": {
+            "x": 346,
+            "y": 140,
+            "width": 29,
+            "height": 44
+          },
+          "viewport": {
+            "width": 387,
+            "height": 310
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 353.25,
+              "y": 148,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 353.25,
+              "y": 162,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 353.25,
+              "y": 176,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 360.5,
+              "y": 148,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 360.5,
+              "y": 162,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 360.5,
+              "y": 176,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 367.75,
+              "y": 148,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 367.75,
+              "y": 162,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 367.75,
+              "y": 176,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            }
+          ],
+          "coveredBy": []
+        },
+        {
+          "name": "long-empty-zoom-out",
+          "passed": false,
+          "rect": {
+            "x": 346,
+            "y": 162,
+            "width": 29,
+            "height": 44
+          },
+          "viewport": {
+            "width": 387,
+            "height": 310
+          },
+          "hit": false,
+          "points": [
+            {
+              "x": 353.25,
+              "y": 170,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-attrib-inner"
+            },
+            {
+              "x": 353.25,
+              "y": 184,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 353.25,
+              "y": 198,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 360.5,
+              "y": 170,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-attrib-inner"
+            },
+            {
+              "x": 360.5,
+              "y": 184,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 360.5,
+              "y": 198,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 367.75,
+              "y": 170,
+              "hit": false,
+              "coveredBy": "maplibregl-ctrl-attrib-inner"
+            },
+            {
+              "x": 367.75,
+              "y": 184,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            },
+            {
+              "x": 367.75,
+              "y": 198,
+              "hit": true,
+              "coveredBy": "maplibregl-ctrl-icon"
+            }
+          ],
+          "coveredBy": [
+            "maplibregl-ctrl-attrib-inner",
+            "maplibregl-ctrl-attrib-inner",
+            "maplibregl-ctrl-attrib-inner"
+          ]
+        },
+        {
+          "name": "long-empty-attribution",
+          "passed": true,
+          "rect": {
+            "x": 221.359375,
+            "y": 190.34375,
+            "width": 125.625,
+            "height": 11
+          },
+          "viewport": {
+            "width": 387,
+            "height": 310
+          },
+          "hit": true,
+          "points": [
+            {
+              "x": 229.359375,
+              "y": 193.09375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 229.359375,
+              "y": 195.84375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 229.359375,
+              "y": 198.59375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 284.171875,
+              "y": 193.09375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 284.171875,
+              "y": 195.84375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 284.171875,
+              "y": 198.59375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 338.984375,
+              "y": 193.09375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 338.984375,
+              "y": 195.84375,
+              "hit": true,
+              "coveredBy": "A"
+            },
+            {
+              "x": 338.984375,
+              "y": 198.59375,
+              "hit": true,
+              "coveredBy": "A"
+            }
+          ],
+          "coveredBy": []
+        }
+      ],
+      "screenshots": [
+        "empty-800x720.png",
+        "long-empty-800x720.png"
+      ]
+    }
+  ],
+  "profiles": [
+    "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\narrow-zoom\\before\\profile-wpoiwK",
+    "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\narrow-zoom\\before\\profile-GOVIS4",
+    "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\narrow-zoom\\before\\profile-uGlmvu",
+    "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\narrow-zoom\\before\\profile-TMvo08",
+    "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\narrow-zoom\\before\\profile-kTOu2M",
+    "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\narrow-zoom\\before\\profile-Xuxvot"
+  ],
+  "errors": [],
+  "external": [],
+  "source_sha256": "d5d4c59a95e018bc8e6ab473ebf6a2f7036009bfd28278ea371875b318508218",
+  "scope": "Installed headless browser, genuine default page zoom compared with identical-window 100-percent profile, CDP factor/pinch assertions. Center hit tests and finite recovery tasks, not real user window, screen-reader or complete N09 acceptance."
+}

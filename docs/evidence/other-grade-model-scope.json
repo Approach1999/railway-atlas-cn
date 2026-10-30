@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-28T06:00:44.187Z",
+  "unchanged_functions": [
+    "expandedState",
+    "findStations",
+    "normalize",
+    "overlayFilter",
+    "overlayVisible",
+    "stationVisible",
+    "trackFilter",
+    "trackVisible"
+  ],
+  "existing_exports_unchanged": true,
+  "rail_grade_controls": [
+    "high_speed",
+    "conventional_main",
+    "conventional_other",
+    "branch",
+    "industrial",
+    "other",
+    "unknown"
+  ],
+  "before_sha256": "9b2200ab806692934afd4c4183ea197e211eb4054acf6cf73bdcad82be7cd334",
+  "current_sha256": "442bd9880b4913b5ed5ee01f426feda759cbf6fe5638c92a134eda96c0f75bfd",
+  "scope": "Existing function source bodies unchanged after CRLF normalization and existing exported data deep-equal; new UI grade list is the only model export addition. Not independent classification QA."
+}

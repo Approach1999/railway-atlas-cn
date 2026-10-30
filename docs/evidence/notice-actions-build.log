@@ -1,0 +1,21 @@
+
+> railway-atlas-web@0.2.0 build
+> tsc --noEmit && vite build
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 65 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                 0.73 kB │ gzip:   0.48 kB
+dist/assets/map-cjk-gwrInWC9.woff2            129.99 kB
+dist/assets/maplibre-gl-worker-BWso-Bu4.js    518.42 kB
+dist/assets/index-DKP23jWq.css                 88.57 kB │ gzip:  14.31 kB
+dist/assets/index-AnsEeJYS.js               1,414.86 kB │ gzip: 399.42 kB
+
+✓ built in 384ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.

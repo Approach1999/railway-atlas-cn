@@ -1,6 +1,6 @@
 # 线路等级与配色
 
-状态：v1.2 设计基线。配色配置源为 [`config/line-colors.json`](../config/line-colors.json)，
+状态：v1.3 设计基线。配色配置源为 [`config/line-colors.json`](../config/line-colors.json)，
 校验脚本为 [`scripts/validate_line_colors.py`](../scripts/validate_line_colors.py)。
 
 ## 1. 目标与边界
@@ -12,12 +12,12 @@
 
 v1 的颜色是**显示配置**，不是运营事实，也不改变对象身份：
 
-- 重载铁路按**等级**配色；v1 不承诺按命名干线逐条配色。
+- 铁路按**等级**配色；v1 不承诺按命名干线逐条配色。
 - 城市轨道按**线路身份**配色；线路身份来自 OSM route relation 或人工配置。
 - 线路色不写入 PMTiles；前端用版本化配置匹配 `line_key`，改色不需要重建瓦片。
 - 颜色不是唯一区分手段：图例、线路号标签、详情和纹理必须同时可读。
 
-## 2. 重载铁路等级
+## 2. 铁路等级
 
 | 显示等级 | 判定 | 颜色 | 说明 |
 | --- | --- | --- | --- |
@@ -30,6 +30,42 @@ v1 的颜色是**显示配置**，不是运营事实，也不改变对象身份�
 
 `railway=rail` 不自动等于国铁、客运、主线或高铁。高速判定规则必须版本化；
 规则表与人工复核记录随 manifest 发布。
+
+### 2.1 多标签命中的唯一分类规则
+
+以下是本项目的显示政策，不是对 OSM 标签组合合法性的判断。表中判定条件不能各自
+独立执行；先判定 feature_kind 与 rail_mode，仅 track + rail 进入下面的等级决策，
+城市轨道进入各自制式与线路色，设施/车站不继承附近轨道的等级。
+
+从上到下首次命中即决定 `line_class`：
+
+1. 已审核的对象级覆盖：必须指定 feature_key、目标等级、理由、证据和规则版本；
+   这是分类覆盖，不等于 `line-colors.json` 中仅改变颜色的 overrides。
+2. `service=spur/siding/crossover/yard` → branch（支线/站场线）。
+3. `usage=industrial` 或 `service=industrial` → industrial。
+4. 显式 `highspeed=yes` 或登记的审核规则 → high_speed。
+5. `usage=branch` → branch。
+6. `usage=main` → conventional_main。
+7. 其余明确 `railway=rail` → conventional_other；无法确认制式的对象 → unknown。
+
+具体的 service 先于走廊 usage，避免站场侧线因为继承干线属性而在低缩放被画成主线。
+标签仍完整保留；每条输出记录保存 `class_rule_id` 与 `class_warnings`，说明采用/未采用哪些证据。
+未知枚举记录警告，不自动猜测；同一字段多值（如 `highspeed=yes;no`）或互斥制式证据无法
+消解时置 unknown 并送人工复核，不能通过字符串包含匹配命中高速。
+生命周期单独判定，不因等级回退而把建设/停用改为当前标注；生命周期冲突保持 conflict。
+
+| 输入组合（rail 轨道） | 输出 | 必须保留的说明 |
+| --- | --- | --- |
+| usage=main + service=siding | branch | service 优先，不能当普速干线 |
+| highspeed=yes + service=crossover | branch | 高速标签保留，但站场功能优先 |
+| usage=industrial + service=spur | branch | service 优先，工业用途仍在详情显示 |
+| highspeed=yes + usage=industrial，无侧线 service | industrial | 工业用途优先；矛盾高速证据列入警告与复核 |
+| highspeed=yes + usage=main | high_speed | 高速优先于干线 |
+| highspeed=no + usage=main | conventional_main | 不按限速/名字覆盖显式值 |
+| 只有 railway=rail | conventional_other | 普速/未标注，不宣称具体等级 |
+
+审核规则不得静默覆盖显式 highspeed=no；这类纠错必须使用对象级覆盖并保存证据。
+P1 为以上组合建立领域测试；当前探针仍未实现本节分类，配色校验不代表分类已验收。
 
 ## 3. 城市轨道线路色
 
@@ -91,7 +127,7 @@ v1 的颜色是**显示配置**，不是运营事实，也不改变对象身份�
 
 ## 5. 渲染与可读性
 
-- 重载铁路线宽：高速 > 普速干线 > 普速/未标注 > 支线 > 专用线；低缩放至少保留高速与主要车站。
+- 铁路线宽：高速 > 普速干线 > 普速/未标注 > 支线 > 专用线；低缩放至少保留高速与主要车站。
 - 地铁线路使用比普速更粗的线宽；高缩放显示线路号标签，低缩放只显示主要换乘站。
 - 浅色线路（如 2 号线橙、3 号线粉、10 号线浅绿）必须加 `#1B2A32` 深色 casing，
   不能只靠浅色线条与暖白背景区分。

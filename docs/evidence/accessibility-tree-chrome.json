@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-28T05:47:11.762Z",
+  "browser_target": {
+    "channel": "chrome",
+    "version": "156.0.8078.48",
+    "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "product": "Chrome/156.0.8078.48",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "renderer": "forced SwiftShader",
+    "headless": true,
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64"
+    },
+    "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+  },
+  "source_sha256": "1a01bef762559d991cf26d41ad6217b6538ef3b8ccf911d18ec2690310e0fbc4",
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "build": {
+    "asset": "/assets/index-DHoae-HU.js",
+    "index_sha256": "cc48518151754c499909164e166c6b46480488d6f237b3af871cfe38a744564a",
+    "asset_sha256": "11edb4135ffd31bcfcc5b9d441d1395498b9dfea8f374120f3ecb99b498b9cfb"
+  },
+  "checks": [
+    {
+      "name": "one named map region, without duplicate nested landmarks",
+      "passed": true
+    },
+    {
+      "name": "map region exposes its keyboard instructions",
+      "passed": true
+    },
+    {
+      "name": "search is a named collapsed combobox",
+      "passed": true
+    },
+    {
+      "name": "basemap switch exposes its off state",
+      "passed": true
+    },
+    {
+      "name": "collapsed compact panel keeps full map instructions available",
+      "passed": true
+    },
+    {
+      "name": "compact panel toggle exposes its current name and expansion state",
+      "passed": true
+    },
+    {
+      "name": "combobox active-descendant relation resolves to the exposed option",
+      "passed": true
+    },
+    {
+      "name": "expanded search exposes selected option with name and mode",
+      "passed": true
+    },
+    {
+      "name": "feature details expose a named region and source heading",
+      "passed": true
+    },
+    {
+      "name": "share modal is named and background search is excluded",
+      "passed": true
+    },
+    {
+      "name": "share field has a name, URL value and focus",
+      "passed": true
+    },
+    {
+      "name": "list modal and search expose distinct meaningful names",
+      "passed": true
+    },
+    {
+      "name": "lifecycle checkbox exposes its name and checked state",
+      "passed": true
+    },
+    {
+      "name": "empty view exposes a polite status and named recovery button",
+      "passed": true
+    }
+  ],
+  "scenes": [
+    {
+      "name": "initial",
+      "file": "initial.json",
+      "sha256": "62e6a603fdcb5f88a372fda5ce91dd2ddd458eae1b1a2b3af8ca16ee48501666"
+    },
+    {
+      "name": "collapsed-panel",
+      "file": "collapsed-panel.json",
+      "sha256": "9e9c40035c5a6c8d997a09a40c950a690eab6d6ef69381c7e1c9e48e5a17b2e7"
+    },
+    {
+      "name": "search-options",
+      "file": "search-options.json",
+      "sha256": "b6df7450e953fe1d9f9ee71677b770a105d1f962cbdc9afa797336544ee70c79"
+    },
+    {
+      "name": "feature-detail",
+      "file": "feature-detail.json",
+      "sha256": "c00f5a0a647ac90be98e3f48530e011bb6db990fa6c1e4e2ca3bbcd5e8801148"
+    },
+    {
+      "name": "share-modal",
+      "file": "share-modal.json",
+      "sha256": "ce2d9cda1b5c670da92eb049daae73f6ace39b376fedfff85d463521e68169fe"
+    },
+    {
+      "name": "list-modal",
+      "file": "list-modal.json",
+      "sha256": "0a2fa80d50883329ff58059024c3496837a39a9d3de176308f05169160085e94"
+    },
+    {
+      "name": "checked-filter",
+      "file": "checked-filter.json",
+      "sha256": "3ac9ccdaf91c7738b746803951616013bc1ece613d9e9ab02caf968801286188"
+    },
+    {
+      "name": "empty-recovery",
+      "file": "empty-recovery.json",
+      "sha256": "f3afcff0d51a7b25fa214d7ece13a901fca503fee28bf8cf275ede219a41e583"
+    }
+  ],
+  "map_regions": [
+    {
+      "nodeId": "30",
+      "backendDOMNodeId": 30,
+      "name": "沈阳铁路地图"
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Actual CDP accessibility trees, finite core tasks. Verifies exposed roles/names/state and modal exclusion, not NVDA/VoiceOver speech, reading order, user comprehension or full accessibility acceptance."
+}

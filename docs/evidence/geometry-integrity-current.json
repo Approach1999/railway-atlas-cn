@@ -1,0 +1,47 @@
+{
+  "snapshot": "shenyang-mvp-20261023",
+  "checks": [
+    "261 manifest assets match lengths and SHA-256",
+    "Candidate objects reconcile with published features, relations and named exclusions",
+    "Typed identities are unique; detail shards and station references are complete",
+    "Facility counts and all declared tile files/bytes reconcile",
+    "All published detail geometries have finite WGS84 coordinates, no zero-length edges or repeated nonclosing positions; polygon rings are closed and nonzero-area",
+    "No missing source references; absent relations and metadata remain explicit limitations"
+  ],
+  "quality": {
+    "candidate_objects": 10964,
+    "excluded_count": 541,
+    "facility_counts": {
+      "buffer_stop": 461,
+      "entrance": 137,
+      "level_crossing": 2333,
+      "platform": 51,
+      "stop_position": 318,
+      "switch": 2395,
+      "turntable": 1,
+      "yard": 9
+    },
+    "line_count": 12,
+    "metadata_records": 10216,
+    "missing_relation_member_refs": 0,
+    "missing_way_node_refs": 0,
+    "published_features": 10216,
+    "relation_records": 207,
+    "route_relations": 24,
+    "station_area_records": 4,
+    "warnings": []
+  },
+  "geometry": {
+    "features": 10216,
+    "types": {
+      "Point": 6010,
+      "LineString": 4166,
+      "Polygon": 40
+    },
+    "positions": 43600,
+    "line_parts": 4166,
+    "polygon_rings": 40,
+    "scope": "All published full-detail geometries. Terminal path closure permitted; not topology/intersection, MVT quantization or real-world accuracy review."
+  },
+  "scope": "Local snapshot integrity; not proof of source completeness, individual tile semantics, or full MVP acceptance"
+}

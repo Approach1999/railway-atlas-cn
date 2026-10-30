@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-27T07:59:13.250901+00:00",
+  "capabilities": {
+    "acceptInsecureCerts": false,
+    "browserName": "firefox",
+    "browserVersion": "157.0.1",
+    "moz:accessibilityChecks": false,
+    "moz:buildID": "20261005135250",
+    "moz:geckodriverVersion": "0.37.1",
+    "moz:headless": true,
+    "moz:platformVersion": "10.0",
+    "moz:processID": 8812,
+    "moz:profile": "C:\\Users\\21965\\Documents\\Codex\\2026-10-22\\referenced-chatgpt-conversation-this-is-an\\work\\checkout\\data\\manifests\\local\\firefox-runtime\\profiles\\rust_mozprofileKwzISz",
+    "moz:shutdownTimeout": 60000,
+    "moz:webdriverClick": true,
+    "moz:windowless": false,
+    "pageLoadStrategy": "normal",
+    "platformName": "windows",
+    "proxy": {},
+    "setWindowRect": true,
+    "strictFileInteractability": false,
+    "timeouts": {
+      "implicit": 0,
+      "pageLoad": 300000,
+      "script": 30000
+    },
+    "unhandledPromptBehavior": "dismiss and notify",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0"
+  },
+  "facts": {
+    "dpr": 1,
+    "module_scripts": [
+      "http://127.0.0.1:8766/assets/index-iogNndbc.js"
+    ],
+    "renderer": "ANGLE (Intel, Intel(R) Arc(TM) A750 Graphics Direct3D11 vs_5_0 ps_5_0), or similar",
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0",
+    "viewport": [
+      1440,
+      915
+    ],
+    "webgl_context_lost": false
+  },
+  "build": {
+    "asset": "/assets/index-iogNndbc.js",
+    "index_sha256": "d6528e4e4a014950de9d2c1e6b8e82de9beeb7a32ca71a642424bb6a7699871b",
+    "asset_sha256": "4e00ce2cbe765b2303b9893ed02eff621da9f3827a4fa6c07413e8e0527ee68d"
+  },
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "driver_sha256": "e95b4eac7960ffcd5acbfd92bb7d49d48f99c1d01a20ddd297fef8c80821020d",
+  "verifier_sha256": "5b8ea34bf7eb939264670b1feeb7acac9ae9573a3c6d9c7184d2d2e0e63e4b4c",
+  "client_sha256": "455b76a5d96f52284acfad2d09a738e7e468a24ee6455e03ebec578a3f72ab47",
+  "binary_sha256": "f029827ec8841dfd36e75acb95343f2669eb86c296eedd49f0e48d80c2a7d514",
+  "checks": [
+    "real railway render, complete style, ready name source and actual loaded self-hosted FontFace",
+    "native WebDriver canvas keyboard pan and zoom update the camera URL",
+    "W3C WebDriver search keys, active descendant, Enter selection and original railway station identity",
+    "native share dialog focus and fresh navigation restores the same typed station identity",
+    "native preset clicks update independent filter state and restore overview",
+    "on-demand list native dialog, keyboard station detail and explicit focus handoff"
+  ],
+  "first_usable": {
+    "map_font": "ready",
+    "name_labels": {
+      "enabled": true,
+      "source_loaded": true,
+      "status": "ready"
+    },
+    "rendered_tracks": 750,
+    "snapshot": "shenyang-mvp-20261023",
+    "style_layers": {
+      "expected": [
+        "urban-boundary",
+        "casing-major-mapped",
+        "track-major-mapped",
+        "casing-major-construction",
+        "track-major-construction",
+        "casing-major-proposed",
+        "track-major-proposed",
+        "casing-major-disused",
+        "track-major-disused",
+        "casing-major-abandoned",
+        "track-major-abandoned",
+        "casing-major-razed",
+        "track-major-razed",
+        "casing-major-conflict",
+        "track-major-conflict",
+        "warning-major-conflict",
+        "casing-major-unknown",
+        "track-major-unknown",
+        "warning-major-unknown",
+        "casing-minor-mapped",
+        "track-minor-mapped",
+        "casing-minor-construction",
+        "track-minor-construction",
+        "casing-minor-proposed",
+        "track-minor-proposed",
+        "casing-minor-disused",
+        "track-minor-disused",
+        "casing-minor-abandoned",
+        "track-minor-abandoned",
+        "casing-minor-razed",
+        "track-minor-razed",
+        "casing-minor-conflict",
+        "track-minor-conflict",
+        "warning-minor-conflict",
+        "casing-minor-unknown",
+        "track-minor-unknown",
+        "warning-minor-unknown",
+        "minor-line-captions",
+        "minor-line-names",
+        "line-captions",
+        "line-names"
+      ],
+      "missing": []
+    }
+  },
+  "list_detail_geometry": {
+    "dialog": {
+      "bottom": 903,
+      "top": 12
+    },
+    "heading": {
+      "bottom": 308.51666259765625,
+      "top": 279.6333312988281
+    },
+    "viewport": 915
+  },
+  "external_document_resources": [],
+  "scope": "Official Firefox, isolated headless profile, real W3C keyboard/click commands and local data. Not OS IME, reader, actual clipboard permissions, full fault matrix, real devices or performance acceptance."
+}

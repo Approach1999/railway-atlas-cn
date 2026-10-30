@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-27T09:23:28.071Z",
+  "build": {
+    "asset": "/assets/index-CtnPWcB4.js",
+    "index_sha256": "df2515c65609ac60d375b5b8494ab3e58b3b6c1736d0b7b983d305359eec65d1",
+    "js_sha256": "079cde2df7ba775fdbaecae3071d4ec8704d04a67e63c8d2c61db830ec178a56"
+  },
+  "reports": [
+    {
+      "file": "docs/evidence/browser-zoom-chrome.json",
+      "sha256": "58f7133a257981c0b6107ac3020ccfc52d5f3ca51c0f0c026b779c851b0e138c",
+      "browser": "156.0.8078.48",
+      "task_checks": 18,
+      "build": {
+        "asset": "/assets/index-CtnPWcB4.js",
+        "index_sha256": "df2515c65609ac60d375b5b8494ab3e58b3b6c1736d0b7b983d305359eec65d1",
+        "js_sha256": "079cde2df7ba775fdbaecae3071d4ec8704d04a67e63c8d2c61db830ec178a56"
+      }
+    },
+    {
+      "file": "docs/evidence/browser-zoom-edge.json",
+      "sha256": "ed5b55b8fd8bf7ae69efc12d948984e2b8ecedde9b2e72247c7c0e2c65f85899",
+      "browser": "156.0.4314.42",
+      "task_checks": 18,
+      "build": {
+        "asset": "/assets/index-CtnPWcB4.js",
+        "index_sha256": "df2515c65609ac60d375b5b8494ab3e58b3b6c1736d0b7b983d305359eec65d1",
+        "js_sha256": "079cde2df7ba775fdbaecae3071d4ec8704d04a67e63c8d2c61db830ec178a56"
+      }
+    }
+  ],
+  "sha256": {
+    "scripts/verify_browser_zoom.cjs": "34459d680a70844d14dd30d74128768426f588366d88544cc483939e87ea5222",
+    "scripts/browser_target.cjs": "8232047ab043000ece78339b36ba3871d3b2fd69fedf9ebf958441897d56f801",
+    "docs/evidence/browser-zoom-invalid-scalar.json": "d1fa2926d1b35a4f87817748ad751f08589b70a715f44bf4be24e7cd90bf961c",
+    "docs/evidence/browser-zoom-preview.png": "eb89a8905d8667ebd8845ee62fff5098c5b78d67af28e2b3f88ae34ec5ad9fd5"
+  },
+  "product_change": false,
+  "method": "Owned temporary persistent browser profiles, partition.default_zoom_level.x=log(2)/log(1.2); viewport:null, no CSS zoom or device metrics override. CDP cssVisualViewport.zoom=2, pinch scale=1, DPR doubles and CSS viewport halves against same-window baseline. Authored search font remains 14px.",
+  "validation": "Installed headless Chrome and Edge each two window sizes, two 100% baselines and sixteen core task checks: 36 checks total including four baselines. No pageerrors or cross-origin page requests. Clipboard rejection controlled; no user clipboard write.",
+  "negative": "Incorrect scalar preference leaves protocol zoom=1; verifier rejects 1!=2 and retains actual metrics. Not accepted as 200%.",
+  "screenshot_status": "Normal Playwright capture cropped to CSS-sized portion of zoomed surface. Driver now uses full CDP surface capture with PNG dimension guard, but this final capture revision has NOT run: shell launcher rejected new process creation twice with CreateProcessWithLogonW failed 1909. Existing passing reports precede only the screenshot revision; pending full-surface screenshots and guard validation.",
+  "user_window": "Existing old acceptance tab absent. New local preview observed; native Edge restore failed twice with failed to activate captured window. No repeated user 200% confirmation requested. Current preview image is not 200% evidence.",
+  "sources": [
+    "https://chromium.googlesource.com/chromium/src/+/lkgr/chrome/browser/ui/zoom/chrome_zoom_level_prefs.cc",
+    "https://chromium.googlesource.com/chromium/src/+/af5d6d78ea0252ce141d31779e7d1bb01105a80d/third_party/blink/renderer/core/exported/web_view_impl.cc"
+  ],
+  "limits": [
+    "Not browser chrome/menu UI, physical device, OS IME, reader, full browser versions or complete N09.",
+    "No new build or unit test needed: application unchanged. Existing metrics/functional results remain valid, screenshot portion explicitly pending.",
+    "Active complete MVP scope including independent QA remains unchanged."
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "font_sha256": "c5676efeb6382c8d783b273aab69e5199951a78d5b19199f87be6cb8249f0739",
+  "font_bytes": 129992,
+  "declared_codepoints": 501,
+  "actual_cmap": 501,
+  "family": "Railway Atlas CJK",
+  "results": [
+    {
+      "snapshot": "shenyang-mvp-20261023",
+      "file": "features.geojson",
+      "records": 9859,
+      "name_fields": 12612,
+      "unique_codepoints": 320,
+      "missing": []
+    },
+    {
+      "snapshot": "shenyang-mvp-20261023",
+      "file": "stations.geojson",
+      "records": 361,
+      "name_fields": 1074,
+      "unique_codepoints": 344,
+      "missing": []
+    },
+    {
+      "snapshot": "shenyang-mvp-20261023",
+      "file": "lines.json",
+      "records": 12,
+      "name_fields": 24,
+      "unique_codepoints": 16,
+      "missing": []
+    },
+    {
+      "snapshot": "shenyang-mvp-accessible-20261022",
+      "file": "features.geojson",
+      "records": 9856,
+      "name_fields": 11564,
+      "unique_codepoints": 318,
+      "missing": []
+    },
+    {
+      "snapshot": "shenyang-mvp-accessible-20261022",
+      "file": "stations.geojson",
+      "records": 315,
+      "name_fields": 618,
+      "unique_codepoints": 321,
+      "missing": []
+    },
+    {
+      "snapshot": "shenyang-mvp-accessible-20261022",
+      "file": "lines.json",
+      "records": 0,
+      "name_fields": 0,
+      "unique_codepoints": 0,
+      "missing": []
+    },
+    {
+      "snapshot": "shenyang-mvp-progress-20261022",
+      "file": "features.geojson",
+      "records": 9856,
+      "name_fields": 11564,
+      "unique_codepoints": 318,
+      "missing": []
+    },
+    {
+      "snapshot": "shenyang-mvp-progress-20261022",
+      "file": "stations.geojson",
+      "records": 315,
+      "name_fields": 618,
+      "unique_codepoints": 321,
+      "missing": []
+    },
+    {
+      "snapshot": "shenyang-mvp-progress-20261022",
+      "file": "lines.json",
+      "records": 0,
+      "name_fields": 0,
+      "unique_codepoints": 0,
+      "missing": []
+    }
+  ],
+  "scope": "Direct binary cmap comparison against names in each of nine independent snapshot/index files; not every UI string, future catalog or all-device visual acceptance."
+}

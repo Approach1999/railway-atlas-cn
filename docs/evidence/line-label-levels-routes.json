@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-26T13:27:05.498Z",
+  "server_url": "http://127.0.0.1:8766",
+  "snapshot": "shenyang-mvp-20261023",
+  "checks": [
+    "24 real route directions grouped by 12 explicit route_master identities; six subway refs and configured swatches available",
+    "single-line share restores selected filters; Shenyang North subway POI resolves lines 2/4 through explicit stop areas and retains actual object version/time",
+    "line filters survive version changes and missing old-snapshot identities have an explicit restore-all recovery",
+    "dated Geofabrik source and missing contributor/changeset metadata are disclosed accurately"
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Real OSM relation membership and browser integration; complete source references do not establish complete current operating lines; full MVP acceptance remains outstanding"
+}

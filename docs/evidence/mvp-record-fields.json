@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-24T09:28:47.620Z",
+  "snapshot": "shenyang-mvp-20261023",
+  "samples": 12,
+  "checks": [
+    {
+      "id": "way/1442256254",
+      "groups": [
+        "tracks-20",
+        "track-grade:branch",
+        "track-attribute:bridge"
+      ],
+      "checks": [
+        "source bridge/tunnel/gauge/operator values remain literal",
+        "map/list domain fields and resolved line names agree",
+        "same immutable snapshot source metadata and original tags",
+        "nested data/license explanation returns focus to list record"
+      ]
+    },
+    {
+      "id": "way/1373439701",
+      "groups": [
+        "track-attribute:tunnel"
+      ],
+      "checks": [
+        "source bridge/tunnel/gauge/operator values remain literal",
+        "map/list domain fields and resolved line names agree",
+        "same immutable snapshot source metadata and original tags",
+        "nested data/license explanation returns focus to list record"
+      ]
+    },
+    {
+      "id": "way/1348696011",
+      "groups": [
+        "track-grade:high_speed"
+      ],
+      "checks": [
+        "source bridge/tunnel/gauge/operator values remain literal",
+        "map/list domain fields and resolved line names agree",
+        "same immutable snapshot source metadata and original tags",
+        "nested data/license explanation returns focus to list record"
+      ]
+    },
+    {
+      "id": "way/1365784051",
+      "groups": [
+        "tracks-20",
+        "track-grade:conventional_main"
+      ],
+      "checks": [
+        "source bridge/tunnel/gauge/operator values remain literal",
+        "map/list domain fields and resolved line names agree",
+        "same immutable snapshot source metadata and original tags",
+        "nested data/license explanation returns focus to list record"
+      ]
+    },
+    {
+      "id": "way/1164959292",
+      "groups": [
+        "track-grade:conventional_other"
+      ],
+      "checks": [
+        "source bridge/tunnel/gauge/operator values remain literal",
+        "map/list domain fields and resolved line names agree",
+        "same immutable snapshot source metadata and original tags",
+        "nested data/license explanation returns focus to list record"
+      ]
+    },
+    {
+      "id": "way/1018173508",
+      "groups": [
+        "tracks-20",
+        "track-grade:branch"
+      ],
+      "checks": [
+        "source bridge/tunnel/gauge/operator values remain literal",
+        "map/list domain fields and resolved line names agree",
+        "same immutable snapshot source metadata and original tags",
+        "nested data/license explanation returns focus to list record"
+      ]
+    },
+    {
+      "id": "way/1467226387",
+      "groups": [
+        "track-grade:industrial",
+        "track-state:disused"
+      ],
+      "checks": [
+        "source bridge/tunnel/gauge/operator values remain literal",
+        "map/list domain fields and resolved line names agree",
+        "same immutable snapshot source metadata and original tags",
+        "nested data/license explanation returns focus to list record"
+      ]
+    },
+    {
+      "id": "way/607492304",
+      "groups": [
+        "shared-track",
+        "missing-line-colour"
+      ],
+      "checks": [
+        "source bridge/tunnel/gauge/operator values remain literal",
+        "map/list domain fields and resolved line names agree",
+        "same immutable snapshot source metadata and original tags",
+        "nested data/license explanation returns focus to list record"
+      ]
+    },
+    {
+      "id": "way/1526422261",
+      "groups": [
+        "track-attribute:tunnel",
+        "metro-line:shenyang-metro/3",
+        "light-colour-line"
+      ],
+      "checks": [
+        "source bridge/tunnel/gauge/operator values remain literal",
+        "map/list domain fields and resolved line names agree",
+        "same immutable snapshot source metadata and original tags",
+        "nested data/license explanation returns focus to list record"
+      ]
+    },
+    {
+      "id": "way/1467198501",
+      "groups": [
+        "station-areas"
+      ],
+      "checks": [
+        "source bridge/tunnel/gauge/operator values remain literal",
+        "map/list domain fields and resolved line names agree",
+        "same immutable snapshot source metadata and original tags",
+        "nested data/license explanation returns focus to list record"
+      ]
+    },
+    {
+      "id": "node/11224161741",
+      "groups": [
+        "identity-anchor:node/11224161741"
+      ],
+      "checks": [
+        "source bridge/tunnel/gauge/operator values remain literal",
+        "map/list domain fields and resolved line names agree",
+        "same immutable snapshot source metadata and original tags",
+        "nested data/license explanation returns focus to list record"
+      ]
+    },
+    {
+      "id": "way/1351987033",
+      "groups": [
+        "facility:turntable"
+      ],
+      "checks": [
+        "source bridge/tunnel/gauge/operator values remain literal",
+        "map/list domain fields and resolved line names agree",
+        "same immutable snapshot source metadata and original tags",
+        "nested data/license explanation returns focus to list record"
+      ]
+    }
+  ],
+  "webgl_fallback_about": true,
+  "line_name_failure_retry": true,
+  "errors": [],
+  "external": [],
+  "scope": "Automated display/source checks for selected actual QA records in local Chrome. No human classification correctness, two independent signoffs, reader or real-device acceptance claim."
+}

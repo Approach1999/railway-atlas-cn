@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-27T08:58:59.636Z",
+  "build": {
+    "js": "/assets/index-DF9QuDZj.js",
+    "index_sha256": "147803f977d69b922d447173e0a2fb2b53c09056682ee6ca0df6fa7760913f13",
+    "js_sha256": "3c2fa58424486a8647c4b3bb6cc1977ede9c0da41582d9ddab597f8219b35cab"
+  },
+  "browser_target": {
+    "channel": "chrome",
+    "version": "156.0.8078.48",
+    "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "product": "Chrome/156.0.8078.48",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "renderer": "forced SwiftShader",
+    "headless": true,
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64"
+    },
+    "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+  },
+  "mode": "validation",
+  "checks": [
+    {
+      "name": "initial successful copy reports success",
+      "ok": true
+    },
+    {
+      "name": "closing detail invalidates previously generated selected-object link",
+      "ok": true
+    },
+    {
+      "name": "selecting a record invalidates a link generated without selection",
+      "ok": true
+    },
+    {
+      "name": "query change rejects late clipboard failure and removes old link",
+      "ok": true
+    },
+    {
+      "name": "close and reopen rejects late clipboard success",
+      "ok": true
+    },
+    {
+      "name": "older failed copy cannot replace newer successful copy status",
+      "ok": true
+    },
+    {
+      "name": "generated share field meets touch size and fits dialog",
+      "ok": true
+    },
+    {
+      "name": "current clipboard denial retains a selectable manual link",
+      "ok": true
+    },
+    {
+      "name": "manual fallback selects the complete link",
+      "ok": true
+    },
+    {
+      "name": "filter change removes both old manual link and old status",
+      "ok": true
+    },
+    {
+      "name": "next link reflects current filter and snapshot",
+      "ok": true
+    }
+  ],
+  "failures": [],
+  "errors": [],
+  "external": [],
+  "scope": "Real current list state and native touch events in 390px emulation with controlled clipboard promises. No OS clipboard, physical device or reader proof."
+}

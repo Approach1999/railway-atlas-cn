@@ -1,9 +1,10 @@
-# 技术架构 · v1.2
+# 技术架构 · v1.3
 
 状态：当前阶段实施基线。覆盖沈阳 → 东北 → 全国；实测边界见 [可行性报告](feasibility.md)。
 设施分级见 [需求 §3.1](requirements.md)，线路配色见 [线路配色](line-colors.md)，
 分享快照保留 12 个月。
-当前实现为提取脚本、Rust 数据探针与浏览器探针；下列生产契约尚待按实施计划实现。
+当前已有日期数据提取、Rust 探针、版本化沈阳数据与 React/严格 TS 客户端；
+实现和证据边界见 [MVP 审计](mvp-status.md)。下列完整生产契约仍须按实施计划逐项验收。
 
 ## 1. 总体方案
 
@@ -30,9 +31,10 @@ flowchart LR
 
 | 部分 | 采用 | 依据及边界 |
 | --- | --- | --- |
-| 产品前端 | TypeScript + React + Vite | 管理搜索、筛选、详情、URL；当前探针是原生 JS，尚未建立正式组件 |
+| 产品前端 | TypeScript + React + Vite | React 入口/底图/目录/列表/筛选/图例/车站搜索、筛选与输入会话及严格 TS 控制器已建立；详情、候选、分享已由 React 接管；关于/通知等拆分和完整验收仍在实施 |
 | 地图 | MapLibre GL JS，验证 6.15.0 | GeoJSON/MVT 与渲染查询；ESM、worker、字体、sprite、CSP 需构建检查 |
 | 底图 | 发布前选定授权来源 | 须满足许可、坐标/审图/备案与第三方请求隐私要求；本机纯色背景不构成选型 |
+| 本机底图实现 | 独立 OSM raster source/layer | 配置见 config/basemap.json；移除来源停止后续请求，不 setStyle；偏好本机存储，故障独立；不代替最终公开发布选型/验收 |
 | 线路配色 | `config/line-colors.json` + 前端调色板 | 版本化 JSON；不烘焙进瓦片；校验来源、置信度与对比度 |
 | 提取 | Osmium Tool，验证 1.16.0 | complete_ways 保留几何引用；relation 完整性另验 |
 | 计算 | Rust CLI，rustc 1.90.0、osmpbfreader 0.19.1 | 规范化、几何与质检；当前探针只用于已裁剪区域 |
@@ -97,9 +99,10 @@ Overpass 只用于小型探索，不作为全国生产作业或访问端的实�
 车站无明确制式时为 unknown，不能仅因未标 subway 就归国铁。
 mapped 表示 OSM 当前记录，不保证运营。
 高铁、service、usage、bridge、tunnel 保持独立可追溯属性；高铁不作为 rail_mode。
-line_class 是显示分类，不是运营事实：high_speed 仅由显式 highspeed=yes 或审核规则命中；
-conventional_main 需要显式 usage=main；其余 railway=rail 为 conventional_other（普速/未标注）；
-branch/industrial 由 usage/service 明确标签判定；无法分类时 unknown。
+line_class 是显示分类，不是运营事实，唯一决策顺序见 [线路配色 §2.1](line-colors.md#21-多标签命中的唯一分类规则)：
+已审核对象覆盖 > 站场 service > industrial > 显式/审核高速 > branch > main > 回退。
+仅 track + rail 进入等级决策；保留 class_rule_id/class_warnings，分类覆盖与颜色覆盖分离。
+无法消解的矛盾值为 unknown；生命周期冲突独立保存，不因显示等级变化而消失。
 设施按 facility_kind 细分，未列类别进入 other 并记录规则版本；不得静默并入轨道。
 城市轨道线路色按 line_key 匹配 `config/line-colors.json`：人工覆盖 > 运营方/线路配置 >
 OSM `colour` > 制式回退；共线或缺失关系使用回退色，不取第一条 relation。
@@ -132,6 +135,14 @@ feature_key、feature_kind、facility_kind、name、rail_mode、line_class、lif
 stop_position/出入口/信号/道岔/平交道口/车挡/转车盘/扇形库在 z15+；
 设施细节开关默认关闭，关闭时不得隐藏必要轨道与车站。
 高缩放显示线路号/共线标记；低缩放至少保留高速、普速干线与主要车站的等级色。
+
+R17 标注增加 display_name、label_key、label_priority 和 name_source；中文名称回退与
+基础设施线路关系验证按设计 §3.1，禁止把列车服务 route 名直接转为线路名。
+概览重点站名单/规则版本随 manifest 发布；未确认站点/站区关联不做实体去重。
+标签分组只影响排版，保留所有 feature_key 供候选选择；跨瓦片重复抑制不得改写实体身份。
+详情保留 class_rule_id/class_warnings 与名称来源，瓦片只携带渲染所需的精简属性。
+MapLibre 文字层在车站符号之后绘制，选中线在文字之下；字体/glyph 的来源、CJK 覆盖和
+缓存纳入构建检查。需用真实瓦片检验避让、跨瓦片重复与文字资源预算，不能只在 GeoJSON 验证。
 
 全国概览 z4–7，区域城市 z8–14；高缩放是否追加 z15–16 以站场精度验收决定。
 低缩放显式过滤侧线与设施，不能靠随机丢掉必要轨道满足预算。
@@ -185,6 +196,20 @@ MapView 管地图实例；SearchPanel、LayerPanel、FeatureDrawer、DatasetInfo
 DatasetClient 解析版本目录；UrlState 校验/恢复分享链接并处理前进/后退；
 LinePalette 加载版本化调色板，构建 line_key/line_class 的 MapLibre 表达式与图例。
 React 管面板、筛选和选中状态；高频平移留在地图实例，moveend 更新 URL，避免逐帧全界面重绘。
+第二批已建立 client React/TS 入口，新增 BasemapControl/BasemapController 管独立底图状态与清理；
+既有铁路交互暂保留在有 mount/destroy 的 JS 控制器内，React 的结果/详情槽不重复写入。
+共享领域规则移到 apps/web/shared/model.mjs；MapLibre worker 显式构建。
+R19 偏好使用本机 localStorage，不进入铁路筛选/撤销状态；关闭移除底图 source/layer，
+不调用 setStyle 或相机方法。失败、超时与重试不影响铁路源，详见第二批预览。
+R18 将持久筛选与 transientReveal（单个搜索结果）、isolation（临时仅看此线）、
+lastFilterState（一次预设撤销）分开；优先级为临时显示选中对象 > 临时线路隔离 > 持久筛选。
+关闭详情清理 transientReveal；退出隔离恢复原筛选，区域切换清理临时状态与撤销缓存。
+临时状态不写入分享 URL；点击分享时若存在临时状态，提供“按当前所见分享”与“保留原筛选分享”，
+默认前者，仅在生成链接时将可表达的显示条件显式编码，源页面筛选不变。
+仅显示单个对象无法由筛选精确表达时，用 feature 参数作为一次性的选中显示例外；
+接收页提示“此对象为分享中临时显示”，关闭详情即恢复 URL 筛选，不扩展为显示整个类型。
+命中查询只取当前交互图层，以 CSS px 扩大查询范围，按 feature_key 去重；
+多候选都可访问。面板尺寸变化更新地图 padding，不在每次详情更新时反复 fitBounds。
 区域、筛选、等级、线路、选中变化使用 pushState；连续平移/缩放使用 replaceState，避免历史记录膨胀。
 切区使用请求代次/AbortController，保留查询与筛选、清空选中并关闭详情；迟到结果不覆盖新状态。
 详情、索引、瓦片、底图、catalog/manifest、调色板错误独立处理，部分失败保留已加载内容。

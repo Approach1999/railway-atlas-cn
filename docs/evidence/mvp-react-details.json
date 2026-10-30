@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-24T02:24:14.884Z",
+  "snapshot": "shenyang-mvp-20261023",
+  "checks": [
+    "retry completion preserves newer search input and does not steal its focus; source identity, snapshot, original tags and external record URL match actual data",
+    "closing a loading detail invalidates its response and does not reopen the panel or URL selection",
+    "a delayed previous selection cannot replace a newer ready record or its share identity",
+    "390px detail has no horizontal page overflow and a 44px close target"
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Local Chrome, real station records, injected detail races and simulated narrow viewport; not OS IME, screen-reader or physical-device acceptance"
+}

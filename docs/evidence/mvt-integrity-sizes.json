@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-27T15:28:18.265978+00:00",
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "tiles": 2251,
+  "compression": "gzip level 6, mtime 0, matches local HTTP server",
+  "gzip_bytes": {
+    "median": 817,
+    "p95": 4301,
+    "max": 177982,
+    "total": 3933688
+  },
+  "largest_tile": "tiles/9/431/190.pbf",
+  "uncompressed_bytes": 11575162,
+  "individual_tile_budget_bytes": 512000,
+  "all_individual_tiles_within_budget": true,
+  "scope": "Current bounded snapshot only; all zooms checked, not national-scale evidence"
+}

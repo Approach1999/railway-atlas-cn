@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-24T04:19:52.467059+00:00",
+  "build": "strict TypeScript and Vite passed; bundle-size warning remains",
+  "unit_tests": {
+    "passed": 44,
+    "failed": 0
+  },
+  "source_sha256": {
+    "apps/web/client/src/map-hover.ts": "349b0aca4518947d779092fcd0f2fa2e0519c73dfcb8b87c61157afde5449ceb",
+    "apps/web/client/src/map-hover.test.mjs": "b130889b0860bac7207ddd4df88c6831bac9e5e49b75997d9b30145a36683bfc",
+    "apps/web/client/src/MapHover.tsx": "b8471bccbde1e7a407ad0c4aa279cbd6b3a39828b8e72b763ccc45833a1cbc7c",
+    "apps/web/client/src/map-controller.ts": "78a1b89f0c67f04d764ed109be2c7f03eae89a11e25b68b7569d858563fd47e4",
+    "apps/web/client/src/App.tsx": "8551ceeb61a6619fa6a06af0d6b2a9000f8c4882452a4eabb4578cdaf8d307af",
+    "apps/web/client/src/style.css": "2ed5ffe5398f5398adb93c57d6a7607c3f59b8e58b808dfab7ab6a7666cdc5d0",
+    "scripts/verify_map_hover.cjs": "97587b3e6a03d837b784c3872e3fbd8eb9b5f93874bd471d7c9744b5d72ce52a"
+  },
+  "browser_reports": {
+    "hover": {
+      "file": "data/manifests/local/map-hover/report.json",
+      "date": "2026-10-24T04:19:19.737Z",
+      "checks": 8,
+      "sha256": "392c009a1512a4e8822f796268d1d2467e360c9bc866690e92ae415b74c9ba0b"
+    },
+    "actual-map-click": {
+      "file": "data/manifests/local/mvp-work-browser/facilities-report.json",
+      "date": "2026-10-24T04:18:07.720Z",
+      "checks": 7,
+      "sha256": "e692a63b5d7c5697f6ec76383a2ff7a6d15fa85839b441494b2b799cd0a8e38b"
+    },
+    "share": {
+      "file": "data/manifests/local/react-share/report.json",
+      "date": "2026-10-24T04:18:06.934Z",
+      "checks": 7,
+      "sha256": "4624a93a534dec324cc4d48fe6cf974eff9eacb368a281d341b6dfc5fdb2ad58"
+    }
+  },
+  "corrected_findings": [
+    "Initial real pointer-entry test failed because canvas pointerleave arrived after React tooltip pointerenter. Canvas relatedTarget is now checked to hold rather than schedule removal; original hover-entry assertion passes.",
+    "Initial new unit fixture expected 状态未知 while the established unknown lifecycle label is 状态未标注. Corrected the fixture to the existing semantic contract; implementation was not changed for it."
+  ],
+  "remaining": [
+    "Existing unresolved list facility/startup wait timeouts are retained; no fix is claimed.",
+    "No independent human, screen reader, OS IME, physical-device or full MVP acceptance claim."
+  ]
+}

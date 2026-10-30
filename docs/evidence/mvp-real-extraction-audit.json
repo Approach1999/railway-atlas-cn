@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-23T05:43:23.743774+00:00",
+  "source_pbf_sha256": "9ca145eb49d5913f9b92e320e5983c4d7439532d1c448a291692efc89dd74e83",
+  "xml_sha256": "1ee4dc51c8bf8720f66645f8a53df223f8a2c7cce7552a1baccb9506b273c342",
+  "compared_objects": 37233,
+  "types": {
+    "node": 32803,
+    "way": 4223,
+    "relation": 207
+  },
+  "checks": [
+    "all selected identities, tags, versions, timestamps and changesets match the provincial source",
+    "node coordinates match at OSM precision",
+    "way node order and relation member type/id/role order remain unchanged"
+  ],
+  "scope": "Preserved-object fidelity; does not establish completeness of OSM mapping or actual operating status"
+}

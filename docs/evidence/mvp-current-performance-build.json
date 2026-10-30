@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-24T14:44:20.012127+00:00",
+  "build": "strict TypeScript and Vite passed; existing bundle-size warning remains",
+  "unit_tests": {
+    "passed": 54,
+    "failed": 0
+  },
+  "source_sha256": {
+    "apps/web/client/src/map-controller.ts": "311c324a0c55015148a1874b4c0ffb0a218df2a5c1de131750491cfc23a135d1",
+    "apps/web/client/src/railway-controls.ts": "52be1f611b0b0c409d78948e2b5f1f6cff76f3006c4c3a32fcb9d0128b103c7f",
+    "apps/web/client/src/railway-controls.test.mjs": "aec6b0df79a6d427031fc3d6800354898bef743f848f43118d4fce6ac248cc4e",
+    "scripts/benchmark_pan.cjs": "5df41fd2513473632911222bc3cc4883472a84352815d90d33253b4ac15f7b9c",
+    "scripts/benchmark_client.cjs": "987d265626ce573137d9803375cbd2026a3b8fcb1f3b619ea8f7e0cc4427bd99",
+    "scripts/verify_pan_updates.cjs": "b48aac2cdb1d7038d5fe44efdbb00f765ec0c356cc73c5b8286d232b5cc0009b",
+    "apps/web/client/dist/index.html": "c58b3eaff51cd096fd18d9bc1fe7f46a303afb2304dd2ae435fb11b7c66d1654"
+  },
+  "evidence": {
+    "mvp-pan-optimization-before.json": {
+      "date": "2026-10-24T14:11:32.876Z",
+      "sha256": "d9bd58276a851d467ecf1528966f0d08c51c424458a90bc6bea6aaacf0294a02"
+    },
+    "mvp-pan-optimization-after.json": {
+      "date": "2026-10-24T14:13:35.740Z",
+      "sha256": "338ccb49946dccc651bf71893df102d8ae4783356ca81613cf60ab628202fd07"
+    },
+    "mvp-pan-default-raf.json": {
+      "date": "2026-10-24T14:16:31.126Z",
+      "sha256": "812b29bd23a536557376a9634d8c4cfa4b73c67cb1ddb5b1a086d00064808423"
+    },
+    "mvp-pan-default-render-events.json": {
+      "date": "2026-10-24T14:20:33.527Z",
+      "sha256": "79c4938ada20366e145263fa7feb2d8dfce70c534baa2fc717eb9c314beda2f5"
+    },
+    "mvp-pan-software-render-events.json": {
+      "date": "2026-10-24T14:22:30.757Z",
+      "sha256": "2ddd326e62a40f1a621b83572ed8910b864757161652685a34cad7fd1f2e2b46"
+    },
+    "mvp-pan-updates-browser.json": {
+      "date": "2026-10-24T14:32:33.532Z",
+      "sha256": "cbc4d93778e84d4385112ce130128fe9b3dea4202967f776aad6e4150df675df"
+    },
+    "mvp-current-performance-desktop.json": {
+      "date": "2026-10-24T14:35:31.068Z",
+      "sha256": "498dc17e53f7557bcd0985ca5c3cc0cf08433f5d2e33e0d0111d0c3ca7b229a0"
+    },
+    "filters": {
+      "file": "data/manifests/local/react-filters/react-filters-report.json",
+      "date": "2026-10-24T14:38:16.390Z",
+      "checks": 8,
+      "sha256": "04d4c34e27bd4bb3681e26e26edf7b61049a2cb85b594ff2bff0ce17157a7e87"
+    },
+    "recovery": {
+      "file": "data/manifests/local/resource-recovery/resource-recovery-report.json",
+      "date": "2026-10-24T14:38:25.462Z",
+      "checks": 10,
+      "sha256": "8606fa3c8015b507c2dc3dbc1b8ede04e6edb268f710ed0108efb239e31b914a"
+    },
+    "share": {
+      "file": "data/manifests/local/share-browser/share-report.json",
+      "date": "2026-10-24T14:38:15.260Z",
+      "checks": 7,
+      "sha256": "0cdc24677d0ef8657b0112c0ea8e2f06217db4f632e5367a1d854446c002a16a"
+    }
+  },
+  "limits": [
+    "Before/after same-zoom redundant work was removed; software rAF showed no demonstrated improvement.",
+    "MapLibre render events measure main-thread submissions, not physical GPU/display delivery.",
+    "Current cold/warm profile is one headless desktop with basemap off; real mobile/tablet, default online raster and independent acceptance remain.",
+    "Earlier list timeouts and license gaps remain open."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-26T13:11:07.538Z",
+  "browser": "155.0.8059.85",
+  "checks": [
+    {
+      "check": "real stop-area name is submitted/drawn once; all three actual point symbols remain",
+      "ids": [
+        "node/4065246592",
+        "node/4065246593",
+        "node/4065341667"
+      ],
+      "relation": "relation/19556148",
+      "names": [
+        {
+          "id": "node/4065246592",
+          "label": "新松智慧园 · 有轨电车"
+        }
+      ]
+    },
+    {
+      "check": "all three original nodes remain independently clickable; selected name carries mode and suppresses its confirmed sibling names, close restores one name",
+      "ids": [
+        "node/4065246592",
+        "node/4065246593",
+        "node/4065341667"
+      ]
+    },
+    {
+      "check": "two real unnamed station areas remain in the source without fabricated mode-only names",
+      "ids": [
+        "way/658333063",
+        "way/658333064"
+      ]
+    }
+  ],
+  "observation": {
+    "original_sha256": "bfad4ee26fa0641793ea6b1896a7a759b89c6f8d115f2200d3862dd42cf88010",
+    "observed_sha256": "da3a9214dbc3df66137f64be125c9c746b21d25bd1af4dc86dead61d00ab7d70",
+    "scope": "Captures public Map instance; no data, layout, camera or layers changed. Not a performance measurement."
+  },
+  "errors": [],
+  "external": [],
+  "scope": "Actual dated station/stop-area data, software renderer and read-only public Map API observation; not full R17, physical device or independent relation/classification review."
+}

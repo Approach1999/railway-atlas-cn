@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-25T02:10:53.014668+00:00",
+  "base": "http://127.0.0.1:8766",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "security_headers": "exactly once, matching configuration"
+    },
+    {
+      "path": "/catalog.json",
+      "status": 200,
+      "security_headers": "exactly once, matching configuration"
+    },
+    {
+      "path": "/dataset.json",
+      "status": 200,
+      "security_headers": "exactly once, matching configuration"
+    },
+    {
+      "path": "/third-party-notices.txt",
+      "status": 200,
+      "security_headers": "exactly once, matching configuration"
+    },
+    {
+      "path": "/tiles/0/0/0.pbf",
+      "status": 204,
+      "security_headers": "exactly once, matching configuration"
+    },
+    {
+      "path": "/dataset.json",
+      "status": 206,
+      "security_headers": "exactly once, matching configuration"
+    },
+    {
+      "path": "/dataset.json",
+      "status": 416,
+      "security_headers": "exactly once, matching configuration"
+    },
+    {
+      "path": "/unpublished-file",
+      "status": 404,
+      "security_headers": "exactly once, matching configuration"
+    }
+  ],
+  "headers": {
+    "Content-Security-Policy": "default-src 'none'; script-src 'self'; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://tile.openstreetmap.org; connect-src 'self' https://tile.openstreetmap.org; worker-src 'self'; font-src 'self'; manifest-src 'self'; base-uri 'none'; object-src 'none'; frame-src 'none'; frame-ancestors 'none'; form-action 'none'",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "DENY",
+    "Permissions-Policy": "geolocation=(), camera=(), microphone=()"
+  },
+  "scope": "Loopback HTTP security configuration; not HTTPS/deployment or full N07 acceptance"
+}

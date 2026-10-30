@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-24T15:14:40.330174+00:00",
+  "snapshot": "shenyang-mvp-20261023",
+  "source_xml_sha256": "1ee4dc51c8bf8720f66645f8a53df223f8a2c7cce7552a1baccb9506b273c342",
+  "source_time": "2026-10-20T20:23:47Z",
+  "published_objects_checked": 10216,
+  "route_directions": 24,
+  "route_masters": 12,
+  "stop_areas": 171,
+  "checks": [
+    "all published original tags and object version/timestamp/changeset match preserved XML",
+    "every line identity has explicit parent-child source membership",
+    "all direct route references and rendered track memberships reconcile",
+    "all inherited stop-area line links have source relation evidence"
+  ],
+  "scope": "Source fidelity and graph membership audit; not proof of current operating completeness, independent human QA, or full MVP acceptance"
+}

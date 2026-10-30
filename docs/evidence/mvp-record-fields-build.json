@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-24T09:30:58.059070+00:00",
+  "build": "strict TypeScript and Vite passed; existing bundle warning remains",
+  "unit_tests": {
+    "passed": 48,
+    "failed": 0
+  },
+  "source_sha256": {
+    "apps/web/client/src/record-fields.ts": "f0cd1e978cf72d70c744885eff8a4bbab0208637c938ea995526bde841363437",
+    "apps/web/client/src/record-fields.test.mjs": "a1948950f84afdaf5a129e19d623dd80f259dba8d0a5b20c7eb1737a75a3817d",
+    "apps/web/client/src/RecordFields.tsx": "3bb16fd7faf43a37251ca7bbe2cfd774c40060cb09cbffbd0efa8947cba0fb7e",
+    "apps/web/client/src/FeaturePanels.tsx": "71d7eae8cf0bcdc395b6bd7b50928824a762ce245c165c93fc8838fce9508867",
+    "apps/web/client/src/AccessibleExplorer.tsx": "0bc4572a14a25717119b06b0a99f37817ad7333161762820a3784e277ff04ee2",
+    "apps/web/client/src/feature-details.ts": "025c63aec08bb40300c2d671bf30800ef840907e7456e0f3a7d104986f456044",
+    "apps/web/client/src/map-controller.ts": "505592def487ec13ff9538bce2801c2ad37ee225618b601e3dd639276f8f3e82",
+    "apps/web/client/src/App.tsx": "4a25047278401c71d148223bc433c07a5253b973ab28161a6a7d3c959b13dba0",
+    "apps/web/client/src/dialog-focus.ts": "9664df4e7ff54c0f2eb451494e1ad69f00f00265462464d14f62cf0b6b31336d",
+    "apps/web/client/src/ShareDialog.tsx": "b86aaa87e7c8a4c91dce7a742df6a072697c8fbac5100f782554720c39b74853",
+    "apps/web/client/src/style.css": "44e0ec41aab6b9c527d095ab90a5300442bda0dc835cc00c17091b544fc119c0",
+    "scripts/verify_detail_fields.cjs": "b0db57aa4566d4b5f41ec5a55e5a3b18f9e5604d980f09e3b03ffb4f054ce002"
+  },
+  "browser_reports": {
+    "record-fields": {
+      "file": "data/manifests/local/detail-fields/report.json",
+      "date": "2026-10-24T09:28:47.620Z",
+      "checks": 12,
+      "sha256": "5812f0bac8464020178881daa8ff4a8eb499995bd62266d89ff888cb6c9468a1"
+    },
+    "list": {
+      "file": "data/manifests/local/accessible-browser/report.json",
+      "date": "2026-10-24T09:27:00.596Z",
+      "checks": 5,
+      "sha256": "6a74e6f2ddf0b029d4be2742501bc1f1e5be1a014f85a660dfab4a89da34c87e"
+    },
+    "detail-races": {
+      "file": "data/manifests/local/react-details/report.json",
+      "date": "2026-10-24T09:27:02.878Z",
+      "checks": 4,
+      "sha256": "94b25a057279fe354ea4d428c6c173546a0451dbc3ec4747977fad2a72b9bccf"
+    },
+    "share": {
+      "file": "data/manifests/local/react-share/report.json",
+      "date": "2026-10-24T09:28:39.103Z",
+      "checks": 7,
+      "sha256": "53d88e4a4800ba15403dcc19df57c0eb0f5da6b8b27b36c23458f3fc42c1b30b"
+    }
+  },
+  "limits": [
+    "12 selected source/display checks are not all 106 samples or independent classification/visual review.",
+    "Original unresolved list facility/startup timeouts are not declared fixed by passing this phase.",
+    "Colour verification dates, broader about-page context, tool/license gaps, full devices/performance and independent acceptance remain."
+  ]
+}

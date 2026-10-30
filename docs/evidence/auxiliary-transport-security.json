@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-26T13:01:21.876Z",
+  "base": "http://127.0.0.1:8766",
+  "checks": [
+    "map with same-origin worker, hostile source text, search, share and about work without CSP violations",
+    "declared raster origin remains allowed; cross-origin referrer excludes feature/query/view URL",
+    "browser blocks inline scripts, undeclared connections and base URL replacement; denies location/camera/microphone while allowing required inline CSS"
+  ],
+  "workers": [
+    "http://127.0.0.1:8766/assets/maplibre-gl-worker-BWso-Bu4.js"
+  ],
+  "observed_raster_referrer": "http://127.0.0.1:8766/",
+  "probe_result": {
+    "rejected": true,
+    "inline": false,
+    "inlineCSS": "17px",
+    "baseUnchanged": true,
+    "permissions": [
+      {
+        "name": "geolocation",
+        "allowed": false
+      },
+      {
+        "name": "camera",
+        "allowed": false
+      },
+      {
+        "name": "microphone",
+        "allowed": false
+      }
+    ]
+  },
+  "expected_probe_violations": [
+    {
+      "directive": "script-src-elem",
+      "blocked": "inline",
+      "disposition": "enforce"
+    },
+    {
+      "directive": "base-uri",
+      "blocked": "https://csp-test.invalid/",
+      "disposition": "enforce"
+    },
+    {
+      "directive": "connect-src",
+      "blocked": "https://csp-test.invalid/blocked",
+      "disposition": "enforce"
+    }
+  ],
+  "blocked_network_requests": 0,
+  "errors": [],
+  "scope": "Local Chrome production client with hostile detail and raster response fixtures; not public HTTPS, every browser, independent penetration test or full N07 acceptance"
+}

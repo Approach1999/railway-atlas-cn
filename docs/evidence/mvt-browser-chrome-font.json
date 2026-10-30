@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-27T15:31:44.327Z",
+  "browser": "156.0.8078.48",
+  "browser_target": {
+    "channel": "chrome",
+    "version": "156.0.8078.48",
+    "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "product": "Chrome/156.0.8078.48",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "renderer": "forced SwiftShader",
+    "headless": true,
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64"
+    },
+    "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+  },
+  "original_sha256": "d4a294541fec64a33a1bcc1245332ac5aaa6461dd524de426070eec511a3e189",
+  "checks": [
+    {
+      "mode": "normal",
+      "tracks_drawn_while_font_request_independent": 390,
+      "font_error_delay_ms": null,
+      "retry_recovers_same_canvas_and_url": false,
+      "performance_guard_rejects_font_error": false
+    },
+    {
+      "mode": "http503",
+      "tracks_drawn_while_font_request_independent": 316,
+      "font_error_delay_ms": 732,
+      "retry_recovers_same_canvas_and_url": true,
+      "performance_guard_rejects_font_error": true
+    },
+    {
+      "mode": "corrupt",
+      "tracks_drawn_while_font_request_independent": 778,
+      "font_error_delay_ms": 748,
+      "retry_recovers_same_canvas_and_url": true,
+      "performance_guard_rejects_font_error": true
+    },
+    {
+      "mode": "headers-held",
+      "tracks_drawn_while_font_request_independent": 74,
+      "font_error_delay_ms": 15476,
+      "retry_recovers_same_canvas_and_url": true,
+      "performance_guard_rejects_font_error": true
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Actual FontFace loaded registration and map stack, HTTP/integrity/held-header errors, explicit retry clears rasterized glyph cache. Held body/decode deadlines are unit tested separately. Not all-device glyph/legibility acceptance."
+}

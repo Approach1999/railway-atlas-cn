@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-27T04:20:54.630Z",
+  "browser": "155.0.8059.85",
+  "observation": {
+    "original_sha256": "40023ed6750f817042794ec806895593c1d05e6afe52c361b43bc7e366ddd822",
+    "observed_sha256": "d8d842faeeac65cefd4fa5907ecac0ff24b3c070503024779f6a41efc8bf1b54",
+    "scope": "Capture only, no layout, data or camera mutation except explicit error injection described by the check."
+  },
+  "checks": [
+    {
+      "check": "first usable includes the product name source; no injected replacement source",
+      "features": 747,
+      "rendered": 57,
+      "source_loaded": true,
+      "expected_layers": 41,
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      }
+    },
+    {
+      "check": "actual short caption click opens original track identity and share preserves it; caption boxes are single-row",
+      "id": "way/136823634",
+      "name": "苏抚线",
+      "captions_checked": 26
+    },
+    {
+      "check": "shared track restores original detail; line-name switch hides and restores every name layer"
+    },
+    {
+      "check": "actual zoom/pan rebuilds names and minor labels obey siding visibility"
+    },
+    {
+      "check": "malformed name source fails independently, leaves track drawing and URL, explicit retry recovers"
+    },
+    {
+      "check": "real snapshot round trip replaces label source and restores exactly four name layers"
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Built product actual data, source caption selection/share, zoom/filter/source failure/snapshot integration. Software Chrome, not full performance/device/reader/R17 acceptance."
+}

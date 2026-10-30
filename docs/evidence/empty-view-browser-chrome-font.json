@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-28T05:14:50.268Z",
+  "browser": "156.0.8078.48",
+  "browser_target": {
+    "channel": "chrome",
+    "version": "156.0.8078.48",
+    "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "product": "Chrome/156.0.8078.48",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "renderer": "forced SwiftShader",
+    "headless": true,
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64"
+    },
+    "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+  },
+  "original_sha256": "56b0c0280cde0620a80c91c58b46f8c4de26f5d646400e068e903c7cb048e8bd",
+  "checks": [
+    {
+      "mode": "normal",
+      "tracks_drawn_while_font_request_independent": 316,
+      "font_error_delay_ms": null,
+      "retry_recovers_same_canvas_and_url": false,
+      "performance_guard_rejects_font_error": false
+    },
+    {
+      "mode": "http503",
+      "tracks_drawn_while_font_request_independent": 316,
+      "font_error_delay_ms": 440,
+      "retry_recovers_same_canvas_and_url": true,
+      "performance_guard_rejects_font_error": true
+    },
+    {
+      "mode": "corrupt",
+      "tracks_drawn_while_font_request_independent": 641,
+      "font_error_delay_ms": 502,
+      "retry_recovers_same_canvas_and_url": true,
+      "performance_guard_rejects_font_error": true
+    },
+    {
+      "mode": "headers-held",
+      "tracks_drawn_while_font_request_independent": 778,
+      "font_error_delay_ms": 15119,
+      "retry_recovers_same_canvas_and_url": true,
+      "performance_guard_rejects_font_error": true
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Actual FontFace loaded registration and map stack, HTTP/integrity/held-header errors, explicit retry clears rasterized glyph cache. Held body/decode deadlines are unit tested separately. Not all-device glyph/legibility acceptance."
+}

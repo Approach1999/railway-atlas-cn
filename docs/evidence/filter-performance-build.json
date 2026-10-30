@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-25T10:20:21.708000+00:00",
+  "asset": "/assets/index-Dgd4yMKU.js",
+  "unit_tests": {
+    "passed": 67,
+    "failed": 0
+  },
+  "build": "strict TS/checkJs and production build passed",
+  "source_and_evidence_sha256": {
+    "apps/web/client/src/map-controller.ts": "2a88e29b7bc8c063884b6af7cb91f195db041cc40c7bf9bd29e2dcfda0a2ff5f",
+    "apps/web/client/src/station-source.ts": "27974bb3df07ad3f4f338074aa7263f6c8ee35edacf41aa1e62bc76d1b708f4d",
+    "apps/web/client/src/station-source.test.mjs": "6c4d38f17d0b827e7bc09a1f5025ddcffdd7936c10968765e014dfb230f7e754",
+    "apps/web/client/dist/index.html": "0d1120de48eac38c07f94d05e190ed54ceb0c98e694a121878fbfad2fa8159d8",
+    "apps/web/client/dist/assets/index-Dgd4yMKU.js": "d0619a1e2f3019c3ee943ede1399e3932812403fe8f538925abc233406efa91e",
+    "scripts/benchmark_filters.cjs": "923f93bb332005b751fb397d52d9de9ca328bf052bfd0778d283ea7db47ffd6b",
+    "scripts/benchmark_style_guard.cjs": "f17bb92dc88855be6cc4e2c485533bc6f95e924d1e641815f3a8b5c793ce6b09",
+    "scripts/verify_station_source.cjs": "ebdf8c5e79954cf6dfda8b92ee09af2fb10a90e1daccd0e3304097407a043fe3",
+    "scripts/verify_react_filters.cjs": "5328dce234500404c25ce2e2d05e854e2a4871110b84b243b9f2ba246e104f99",
+    "docs/evidence/history/filter-station-source-before.ts": "e9670a92f5019a43bc6c13fa296ae601a5e8a581c32069dd2508badd27cd3863",
+    "docs/evidence/filter-performance-filter-timeout.json": "c41a12a6c5f8c01a22aaf62fa0472aa78eed32a83299d93e25c2499e662038f2",
+    "docs/evidence/filter-performance-before-default.json": "fcc4f1c5d28421486843011f84258cb80076a6b003dc402f319cc938207a9c67",
+    "docs/evidence/filter-performance-after-default.json": "ac7fd40dc41fbbb26a356ac3ecd04d664b2e868dcff6d1bd7044fd7e00fe4532",
+    "docs/evidence/filter-performance-after-software.json": "14c1b34a45645817c735d42e2254342911fb5b9ee73f6ecd2a35a383cacc1ec2",
+    "docs/evidence/filter-performance-stations.json": "dada75c06ac52a6b37d1d0f434ef68e6704c473bed163ca319db432d18e8478a",
+    "docs/evidence/filter-performance-catalog.json": "48a78ac403403a9159dbe9f6cf06ad554810cffb69d97514207acdb3b0692280",
+    "docs/evidence/filter-performance-catalog-repeat.json": "e7e3c867fbed4b73c457da7ca3355d1682ae86e3da14860062f4a530fd033872",
+    "docs/evidence/filter-performance-filters.json": "bc7d5cb941b5d24185dad3c72e4badf615d3b2dc08f3f75262431f753d488c90",
+    "docs/evidence/filter-performance-filters-repeat.json": "be005121bf7c836f737cb0cca374f52a4135d56b8d69c1b436b88486b6c0abf8",
+    "docs/evidence/filter-performance-resources.json": "1e7ddd3d788832fae2fc56fab7f5327b309dbb5a3a8259d5138a0c9614e27201"
+  },
+  "regression_counts": {
+    "actual_station": 3,
+    "catalog": 8,
+    "filter_controls": 8,
+    "resource_recovery": 10
+  },
+  "known_limits": [
+    "software source-ready render p95 exceeds 100ms in both tested scenes",
+    "prior software pan p95 exceeded 33ms; not remeasured by this filter benchmark",
+    "version status timeout occurred once; no failure-state capture or established cause for that run",
+    "real devices, other filter combinations and physical display presentation remain open"
+  ],
+  "scope": "Observed desktop filter update stages; prior cold-start, pan and actual-200% evidence retain their original build fingerprints."
+}

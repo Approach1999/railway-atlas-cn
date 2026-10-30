@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-28T05:45:07.912Z",
+  "browser_target": {
+    "channel": "chrome",
+    "version": "156.0.8078.48",
+    "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "product": "Chrome/156.0.8078.48",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "renderer": "forced SwiftShader",
+    "headless": true,
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64"
+    },
+    "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+  },
+  "source_sha256": "919c7f933387512092e21aaac34ec7531d07b1eaeea4cf31233192fb97e693bf",
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "build": {
+    "asset": "/assets/index-COabTbcb.js",
+    "index_sha256": "a4038fcf867b47fb387c68b677034132160b96e78692bf04e1ea7b837af3dc56",
+    "asset_sha256": "c39e7d898f8a69779bb34e338057dbac5df9344efa18e7b78d6e356ea14633a7"
+  },
+  "checks": [
+    {
+      "name": "one named map region, without duplicate nested landmarks",
+      "passed": false
+    },
+    {
+      "name": "map region exposes its keyboard instructions",
+      "passed": false
+    },
+    {
+      "name": "search is a named collapsed combobox",
+      "passed": true
+    },
+    {
+      "name": "basemap switch exposes its off state",
+      "passed": true
+    },
+    {
+      "name": "expanded search exposes selected option with name and mode",
+      "passed": true
+    },
+    {
+      "name": "feature details expose a named region and source heading",
+      "passed": true
+    },
+    {
+      "name": "share modal is named and background search is excluded",
+      "passed": true
+    },
+    {
+      "name": "share field has a name, URL value and focus",
+      "passed": true
+    },
+    {
+      "name": "list modal and search expose distinct meaningful names",
+      "passed": true
+    },
+    {
+      "name": "lifecycle checkbox exposes its name and checked state",
+      "passed": true
+    },
+    {
+      "name": "empty view exposes a polite status and named recovery button",
+      "passed": true
+    }
+  ],
+  "scenes": [
+    {
+      "name": "initial",
+      "file": "initial.json",
+      "sha256": "74d95c578876c66780ae5d565a560279e7892c6b198f7fb063514bdfef5c45b1"
+    },
+    {
+      "name": "search-options",
+      "file": "search-options.json",
+      "sha256": "707075a8d7879e1ae6a366f4b9cc8d8c16ee323b659a9f8f25d4b136af55e9b1"
+    },
+    {
+      "name": "feature-detail",
+      "file": "feature-detail.json",
+      "sha256": "6e61bbfa461413b2c9e51b266af80b6e4dfb8d858bf6386c1c997132c5587fc5"
+    },
+    {
+      "name": "share-modal",
+      "file": "share-modal.json",
+      "sha256": "634aea15a2a1b7e6877e60aec928f418b9bf2ad0049877e0bddd3809361dfbbc"
+    },
+    {
+      "name": "list-modal",
+      "file": "list-modal.json",
+      "sha256": "6f46a869e937899d222f5f46049af33c21e2d48cc61c41a117c2acdd19f2c2fc"
+    },
+    {
+      "name": "checked-filter",
+      "file": "checked-filter.json",
+      "sha256": "7ee5f2630d8c91ed27ee526d591152f47250545f0f2d002482f55ad9256eea85"
+    },
+    {
+      "name": "empty-recovery",
+      "file": "empty-recovery.json",
+      "sha256": "0a1de6fceabf4d223704b3508c46d0b1712f86a3bfb201cb34e35d84dae9a051"
+    }
+  ],
+  "map_regions": [
+    {
+      "nodeId": "59",
+      "backendDOMNodeId": 59,
+      "name": "沈阳铁路地图"
+    },
+    {
+      "nodeId": "29",
+      "backendDOMNodeId": 29,
+      "name": "沈阳铁路地图"
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Actual CDP accessibility trees, finite core tasks. Verifies exposed roles/names/state and modal exclusion, not NVDA/VoiceOver speech, reading order, user comprehension or full accessibility acceptance."
+}

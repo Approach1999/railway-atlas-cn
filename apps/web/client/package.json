@@ -1,0 +1,26 @@
+{
+  "name": "railway-atlas-web",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test:types": "node ../../../scripts/verify_shared_types.mjs",
+    "test": "node --test src/*.test.mjs ../shared/*.test.mjs ../probe/*.test.mjs"
+  },
+  "dependencies": {
+    "maplibre-gl": "6.15.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/geojson": "7946.0.16",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "typescript": "7.0.2",
+    "vite": "8.3.5"
+  }
+}

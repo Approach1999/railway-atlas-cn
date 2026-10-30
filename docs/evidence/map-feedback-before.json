@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-25T03:31:04.541Z",
+  "before": "已忽略未知参数：invalid_test",
+  "after": "已忽略未知参数：invalid_test",
+  "old_warning_remains": true,
+  "url": "http://127.0.0.1:8766/?region=shenyang&snapshot=shenyang-mvp-progress-20261022&types=other%2Crail%2Cunknown&classes=branch%2Cconventional_main%2Cconventional_other%2Chigh_speed%2Cindustrial%2Clight_rail%2Cmetro%2Cother%2Ctram%2Cunknown&states=mapped&labels=lines%2Cstations&facilities=0&sidings=1#map=10.50/41.80000/123.42000"
+}

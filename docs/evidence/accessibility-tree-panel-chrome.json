@@ -1,0 +1,113 @@
+{
+  "date": "2026-10-28T05:48:19.700Z",
+  "build": {
+    "asset": "/assets/index-DHoae-HU.js",
+    "index_sha256": "cc48518151754c499909164e166c6b46480488d6f237b3af871cfe38a744564a",
+    "js_sha256": "11edb4135ffd31bcfcc5b9d441d1395498b9dfea8f374120f3ecb99b498b9cfb"
+  },
+  "browser_target": {
+    "channel": "chrome",
+    "version": "156.0.8078.48",
+    "executable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "product": "Chrome/156.0.8078.48",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "renderer": "forced SwiftShader",
+    "headless": true,
+    "os": {
+      "platform": "win32",
+      "release": "10.0.26200",
+      "arch": "x64"
+    },
+    "limits": "Installed version only, isolated profile, synthetic keyboard/composition/clipboard where used; not recent-two-version, reader or physical-device acceptance."
+  },
+  "checks": [
+    {
+      "name": "collapsed controls do not appear in keyboard traversal",
+      "ok": true,
+      "details": [
+        {
+          "id": "",
+          "inPanel": false
+        },
+        {
+          "id": "",
+          "inPanel": false
+        },
+        {
+          "id": "about-open",
+          "inPanel": false
+        },
+        {
+          "id": "",
+          "inPanel": false
+        },
+        {
+          "id": "",
+          "inPanel": false
+        },
+        {
+          "id": "",
+          "inPanel": false
+        },
+        {
+          "id": "",
+          "inPanel": false
+        },
+        {
+          "id": "basemap-toggle",
+          "inPanel": false
+        }
+      ]
+    },
+    {
+      "name": "expanding beyond compact layout restores panel and removes inaccessible collapsed state",
+      "ok": true,
+      "details": {
+        "panel": "block",
+        "focus": "search",
+        "toggle": "none",
+        "collapsed": false
+      }
+    },
+    {
+      "name": "hidden compact toggle returns keyboard focus to visible search",
+      "ok": true,
+      "details": {
+        "panel": "block",
+        "focus": "search",
+        "toggle": "none",
+        "collapsed": false
+      }
+    },
+    {
+      "name": "closing details with hidden search returns focus to usable map canvas",
+      "ok": true,
+      "details": {
+        "tag": "CANVAS",
+        "id": "",
+        "canvas": true
+      }
+    },
+    {
+      "name": "reopening panel preserves prior search text",
+      "ok": true
+    },
+    {
+      "name": "desktop transition preserves an already focused map",
+      "ok": true
+    },
+    {
+      "name": "exact 700 to 701 breakpoint restores panel without replacing canvas or changing view",
+      "ok": true
+    },
+    {
+      "name": "returning to compact layout starts with available search controls",
+      "ok": true
+    }
+  ],
+  "failures": [],
+  "errors": [],
+  "external": [],
+  "mode": "validation",
+  "scope": "Real CSS breakpoint change after collapse; keyboard traversal/focus and source selection on installed browser. Not physical rotation, OS reader/IME, full resize combinations or all N09."
+}

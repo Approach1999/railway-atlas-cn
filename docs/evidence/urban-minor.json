@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-28",
+  "build": {
+    "asset": "/assets/index-jHFccMym.js",
+    "index_sha256": "b4da7ab78aa8a6a891c8570f9c5ebfcfae1b577f7a44b7f237f3d162ddd2a30e",
+    "asset_sha256": "e505864f402eab11d675310b9a8c9d3c915578a11dea261d2e527cb5e11d1709"
+  },
+  "reports": {
+    "rules.json": {
+      "path": "docs/evidence/urban-minor-rules.json",
+      "sha256": "231bcdfc640d68cabb95829d16bd1f17a42d2735717e670eb877607268766e2a"
+    },
+    "unit.log": {
+      "path": "docs/evidence/urban-minor-unit.log",
+      "sha256": "1dba49d0f208280da6f45b8695702fa75f26842108ec72cd83454a1f86285be9"
+    },
+    "build.log": {
+      "path": "docs/evidence/urban-minor-build.log",
+      "sha256": "c9824428838776e1290b48820adeefc03bdee713a5ac22034c3b8b3ffc2e6e77"
+    },
+    "targeted-unit.log": {
+      "path": "docs/evidence/urban-minor-targeted-unit.log",
+      "sha256": "594ebaca4fc17b442763b3b390a15fb571537bbde409e9ae7a31f58b5e9289e5"
+    },
+    "browser/matrix.json": {
+      "path": "docs/evidence/urban-minor-browser-matrix.json",
+      "sha256": "359ab4f19cadf78d84009d84bf84185f18e8bf6661fbc90e975806b72298add6"
+    },
+    "chrome-filters": {
+      "path": "docs/evidence/urban-minor-chrome-filters.json",
+      "sha256": "8f3bb40f3439a5cbb891600172b3c441014da5ac316506aed4e78c8ce42d6bf8"
+    },
+    "chrome-list": {
+      "path": "docs/evidence/urban-minor-chrome-list.json",
+      "sha256": "efcf32ddc10d027e4258690fd58f0faf0a8ba00548402650ebf21442a25ddc4b"
+    },
+    "msedge-filters": {
+      "path": "docs/evidence/urban-minor-msedge-filters.json",
+      "sha256": "89c286ea41151e5e961c17dc572964a2c75eb79538a0087d1d967be5949aae59"
+    },
+    "msedge-list": {
+      "path": "docs/evidence/urban-minor-msedge-list.json",
+      "sha256": "a646d92411a7f8bc0f567ac1303ec87063be4275e1b73bd2c2a931045b677ece"
+    }
+  },
+  "source_sha256": {
+    "apps/web/shared/model.mjs": "9b2200ab806692934afd4c4183ea197e211eb4054acf6cf73bdcad82be7cd334",
+    "apps/web/shared/track-filter-constant.test.mjs": "83e11879c2db8624597816dfe5f1c3f69e21925a27878c811500b5961f300a37",
+    "scripts/verify_urban_minor_rules.mjs": "cbec55720c5932f689ce78156e936ca6e06e523d4ff4c7931f6403cfcf4b08b4",
+    "docs/evidence/history/urban-minor-before-model.mjs": "10e284cf186c114b8443b195ff6d6fa5c76ef074780c8cf5efa43998158158ee"
+  },
+  "checks": {
+    "unit_passed": 117,
+    "typecheck_and_build_passed": true,
+    "browser_suites": 4,
+    "browser_checks": 26,
+    "preview_http_status": 200,
+    "preview_matches_build": true,
+    "real_predicate_changes": 0,
+    "synthetic_intended_changes": 360,
+    "unchanged_filter_expression_pairs": 360
+  },
+  "scope": "Urban preset branch/industrial sidings and z12 visibility correction; targeted installed Chrome/Edge filters/list regression. No performance rerun, full browser/device or human acceptance."
+}

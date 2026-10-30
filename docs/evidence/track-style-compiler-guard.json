@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-25T07:26:08.720Z",
+  "implementation_sha256": "4c615df43e17739fa09a11c06251a032f069d49f8175ea941fe252077cf2ea14",
+  "config_sha256": "71c76b1cccb0b5280092e5c7bd5080a3173877239f4fdbf445422c362ed5fa6e",
+  "implementation_in_compiler_inputs": true,
+  "no_shadow_declaration": true,
+  "strict_project_typecheck_passed": true,
+  "checks": [
+    {
+      "case": "bad-filter-return",
+      "rejected": true,
+      "diagnostic_codes": [
+        2322
+      ]
+    },
+    {
+      "case": "bad-opacity",
+      "rejected": true,
+      "diagnostic_codes": [
+        2322
+      ]
+    },
+    {
+      "case": "missing-mode-label",
+      "rejected": true,
+      "diagnostic_codes": [
+        2322
+      ]
+    }
+  ],
+  "scope": "Faults exist only in ignored copies. This checks compiler enforcement, not correctness of all railway rules."
+}

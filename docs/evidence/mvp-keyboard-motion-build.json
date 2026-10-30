@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-25T02:19:28.7033385Z",
+  "unit_tests": {
+    "passed": 60,
+    "failed": 0
+  },
+  "build": "strict typecheck and production build passed",
+  "files": [
+    {
+      "path": "apps/web/client/src/map-motion.ts",
+      "sha256": "9a2ed95eb79e2ab5e5c1bff032cb87642c208ddb656718d0afe991a64d7c5a3e"
+    },
+    {
+      "path": "apps/web/client/src/map-controller.ts",
+      "sha256": "07bab768be39698f3395f7d745befc49e4e685b4573e7dacefdfca4e78c71243"
+    },
+    {
+      "path": "apps/web/client/src/App.tsx",
+      "sha256": "25d7e56011fc178b8227907a158123200f2a36141a348dfc6362e78efb6f769b"
+    },
+    {
+      "path": "apps/web/client/src/style.css",
+      "sha256": "37e398e6ed2baf0dbb66ecfdb063a064a73ccca234d2056db87771d1e3e7e09e"
+    },
+    {
+      "path": "scripts/verify_map_keyboard_motion.cjs",
+      "sha256": "c7f9625d18be3a3a864874d49616c444be06cf7bb321914c432f4a6d6eafe70e"
+    },
+    {
+      "path": "apps/web/client/dist/index.html",
+      "sha256": "1b3660f8214a5d5ff07073ca5cfa4f82bfc559b220dfaf376f17950a0fab640c"
+    },
+    {
+      "path": "apps/web/client/dist/assets/index-Bj7XOyva.js",
+      "sha256": "a280608126cd9c6acc9864c211bf5884b77b21e2657ad65cb1bbac38d3cbed32"
+    },
+    {
+      "path": "apps/web/client/dist/assets/index-C7seQMpz.css",
+      "sha256": "cb5f9eb9b2aed262b4d9791907ac4bac6443b96061c381fae5de6d3a002dc256"
+    }
+  ]
+}

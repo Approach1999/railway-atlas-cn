@@ -1,0 +1,231 @@
+{
+  "date": "2026-10-27T04:25:17.296Z",
+  "before_module": "docs/evidence/history/label-filter-cache-candidates-before.ts",
+  "before_sha256": "5ac5ae2ae6d942993e984e4db816a2040e69380667dc8457ba53b153e856683a",
+  "current_module": "apps/web/client/src/line-label-candidates.ts",
+  "current_sha256": "de0d360f93639e533ae0f0bf376f50b2094dc2f17ba5b1bf787f1298f6b83e12",
+  "fragment_module_sha256": "cbb98818cd87f12e5fc87af25ece19b24a450b1f2dd13dea760a714dde21406f",
+  "results": [
+    {
+      "scene": "overview-z10",
+      "input_sha256": "73e88718b8d118ab0dfe5240228050a7fc63596666d1311946cdcaa9c0bbb9eb",
+      "fragments": 4845,
+      "comparisons": [
+        {
+          "preset": "overview",
+          "previous_ids": null,
+          "collection_sha256": "4d39e36fc64f01b3610903918217ef98ccdf4d84532e88c61d4bf71464fe06e5",
+          "byte_identical": true
+        },
+        {
+          "preset": "overview",
+          "previous_ids": 857,
+          "collection_sha256": "4d39e36fc64f01b3610903918217ef98ccdf4d84532e88c61d4bf71464fe06e5",
+          "byte_identical": true
+        },
+        {
+          "preset": "highspeed",
+          "previous_ids": null,
+          "collection_sha256": "df819289e5af1a6935189dd5b74215adfc794af18d91f872ff93cd429fdc33bf",
+          "byte_identical": true
+        },
+        {
+          "preset": "highspeed",
+          "previous_ids": 254,
+          "collection_sha256": "df819289e5af1a6935189dd5b74215adfc794af18d91f872ff93cd429fdc33bf",
+          "byte_identical": true
+        },
+        {
+          "preset": "conventional",
+          "previous_ids": null,
+          "collection_sha256": "83a1c92172931a4fb72650415e27e569b88088a175b7982b75de6405e53e5330",
+          "byte_identical": true
+        },
+        {
+          "preset": "conventional",
+          "previous_ids": 602,
+          "collection_sha256": "83a1c92172931a4fb72650415e27e569b88088a175b7982b75de6405e53e5330",
+          "byte_identical": true
+        },
+        {
+          "preset": "urban",
+          "previous_ids": null,
+          "collection_sha256": "6e268344cf6897c596b19d42dcb273c30f6348a161da54414d98caedef2ad124",
+          "byte_identical": true
+        },
+        {
+          "preset": "urban",
+          "previous_ids": 180,
+          "collection_sha256": "6e268344cf6897c596b19d42dcb273c30f6348a161da54414d98caedef2ad124",
+          "byte_identical": true
+        }
+      ]
+    },
+    {
+      "scene": "overview-z10-5",
+      "input_sha256": "043714a9b209749753ed6d09a5a6464bc7e9bad0a60cb338572e117727f05e83",
+      "fragments": 4607,
+      "comparisons": [
+        {
+          "preset": "overview",
+          "previous_ids": null,
+          "collection_sha256": "abbf20872232cb618337241264dacccfa80a634dfa1e60ea8b48d79174dca742",
+          "byte_identical": true
+        },
+        {
+          "preset": "overview",
+          "previous_ids": 747,
+          "collection_sha256": "abbf20872232cb618337241264dacccfa80a634dfa1e60ea8b48d79174dca742",
+          "byte_identical": true
+        },
+        {
+          "preset": "highspeed",
+          "previous_ids": null,
+          "collection_sha256": "557997b79cec9a6c2c6c6f2f0100597b3f99a27b5390050481a4977bbe60e7f0",
+          "byte_identical": true
+        },
+        {
+          "preset": "highspeed",
+          "previous_ids": 216,
+          "collection_sha256": "557997b79cec9a6c2c6c6f2f0100597b3f99a27b5390050481a4977bbe60e7f0",
+          "byte_identical": true
+        },
+        {
+          "preset": "conventional",
+          "previous_ids": null,
+          "collection_sha256": "7e68228b238ab48bb20ae998a2f00ebbff4692674ccdc61c144e091a099e7300",
+          "byte_identical": true
+        },
+        {
+          "preset": "conventional",
+          "previous_ids": 530,
+          "collection_sha256": "7e68228b238ab48bb20ae998a2f00ebbff4692674ccdc61c144e091a099e7300",
+          "byte_identical": true
+        },
+        {
+          "preset": "urban",
+          "previous_ids": null,
+          "collection_sha256": "2b5b8f0fd1a3d82d890cff407a066e2307882f41acb0520853e85250971dae04",
+          "byte_identical": true
+        },
+        {
+          "preset": "urban",
+          "previous_ids": 186,
+          "collection_sha256": "2b5b8f0fd1a3d82d890cff407a066e2307882f41acb0520853e85250971dae04",
+          "byte_identical": true
+        }
+      ]
+    },
+    {
+      "scene": "yard",
+      "input_sha256": "e2c703248a2f5c2fbf53a494ec7b43352111ff797047e926ba9fa69fe6cc9223",
+      "fragments": 86,
+      "comparisons": [
+        {
+          "preset": "overview",
+          "previous_ids": null,
+          "collection_sha256": "43006052c11659ebf4069ca99ac3a21d4de219edbdbeefba3f6d94a61d0743cb",
+          "byte_identical": true
+        },
+        {
+          "preset": "overview",
+          "previous_ids": 26,
+          "collection_sha256": "43006052c11659ebf4069ca99ac3a21d4de219edbdbeefba3f6d94a61d0743cb",
+          "byte_identical": true
+        },
+        {
+          "preset": "highspeed",
+          "previous_ids": null,
+          "collection_sha256": "365417b65946ddeadfac9a7cc240f09ed8264343752d0e80eb5a72fb3b8529f0",
+          "byte_identical": true
+        },
+        {
+          "preset": "highspeed",
+          "previous_ids": 4,
+          "collection_sha256": "365417b65946ddeadfac9a7cc240f09ed8264343752d0e80eb5a72fb3b8529f0",
+          "byte_identical": true
+        },
+        {
+          "preset": "conventional",
+          "previous_ids": null,
+          "collection_sha256": "8e52864354a7bc0bc9bce0b7bf71819cdbddc27b9fc0fa0634e459aaed809872",
+          "byte_identical": true
+        },
+        {
+          "preset": "conventional",
+          "previous_ids": 12,
+          "collection_sha256": "8e52864354a7bc0bc9bce0b7bf71819cdbddc27b9fc0fa0634e459aaed809872",
+          "byte_identical": true
+        },
+        {
+          "preset": "urban",
+          "previous_ids": null,
+          "collection_sha256": "ed778c73ea51338d6576fb5992b189f2b94d9f3d5e199f46c1af520d6b0b3e6c",
+          "byte_identical": true
+        },
+        {
+          "preset": "urban",
+          "previous_ids": 0,
+          "collection_sha256": "ed778c73ea51338d6576fb5992b189f2b94d9f3d5e199f46c1af520d6b0b3e6c",
+          "byte_identical": true
+        }
+      ]
+    },
+    {
+      "scene": "tram",
+      "input_sha256": "be6bd61560e2338eacf3b9296a177d42e0be453cba366f5df1f40ec0f2f07dc6",
+      "fragments": 9,
+      "comparisons": [
+        {
+          "preset": "overview",
+          "previous_ids": null,
+          "collection_sha256": "ed778c73ea51338d6576fb5992b189f2b94d9f3d5e199f46c1af520d6b0b3e6c",
+          "byte_identical": true
+        },
+        {
+          "preset": "overview",
+          "previous_ids": 0,
+          "collection_sha256": "ed778c73ea51338d6576fb5992b189f2b94d9f3d5e199f46c1af520d6b0b3e6c",
+          "byte_identical": true
+        },
+        {
+          "preset": "highspeed",
+          "previous_ids": null,
+          "collection_sha256": "ed778c73ea51338d6576fb5992b189f2b94d9f3d5e199f46c1af520d6b0b3e6c",
+          "byte_identical": true
+        },
+        {
+          "preset": "highspeed",
+          "previous_ids": 0,
+          "collection_sha256": "ed778c73ea51338d6576fb5992b189f2b94d9f3d5e199f46c1af520d6b0b3e6c",
+          "byte_identical": true
+        },
+        {
+          "preset": "conventional",
+          "previous_ids": null,
+          "collection_sha256": "ed778c73ea51338d6576fb5992b189f2b94d9f3d5e199f46c1af520d6b0b3e6c",
+          "byte_identical": true
+        },
+        {
+          "preset": "conventional",
+          "previous_ids": 0,
+          "collection_sha256": "ed778c73ea51338d6576fb5992b189f2b94d9f3d5e199f46c1af520d6b0b3e6c",
+          "byte_identical": true
+        },
+        {
+          "preset": "urban",
+          "previous_ids": null,
+          "collection_sha256": "fda185ef42e334ac0b0a106cb0907885a9bafc34193d90862567b9825b6b13e9",
+          "byte_identical": true
+        },
+        {
+          "preset": "urban",
+          "previous_ids": 12,
+          "collection_sha256": "fda185ef42e334ac0b0a106cb0907885a9bafc34193d90862567b9825b6b13e9",
+          "byte_identical": true
+        }
+      ]
+    }
+  ],
+  "scope": "Byte-exact before/after collections on four captured real views, four presets, with/without previous IDs; not live source invalidation or performance."
+}

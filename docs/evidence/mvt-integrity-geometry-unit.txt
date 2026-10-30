@@ -1,0 +1,12 @@
+test_bad_coordinates_cannot_hide_as_bool_nan_infinity_or_extra_dimensions (test_geometry_integrity.GeometryIntegrityTests.test_bad_coordinates_cannot_hide_as_bool_nan_infinity_or_extra_dimensions) ... ok
+test_build_main_rejects_bad_geometry_before_tiling_or_publishing (test_geometry_integrity.GeometryIntegrityTests.test_build_main_rejects_bad_geometry_before_tiling_or_publishing) ... ok
+test_duplicate_and_zero_length_paths_report_source_identity (test_geometry_integrity.GeometryIntegrityTests.test_duplicate_and_zero_length_paths_report_source_identity) ... ok
+test_each_ring_and_part_is_checked_and_unsupported_detail_types_are_rejected (test_geometry_integrity.GeometryIntegrityTests.test_each_ring_and_part_is_checked_and_unsupported_detail_types_are_rejected) ... ok
+test_ring_must_be_closed_nonzero_area_and_without_internal_repetition (test_geometry_integrity.GeometryIntegrityTests.test_ring_must_be_closed_nonzero_area_and_without_internal_repetition) ... ok
+test_snapshot_rejects_geometry_even_when_file_hashes_are_self_consistent (test_geometry_integrity.GeometryIntegrityTests.test_snapshot_rejects_geometry_even_when_file_hashes_are_self_consistent) ... ok
+test_valid_paths_closure_shared_junctions_and_small_ring_are_not_mutated (test_geometry_integrity.GeometryIntegrityTests.test_valid_paths_closure_shared_junctions_and_small_ring_are_not_mutated) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.214s
+
+OK

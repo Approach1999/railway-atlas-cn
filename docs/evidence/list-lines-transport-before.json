@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-26T12:51:56.882Z",
+  "browser": "155.0.8059.85",
+  "audit_only": true,
+  "cases": [
+    {
+      "phase": "http",
+      "requests": [
+        {
+          "closed": false
+        }
+      ],
+      "recovered": true,
+      "identity_query_url_preserved": true
+    }
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Real loopback unfinished HTTP 503 body, stalled headers/body, close cancellation in independent list route-name path, WebGL disabled. Not real device, screen reader or full R11."
+}

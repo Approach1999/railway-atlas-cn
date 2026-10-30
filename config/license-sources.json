@@ -1,0 +1,349 @@
+{
+  "components": {
+    "cargo:flat_map@0.0.10": {
+      "archive_sha256": "e4fa2a56a33c493fc81acbad4676c599cf2b128f21462a020043ea1eee46244f",
+      "archive_url": "https://static.crates.io/crates/flat_map/flat_map-0.0.10.crate",
+      "cargo_metadata_sha256": "49aab56b7c76a2338f2275626ef6d4f6b2098b17f8fdf56cc53a7a3686ecb8f8",
+      "ecosystem": "cargo",
+      "license_declared": "Apache-2.0",
+      "license_files": [],
+      "name": "flat_map",
+      "repository": "https://github.com/toffaletti/flat_map.git",
+      "retrieved_utc": "2026-10-25T02:26:59.537791+00:00",
+      "version": "0.0.10"
+    },
+    "cargo:hermit-abi@0.5.3": {
+      "archive_sha256": "e17592d60ebacc7d5e169f4663c5f84f9161cc90328abcfe8456f41e4dfcb284",
+      "archive_url": "https://static.crates.io/crates/hermit-abi/hermit-abi-0.5.3.crate",
+      "cargo_metadata_sha256": "f9c1cf5c051787c34fa0cd1a6d7faa7b9625a9ae5bbc10549bb28e5af263b29f",
+      "ecosystem": "cargo",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "third_party/licenses/cargo/hermit-abi-0.5.3/LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+          "source_file": "LICENSE-APACHE"
+        },
+        {
+          "file": "third_party/licenses/cargo/hermit-abi-0.5.3/LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+          "source_file": "LICENSE-MIT"
+        }
+      ],
+      "name": "hermit-abi",
+      "repository": "https://github.com/hermit-os/hermit-rs",
+      "retrieved_utc": "2026-10-25T01:16:07.289285+00:00",
+      "version": "0.5.3"
+    },
+    "cargo:libc@0.2.191": {
+      "archive_sha256": "65cd87c9a6d60536580b316ad985726104730a5151c99845f2490428ef91240a",
+      "archive_url": "https://static.crates.io/crates/libc/libc-0.2.191.crate",
+      "cargo_metadata_sha256": "c8e45fe04427917e1bbadf4b628353571c9a0f2574971231814bb71dc6a86f1f",
+      "ecosystem": "cargo",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "third_party/licenses/cargo/libc-0.2.191/LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+          "source_file": "LICENSE-APACHE"
+        },
+        {
+          "file": "third_party/licenses/cargo/libc-0.2.191/LICENSE-MIT",
+          "sha256": "123a331b5dbf04c30097fa43b8f858bc85df671fe776de498d01f3d6b7c1f69e",
+          "source_file": "LICENSE-MIT"
+        }
+      ],
+      "name": "libc",
+      "repository": "https://github.com/rust-lang/libc",
+      "retrieved_utc": "2026-10-25T01:16:09.306345+00:00",
+      "version": "0.2.191"
+    },
+    "cargo:linux-raw-sys@0.12.1": {
+      "archive_sha256": "32a66949e030da00e8c7d4434b251670a91556f4144941d37452769c25d58a53",
+      "archive_url": "https://static.crates.io/crates/linux-raw-sys/linux-raw-sys-0.12.1.crate",
+      "cargo_metadata_sha256": "1d24fe227d87b23fc5220ddf2ca4708e5e0d794a3f77961b71cd8140bf33faa5",
+      "ecosystem": "cargo",
+      "license_declared": "Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT",
+      "license_files": [
+        {
+          "file": "third_party/licenses/cargo/linux-raw-sys-0.12.1/LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+          "source_file": "LICENSE-APACHE"
+        },
+        {
+          "file": "third_party/licenses/cargo/linux-raw-sys-0.12.1/LICENSE-Apache-2.0_WITH_LLVM-exception",
+          "sha256": "268872b9816f90fd8e85db5a28d33f8150ebb8dd016653fb39ef1f94f2686bc5",
+          "source_file": "LICENSE-Apache-2.0_WITH_LLVM-exception"
+        },
+        {
+          "file": "third_party/licenses/cargo/linux-raw-sys-0.12.1/LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+          "source_file": "LICENSE-MIT"
+        }
+      ],
+      "name": "linux-raw-sys",
+      "repository": "https://github.com/sunfishcode/linux-raw-sys",
+      "retrieved_utc": "2026-10-25T01:16:14.515045+00:00",
+      "version": "0.12.1"
+    },
+    "cargo:linux-raw-sys@0.4.15": {
+      "archive_sha256": "d26c52dbd32dccf2d10cac7725f8eae5296885fb5703b261f7d0a0739ec807ab",
+      "archive_url": "https://static.crates.io/crates/linux-raw-sys/linux-raw-sys-0.4.15.crate",
+      "cargo_metadata_sha256": "0158431ac8b7b25dca745feef8cb28d5a58d0bf78b97e2a9027af5eeadc3af55",
+      "ecosystem": "cargo",
+      "license_declared": "Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT",
+      "license_files": [
+        {
+          "file": "third_party/licenses/cargo/linux-raw-sys-0.4.15/LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+          "source_file": "LICENSE-APACHE"
+        },
+        {
+          "file": "third_party/licenses/cargo/linux-raw-sys-0.4.15/LICENSE-Apache-2.0_WITH_LLVM-exception",
+          "sha256": "268872b9816f90fd8e85db5a28d33f8150ebb8dd016653fb39ef1f94f2686bc5",
+          "source_file": "LICENSE-Apache-2.0_WITH_LLVM-exception"
+        },
+        {
+          "file": "third_party/licenses/cargo/linux-raw-sys-0.4.15/LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+          "source_file": "LICENSE-MIT"
+        }
+      ],
+      "name": "linux-raw-sys",
+      "repository": "https://github.com/sunfishcode/linux-raw-sys",
+      "retrieved_utc": "2026-10-25T01:16:14.118426+00:00",
+      "version": "0.4.15"
+    },
+    "cargo:r-efi@6.0.0": {
+      "archive_sha256": "f8dcc9c7d52a811697d2151c701e0d08956f92b0e24136cf4cf27b57a6a0d9bf",
+      "archive_url": "https://static.crates.io/crates/r-efi/r-efi-6.0.0.crate",
+      "cargo_metadata_sha256": "a021f9fb0645cc5de5770cf7f41594c1deff4b388eca933b289752aa52666829",
+      "ecosystem": "cargo",
+      "license_declared": "MIT OR Apache-2.0 OR LGPL-2.1-or-later",
+      "license_files": [
+        {
+          "file": "third_party/licenses/cargo/r-efi-6.0.0/AUTHORS",
+          "sha256": "d027e91dbc9cdbb2f1190068e498bd6b61cff022b6a032b191021ba658d96111",
+          "source_file": "AUTHORS"
+        }
+      ],
+      "name": "r-efi",
+      "repository": "https://github.com/r-efi/r-efi",
+      "retrieved_utc": "2026-10-25T02:26:59.542903+00:00",
+      "version": "6.0.0"
+    },
+    "cargo:rustix@1.1.5": {
+      "archive_sha256": "891efababe418670775f199f0d233d84843c227a0949a883ce15b37c78d6629d",
+      "archive_url": "https://static.crates.io/crates/rustix/rustix-1.1.5.crate",
+      "cargo_metadata_sha256": "f57824af546c008210d8d6d63bc0fe866a3887d06100469448de3432ffa108ec",
+      "ecosystem": "cargo",
+      "license_declared": "Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT",
+      "license_files": [
+        {
+          "file": "third_party/licenses/cargo/rustix-1.1.5/LICENSE-APACHE",
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+          "source_file": "LICENSE-APACHE"
+        },
+        {
+          "file": "third_party/licenses/cargo/rustix-1.1.5/LICENSE-Apache-2.0_WITH_LLVM-exception",
+          "sha256": "268872b9816f90fd8e85db5a28d33f8150ebb8dd016653fb39ef1f94f2686bc5",
+          "source_file": "LICENSE-Apache-2.0_WITH_LLVM-exception"
+        },
+        {
+          "file": "third_party/licenses/cargo/rustix-1.1.5/LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+          "source_file": "LICENSE-MIT"
+        }
+      ],
+      "name": "rustix",
+      "repository": "https://github.com/bytecodealliance/rustix",
+      "retrieved_utc": "2026-10-25T01:16:11.041329+00:00",
+      "version": "1.1.5"
+    },
+    "cargo:syn@3.0.9": {
+      "archive_sha256": "d78c8dee4c7bf0e14673097256fed6142ce9d3b85a408189d07482442145823b",
+      "archive_url": "https://static.crates.io/crates/syn/syn-3.0.9.crate",
+      "cargo_metadata_sha256": "b6f7f6069d92142d3e294f84855a68049bebc5b886c557ed4ae980ddbc866e1c",
+      "ecosystem": "cargo",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "third_party/licenses/cargo/syn-3.0.9/LICENSE-APACHE",
+          "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+          "source_file": "LICENSE-APACHE"
+        },
+        {
+          "file": "third_party/licenses/cargo/syn-3.0.9/LICENSE-MIT",
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+          "source_file": "LICENSE-MIT"
+        }
+      ],
+      "name": "syn",
+      "repository": "https://github.com/dtolnay/syn",
+      "retrieved_utc": "2026-10-25T01:16:11.787577+00:00",
+      "version": "3.0.9"
+    },
+    "cargo:windows_aarch64_gnullvm@0.52.6": {
+      "archive_sha256": "32a4622180e7a0ec044bb555404c800bc9fd9ec262ec147edd5989ccd0c02cd3",
+      "archive_url": "https://static.crates.io/crates/windows_aarch64_gnullvm/windows_aarch64_gnullvm-0.52.6.crate",
+      "cargo_metadata_sha256": "7535a631f6950dae31847b64f09469b499bc00fc492374fbb37589cfb9f2d02e",
+      "ecosystem": "cargo",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "third_party/licenses/cargo/windows_aarch64_gnullvm-0.52.6/license-apache-2.0",
+          "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+          "source_file": "license-apache-2.0"
+        },
+        {
+          "file": "third_party/licenses/cargo/windows_aarch64_gnullvm-0.52.6/license-mit",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "source_file": "license-mit"
+        }
+      ],
+      "name": "windows_aarch64_gnullvm",
+      "repository": "https://github.com/microsoft/windows-rs",
+      "retrieved_utc": "2026-10-25T01:16:14.426417+00:00",
+      "version": "0.52.6"
+    },
+    "cargo:windows_aarch64_msvc@0.52.6": {
+      "archive_sha256": "09ec2a7bb152e2252b53fa7803150007879548bc709c039df7627cabbd05d469",
+      "archive_url": "https://static.crates.io/crates/windows_aarch64_msvc/windows_aarch64_msvc-0.52.6.crate",
+      "cargo_metadata_sha256": "36a94f20ae8c86cfc38b0489dc9c4a9d0607d5f8e1e3216c866eae9e5bd2d5a5",
+      "ecosystem": "cargo",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "third_party/licenses/cargo/windows_aarch64_msvc-0.52.6/license-apache-2.0",
+          "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+          "source_file": "license-apache-2.0"
+        },
+        {
+          "file": "third_party/licenses/cargo/windows_aarch64_msvc-0.52.6/license-mit",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "source_file": "license-mit"
+        }
+      ],
+      "name": "windows_aarch64_msvc",
+      "repository": "https://github.com/microsoft/windows-rs",
+      "retrieved_utc": "2026-10-25T01:12:54.474777+00:00",
+      "version": "0.52.6"
+    },
+    "cargo:windows_i686_gnu@0.52.6": {
+      "archive_sha256": "8e9b5ad5ab802e97eb8e295ac6720e509ee4c243f69d781394014ebfe8bbfa0b",
+      "archive_url": "https://static.crates.io/crates/windows_i686_gnu/windows_i686_gnu-0.52.6.crate",
+      "cargo_metadata_sha256": "bd9f2440820141c9a41c21b48a9d98c4c14f41936afe10e911ba963aa2c35809",
+      "ecosystem": "cargo",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "third_party/licenses/cargo/windows_i686_gnu-0.52.6/license-apache-2.0",
+          "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+          "source_file": "license-apache-2.0"
+        },
+        {
+          "file": "third_party/licenses/cargo/windows_i686_gnu-0.52.6/license-mit",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "source_file": "license-mit"
+        }
+      ],
+      "name": "windows_i686_gnu",
+      "repository": "https://github.com/microsoft/windows-rs",
+      "retrieved_utc": "2026-10-25T01:16:15.913850+00:00",
+      "version": "0.52.6"
+    },
+    "cargo:windows_i686_gnullvm@0.52.6": {
+      "archive_sha256": "0eee52d38c090b3caa76c563b86c3a4bd71ef1a819287c19d586d7334ae8ed66",
+      "archive_url": "https://static.crates.io/crates/windows_i686_gnullvm/windows_i686_gnullvm-0.52.6.crate",
+      "cargo_metadata_sha256": "ab3340805fce89252fa7d9c7e38fcdc2d8f5aa114dfdaa4d7926c7265ea54f38",
+      "ecosystem": "cargo",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "third_party/licenses/cargo/windows_i686_gnullvm-0.52.6/license-apache-2.0",
+          "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+          "source_file": "license-apache-2.0"
+        },
+        {
+          "file": "third_party/licenses/cargo/windows_i686_gnullvm-0.52.6/license-mit",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "source_file": "license-mit"
+        }
+      ],
+      "name": "windows_i686_gnullvm",
+      "repository": "https://github.com/microsoft/windows-rs",
+      "retrieved_utc": "2026-10-25T01:16:15.588345+00:00",
+      "version": "0.52.6"
+    },
+    "cargo:windows_i686_msvc@0.52.6": {
+      "archive_sha256": "240948bc05c5e7c6dabba28bf89d89ffce3e303022809e73deaefe4f6ec56c66",
+      "archive_url": "https://static.crates.io/crates/windows_i686_msvc/windows_i686_msvc-0.52.6.crate",
+      "cargo_metadata_sha256": "30419314e9cb467e2ddfe347f1626a9b59f030041bcdc9cb563cbc5a39fc4a5f",
+      "ecosystem": "cargo",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "third_party/licenses/cargo/windows_i686_msvc-0.52.6/license-apache-2.0",
+          "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+          "source_file": "license-apache-2.0"
+        },
+        {
+          "file": "third_party/licenses/cargo/windows_i686_msvc-0.52.6/license-mit",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "source_file": "license-mit"
+        }
+      ],
+      "name": "windows_i686_msvc",
+      "repository": "https://github.com/microsoft/windows-rs",
+      "retrieved_utc": "2026-10-25T01:16:16.363180+00:00",
+      "version": "0.52.6"
+    },
+    "cargo:windows_x86_64_gnu@0.52.6": {
+      "archive_sha256": "147a5c80aabfbf0c7d901cb5895d1de30ef2907eb21fbbab29ca94c5b08b1a78",
+      "archive_url": "https://static.crates.io/crates/windows_x86_64_gnu/windows_x86_64_gnu-0.52.6.crate",
+      "cargo_metadata_sha256": "7bd069878ae02213cb113a56b15a1eac497a697de64ec0006bb0930c49b65386",
+      "ecosystem": "cargo",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "third_party/licenses/cargo/windows_x86_64_gnu-0.52.6/license-apache-2.0",
+          "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+          "source_file": "license-apache-2.0"
+        },
+        {
+          "file": "third_party/licenses/cargo/windows_x86_64_gnu-0.52.6/license-mit",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "source_file": "license-mit"
+        }
+      ],
+      "name": "windows_x86_64_gnu",
+      "repository": "https://github.com/microsoft/windows-rs",
+      "retrieved_utc": "2026-10-25T01:12:54.422019+00:00",
+      "version": "0.52.6"
+    },
+    "cargo:windows_x86_64_gnullvm@0.52.6": {
+      "archive_sha256": "24d5b23dc417412679681396f2b49f3de8c1473deb516bd34410872eff51ed0d",
+      "archive_url": "https://static.crates.io/crates/windows_x86_64_gnullvm/windows_x86_64_gnullvm-0.52.6.crate",
+      "cargo_metadata_sha256": "b4e30fa8303981a233886a54ab98a180041adf2815f4a0d45e34484e5fb20585",
+      "ecosystem": "cargo",
+      "license_declared": "MIT OR Apache-2.0",
+      "license_files": [
+        {
+          "file": "third_party/licenses/cargo/windows_x86_64_gnullvm-0.52.6/license-apache-2.0",
+          "sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+          "source_file": "license-apache-2.0"
+        },
+        {
+          "file": "third_party/licenses/cargo/windows_x86_64_gnullvm-0.52.6/license-mit",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "source_file": "license-mit"
+        }
+      ],
+      "name": "windows_x86_64_gnullvm",
+      "repository": "https://github.com/microsoft/windows-rs",
+      "retrieved_utc": "2026-10-25T01:12:52.512927+00:00",
+      "version": "0.52.6"
+    }
+  },
+  "schema_version": 1
+}

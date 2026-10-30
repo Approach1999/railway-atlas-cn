@@ -1,0 +1,168 @@
+{
+  "date": "2026-10-23T15:47:28.388Z",
+  "scope": "React station-search migration and focused input/focus corrections; current-source fingerprints and this phase reports at their recorded times; not OS IME, reader, real-device, independent audit or full MVP acceptance",
+  "source_sha256": {
+    "apps/web/client/src/station-search.ts": "b8f1bf0195edc0bf4a9b680bcb839b89dce0ac45d253517064b915d21380ffa4",
+    "apps/web/client/src/StationSearch.tsx": "5f907b2255b2d8a938f3342ec41631e5900abad6b8fe72f4460c34055a8aa63e",
+    "apps/web/client/src/map-controller.ts": "757e853a50209b947ec311e2b3271c9c0384ed416d3a38ef3357f3a4d78bff98",
+    "apps/web/client/src/App.tsx": "fe7c0174092fa188a5c04cf760094abe7bbce0da18c8c633c6f78b2bb4b7dacf",
+    "apps/web/client/src/AccessibleExplorer.tsx": "bec7d74d856ab83734f7e3c4c7410977a854dcf021329b2159b03b29b574e5da",
+    "apps/web/client/src/style.css": "cc2e0ccf549a29db370fee31b25bff81ebbfa099c8cb1a663ff48a953adfdf69"
+  },
+  "unit_tests": 37,
+  "list_repeat_passes_utc": [
+    "2026-10-23T15:43:09.876Z",
+    "2026-10-23T15:43:16.154Z",
+    "2026-10-23T15:43:22.623Z"
+  ],
+  "reports": {
+    "search": {
+      "file": "data/manifests/local/react-search/react-search-report.json",
+      "date": "2026-10-23T15:30:15.741Z",
+      "record_file_mtime": "2026-10-23T15:30:15.745Z",
+      "checks": [
+        "real query caps options at twenty, reports narrowing, initial ArrowUp chooses the last and active descendant references the visible option",
+        "synthetic IME Enter/Escape do not select stale results, clear composition or serialize partial text; confirmation publishes the Chinese query",
+        "same-task edit plus Enter flushes the new exact-name target; modal Escape preserves map selection and closing keyboard-selected details returns to search",
+        "filter changes keep input/active identity and a hidden metro result can temporarily display while high-speed filters remain intact",
+        "history restoration cancels pending query work instead of later replacing the restored address",
+        "same-task input and opening the all-object list uses the latest committed query rather than the earlier URL text",
+        "unavailable snapshot recovery preserves text entered after the failure as well as the shared typed identity",
+        "delayed restored list detail cannot steal editing focus; explicit facility selection transfers focus only after its detail is committed",
+        "390px simulation keeps separated rail/metro results, status text and 44px selection targets within the viewport"
+      ],
+      "scope": "Actual local indexes, React event integration and synthetic composition/fast-key traces; Chrome and 390px simulation, not OS IME, reader, real-device or full MVP acceptance"
+    },
+    "filters": {
+      "file": "data/manifests/local/react-filters/react-filters-report.json",
+      "date": "2026-10-23T15:20:04.342Z",
+      "record_file_mtime": "2026-10-23T15:20:04.343Z",
+      "checks": [
+        "keyboard toggling preserves the same focused input and open disclosure; persistent URL reflects lifecycle change",
+        "preset undo and reload preserve explicitly empty modes with custom lifecycle selection",
+        "temporary isolation shares the visible line and exits to the earlier persistent choices",
+        "snapshot changes retain React control identities, native open disclosures and display options while legacy line coverage stays explicit",
+        "grade/status legend buttons support Space, retain focus and remain available after disabling the last state",
+        "line legend groups use configured operator name or explicit unknown operator; keyboard opens colour provenance and confidence",
+        "palette recovery updates real line colours without replacing focused React input or resetting its choice",
+        "390px simulation retains all presets, at least 44px touch targets, keyboard-collapsible line panel, readable colour provenance and no horizontal overflow"
+      ],
+      "scope": "Local Chrome React ownership and keyboard/disclosure continuity, actual snapshots and 390px simulation; not real-device or full accessibility acceptance"
+    },
+    "resources": {
+      "file": "data/manifests/local/resource-recovery/resource-recovery-report.json",
+      "date": "2026-10-23T15:20:33.123Z",
+      "record_file_mtime": "2026-10-23T15:20:33.131Z",
+      "checks": [
+        "palette HTTP 503: tracks remain drawn, retry restores only failed index, preserves canvas/camera/query/filter",
+        "palette invalid JSON shape: tracks remain drawn, retry restores only failed index, preserves canvas/camera/query/filter",
+        "stations invalid JSON shape: tracks remain drawn, retry restores only failed index, preserves canvas/camera/query/filter",
+        "lines HTTP 503: tracks remain drawn, retry restores only failed index, preserves canvas/camera/query/filter",
+        "manifest failure retries in place and preserves text entered before startup completes",
+        "tile 503 leaves search/details usable; deliberately late pre-retry zoom failures each retry once, restore real rendered tracks and keep selection/camera",
+        "partial tile failure keeps rendered content; repeated failure offers another explicit retry without a loop, successful tiles are not downloaded again",
+        "detail retry preserves filtered-out temporary search selection, camera and keyboard focus",
+        "late retry from previous snapshot is discarded after successful version switch",
+        "simulated narrow viewport keeps recovery control within screen with at least 44px touch height"
+      ],
+      "scope": "Injected failures and retries against local actual data; no real-device, reader or independent human acceptance claim"
+    },
+    "list": {
+      "file": "data/manifests/local/accessible-browser/report.json",
+      "date": "2026-10-23T15:43:22.623Z",
+      "record_file_mtime": "2026-10-23T15:43:22.625Z",
+      "checks": [
+        "on-demand list supports keyboard selection, source details, focus return and map focus",
+        "real source facilities have list details and snapshot/feature share links",
+        "simulated context loss opens the list and modal contains keyboard focus",
+        "WebGL unavailable automatically opens usable list; 390px layout fits and list can reopen",
+        "index and detail 503 errors retry independently, preserve loaded records, and empty filters recover"
+      ],
+      "scope": "Chrome keyboard, simulated WebGL failure and 390px viewport; not full WCAG/NVDA/VoiceOver/real-device acceptance"
+    },
+    "typed_boundary": {
+      "file": "data/manifests/local/typed-boundary/typed-boundary-report.json",
+      "date": "2026-10-23T15:25:28.307Z",
+      "record_file_mtime": "2026-10-23T15:25:28.310Z",
+      "checks": [
+        "invalid detail identity is rejected before display; original selection/query/camera survive and retry restores matching source",
+        "invalid detail geometry is rejected before display; original selection/query/camera survive and retry restores matching source",
+        "malformed object-index properties produce recoverable list error instead of crashing React search/render; retry preserves list query"
+      ],
+      "scope": "Local Chrome schema failure integration on actual snapshot; not full accessibility, independent data audit or real-device acceptance"
+    },
+    "share": {
+      "file": "data/manifests/local/share-browser/share-report.json",
+      "date": "2026-10-23T15:43:31.517Z",
+      "record_file_mtime": "2026-10-23T15:43:31.521Z",
+      "checks": [
+        "搜索选中不覆盖上一条历史，后退关闭详情、前进恢复详情",
+        "分享编码快照、视图、查询、筛选、设施和 typed 要素身份",
+        "新窗口通过不可变快照地址恢复同一视图，隐藏车站按分享例外显示",
+        "前进/后退恢复筛选与选中对象，连续视图变化不会新增无意义历史",
+        "状态全关不会被解释成全选，刷新保留明确的空筛选",
+        "无效路径、要素和越界视图回退；查询字符串作为文本处理",
+        "失效快照明确解释并可打开当前版本，不静默替换版本"
+      ],
+      "scope": "Local share/navigation integration; not full MVP acceptance"
+    },
+    "catalog": {
+      "file": "data/manifests/local/catalog-browser/report.json",
+      "date": "2026-10-23T15:43:43.311Z",
+      "record_file_mtime": "2026-10-23T15:43:43.313Z",
+      "checks": [
+        "catalog only lists available region/explicit versions; failed staging preserves camera, filters, query and selection",
+        "cancelled staging cannot replace the current view after a delayed response",
+        "successful switch preserves map instance/basemap preference/query/filters, clears selection and resets camera; legacy list limits remain explicit",
+        "provenance, retention, manual update schedule and unselected code license are visible for the active version",
+        "back/forward swaps immutable datasets in place and restores the selected source identity",
+        "malformed assets are rejected before replacing loaded railway layers",
+        "catalog failure leaves the railway map usable and retries independently",
+        "expired links explain retention, preserve query/typed identity, and recover current data with or without WebGL"
+      ],
+      "scope": "Local real-data version switch and fixture failures; not proof of 12-month operational retention or multi-region deployment"
+    },
+    "client": {
+      "file": "data/manifests/local/client-browser/report.json",
+      "date": "2026-10-23T15:20:22.992Z",
+      "record_file_mtime": "2026-10-23T15:20:22.995Z",
+      "checks": [
+        "React 构建页面启动，淡化底图位于铁路之下（回归瓦片为测试夹具）",
+        "关闭底图保留筛选、选中站点和缩放；隐藏后平移/缩放无新增底图请求",
+        "刷新恢复关闭偏好，首屏不请求外部底图",
+        "迁移保留中文搜索、铁路/地铁消歧、临时显示和预设撤销",
+        "可重复开启底图，保留原有地图实例",
+        "模拟底图 503 后回退纯色，铁路搜索/详情和开关继续可用",
+        "390px 手机开关触摸目标、详情避让与署名可见",
+        "首屏解析当前版本后，铁路索引、瓦片和详情统一使用不可变快照地址"
+      ],
+      "scope": "Built React client; raster fixture responses; 390px emulation, not real-device or provider uptime acceptance"
+    },
+    "routes": {
+      "file": "data/manifests/local/real-route-browser/real-routes-report.json",
+      "date": "2026-10-23T15:20:34.213Z",
+      "record_file_mtime": "2026-10-23T15:20:34.214Z",
+      "checks": [
+        "24 real route directions grouped by 12 explicit route_master identities; six subway refs and configured swatches available",
+        "single-line share restores selected filters; Shenyang North subway POI resolves lines 2/4 through explicit stop areas and retains actual object version/time",
+        "line filters survive version changes and missing old-snapshot identities have an explicit restore-all recovery",
+        "dated Geofabrik source and missing contributor/changeset metadata are disclosed accurately"
+      ],
+      "scope": "Real OSM relation membership and browser integration; complete source references do not establish complete current operating lines; full MVP acceptance remains outstanding"
+    },
+    "facilities": {
+      "file": "data/manifests/local/mvp-work-browser/facilities-report.json",
+      "date": "2026-10-23T15:20:43.932Z",
+      "record_file_mtime": "2026-10-23T15:20:43.937Z",
+      "checks": [
+        "published line-index coverage matches active immutable snapshot",
+        "station/area search remains distinguishable",
+        "real source switch rendered and selectable at station zoom",
+        "facility category, source and missing association shown",
+        "facility layer toggles independently",
+        "no external requests or page errors"
+      ],
+      "scope": "Real bounded-source facility integration; not full MVP, independent human or real-device acceptance"
+    }
+  }
+}

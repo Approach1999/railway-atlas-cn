@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-25T08:25:47.530Z",
+  "snapshot": "shenyang-mvp-20261023",
+  "source_record": {
+    "aliases": [
+      "沈阳铁路陈列馆小火车线"
+    ],
+    "display_name": "沈阳铁路陈列馆小火车线",
+    "facility_kind": "other",
+    "feature_kind": "track",
+    "line_class": "unknown",
+    "line_keys": [],
+    "line_tokens": "",
+    "osm_id": "way/1434300102",
+    "rail_mode": "other",
+    "status": "mapped"
+  },
+  "checks": [
+    "map and list: actual way/1434300102 retains other-mode identity, Chinese label and independent filter",
+    "native browser probe module imports the checked .mjs directly and executes search/filter rules",
+    "WebGL-failure list: actual way/1434300102 retains other-mode identity, Chinese label and independent filter",
+    "native browser probe module imports the checked .mjs directly and executes search/filter rules"
+  ],
+  "errors": [],
+  "external": [],
+  "scope": "Actual local record in built client and native-module probe, including simulated WebGL failure; not independent source classification, real reader or physical device acceptance."
+}

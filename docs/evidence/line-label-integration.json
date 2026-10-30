@@ -1,0 +1,445 @@
+{
+  "date": "2026-10-27T04:15:38.453832+00:00",
+  "asset": "index-C6agegAj.js",
+  "sha256": {
+    "apps/web/client/src/map-controller.ts": "500767a624a6ec165d6705cec14f10b58a85752ffbaf3d3b46c49ea0648ce51b",
+    "apps/web/client/src/line-label-controller.ts": "8dfaef9bcb260cfb367e490367e142170c6622bdbe5059cb8a557eca7c5a44b7",
+    "apps/web/client/src/line-label-controller.test.mjs": "933db7aac1069955a413da96f691afe26cf7e3283d7697d2970eeffa3cc52d04",
+    "apps/web/client/src/line-label-candidates.ts": "5ac5ae2ae6d942993e984e4db816a2040e69380667dc8457ba53b153e856683a",
+    "apps/web/client/src/line-label-fragments.ts": "cbb98818cd87f12e5fc87af25ece19b24a450b1f2dd13dea760a714dde21406f",
+    "apps/web/client/src/line-label-presentation.ts": "66be279ede4eea13c7296a1151f11a6746c09422cd3218749e5d393150d686fa",
+    "apps/web/client/src/resources.ts": "ff35d606794f4a1cad29ce084bae3d8614759478e14bca2a75c8482f7afe397b",
+    "scripts/verify_line_label_integration.cjs": "2a8b98001ebfea99c0ca925988d0d828cab4ca2505ddc204de7232e2a748d437",
+    "scripts/verify_name_readiness_guard.cjs": "49837bcc302e04d4f371d6f1e1c98585ef1aef33f141d9fccc0655e96e7cabe4",
+    "scripts/verify_product_label_spacing.cjs": "1c9ac504ff03d7663745a8d9eee2876ebb0af2dda6178e231d55d5fd5c096ea9",
+    "scripts/benchmark_client.cjs": "d49e6a113b5b99d2b6d75ad2d5a6829f78cf9532ade204ce64ecf4bc859c3647",
+    "scripts/benchmark_filters.cjs": "59d397f4c867c56cc2d72d2d784af439a69b330e7e7a0006175b90491573ee04",
+    "scripts/benchmark_pan.cjs": "a285ac9d45bc819247be15e6e2bcb73b91588880ec0fd281dd3098a75afd8e12",
+    "scripts/benchmark_style_guard.cjs": "beefb1b9cdbd3871ae43499e3982acc4e818642a1b6cb9a55603c073300914cd",
+    "apps/web/client/dist/assets/index-C6agegAj.js": "acb8a496938d671c483743364098e867679c30aa4b4d80acccee17c4bff96816",
+    "apps/web/client/dist/index.html": "6c84d77dc9901bbb35ec63849a72114b916d303deb1c2113ddaa8e627cd961ba",
+    "data/processed/shenyang-mvp-20261023/dataset.json": "e5d9da79170c41c428d8f971ddc8a3bb12bda3c66b856f4243c912d5469d2404"
+  },
+  "unit_tests": {
+    "passed": 101,
+    "failed": 0,
+    "log_sha256": "812cc6fc264317ed90a9b4813d1191fe8aeea98cc0e2d3a36254abe68581d306"
+  },
+  "typecheck_and_build": "passed",
+  "reports": {
+    "browser": {
+      "local_path": "data/manifests/local/line-label-integration/browser-slim/report.json",
+      "sha256": "a962721ce5a7889ea9b8df0bb07013829b2d16fe0d08a05d67e4b0c1c7075da5",
+      "checks": [
+        {
+          "check": "first usable includes the product name source; no injected replacement source",
+          "features": 747,
+          "rendered": 57,
+          "source_loaded": true,
+          "expected_layers": 41,
+          "name_labels": {
+            "status": "ready",
+            "enabled": true,
+            "source_loaded": true
+          }
+        },
+        {
+          "check": "actual short caption click opens original track identity and share preserves it; caption boxes are single-row",
+          "id": "way/136823634",
+          "name": "苏抚线",
+          "captions_checked": 26
+        },
+        {
+          "check": "shared track restores original detail; line-name switch hides and restores every name layer"
+        },
+        {
+          "check": "actual zoom/pan rebuilds names and minor labels obey siding visibility"
+        },
+        {
+          "check": "malformed name source fails independently, leaves track drawing and URL, explicit retry recovers"
+        },
+        {
+          "check": "real snapshot round trip replaces label source and restores exactly four name layers"
+        }
+      ],
+      "date": "2026-10-27T04:10:49.807Z",
+      "browser": "155.0.8059.85"
+    },
+    "spacing": {
+      "local_path": "data/manifests/local/line-label-integration/spacing/report.json",
+      "sha256": "ad380079bad5b2f9ad598cdf61f63014b71fa92eebe5ecec8a86ee84a62f6b74",
+      "scenes": [
+        {
+          "name": "overview-z10",
+          "anchors": 46,
+          "captions_checked": 20,
+          "same_identity_pairs": 0,
+          "minimum_css_px": null,
+          "cross_tile_pairs": 0
+        },
+        {
+          "name": "overview-z10-5",
+          "anchors": 51,
+          "captions_checked": 23,
+          "same_identity_pairs": 0,
+          "minimum_css_px": null,
+          "cross_tile_pairs": 0
+        },
+        {
+          "name": "yard",
+          "anchors": 13,
+          "captions_checked": 0,
+          "same_identity_pairs": 11,
+          "minimum_css_px": 308.3135199153915,
+          "cross_tile_pairs": 9
+        },
+        {
+          "name": "tram",
+          "anchors": 6,
+          "captions_checked": 0,
+          "same_identity_pairs": 2,
+          "minimum_css_px": 323.1828043028214,
+          "cross_tile_pairs": 2
+        }
+      ],
+      "source_sha256": "acb8a496938d671c483743364098e867679c30aa4b4d80acccee17c4bff96816",
+      "date": "2026-10-27T04:10:58.958Z",
+      "browser": "155.0.8059.85"
+    },
+    "readiness": {
+      "local_path": "data/manifests/local/line-label-integration/readiness-slim/report.json",
+      "sha256": "8570bf5103374d0b51dd488d52c8543e0b8f39f7d3cb8fc138879f520f92d855",
+      "checks": [
+        {
+          "invalid_names": false,
+          "name_labels": {
+            "status": "ready",
+            "enabled": true,
+            "source_loaded": true
+          },
+          "layers": 41,
+          "tracks": 605,
+          "accepted": true
+        },
+        {
+          "invalid_names": true,
+          "name_labels": {
+            "status": "error",
+            "enabled": true,
+            "source_loaded": true
+          },
+          "layers": 41,
+          "tracks": 605,
+          "accepted": false
+        }
+      ],
+      "date": "2026-10-27T04:11:03.331Z",
+      "browser": "155.0.8059.85"
+    },
+    "cold": {
+      "local_path": "data/manifests/local/line-label-integration/cold-slim/benchmark-client.json",
+      "sha256": "11f828d3d67bf8a10c4da1d2fffba61993cfe2e99728f1da971393f261e526ac",
+      "summary": {
+        "first_usable_ms": {
+          "samples": 30,
+          "median": 1847.9000000059605,
+          "p95": 1942,
+          "max": 1948.7999999970198
+        },
+        "index_ready_ms": {
+          "samples": 30,
+          "median": 1030.7999999970198,
+          "p95": 1062.8999999910593,
+          "max": 1101.7999999970198
+        },
+        "own_transfer_bytes": {
+          "samples": 30,
+          "median": 694902,
+          "p95": 694902,
+          "max": 694902
+        }
+      },
+      "environment": {
+        "platform": "win32",
+        "release": "10.0.26200",
+        "arch": "x64",
+        "cpu": "Intel(R) Core(TM) Ultra 5 125H",
+        "logical_cpus": 18,
+        "memory_bytes": 33786552320,
+        "renderer": "Headless Chrome with default renderer",
+        "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      "conditions": {
+        "download_mbps": 10,
+        "latency_ms": 100,
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "http_cache": "disabled; new isolated context each trial",
+        "basemap": "off; no third-party requests",
+        "scope": "Exploratory railway-only headless measurements. Not a substitute for default online basemap, headed/manual checks, or real mobile/tablet N01-N04 acceptance."
+      },
+      "date": "2026-10-27T04:15:03.902Z",
+      "browser": "155.0.8059.85"
+    },
+    "filters": {
+      "local_path": "data/manifests/local/line-label-integration/filters-slim/benchmark-filters.json",
+      "sha256": "b9cba69eed86a31575ab1bfc7fe543c2021786bc3ceaa9aaa19261481ac702e4",
+      "scenes": [
+        {
+          "name": "overview",
+          "summary": {
+            "applied_ms": {
+              "samples": 100,
+              "median": 44.8999999910593,
+              "p95": 57,
+              "max": 69.40000000596046
+            },
+            "rendered_ms": {
+              "samples": 100,
+              "median": 118.5,
+              "p95": 145.6000000089407,
+              "max": 169.30000001192093
+            },
+            "settled_ms": {
+              "samples": 100,
+              "median": 617.8999999910593,
+              "p95": 733.4000000059605,
+              "max": 763
+            }
+          },
+          "samples": 100
+        },
+        {
+          "name": "station-yard",
+          "summary": {
+            "applied_ms": {
+              "samples": 100,
+              "median": 9,
+              "p95": 11.599999994039536,
+              "max": 17.5
+            },
+            "rendered_ms": {
+              "samples": 100,
+              "median": 40,
+              "p95": 50.099999994039536,
+              "max": 58.5
+            },
+            "settled_ms": {
+              "samples": 100,
+              "median": 612.5,
+              "p95": 647.6999999880791,
+              "max": 663
+            }
+          },
+          "samples": 100
+        }
+      ],
+      "date": "2026-10-27T04:13:17.289Z",
+      "browser": "155.0.8059.85"
+    },
+    "pan": {
+      "local_path": "data/manifests/local/line-label-integration/pan-slim/benchmark-pan.json",
+      "sha256": "d277158da53e2b1f815c9473c9785801972669001588642bec64e9b48897b2e9",
+      "map_render_interval_ms": {
+        "samples": 3585,
+        "median": 8.300000011920929,
+        "p95": 8.800000011920929,
+        "max": 29.299999997019768
+      },
+      "raf_interval_ms": {
+        "samples": 3614,
+        "median": 8.300000000000182,
+        "p95": 8.400000000001455,
+        "max": 25
+      },
+      "estimated_dropped_fraction": 0.00027662517289073305,
+      "profile": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "zoom": 15.5,
+        "facilities": true,
+        "basemap": false,
+        "download_mbps": 10,
+        "latency_ms": 100,
+        "renderer": "Headless Chrome/default renderer",
+        "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      },
+      "name_labels": {
+        "status": "ready",
+        "enabled": true,
+        "source_loaded": true
+      },
+      "style_layers": {
+        "expected": [
+          "urban-boundary",
+          "casing-major-mapped",
+          "track-major-mapped",
+          "casing-major-construction",
+          "track-major-construction",
+          "casing-major-proposed",
+          "track-major-proposed",
+          "casing-major-disused",
+          "track-major-disused",
+          "casing-major-abandoned",
+          "track-major-abandoned",
+          "casing-major-razed",
+          "track-major-razed",
+          "casing-major-conflict",
+          "track-major-conflict",
+          "warning-major-conflict",
+          "casing-major-unknown",
+          "track-major-unknown",
+          "warning-major-unknown",
+          "casing-minor-mapped",
+          "track-minor-mapped",
+          "casing-minor-construction",
+          "track-minor-construction",
+          "casing-minor-proposed",
+          "track-minor-proposed",
+          "casing-minor-disused",
+          "track-minor-disused",
+          "casing-minor-abandoned",
+          "track-minor-abandoned",
+          "casing-minor-razed",
+          "track-minor-razed",
+          "casing-minor-conflict",
+          "track-minor-conflict",
+          "warning-minor-conflict",
+          "casing-minor-unknown",
+          "track-minor-unknown",
+          "warning-minor-unknown",
+          "minor-line-captions",
+          "minor-line-names",
+          "line-captions",
+          "line-names"
+        ],
+        "missing": []
+      },
+      "long_tasks_over_50ms": 0,
+      "endpoint_error_css_px": 1.071812818868306,
+      "date": "2026-10-27T04:14:00.344Z",
+      "browser": "155.0.8059.85"
+    },
+    "before_worker_slimming_filters": {
+      "local_path": "data/manifests/local/line-label-integration/filters-performance/benchmark-filters.json",
+      "sha256": "9b2c7a2bf0e1c1646f7c5df5932b6bea0b3eba2506257e73fddcf4652632448f",
+      "asset": "index-HH2lbJqT.js",
+      "summary": [
+        {
+          "name": "overview",
+          "summary": {
+            "applied_ms": {
+              "samples": 100,
+              "median": 49,
+              "p95": 66.59999999403954,
+              "max": 126.6000000089407
+            },
+            "rendered_ms": {
+              "samples": 100,
+              "median": 129.69999998807907,
+              "p95": 182.40000000596046,
+              "max": 314.40000000596046
+            },
+            "settled_ms": {
+              "samples": 100,
+              "median": 618.9000000059605,
+              "p95": 791.2000000029802,
+              "max": 904.5
+            }
+          }
+        },
+        {
+          "name": "station-yard",
+          "summary": {
+            "applied_ms": {
+              "samples": 100,
+              "median": 10.700000002980232,
+              "p95": 16.099999994039536,
+              "max": 20
+            },
+            "rendered_ms": {
+              "samples": 100,
+              "median": 48.29999999701977,
+              "p95": 64.29999999701977,
+              "max": 90.70000000298023
+            },
+            "settled_ms": {
+              "samples": 100,
+              "median": 612.5999999940395,
+              "p95": 654.2000000029802,
+              "max": 672.1000000089407
+            }
+          }
+        }
+      ]
+    },
+    "before_worker_slimming_cold": {
+      "local_path": "data/manifests/local/line-label-integration/cold/benchmark-client.json",
+      "sha256": "c7cb01b870b5802900af779b83ce32cec6f6f8aebb7a16ba1bc03732b01273f7",
+      "asset": "index-HH2lbJqT.js",
+      "summary": {
+        "first_usable_ms": {
+          "samples": 30,
+          "median": 1916.9000000059605,
+          "p95": 2002.5,
+          "max": 2877.0999999940395
+        },
+        "index_ready_ms": {
+          "samples": 30,
+          "median": 1055.300000011921,
+          "p95": 1125.7999999970198,
+          "max": 1771.4000000059605
+        },
+        "own_transfer_bytes": {
+          "samples": 30,
+          "median": 694808,
+          "p95": 694808,
+          "max": 694808
+        }
+      }
+    }
+  },
+  "prior_functional_reports": [
+    {
+      "report": "line-label-integration-prior-resource-recovery-report.json",
+      "sha256": "b476617e41859c38618e3749979985eb3f076d6b81448f9e3e9dc82c98f4d402",
+      "date": "2026-10-27T03:57:53.612Z",
+      "scope": "Prior index-CPMme16X.js integration build, before final zoom replacement race fix and worker payload slimming; not final performance."
+    },
+    {
+      "report": "line-label-integration-prior-react-filters-report.json",
+      "sha256": "4dd29af8f097e30bf8702b13c81f525ec205cead0e5c0461c08c39f801d85135",
+      "date": "2026-10-27T03:58:04.422Z",
+      "scope": "Prior index-CPMme16X.js integration build, before final zoom replacement race fix and worker payload slimming; not final performance."
+    },
+    {
+      "report": "line-label-integration-prior-real-routes-report.json",
+      "sha256": "f913423a678fe5e1abcb0e7812fca3fd44599de34305d37eb906695222cd8f05",
+      "date": "2026-10-27T03:58:11.271Z",
+      "scope": "Prior index-CPMme16X.js integration build, before final zoom replacement race fix and worker payload slimming; not final performance."
+    },
+    {
+      "report": "line-label-integration-prior-react-search-report.json",
+      "sha256": "88e40c20e00306592a864d44b6a1dce7c8e21947216f8aaebc00739b0086d239",
+      "date": "2026-10-27T03:58:22.081Z",
+      "scope": "Prior index-CPMme16X.js integration build, before final zoom replacement race fix and worker payload slimming; not final performance."
+    },
+    {
+      "report": "line-label-integration-prior-style-layer-guard.json",
+      "sha256": "a31774c5eb6af3b29bc4d2de43eedde9af806fa909e6ad5e4bb1ab5d6e04a36a",
+      "date": "2026-10-27T03:58:26.650Z",
+      "scope": "Prior index-CPMme16X.js integration build, before final zoom replacement race fix and worker payload slimming; not final performance."
+    }
+  ],
+  "remaining_gates": [
+    "Overview source-ready filter p95 exceeds 100 ms; prior default pipeline had observed 71 ms.",
+    "Full R17 coverage and legibility, browser/reader/device matrix, independent human classification/QA, hosting and licensing reviews remain open.",
+    "Historical Edge actual 200% walkthrough retains its original build scope.",
+    "Two parallel-run timeouts remain unexplained; serial reruns passed."
+  ],
+  "raw_data": "No raw OSM or full captured input added; large reports/screenshots remain under ignored data/manifests/local."
+}

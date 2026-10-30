@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-27T09:31:10.160Z",
+  "source_sha256": "681ad980280945e9aa5e7d9e6ee6132dc68e0f932a5c353644df70f984165b63",
+  "helper_sha256": "7bf3c18fef1750a2b4dcb9acb26c7eeea973d015d0892506eb2764e286de6dd5",
+  "checks": [
+    {
+      "name": "default remains Chrome software; explicit Edge/default keeps its own target",
+      "passed": true
+    },
+    {
+      "name": "reported version must bind to the selected real executable and session is closed on mismatch",
+      "passed": true
+    },
+    {
+      "name": "explicit description environment selects Edge without changing global process settings",
+      "passed": true
+    }
+  ],
+  "scope": "Exact existing assertions run via minimal callback registration adapter; no hooks, subprocess isolation, node:test runner or application unit-suite claim."
+}

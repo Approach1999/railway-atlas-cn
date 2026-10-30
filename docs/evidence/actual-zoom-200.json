@@ -1,0 +1,290 @@
+{
+  "date": "2026-10-25T08:12:24.091Z",
+  "browser": "Connected Edge instance; exact version unavailable",
+  "human_confirmation": "用户回复：已设为 200%",
+  "zoom_200_confirmed": true,
+  "baseline": {
+    "width": 1552,
+    "height": 861,
+    "dpr": 2,
+    "outerWidth": 1560
+  },
+  "after_user_setting": {
+    "bodyWidth": 776,
+    "dpr": 4,
+    "height": 428,
+    "outerWidth": 1560,
+    "script": [
+      "http://127.0.0.1:8766/assets/index-DxJQUOG3.js"
+    ],
+    "scrollWidth": 776,
+    "width": 776
+  },
+  "initial_layout": {
+    "dpr": 4,
+    "height": 430,
+    "outerWidth": 1560,
+    "panels": [
+      {
+        "name": "",
+        "rect": {
+          "height": 76,
+          "width": 776,
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "name": "maplibregl-ctrl maplibregl-ctrl-attrib",
+        "rect": {
+          "height": 20,
+          "width": 180.78125,
+          "x": 595.21875,
+          "y": 410
+        }
+      },
+      {
+        "name": "explore",
+        "rect": {
+          "height": 354,
+          "width": 300,
+          "x": 0,
+          "y": 76
+        }
+      },
+      {
+        "name": "map-actions",
+        "rect": {
+          "height": 44,
+          "width": 274,
+          "x": 482,
+          "y": 100
+        }
+      },
+      {
+        "name": "feature-panel",
+        "rect": {
+          "height": 204,
+          "width": 300,
+          "x": 456,
+          "y": 166
+        }
+      }
+    ],
+    "script": [
+      "http://127.0.0.1:8766/assets/index-CwtzQuWA.js"
+    ],
+    "scrollWidth": 776,
+    "status": "铁路地图已就绪。名称与属性来自源标签，点击可查看依据。",
+    "width": 776
+  },
+  "notice_fix": {
+    "box": {
+      "bottom": 306.4453125,
+      "height": 59.1953125,
+      "left": 477,
+      "right": 727.5,
+      "top": 247.25,
+      "width": 250.5,
+      "x": 477,
+      "y": 247.25
+    },
+    "dpr": 4,
+    "floating": {
+      "bottom": 0,
+      "height": 0,
+      "left": 0,
+      "right": 0,
+      "top": 0,
+      "width": 0,
+      "x": 0,
+      "y": 0
+    },
+    "height": 430,
+    "notice": "此对象为搜索或分享中临时显示，关闭详情后恢复原筛选。",
+    "panel": {
+      "bottom": 370,
+      "height": 204,
+      "left": 456,
+      "right": 756,
+      "top": 166,
+      "width": 300,
+      "x": 456,
+      "y": 166
+    },
+    "source": [
+      "http://127.0.0.1:8766/assets/index-Bmlm6J-x.js"
+    ],
+    "width": 776
+  },
+  "share": {
+    "clientHeight": 396,
+    "dialog": {
+      "bottom": 414,
+      "height": 398,
+      "left": 128,
+      "right": 648,
+      "top": 16,
+      "width": 520,
+      "x": 128,
+      "y": 16
+    },
+    "focus": "share-link",
+    "height": 430,
+    "link": "http://127.0.0.1:8766/?region=shenyang&snapshot=shenyang-mvp-20261023&feature=node%2F11224161741&q=%E6%B2%88%E9%98%B3%E5%8C%97&types=other%2Crail%2Cunknown&classes=branch%2Cconventional_main%2Cconventional_other%2Chigh_speed%2Cindustrial%2Clight_rail%2Cmetro%2Cother%2Ctram%2Cunknown&states=mapped&labels=lines%2Cstations&facilities=0&sidings=1#map=13.50/41.81446/123.44022",
+    "scrollHeight": 583,
+    "scrollWidth": 776,
+    "width": 776
+  },
+  "share_keyboard": {
+    "copy": {
+      "id": "share-copy",
+      "rect": {
+        "bottom": 367.96875,
+        "height": 44.69921875,
+        "left": 161,
+        "right": 241,
+        "top": 323.26953125,
+        "width": 80,
+        "x": 161,
+        "y": 323.26953125
+      }
+    },
+    "wrap": "share-close",
+    "return": "share-open"
+  },
+  "about": {
+    "clientHeight": 396,
+    "dialog": {
+      "bottom": 414,
+      "height": 398,
+      "left": 128,
+      "right": 648,
+      "top": 16,
+      "width": 520,
+      "x": 128,
+      "y": 16
+    },
+    "focus": "about-close",
+    "height": 430,
+    "scrollHeight": 905,
+    "width": 776
+  },
+  "about_keyboard": {
+    "last": {
+      "rect": {
+        "bottom": 339.31640625,
+        "height": 17.25,
+        "left": 291,
+        "right": 471.59375,
+        "top": 322.06640625,
+        "width": 180.59375,
+        "x": 291,
+        "y": 322.06640625
+      },
+      "text": "OpenStreetMap 瓦片使用政策"
+    },
+    "wrap": "about-close"
+  },
+  "single_line": {
+    "focus": "仅看此线",
+    "scrollWidth": 776,
+    "text": "城市轨道线路沈阳 · 沈阳地铁11号线仅看此线来源沈阳地铁官网线路图（经中文维基百科模板转引）置信度：运营方线路图取色核对日期：2026-10-2222号线仅看此线来源沈阳地铁官网线路图（经中文维基百科模板转引）置信度：运营方线路图取色核对日期：2026-10-2233号线仅看此线来源沈阳地铁官网线路图（经中文维基百科模板转引）置信度：运营方线路图取色核对日期：2026-10-2244号线仅看此线来源沈阳地铁官网线路图（经中文维基百科模板转引）置信度：运营方线路图取色核对日期：2026-10-2299号线仅看此线来源沈阳地铁官网线路图（经中文维基百科模板转引）置信度：运营方线路图取色核对日期：2026-10-221010号线仅看此线来源沈阳地铁官网线路图（经中文维基百科模板转引）置信度：运营方线路图取色核对日期：2026-10-22沈阳 · 有轨电车 · 运营方未确认1沈阳有轨电车1号线仅看此线来源制式色（轻轨 / 有轨电车）置信度：制式回退色核对日期：未标注2沈阳有轨电车2号线仅看此线来源制式色（轻轨 / 有轨电车）置信度：制式回退色核对日期：未标注3沈阳有轨电车3号线仅看此线来源制式色（轻轨 / 有轨电车）置信度：制式回退色核对日期：未标注4沈阳有轨电车4号线仅看此线来源制式色（轻轨 / 有轨电车）置信度：制式回退色核对日期：未标注5沈阳有轨电车5号线仅看此线来源制式色（轻轨 / 有轨电车）置信度：制式回退色核对日期：未标注6沈阳有轨电车6号线仅看此线来源制式色（轻轨 / 有轨电车）置信度：制式回退色核对日期：未标注退出仅看此线正在仅看 2号线，退出后恢复原筛选。",
+    "width": 776
+  },
+  "keyboard_map": {
+    "before": {
+      "dpr": 4,
+      "focus": "maplibregl-canvas",
+      "url": "http://127.0.0.1:8766/?region=shenyang&snapshot=shenyang-mvp-20261023&q=%E6%B2%88%E9%98%B3%E5%8C%97&types=light_rail%2Csubway%2Ctram&classes=branch%2Cconventional_main%2Cconventional_other%2Chigh_speed%2Cindustrial%2Clight_rail%2Cmetro%2Cother%2Ctram%2Cunknown&states=mapped&labels=lines%2Cstations&facilities=0&sidings=1#map=13.50/41.81446/123.44022"
+    },
+    "pan": {
+      "dpr": 4,
+      "focus": "maplibregl-canvas",
+      "url": "http://127.0.0.1:8766/?region=shenyang&snapshot=shenyang-mvp-20261023&q=%E6%B2%88%E9%98%B3%E5%8C%97&types=light_rail%2Csubway%2Ctram&classes=branch%2Cconventional_main%2Cconventional_other%2Chigh_speed%2Cindustrial%2Clight_rail%2Cmetro%2Cother%2Ctram%2Cunknown&states=mapped&labels=lines%2Cstations&facilities=0&sidings=1#map=13.50/41.81446/123.44629"
+    },
+    "zoom": {
+      "dpr": 4,
+      "focus": "maplibregl-canvas",
+      "url": "http://127.0.0.1:8766/?region=shenyang&snapshot=shenyang-mvp-20261023&q=%E6%B2%88%E9%98%B3%E5%8C%97&types=light_rail%2Csubway%2Ctram&classes=branch%2Cconventional_main%2Cconventional_other%2Chigh_speed%2Cindustrial%2Clight_rail%2Cmetro%2Cother%2Ctram%2Cunknown&states=mapped&labels=lines%2Cstations&facilities=0&sidings=1#map=14.50/41.81446/123.44629"
+    },
+    "exit": {
+      "focus": "maplibregl-ctrl-zoom-in",
+      "name": "放大地图"
+    }
+  },
+  "list": {
+    "dialog": {
+      "bottom": 418,
+      "height": 406,
+      "left": 12,
+      "right": 764,
+      "top": 12,
+      "width": 752,
+      "x": 12,
+      "y": 12
+    },
+    "focus": "list-title",
+    "height": 430,
+    "scrollWidth": 776,
+    "width": 776
+  },
+  "list_record": {
+    "focus": "列表记录详情",
+    "record": "关闭记录详情沈阳北站地铁 · 当前标注 · node/11224161741记录类别车站点制式地铁别名沈阳北站车站编码未标注运营方标注未标注线路归属2号线 / 4号线共线状态多条线路共享，使用回退色关系完整性源关系成员不完整配色来源共线 / 不完整关系回退配色置信度制式 / 共享段回退线路身份依据明确站区与停靠位置关系源标签不保证实际运营；未确认的关联保持独立。原始标注源对象 node/11224161741 · shenyang-mvp-20261023对象版本：3 · 对象更新时间：2025-01-14 18:36:48+00:00 · changeset：未标注数据构建时间2026-10-23T05:21:42.180277+00:00源快照时间2026-10-20T20:23:47Z分类规则版本mvp-v1配色版本2026-10-22.1数据提供方Geofabrik / OpenStreetMap contributors当前覆盖范围123 / 41.5 / 123.8 / 42.1（经度/纬度矩形，非行政边界）代表点算法：source_node；关联仅依据明确关系，不按同名合并。在 OpenStreetMap 查看记录 ↗{\n  \"name\": \"沈阳北站\",\n  \"name:en\": \"Shenyang North Railway Station\",\n  \"public_transport\": \"station\",\n  \"railway\": \"station\",\n  \"station\": \"subway\",\n  \"subway\": \"yes\",\n  \"wikidata\": \"Q15917073\"\n}数据、许可与免责声明在地图中查看"
+  },
+  "list_to_map": {
+    "dpr": 4,
+    "focus": "feature-title",
+    "listOpen": false,
+    "scrollWidth": 776,
+    "title": "沈阳北站",
+    "width": 776
+  },
+  "basemap_before": {
+    "query": "沈阳北",
+    "url": "http://127.0.0.1:8766/?region=shenyang&snapshot=shenyang-mvp-20261023&feature=node%2F11224161741&q=%E6%B2%88%E9%98%B3%E5%8C%97&types=light_rail%2Csubway%2Ctram&classes=branch%2Cconventional_main%2Cconventional_other%2Chigh_speed%2Cindustrial%2Clight_rail%2Cmetro%2Cother%2Ctram%2Cunknown&states=mapped&labels=lines%2Cstations&facilities=0&sidings=1#map=14.50/41.81446/123.43566"
+  },
+  "final": {
+    "basemap": "true",
+    "basemapStatus": "底图已显示",
+    "dpr": 4,
+    "focused": "basemap-toggle",
+    "height": 430,
+    "outerWidth": 1560,
+    "script": [
+      "http://127.0.0.1:8766/assets/index-Bmlm6J-x.js"
+    ],
+    "scrollWidth": 776,
+    "search": "沈阳北",
+    "url": "http://127.0.0.1:8766/?region=shenyang&snapshot=shenyang-mvp-20261023&feature=node%2F11224161741&q=%E6%B2%88%E9%98%B3%E5%8C%97&types=light_rail%2Csubway%2Ctram&classes=branch%2Cconventional_main%2Cconventional_other%2Chigh_speed%2Cindustrial%2Clight_rail%2Cmetro%2Cother%2Ctram%2Cunknown&states=mapped&labels=lines%2Cstations&facilities=0&sidings=1#map=14.50/41.81446/123.43566",
+    "width": 776
+  },
+  "warning_error_logs_since_final_reload": [],
+  "checks": [
+    "Same outer window width, CSS width halves and DPR doubles after explicit user browser zoom setting.",
+    "No document horizontal overflow at CSS 776x430; source/search/detail remain available.",
+    "Keyboard disambiguates same-name rail/metro records and temporarily displays a filtered record.",
+    "Hidden-record notice is now fully visible inside the narrow detail scroller; floating duplicate is hidden.",
+    "Share and about dialogs fit the viewport, scroll to controls, trap Tab and return focus on Escape.",
+    "City preset, single-line isolation and restore-all remain reachable in the scrolling panel.",
+    "Map keyboard focus entry, right pan, plus zoom and Tab exit remain functional at DPR 4.",
+    "List opens within the viewport, source details retain lines 2/4, and Show on map transfers focus to its heading.",
+    "Basemap returns to original on preference without changing view/query/selection.",
+    "Home at actual 200% returns to the default region view, clears selection and retains city filters/query."
+  ],
+  "limits": [
+    "One current Edge instance only; exact version and the two-stable-version browser matrix are not verified.",
+    "User set browser zoom; no window resizing, CSS zoom or viewport emulation was used as a substitute.",
+    "This does not complete NVDA/VoiceOver, mobile devices, independent classification or full N09/MVP acceptance.",
+    "Casing layers now actually render; prior frame/startup performance measurements require a new run."
+  ],
+  "home": {
+    "detailHidden": true,
+    "dpr": 4,
+    "query": "沈阳北",
+    "scrollWidth": 776,
+    "url": "http://127.0.0.1:8766/?region=shenyang&snapshot=shenyang-mvp-20261023&q=%E6%B2%88%E9%98%B3%E5%8C%97&types=light_rail%2Csubway%2Ctram&classes=branch%2Cconventional_main%2Cconventional_other%2Chigh_speed%2Cindustrial%2Clight_rail%2Cmetro%2Cother%2Ctram%2Cunknown&states=mapped&labels=lines%2Cstations&facilities=0&sidings=1#map=10.50/41.80000/123.42000",
+    "width": 776
+  }
+}

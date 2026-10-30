@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-25T12:59:37.710Z",
+  "browser": "155.0.8059.85",
+  "checks": [
+    "a held earlier version cannot overwrite a newer committed version or its success message after target replacement",
+    "the active manifest provenance agrees with the committed alternate snapshot, not only the address or picker",
+    "explicit cancellation retains the committed map/query, ignores the delayed completion, and leaves retry available"
+  ],
+  "original": "http://127.0.0.1:8766/?region=shenyang&snapshot=shenyang-mvp-20261023&feature=node%2F676578837&q=%E6%B2%88%E9%98%B3%E5%8C%97%E7%AB%99&types=other%2Crail%2Cunknown&classes=branch%2Cconventional_main%2Cconventional_other%2Chigh_speed%2Cindustrial%2Clight_rail%2Cmetro%2Cother%2Ctram%2Cunknown&states=mapped&labels=lines%2Cstations&facilities=0&sidings=1#map=13.50/41.81733/123.43854",
+  "committed": "http://127.0.0.1:8766/?region=shenyang&snapshot=shenyang-mvp-accessible-20261022&q=%E6%B2%88%E9%98%B3%E5%8C%97%E7%AB%99&types=other%2Crail%2Cunknown&classes=branch%2Cconventional_main%2Cconventional_other%2Chigh_speed%2Cindustrial%2Clight_rail%2Cmetro%2Cother%2Ctram%2Cunknown&states=mapped&labels=lines%2Cstations&facilities=0&sidings=1#map=10.50/41.80000/123.42000",
+  "cancelled": "已取消，继续浏览原版本。",
+  "failedRequests": [
+    {
+      "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-progress-20261022/dataset.json",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-progress-20261022/palette.json",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-progress-20261022/stations.geojson",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "http://127.0.0.1:8766/snapshots/shenyang-mvp-20261023/dataset.json",
+      "failure": "net::ERR_ABORTED"
+    }
+  ],
+  "errors": [],
+  "external": []
+}
