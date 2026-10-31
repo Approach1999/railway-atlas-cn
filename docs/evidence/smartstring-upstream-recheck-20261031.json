@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-31",
+  "scope": "Upstream re-check for RUSTSEC-2026-0249 (smartstring unmaintained, transitive via osmpbfreader 0.19.1). Read-only crates.io queries; no dependency changes; audit status remains findings_require_review pending owner-approved exception.",
+  "queries": {
+    "smartstring": {
+      "max_version": "1.0.1",
+      "newest_version": "1.0.1",
+      "top_versions": [
+        {
+          "num": "1.0.1",
+          "created": "2022-03-24",
+          "yanked": false
+        },
+        {
+          "num": "1.0.0",
+          "created": "2022-02-24",
+          "yanked": false
+        },
+        {
+          "num": "0.2.10",
+          "created": "2022-02-20",
+          "yanked": false
+        }
+      ]
+    },
+    "osmpbfreader": {
+      "max_version": "0.19.1",
+      "newest_version": "0.19.1",
+      "top_versions": [
+        {
+          "num": "0.19.1",
+          "created": "2025-05-26",
+          "yanked": false
+        },
+        {
+          "num": "0.19.0",
+          "created": "2025-04-09",
+          "yanked": false
+        },
+        {
+          "num": "0.18.0",
+          "created": "2025-04-04",
+          "yanked": false
+        }
+      ]
+    },
+    "osmpbf": {
+      "max_version": "0.3.8",
+      "newest_version": "0.3.8",
+      "top_versions": [
+        {
+          "num": "0.3.8",
+          "created": "2025-10-24",
+          "yanked": false
+        },
+        {
+          "num": "0.3.7",
+          "created": "2025-10-20",
+          "yanked": false
+        },
+        {
+          "num": "0.3.6",
+          "created": "2025-08-11",
+          "yanked": false
+        }
+      ]
+    }
+  },
+  "conclusion": "No upstream fix path exists as of 2026-10-31: osmpbfreader newest is still 0.19.1 (depends on smartstring per cargo tree); alternative reader osmpbf newest is still 0.3.8 whose required memmap2 0.5.x series carries RUSTSEC-2026-0186 (candidate rejected 2026-10-25); smartstring 1.0.1 (2022-03-24) remains its own newest release. Finding stays open; replacement requires a maintained distribution and full data/license/security replay."
+}

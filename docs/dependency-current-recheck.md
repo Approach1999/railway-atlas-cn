@@ -11,3 +11,13 @@
 [完整查询原件、响应头与浏览器报告](evidence/dependency-current-recheck.json)。不把一次Chrome或loopback HTTP延伸为公开HTTPS、全浏览器、原生DLL公告或独立渗透测试结论。
 
 Rust维护提示、Microsoft runtime条款/原生安全与传递闭包、历史便携工具核对、公开托管及独立审核继续开放；完整N07/N08和MVP没有据此完成。
+
+## 2026-10-31 smartstring 上游复查：仍无可用修复路径
+
+只读查询 crates.io（未安装、升级或修改任何依赖）：`osmpbfreader` 最新仍是 0.19.1（2025-05-26，
+按 `cargo tree --locked -i smartstring` 仍依赖 smartstring）；替代读取器 `osmpbf` 最新仍是 0.3.8
+（2025-10-24），其要求的 memmap2 0.5 系列公告 RUSTSEC-2026-0186 无修复版本，2026-10-25 候选已拒绝；
+`smartstring` 本身最新仍是 1.0.1（2022-03-24），与"停止维护"结论一致。
+RUSTSEC-2026-0249 维持开放：缺少 severity 不等于已处置，替换需选用受维护发行版并重放
+数据、许可与安全检查；按 N08 仍需有 owner/理由/到期日的真实例外批准，本轮不代签。
+[查询原件](evidence/smartstring-upstream-recheck-20261031.json)。

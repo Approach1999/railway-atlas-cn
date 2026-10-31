@@ -5,6 +5,11 @@
 ## 0. 先拿到正确的代码
 
 - GitHub：`git@github.com:Approach1999/railway-atlas-cn.git`，当前本地分支 `main`。
+- **2026-10-31补记：本机新 checkout 位于 `C:\Users\21965\ZCodeProject\railway-atlas-cn`。** 源 PBF
+  `data/raw/liaoning-261020.osm.pbf`（MD5/SHA-256 与本文档一致）及快照
+  `data/processed/shenyang-mvp-geometry-20261027` 已从同机旧 checkout（`C:\Users\21965\Documents\Codex\2026-10-22\…\work\checkout`）迁入，
+  快照经 `scripts/verify_snapshot.py` 全量哈希校验通过；`.venv`（CPython 3.12.14，锁哈希安装）与 `apps/web/*/node_modules` 已重建。
+  Playwright 模块路径与第 7 节一致，仍有效。
 - **2026-10-31补记：用户已授权提交当前实现。** 本清单、前端、脚本、配置和证据随本次功能提交纳入版本管理。2026-10-30曾有931条工作区状态记录、其中914条未跟踪；这些是交接前历史数量，不是独立任务数。接手时先核对 `git log` 和 `git status`，若远端尚无该提交，仍需取得本地提交或工作区。
 - 工作目录：`C:\Users\21965\Documents\Codex\2026-10-22\referenced-chatgpt-conversation-this-is-an\work\checkout`。
 - 先检查本地指令、Git 状态和差异，保护用户修改；不要 reset、clean 或重新生成覆盖全部文件。
@@ -29,16 +34,13 @@
 - 默认数据：`data/processed/shenyang-mvp-geometry-20261027`。快照10216个发布对象、2251个MVT瓦片；历史快照保留，不原地覆盖。
 - [当前几何抽查包](qa/shenyang-geometry-20261027.md)含115真实对象/45组，但两名独立审核与地图判断字段仍待填写。
 
-## 3. 首先收尾：确认拖动性能的实际瓶颈
+## 3. 拖动性能瓶颈：调查已完成（2026-10-31），N03 仍待真实设备
 
-- [ ] 阅读 [图层/调度诊断原件汇总](evidence/pan-layer-decision.json)，先复核记录，再决定下一次实验。
-- [ ] 正式地图最近有效30秒闭合拖动，默认/软件绘制 render间隔p95为35.0/37.0ms；N03目标仍为≤33ms。
-- [ ] 完整地图前后对照约36.7/36.3ms；分别隐藏文字、描边、设施、轨道后约36.2/36.8/36.8/36.6ms；隐藏全部内容但保留地图引擎约35.8ms。这些只是隔离诊断，不能作为删功能的理由。
-- [ ] 普通空白页面两次rAF p95均10.2ms；只有空白WebGL2画布每帧clear的页面为34.6ms，同为Intel Arc/ANGLE路径。先调查浏览器图形呈现/合成、驱动与测量条件；**尚未确定根因，也没有证明应用无性能问题**。
-- [ ] CPU采样约95.5%为idle，只覆盖主线程采样，不能排除GPU开销。该次CPU轨迹及首次描边轨迹终点偏移2.35px，超过2px守卫，已保留并排除出有效性能比较。
-- [ ] 相关脚本：`scripts/benchmark_pan.cjs`、`pan_drag.cjs`、`diagnose_pan_layers.cjs`、`diagnose_pan_cpu.cjs`、`diagnose_pan_scheduler.cjs`。只在隔离页改图层，正式页面保留内容。
-- [ ] 原始实验在 `data/manifests/local/pan-layers/`，精确执行过的旧驱动在 `docs/evidence/history/`；交接时已将中断前结果和空白复测汇总入上述JSON，没有重跑或改产品。
-- [ ] 不放宽33ms、30秒、终点误差<2px的口径，不剔除慢样本，不拿rAF、平均FPS或模拟手机代替规定验收。
+- [x] 已复核 [图层/调度诊断原件汇总](evidence/pan-layer-decision.json)，并完成历史原始帧序列的逐帧结构分析与受控复现实验，见 [呈现节奏调查](present-pacing.md)与[证据索引](evidence/present-pacing-20261031.json)。
+- [x] **结论：2026-10-28 的 ~35ms p95 尾部（正式地图默认路径 35.0ms、空白 WebGL 页面 34.6ms）是环境绑定现象，不是应用代码问题。** 慢帧量化在 ~34ms（≈2 个 vsync 周期）且成簇爆发，属间歇性 30Hz 调度；2026-10-31 同机同协议下空白对照与正式地图同步转干净（产品 JS 字节未变，构建指纹一致）：无头/有头 Chrome 156.0.8078.74、Edge、小画布、不清屏均 8.4ms；默认平移 render p95 9.1ms。最显眼的环境差异是 Chrome 补丁 .48→.74，驱动/系统状态不能排除，无法回装旧补丁做 A/B。
+- [ ] 软件渲染路径 35.8ms 仍超 33ms 口径，如实保留；软件路径非 N03 验收对象，但不得据此宣称达标。
+- [ ] N03 正式验收对象是真实中端 Android/iPhone/平板与桌面浏览器（每设备 30 秒轨迹），仍未验；不以本机无头代理、rAF 或平均 FPS 代替。
+- [ ] 历史结论维持：分层隐藏诊断不能作为删功能依据；已排除方案（缓冲512→128、有序前缀增量更新）不要重复尝试；33ms、30秒、终点误差<2px 口径不放宽，不剔除慢样本。
 
 已排除的方案：缓冲512→128和有序前缀增量更新均未证明提速，正式路径未采用。后者100次筛选对照p95概览91.1→109.4ms、站场40.8→63.6ms。不要重复把它们当成已验证优化。
 
@@ -64,7 +66,7 @@
 ## 6. 依赖、安全与发布准备
 
 - [ ] 重查 [依赖与安全开放项](dependency-current-recheck.md)、[许可清单](dependency-licenses.md)及各自证据，历史audit不等于当前批准。
-- [ ] 处理Rust `smartstring` 的 `RUSTSEC-2026-0249` 停止维护提示；替换/升级要验证全部传递依赖，先前盲目升级曾引入其他公告。缺少severity不等于已处置。
+- [ ] 处理Rust `smartstring` 的 `RUSTSEC-2026-0249` 停止维护提示；替换/升级要验证全部传递依赖，先前盲目升级曾引入其他公告。缺少severity不等于已处置。2026-10-31复查：`osmpbfreader` 0.19.1 与 `osmpbf` 0.3.8 仍各自为最新发行版（前者依赖smartstring、后者 memmap2 0.5 公告未修），`smartstring` 1.0.1（2022）即其最终版——当前无可用的上游修复路径，维持 findings_require_review，例外须有 owner/理由/到期批准；见 [复查记录](dependency-current-recheck.md)。
 - [ ] 补齐原生工具、Microsoft C++ runtime条款、安全和传递依赖核对；npm/Cargo/Python包级清单不能替代这些。
 - [ ] 最终依赖锁、许可/署名、字体/底图/数据来源、工具链和输出指纹齐全。high/critical问题必须修复或取得有owner/理由/到期的真实例外批准，不能替负责人签字。
 - [ ] 确认实际托管与发布方案后验证HTTPS/CSP/隐私及署名；本机HTTP通过不代表线上通过。公开发布还需确认底图、许可和原文列出的适用要求。

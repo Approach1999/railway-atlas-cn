@@ -1,0 +1,188 @@
+{
+  "date": "2026-10-31",
+  "production_unchanged": true,
+  "production_asset": "/assets/index-D4TfdCvK.js",
+  "asset_sha256": "227835ec35388d01e5bd2297426e2f34ef92b7c3b5ef0ff1934f93416a94a2cc",
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "investigation": "Presentation pacing: 2026-10-28 ~35ms p95 artifact (blank WebGL canvas + map, default Arc path) does not reproduce on 2026-10-31; product JS byte-identical. Environment-bound (browser patch 156.0.8078.48 -> .74 most visible; other driver/OS state possible). N03 real-device acceptance unchanged.",
+  "historical_burst_analysis": {
+    "source": "C:/Users/21965/Documents/Codex/2026-10-22/referenced-chatgpt-conversation-this-is-an/work/checkout/data/manifests/local/pan-layers/scheduler-webgl/report.json",
+    "source_sha256": "cdba44ea37c1315ca6770996fba1f53a35a3ad368fc0a115667e653c488a1101",
+    "frames_total": 2002,
+    "frames_gt_25ms": 348,
+    "slow_frame_values_ms": {
+      "min": 33.9,
+      "median": 34.2,
+      "max_observed": 459.2,
+      "quantized": "~34 = 2 x 16.7 vsync"
+    },
+    "normal_frame_median_ms": 10.1,
+    "structure": "Slow frames arrive in bursts (adjacent gaps dominate), values quantized near 34ms; consistent with intermittent 30Hz scheduling, not per-frame render cost."
+  },
+  "control_runs": {
+    "r1-headless-replica": {
+      "path": "data/manifests/local/present-pacing/r1-headless-replica/report.json",
+      "sha256": "263e994b01b795c088a4bec8f2de4c67983bf7f5f4496673712ff03da47ac4e3",
+      "bytes": 435211,
+      "raf_p95_ms": 8.4,
+      "raf_median_ms": 8.3,
+      "browser": "156.0.8078.74",
+      "headless": true,
+      "mode": "clear",
+      "canvas": [
+        1040,
+        1000
+      ],
+      "extra_args": [],
+      "protocol_valid": true
+    },
+    "r2-chrome-headed": {
+      "path": "data/manifests/local/present-pacing/r2-chrome-headed/report.json",
+      "sha256": "e852c3a6cfececd997b2a1a245c74432058c57195040fa28624922cb17472da1",
+      "bytes": 371897,
+      "raf_p95_ms": 8.4,
+      "raf_median_ms": 8.3,
+      "browser": "156.0.8078.74",
+      "headless": false,
+      "mode": "clear",
+      "canvas": [
+        1040,
+        1000
+      ],
+      "extra_args": [],
+      "protocol_valid": true
+    },
+    "r3-angle-gl": {
+      "path": "data/manifests/local/present-pacing/r3-angle-gl/report.json",
+      "sha256": "36f11ac53db110836c6b761505d6e62ecc4ad71ae405aca9b26167f75936419c",
+      "bytes": 213670,
+      "raf_p95_ms": 16.7,
+      "raf_median_ms": 16.7,
+      "browser": "156.0.8078.74",
+      "headless": true,
+      "mode": "clear",
+      "canvas": [
+        1040,
+        1000
+      ],
+      "extra_args": [
+        "--use-angle=gl"
+      ],
+      "protocol_valid": true
+    },
+    "r4-canvas-260": {
+      "path": "data/manifests/local/present-pacing/r4-canvas-260/report.json",
+      "sha256": "c71fa819b44f7b9e03948051412631f1ea137f874223d7dc9159672c6494076d",
+      "bytes": 437301,
+      "raf_p95_ms": 8.4,
+      "raf_median_ms": 8.3,
+      "browser": "156.0.8078.74",
+      "headless": true,
+      "mode": "clear",
+      "canvas": [
+        260,
+        250
+      ],
+      "extra_args": [],
+      "protocol_valid": true
+    },
+    "r5-noclear": {
+      "path": "data/manifests/local/present-pacing/r5-noclear/report.json",
+      "sha256": "ebc95bab2d69f2813cffad6885da7fd75f801618e93c29b257d98f01e52b55dd",
+      "bytes": 436185,
+      "raf_p95_ms": 8.4,
+      "raf_median_ms": 8.3,
+      "browser": "156.0.8078.74",
+      "headless": true,
+      "mode": "noClear",
+      "canvas": [
+        1040,
+        1000
+      ],
+      "extra_args": [],
+      "protocol_valid": true
+    },
+    "r6-edge-headless": {
+      "path": "data/manifests/local/present-pacing/r6-edge-headless/report.json",
+      "sha256": "0564e74beb0d4734dcdd95108d329abed9c08ca408c03090ef78d6ce41b327fb",
+      "bytes": 437885,
+      "raf_p95_ms": 8.4,
+      "raf_median_ms": 8.3,
+      "browser": "156.0.4314.42",
+      "headless": true,
+      "mode": "clear",
+      "canvas": [
+        1040,
+        1000
+      ],
+      "extra_args": [],
+      "protocol_valid": true
+    }
+  },
+  "map_runs": {
+    "map-default-20261031": {
+      "path": "data/manifests/local/present-pacing/map-default-20261031/benchmark-pan.json",
+      "sha256": "6b5ef528104cd1b317cbc6f6f4224101fc444ea36f02c08d6188e1432205c74f",
+      "bytes": 548930,
+      "render_median_ms": 8.3,
+      "render_p95_ms": 9.1,
+      "render_max_ms": 38.1,
+      "raf_p95_ms": 8.4,
+      "estimated_dropped_fraction": 0.00027631942525559546,
+      "protocol_valid": true,
+      "browser": "156.0.8078.74",
+      "webgl_renderer": "ANGLE (Intel, Intel(R) Arc(TM) Graphics (0x00007D55) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "long_tasks_over_50ms": []
+    },
+    "map-software-20261031": {
+      "path": "data/manifests/local/present-pacing/map-software-20261031/benchmark-pan.json",
+      "sha256": "153e7a3d441e9ca907cbb9c61bb44c79f10dbcf08772fa2a046708adf103c49d",
+      "bytes": 160694,
+      "render_median_ms": 30,
+      "render_p95_ms": 35.8,
+      "render_max_ms": 63.6,
+      "raf_p95_ms": 33.4,
+      "estimated_dropped_fraction": 0.4578375581996896,
+      "protocol_valid": true,
+      "browser": "156.0.8078.74",
+      "webgl_renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "long_tasks_over_50ms": []
+    }
+  },
+  "limits": [
+    "Single run per configuration; not randomized repeated inference.",
+    "Empty-page controls and headed/headless are diagnostic conditions; not physical display delivery or real-device acceptance.",
+    "Historical ~34.6ms artifact attribution to the browser patch is the most visible difference but not uniquely proven (no old-patch A/B on this machine).",
+    "N03 not met by local proxies; real devices remain required. No thresholds relaxed; no samples discarded; no production changes."
+  ],
+  "driver": "scripts/diagnose_present_pacing.cjs",
+  "desktop_battery_20261031": {
+    "renderer": "default (Intel Arc/D3D11, headless Chrome 156.0.8078.74)",
+    "reports": [
+      {
+        "path": "data/manifests/local/present-pacing/client-default-20261031/benchmark-client.json",
+        "sha256": "44aafd5f9df3932abd3f04bfc8af241ace760cac9bf568c0fc77d295fcdbaf8c",
+        "bytes": 179319
+      },
+      {
+        "path": "data/manifests/local/present-pacing/filters-default-20261031/benchmark-filters.json",
+        "sha256": "ce94a689cbb6bbf143cb522024d8cf0f86dd4ac8b37a6238e3846203e1ea5d8c",
+        "bytes": 1000723
+      }
+    ],
+    "first_usable_ms": {
+      "median": 1973.8,
+      "p95": 2069.0,
+      "max": 2815.8,
+      "samples": 30
+    },
+    "index_ready_ms_p95": 1156.2,
+    "own_transfer_bytes_median": 835689,
+    "hot_search_p95_ms": 215.9,
+    "filters_source_ready_render_p95_ms": {
+      "overview": 97.2,
+      "station-yard": 48.1
+    },
+    "scope": "Local headless proxy with basemap disabled; N01-N04 formal acceptance still requires real devices and online conditions."
+  }
+}
