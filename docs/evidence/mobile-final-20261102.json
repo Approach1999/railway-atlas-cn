@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-02",
+  "scope": "Final mobile fixes: user-reported phone/tablet functional smoke feedback, distinct from fixture-based browser regressions. No performance or independent acceptance claim.",
+  "files": {
+    "apps/web/client/src/basemap.ts": "5930d8ff7d11d0f41c292a494fec6182d2c5210abfe7ca1022711f0100254ac5",
+    "apps/web/client/src/BasemapControl.tsx": "2cf062aec962b44a86294060a5f818dc7c839cef1f76eeda7cb886e4889cdd91",
+    "apps/web/client/src/style.css": "eec2953f1ba36a7780023e2d15224174e8bc0a910525302aa1ba71d58ed5c27d",
+    "apps/web/client/src/detail-shard.ts": "c4a22f68489132c4b3c4fade46ba4c4c05b70dfaac86e6da6e0e8d88ee409244",
+    "scripts/verify_basemap_zoom.cjs": "0d04b60242b6ce827aab54baf4e79bc873ebe540422e78fa95e1714b562b4ac1",
+    "scripts/verify_lan_details.cjs": "58669e3e76bac001287065aa9681b690c7d5a96e969a6e95eab9ba9eb6b7f8b0",
+    "docs/qa/trial-20261102-owner.md": "85d0938b7f260dec0e1e99716688f77b994fcc918a31596cb84e4fe63b870405",
+    "docs/evidence/mobile-final-lan-20261102.json": "1a1919df5e400c0b5cb7fdd82affc5b08b1b2512e34edfc207a3b2e386e2f0eb",
+    "docs/evidence/mobile-final-zoom-20261102.json": "84c1bf3ef0fafbd2675d54a2301e280477e060ef7443285aa6f8d250e039fe19",
+    "apps/web/client/dist/assets/index-EZ8hK27s.css": "edb97780853da1126ce49a706f6e7c243b64876901726a6cb608c80b20e4a533",
+    "apps/web/client/dist/assets/index-HsjbKxI7.js": "d1e6e06d4b802262dbc9b00d87836cd2e1f2cbe499bda3c8b495d37dcb0b5d8e"
+  }
+}

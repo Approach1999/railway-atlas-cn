@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-02",
+  "build": "index-BLLfiLle.js",
+  "asset_sha256": "61d734e6d0fd7eb36f3a18bbc5da207f0d1ea3b32504943472f9b4bc81cc1716",
+  "snapshot": "shenyang-mvp-geometry-20261027",
+  "manifest_sha256": "0455a747024aeb11fd399ee2dfd6255ccd6657af8819360da3ca14c4ac80dfc5",
+  "source_sha256": {
+    "apps/web/client/src/detail-shard.ts": "c4a22f68489132c4b3c4fade46ba4c4c05b70dfaac86e6da6e0e8d88ee409244",
+    "apps/web/client/src/detail-shard.test.mjs": "370be00c42bc9589142d5bdf4dbce4d4acb08ff32c00322d1deaa93f85d6722e",
+    "apps/web/client/src/map-controller.ts": "5668f9d0e2369449f816736deb5bdba50c1e14a4015845155f842dd0c07d312c",
+    "apps/web/client/src/AccessibleExplorer.tsx": "474e8dda2b10bbd43db2dc12e9852dae0b7adc37b929fdeb975d2d09fa8e1a42",
+    "apps/web/client/src/basemap.ts": "9bcaaecafbe321969c640d3561566a1f68a2ed16fba28297a4d6260aa715e434",
+    "scripts/basemap_proxy.py": "47c63534ee83aa6c7075c0dd3ee12d26e9f6e0d201c0b74878bbd72395127a71",
+    "scripts/test_basemap_proxy.py": "2e58c1ab33c208a7a67e55de6b468f09c1a4ee099b64a187a84f9850d5f6eecb",
+    "scripts/serve_probe.py": "6d8c973cc893b2c6106a93e4c1ec67724176d573ed5bdb2de027942c1a650df5",
+    "scripts/start_preview.py": "1d581036f4f7275a8b73e3e3065b132482f3fa19d3f11ec93997d490c793f367",
+    "scripts/verify_lan_details.cjs": "58669e3e76bac001287065aa9681b690c7d5a96e969a6e95eab9ba9eb6b7f8b0"
+  },
+  "reports": {
+    "lan": {
+      "path": "docs/evidence/mobile-http-lan-20261102.json",
+      "sha256": "5a7564187155c312ba58c431006d616fa203ee2bf1a203fa6c9bfabfec545fd2"
+    },
+    "baseline": {
+      "path": "docs/evidence/mobile-http-baseline-20261102.json",
+      "sha256": "b72d5d460d2a9a76e4d929dcb416f2869341699134233383cf39f3153e2b7d72"
+    },
+    "live-tile": {
+      "path": "docs/evidence/mobile-http-live-tile-20261102.json",
+      "sha256": "75d64c363e0d8873da6502cf2e90d4b56c84e907d37905a2234ffa43bbb3260e"
+    },
+    "frontend": {
+      "path": "docs/evidence/mobile-http-frontend-20261102.log",
+      "sha256": "fffedf3d1f9456c1ed095bb4b6608f15c9a71e7313fd10c2406ad95af5cf615e"
+    },
+    "build": {
+      "path": "docs/evidence/mobile-http-build-20261102.log",
+      "sha256": "be4577840fc4d9c0ef71c531dc9094b46e8fc81c426c4ec2b62242f57f5c8735"
+    },
+    "proxy": {
+      "path": "docs/evidence/mobile-http-proxy-20261102.log",
+      "sha256": "1d2bdf6a0def88ed76837efe21dcb08ad3d83f3b22a635e1d643101f5868a52c"
+    },
+    "launcher": {
+      "path": "docs/evidence/mobile-http-launcher-20261102.log",
+      "sha256": "d52f2f9c70b6f025c78762734fcec9fa288777d29b5db46e9edf2b7da68c7b1a"
+    }
+  },
+  "passed": {
+    "frontend_tests": 124,
+    "proxy_tests": 6,
+    "launcher_tests": 8,
+    "baseline_browser_checks": 8,
+    "lan_browser_checks": 4
+  },
+  "limits": [
+    "LAN browser tests use real insecure HTTP with no security overrides, but a simulated 390px phone viewport. User phone retest still required.",
+    "All automated raster traffic is intercepted fixtures. One manual diagnostic tile from the current Shenyang region confirmed PNG, cache/304 and coordinate bounds.",
+    "Screenshot digest error was detail-shard routing, not a failure of cryptographic data authentication. No source data, snapshot or validation rules were changed.",
+    "Optional fixed-origin preview transport preserves attribution and origin Referer, identifies the app, caches/revalidates, offers no prefetch or offline export. No public hosting acceptance claim."
+  ]
+}

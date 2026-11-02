@@ -1,0 +1,11 @@
+{
+  "browser": "156.0.8078.74",
+  "ok": 44,
+  "failed": 19,
+  "errors": [],
+  "checks": [
+    "zoom out: upstream failure then automatic recovery on next zoom",
+    "zoom in: upstream failure then automatic recovery on next zoom"
+  ],
+  "scope": "390px touch emulation; intercepted raster fixtures only, not provider uptime or physical phone acceptance"
+}

@@ -6,6 +6,7 @@
 当前使用 [真实关系数据指南](docs/real-shenyang-data.md) 构建日期快照，
 或查看 [MVP 完成审计](docs/mvp-status.md) 中已完成与待完成事项。
 继续开发请阅读 [AI 接手清单](docs/AI-HANDOFF.md)，其中列出待办、验收条件和已排除的性能方案。
+准备试用请看 [启动与验收指南](docs/trial-guide.md)：Windows可双击根目录 `start-preview.cmd`，同Wi-Fi手机试用使用 `start-preview.cmd --lan`；需先准备下述数据和依赖。
 已准备数据和前端依赖时运行：
 
 ```sh

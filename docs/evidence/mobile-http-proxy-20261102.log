@@ -1,0 +1,11 @@
+test_arbitrary_urls_paths_and_out_of_range_tiles_never_fetch (test_basemap_proxy.ProxyTests.test_arbitrary_urls_paths_and_out_of_range_tiles_never_fetch) ... ok
+test_expired_tile_uses_conditional_request_and_304_preserves_body (test_basemap_proxy.ProxyTests.test_expired_tile_uses_conditional_request_and_304_preserves_body) ... ok
+test_expiry_and_minimum_fallback_policy (test_basemap_proxy.ProxyTests.test_expiry_and_minimum_fallback_policy) ... ok
+test_fresh_disk_cache_identification_and_origin_only_referrer (test_basemap_proxy.ProxyTests.test_fresh_disk_cache_identification_and_origin_only_referrer) ... ok
+test_no_store_is_not_written_and_non_png_is_rejected (test_basemap_proxy.ProxyTests.test_no_store_is_not_written_and_non_png_is_rejected) ... ok
+test_no_store_revalidation_removes_an_old_cached_copy (test_basemap_proxy.ProxyTests.test_no_store_revalidation_removes_an_old_cached_copy) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.030s
+
+OK

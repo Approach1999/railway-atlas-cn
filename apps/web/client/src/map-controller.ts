@@ -12,6 +12,7 @@ import {createStationSourceUpdater} from './station-source';
 import {createStationLabeler,pointLabel} from './station-labels';
 import {LineLabelController,LINE_LABEL_SOURCE,LINE_LABEL_LAYERS} from './line-label-controller';
 import {requestJson} from './json-request';
+import {detailShard} from './detail-shard';
 import {createRailTileLoader,railTileURL,RAIL_TILE_PROTOCOL} from './rail-tile-request';
 maplibregl.setWorkerUrl(workerUrl);
 import {DEFAULTS,STATUS_STYLES,PRESET_LABELS,FILTER_STATES,expandedState,trackVisible,overlayVisible,overlayFilter,trackFilter} from '../../shared/model.mjs';
@@ -280,7 +281,7 @@ function selectSearchResult(key:string,trigger:HTMLElement){
 }
 async function fullFeature(feature:RailFeature|{properties:{osm_id:string}}):Promise<RailFeature>{if('tags' in feature.properties&&'geometry' in feature)return feature;
   const epoch=assetEpoch,requestRoot=dataRoot;
-  const key=feature.properties.osm_id;const hash=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(key));const shard=new Uint8Array(hash)[0].toString(16).padStart(2,'0');
+  const key=feature.properties.osm_id,shard=detailShard(key);
   if(disposed||epoch!==assetEpoch)throw new DOMException('Aborted','AbortError');
   let request=detailCache.get(shard);
   if(!request){request=getJSON(`/details/${shard}.json`,requestRoot).then(value=>{if(!value||typeof value!=='object'||Array.isArray(value))throw Error('详情分片无效');const records:Record<string,RailFeature>={};for(const [id,record] of Object.entries(value)){validateRailFeature(record);if(record.properties.osm_id!==id)throw Error('详情身份与分片不一致');records[id]=record;}return records;}).catch(e=>{if(detailCache.get(shard)===request)detailCache.delete(shard);throw e;});detailCache.set(shard,request);}

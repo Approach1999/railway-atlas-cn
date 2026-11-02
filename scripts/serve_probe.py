@@ -1,23 +1,39 @@
-"""Loopback preview: built React client by default, legacy probe via --app probe."""
+"""Local preview; LAN access requires an explicit --host 0.0.0.0."""
 import argparse
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 import re
 import json
+import socket
 from catalog import build_catalog, read_manifest, expired
 from http_payload import gzip_payload, COMPRESSIBLE
+from basemap_proxy import BasemapProxy, TEMPLATE as PREVIEW_BASEMAP_TEMPLATE
 
 ROOT = Path(__file__).resolve().parents[1]
 APP = ROOT / "apps/web/probe"
+
+
+class PreviewHTTPServer(ThreadingHTTPServer):
+    # Prevent Windows from sharing a port between wildcard/loopback listeners.
+    # Unix keeps the existing HTTPServer restart behavior.
+    allow_reuse_address = not hasattr(socket, "SO_EXCLUSIVEADDRUSE")
+
+    def server_bind(self):
+        if hasattr(socket, "SO_EXCLUSIVEADDRUSE"):
+            self.socket.setsockopt(socket.SOL_SOCKET, socket.SO_EXCLUSIVEADDRUSE, 1)
+        super().server_bind()
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data-dir", type=Path, default=ROOT / "data/processed/shenyang-mvp-geometry-20261027")
     parser.add_argument("--port", type=int, default=8765)
+    parser.add_argument("--host", choices=("127.0.0.1", "0.0.0.0"), default="127.0.0.1")
     parser.add_argument("--app", choices=["client", "probe"], default="client")
+    parser.add_argument("--basemap-proxy", action="store_true", help="Use this computer for interactive OSM tile requests")
     args = parser.parse_args()
     args.data_dir = args.data_dir.resolve()
+    basemap_proxy = BasemapProxy(ROOT / "data/manifests/local/basemap-cache") if args.basemap_proxy else None
     security = json.loads((ROOT / 'config/security-headers.json').read_text(encoding='utf-8'))
     if security.get('schema_version') != 1 or not isinstance(security.get('headers'), dict):
         parser.error('Invalid security header configuration')
@@ -65,6 +81,37 @@ def main():
 
         def do_GET(self):
             request_path = self.path.split("?")[0]
+            if basemap_proxy and request_path == "/basemap.json":
+                config = json.loads((ROOT / "config/basemap.json").read_text(encoding="utf-8"))
+                config.update(tiles=[PREVIEW_BASEMAP_TEMPLATE], preview_proxy=True,
+                              request_domains=["self"], upstream_request_domains=["tile.openstreetmap.org"])
+                content = json.dumps(config, ensure_ascii=False).encode("utf-8")
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.send_header("Content-Length", str(len(content)))
+                self.send_header("Cache-Control", "no-cache")
+                self.end_headers()
+                self.wfile.write(content)
+                return
+            if basemap_proxy and request_path.startswith("/preview-basemap/"):
+                try:
+                    content, headers = basemap_proxy.tile(request_path, self.headers.get("Referer"))
+                except ValueError:
+                    self.send_error(400, "Invalid preview tile request or response")
+                    return
+                except OSError:
+                    self.send_error(502, "Basemap upstream unavailable")
+                    return
+                unchanged = headers.get("ETag") and self.headers.get("If-None-Match") == headers["ETag"]
+                self.send_response(304 if unchanged else 200)
+                self.send_header("Content-Type", "image/png")
+                self.send_header("Content-Length", "0" if unchanged else str(len(content)))
+                for name, value in headers.items():
+                    self.send_header(name, value)
+                self.end_headers()
+                if not unchanged:
+                    self.wfile.write(content)
+                return
             if request_path == "/catalog.json":
                 try:
                     config = json.loads((ROOT / "config/catalog.json").read_text(encoding="utf-8"))
@@ -152,7 +199,11 @@ def main():
                     pass  # A map pan may cancel an in-flight range request.
 
     print(f"Probe: http://127.0.0.1:{args.port}", flush=True)
-    ThreadingHTTPServer(("127.0.0.1", args.port), Handler).serve_forever()
+    with PreviewHTTPServer((args.host, args.port), Handler) as server:
+        try:
+            server.serve_forever()
+        except KeyboardInterrupt:
+            print("Preview stopped.", flush=True)
 
 
 if __name__ == "__main__":

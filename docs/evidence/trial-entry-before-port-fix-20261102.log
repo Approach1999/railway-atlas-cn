@@ -1,0 +1,20 @@
+test_exited_child_is_not_declared_ready (test_start_preview.PreviewStartTests.test_exited_child_is_not_declared_ready) ... ok
+test_incomplete_bundle_cannot_pass_preflight (test_start_preview.PreviewStartTests.test_incomplete_bundle_cannot_pass_preflight) ... ok
+test_matching_snapshot_and_page_are_ready (test_start_preview.PreviewStartTests.test_matching_snapshot_and_page_are_ready) ... ok
+test_occupied_port_is_preserved (test_start_preview.PreviewStartTests.test_occupied_port_is_preserved) ... ok
+test_other_snapshot_is_not_declared_ready (test_start_preview.PreviewStartTests.test_other_snapshot_is_not_declared_ready) ... ok
+test_wildcard_listener_also_blocks_loopback_start (test_start_preview.PreviewStartTests.test_wildcard_listener_also_blocks_loopback_start) ... FAIL
+
+======================================================================
+FAIL: test_wildcard_listener_also_blocks_loopback_start (test_start_preview.PreviewStartTests.test_wildcard_listener_also_blocks_loopback_start)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\21965\Documents\Codex\2026-10-22\referenced-chatgpt-conversation-this-is-an\work\checkout\scripts\test_start_preview.py", line 52, in test_wildcard_listener_also_blocks_loopback_start
+    with self.assertRaisesRegex(ValueError, "���з����ѱ���"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 6 tests in 2.452s
+
+FAILED (failures=1)

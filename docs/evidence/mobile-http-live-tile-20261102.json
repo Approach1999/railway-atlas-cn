@@ -1,0 +1,12 @@
+{
+  "tile_status": 200,
+  "png_bytes": 29947,
+  "png_sha256": "f79fc81a1ea21a34c530d6caf6adaddb6206feeaf73221e8ff2c8267b0a4e97b",
+  "cache_control": "max-age=91944, stale-while-revalidate=604800, stale-if-error=604800",
+  "etag": "\"c797de367e13294f1e3eacc91deee924\"",
+  "attribution_retained": true,
+  "snapshot_or_raw_data_changed": false,
+  "scope": "One manual diagnostic tile from the currently viewed Shenyang region; no headless live tile traffic.",
+  "conditional_status": 304,
+  "invalid_coordinate_status": 400
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-02T04:42:46.774Z",
+  "browser": "156.0.8078.74",
+  "context": {
+    "secure": false,
+    "subtle": "undefined"
+  },
+  "proxy": true,
+  "expected_shard": "5d",
+  "checks": [
+    "LAN HTTP is genuinely insecure and SubtleCrypto is absent",
+    "railway search result opens full detail",
+    "text explorer opens the same record and shard",
+    "basemap loads from same-origin raster fixtures, no direct upstream browser requests"
+  ],
+  "errors": [],
+  "scope": "Non-loopback HTTP + 390px emulation; all raster requests are intercepted fixtures. Not a real phone or provider uptime test."
+}

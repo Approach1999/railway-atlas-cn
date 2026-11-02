@@ -16,6 +16,7 @@ export interface BasemapConfig {
   contrast: number;
   attribution: string;
   request_domains: string[];
+  preview_proxy?: boolean;
 }
 
 export function readPreference(storage: Pick<Storage, 'getItem'> | null): boolean {
@@ -40,6 +41,7 @@ export function validateConfig(value: unknown): BasemapConfig {
       !Number.isInteger(c.maxzoom) || c.maxzoom < 0 || c.maxzoom > 22 ||
       typeof c.attribution !== 'string') throw new Error('底图配置不完整');
   for (const template of c.tiles) {
+    if(c.preview_proxy===true&&template==='/preview-basemap/{z}/{x}/{y}.png'&&c.request_domains.includes('self'))continue;
     const url = new URL(template);
     if (url.protocol !== 'https:' || !c.request_domains.includes(url.hostname) ||
         !['{z}', '{x}', '{y}'].every(token => template.includes(token))) {
@@ -118,8 +120,9 @@ export class BasemapController {
     const tileReady = event.tile?.state === 'loaded';
     const sourceReady = event.sourceDataType === 'idle' && event.isSourceLoaded;
     if (event.sourceId === BASEMAP_SOURCE && (tileReady || sourceReady) &&
-        this.enabled && !this.failed && this.map.getSource(BASEMAP_SOURCE)) {
+        this.enabled && (tileReady || !this.failed) && this.map.getSource(BASEMAP_SOURCE)) {
       clearTimeout(this.timer);
+      this.failed = false;
       this.emit('ready');
     }
   };
@@ -132,7 +135,9 @@ export class BasemapController {
 
   private fail(): void {
     this.failed = true;
-    this.detach();
+    // A tile error is local to that tile. Keep the source and loaded imagery so
+    // subsequent zoom/pan requests can succeed without a manual retry.
+    clearTimeout(this.timer);
     this.emit('failed');
   }
 

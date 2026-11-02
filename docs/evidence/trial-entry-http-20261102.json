@@ -1,0 +1,17 @@
+{
+  "checks": [
+    {
+      "interface": "loopback",
+      "snapshot_matches": true,
+      "security_header_present": true
+    },
+    {
+      "interface": "RFC1918 local interface",
+      "snapshot_matches": true,
+      "security_header_present": true
+    }
+  ],
+  "occupied_port_cli_exit": 1,
+  "existing_service_preserved": true,
+  "real_phone_test": false
+}

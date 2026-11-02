@@ -63,6 +63,12 @@ main{min-height:0}
 /* Authored form boundaries remain clear against white and warm-white surfaces. */
 :root{--field-border:#6b8580}
 
+/* Treat the icon, input and clear button as one rounded search field. The
+   wrapper supplies the input's focus indicator instead of a second inner box. */
+.search-box:focus-within{border-color:var(--accent);outline:2px solid var(--accent);outline-offset:-2px}
+.search-box input{appearance:none;-webkit-appearance:none;border-radius:0;box-shadow:none;-webkit-tap-highlight-color:transparent}
+.search-box input:focus{outline:none}
+
 /* Include hybrid touch devices whose primary pointer may still be a mouse. */
 @media(any-pointer:coarse){
   .search-box input{min-height:44px}

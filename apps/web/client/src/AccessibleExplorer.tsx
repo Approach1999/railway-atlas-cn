@@ -5,6 +5,7 @@ import type {RailProperties,RailFeature,DatasetManifest,LineRecord} from '../../
 import {validateManifest,validateStations,validateRailFeature,validateObjectIndex,validateLines} from './dataset-validation';
 import {RecordFields,RecordProvenance} from './RecordFields';
 import {listJson} from './list-request';
+import {detailShard} from './detail-shard';
 type RecordIndex=RailProperties;
 type SourceRecord=RailFeature;
 interface Props {
@@ -105,7 +106,7 @@ export default function AccessibleExplorer({open,mapAvailable,onClose,onShowMap,
     const abort=new AbortController();setDetail(null);setDetailError('');setDetailLoading(true);
     detailFocus.current={key:selected,origin:document.activeElement,interaction:interaction.current};
     (async()=>{
-      const hash=new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(selected)))[0].toString(16).padStart(2,'0');
+      const hash=detailShard(selected);
       abort.signal.throwIfAborted();
       const shard=await listJson('/snapshots/'+snapshot+'/details/'+hash+'.json',abort.signal,status=>Error('详情读取失败（'+status+'）'));
       if(!shard||typeof shard!=='object'||Array.isArray(shard))throw Error('详情分片无效');

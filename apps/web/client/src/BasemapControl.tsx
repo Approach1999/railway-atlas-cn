@@ -59,7 +59,7 @@ export function BasemapControl({map}: {map: Map | null}) {
     </button>
     <div id="basemap-status" role="status" aria-live="polite"
       className={failed ? 'basemap-message' : 'sr-only'}>
-      {failed ? <>底图暂不可用，铁路仍可浏览。<button id="basemap-retry" onClick={() => {
+      {failed ? <>{configFailed ? '底图配置暂不可用' : '部分底图未加载'}，铁路仍可浏览。<button id="basemap-retry" onClick={() => {
         if (configFailed) setAttempt(value => value + 1); else controller.current?.retry();
       }}>重试</button></> : enabled ? status === 'ready' ? '底图已显示' : '底图加载中' : '底图已隐藏'}
     </div>

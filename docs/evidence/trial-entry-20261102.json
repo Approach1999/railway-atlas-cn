@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-02",
+  "base_commit": "b97f7a71d6438c51d97932c2a3adf929f58ec6e3",
+  "product_asset": "index-D4TfdCvK.js",
+  "product_asset_sha256": "227835ec35388d01e5bd2297426e2f34ef92b7c3b5ef0ff1934f93416a94a2cc",
+  "source_sha256": {
+    "start-preview.cmd": "a69ba1ab1ac1ef6c543f0e98b9027915183989b8406b360c0381a1d651f898b0",
+    "scripts/start_preview.py": "8cdfa25c50ec5043c70e4fcad3a9e99dd9f0b99a001234823940e46a10079c04",
+    "scripts/serve_probe.py": "677ba4154ce667c77e96e67924f5a75ddf9414a8653cfac1f08f6d6c0df5567c",
+    "scripts/test_start_preview.py": "e2ff1501ce2ca39c40a7f696a0f24afa47527e96f8647af671c448f6ec466b50",
+    "scripts/verify_client.cjs": "e89b940e68e1dc4c3af43e87ce74913d4e3682527f4cdd86c6fb76f82a3ccd47"
+  },
+  "reports": {
+    "browser": {
+      "path": "docs/evidence/trial-entry-browser-20261102.json",
+      "sha256": "70e8b2c5f25dce274028ecc71d9c27db78c179e7f04d97e08ff2d6be320de757"
+    },
+    "unit": {
+      "path": "docs/evidence/trial-entry-unit-20261102.log",
+      "sha256": "e75cbd1fa79d5c58ba7d41bfede3ad5fdcd5bcd8878342e2e35b6843c5facba3"
+    },
+    "http": {
+      "path": "docs/evidence/trial-entry-http-20261102.json",
+      "sha256": "cd89a5a2cc44373240b43bd320c74fc68718d9aeb4208aa59a87fd355e1d6435"
+    },
+    "before-port-fix": {
+      "path": "docs/evidence/trial-entry-before-port-fix-20261102.log",
+      "sha256": "b3f1d73385a6c21c1e02534e4045fa94b3c9243693e08aff20503be9b2146bd2"
+    }
+  },
+  "passed": {
+    "launcher_tests": 8,
+    "browser_checks": 8,
+    "actual_cmd_launch_build_and_ready": true,
+    "lan_http_snapshot_and_csp": true,
+    "duplicate_cli_preserves_existing_service": true,
+    "temporary_test_servers_cleaned_up": true
+  },
+  "limits": [
+    "No real phone, tablet, participant or screen-reader acceptance performed.",
+    "LAN requests originated on this computer; Wi-Fi device reachability depends on actual network/firewall.",
+    "Browser test uses raster fixtures and 390px emulation, not real-device evidence.",
+    "Initial implementation failed wildcard-listener detection; pre-fix failure log is retained. Final unit and CLI checks pass.",
+    "HTTP trial does not satisfy HTTPS or public-hosting acceptance.",
+    "No product JS/data changes, dependency updates, public deployment or raw-data commits."
+  ]
+}

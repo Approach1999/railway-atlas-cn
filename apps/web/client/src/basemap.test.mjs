@@ -4,6 +4,17 @@ import {readFile} from 'node:fs/promises';
 import {BasemapController, BASEMAP_SOURCE, BASEMAP_LAYER, PREFERENCE_KEY, readPreference, savePreference, validateConfig} from './basemap.ts';
 
 const config=validateConfig(JSON.parse(await readFile(new URL('../../../../config/basemap.json',import.meta.url),'utf8')));
+test('local preview raster route needs an explicit proxy marker and self declaration',()=>{
+  const local={...config,tiles:['/preview-basemap/{z}/{x}/{y}.png'],request_domains:['self'],preview_proxy:true};
+  assert.equal(validateConfig(local).tiles[0],local.tiles[0]);
+  assert.throws(()=>validateConfig({...local,preview_proxy:false}));
+  assert.throws(()=>validateConfig({...local,request_domains:['tile.openstreetmap.org']}));
+});
+test('preview marker cannot authorize other paths or insecure external hosts',()=>{
+  for(const template of ['/other/{z}/{x}/{y}.png','//example.com/{z}/{x}/{y}.png','http://example.com/{z}/{x}/{y}.png']){
+    assert.throws(()=>validateConfig({...config,tiles:[template],preview_proxy:true,request_domains:['self','example.com']}));
+  }
+});
 class FakeMap {
   constructor(){
     this.sources=new Map([['tracks',{type:'vector'}],['selection',{type:'geojson'}]]);
@@ -37,14 +48,18 @@ test('basemap toggle preserves camera, railway source identity and labels, and s
   assert.deepEqual(map.camera,camera);
   assert.equal(states.at(-1),'off');base.destroy();
 });
-test('late style load respects current preference; load error preserves railways without retry loop',()=>{
+test('late style load respects preference; a tile error preserves imagery and recovers on a loaded tile',()=>{
   const map=new FakeMap();map.loaded=false;const states=[];
   const base=new BasemapController(map,config,state=>states.push(state));
   base.setEnabled(true);base.setEnabled(false);map.loaded=true;map.emit('load');
   assert.equal(map.getSource(BASEMAP_SOURCE),undefined);
-  base.setEnabled(true);map.emit('error',{sourceId:BASEMAP_SOURCE});
+  base.setEnabled(true);const source=map.getSource(BASEMAP_SOURCE);map.emit('error',{sourceId:BASEMAP_SOURCE});
   assert.equal(states.at(-1),'failed');assert(map.getSource('tracks'));map.emit('idle');
-  assert.equal(map.getSource(BASEMAP_SOURCE),undefined);
+  assert.equal(map.getSource(BASEMAP_SOURCE),source);
+  map.emit('sourcedata',{sourceId:BASEMAP_SOURCE,sourceDataType:'idle',isSourceLoaded:true});
+  assert.equal(states.at(-1),'failed','idle after failed tiles is not recovery');
+  map.emit('sourcedata',{sourceId:BASEMAP_SOURCE,tile:{state:'loaded'}});
+  assert.equal(states.at(-1),'ready');assert.equal(map.getSource(BASEMAP_SOURCE),source);
   base.retry();assert(map.getSource(BASEMAP_SOURCE));
   map.emit('sourcedata',{sourceId:BASEMAP_SOURCE,sourceDataType:'content',isSourceLoaded:true});
   assert.equal(states.at(-1),'loading','source metadata does not mean a raster tile has loaded');
@@ -57,10 +72,12 @@ test('pending re-enable during rail tile loading attaches when map becomes idle'
   assert.equal(map.getSource(BASEMAP_SOURCE),undefined);
   map.loaded=true;map.emit('idle');assert(map.getSource(BASEMAP_SOURCE));base.destroy();
 });
-test('timeout offers pure railway fallback and cleanup prevents later callbacks',async()=>{
+test('timeout retains pending raster requests for late recovery; cleanup prevents later callbacks',async()=>{
   const map=new FakeMap(),states=[];const base=new BasemapController(map,config,state=>states.push(state),10);
   base.setEnabled(true);await new Promise(resolve=>setTimeout(resolve,30));
-  assert.equal(states.at(-1),'failed');assert.equal(map.getSource(BASEMAP_SOURCE),undefined);
+  assert.equal(states.at(-1),'failed');assert(map.getSource(BASEMAP_SOURCE));
+  map.emit('sourcedata',{sourceId:BASEMAP_SOURCE,tile:{state:'loaded'}});
+  assert.equal(states.at(-1),'ready');
   const length=states.length;base.destroy();map.emit('load');map.emit('error',{sourceId:BASEMAP_SOURCE});
   assert.equal(states.length,length);
 });
