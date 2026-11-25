@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {validateRailProperties,validateRailFeature,validateObjectIndex,validateLines} from './dataset-validation.ts';
+import {validateRailProperties,validateRailFeature,validateObjectIndex,validateLines,validateManifest} from './dataset-validation.ts';
 const properties=()=>({osm_id:'node/1',display_name:'示例站',feature_kind:'station',rail_mode:'rail',status:'mapped',line_class:'unknown',aliases:[],line_keys:[],osm_version:2,tags:{railway:'station'}});
 const feature=()=>({type:'Feature',properties:properties(),geometry:{type:'Point',coordinates:[123.4,41.8]}});
 test('data boundary rejects coercible enums, bad metadata, aliases and original tags',()=>{
@@ -34,4 +34,16 @@ test('unknown operator stays null while urban line identity and original tags re
   const line={line_key:'osm/relation/1',operator_key:null,name:'示例电车',ref:'1',mode:'tram',relation_ids:['relation/1'],source_tags:[{route:'tram'}]};
   validateLines({snapshot_id:'fixture',lines:[line]},'fixture');
   for(const patch of [{operator_key:[]},{mode:['tram']},{source_tags:[{route:123}]}])assert.throws(()=>validateLines({snapshot_id:'fixture',lines:[{...line,...patch}]},'fixture'));
+});
+test('a version belongs to one region: it is shown only for that region, and only among regions this build knows',()=>{
+  const manifest=region=>({snapshot_id:'fixture',region,schema_version:2,bbox:[121,38.7,122.1,39.5],tiles:{bounds:[121,38.7,122.1,39.5],minzoom:8,maxzoom:15}});
+  const regions=['shenyang','dalian'];
+  validateManifest(manifest('dalian'));validateManifest(manifest('shenyang'));validateManifest(manifest(undefined));
+  validateManifest(manifest('dalian'),undefined,{regions});validateManifest(manifest('dalian'),undefined,{region:'dalian',regions});
+  validateManifest(manifest('dalian'),undefined,{region:null,regions});validateManifest(manifest(undefined),undefined,{regions});
+  for(const bad of [123,['dalian'],'../dalian','Dalian Metro',''])assert.throws(()=>validateManifest(manifest(bad)),/数据版本说明无效/);
+  // Another region's version never passes as the requested region or as a known one.
+  assert.throws(()=>validateManifest(manifest('dalian'),undefined,{regions:['shenyang']}),/数据版本说明无效/);
+  assert.throws(()=>validateManifest(manifest('shenyang'),undefined,{region:'dalian',regions}),/数据版本说明无效/);
+  assert.throws(()=>validateManifest(manifest('beijing'),undefined,{region:'beijing',regions}),/数据版本说明无效/);
 });

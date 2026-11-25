@@ -7,6 +7,8 @@ from pathlib import Path
 import shutil
 import subprocess
 
+from regions import inside_root, region_argument, region_entry
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -23,18 +25,27 @@ def main():
     parser.add_argument("--input", type=Path, required=True)
     parser.add_argument("--source-url", required=True, help="Provenance URL, not a download action")
     parser.add_argument("--expected-sha256", help="Required for replay of a recorded snapshot")
-    parser.add_argument("--config", type=Path, default=ROOT / "config/shenyang.json")
-    parser.add_argument("--output-dir", type=Path, default=ROOT / "data/processed/shenyang")
-    parser.add_argument("--manifest", type=Path, default=ROOT / "data/manifests/local/shenyang.json")
+    parser.add_argument("--config", type=Path, help="Region extraction config; default: the --region entry in the registry")
+    parser.add_argument("--output-dir", type=Path, help="Defaults to data/processed/<region>")
+    parser.add_argument("--manifest", type=Path, help="Defaults to data/manifests/local/<region>.json")
+    region_argument(parser)
     args = parser.parse_args()
+    try:
+        args.config = args.config or inside_root(ROOT, region_entry(args.region)["pipeline"]["region_config"])
+        config = json.loads(args.config.read_text(encoding="utf-8"))
+    except (OSError, ValueError, KeyError) as error:
+        parser.error(f"Region config unavailable: {error}")
+    args.output_dir = args.output_dir or ROOT / f"data/processed/{args.region}"
+    args.manifest = args.manifest or ROOT / f"data/manifests/local/{args.region}.json"
     if not args.input.is_file():
         parser.error("Input snapshot does not exist")
     if not shutil.which("osmium"):
         parser.error("Install Osmium Tool and place osmium on PATH; see docs/data-pipeline.md")
-    config = json.loads(args.config.read_text(encoding="utf-8"))
     bbox = config["bbox"]
     if len(bbox) != 4 or not (-180 <= bbox[0] < bbox[2] <= 180 and -90 <= bbox[1] < bbox[3] <= 90):
         parser.error("Invalid WGS84 west,south,east,north bounding box")
+    if config.get("id") != args.region:
+        parser.error("Config id does not name the selected region")
     region = args.output_dir / "region.osm.pbf"
     railway = args.output_dir / "railway.osm.pbf"
     if any(p.exists() for p in (region, railway, args.manifest)):

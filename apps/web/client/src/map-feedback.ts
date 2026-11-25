@@ -1,16 +1,18 @@
 import type {DatasetManifest} from '../../shared/atlas-types.ts';
-export type MapNoticeAction='reset-filters'|'all-lines'|'home';
+export type MapNoticeAction='reset-filters'|'all-lines'|'home'|'cancel-region-switch'|'retry-region-switch';
 
 export interface MapFeedbackSnapshot {
   readonly status:string;
   readonly navigation:string;
   readonly notice:string;
   readonly noticeAction:MapNoticeAction|null;
+  /** A held notice survives camera hints until dismissed; it always offers a way to close it. */
+  readonly noticeDismissible:boolean;
   readonly sourceDate:string;
   readonly currentVersionRecovery:boolean;
 }
 export const initialMapFeedback:MapFeedbackSnapshot=Object.freeze({
-  status:'正在加载铁路地图…',navigation:'',notice:'',noticeAction:null,sourceDate:'正在读取数据',currentVersionRecovery:false,
+  status:'正在加载铁路地图…',navigation:'',notice:'',noticeAction:null,noticeDismissible:false,sourceDate:'正在读取数据',currentVersionRecovery:false,
 });
 export function sourceDateLabel(source:DatasetManifest['source']):string {
   const raw=(typeof source?.osm_base==='object'?source.osm_base?.osm_base:source?.osm_base)||source?.osm_timestamp||source?.source_time;

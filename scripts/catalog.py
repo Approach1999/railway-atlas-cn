@@ -29,6 +29,28 @@ def expired(manifest, now=None):
     return deadline < (now or datetime.now(timezone.utc))
 
 
+def available(manifest, folder):
+    """Files every published schema needs are present in this snapshot folder."""
+    if not all((folder / name).is_file() for name in ["palette.json", "stations.geojson", "tiles/build.json"]):
+        return False
+    return manifest.get("schema_version", 1) < 2 or (folder / "lines.json").is_file()
+
+
+def default_snapshot(config, root, now=None):
+    """First complete, unexpired snapshot configured for the default region, or None."""
+    region = next((entry for entry in config.get("regions", []) if entry.get("id") == config.get("default_region")), None)
+    if region is None:
+        raise ValueError("Registry does not name a valid default region")
+    for snapshot in dict.fromkeys(region.get("snapshots", [])):
+        try:
+            manifest = read_manifest(root, snapshot)
+            if manifest.get("region") == region["id"] and not expired(manifest, now) and available(manifest, root / snapshot):
+                return snapshot
+        except (OSError, ValueError):
+            continue
+    return None
+
+
 def build_catalog(config, root, current_snapshot, now=None):
     regions = []
     for region in config["regions"]:
@@ -41,12 +63,7 @@ def build_catalog(config, root, current_snapshot, now=None):
                 manifest = read_manifest(root, snapshot)
             except FileNotFoundError:
                 continue
-            if manifest.get("region") != region["id"] or expired(manifest, now):
-                continue
-            folder = root / snapshot
-            if not all((folder / name).is_file() for name in ["palette.json", "stations.geojson", "tiles/build.json"]):
-                continue
-            if manifest.get("schema_version", 1) >= 2 and not (folder / "lines.json").is_file():
+            if manifest.get("region") != region["id"] or expired(manifest, now) or not available(manifest, root / snapshot):
                 continue
             entries.append({"id": snapshot, "build_time": manifest.get("build_time"),
                 "retention_until": manifest.get("retention_until"), "schema_version": manifest.get("schema_version", 1),

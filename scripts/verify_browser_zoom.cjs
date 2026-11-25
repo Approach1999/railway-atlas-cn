@@ -5,6 +5,8 @@ const hash=v=>crypto.createHash('sha256').update(v).digest('hex');
 async function verifyBrowserZoom(config={}){
  const {chromium}=require(config.playwrightModule||process.env.PLAYWRIGHT_MODULE||'playwright');
  const base=config.baseUrl||process.env.PREVIEW_URL||'http://127.0.0.1:8766',output=path.resolve(repo,config.outputDirectory||process.env.PREVIEW_EVIDENCE||'data/manifests/local/browser-zoom');
+ // The snapshot under test; a different one may be named without changing what is checked.
+ const snapshot=config.snapshot||process.env.MVP_CURRENT_SNAPSHOT||'shenyang-mvp-20261023';
  const browserEnv={...process.env,...(config.channel?{ATLAS_BROWSER_CHANNEL:config.channel}:{})};
  await fs.mkdir(output,{recursive:true});const cases=[],errors=[],external=[],profiles=[];
  const index=await fs.readFile(path.join(repo,'apps/web/client/dist/index.html')),asset=index.toString().match(/src="(\/assets\/index-[^"]+\.js)"/)[1],build={asset,index_sha256:hash(index),js_sha256:hash(await fs.readFile(path.join(repo,'apps/web/client/dist'+asset)))};let browserInfo;
@@ -20,7 +22,7 @@ async function verifyBrowserZoom(config={}){
    try{
     browserInfo=await target.describe(context.browser(),browserEnv);const p=context.pages()[0];p.on('pageerror',e=>errors.push(e.message));p.on('request',r=>{if(new URL(r.url()).origin!==new URL(base).origin)external.push(r.url());});
     await p.addInitScript(()=>{localStorage.setItem('railway-atlas:basemap:v1','false');Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async()=>{throw Error('controlled clipboard denial');}}});});
-    await p.goto(base+'/?snapshot=shenyang-mvp-20261023');await p.waitForFunction(()=>performance.getEntriesByName('atlas:first-usable').length);
+    await p.goto(base+'/?snapshot='+snapshot);await p.waitForFunction(()=>performance.getEntriesByName('atlas:first-usable').length);
     const cdp=await context.newCDPSession(p);
     async function sample(state){
      const metrics=await cdp.send('Page.getLayoutMetrics'),dom=await p.evaluate(()=>({width:innerWidth,height:innerHeight,dpr:devicePixelRatio,pinch:visualViewport.scale,scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth,searchFont:getComputedStyle(document.querySelector('#search')).fontSize,cssZoom:getComputedStyle(document.documentElement).zoom}));
@@ -41,7 +43,7 @@ async function verifyBrowserZoom(config={}){
     await p.locator('#about-open').click();await reachable(p.locator('#about-close'));await sample('about-dialog');await p.locator('#about-close').press('Escape');checks.push('about dialog and close control reachable');
     await p.locator('#list-open').click();await p.locator('.object-list button').first().waitFor();await p.locator('#list-query').fill('node/676578837');await p.locator('.object-list button').press('Enter');await p.locator('.list-record h3').waitFor();
     await reachable(p.locator('.list-record h3'));await sample('list-detail');checks.push('list detail heading readable at actual 200%');
-    await p.getByRole('button',{name:'复制当前视图与记录链接',exact:true}).click();await p.locator('#list-share').waitFor();await reachable(p.locator('#list-share'));const link=new URL(await p.locator('#list-share').inputValue());assert.equal(link.searchParams.get('feature'),'node/676578837');assert.equal(link.searchParams.get('snapshot'),'shenyang-mvp-20261023');await sample('list-manual-link');checks.push('manual list share remains reachable and preserves snapshot/selected source');
+    await p.getByRole('button',{name:'复制当前视图与记录链接',exact:true}).click();await p.locator('#list-share').waitFor();await reachable(p.locator('#list-share'));const link=new URL(await p.locator('#list-share').inputValue());assert.equal(link.searchParams.get('feature'),'node/676578837');assert.equal(link.searchParams.get('snapshot'),snapshot);await sample('list-manual-link');checks.push('manual list share remains reachable and preserves snapshot/selected source');
     // Playwright's CSS-sized clip can crop genuine page zoom. Capture the whole surface.
     const screenshot=Buffer.from((await cdp.send('Page.captureScreenshot',{format:'png',fromSurface:true,captureBeyondViewport:false})).data,'base64');
     const dimensions={width:screenshot.readUInt32BE(16),height:screenshot.readUInt32BE(20)},last=samples.at(-1);

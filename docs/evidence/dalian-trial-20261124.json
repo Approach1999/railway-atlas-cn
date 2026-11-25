@@ -1,0 +1,961 @@
+{
+  "date": "2026-11-24",
+  "title": "大连试验区接入：边界依据、来源记录、快照指纹与验证结果",
+  "scope": "本机第二试验地区的接入证据。不表示大连数据通过独立审核，不表示完整 MVP 验收，也不表示已公开发布。",
+  "source": {
+    "url": "https://download.geofabrik.de/asia/china/liaoning-261020.osm.pbf",
+    "provider": "Geofabrik / OpenStreetMap contributors",
+    "license": "ODbL 1.0",
+    "attribution": "OpenStreetMap contributors; regional extract supplied by Geofabrik",
+    "pbf_file": "data/raw/liaoning-261020.osm.pbf",
+    "pbf_bytes": 28536638,
+    "pbf_md5": "c874eac87d81adaa5375c143656ef5f5",
+    "pbf_sha256": "9ca145eb49d5913f9b92e320e5983c4d7439532d1c448a291692efc89dd74e83",
+    "osmosis_replication_timestamp": "2026-10-20T20:23:47Z",
+    "pbf_header_bounds": [
+      118.830528,
+      38.261909,
+      126.291289,
+      43.493032
+    ],
+    "same_file_as_shenyang_snapshot": true,
+    "metadata_note": "Geofabrik public extract omits contributor identity and changeset IDs; absent fields stay unlabelled"
+  },
+  "bbox": {
+    "west_south_east_north": [
+      121.1,
+      38.74,
+      122.05,
+      39.47
+    ],
+    "config": "config/dalian.json",
+    "config_sha256": "7cc5ed0d132e7b9a9d4e6b8c7639d2d00b3dc6868707bcdddf726bd7eb96b1f8",
+    "description": "大连城区、金州、开发区、旅顺口及普兰店南部试验矩形；非大连市行政边界。WGS84，经度/纬度。",
+    "administrative_boundary": false,
+    "basis": [
+      "覆盖源数据中全部 20 条城市轨道方向关系及其 8 个父线路关系：线路成员范围并集 [121.139, 38.798, 122.002, 39.431]，四周留约 0.04–0.06 度。",
+      "未采用更小的城区矩形 [121.45, 38.78, 121.85, 39.17]：它会把 12 号线、13 号线和 3 号线金石滩段截在矩形外。",
+      "与沈阳—大连走廊无关：两地区各自独立，未连通。"
+    ],
+    "survey": {
+      "script": "scripts/survey_region.py",
+      "rail_object_predicate": "scripts/extract_region.py rail_object（与提取器同一判定）",
+      "route_directions_reaching_bbox": 20,
+      "route_masters": 8,
+      "station_nodes_in_bbox": 199,
+      "rail_ways_touching_bbox": {
+        "rail": 1969,
+        "subway": 646,
+        "platform": 97,
+        "tram": 68,
+        "razed": 50,
+        "narrow_gauge": 41,
+        "abandoned": 38,
+        "disused": 22,
+        "construction": 13,
+        "station": 13,
+        "turntable": 5,
+        "traverser": 4,
+        "funicular": 3,
+        "signal_box": 3,
+        "workshop": 2,
+        "ferry": 1,
+        "preserved": 1,
+        "monorail": 1,
+        "proposed": 1,
+        "wash": 1
+      },
+      "rail_nodes_in_bbox": {
+        "switch": 1711,
+        "level_crossing": 940,
+        "buffer_stop": 507,
+        "tram_level_crossing": 314,
+        "subway_entrance": 300,
+        "stop": 213,
+        "station": 137,
+        "tram_crossing": 75,
+        "tram_stop": 61,
+        "lifecycle-only": 35,
+        "railway_crossing": 29,
+        "crossing": 26,
+        "yard": 8,
+        "milestone": 2,
+        "halt": 1,
+        "turntable": 1,
+        "level_crossing;tram_stop": 1,
+        "junction": 1,
+        "spur_junction": 1,
+        "track_scale": 1
+      }
+    }
+  },
+  "default_view": {
+    "longitude": 121.615,
+    "latitude": 38.969,
+    "zoom": 10.5,
+    "basis": "大连站 node/7913022526 与大连北站 node/8083924038 源坐标的中点；与沈阳默认视野同一规则（沈阳为沈阳站、沈阳北站中点）。"
+  },
+  "extract": {
+    "sha256": "2a5fe3afa6a15dcae0d17a458bee8378fec71d19fe90e53d8afc2f0ffe285ec6",
+    "bytes": 5181201,
+    "nodes": 27821,
+    "ways": 3024,
+    "relations": 140,
+    "seed_objects": 7343,
+    "seed_relations": 140,
+    "missing_refs": 0,
+    "extracted_at": "2026-11-23T05:15:27.407655+00:00",
+    "strategy": "spatial rail-context seeds; full ways; recursive urban/rail-stop/rail-area relation members",
+    "processing_seconds": 40.189
+  },
+  "convert": {
+    "pbf_sha256": "f2f80ddbba8b69a88c49b52abd0ef9e82be5856d205d15a935e4ea48f57a23cb",
+    "counts": {
+      "node": 27821,
+      "way": 3024,
+      "relation": 140
+    }
+  },
+  "snapshot": {
+    "id": "dalian-mvp-20261123",
+    "region": "dalian",
+    "schema_version": 2,
+    "build_time": "2026-11-23T05:29:20.011903+00:00",
+    "retention_until": "2027-11-23T05:29:20.011903+00:00",
+    "input_sha256": "f2f80ddbba8b69a88c49b52abd0ef9e82be5856d205d15a935e4ea48f57a23cb",
+    "bbox": [
+      121.1,
+      38.74,
+      122.05,
+      39.47
+    ],
+    "palette_version": "2026-11-23.1",
+    "classification_version": "mvp-v1",
+    "relation_version": "route-master-membership-v1",
+    "dataset_json_sha256": "519758510fa29120f2520a3b5ccead98edd5a1629ee42be768b3a9883f78216b",
+    "tile_index_sha256": "6fcd51d4d7d8f2b1c9b76e7df9354755c114217cbf46066de979950ba2b8c630",
+    "candidate_objects": 7510,
+    "published_features": 6900,
+    "excluded_count": 470,
+    "excluded_by_rule": {
+      "facility_kind_not_in_v1_matrix": 470
+    },
+    "relation_records": 140,
+    "route_relations": 20,
+    "line_count": 8,
+    "reconciles": true,
+    "class_counts": {
+      "branch": 1423,
+      "conventional_main": 209,
+      "conventional_other": 162,
+      "high_speed": 192,
+      "metro": 647,
+      "tram": 69,
+      "unknown": 146
+    },
+    "facility_counts": {
+      "buffer_stop": 507,
+      "entrance": 300,
+      "level_crossing": 959,
+      "platform": 97,
+      "stop_position": 233,
+      "switch": 1717,
+      "turntable": 6,
+      "wash": 1,
+      "yard": 8
+    },
+    "station_records": 224,
+    "station_records_by_kind_and_mode": {
+      "station:tram": 64,
+      "station:rail": 28,
+      "station:subway": 108,
+      "station:unknown": 11,
+      "station_area:unknown": 2,
+      "station_area:subway": 11
+    },
+    "station_mode_overrides_applied": 25,
+    "major_stations": [
+      "金州",
+      "旅顺",
+      "大连",
+      "大连北",
+      "普兰店"
+    ],
+    "stations_left_mode_unknown": [
+      "way/359263023",
+      "way/359263148",
+      "周家沟",
+      "大窑湾港",
+      "大连湾",
+      "广宁寺南",
+      "梭鱼湾东",
+      "水师营",
+      "海茂",
+      "烟台北站",
+      "甘井子",
+      "龙头",
+      "龙头石"
+    ],
+    "tiles": {
+      "tile_count": 1577,
+      "total_bytes": 7993112,
+      "minzoom": 8,
+      "maxzoom": 15,
+      "bounds": [
+        121.13144869999999,
+        38.7913163,
+        122.075161,
+        39.5258147
+      ],
+      "builder": "geojson-vt 6.3.0 / vt-pbf 4.3.2 / quantized-geometry-v2"
+    },
+    "normalization": {
+      "collapsed_features": 153,
+      "collapsed_line_parts": 37,
+      "collapsed_polygon_rings": 116,
+      "duplicate_vertices_removed": 148,
+      "reversed_lone_rings": 1,
+      "version": "quantized-geometry-v2"
+    },
+    "reversed_lone_ring_events": [
+      {
+        "collapsed_features": 1,
+        "layer": "rail_facilities",
+        "osm_id": "way/1152835618",
+        "reversed_lone_rings": 1,
+        "tile": "9/428/195.pbf"
+      }
+    ],
+    "manifest_files": 261
+  },
+  "snapshots_in_catalog": {
+    "note": "本机 data/processed 现有目录列出的全部五个快照；每个都用 scripts/verify_snapshot.py 独立校验（全部文件哈希、瓦片索引、数量对平、几何完整性）。",
+    "entries": [
+      {
+        "id": "shenyang-mvp-geometry-20261027",
+        "region": "shenyang",
+        "current": true,
+        "schema_version": 2,
+        "build_time": "2026-10-27T15:26:27.442579+00:00",
+        "source_time": "2026-10-20T20:23:47Z",
+        "dataset_json_sha256": "0455a747024aeb11fd399ee2dfd6255ccd6657af8819360da3ca14c4ac80dfc5",
+        "tile_index_sha256": "f6cd3bbe0ca2a58a64b71f7282dbb2349664a5820a712c873c49e005fd5efb90",
+        "published_features": 10216,
+        "tiles": 2251,
+        "line_count": 12,
+        "verify_snapshot": 6
+      },
+      {
+        "id": "shenyang-mvp-20261023",
+        "region": "shenyang",
+        "current": false,
+        "schema_version": 2,
+        "build_time": "2026-10-23T05:21:42.180277+00:00",
+        "source_time": "2026-10-20T20:23:47Z",
+        "dataset_json_sha256": "e5d9da79170c41c428d8f971ddc8a3bb12bda3c66b856f4243c912d5469d2404",
+        "tile_index_sha256": "3c7af78a778317872bf1b6603d61b3d1fe5789bad87f66263272c67b7f5289c7",
+        "published_features": 10216,
+        "tiles": 2251,
+        "line_count": 12,
+        "verify_snapshot": 6
+      },
+      {
+        "id": "shenyang-mvp-accessible-20261022",
+        "region": "shenyang",
+        "current": false,
+        "schema_version": 2,
+        "build_time": "2026-10-22T11:32:41.610924+00:00",
+        "source_time": "2026-10-22T04:46:06Z",
+        "dataset_json_sha256": "70cd58665f662b0eefd33acfe2f9dcbcdb276f66e03f6701b706448f4b1d6111",
+        "tile_index_sha256": "34e4e628e559d822435001c4dbefc6229b2642af0b82c4efc3130e6b95eeda3d",
+        "published_features": 10167,
+        "tiles": 2251,
+        "line_count": 0,
+        "verify_snapshot": 6
+      },
+      {
+        "id": "shenyang-mvp-progress-20261022",
+        "region": "shenyang",
+        "current": false,
+        "schema_version": 2,
+        "build_time": "2026-10-22T11:19:29.288526+00:00",
+        "source_time": "2026-10-22T04:46:06Z",
+        "dataset_json_sha256": "7b2273911209d16f99a97416de8356f9ef2c6d2f1e688d2dbfb8eff0b2c8f536",
+        "tile_index_sha256": "101d21a04b84d69a1502a067a3871c4d9b66e64bc683338c05ea428a9a9b2e7a",
+        "published_features": 10167,
+        "tiles": 2251,
+        "line_count": 0,
+        "verify_snapshot": 6
+      },
+      {
+        "id": "dalian-mvp-20261123",
+        "region": "dalian",
+        "current": true,
+        "schema_version": 2,
+        "build_time": "2026-11-23T05:29:20.011903+00:00",
+        "source_time": "2026-10-20T20:23:47Z",
+        "dataset_json_sha256": "519758510fa29120f2520a3b5ccead98edd5a1629ee42be768b3a9883f78216b",
+        "tile_index_sha256": "6fcd51d4d7d8f2b1c9b76e7df9354755c114217cbf46066de979950ba2b8c630",
+        "published_features": 6900,
+        "tiles": 1577,
+        "line_count": 8,
+        "verify_snapshot": 6
+      }
+    ]
+  },
+  "reproducibility": {
+    "extract_replay": {
+      "command": "scripts/extract_region.py --region dalian，输入与参数同原提取，输出到新文件名 data/raw/dalian-geofabrik-20261020-replay-20261124.osm",
+      "sha256": "2a5fe3afa6a15dcae0d17a458bee8378fec71d19fe90e53d8afc2f0ffe285ec6",
+      "bytes": 5181201,
+      "expected_sha256": "2a5fe3afa6a15dcae0d17a458bee8378fec71d19fe90e53d8afc2f0ffe285ec6",
+      "matches": true,
+      "byte_identical_to_original": true,
+      "counts_match": true,
+      "processing_seconds": 35.507
+    },
+    "build_replay_new_name": {
+      "output_dir": "data/processed/dalian-replay-20261124（输入同原构建；比较后已删除）",
+      "tile_index_sha256": "d69f94cad43654c026d6e89b89d58432553fc3e490ccbe4e80c3b5536cef6090",
+      "matches_published": false,
+      "files": "original 1843, replay 1843; identical 3, different 1840, only-original 0, only-replay 0",
+      "why_different": "快照标识写入每个要素的 snapshot_id 属性：重放标识比原标识多 3 个字符，所以每个瓦片、详情分片和索引的大小与哈希都不同。把标识还原后 258 个 JSON 文件相同，仍不同的只有构建时间、保留期、处理耗时和由瓦片字节派生的字段。"
+    },
+    "build_replay_same_id": {
+      "output_dir": "仓库外临时目录下的 dalian-mvp-20261123（已发布的快照未被触碰；比较后已删除）",
+      "tile_index_sha256": "6fcd51d4d7d8f2b1c9b76e7df9354755c114217cbf46066de979950ba2b8c630",
+      "matches_published": true,
+      "files": "original 1843, replay 1843; identical 1841, different 2, only-original 0, only-replay 0",
+      "differences": [
+        "dataset.json：build_time 与 retention_until",
+        "rust-report.json：processing_seconds"
+      ]
+    },
+    "note": "目录名不同时瓦片与索引的哈希必然不同；要验证一个快照可复现，须在另一位置用相同的快照标识重建后再比较。"
+  },
+  "geometry_gate_change": {
+    "rule_version": "quantized-geometry-v2",
+    "first_attempt": "首次构建被量化几何门禁中止：way/1152835618（地下地铁站台，单环多边形，约 217 m × 34 m）在 z9 瓦片 9/428/195 的量化环有向面积为 -2。",
+    "review": "scripts/diagnose_quantized_geometry.mjs：全部候选对象中仅此 1 个触发，且仅此 1 个缩放级；其余缩放级正常折叠或绘制。",
+    "change": "仅剩单环的多边形不可能是洞：有向面积为负时按退化外环折叠并计入 reversed_lone_rings，不再中止构建。多环的歧义序列（洞先于外环、退化环后跟洞）仍然中止。",
+    "status": "规则版本升为 quantized-geometry-v2；沈阳已发布快照未重建，不受影响。此改动待负责人确认。"
+  },
+  "line_colours": {
+    "palette_version": "2026-11-23.1",
+    "operator": "dalian-metro",
+    "identity_rule": "源关系/父关系的 network=大连地铁（或配置的运营方别名）加 ref；不按位置或名称推断。",
+    "source": "人工配置：取自中文维基百科 Module:Adjacent stations/大连地铁 的线路色值；该模块未注明色值来源，未核对为运营方或官方公布值。",
+    "source_url": "https://zh.wikipedia.org/wiki/Module:Adjacent_stations/大连地铁",
+    "confidence": "manual",
+    "verified_at": "2026-11-23",
+    "status_source": "中文维基百科“大连地铁”条目的运营线路表（2026-11-23 核对），非运营方确认",
+    "lines": [
+      {
+        "line_key": "dalian-metro/1",
+        "identity": "route_master",
+        "directions": 2,
+        "member_ways": 2,
+        "rendered_tracks": 2,
+        "missing_members": 0,
+        "confidence": "manual",
+        "color": "#43B02A",
+        "source_operator_tags": [
+          "Dalian Metro",
+          "大连交通集团"
+        ],
+        "source_network_tags": [
+          "大连地铁"
+        ],
+        "source_colour_tags": [
+          "#42B227"
+        ],
+        "source_name_tags": 3,
+        "source_relations": 3
+      },
+      {
+        "line_key": "dalian-metro/2",
+        "identity": "route_master",
+        "directions": 2,
+        "member_ways": 13,
+        "rendered_tracks": 13,
+        "missing_members": 0,
+        "confidence": "manual",
+        "color": "#009CDD",
+        "source_operator_tags": [
+          "Dalian Metro",
+          "大连交通集团"
+        ],
+        "source_network_tags": [
+          "大连地铁"
+        ],
+        "source_colour_tags": [
+          "#0066A1"
+        ],
+        "source_name_tags": 3,
+        "source_relations": 3
+      },
+      {
+        "line_key": "dalian-metro/3",
+        "identity": "route_master",
+        "directions": 6,
+        "member_ways": 139,
+        "rendered_tracks": 139,
+        "missing_members": 0,
+        "confidence": "manual",
+        "color": "#D60078",
+        "source_operator_tags": [
+          "Dalian Public Transportation Group",
+          "大连交通集团"
+        ],
+        "source_network_tags": [
+          "大连地铁"
+        ],
+        "source_colour_tags": [
+          "#dd00bb"
+        ],
+        "source_name_tags": 7,
+        "source_relations": 7
+      },
+      {
+        "line_key": "dalian-metro/5",
+        "identity": "route_master",
+        "directions": 2,
+        "member_ways": 3,
+        "rendered_tracks": 3,
+        "missing_members": 0,
+        "confidence": "manual",
+        "color": "#DA291C",
+        "source_operator_tags": [
+          "大连交通集团"
+        ],
+        "source_network_tags": [
+          "大连地铁"
+        ],
+        "source_colour_tags": [
+          "#E60012"
+        ],
+        "source_name_tags": 3,
+        "source_relations": 3
+      },
+      {
+        "line_key": "dalian-metro/12",
+        "identity": "route_master",
+        "directions": 2,
+        "member_ways": 44,
+        "rendered_tracks": 44,
+        "missing_members": 0,
+        "confidence": "manual",
+        "color": "#4C4298",
+        "source_operator_tags": [
+          "Dalian Public Transportation Group",
+          "大连交通集团"
+        ],
+        "source_network_tags": [
+          "大连地铁"
+        ],
+        "source_colour_tags": [
+          "#523E98"
+        ],
+        "source_name_tags": 3,
+        "source_relations": 3
+      },
+      {
+        "line_key": "dalian-metro/13",
+        "identity": "route_master",
+        "directions": 2,
+        "member_ways": 74,
+        "rendered_tracks": 74,
+        "missing_members": 0,
+        "confidence": "manual",
+        "color": "#F0C600",
+        "source_operator_tags": [],
+        "source_network_tags": [
+          "大连地铁"
+        ],
+        "source_colour_tags": [
+          "#FFE400"
+        ],
+        "source_name_tags": 3,
+        "source_relations": 3
+      },
+      {
+        "line_key": "osm/relation/16759640",
+        "identity": "route_master",
+        "directions": 2,
+        "member_ways": 6,
+        "rendered_tracks": 6,
+        "missing_members": 0,
+        "confidence": "fallback",
+        "color": "#2E8B57",
+        "source_operator_tags": [
+          "大连公交电车分公司"
+        ],
+        "source_network_tags": [
+          "大连公交"
+        ],
+        "source_colour_tags": [],
+        "source_name_tags": 1,
+        "source_relations": 3
+      },
+      {
+        "line_key": "osm/relation/16759639",
+        "identity": "route_master",
+        "directions": 2,
+        "member_ways": 27,
+        "rendered_tracks": 26,
+        "missing_members": 0,
+        "confidence": "fallback",
+        "color": "#2E8B57",
+        "source_operator_tags": [
+          "大连公交电车分公司"
+        ],
+        "source_network_tags": [
+          "大连公交"
+        ],
+        "source_colour_tags": [],
+        "source_name_tags": 1,
+        "source_relations": 3
+      }
+    ],
+    "source_findings": {
+      "lines_without_route_master": [],
+      "lines_with_several_operator_spellings": {
+        "dalian-metro/1": [
+          "Dalian Metro",
+          "大连交通集团"
+        ],
+        "dalian-metro/2": [
+          "Dalian Metro",
+          "大连交通集团"
+        ],
+        "dalian-metro/3": [
+          "Dalian Public Transportation Group",
+          "大连交通集团"
+        ],
+        "dalian-metro/12": [
+          "Dalian Public Transportation Group",
+          "大连交通集团"
+        ]
+      },
+      "lines_without_any_operator_tag": [
+        "dalian-metro/13"
+      ],
+      "lines_without_any_colour_tag": [
+        "osm/relation/16759640",
+        "osm/relation/16759639"
+      ],
+      "lines_with_colour_tag_differing_from_palette": [
+        "dalian-metro/1",
+        "dalian-metro/2",
+        "dalian-metro/3",
+        "dalian-metro/5",
+        "dalian-metro/12",
+        "dalian-metro/13"
+      ],
+      "lines_with_unnamed_source_relations": [
+        "osm/relation/16759640",
+        "osm/relation/16759639"
+      ],
+      "lines_with_identity_warnings": [],
+      "urban_tracks_published": 716,
+      "urban_tracks_in_route_relations": 307,
+      "urban_tracks_outside_route_relations": 409
+    }
+  },
+  "route_identity_audit": {
+    "script": "scripts/verify_route_identity.py",
+    "published_objects_checked": 6900,
+    "route_directions": 20,
+    "route_masters": 8,
+    "checks": [
+      "every published record's original tags, version, timestamp and changeset match the preserved XML",
+      "every line identity is re-derived from route_master membership, operator/network tags and ref, or the relation's typed id",
+      "every direct route reference, rendered track membership and per-track line list reconciles",
+      "every stop-area line link has a source relation that contains the record and a direct member of that line"
+    ]
+  },
+  "verification": {
+    "build": {
+      "index-C_uGsf3N.js": {
+        "bytes": 1425935,
+        "sha256": "57a1eb87d6f9dbbe0bf9c1e35f0dd6b48c6d1efef1caac1b89131b9c7e046f77"
+      },
+      "index-r-Po9jta.css": {
+        "bytes": 89703,
+        "sha256": "0b56052d774bc5afef6ebb144a7f900b86ce5aeb52075a4d8d522a95e1107354"
+      },
+      "map-cjk-DB98A5rq.woff2": {
+        "bytes": 165280,
+        "sha256": "2c470ce37afac319196002082a71244a6124166e21035b2ba0f86f7f21f954ab"
+      },
+      "maplibre-gl-worker-BWso-Bu4.js": {
+        "bytes": 518423,
+        "sha256": "85cce15680b9b7a722d6a5acc8b3674fe56c9cd8d9a34199b889e5e5fe43074f"
+      },
+      "index.html_sha256": "c1b697dae57947cbdc2686fe677c9a80ad60e7e34fcc85ffac75080876616838"
+    },
+    "client_unit_tests": {
+      "command": "npm test --prefix apps/web/client",
+      "tests": 145,
+      "pass": 145,
+      "fail": 0,
+      "baseline_tests": 125
+    },
+    "typecheck": "npm run typecheck --prefix apps/web/client（tsc --noEmit，strict）通过",
+    "python_tests": {
+      "command": ".venv/Scripts/python.exe -m unittest discover -s scripts -p \"test_*.py\"",
+      "discovered": 82,
+      "passed_in_venv": 81,
+      "not_loaded_in_venv": {
+        "test_build_map_font": "ModuleNotFoundError: fontTools；属 requirements-fonts.lock 的另一环境"
+      },
+      "passed_in_font_environment": {
+        "command": "字体构建环境的 python -m unittest discover -s scripts -p test_build_map_font.py",
+        "tests": 1,
+        "environment": "旧目录 data/manifests/local/font-build/venv（只执行其解释器并读取 source.otf、OFL.txt）：fontTools 4.67.0、brotli 1.2.1"
+      },
+      "added_or_extended": [
+        "test_regions.py",
+        "test_survey_region.py",
+        "test_verify_route_identity.py",
+        "test_catalog.py",
+        "test_mvt_publication_gate.py"
+      ]
+    },
+    "font": {
+      "family": "Railway Atlas CJK",
+      "font_bytes": 165280,
+      "font_sha256": "2c470ce37afac319196002082a71244a6124166e21035b2ba0f86f7f21f954ab",
+      "codepoints": 608,
+      "previous": {
+        "codepoints": 501,
+        "font_bytes": 129992
+      },
+      "upstream": {
+        "family": "Noto Sans CJK SC Regular",
+        "commit": "523d033d6cb47f4a80c58a35753646f5c3608a78",
+        "sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b"
+      },
+      "tools": {
+        "fonttools": "4.67.0",
+        "brotli": "1.2.1"
+      },
+      "license": "OFL-1.1",
+      "license_sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+      "name_indexes_per_snapshot": {
+        "dalian-mvp-20261123": {
+          "features.geojson": 6689,
+          "lines.json": 8,
+          "stations.geojson": 224
+        },
+        "shenyang-mvp-20261023": {
+          "features.geojson": 9859,
+          "lines.json": 12,
+          "stations.geojson": 361
+        },
+        "shenyang-mvp-accessible-20261022": {
+          "features.geojson": 9856,
+          "lines.json": 0,
+          "stations.geojson": 315
+        },
+        "shenyang-mvp-geometry-20261027": {
+          "features.geojson": 9859,
+          "lines.json": 12,
+          "stations.geojson": 361
+        },
+        "shenyang-mvp-progress-20261022": {
+          "features.geojson": 9856,
+          "lines.json": 0,
+          "stations.geojson": 315
+        }
+      },
+      "check": "scripts/build_map_font.py --check（字体构建环境）通过：WOFF2、map-font-data.ts、字体清单和许可文本四个输出与重新生成的结果逐字节一致。",
+      "regenerate_rule": "新增地区或快照后必须重新生成字体子集并再次执行 --check。",
+      "browser": {
+        "script": "scripts/verify_map_font.cjs",
+        "result": "pass",
+        "modes": [
+          {
+            "mode": "normal",
+            "tracks_drawn_while_font_request_independent": 388,
+            "font_error_delay_ms": null,
+            "retry_recovers_same_canvas_and_url": false,
+            "performance_guard_rejects_font_error": false
+          },
+          {
+            "mode": "http503",
+            "tracks_drawn_while_font_request_independent": 137,
+            "font_error_delay_ms": 906,
+            "retry_recovers_same_canvas_and_url": true,
+            "performance_guard_rejects_font_error": true
+          },
+          {
+            "mode": "corrupt",
+            "tracks_drawn_while_font_request_independent": 527,
+            "font_error_delay_ms": 918,
+            "retry_recovers_same_canvas_and_url": true,
+            "performance_guard_rejects_font_error": true
+          },
+          {
+            "mode": "headers-held",
+            "tracks_drawn_while_font_request_independent": 778,
+            "font_error_delay_ms": 15258,
+            "retry_recovers_same_canvas_and_url": true,
+            "performance_guard_rejects_font_error": true
+          }
+        ]
+      }
+    },
+    "snapshot_checks": [
+      "scripts/verify_snapshot.py：目录中的五个快照各 6 项通过",
+      "scripts/verify_mvt_integrity.mjs（1577 个瓦片全量解码，failures 为空）",
+      "scripts/verify_client_contracts.mjs（261 个文件；同一契约在沈阳快照上同样通过）",
+      "scripts/verify_route_identity.py（8 条线路 / 20 个方向）",
+      "scripts/verify_real_relations.py：沈阳当前快照与 shenyang-mvp-20261023 的已发布关系身份各通过（各 24 个方向、12 个父线路），源 XML 为旧目录的 shenyang-geofabrik-masters-20261020.osm（只读）"
+    ],
+    "browser": {
+      "chrome": "158.0.8127.36",
+      "page_errors": [],
+      "external_requests": [],
+      "environment": "最终构建由 scripts/serve_probe.py --port 8766 提供（目录默认配置）；脚本串行运行，一次只开一个浏览器；记录保存在本机被忽略目录 data/manifests/local/dalian-survey-20261123/full/。",
+      "region_switch": {
+        "script": "scripts/verify_region_switch.cjs",
+        "checks": 17,
+        "result": "pass",
+        "items": [
+          "default region loads from the registry; the header switch lists exactly the regions the directory has data for",
+          "a region switch keeps filters and the query, clears the selection, moves to the region default view, keeps the map instance and basemap preference, and never reads the previous region afterwards (81 track features drawn at the default view, all from dalian-mvp-20261123; 778 from shenyang-mvp-geometry-20261027 before)",
+          "after a switch the search, header, caption, headline, placeholder, canvas name, version panel and about text all describe the new region only",
+          "\"回到试验区\" restores the shown region default view and leaves its filters unchanged",
+          "a share link carries the region, version, filters, query, camera and selected record, and reopens them in a new page",
+          "a link naming only a region opens that region current version from the directory",
+          "an unpublished region is announced as having no data and the default region opens in its own default view; it is not shown as an empty map",
+          "a link whose region and version disagree shows the region of the version and says so; the two are never mixed",
+          "browser back and forward cross regions in place and restore the region, version, query and selection of each entry",
+          "the text list reads the version of the address: a Dalian station is listed in Dalian and absent from the Shenyang list",
+          "a retained line filter names a line the current region does not have and says so; the same filter applies once its region is shown",
+          "a failed region switch keeps the region, address, camera, filters, query and selection, is announced with retry and dismiss controls, and the retry completes",
+          "a region switch can be cancelled while it loads; a delayed response afterwards does not change the region",
+          "a directory failure leaves the map usable with the region named as plain text; retrying the directory brings back the switch",
+          "a link naming a region without a version falls back to the default region and says the directory was unavailable, rather than guessing a version",
+          "at 390x844 the header switch is a 44px target, the header does not overflow, and the bottom sheet and list follow the region",
+          "zoomed in on 大连北站 in 大连试验区, \"站场与设施\" draws 59 facility objects (69 rendered features: buffer_stop, platform, switch) once it is on and none before or after, all from dalian-mvp-20261123"
+        ],
+        "facility_layer_check": "本轮新增：从大连快照的车站索引读出大连北站坐标并定位，z15.5 下“站场与设施”关闭时没有设施被绘制，打开后点（道岔）与面（站台）都有绘制，全部属于大连快照，关闭后再次为零；全程关闭底图。"
+      },
+      "existing_regressions": {
+        "scope": "scripts/verify_*.cjs 共 63 个。排除单独运行的 verify_region_switch、verify_basemap_zoom、verify_lan_details，以及按交接要求不在本轮范围的 verify_client、verify_preview、verify_installed_browsers、verify_license_inventory；其余 56 个全部在最终构建上运行（55 个浏览器脚本串行运行，verify_browser_target_callbacks 不开浏览器）。",
+        "passing": 53,
+        "browser_scripts": 55,
+        "passing_first_run": 48,
+        "passing_scripts": [
+          "verify_about_data",
+          "verify_accessibility",
+          "verify_accessibility_tree",
+          "verify_auxiliary_transport",
+          "verify_browser_zoom",
+          "verify_catalog",
+          "verify_catalog_boundary",
+          "verify_catalog_races",
+          "verify_catalog_timeouts",
+          "verify_context_loss",
+          "verify_contrast",
+          "verify_detail_fields",
+          "verify_empty_view",
+          "verify_field_contrast",
+          "verify_json_error_body",
+          "verify_label_buffer_positions",
+          "verify_label_candidate_cache",
+          "verify_label_priority",
+          "verify_line_label_integration",
+          "verify_list_detail_scroll",
+          "verify_list_lines_transport",
+          "verify_list_share_state",
+          "verify_list_timeouts",
+          "verify_map_feedback",
+          "verify_map_font",
+          "verify_map_hover",
+          "verify_map_keyboard_motion",
+          "verify_mvp_work",
+          "verify_name_readiness_guard",
+          "verify_notice_actions",
+          "verify_notice_zoom",
+          "verify_other_grade",
+          "verify_pan_drag",
+          "verify_pan_updates",
+          "verify_panel_keyboard",
+          "verify_react_details",
+          "verify_react_filters",
+          "verify_react_search",
+          "verify_react_share",
+          "verify_resource_recovery",
+          "verify_responsive_layout",
+          "verify_security_browser",
+          "verify_share",
+          "verify_shared_rules_browser",
+          "verify_snapshot_promotion",
+          "verify_station_labels",
+          "verify_station_source",
+          "verify_style_layer_guard",
+          "verify_tile_timeouts",
+          "verify_touch_targets",
+          "verify_typed_boundary",
+          "verify_urban_boundary"
+        ],
+        "passing_after_own_snapshot_assumption_was_met": {
+          "verify_catalog": "MVP_CURRENT_SNAPSHOT=shenyang-mvp-geometry-20261027，预览 http://127.0.0.1:8766；通过，10.8 秒",
+          "verify_map_feedback": "预览 http://127.0.0.1:8768（以 --data-dir 启动，当前版本为 shenyang-mvp-20261023）；通过，7.1 秒",
+          "verify_mvp_work": "MVP_DATA_DIR=data/processed/shenyang-mvp-geometry-20261027，预览 http://127.0.0.1:8766；通过，8.2 秒",
+          "verify_react_details": "MVP_DATA_DIR=data/processed/shenyang-mvp-geometry-20261027，预览 http://127.0.0.1:8766；通过，7.6 秒"
+        },
+        "hard_coded_version_but_open_it_explicitly": [
+          "verify_about_data",
+          "verify_catalog_races"
+        ],
+        "not_a_browser_script": {
+          "verify_browser_target_callbacks": "3 项通过（node 回调适配器，不开浏览器、不用预览）"
+        },
+        "failing": [
+          {
+            "script": "verify_real_routes",
+            "result": "fail",
+            "final_build": "0/1 次通过",
+            "baseline_bae01c2": "0/1 次通过",
+            "first_run": "首跑在第 14 行因脚本假定的当前版本不符而失败；预览 http://127.0.0.1:8768（以 --data-dir 启动，当前版本为 shenyang-mvp-20261023） 后原样重跑，越过该行，停在下面的失败点。",
+            "point": "第 35 行：切到 shenyang-mvp-progress-20261022 后点击“恢复全部线路”。页面上有两个同名按钮（#line-panel 与 #map-notice），getByRole 触发严格模式冲突。",
+            "cause": "两个按钮在 bae01c2 的源码里同时存在，基线构建同样在此处失败；本轮没有修改产品或脚本。",
+            "not_reached": "该行之后的检查（关于页的来源与修改集披露等）没有执行。"
+          },
+          {
+            "script": "verify_line_label_levels",
+            "result": "fail",
+            "final_build": "0/3 次通过",
+            "baseline_bae01c2": "0/3 次通过",
+            "point": "第 46 行：z15.5 下找不到可点击的次要线路名称。",
+            "cause": "脚本到 tracks 数据源的瓦片里找 minor-line-names 桶，而名称图层挂在独立的 rail-line-labels 数据源上，tracks 的瓦片里只有轨道桶。产品实际绘制了名称：同一视野 queryRenderedFeatures 返回 6 个次要线路名称。基线构建同样失败；本轮没有修改脚本。",
+            "not_reached": "“点击次要线路名称打开来源记录”在两个构建上都没有被这个脚本验证；verify_line_label_integration 验证了主干线路名称与短字幕的点击。"
+          },
+          {
+            "script": "verify_product_label_spacing",
+            "result": "intermittent",
+            "final_build": "11/13 次通过",
+            "baseline_bae01c2": "10/13 次通过",
+            "point": "assert(anchors.length>0)：只改地址 hash 的后续场景在相机跳转后、新视野的标注排布完成前读取，得到零个标注。两个构建合计 5 次失败停下的场景：overview-z10-5 4 次，tram 1 次。",
+            "cause": "脚本等待条件的时序问题，基线构建同样偶发；本轮没有修改脚本。",
+            "when_passing": [
+              {
+                "scene": "overview-z10",
+                "anchors": 45,
+                "pairs": 0,
+                "minimum": null
+              },
+              {
+                "scene": "overview-z10-5",
+                "anchors": 51,
+                "pairs": 0,
+                "minimum": null
+              },
+              {
+                "scene": "yard",
+                "anchors": 13,
+                "pairs": 11,
+                "minimum": 308.3135199153915
+              },
+              {
+                "scene": "tram",
+                "anchors": 6,
+                "pairs": 2,
+                "minimum": 323.1828043028214
+              }
+            ]
+          }
+        ],
+        "known_intermittent_passing": [
+          {
+            "script": "verify_empty_view",
+            "final_build": "4/4 次通过",
+            "known_issue": "已知偶发：瓦片重试成功后“没有可见要素”的提示偶尔不重新出现。本轮在最终构建上均通过，未复现；控制器未修改。"
+          }
+        ],
+        "not_run": {
+          "scripts": [
+            "verify_client",
+            "verify_preview",
+            "verify_installed_browsers",
+            "verify_license_inventory"
+          ],
+          "reason": "按交接要求排除在本轮全量回归之外，未作任何结论。"
+        },
+        "baseline_comparison": {
+          "commit": "bae01c2",
+          "build": "旧目录 2026-11-02 的构建 index-HsjbKxI7.js（旧目录 HEAD 为 bae01c2）。dist 只读复制到仓库外的临时目录，连同 git archive bae01c2 导出的 scripts 与 config 一起由基线版 serve_probe.py 提供；数据是本目录 data/processed 里的同一批快照；服务只监听回环地址，比较后停止。",
+          "compared": [
+            "verify_real_routes",
+            "verify_line_label_levels",
+            "verify_product_label_spacing"
+          ]
+        },
+        "driver_adjustments": [
+          "verify_field_contrast / verify_touch_targets / verify_browser_zoom / verify_auxiliary_transport：被测快照可由 MVP_CURRENT_SNAPSHOT 指定，默认值与断言不变。",
+          "verify_field_contrast：焦点轮廓从控件的边框容器读取。",
+          "verify_empty_view：两处跨往返的固定时序等待改为等待实际事件（车站索引请求进入拦截、缓动的 movestart），断言不变。",
+          "test_geometry_integrity / test_mvt_publication_gate：夹具目录名改为以地区开头，以符合新的快照命名规则。",
+          "verify_region_switch.cjs：新增设施图层一节，原有 16 项未改。",
+          "verify_catalog、verify_react_details、verify_mvp_work、verify_map_feedback、verify_real_routes 本身未改：前三个用脚本已有的环境变量指定当前版本，后两个没有参数，用 --data-dir 让预览的当前版本为 shenyang-mvp-20261023 后原样运行；verify_real_routes 这样重跑后仍然失败，见 failing。"
+        ]
+      },
+      "basemap_zoom": {
+        "script": "scripts/verify_basemap_zoom.cjs",
+        "result": "pass",
+        "preview": "http://127.0.0.1:8767/（临时代理服务）",
+        "fixture_requests_ok": 46,
+        "fixture_requests_failed_injected": 19,
+        "errors": [],
+        "checks": [
+          "zoom out: upstream failure then automatic recovery on next zoom",
+          "zoom in: upstream failure then automatic recovery on next zoom"
+        ]
+      },
+      "lan_details": {
+        "script": "scripts/verify_lan_details.cjs",
+        "result": "pass",
+        "preview": "http://172.22.103.50:8767（真实局域网 HTTP 来源，EXPECT_BASEMAP_PROXY=1）",
+        "context": {
+          "secure": false,
+          "subtle": "undefined"
+        },
+        "checks": [
+          "LAN HTTP is genuinely insecure and SubtleCrypto is absent",
+          "railway search result opens full detail",
+          "text explorer opens the same record and shard",
+          "basemap loads from same-origin raster fixtures, no direct upstream browser requests"
+        ],
+        "errors": []
+      },
+      "public_basemap": "两项的全部栅格请求都由脚本在页面内拦截为本地夹具；没有任何瓦片请求到达代理（底图缓存目录前后均为 0 个文件），未下载公共底图。8767 监听局域网，两项跑完后立即停止并确认不再监听。"
+    }
+  },
+  "toolchain": {
+    "os": "Windows 11",
+    "python": "3.12.14",
+    "pyosmium": "4.3.0",
+    "node": "v24.15.0",
+    "npm": "11.12.1",
+    "rustc": "rustc 1.90.0 (1159e78c4 2025-09-14)",
+    "cargo": "cargo 1.90.0 (840b83a10 2025-07-30)",
+    "maplibre_gl": "6.15.0",
+    "geojson_vt": "6.3.0",
+    "vt_pbf": "4.3.2"
+  },
+  "not_done": [
+    "大连数据未经独立人工审核（需求 §6 的两名审核者、抽查包）。",
+    "需求 §2 规定其他区域“通过数据验收后加入区域目录”；大连以本机试用为目的进入目录，是否允许先于验收列出需负责人决定。",
+    "未重测首屏、筛选、平移等性能指标；N01–N04、N09 的真实设备验收不变。",
+    "大连地铁线路色未取得运营方线路图核对；与 OSM colour 标注逐线不同。",
+    "有轨电车 201/202 的方向关系在源数据中没有 name 标签，线路名取自父线路关系；没有 colour 标签，使用制式色。",
+    "716 段已发布城市轨道中 409 段在源数据中不属于任何线路关系，按制式回退色显示；1 号线、5 号线在源线路关系中分别只有 2 段、3 段轨道。成员齐备不等于运营线路完整。",
+    "13 个车站/站区记录因缺少制式标签及“运营方 + 车站编码”证据，保留为“制式未标注”。",
+    "三个既有回归脚本在最终构建上没有通过，且在 bae01c2 基线构建上同样失败或偶发：verify_real_routes、verify_line_label_levels 稳定失败，verify_product_label_spacing 偶发。它们未覆盖到的行为（见 verification.browser.existing_regressions）本轮没有另外验证，脚本也没有修改。",
+    "verify_client、verify_preview、verify_installed_browsers、verify_license_inventory 按交接要求未运行。"
+  ]
+}

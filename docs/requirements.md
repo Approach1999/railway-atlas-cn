@@ -20,6 +20,8 @@ Railway Atlas CN 是面向中国铁路基础设施的交互式地理地图。
 
 全国是长期空间范围，不以东北命名或绑定目录结构。v1 的首个交付数据区为沈阳试验矩形，
 不是沈阳市行政边界；其他区域在通过数据验收后加入区域目录。
+2026-11-24：大连试验区作为第二个本机试用地区接入，尚未通过数据验收；是否允许试用地区先于验收列出的待决事项
+记录在[地区覆盖与切换](regions.md)。本条不改变任何需求项。
 全国阶段需要全国数据实测，不能通过拼接城市截图宣布完成。
 
 v1 采用扩展设施集：站台、stop_position、地铁出入口、信号、道岔、平交道口、车挡、
@@ -243,6 +245,7 @@ ID 是本次快照证据，未来重建必须重新核验，不能假设永久�
 
 | 版本 | 日期 | 变更 | 受影响文档 |
 | --- | --- | --- | --- |
+| v1.3 补充 | 2026-11-24 | 接入大连为第二个本机试验地区，实现 R01/R14 的地区切换并去除前端与数据脚本中的城市硬编码；未新增、缩减或放宽任何需求项。大连尚未通过数据验收，是否可先于验收进入目录仍待负责人决定 | regions/line-colors/data-sources/snapshots/mvt-integrity/trial-guide/AI-HANDOFF |
 | v1.3 补充 | 2026-10-22 | 新增 R19：用户要求可隐藏底图、记忆选择；本机接入淡化 OSM 底图与 React/TS 入口；保留铁路控制器，未完成全部 P2 | design/architecture/implementation-plan/data-sources/basemap-preview |
 | v1.3 | 2026-10-22 | 新增 R17/R18：区域级线路名/站名与避让、分类优先级及冲突样例、常用预设/撤销/临时显示、触屏命中与面板避让；统一铁路术语；补充易用性任务验收 | design/architecture/implementation-plan/line-colors/usability-review |
 | v1.2 | 2026-10-22 | 新增 R16、D10、§3.3；明确高速/普速/支线/专用线配色、地铁线路色、共线回退、配色来源与置信度、配色配置与校验；新增 `config/line-colors.json`、`scripts/validate_line_colors.py`、线路配色指南 | design/architecture/implementation-plan/data-pipeline/data-sources/line-colors/config/scripts |

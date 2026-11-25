@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "palette_version": "2026-10-22.1",
-  "updated_at": "2026-10-22",
+  "palette_version": "2026-11-23.1",
+  "updated_at": "2026-11-23",
   "background": "#F5F7F4",
   "notes": "线路色是显示配置，不写入瓦片。官方色优先；无官方值时使用运营方线路图取色或人工覆盖；仍无值则回退到制式/等级色。",
   "line_color_policy": {
@@ -187,6 +187,49 @@
         "10": {
           "name": "10号线",
           "color": "#8CBB48",
+          "status": "operating"
+        }
+      }
+    },
+    "dalian-metro": {
+      "name": "大连地铁",
+      "region": "dalian",
+      "source": "人工配置：取自中文维基百科 Module:Adjacent stations/大连地铁 的线路色值；该模块未注明色值来源，未核对为运营方或官方公布值",
+      "source_url": "https://zh.wikipedia.org/wiki/Module:Adjacent_stations/大连地铁",
+      "verified_at": "2026-11-23",
+      "confidence": "manual",
+      "notes": "线路身份按源关系的 network=大连地铁 与 ref 匹配，不按位置或名称推断。OSM colour 标注与本配置不一致：1号线 #42B227（仅一个方向标注）、2号线 #0066A1、3号线 #DD00BB、5号线 #E60012、12号线 #523E98、13号线 #FFE400；原值保留在源标签中。3号线支线在源数据中与主线同为 ref=3。4号线、7号线在 2026-10-20 源数据中没有 route 关系，未配置。status 取自 status_source，不是运营方确认。",
+      "status_source": "中文维基百科“大连地铁”条目的运营线路表（2026-11-23 核对），非运营方确认",
+      "ref_aliases": {},
+      "lines": {
+        "1": {
+          "name": "1号线",
+          "color": "#43B02A",
+          "status": "operating"
+        },
+        "2": {
+          "name": "2号线",
+          "color": "#009CDD",
+          "status": "operating"
+        },
+        "3": {
+          "name": "3号线",
+          "color": "#D60078",
+          "status": "operating"
+        },
+        "5": {
+          "name": "5号线",
+          "color": "#DA291C",
+          "status": "operating"
+        },
+        "12": {
+          "name": "12号线",
+          "color": "#4C4298",
+          "status": "operating"
+        },
+        "13": {
+          "name": "13号线",
+          "color": "#F0C600",
           "status": "operating"
         }
       }

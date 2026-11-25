@@ -14,7 +14,8 @@ const current=process.env.MVP_CURRENT_SNAPSHOT||'shenyang-mvp-20261023',old='she
   const ready=p=>p.locator('#status').filter({hasText:'铁路地图已就绪'}).waitFor();
   try{
     const p=await page();await p.goto(base);await ready(p);await p.locator('#dataset-picker summary').click();
-    assert.equal(await p.locator('#dataset-region option').count(),1);
+    // Every region the directory has data for is offered, and nothing else.
+    assert.equal(await p.locator('#dataset-region option').count(),JSON.parse(await fs.readFile('config/catalog.json','utf8')).regions.length);
     const published=JSON.parse(await fs.readFile('config/catalog.json','utf8')).regions[0].snapshots;
     assert.deepEqual((await p.locator('#dataset-version option').evaluateAll(options=>options.map(option=>option.value))).sort(),[...published].sort());
     await p.waitForLoadState('networkidle');await p.waitForTimeout(700);await p.screenshot({path:path.join(output,'catalog.png')});

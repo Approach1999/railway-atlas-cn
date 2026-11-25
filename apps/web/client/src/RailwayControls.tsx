@@ -2,11 +2,11 @@ import {badgeTextColor} from './contrast';
 import {useEffect,useState,useSyncExternalStore} from 'react';
 import {CLASS_LABELS,MODE_LABELS,STATUS_LABELS,STATUS_STYLES,PRESET_LABELS,FILTER_MODES,FILTER_RAIL_CLASSES,FILTER_STATES,expandedState} from '../../shared/model.mjs';
 import type {FilterAction,FilterOption,RailwayControlsStore} from './railway-controls';
-interface Props {store:RailwayControlsStore;onAction:(action:FilterAction)=>void}
+interface Props {store:RailwayControlsStore;city:string;onAction:(action:FilterAction)=>void}
 const options:Array<[string,FilterOption,string]>=[['show-history','history','包含建设、规划与历史标注'],['show-sidings','sidings','放大后显示支线与站场线'],['show-lines','lineNames','线路名称'],['show-stations','stationNames','车站名称'],['show-facilities','facilities','站场与设施（放大后显示）']];
 const urbanMode:Record<string,string>={metro:'subway',light_rail:'light_rail',tram:'tram'};
 const confidenceLabels:Record<string,string>={'operator-map':'运营方线路图取色',official:'官方公布值',manual:'人工配置',osm:'OSM 源标注',fallback:'制式回退色'};
-export default function RailwayControls({store,onAction}:Props){
+export default function RailwayControls({store,city,onAction}:Props){
   const {session,data}=useSyncExternalStore(store.subscribe,store.getSnapshot),{filters,previous,isolatedLine}=session;
   const active=expandedState(filters),urban=active.types.some(mode=>['subway','light_rail','tram'].includes(mode))||Boolean(isolatedLine);
   const [retainedLegend,setRetainedLegend]=useState<string[]>([]),[retainedStates,setRetainedStates]=useState<string[]>([]);
@@ -16,7 +16,7 @@ export default function RailwayControls({store,onAction}:Props){
   const gradeRestricted=rail&&FILTER_RAIL_CLASSES.some(key=>!drawn.classes.includes(key));
   const legendClasses=[...new Set([...(rail?drawn.classes.filter(key=>FILTER_RAIL_CLASSES.includes(key)&&(!['branch','industrial'].includes(key)||filters.sidings)):[]),...drawn.types.filter(mode=>['subway','light_rail','tram'].includes(mode)).map(mode=>mode==='subway'?'metro':mode),...retainedLegend])];
   const groups=new Map<string,{name:string;lines:typeof data.lines}>();
-  for(const line of data.lines){const key=line.mode+'/'+(line.operator_key||'unconfirmed'),operator=line.operator_key?data.palette.operators[line.operator_key]?.name:undefined;if(!groups.has(key))groups.set(key,{name:'沈阳 · '+(operator||MODE_LABELS[line.mode]+' · '+(line.operator_key?'运营方名称暂不可用':'运营方未确认')),lines:[]});groups.get(key)?.lines.push(line);}
+  for(const line of data.lines){const key=line.mode+'/'+(line.operator_key||'unconfirmed'),operator=line.operator_key?data.palette.operators[line.operator_key]?.name:undefined;if(!groups.has(key))groups.set(key,{name:city+' · '+(operator||MODE_LABELS[line.mode]+' · '+(line.operator_key?'运营方名称暂不可用':'运营方未确认')),lines:[]});groups.get(key)?.lines.push(line);}
   const facilityHint=!filters.facilities?'':!data.ready?'数据加载后显示设施覆盖情况':data.schemaVersion<2?'此快照尚未发布设施图层':data.zoom<14?'已开启，放大到站场层级后显示':'设施来自 OSM 标注，缺失关联保持未确认。';
   return <>
     <div className="section-heading"><h2>看什么</h2><button id="undo" className="text-button" hidden={!previous} disabled={!data.ready} onClick={()=>onAction({type:'undo'})}>撤销</button></div>

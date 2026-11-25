@@ -1,7 +1,8 @@
-"""Bounded regional PBF -> complete-way/member Shenyang XML with provenance.
+"""Bounded regional PBF -> complete-way/member region XML with provenance.
 
 Three streaming passes preserve source identities and object metadata. The input
 is a dated provincial file, not a country/planet extract. No proximity merging.
+The rectangle and its description come from the region named by --region.
 """
 import argparse
 from datetime import datetime, timezone
@@ -10,7 +11,8 @@ import json
 from pathlib import Path
 import time
 
-ROOT = Path(__file__).resolve().parents[1]
+from regions import extraction_config, region_argument
+
 LIFECYCLES = ["abandoned", "disused", "razed", "construction", "proposed"]
 AREA_KINDS = {"station", "halt", "platform", "depot", "yard", "works", "maintenance", "water_tower", "roundhouse"}
 URBAN = {"subway", "light_rail", "tram"}
@@ -61,7 +63,12 @@ def main():
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--source-url", required=True)
     parser.add_argument("--expected-md5", required=True)
+    region_argument(parser)
     args = parser.parse_args()
+    try:
+        config = extraction_config(args.region)
+    except (OSError, ValueError) as error:
+        parser.error(str(error))
     target, source = args.output.resolve(), args.input.resolve(strict=True)
     provenance = target.with_suffix(".source.json")
     partial = target.with_suffix(target.suffix + ".building.osm")
@@ -71,7 +78,6 @@ def main():
     if hashlib.md5(content).hexdigest() != args.expected_md5: parser.error("Input does not match provider MD5")
     source_hash = hashlib.sha256(content).hexdigest()
     del content
-    config = json.loads((ROOT / "config/shenyang.json").read_text(encoding="utf-8"))
     bbox = config["bbox"]
     reader = osmium.io.Reader(str(source))
     header = reader.header()
@@ -182,7 +188,8 @@ def main():
         "sha256": hashlib.sha256(partial.read_bytes()).hexdigest(), "processing_seconds": round(time.perf_counter()-begin, 3),
         "license": "ODbL 1.0", "attribution": "OpenStreetMap contributors; regional extract supplied by Geofabrik",
         "metadata_note": "Geofabrik public extract omits contributor identity and changeset IDs; absent fields stay unlabelled",
-        "scope": "Bounded Shenyang rectangle, not administrative boundary; full selected source objects may extend beyond it"}
+        "region": args.region, "region_description": config["description"],
+        "scope": f"Bounded {args.region.capitalize()} rectangle, not administrative boundary; full selected source objects may extend beyond it"}
     with provenance.open("x", encoding="utf-8") as stream: json.dump(metadata, stream, ensure_ascii=False, indent=2)
     partial.rename(target)
     print(json.dumps(metadata, ensure_ascii=False))

@@ -15,11 +15,12 @@ export function MapStatus({store,onCurrentVersion}:{store?:MapFeedbackStore;onCu
   return <><p id="status" role="status" aria-live="polite" tabIndex={-1}>{state.status}</p>
     {state.currentVersionRecovery&&<button data-latest-recovery="true" onClick={onCurrentVersion}>打开当前版本</button>}</>;
 }
-export function MapNotice({store,onAction}:{store?:MapFeedbackStore;onAction?:(action:MapNoticeAction)=>void}){
-  const {notice,noticeAction}=useFeedback(store);
-  const actionLabels:Record<MapNoticeAction,string>={'reset-filters':'恢复默认图层','all-lines':'恢复全部线路',home:'回到试验区'};
+export function MapNotice({store,onAction,onDismiss}:{store?:MapFeedbackStore;onAction?:(action:MapNoticeAction)=>void;onDismiss?:()=>void}){
+  const {notice,noticeAction,noticeDismissible}=useFeedback(store);
+  const actionLabels:Record<MapNoticeAction,string>={'reset-filters':'恢复默认图层','all-lines':'恢复全部线路',home:'回到试验区','cancel-region-switch':'取消切换地区','retry-region-switch':'重试切换地区'};
   return <div id="map-notice" role="status" hidden={!notice}>{notice}
     {notice&&noticeAction&&onAction&&<button onClick={()=>onAction(noticeAction)}>{actionLabels[noticeAction]}</button>}
+    {notice&&noticeDismissible&&onDismiss&&<button onClick={onDismiss}>关闭提示</button>}
   </div>;
 }
 export function DetailMapNotice({store}:{store:MapFeedbackStore}){

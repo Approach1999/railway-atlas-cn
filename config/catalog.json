@@ -1,13 +1,28 @@
 {
   "schema_version": 1,
+  "default_region": "shenyang",
   "regions": [
     {
       "id": "shenyang",
       "name": "沈阳试验区",
+      "city": "沈阳",
+      "caption": "SHENYANG / 01",
+      "description": "沈阳城区及周边试验矩形；非沈阳市行政边界。",
       "default_view": {
         "longitude": 123.42,
         "latitude": 41.8,
         "zoom": 10.5
+      },
+      "ui": {
+        "headline": "看见沈阳。",
+        "browse_start": "试着从沈阳北站开始",
+        "search_placeholder": "例如：沈阳北站",
+        "search_example": "沈阳",
+        "about_scope": "这里展示沈阳城区及周边的 OSM 样本，不是沈阳市行政边界，也不是完整全国地图。"
+      },
+      "pipeline": {
+        "region_config": "config/shenyang.json",
+        "preview_config": "config/map-preview.json"
       },
       "snapshots": [
         "shenyang-mvp-geometry-20261027",
@@ -15,7 +30,34 @@
         "shenyang-mvp-accessible-20261022",
         "shenyang-mvp-progress-20261022"
       ]
+    },
+    {
+      "id": "dalian",
+      "name": "大连试验区",
+      "city": "大连",
+      "caption": "DALIAN / 02",
+      "description": "大连城区、金州、开发区、旅顺口及普兰店南部试验矩形；非大连市行政边界。",
+      "default_view": {
+        "longitude": 121.615,
+        "latitude": 38.969,
+        "zoom": 10.5
+      },
+      "default_view_note": "取大连站 node/7913022526 与大连北站 node/8083924038 源坐标的中点，缩放与沈阳默认视野一致；与沈阳一样对准主要车站所在的主城区，而不是试验矩形中点。",
+      "ui": {
+        "headline": "看见大连。",
+        "browse_start": "试着从大连北站开始",
+        "search_placeholder": "例如：大连北站",
+        "search_example": "大连",
+        "about_scope": "这里展示大连城区及周边的 OSM 样本，不是大连市行政边界，也不是完整全国地图。"
+      },
+      "pipeline": {
+        "region_config": "config/dalian.json",
+        "preview_config": "config/map-preview-dalian.json"
+      },
+      "snapshots": [
+        "dalian-mvp-20261123"
+      ]
     }
   ],
-  "note": "仅列出明确提供且文件齐备的本机快照；目录不表示已通过 MVP 或公开发布验收。"
+  "note": "仅列出明确提供且文件齐备的本机快照；目录不表示已通过 MVP、区域数据验收或公开发布验收。各区域均为试验矩形，不是行政边界；区域之间尚未连通。"
 }

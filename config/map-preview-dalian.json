@@ -1,0 +1,151 @@
+{
+  "version": "dalian-preview-1",
+  "note": "大连试验区的概览标注名单与制式核对覆盖。名单用于标注排版，不代表客流或行政站级；覆盖仅依据源对象自身标签，构建时核对 expected_ref，变化即中止。依据 data/raw/liaoning-261020.osm.pbf（源时间 2026-10-20T20:23:47Z）的只读调查，2026-11-23 生成；未经独立人工审核。",
+  "source_survey": {
+    "input": "data/raw/liaoning-261020.osm.pbf",
+    "source_time": "2026-10-20T20:23:47Z",
+    "bbox": [
+      121.1,
+      38.74,
+      122.05,
+      39.47
+    ],
+    "station_nodes_in_bbox": 199,
+    "rule": "railway=station 且无 train=yes / station= 制式标签；operator 以“中国铁路沈阳局集团有限公司”开头且 railway:ref 为单值"
+  },
+  "major_station_keys": [
+    "node/7913022526",
+    "node/8083924038",
+    "node/1659133904",
+    "node/2349477556",
+    "node/12330990405"
+  ],
+  "major_station_note": "大连、大连北、金州、旅顺、普兰店：覆盖矩形内主要尽端/枢纽站的编辑选择，仅用于低缩放标注。",
+  "station_mode_overrides": {
+    "node/12330990405": {
+      "mode": "rail",
+      "expected_ref": "53618",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司 大连车务段、railway:ref=53618；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/12334978425": {
+      "mode": "rail",
+      "expected_ref": "54362",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司 大连车务段、railway:ref=54362；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/12335046085": {
+      "mode": "rail",
+      "expected_ref": "54374",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司 大连车务段、railway:ref=54374；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/1658989381": {
+      "mode": "rail",
+      "expected_ref": "53609",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司 大连车务段、railway:ref=53609；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/1659133902": {
+      "mode": "rail",
+      "expected_ref": "54248",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司 大连车务段、railway:ref=54248；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/1659133903": {
+      "mode": "rail",
+      "expected_ref": "54360",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司 大连车务段、railway:ref=54360；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/1659133904": {
+      "mode": "rail",
+      "expected_ref": "53591",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司 金州站、railway:ref=53591；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/1659133906": {
+      "mode": "rail",
+      "expected_ref": "53564",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司、railway:ref=53564；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/1659133907": {
+      "mode": "rail",
+      "expected_ref": "53552",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司 大连车务段、railway:ref=53552；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/1659133908": {
+      "mode": "rail",
+      "expected_ref": "53555",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司、railway:ref=53555；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/2349477555": {
+      "mode": "rail",
+      "expected_ref": "54263",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司、railway:ref=54263；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/2349477556": {
+      "mode": "rail",
+      "expected_ref": "54275",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司、railway:ref=54275；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/2832751253": {
+      "mode": "rail",
+      "expected_ref": "53517",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司 大连车务段、railway:ref=53517；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/582813068": {
+      "mode": "rail",
+      "expected_ref": "54257",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司 大连车务段、railway:ref=54257；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/7913022526": {
+      "mode": "rail",
+      "expected_ref": "53522",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司 大连站、railway:ref=53522；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/8083924038": {
+      "mode": "rail",
+      "expected_ref": "53520",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司 大连站、railway:ref=53520；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/8756066323": {
+      "mode": "rail",
+      "expected_ref": "54167",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司 大连车务段、railway:ref=54167；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/8756066325": {
+      "mode": "rail",
+      "expected_ref": "54440",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司 大连车务段、railway:ref=54440；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/8756066326": {
+      "mode": "rail",
+      "expected_ref": "54441",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司 大连车务段、railway:ref=54441；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/8756066327": {
+      "mode": "rail",
+      "expected_ref": "54443",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司 大连车务段、railway:ref=54443；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/8756066329": {
+      "mode": "rail",
+      "expected_ref": "53606",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司 大连车务段、railway:ref=53606；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/8756070733": {
+      "mode": "rail",
+      "expected_ref": "53615",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司 大连车务段、railway:ref=53615；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/9166844947": {
+      "mode": "rail",
+      "expected_ref": "54503",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司 大连车务段、railway:ref=54503；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/9166844976": {
+      "mode": "rail",
+      "expected_ref": "54479",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司 大连车务段、railway:ref=54479；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    },
+    "node/9171411673": {
+      "mode": "rail",
+      "expected_ref": "54266",
+      "evidence": "源标签 railway=station、operator=中国铁路沈阳局集团有限公司 大连车务段、railway:ref=54266；未标注 train=yes，按“国铁运营方 + 车站编码”规则归为铁路，未经独立人工核验"
+    }
+  }
+}

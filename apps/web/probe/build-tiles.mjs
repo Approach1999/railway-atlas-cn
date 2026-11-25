@@ -46,6 +46,6 @@ for(let z=8;z<=maxZoom;z++){
     }
   }
 }
-const report={builder:'geojson-vt 6.3.0 / vt-pbf 4.3.2 / quantized-geometry-v1',minzoom:8,maxzoom:maxZoom,source_layers:Object.keys(groups),bounds:[west,south,east,north],tile_count:files.length,total_bytes:files.reduce((s,f)=>s+f.bytes,0),normalization:{version:'quantized-geometry-v1',...normalization,events:normalizationEvents},files};
+const report={builder:'geojson-vt 6.3.0 / vt-pbf 4.3.2 / quantized-geometry-v2',minzoom:8,maxzoom:maxZoom,source_layers:Object.keys(groups),bounds:[west,south,east,north],tile_count:files.length,total_bytes:files.reduce((s,f)=>s+f.bytes,0),normalization:{version:'quantized-geometry-v2',...normalization,events:normalizationEvents},files};
 await fs.writeFile(path.join(output,'build.json'),JSON.stringify(report));
 console.log(`${files.length} MVT tiles; ${report.total_bytes} bytes`);

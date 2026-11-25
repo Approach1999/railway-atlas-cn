@@ -88,3 +88,12 @@ main{min-height:0}
   #map-notice button{flex:0 0 auto;margin-top:0}
   .atlas-panel-collapsed #map-notice{bottom:48px}
 }
+
+/* Region block in the header. With more than one region the name is the switch; the source date
+   stays on the second line. The name line keeps a 44px target with or without the control. */
+.region-switch{position:relative}
+.region-name{line-height:44px}
+.region-switch select{appearance:none;-webkit-appearance:none;border:0;background:transparent;font:inherit;font-weight:600;color:inherit;padding:0 18px 0 0;margin:0;min-height:44px;max-width:100%;cursor:pointer;border-radius:8px;text-overflow:ellipsis}
+.region-switch select:focus-visible{outline:3px solid #287d91;outline-offset:2px}
+.region-switch::after{content:"▾";position:absolute;right:0;top:22px;transform:translateY(-50%);font-size:11px;color:var(--muted);pointer-events:none}
+@media(any-pointer:coarse){.region-switch select{min-width:44px}}

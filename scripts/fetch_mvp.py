@@ -15,6 +15,8 @@ import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 
+from regions import extraction_config, region_argument
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -37,18 +39,23 @@ def query_for(bbox, date=None):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=ROOT / "data/raw/shenyang-mvp.osm")
+    parser.add_argument("--output", type=Path, help="Defaults to data/raw/<region>-mvp.osm")
     parser.add_argument("--endpoint", default="https://overpass-api.de/api/interpreter")
     parser.add_argument("--date")
     parser.add_argument("--method", choices=["GET", "POST"], default="GET")
     parser.add_argument("--transport", choices=["urllib", "curl"], default="urllib")
+    region_argument(parser)
     args = parser.parse_args()
+    try:
+        config = extraction_config(args.region)
+    except (OSError, ValueError) as error:
+        parser.error(str(error))
+    args.output = args.output or ROOT / f"data/raw/{args.region}-mvp.osm"
     manifest_path = args.output.with_suffix(".source.json")
     if args.output.exists() or manifest_path.exists():
         parser.error("Snapshot already exists; preserve it and choose a new output name")
     if args.date:
         datetime.fromisoformat(args.date.replace("Z", "+00:00"))
-    config = json.loads((ROOT / "config/shenyang.json").read_text(encoding="utf-8"))
     query = query_for(config["bbox"], args.date)
     encoded = urllib.parse.urlencode({"data": query})
     request = urllib.request.Request(args.endpoint + ("?" + encoded if args.method == "GET" else ""),
@@ -83,11 +90,12 @@ def main():
         stream.write(content)
     if partial is not None: partial.unlink()
     metadata = {"endpoint": args.endpoint, "method": args.method, "transport": args.transport, "query": query, "bbox": config["bbox"],
+        "region": args.region, "region_description": config["description"],
         "osm_base": document.find("meta").attrib if document.find("meta") is not None else {},
         "downloaded_at": datetime.now(timezone.utc).isoformat(),
         "sha256": hashlib.sha256(content).hexdigest(), "bytes": len(content),
         "download_seconds": round(time.perf_counter() - begin, 3), **counts,
-        "scope": "Bounded Shenyang railway/rail-context PT and urban routes; recursive relation members; out meta"}
+        "scope": f"Bounded {args.region.capitalize()} railway/rail-context PT and urban routes; recursive relation members; out meta"}
     with manifest_path.open("x", encoding="utf-8") as stream:
         json.dump(metadata, stream, ensure_ascii=False, indent=2)
     print(json.dumps({key: value for key, value in metadata.items() if key != "query"}, ensure_ascii=False))

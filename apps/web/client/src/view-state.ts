@@ -1,3 +1,4 @@
+import type {RegionConfig,RegionProfile} from './catalog-validation.ts';
 export interface ShareFilters {
   preset: 'custom'; types: string[]; classes: string[]; states: string[];
   lineKeys: string[] | null; history: boolean; sidings: boolean;
@@ -7,6 +8,7 @@ export interface ShareView {
   region: string; snapshot: string; feature: string | null; query: string;
   zoom: number; latitude: number; longitude: number; filters: ShareFilters;
 }
+export interface DecodedView {view: ShareView; warnings: string[]; regionInLink: boolean}
 const modes = ['rail','subway','light_rail','tram','other','unknown'];
 const classes = ['high_speed','conventional_main','conventional_other','branch','industrial','metro','light_rail','tram','other','unknown'];
 const states = ['mapped','construction','proposed','disused','abandoned','razed','unknown','conflict'];
@@ -15,22 +17,35 @@ const linePattern = /^[a-zA-Z0-9_/-]{1,120}$/;
 const featurePattern = /^(node|way|relation)\/\d+$/;
 const known = new Set(['region','snapshot','feature','q','types','classes','states','lines','labels','facilities','sidings']);
 
-export function defaultView(): ShareView {
-  return {region:'shenyang',snapshot:'',feature:null,query:'',zoom:10.5,latitude:41.8,longitude:123.42,
+/** The configured profile of a region, or undefined when that region has no data here. */
+export function regionProfile(config:RegionConfig,id:string|null|undefined):RegionProfile|undefined{
+  return id?config.regions.find(region=>region.id===id):undefined;
+}
+export function defaultRegion(config:RegionConfig):RegionProfile{
+  return regionProfile(config,config.default_region)||config.regions[0];
+}
+
+/** A region's starting view: its configured default camera and the default layers. */
+export function regionView(profile:RegionProfile):ShareView{
+  return {region:profile.id,snapshot:'',feature:null,query:'',zoom:profile.default_view.zoom,
+    latitude:profile.default_view.latitude,longitude:profile.default_view.longitude,
     filters:{preset:'custom',types:['rail','other','unknown'],classes:[...classes],states:['mapped'],lineKeys:null,
       history:false,sidings:true,facilities:false,lineNames:true,stationNames:true}};
 }
+export function defaultView(config:RegionConfig):ShareView{return regionView(defaultRegion(config));}
 
-export function decodeView(address: string): {view: ShareView; warnings: string[]} {
-  const view = defaultView(), warnings: string[] = [];
-  if(address.length>8192)return {view,warnings:['分享地址过长，已恢复默认视图。']};
+export function decodeView(address: string, config:RegionConfig): DecodedView {
+  const fallback=defaultRegion(config), warnings: string[] = [];
+  const failed=(message:string):DecodedView=>({view:regionView(fallback),warnings:[message],regionInLink:false});
+  if(address.length>8192)return failed('分享地址过长，已恢复默认视图。');
   const url = new URL(address,'http://local.invalid');
   for(const key of url.searchParams.keys()) {
     if(!known.has(key))warnings.push('已忽略未知参数：'+key);
     if(url.searchParams.getAll(key).length>1)warnings.push('重复参数已取第一项：'+key);
   }
-  const region=url.searchParams.get('region');
-  if(region && region!=='shenyang')warnings.push('此地区暂无已发布数据，已回到沈阳试验区。');
+  // A link without a usable camera starts in the region it names.
+  const requested=url.searchParams.get('region'),profile=regionProfile(config,requested),view=regionView(profile||fallback);
+  if(requested&&!profile)warnings.push(keyPattern.test(requested)?`地区“${requested}”暂无数据，已回到${fallback.name}。`:`地区参数无效，已回到${fallback.name}。`);
   const snapshot=url.searchParams.get('snapshot');
   if(snapshot){if(keyPattern.test(snapshot))view.snapshot=snapshot;else warnings.push('快照标识无效，已使用当前版本。');}
   const feature=url.searchParams.get('feature');
@@ -62,7 +77,7 @@ export function decodeView(address: string): {view: ShareView; warnings: string[
       else warnings.push('地图视图参数越界，已恢复默认位置。');
     }else warnings.push('地图视图参数无效，已恢复默认位置。');
   }
-  return {view,warnings};
+  return {view,warnings,regionInLink:requested!==null};
 }
 
 export function encodeView(view: ShareView): string {

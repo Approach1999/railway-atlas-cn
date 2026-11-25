@@ -1,0 +1,8 @@
+{
+  "config_version": 2,
+  "id": "dalian",
+  "description": "大连城区、金州、开发区、旅顺口及普兰店南部试验矩形；非大连市行政边界。WGS84，经度/纬度。",
+  "bbox": [121.1, 38.74, 122.05, 39.47],
+  "strategy": "complete_ways",
+  "filters": ["nwr/railway", "w/abandoned:railway", "w/disused:railway", "w/razed:railway", "w/construction:railway", "w/proposed:railway"]
+}

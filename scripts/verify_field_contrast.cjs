@@ -2,6 +2,8 @@
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const target=require('./browser_target.cjs'),assert=require('node:assert/strict'),fs=require('node:fs/promises'),path=require('node:path'),crypto=require('node:crypto');
 const base=process.env.PREVIEW_URL||'http://127.0.0.1:8766',output=path.resolve(process.env.PREVIEW_EVIDENCE||'data/manifests/local/field-contrast'),observe=process.argv.includes('--observe');
+// The snapshot under test; a different one may be named without changing what is checked.
+const snapshot=process.env.MVP_CURRENT_SNAPSHOT||'shenyang-mvp-20261023';
 const lum=c=>c.map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4).reduce((n,v,i)=>n+v*[.2126,.7152,.0722][i],0);
 const ratio=(a,b)=>(Math.max(lum(a),lum(b))+.05)/(Math.min(lum(a),lum(b))+.05);
 (async()=>{
@@ -13,7 +15,7 @@ const ratio=(a,b)=>(Math.max(lum(a),lum(b))+.05)/(Math.min(lum(a),lum(b))+.05);
     for(const viewport of [{width:1440,height:1000},...observe?[]:[{width:390,height:844}]]){
       const page=await browser.newPage({viewport,reducedMotion:'reduce'});page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(new URL(r.url()).origin!==new URL(base).origin)external.push(r.url());});
       await page.addInitScript(()=>{localStorage.setItem('railway-atlas:basemap:v1','false');Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:()=>Promise.reject(Error('test clipboard disabled'))}});});
-      await page.goto(base+'/?snapshot=shenyang-mvp-20261023');await page.waitForFunction(()=>performance.getEntriesByName('atlas:first-usable').length);
+      await page.goto(base+'/?snapshot='+snapshot);await page.waitForFunction(()=>performance.getEntriesByName('atlas:first-usable').length);
       assert(await page.locator('link[rel=stylesheet]').evaluateAll((nodes,css)=>nodes.some(n=>new URL(n.href).pathname===css),css));
       async function field(selector,boundary=selector){
         assert.equal(await page.locator(selector).isEnabled(),true);await page.locator(selector).scrollIntoViewIfNeeded();
@@ -27,7 +29,10 @@ const ratio=(a,b)=>(Math.max(lum(a),lum(b))+.05)/(Math.min(lum(a),lum(b))+.05);
             const bg=element=>{const nodes=[];for(let n=element;n;n=n.parentElement)nodes.push(n);let c=[1,1,1];for(const n of nodes.reverse()){const s=getComputedStyle(n);if(s.backgroundImage!=='none'||Number(s.opacity)!==1)throw Error('Unmodelled background/opacity');const p=parse(s.backgroundColor);c=c.map((x,i)=>p[i]*p[3]+x*(1-p[3]));}return c;};
             const sides=['Top','Right','Bottom','Left'].map(side=>({color:parse(style['border'+side+'Color']),style:style['border'+side+'Style'],width:parseFloat(style['border'+side+'Width'])}));
             const placeholder=el.getAttribute('placeholder')?getComputedStyle(el,'::placeholder'):null;
-            return {sides,inside:bg(owner),outside:bg(owner.parentElement),text:parse(input.color),text_background:bg(el),placeholder:placeholder?parse(placeholder.color):null,placeholder_opacity:placeholder?Number(placeholder.opacity):null,outline:parse(input.outlineColor),outline_width:parseFloat(input.outlineWidth),outline_style:input.outlineStyle,focus_visible:el.matches(':focus-visible')};
+            // The focus indicator belongs to the control's box: since bae01c2 the search field's wrapper
+            // (.search-box) carries the outline instead of the input inside it. Fields that are their own
+            // boundary are read exactly as before.
+            return {sides,inside:bg(owner),outside:bg(owner.parentElement),text:parse(input.color),text_background:bg(el),placeholder:placeholder?parse(placeholder.color):null,placeholder_opacity:placeholder?Number(placeholder.opacity):null,outline:parse(style.outlineColor),outline_width:parseFloat(style.outlineWidth),outline_style:style.outlineStyle,focus_visible:el.matches(':focus-visible')};
           },{selector,boundary});
           assert(value.sides.every(s=>s.color[3]===1&&s.width>=1&&s.style==='solid'),'all sampled border sides must be opaque visible solid lines');
           const border_min=Math.min(...value.sides.flatMap(s=>[ratio(s.color.slice(0,3),value.inside),ratio(s.color.slice(0,3),value.outside)]));

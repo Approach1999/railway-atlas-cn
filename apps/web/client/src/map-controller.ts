@@ -17,9 +17,12 @@ import {createRailTileLoader,railTileURL,RAIL_TILE_PROTOCOL} from './rail-tile-r
 maplibregl.setWorkerUrl(workerUrl);
 import {DEFAULTS,STATUS_STYLES,PRESET_LABELS,FILTER_STATES,expandedState,trackVisible,overlayVisible,overlayFilter,trackFilter} from '../../shared/model.mjs';
 import {urbanBoundaryFilter} from '../../shared/urban-boundary.mjs';
-import {decodeView,encodeView} from './view-state.ts';
-import {loadDataset,validateManifest,validatePalette,validateStations,validateLines} from './dataset.ts';
+import {decodeView,defaultRegion,encodeView,regionProfile} from './view-state.ts';
+import type {RegionProfile} from './catalog-validation.ts';
+import {createCatalogStore} from './catalog-store.ts';
+import {loadDataset,validateManifest,validatePalette,validateStations,validateLines,type DatasetBundle} from './dataset.ts';
 import {neutralPalette} from './resources.ts';
+import {REGION_CONFIG} from './region-config.ts';
 import {validateRailFeature} from './dataset-validation.ts';
 import {decodeTileFeature} from './tile-feature.ts';
 import {createRailwayControls,type FilterAction} from './railway-controls.ts';
@@ -29,7 +32,9 @@ import {captureShareContext} from './share-session.ts';
 import {contrastingCasing} from './contrast.ts';
 import {resolveLinePaint,paletteColorExpression} from './palette-colours.ts';
 import {createMapHover,hoverItems} from './map-hover.ts';
-interface AtlasOptions {onMapFailure?:(message:string)=>void;onDatasetChanged?:(snapshot:string)=>void;onResourceIssue?:(issue:ResourceIssue)=>void}
+/** What the map now shows. The region is the one of the loaded version, never the one a link asked for. */
+export interface DatasetIdentity {snapshot:string;region:RegionProfile}
+interface AtlasOptions {onMapFailure?:(message:string)=>void;onDatasetChanged?:(dataset:DatasetIdentity)=>void;onResourceIssue?:(issue:ResourceIssue)=>void}
 type Events=HTMLElementEventMap&WindowEventMap&DocumentEventMap&{webglcontextlost:Event;'atlas:profile-frames':CustomEvent<unknown>;'atlas:profile-filters':CustomEvent<unknown>};
 const errorMessage=(error:unknown)=>error instanceof Error?error.message:'数据读取失败';
 const errorName=(error:unknown)=>error instanceof Error?error.name:'';
@@ -45,12 +50,18 @@ function failedTile(event:unknown):{x:number;y:number;z:number}|null{
 // The proven renderer is retained as an isolated imperative controller.
 export function mountAtlas(root:HTMLElement,{onMapFailure=()=>{},onDatasetChanged=()=>{},onResourceIssue=()=>{}}:AtlasOptions={}){
 maplibregl.addProtocol(RAIL_TILE_PROTOCOL,createRailTileLoader(location.origin));
-/* Bounded Shenyang map preview. Tracks are tiled; details load only on selection. */
+/* Bounded regional map preview. Tracks are tiled; details load only on selection. */
 const abort=new AbortController();let disposed=false;
 const cleanups:Array<()=>void>=[];
 function listen<Key extends keyof Events>(target:EventTarget,event:Key,handler:(event:Events[Key])=>void){const listener=handler as EventListener;target.addEventListener(event,listener);cleanups.push(()=>target.removeEventListener(event,listener));}
 const empty=():Stations=>({type:'FeatureCollection',features:[]});
-const initial=decodeView(location.href),hasLinkedState=Boolean(location.search||location.hash);
+const initial=decodeView(location.href,REGION_CONFIG),hasLinkedState=Boolean(location.search||location.hash);
+const knownRegions=REGION_CONFIG.regions.map(profile=>profile.id);
+// Which regions and versions exist on disk; region names, cameras and copy come from the embedded registry.
+// A failed directory is recorded by the store and retried from the version panel, so nothing rethrows here.
+const directory=createCatalogStore();void directory.load().catch(()=>{});
+// The region shown: what a link asks for first, then always the region of the loaded version.
+let region=regionProfile(REGION_CONFIG,initial.view.region)||defaultRegion(REGION_CONFIG);
 const featurePanels=createFeaturePanels();
 const feedback=createMapFeedback();
 const hover=createMapHover();let hoverFrame=0;
@@ -79,7 +90,7 @@ const writeStationSource=createStationSourceUpdater();
 const labelStations=createStationLabeler();
 let emptySelectionSource:GeoJSONSource|undefined;
 const map=new maplibregl.Map({container:'map',center:[initial.view.longitude,initial.view.latitude],zoom:initial.view.zoom,minZoom:8,maxZoom:18,
-  locale:{'Map.Title':'沈阳铁路地图','NavigationControl.ZoomIn':'放大地图','NavigationControl.ZoomOut':'缩小地图','AttributionControl.ToggleAttribution':'展开或收起地图署名'},
+  locale:{'Map.Title':region.city+'铁路地图','NavigationControl.ZoomIn':'放大地图','NavigationControl.ZoomOut':'缩小地图','AttributionControl.ToggleAttribution':'展开或收起地图署名'},
   localIdeographFontFamily:'Microsoft YaHei, PingFang SC, sans-serif',attributionControl:false,
   style:{version:8,sources:{},layers:[{id:'background',type:'background',paint:{'background-color':'#f0f3ed'}}]}});
 const lineLabels=new LineLabelController(map,{filters:()=>isolation()?{...expandedState(filterState()),preset:'custom',types:['subway','light_rail','tram']}:filterState(),lineKeys:activeLineKeys,
@@ -112,7 +123,12 @@ cleanups.push(()=>{if(registeredFont)document.fonts.delete(registeredFont);});
 function geojson(id:string):GeoJSONSource{const source=map.getSource(id);if(!source||source.type!=='geojson')throw Error('地图来源尚未就绪：'+id);return source as GeoJSONSource;}
 async function getJSON(url:string,requestRoot=dataRoot):Promise<unknown>{const dataRequest=/^\/(dataset\.json|palette\.json|stations\.geojson|lines\.json|details\/)/.test(url);return requestJson((dataRequest?requestRoot:'')+url,abort.signal,status=>Object.assign(new Error(status===410?'此快照已超过保留期':`读取失败（${status}）`),{status}));}
 function say(message:string){feedback.update({status:message});}
-function notice(message:string,noticeAction:MapNoticeAction|null=null){feedback.update({notice:message,noticeAction});}
+function notice(message:string,noticeAction:MapNoticeAction|null=null,dismissible=false){feedback.update({notice:message,noticeAction,noticeDismissible:dismissible});}
+// A held notice keeps priority over camera hints until it is released, so a region switch stays
+// visible, cancellable and retryable wherever the map is not being moved.
+let heldNotice:{message:string;action:MapNoticeAction}|null=null;
+function holdNotice(message:string,action:MapNoticeAction){heldNotice={message,action};if(ready)updateNotice();}
+function releaseNotice(){if(!heldNotice)return;heldNotice=null;if(ready)updateNotice();}
 function sharedFilters(filters:ShareFilters):FilterState{
   const equal=(a:string[],b:string[])=>JSON.stringify([...a].sort())===JSON.stringify([...b].sort());
   for(const preset of ['overview','highspeed','conventional','urban'] as const){
@@ -122,7 +138,7 @@ function sharedFilters(filters:ShareFilters):FilterState{
 }
 function collectView():ShareView{
   const center=map.getCenter(),filters=expandedState(filterState());
-  return {region:'shenyang',snapshot:manifest?.snapshot_id||initial.view.snapshot,feature:selected?.properties.osm_id||null,
+  return {region:region.id,snapshot:manifest?.snapshot_id||initial.view.snapshot,feature:selected?.properties.osm_id||null,
     query:stationSearch.getSnapshot().committedQuery,zoom:map.getZoom(),latitude:center.lat,longitude:center.lng,filters:{...filters,preset:'custom'}};
 }
 function writeView(mode:'push'|'replace'){
@@ -143,10 +159,15 @@ async function restoreFeature(key:string,generation=restoreGeneration){
 }
 async function restoreAddress(){
   ++datasetGeneration;
-  const incoming=decodeView(location.href),generation=++restoreGeneration;
-  if(incoming.view.snapshot&&incoming.view.snapshot!==manifest.snapshot_id){try{await switchSnapshot(incoming.view.snapshot,abort.signal,{restoreView:incoming.view,restoreWarnings:incoming.warnings});}catch(error){if(errorName(error)!=='AbortError'&&generation===restoreGeneration)feedback.update({navigation:'目标版本加载失败，已保留当前地图，可通过数据版本面板重试。'});}return;}
+  const incoming=decodeView(location.href,REGION_CONFIG),generation=++restoreGeneration;
+  // The version decides the region. A link that names another region is reported, never mixed in;
+  // another version's region is only known once that version has loaded.
+  const sameVersion=!incoming.view.snapshot||incoming.view.snapshot===manifest.snapshot_id;
+  const warnings=sameVersion&&incoming.regionInLink&&incoming.view.region!==manifest.region
+    ?[...incoming.warnings,'链接中的地区与此数据版本不一致，已按数据版本显示。']:incoming.warnings;
+  if(incoming.view.snapshot&&incoming.view.snapshot!==manifest.snapshot_id){try{await switchSnapshot(incoming.view.snapshot,abort.signal,{restoreView:incoming.view,restoreWarnings:warnings,restoreRegionInLink:incoming.regionInLink});}catch(error){if(errorName(error)!=='AbortError'&&generation===restoreGeneration)feedback.update({navigation:'目标版本加载失败，已保留当前地图，可通过数据版本面板重试。'});}return;}
   restoring=true;clearSelection(false,false);controls.dispatch({type:'restore',filters:sharedFilters(incoming.view.filters)});
-  stationSearch.restore(incoming.view.query);feedback.update({navigation:incoming.warnings.join(' ')});
+  stationSearch.restore(incoming.view.query);feedback.update({navigation:warnings.join(' ')});
   map.jumpTo({center:[incoming.view.longitude,incoming.view.latitude],zoom:incoming.view.zoom});updateLayers();
   if(incoming.view.feature)await restoreFeature(incoming.view.feature,generation);
   if(generation!==restoreGeneration)return;restoring=false;writeView('replace');
@@ -251,6 +272,7 @@ function publishControls(){
   controls.updateData({ready,palette,lines:lineCatalog.lines,lineColors:Object.fromEntries(paints.map(([key,paint])=>[key,paint.color])),lineSources:Object.fromEntries(paints.map(([key,paint])=>[key,{source:paint.source,confidence:paint.confidence,verifiedAt:paint.verifiedAt}])),linesUnavailable:Boolean(failed('lines')),schemaVersion:manifest.schema_version,zoom:map.getZoom()});
 }
 function updateNotice(settled=false){
+  if(heldNotice){notice(heldNotice.message,heldNotice.action,true);return;}
   if(selected&&!featureVisible(selected)){notice(selectedException?'此对象为搜索或分享中临时显示，关闭详情后恢复原筛选。':'选中对象已被当前筛选隐藏，详情仍保留，可恢复图层查看。');return;}
   const active=expandedState(filterState());if(!active.types.length||!active.states.length){notice('当前没有启用的轨道类型或状态，可恢复默认图层。','reset-filters');return;}
   const selectedLines=activeLineKeys();
@@ -332,13 +354,28 @@ function removeDatasetLayers(){hover.clear();
   for(const source of sources)if(map.getSource(source))map.removeSource(source);
   layerSpecs.length=0;
 }
-async function switchSnapshot(snapshot:string,signal:AbortSignal,{restoreView=null,restoreWarnings=[],defaultView=null}:{restoreView?:ShareView|null;restoreWarnings?:string[];defaultView?:{longitude:number;latitude:number;zoom:number}|null}={}){
+async function switchSnapshot(snapshot:string,signal:AbortSignal,{restoreView=null,restoreWarnings=[],restoreRegionInLink=false,defaultView=null,expectedRegion=null}:{restoreView?:ShareView|null;restoreWarnings?:string[];restoreRegionInLink?:boolean;defaultView?:{longitude:number;latitude:number;zoom:number}|null;expectedRegion?:string|null}={}){
   if(!ready||disposed)throw Error('地图尚未就绪');
   const generation=++datasetGeneration;
-  // Stage all small assets before touching current layers, selection or camera.
-  const bundle=await loadDataset(snapshot,signal);
-  if(signal.aborted||disposed||generation!==datasetGeneration)throw new DOMException('Aborted','AbortError');
-  const prior={manifest,palette,stations,lineCatalog,dataRoot,selected,session:controls.getSnapshot().session,issues:{...issues},failedTiles:new Map(failedTiles),searchInput:stationSearch.captureInput(),
+  // Changing region is announced where it stays visible, and can be cancelled while it loads.
+  const crossing=Boolean(expectedRegion)&&expectedRegion!==region.id;
+  if(crossing)holdNotice('正在切换地区，当前地图仍可浏览。','cancel-region-switch');
+  let bundle:DatasetBundle;
+  try{
+    // Stage all small assets before touching current layers, selection or camera.
+    bundle=await loadDataset(snapshot,signal);
+    if(signal.aborted||disposed||generation!==datasetGeneration)throw new DOMException('Aborted','AbortError');
+    // A version is shown only as the region it was built for; another region's version never replaces this one.
+    const target=bundle.manifest.region||'';
+    if(!regionProfile(REGION_CONFIG,target)||(expectedRegion&&target!==expectedRegion))throw Error('该数据版本不属于所选地区，未切换。');
+  }catch(error){
+    if(crossing){if(errorName(error)==='AbortError')releaseNotice();else holdNotice('地区切换失败，已保留原地图、视图和选中记录。','retry-region-switch');}
+    throw error;
+  }
+  // Another version's region is only known once it has loaded.
+  restoreWarnings=restoreRegionInLink&&restoreView&&restoreView.region!==bundle.manifest.region
+    ?[...restoreWarnings,'链接中的地区与此数据版本不一致，已按数据版本显示。']:restoreWarnings;
+  const prior={manifest,palette,stations,lineCatalog,dataRoot,region,selected,session:controls.getSnapshot().session,issues:{...issues},failedTiles:new Map(failedTiles),searchInput:stationSearch.captureInput(),
     camera:map.getCenter(),zoom:map.getZoom(),exception:selectedException,navigation:feedback.getSnapshot().navigation};
   ++restoreGeneration;restoring=true;
   try{
@@ -348,16 +385,18 @@ async function switchSnapshot(snapshot:string,signal:AbortSignal,{restoreView=nu
     retriedTiles.clear();retryTileFailures.clear();
     for(const key of ['manifest','palette','stations','lines','tiles','labels'] as const)resource(key,'ready');
     ({manifest,palette,stations}=bundle);lineCatalog=bundle.lines;dataRoot=bundle.root;detailCache.clear();
+    region=regionProfile(REGION_CONFIG,manifest.region)||region;map.getCanvas().setAttribute('aria-label',region.city+'铁路地图');
+    if(crossing)releaseNotice();
     installDatasetLayers();ready=true;
     if(restoreView){controls.dispatch({type:'restore',filters:sharedFilters(restoreView.filters)});stationSearch.restore(restoreView.query);map.jumpTo({center:[restoreView.longitude,restoreView.latitude],zoom:restoreView.zoom});}
     else if(defaultView)map.jumpTo({center:[defaultView.longitude,defaultView.latitude],zoom:defaultView.zoom});
     updateLayers();
     feedback.update({navigation:restoreView?restoreWarnings.join(' '):''});
     if(restoreView?.feature)await restoreFeature(restoreView.feature);
-    controls.dispatch({type:'discard-undo'});onDatasetChanged(manifest.snapshot_id);
-    say('铁路地图已就绪。名称与属性来自源标签，点击可查看依据。');
+    controls.dispatch({type:'discard-undo'});onDatasetChanged({snapshot:manifest.snapshot_id,region});
+    say(crossing?`已切换到${region.name}。名称与属性来自源标签，点击可查看依据。`:'铁路地图已就绪。名称与属性来自源标签，点击可查看依据。');
   }catch(error){
-    ready=false;removeDatasetLayers();({manifest,palette,stations,lineCatalog,dataRoot}=prior);controls.restoreSession(prior.session);detailCache.clear();
+    ready=false;removeDatasetLayers();({manifest,palette,stations,lineCatalog,dataRoot,region}=prior);map.getCanvas().setAttribute('aria-label',region.city+'铁路地图');controls.restoreSession(prior.session);detailCache.clear();
     ++assetEpoch;tileRetry=false;clearTimeout(tileTimer);
     failedTiles.clear();for(const [key,value] of prior.failedTiles)failedTiles.set(key,value);
     retriedTiles.clear();retryTileFailures.clear();
@@ -365,6 +404,7 @@ async function switchSnapshot(snapshot:string,signal:AbortSignal,{restoreView=nu
     installDatasetLayers();ready=true;stationSearch.restoreInput(prior.searchInput);map.jumpTo({center:prior.camera,zoom:prior.zoom});updateLayers();
     if(prior.selected){selectedException=prior.exception;await selectFeature(prior.selected,{restore:true});}
     feedback.update({navigation:prior.navigation});
+    if(crossing)holdNotice('地区切换失败，已保留原地图、视图和选中记录。','retry-region-switch');
     throw error;
   }finally{restoring=false;}
   writeView(restoreView?'replace':'push');
@@ -411,9 +451,34 @@ async function retryResource(key:ResourceKey){
   }catch(error){if(!disposed&&epoch===assetEpoch&&attempt===attempts[key]){resource(key,'error',assetMessages[key]+' '+errorMessage(error));refreshSearch();publishControls();}}
 }
 async function bootstrap(){if(booting||disposed)return;booting=true;resource('manifest','loading');say('正在加载铁路地图…');try{
-  const description=await getJSON('/dataset.json');
+  // A link may name a region without a version. Only the directory knows which version that is;
+  // if it cannot say, or that region has no data here, open the default version and say so.
+  let snapshot=initial.view.snapshot||'';
+  const warnings=[...initial.warnings],linked=Boolean(snapshot);
+  if(!linked&&initial.view.region!==REGION_CONFIG.default_region){
+    const name=regionProfile(REGION_CONFIG,initial.view.region)?.name||'所选地区';
+    const entry=await directory.load().then(value=>value.regions.find(item=>item.id===initial.view.region),()=>null);
+    if(entry)snapshot=entry.current_snapshot;
+    else warnings.push(directory.getSnapshot().status==='error'
+      ?`数据目录暂不可用，无法确定${name}的数据版本，已打开默认地区；可在“地区与数据版本”中重试。`
+      :`${name}暂无数据，已打开默认地区。`);
+  }
+  let description:unknown=null;
+  if(snapshot){
+    dataRoot='/snapshots/'+snapshot;
+    // A linked version that fails is reported as such; one resolved from the directory falls back to the default.
+    description=await getJSON('/dataset.json').catch(error=>{if(linked)throw error;snapshot='';dataRoot='';return null;});
+  }
+  if(!description)description=await getJSON('/dataset.json');
   if(disposed)return;
-  validateManifest(description,initial.view.snapshot||undefined);manifest=description;resource('manifest','ready');
+  // The version is only ever shown as its own region; the region shown then follows the version.
+  validateManifest(description,snapshot||undefined,{regions:knownRegions});
+  manifest=description;resource('manifest','ready');
+  region=regionProfile(REGION_CONFIG,manifest.region)||region;
+  if(initial.regionInLink&&initial.view.region!==manifest.region)warnings.push('链接中的地区与此数据版本不一致，已按数据版本显示。');
+  map.getCanvas().setAttribute('aria-label',region.city+'铁路地图');
+  // Without a linked camera the map opened on the requested region; move it to the region actually shown.
+  if(!/^#map=/.test(location.hash)&&initial.view.region!==region.id)map.jumpTo({center:[region.default_view.longitude,region.default_view.latitude],zoom:region.default_view.zoom});
   feedback.update({currentVersionRecovery:false});
   // Resolve the current-version alias once. All indexes, tiles and details
   // then use the same immutable namespace, including after a server restart.
@@ -426,7 +491,7 @@ async function bootstrap(){if(booting||disposed)return;booting=true;resource('ma
   for(const result of values){if(result.key==='palette')palette=result.value;else if(result.key==='stations')stations=result.value;else lineCatalog=result.value;}
   if(disposed)return;
   performance.mark('atlas:index-ready');
-  installDatasetLayers();ready=true;updateLayers();refreshSearch();feedback.update({navigation:initial.warnings.join(' ')});if(initial.view.feature)await restoreFeature(initial.view.feature);restoring=false;onDatasetChanged(manifest.snapshot_id);writeView('replace');say(Object.values(issues).some(issue=>issue.status==='error')?'地图已打开，部分数据暂不可用，可分别重试。':'铁路地图已就绪。名称与属性来自源标签，点击可查看依据。');
+  installDatasetLayers();ready=true;updateLayers();refreshSearch();feedback.update({navigation:warnings.join(' ')});if(initial.view.feature)await restoreFeature(initial.view.feature);restoring=false;onDatasetChanged({snapshot:manifest.snapshot_id,region});writeView('replace');say(Object.values(issues).some(issue=>issue.status==='error')?'地图已打开，部分数据暂不可用，可分别重试。':'铁路地图已就绪。名称与属性来自源标签，点击可查看依据。');
 }catch(e){
   if(disposed)return;
   resource('manifest','error','数据说明暂不可用，视图与输入已保留。 '+errorMessage(e));
@@ -539,19 +604,19 @@ listen(map.getCanvas(),'pointerdown',()=>{cancelAnimationFrame(hoverFrame);hover
 map.on('movestart',()=>{cancelAnimationFrame(hoverFrame);hoverFrame=0;hover.clear();if(ready)updateNotice();});
 listen(document,'focusin',event=>{if(event.target instanceof Element&&event.target.closest('dialog'))hover.clear();});
 listen(window,'blur',()=>hover.clear());
-function home(){clearSelection(false);motion.easeTo({center:[123.42,41.80],zoom:10.5,duration:500});}
+function home(){clearSelection(false);releaseNotice();const view=region.default_view;motion.easeTo({center:[view.longitude,view.latitude],zoom:view.zoom,duration:500});}
 listen(window,'resize',()=>{hover.clear();map.resize();if(selected)ensureVisible(selected);});
-listen(document,'keydown',e=>{if(e.key!=='Escape'||e.defaultPrevented||e.isComposing||stationSearch.getSnapshot().composing||root.querySelector('dialog[open]'))return;if(hover.getSnapshot()){hover.dismiss();return;}if(featurePanels.getSnapshot().candidates.length){closeCandidates();return;}if(isolation()){changeFilters({type:'isolate',key:null});return;}if(selected){clearSelection();return;}if(stationSearch.getSnapshot().query)stationSearch.clear();});
+listen(document,'keydown',e=>{if(e.key!=='Escape'||e.defaultPrevented||e.isComposing||stationSearch.getSnapshot().composing||root.querySelector('dialog[open]'))return;if(heldNotice){releaseNotice();return;}if(hover.getSnapshot()){hover.dismiss();return;}if(featurePanels.getSnapshot().candidates.length){closeCandidates();return;}if(isolation()){changeFilters({type:'isolate',key:null});return;}if(selected){clearSelection();return;}if(stationSearch.getSnapshot().query)stationSearch.clear();});
 function getShareContext(){
   if(!ready||disposed)return null;
   stationSearch.flush();return captureShareContext(collectView(),isolation(),Boolean(selected&&selectedException&&!featureVisible(selected)));
 }
 listen(window,'popstate',()=>{if(ready)restoreAddress();});
-function destroy(){disposed=true;lineLabels.reset();feedback.dispose();cancelAnimationFrame(hoverFrame);hover.dispose();featurePanels.dispose();clearTimeout(tileTimer);abort.abort();cleanups.forEach(fn=>fn());controls.dispose();stationSearch.dispose();map.remove();document.body.classList.remove('detail-open');}
+function destroy(){disposed=true;lineLabels.reset();feedback.dispose();directory.dispose();cancelAnimationFrame(hoverFrame);hover.dispose();featurePanels.dispose();clearTimeout(tileTimer);abort.abort();cleanups.forEach(fn=>fn());controls.dispose();stationSearch.dispose();map.remove();document.body.classList.remove('detail-open');}
 async function applyView(view:ShareView){
   if(!ready||disposed)throw Error('地图尚未就绪');
   const address=encodeView(view);if(address!==location.pathname+location.search+location.hash)history.pushState(null,'',address);
   await restoreAddress();if(selected)focusOn(selected);
 }
-return {map,getAboutManifest:():DatasetManifest|undefined=>manifest,feedback,home,openCurrentVersion,hover,getShareContext,controls,changeFilters,stationSearch,selectSearchResult,featurePanels,closeDetails:()=>clearSelection(),closeCandidates,chooseCandidate,retryDetails,panelsLayout,destroy,applyView,switchSnapshot,retryResource};
+return {map,getAboutManifest:():DatasetManifest|undefined=>manifest,getRegion:()=>region,directory,dismissNotice:releaseNotice,feedback,home,openCurrentVersion,hover,getShareContext,controls,changeFilters,stationSearch,selectSearchResult,featurePanels,closeDetails:()=>clearSelection(),closeCandidates,chooseCandidate,retryDetails,panelsLayout,destroy,applyView,switchSnapshot,retryResource};
 }

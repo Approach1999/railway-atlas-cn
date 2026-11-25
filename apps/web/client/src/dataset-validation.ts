@@ -8,8 +8,13 @@ const hex=(value:unknown)=>typeof value==='string'&&/^#[0-9a-f]{6}$/i.test(value
 function bounds(value:unknown):value is number[]{
   return Array.isArray(value)&&value.length===4&&value.every(Number.isFinite)&&value[0]>=-180&&value[2]<=180&&value[1]>=-90&&value[3]<=90&&value[0]<value[2]&&value[1]<value[3];
 }
-export function validateManifest(value:unknown,snapshot?:string):asserts value is DatasetBundle['manifest']{
-  if(!record(value)||typeof value.snapshot_id!=='string'||!keyPattern.test(value.snapshot_id)||(snapshot&&value.snapshot_id!==snapshot)||typeof value.schema_version!=='number'||![1,2].includes(value.schema_version)||(value.region!==undefined&&value.region!=='shenyang')||!bounds(value.bbox)||!record(value.tiles)||!bounds(value.tiles.bounds)||value.tiles.minzoom!==8||!Number.isInteger(value.tiles.maxzoom)||Number(value.tiles.maxzoom)<8||Number(value.tiles.maxzoom)>22)throw Error('数据版本说明无效');
+/** What a manifest's region must agree with: the regions this build knows, and the one the caller asked for. */
+export interface ManifestScope {regions?:readonly string[];region?:string|null}
+export function validateManifest(value:unknown,snapshot?:string,scope:ManifestScope={}):asserts value is DatasetBundle['manifest']{
+  if(!record(value)||typeof value.snapshot_id!=='string'||!keyPattern.test(value.snapshot_id)||(snapshot&&value.snapshot_id!==snapshot)||typeof value.schema_version!=='number'||![1,2].includes(value.schema_version)||!bounds(value.bbox)||!record(value.tiles)||!bounds(value.tiles.bounds)||value.tiles.minzoom!==8||!Number.isInteger(value.tiles.maxzoom)||Number(value.tiles.maxzoom)<8||Number(value.tiles.maxzoom)>22)throw Error('数据版本说明无效');
+  // A version is shown only as the region it was built for; it can never be read as another region's data.
+  const region:unknown=value.region;
+  if(region!==undefined&&(typeof region!=='string'||!keyPattern.test(region)||(scope.regions!==undefined&&!scope.regions.includes(region))||(scope.region!=null&&region!==scope.region)))throw Error('数据版本说明无效');
   if(value.source!==undefined&&!record(value.source)||value.class_counts!==undefined&&!record(value.class_counts))throw Error('数据来源或分类统计无效');
   for(const key of ['classification_version','palette_version','relation_version','build_time','retention_until','input_sha256'])if(value[key]!==undefined&&typeof value[key]!=='string')throw Error('数据版本字段无效');
   if(record(value.source)){

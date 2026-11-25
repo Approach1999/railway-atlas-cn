@@ -1,5 +1,7 @@
 """Exercise the real publisher control flow with controlled subprocess outputs."""
+import contextlib
 import hashlib
+import io
 from pathlib import Path
 import sys
 import tempfile
@@ -9,17 +11,22 @@ import build_mvp
 
 
 class MvtPublicationGateTests(unittest.TestCase):
+    def fixture(self, parent):
+        """A source, its extract record and conversion metadata inside a fresh folder."""
+        root = Path(parent)
+        source = root / "fixture.osm.pbf"
+        source.write_bytes(b"controlled subprocess fixture")
+        build_mvp.write(root / "source.json", {"sha256": "fixture-xml", "bbox": [-1, -1, 1, 1]})
+        build_mvp.write(root / "metadata.json", {"pbf_sha256": hashlib.sha256(source.read_bytes()).hexdigest(), "xml_sha256": "fixture-xml", "records": {}})
+        return root, source
+
     def test_decoder_failure_blocks_final_publication_after_manifest_exists(self):
         parent = build_mvp.ROOT / "data/manifests/local/mvt-gate-tests"
         parent.mkdir(parents=True, exist_ok=True)
         with tempfile.TemporaryDirectory(dir=parent) as tmp:
-            root = Path(tmp)
+            root, source = self.fixture(tmp)
             self.assertTrue(root.resolve().is_relative_to(parent.resolve()))
-            source = root / "fixture.osm.pbf"
-            source.write_bytes(b"controlled subprocess fixture")
-            build_mvp.write(root / "source.json", {"sha256": "fixture-xml", "bbox": [-1, -1, 1, 1]})
-            build_mvp.write(root / "metadata.json", {"pbf_sha256": hashlib.sha256(source.read_bytes()).hexdigest(), "xml_sha256": "fixture-xml", "records": {}})
-            target = root / "blocked-snapshot"
+            target = root / "shenyang-blocked-snapshot"
             calls = []
             def stage(command, **kwargs):
                 calls.append(command)
@@ -49,6 +56,31 @@ class MvtPublicationGateTests(unittest.TestCase):
                     build_mvp.main()
             self.assertEqual(len(calls), 4)
             self.assertFalse(target.exists())
+
+    def test_a_version_is_named_for_its_region_and_built_only_from_that_regions_extract(self):
+        parent = build_mvp.ROOT / "data/manifests/local/mvt-gate-tests"
+        parent.mkdir(parents=True, exist_ok=True)
+        for extra, folder, message in [
+            ([], "dalian-looking", "must start with"),                    # the default region is shenyang
+            (["--region", "shenyang"], "elsewhere-snapshot", "must start with"),
+            (["--region", "dalian"], "dalian-foreign-source", "another region"),   # the extract is shenyang's
+            (["--region", "beijing"], "beijing-unknown", "not configured"),       # not a configured region
+        ]:
+            with self.subTest(extra=extra, folder=folder), tempfile.TemporaryDirectory(dir=parent) as tmp:
+                root, source = self.fixture(tmp)
+                build_mvp.write(root / "source.json", {"sha256": "fixture-xml", "bbox": [-1, -1, 1, 1], "region": "shenyang"})
+                target = root / folder
+                argv = ["build_mvp", "--input", str(source), "--source-manifest", str(root / "source.json"),
+                        "--metadata", str(root / "metadata.json"), "--output-dir", str(target), *extra]
+                reported = io.StringIO()
+                with contextlib.redirect_stderr(reported), patch.object(sys, "argv", argv), \
+                        patch.object(build_mvp.subprocess, "run", side_effect=AssertionError("no build command may run")), \
+                        self.assertRaises(SystemExit) as stopped:
+                    build_mvp.main()
+                self.assertEqual(stopped.exception.code, 2)
+                self.assertIn(message, reported.getvalue())
+                self.assertFalse(target.exists())
+                self.assertEqual([path.name for path in root.iterdir() if "building" in path.name], [])
 
 
 if __name__ == "__main__":

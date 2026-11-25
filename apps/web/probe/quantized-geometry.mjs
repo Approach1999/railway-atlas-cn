@@ -1,5 +1,5 @@
 /* Work only on integer tile coordinates; retained vertices and properties never move. */
-export const normalizationStats=()=>({duplicate_vertices_removed:0,collapsed_line_parts:0,collapsed_polygon_rings:0,collapsed_features:0});
+export const normalizationStats=()=>({duplicate_vertices_removed:0,collapsed_line_parts:0,collapsed_polygon_rings:0,reversed_lone_rings:0,collapsed_features:0});
 const same=(a,b)=>a[0]===b[0]&&a[1]===b[1];
 function area2(ring){let value=0;for(let i=1;i<ring.length;i++)value+=ring[i-1][0]*ring[i][1]-ring[i][0]*ring[i-1][1];return value;}
 export function normalizeQuantizedFeature(feature,stats=normalizationStats()){
@@ -14,6 +14,9 @@ export function normalizeQuantizedFeature(feature,stats=normalizationStats()){
     if(part.length>1&&!same(part[0],part.at(-1)))throw Error(key+': unclosed quantized polygon');
     const area=part.length>=4?area2(part):0;
     if(area===0){stats.collapsed_polygon_rings++;ambiguous=true;continue;}
+    // Reduced to a single ring, nothing could own it as a hole: a reversed sign is
+    // a sub-pixel exterior that quantized backwards. Collapse it like a flat ring.
+    if(area<0&&feature.geometry.length===1){stats.reversed_lone_rings++;continue;}
     if(area>0){exterior=true;ambiguous=false;}
     else if(!exterior||ambiguous)throw Error(key+': ambiguous collapsed exterior/hole sequence; review before publishing');
     parts.push(part);

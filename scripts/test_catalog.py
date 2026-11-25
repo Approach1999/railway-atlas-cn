@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
-from catalog import build_catalog, expired, read_manifest
+from catalog import build_catalog, default_snapshot, expired, read_manifest
 
 
 class CatalogTests(unittest.TestCase):
@@ -47,6 +47,30 @@ class CatalogTests(unittest.TestCase):
         path = self.root / "old/dataset.json"
         path.write_text('{"snapshot_id":"other"}', encoding="utf-8")
         with self.assertRaises(ValueError): read_manifest(self.root, "old")
+
+    def test_default_snapshot_is_the_first_complete_unexpired_version_of_the_default_region(self):
+        config = {"schema_version": 1, "default_region": "shenyang", "regions": [
+            {"id": "shenyang", "snapshots": ["missing", "incomplete", "expired", "old", "current"]},
+            {"id": "dalian", "snapshots": ["dalian-now"]}]}
+        folder = self.root / "dalian-now"
+        folder.mkdir()
+        (folder / "dataset.json").write_text(json.dumps({"snapshot_id": "dalian-now", "schema_version": 2, "region": "dalian",
+            "retention_until": "2028-01-01T00:00:00Z"}), encoding="utf-8")
+        for file in ["palette.json", "stations.geojson", "lines.json", "tiles/build.json"]:
+            path = folder / file
+            path.parent.mkdir(exist_ok=True)
+            path.write_text("{}", encoding="utf-8")
+        # Listed in order: the first complete, unexpired version of the default region is the one a bare start uses.
+        self.assertEqual(default_snapshot(config, self.root, datetime(2026, 1, 1, tzinfo=timezone.utc)), "old")
+        self.assertIsNone(default_snapshot(config, self.root, datetime(2029, 1, 1, tzinfo=timezone.utc)))
+        # Another region's complete version is never used as the default region's.
+        self.assertIsNone(default_snapshot(config, self.root, datetime(2029, 1, 1, tzinfo=timezone.utc)))
+        other = {"schema_version": 1, "default_region": "dalian", "regions": config["regions"]}
+        self.assertEqual(default_snapshot(other, self.root, datetime(2026, 1, 1, tzinfo=timezone.utc)), "dalian-now")
+        self.assertIsNone(default_snapshot(other, self.root, datetime(2029, 1, 1, tzinfo=timezone.utc)))
+        with self.assertRaises(ValueError):
+            default_snapshot({"schema_version": 1, "regions": config["regions"]}, self.root)
+        self.assertIsNone(default_snapshot({"schema_version": 1, "default_region": "dalian", "regions": [{"id": "dalian"}]}, self.root))
 
 
 if __name__ == "__main__": unittest.main()

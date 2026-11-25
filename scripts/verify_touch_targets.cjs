@@ -2,6 +2,8 @@
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const target=require('./browser_target.cjs'),assert=require('node:assert/strict'),fs=require('node:fs/promises'),path=require('node:path'),crypto=require('node:crypto');
 const base=process.env.PREVIEW_URL||'http://127.0.0.1:8766',output=path.resolve(process.env.PREVIEW_EVIDENCE||'data/manifests/local/touch-targets'),observe=process.argv.includes('--observe');
+// The snapshot under test; a different one may be named without changing what is checked.
+const snapshot=process.env.MVP_CURRENT_SNAPSHOT||'shenyang-mvp-20261023';
 (async()=>{
   await fs.mkdir(output,{recursive:true});const browser=await target.launch(chromium),scenes=[],failures=[],errors=[],external=[],actions=[];
   const hash=v=>crypto.createHash('sha256').update(v).digest('hex'),index=await fs.readFile('apps/web/client/dist/index.html'),html=index.toString();
@@ -9,7 +11,7 @@ const base=process.env.PREVIEW_URL||'http://127.0.0.1:8766',output=path.resolve(
   try{
     for(const viewport of (observe?[{width:390,height:844}]:[{width:320,height:640},{width:390,height:844},{width:768,height:1024},{width:667,height:375}])){
       const page=await browser.newPage({viewport,isMobile:true,hasTouch:true,reducedMotion:'reduce'});page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(new URL(r.url()).origin!==new URL(base).origin)external.push(r.url());});
-      await page.addInitScript(()=>localStorage.setItem('railway-atlas:basemap:v1','false'));await page.goto(base+'/?snapshot=shenyang-mvp-20261023');await page.waitForFunction(()=>performance.getEntriesByName('atlas:first-usable').length);
+      await page.addInitScript(()=>localStorage.setItem('railway-atlas:basemap:v1','false'));await page.goto(base+'/?snapshot='+snapshot);await page.waitForFunction(()=>performance.getEntriesByName('atlas:first-usable').length);
       assert(await page.evaluate(()=>matchMedia('(any-pointer:coarse)').matches));
       assert(await page.locator('link[rel=stylesheet]').evaluateAll((nodes,css)=>nodes.some(n=>new URL(n.href).pathname===css),css));
       async function audit(state,scope='body'){

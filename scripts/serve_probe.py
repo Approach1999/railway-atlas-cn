@@ -5,7 +5,8 @@ from pathlib import Path
 import re
 import json
 import socket
-from catalog import build_catalog, read_manifest, expired
+from catalog import build_catalog, default_snapshot, read_manifest, expired
+from regions import catalog as region_registry
 from http_payload import gzip_payload, COMPRESSIBLE
 from basemap_proxy import BasemapProxy, TEMPLATE as PREVIEW_BASEMAP_TEMPLATE
 
@@ -26,12 +27,21 @@ class PreviewHTTPServer(ThreadingHTTPServer):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--data-dir", type=Path, default=ROOT / "data/processed/shenyang-mvp-geometry-20261027")
+    parser.add_argument("--data-dir", type=Path,
+        help="Snapshot directory; default: the default region's first complete configured snapshot")
     parser.add_argument("--port", type=int, default=8765)
     parser.add_argument("--host", choices=("127.0.0.1", "0.0.0.0"), default="127.0.0.1")
     parser.add_argument("--app", choices=["client", "probe"], default="client")
     parser.add_argument("--basemap-proxy", action="store_true", help="Use this computer for interactive OSM tile requests")
     args = parser.parse_args()
+    if args.data_dir is None:
+        try:
+            snapshot = default_snapshot(region_registry(), ROOT / "data/processed")
+        except (OSError, ValueError) as error:
+            parser.error(f"Region registry unavailable: {error}")
+        if snapshot is None:
+            parser.error("No complete configured snapshot for the default region under data/processed; see docs/trial-guide.md")
+        args.data_dir = ROOT / "data/processed" / snapshot
     args.data_dir = args.data_dir.resolve()
     basemap_proxy = BasemapProxy(ROOT / "data/manifests/local/basemap-cache") if args.basemap_proxy else None
     security = json.loads((ROOT / 'config/security-headers.json').read_text(encoding='utf-8'))

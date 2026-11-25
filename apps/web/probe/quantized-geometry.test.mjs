@@ -20,6 +20,12 @@ test('zero-area polygon is omitted, and an ambiguous following hole cannot becom
  assert.throws(()=>normalize(feature(3,[flat,hole])),/ambiguous/);assert.throws(()=>normalize(feature(3,[outer,flat,hole])),/ambiguous/);
  assert.deepEqual(normalize(feature(3,[flat,outer])).geometry,[outer]);
 });
+test('a lone reversed ring is a collapsed sub-pixel exterior; a hole beside any other ring still stops',()=>{
+ const stats=normalizationStats();assert.equal(normalize(feature(3,[hole]),stats),null);
+ assert.equal(stats.reversed_lone_rings,1);assert.equal(stats.collapsed_polygon_rings,0);assert.equal(stats.collapsed_features,1);
+ assert.throws(()=>normalize(feature(3,[hole,outer])),/ambiguous/);assert.throws(()=>normalize(feature(3,[hole,hole])),/ambiguous/);
+ assert.throws(()=>normalize(feature(3,[flat,hole])),/ambiguous/);assert.equal(stats.reversed_lone_rings,1);
+});
 test('invalid integer/closure/geometry input fails instead of silently snapping or changing type',()=>{
  assert.throws(()=>normalize(feature(2,[[[0,0],[1.1,1]]])),/non-integer/);
  assert.throws(()=>normalize(feature(3,[[[0,0],[1,0],[1,1],[0,1]]])),/unclosed/);

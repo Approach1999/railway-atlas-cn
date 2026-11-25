@@ -4,6 +4,38 @@
 
 2026-11-02用户已授权提交并推送本轮试用入口和修复。手机、平板手动反馈未再发现问题，具体范围见[试用记录](qa/trial-20261102-owner.md)；不替代独立参与者、真机性能和其他正式验收。此次活跃工作目录为下方Documents目录，其他checkout说明属于历史记录。
 
+2026-11-24补记：按用户要求把沈阳试验区扩展为“沈阳＋大连”两个可切换的本机试验地区，基线 `bae01c2`，
+工作目录 `C:\Users\21965\ZCodeProject\railway-atlas-cn`。**本轮改动已按用户 2026-11-25 的授权逐文件提交并推送：先推送到远程分支 `feat/dalian-trial-region`，是否并入 `main` 由负责人决定。
+提交不代表数据验收或完整 MVP 验收通过，之后的提交同样不要 `git add .`。**
+地区名称、边界、默认视野、界面文案和数据入口都配置在 `config/catalog.json` 及其指向的文件里，产品源码与数据脚本中没有城市名。
+说明见[地区覆盖与切换](regions.md)，指纹与验证结果见[接入证据](evidence/dalian-trial-20261124.json)。需要负责人决定或继续的事项：
+
+- 大连数据没有独立人工审核（第 5 节的两名审核者与抽查包）。需求 §2 写明其他区域“通过数据验收后加入区域目录”，
+  大连先于验收进入本机目录，是否允许这样列出需要决定。
+- 量化几何门禁为大连做了一处细化（单环反向退化改为折叠并记录，规则版本 `quantized-geometry-v2`），
+  沈阳已发布快照未重建；是否接受需要确认，见[瓦片几何修订](mvt-integrity.md)。
+- 大连地铁线路色没有运营方来源，置信度为 `manual`，与 OSM `colour` 标注逐线不同，见[线路配色](line-colors.md)。
+- 地图字体子集已重建：目录加入大连快照后原子集缺 107 个字符，现由 501 个字符、129,992 字节变为 608 个字符、165,280 字节，
+  覆盖目录里全部五个快照，`build_map_font.py --check` 与 `verify_map_font.cjs` 在最终构建上通过，见[地图字体](map-font.md)。
+  **新增地区或快照后必须重新生成字体并执行 `--check`**，否则新地区的名称只能靠设备字体显示。字体构建环境只在本机旧目录里
+  （`data/manifests/local/font-build`），换机器要另行准备。
+- 最终构建（`index-C_uGsf3N.js`）的回归已经跑完，逐项结果见接入证据。`scripts/verify_*.cjs` 共 63 个：`verify_region_switch`（17 项）、
+  `verify_basemap_zoom`、`verify_lan_details` 单独运行并通过；`verify_client`、`verify_preview`、`verify_installed_browsers`、
+  `verify_license_inventory` 本轮按要求没有运行；其余 56 个全部运行，53 个通过。
+- 没有通过的 3 个脚本都是既有问题，在未改动的 `bae01c2` 构建上同样复现，本轮没有修改它们：`verify_real_routes`（页面上有两个
+  “恢复全部线路”按钮，全页定位冲突）和 `verify_line_label_levels`（到 `tracks` 源里找名称图层，名称实际在 `rail-line-labels` 源上）稳定失败；
+  `verify_product_label_spacing`（只改地址 hash 的场景有时读到零个标注）偶发，最终构建 13 次通过 11 次，基线 13 次通过 10 次。
+  这三个脚本没走到的步骤没有被验证。
+- 几个旧脚本把“当前版本”写死为 `shenyang-mvp-20261023`，而目录的当前版本是 `shenyang-mvp-geometry-20261027`。`verify_catalog`、
+  `verify_react_details`、`verify_mvp_work` 用脚本已有的 `MVP_CURRENT_SNAPSHOT` / `MVP_DATA_DIR` 指定当前版本后通过；
+  `verify_map_feedback` 没有参数，用 `serve_probe.py --data-dir data/processed/shenyang-mvp-20261023` 让当前版本为该快照后原样通过。
+- 验证中确认的既有问题（不是本轮引入，均用未改动的 `bae01c2` 构建对照过）：瓦片重试成功后“没有可见要素”的提示偶尔不重新出现
+  （`verify_empty_view.cjs` 最后一项，此前约三次里一次；最终构建上本轮 4 次均通过），本轮没有修改控制器的重试流程；
+  `verify_field_contrast.cjs` 自 `bae01c2` 把搜索框焦点轮廓移到外层后就读错了元素，本轮改为读取控件的边框容器；
+  `verify_empty_view.cjs` 的两处固定时序等待在本机不成立，本轮改为等待实际事件。断言含义都没有改变。
+  `verify_region_switch.cjs` 另增加了一节：放大到大连北站，要求打开“站场与设施”后绘制的设施全部属于大连快照。
+- 性能没有重测，N01–N04、N09 的门槛不变。
+
 ## 0. 先拿到正确的代码
 
 - GitHub：`git@github.com:Approach1999/railway-atlas-cn.git`，当前本地分支 `main`。

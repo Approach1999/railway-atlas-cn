@@ -1,7 +1,8 @@
-"""Build an immutable Shenyang MVP bundle from preserved PBF + source metadata.
+"""Build an immutable regional MVP bundle from a preserved PBF + source metadata.
 
 The generated quality report accounts for every Rust candidate. Never invent route
-membership when the input snapshot lacks relations.
+membership when the input snapshot lacks relations. --region selects the preview
+configuration and names the region in the manifest; the source extract must agree.
 """
 import argparse
 from collections import Counter
@@ -15,6 +16,7 @@ import uuid
 
 from mvp_data import normalize_relations, station_anchor
 from geometry_integrity import validate_geometry
+from regions import region_argument, region_entry, preview_config
 
 ROOT = Path(__file__).resolve().parents[1]
 FACILITIES = {"platform", "stop_position", "entrance", "signal", "switch", "level_crossing", "buffer_stop",
@@ -56,10 +58,18 @@ def main():
     parser.add_argument("--source-manifest", type=Path, required=True)
     parser.add_argument("--metadata", type=Path, required=True)
     parser.add_argument("--output-dir", type=Path, required=True)
+    region_argument(parser)
     args = parser.parse_args()
     source, target = args.input.resolve(strict=True), args.output_dir.resolve()
     if target.exists(): parser.error("Output exists; choose a new immutable snapshot id")
+    # Snapshot ids name their region so a directory can never be mistaken for another region's data.
+    if not target.name.startswith(args.region + "-"): parser.error(f"Snapshot id must start with '{args.region}-'")
+    try:
+        entry, config = region_entry(args.region), preview_config(args.region)
+    except (OSError, ValueError) as error:
+        parser.error(str(error))
     provenance, metadata = read(args.source_manifest), read(args.metadata)
+    if provenance.get("region") not in (None, args.region): parser.error("Source extract belongs to another region")
     if metadata["pbf_sha256"] != digest(source) or metadata["xml_sha256"] != provenance["sha256"]:
         parser.error("PBF/XML/metadata fingerprints do not describe the same source")
     subprocess.run(["cargo", "build", "--release", "--locked", "--offline"], cwd=ROOT, check=True)
@@ -70,7 +80,7 @@ def main():
     raw, rust_report = read(folder / "raw.geojson"), read(folder / "rust-report.json")
     if rust_report["missing_way_node_refs"] or rust_report["missing_relation_member_refs"]:
         raise ValueError("Missing geometry or relation references; snapshot will not be published")
-    palette, config = read(ROOT / "config/line-colors.json"), read(ROOT / "config/map-preview.json")
+    palette = read(ROOT / "config/line-colors.json")
     features, excluded = [], list(raw.get("excluded", []))
     for feature in raw["features"]:
         p, geometry = feature["properties"], feature["geometry"]
@@ -143,8 +153,8 @@ def main():
     now = datetime.now(timezone.utc)
     try: retention_until = now.replace(year=now.year + 1)
     except ValueError: retention_until = now.replace(year=now.year + 1, day=28)
-    manifest = {"schema_version": 2, "snapshot_id": target.name, "region": "shenyang",
-        "source": provenance, "input_sha256": digest(source), "bbox": provenance["bbox"],
+    manifest = {"schema_version": 2, "snapshot_id": target.name, "region": args.region,
+        "region_description": entry.get("description", ""), "source": provenance, "input_sha256": digest(source), "bbox": provenance["bbox"],
         "relation_version": "route-master-membership-v1",
         "object_index": "objects.json",
         "classification_version": "mvp-v1", "palette_version": palette["palette_version"],

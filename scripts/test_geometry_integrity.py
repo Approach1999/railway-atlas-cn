@@ -71,7 +71,7 @@ class GeometryIntegrityTests(unittest.TestCase):
                     build_mvp.write(command[3], {"missing_way_node_refs": 0, "missing_relation_member_refs": 0})
                 elif len(calls) > 2:
                     self.fail("Tiler must not run for invalid geometry")
-            target = root / "must-not-publish"
+            target = root / "shenyang-must-not-publish"
             argv = ["build_mvp", "--input", str(source), "--source-manifest", str(root / "source.json"),
                     "--metadata", str(root / "metadata.json"), "--output-dir", str(target)]
             with patch.object(sys, "argv", argv), patch.object(build_mvp.subprocess, "run", stage):

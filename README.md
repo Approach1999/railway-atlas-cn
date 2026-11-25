@@ -2,6 +2,8 @@
 
 面向全国的铁路地图项目。首个试点为沈阳，随后扩展到东北与全国。
 当前阶段：沈阳 MVP 实现与验收中，已接入真实铁路、地铁线路关系、车站与设施；完整验收尚未通过。
+2026-11-24 新增大连为第二个本机试验地区，可在页头切换。大连尚未通过独立数据审核；两地未连通，也未扩展到全国，
+见[地区覆盖与切换](docs/regions.md)。
 
 当前使用 [真实关系数据指南](docs/real-shenyang-data.md) 构建日期快照，
 或查看 [MVP 完成审计](docs/mvp-status.md) 中已完成与待完成事项。
@@ -14,7 +16,9 @@ npm run build --prefix apps/web/client
 python scripts/serve_probe.py --port 8766
 ```
 
-默认打开 `http://127.0.0.1:8766`，数据目录为 `data/processed/shenyang-mvp-geometry-20261027`。
+默认打开 `http://127.0.0.1:8766`，默认数据是注册表默认地区（沈阳）的首个可用快照，
+即 `data/processed/shenyang-mvp-geometry-20261027`。
+要在大连与沈阳之间切换，还需准备 `data/processed/dalian-mvp-20261123`；只有沈阳数据时页头只显示地区名称，其余功能不变。
 这是同一份 2026-10-20 源数据的[瓦片几何修订](docs/mvt-integrity.md)，不表示源数据已经更新；旧分享快照保留。
 六条地铁按线路色显示、有轨电车使用制式色，提供中文搜索、类型/状态筛选、来源详情、分享、
 可隐藏底图、文字列表和版本回退。旧实验数据继续保留。
@@ -34,6 +38,7 @@ python scripts/serve_probe.py --port 8766
 - [交互与视觉设计](docs/design.md)
 - [线路等级与配色](docs/line-colors.md)
 - [技术架构](docs/architecture.md)
+- [地区覆盖与切换：沈阳、大连](docs/regions.md)
 - [实施与验收计划](docs/implementation-plan.md)
 - [复现本次真实样本](docs/reproduce-pilot.md)
 - [当前依赖安全核对与 Python 哈希锁](docs/dependency-security.md)

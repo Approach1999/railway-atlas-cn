@@ -1,5 +1,6 @@
 import {useEffect, useLayoutEffect, useMemo, useRef, useState, type KeyboardEvent} from 'react';
 import {decodeView, encodeView, type ShareView} from './view-state';
+import {REGION_CONFIG} from './region-config';
 import {CLASS_LABELS, MODE_LABELS, STATUS_LABELS, FACILITY_LABELS, FILTER_MODES, FILTER_RAIL_CLASSES, FILTER_STATES, normalize, overlayVisible, trackVisible} from '../../shared/model.mjs';
 import type {RailProperties,RailFeature,DatasetManifest,LineRecord} from '../../shared/atlas-types';
 import {validateManifest,validateStations,validateRailFeature,validateObjectIndex,validateLines} from './dataset-validation';
@@ -17,7 +18,7 @@ const title=(record: RecordIndex)=>record.display_name||label(FACILITY_LABELS,re
 
 export default function AccessibleExplorer({open,mapAvailable,onClose,onShowMap,onAbout}: Props){
   const dialog=useRef<HTMLDialogElement>(null),heading=useRef<HTMLHeadingElement>(null);
-  const [view,setView]=useState(()=>decodeView(location.href).view);
+  const [view,setView]=useState(()=>decodeView(location.href,REGION_CONFIG).view);
   const [records,setRecords]=useState<RecordIndex[]>([]),[snapshot,setSnapshot]=useState('');
   const [sourceTime,setSourceTime]=useState('');
   const [dataset,setDataset]=useState<DatasetManifest>();
@@ -58,20 +59,23 @@ export default function AccessibleExplorer({open,mapAvailable,onClose,onShowMap,
   useEffect(()=>{
     if(!open)return;
     const previous=document.activeElement as HTMLElement|null;
-    setView(decodeView(location.href).view);setSelected(decodeView(location.href).view.feature||'');
+    const opened=decodeView(location.href,REGION_CONFIG).view;
+    setView(opened);setSelected(opened.feature||'');
     setPage(0);setKind('all');setShare('');setShareStatus('');setMapActionError('');
     dialog.current?.showModal();heading.current?.focus();
     return ()=>{dialog.current?.close();if(previous?.isConnected)previous.focus();};
   },[open]);
   useEffect(()=>{
     if(!open)return;
-    const abort=new AbortController(),decoded=decodeView(location.href).view;
+    const abort=new AbortController(),link=decodeView(location.href,REGION_CONFIG),decoded=link.view;
     let prefix=decoded.snapshot?'/snapshots/'+decoded.snapshot:'';
     function json(path: string):Promise<unknown>{return listJson(prefix+path,abort.signal,status=>{if(path==='/dataset.json'&&decoded.snapshot&&!abort.signal.aborted)setUnavailable([404,410].includes(status));return Error(status===410?'此数据版本已超过保留期。':'读取失败（'+status+'）');});}
     setLoading(true);setError('');setWarning('');setRecords([]);setSnapshot('');setDataset(undefined);setUnavailable(false);
     (async()=>{
       const manifest=await json('/dataset.json');
       validateManifest(manifest,decoded.snapshot||undefined);
+    // The list only ever shows the region the link names; another region's version is refused, not mixed in.
+    if(link.regionInLink&&manifest.region!==decoded.region)throw Error('链接中的地区与此数据版本不一致，未加载列表；请重试。');
       if(abort.signal.aborted)return;
       if(!/^[A-Za-z0-9_-]{1,80}$/.test(manifest.snapshot_id))throw Error('数据版本标识无效');
       prefix='/snapshots/'+manifest.snapshot_id;
@@ -172,7 +176,7 @@ export default function AccessibleExplorer({open,mapAvailable,onClose,onShowMap,
     {loading&&<p role="status">正在读取要素列表…</p>}{warning&&<p role="status">{warning}</p>}
     {error&&<p role="alert">{error} <button onClick={()=>setRetry(value=>value+1)}>重试列表</button>{unavailable&&<button onClick={()=>location.assign(encodeView({...view,snapshot:'',feature:selected||null}))}>打开当前数据列表</button>}</p>}
     {!loading&&!error&&<><p role="status">找到 {matched.length} 条记录，第 {page+1} / {totalPages} 页。</p>
-      {!matched.length&&<p>没有符合当前搜索与筛选的记录。<button onClick={()=>{setKind('all');change({...view,query:'',filters:decodeView('/').view.filters});}}>恢复默认列表</button></p>}
+      {!matched.length&&<p>没有符合当前搜索与筛选的记录。<button onClick={()=>{setKind('all');change({...view,query:'',filters:decodeView('/',REGION_CONFIG).view.filters});}}>恢复默认列表</button></p>}
       <ul className="object-list">{matched.slice(start,start+40).map(record=><li key={record.osm_id}><button onClick={event=>{lastRecordButton.current=event.currentTarget;setSelected(record.osm_id);}}>
         <strong>{title(record)}</strong><span>{label(MODE_LABELS,record.rail_mode)} · {record.feature_kind==='track'?'轨道片段':record.feature_kind==='station_area'?'站区':record.feature_kind==='station'?'站点':label(FACILITY_LABELS,record.facility_kind||'')} · {label(STATUS_LABELS,record.status)}</span><small>{record.osm_id}</small>
       </button></li>)}</ul>

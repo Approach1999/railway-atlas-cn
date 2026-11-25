@@ -7,7 +7,8 @@ const path=require('node:path');
 const preview=new URL(process.env.PREVIEW_URL||'http://127.0.0.1:8766');
 const output=path.resolve(process.env.PREVIEW_EVIDENCE||'data/manifests/local/auxiliary-transport');
 const auditOnly=process.env.AUXILIARY_AUDIT_ONLY==='1';
-const snapshot='shenyang-mvp-20261023';
+// The snapshot under test; a different one may be named without changing what is checked.
+const snapshot=process.env.MVP_CURRENT_SNAPSHOT||'shenyang-mvp-20261023';
 async function fixture(kind,phase){
   let failing=true,armed=kind==='basemap';const requests=[];
   const target=kind==='basemap'?'/basemap.json':'/snapshots/'+snapshot+'/'+(kind==='manifest'?'dataset.json':'palette.json');

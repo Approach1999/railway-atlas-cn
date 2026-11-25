@@ -12,9 +12,19 @@ import time
 from urllib.request import ProxyHandler, build_opener
 import webbrowser
 
+from catalog import default_snapshot
+from regions import catalog as region_registry
+
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_DATA = ROOT / "data/processed/shenyang-mvp-geometry-20261027"
 LAN_RANGES = tuple(ipaddress.ip_network(value) for value in ("10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16"))
+
+
+def default_data():
+    """Directory of the default region's first complete configured snapshot."""
+    snapshot = default_snapshot(region_registry(), ROOT / "data/processed")
+    if snapshot is None:
+        raise ValueError("默认地区没有可用数据。请阅读 docs/trial-guide.md 的数据准备说明；不会自动下载或覆盖数据。")
+    return ROOT / "data/processed" / snapshot
 
 
 def check_data(folder):
@@ -99,7 +109,7 @@ def main():
     parser.add_argument("--lan", action="store_true", help="允许同一可信局域网中的设备试用")
     parser.add_argument("--basemap-proxy", action="store_true", help="由电脑转发当前视野的底图请求，保留署名与HTTP缓存")
     parser.add_argument("--port", type=int, default=8766)
-    parser.add_argument("--data-dir", type=Path, default=DEFAULT_DATA)
+    parser.add_argument("--data-dir", type=Path, help="指定数据版本目录；默认使用默认地区的首个可用版本")
     parser.add_argument("--no-open", action="store_true", help="不自动打开浏览器")
     parser.add_argument("--no-build", action="store_true", help="复用已有构建，适合不改代码的试用")
     parser.add_argument("--check-only", action="store_true", help="只检查准备条件，不构建、不启动服务")
@@ -110,7 +120,7 @@ def main():
     try:
         if sys.version_info < (3, 10):
             raise ValueError("需要Python 3.10或更新版本，项目推荐3.12。")
-        data_dir = args.data_dir.resolve()
+        data_dir = (args.data_dir or default_data()).resolve()
         expected = check_data(data_dir)
         npm = shutil.which("npm.cmd" if sys.platform == "win32" else "npm")
         if args.no_build:

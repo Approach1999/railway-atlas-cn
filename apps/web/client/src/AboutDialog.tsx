@@ -1,13 +1,14 @@
 import {useEffect,useLayoutEffect,useRef,useState} from 'react';
 import type {DatasetManifest,Palette} from '../../shared/atlas-types.ts';
+import type {RegionProfile} from './catalog-validation.ts';
 import {validateManifest,validatePalette} from './dataset-validation.ts';
 import {keepDialogFocus} from './dialog-focus.ts';
 import {safeSourceLink,datasetSourceTime,coverageDescription} from './about-data.ts';
 import {requestJson} from './json-request';
-interface Props {manifest?:DatasetManifest;snapshot:string;onClose:()=>void}
+interface Props {manifest?:DatasetManifest;snapshot:string;region?:RegionProfile|null;onClose:()=>void}
 const message=(error:unknown)=>error instanceof Error?error.message:'数据说明暂不可用';
 function read(path:string,signal:AbortSignal):Promise<unknown>{return requestJson(path,signal,status=>Error(status===410?'此数据版本已超过保留期，请关闭说明并通过地图或列表打开当前版本。':status===404&&path.endsWith('/dataset.json')?'此版本的数据说明暂不可用，可重试或关闭后打开当前版本。':'读取失败（'+status+'）'));}
-export default function AboutDialog({manifest:provided,snapshot,onClose}:Props){
+export default function AboutDialog({manifest:provided,snapshot,region=null,onClose}:Props){
   const ref=useRef<HTMLDialogElement>(null),[manifest,setManifest]=useState(provided),[error,setError]=useState(''),[loading,setLoading]=useState(!provided),[retry,setRetry]=useState(0);
   const [palette,setPalette]=useState<Palette>(),[paletteError,setPaletteError]=useState(''),[paletteLoading,setPaletteLoading]=useState(false),[paletteRetry,setPaletteRetry]=useState(0);
   const interaction=useRef(0),retryFocus=useRef<{kind:'manifest'|'palette';epoch:number}|null>(null);
@@ -26,10 +27,10 @@ export default function AboutDialog({manifest:provided,snapshot,onClose}:Props){
     return ()=>{active=false;abort.abort();};
   },[manifest,paletteRetry]);
   const source=manifest?.source||{},sourceURL=safeSourceLink(source.endpoint||source.source_url);
-  const records=manifest?[['数据版本',manifest.snapshot_id],['源数据时间',datasetSourceTime(manifest)],['构建时间',manifest.build_time],['保留期限',manifest.retention_until],['输入数据指纹',manifest.input_sha256],['原始提取指纹',source.sha256],['区域原文件指纹',source.source_pbf_sha256],['分类规则',manifest.classification_version],['关系规则',manifest.relation_version],['配色版本',manifest.palette_version],['覆盖矩形',manifest.bbox.join(' / ')]]:[];
+  const records=manifest?[['数据版本',manifest.snapshot_id],['源数据时间',datasetSourceTime(manifest)],['构建时间',manifest.build_time],['保留期限',manifest.retention_until],['输入数据指纹',manifest.input_sha256],['原始提取指纹',source.sha256],['区域原文件指纹',source.source_pbf_sha256],['分类规则',manifest.classification_version],['关系规则',manifest.relation_version],['配色版本',manifest.palette_version],['覆盖矩形',manifest.bbox.join(' / ')],['试验区域',region?.name],['范围说明',region?.description]]:[];
   return <dialog ref={ref} id="about" aria-labelledby="about-title" onKeyDown={event=>keepDialogFocus(event.currentTarget,event)} onPointerDownCapture={()=>{interaction.current++;}} onKeyDownCapture={()=>{interaction.current++;}} onCancel={event=>{event.preventDefault();onClose();}}>
     <button id="about-close" onClick={onClose} className="dialog-close" aria-label="关闭数据说明">×</button><div className="eyebrow">关于这幅地图</div><h2 id="about-title" tabIndex={-1}>有来源，也有边界。</h2>
-    <p>这里展示沈阳城区及周边的 OSM 样本，不是沈阳市行政边界，也不是完整全国地图。</p>
+    <p>{region?region.ui.about_scope:'这里展示当前试验区域的 OSM 样本，不是行政边界，也不是完整全国地图。'}</p>
     {loading&&<p role="status">正在读取此版本的数据说明…</p>}{error&&<p role="alert">{error} <button data-about-retry="manifest" disabled={loading} onClick={()=>{retryFocus.current={kind:'manifest',epoch:interaction.current};setRetry(value=>value+1);}}>重试此版本说明</button></p>}
     <p id="dataset-info">{manifest?`铁路数据截至 ${datasetSourceTime(manifest)}。快照 ${manifest.snapshot_id}；分类规则 ${manifest.classification_version||'未标注'}；配色 ${manifest.palette_version||'未标注'}。来源：${source.provider||'未标注'}。`:'版本说明尚未就绪。'}</p>
     <details><summary>当前版本的来源与处理记录</summary><div id="provenance-info"><dl>{records.map(([name,value])=><div key={name}><dt>{name}</dt><dd>{value||'未标注'}</dd></div>)}</dl>

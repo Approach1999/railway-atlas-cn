@@ -50,6 +50,7 @@ MVT 原始总量 11,575,162 bytes；全部瓦片 gzip(level 6) 最大 177,982 by
 
 正常前端测试入口加入量化几何用例，共 113 项通过；另有七项详情几何与一项 MVT 发布阻断测试通过。
 字体名集仍为 501 codepoints，129,992-byte WOFF2 指纹不变，输入清单已包含新快照。
+这是 2026-10-27 当时的情况；2026-11-24 目录加入大连快照后子集已重建为 608 个字符、165,280 字节，见[地图字体](map-font.md)。
 许可清单确定性核对通过，仍为 npm 120/Cargo 75/Python 9、116 份文本、包文本已知缺口零；不是许可批准或新一轮完整漏洞审计。
 [新人工包](qa/shenyang-geometry-20261027.md)有 115 个实际对象/45 组，同日期原件对账通过，人工字段仍为空。
 
@@ -69,6 +70,28 @@ node scripts/verify_mvt_integrity.mjs data/processed/NEW_IMMUTABLE_SNAPSHOT_ID -
 当前/历史对照可加 `--compare data/processed/shenyang-mvp-20261023/tiles`；仅允许预期快照 ID 差异，
 其余属性和幸存顶点必须一致。`--observe` 仅观察并保留失败，正式模式不加此参数。
 原始 PBF、详情、大 GeoJSON/MVT 和构建候选仍在忽略目录，没有提交大文件或推送。
+
+## 2026-11-24 补记：大连快照触发的一处门禁细化
+
+构建大连快照 `dalian-mvp-20261123` 时，门禁第一次运行就按设计中止了：
+`way/1152835618: ambiguous collapsed exterior/hole sequence; review before publishing`。
+该对象是一个地下地铁站台，单环多边形，约 217 m × 34 m，源几何完整有效。
+
+用新增的只读诊断 [`scripts/diagnose_quantized_geometry.mjs`](../scripts/diagnose_quantized_geometry.mjs)
+对同一批候选切片逐瓦片复核：2,447 个候选瓦片、65,322 个要素实例里只有这 1 个对象触发，而且只在 z9 的一个瓦片
+（`9/428/195`，量化后环的有向面积为 -2）。站台在这个缩放级只有约 0.3 像素高，其他缩放级都正常折叠或绘制。
+
+原规则把“有向面积为负的环出现在任何外环之前”当作无法确认归属的洞。一个已经简化到只剩一个环的多边形不可能含洞，
+这种情况只能是外环量化后方向反转。因此规则细化为：**只剩单环时，有向面积为负按退化外环折叠**，
+计入新增的 `reversed_lone_rings`，并像其他折叠一样记录 tile/layer/typed ID。
+多环的歧义序列——洞先于外环、退化环后面跟洞——仍然中止构建，不把洞提升或填成外环。
+
+规则版本由 `quantized-geometry-v1` 升为 `v2`，只影响此后新建的快照。`shenyang-mvp-geometry-20261027` 没有重建，
+其 `v1` 记录和上面的对照结论不变。单元测试新增一条用例；原有的歧义中止断言保持通过，
+新增用例也确认了洞与其他环并存时仍然中止。
+这次复核由 AI 完成，没有独立人工审核；是否接受这处门禁细化，需要项目负责人确认。
+
+[大连接入证据](evidence/dalian-trial-20261124.json)
 
 [构建/验证与代码指纹](evidence/mvt-integrity.json)、[旧版被拒绝](evidence/mvt-integrity-before.json)、
 [新 MVT 全量对照](evidence/mvt-integrity-after.json)、[功能矩阵](evidence/mvt-integrity-browser-matrix.json)、
